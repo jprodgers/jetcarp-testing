@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Anneal",
+  "description": "LifeWiki: Vote 4/5. Regions smooth out over time.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "16875601544318235459",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Anneal",
+      "rule": "B4678/S35678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "c2a2844b04d710e4",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

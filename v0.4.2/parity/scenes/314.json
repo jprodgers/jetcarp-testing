@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S23V on 4.8.8 truncated square",
+  "description": "Octagons and squares. Mixed tile sizes give mixed neighbour counts. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "oct",
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 112,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S23V",
+      "rule": "B2/S23",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "45277fa18da7df9a",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

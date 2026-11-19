@@ -1,0 +1,22 @@
+== #21: JETCARP_GPU=nosuchgpu run --gpu --gens 300 --json parity/scenes/0.json
+exit 0
+backend: gpu (Apple M2 Max, Metal; no nosuchgpu adapter was found, so the best one)
+hash: d9c87f6d4f91849f
+expected.csv: 0,life,d9c87f6d4f91849f,d9c87f6d4f91849f,300,0.097,0.055
+== #26: WGPU_BACKEND=metal doctor (Environment block, display and compute)
+exit 0
+Environment
+  JETCARP_CONFIG_DIR=/Users/Jimmie/jetcarp-rc-042c/config
+  JETCARP_DATA_DIR=/Users/Jimmie/jetcarp-rc-042c/data
+  JETCARP_OUT=/Users/Jimmie/jetcarp-rc-042c/out
+  JETCARP_RUNTIME_DIR=/Users/Jimmie/jetcarp-rc-042c/runtime
+  WGPU_BACKEND=metal
+  display: Apple M2 Max, Metal (integrated)
+      self-test: passed (185 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+  compute: Apple M2 Max, Metal (integrated)
+      self-test: passed (185 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+== R #47: search explore --help, --limit
+      --limit <LIMIT>                  Stop after this many units in this session (soups per rule and tiling, runs, rules, generations); the job stays resumable. An explore search checks it between steps, so it finishes the step it is in and may run past it
+      --threads <THREADS>              Worker threads (default: all cores; an explore search leaves two free). Results do not depend on this
+      --detach                         Run in a process of its own and return at once (`jetcarp jobs status JOB` follows it)
+      --quiet                          No progress on stderr

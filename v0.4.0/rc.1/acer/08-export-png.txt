@@ -1,0 +1,6 @@
+Exported from the app with File > Export PNG to Desktop\jetcarp.png: 2400x2396 RGBA, 375,539 bytes.
+iTXt chunks: jetcarp:version 0.4.0-rc.1, generation 105, hash 0c27770b6d4a49b8, dead_boundary true, scene (1076 chars).
+
+> jetcarp verify <scene embedded in the PNG>
+ok: generation 105 hash 0c27770b6d4a49b8
+(exit 0)

@@ -1,0 +1,10 @@
+    9  hunt     done     2026-11-16T07:18:48Z  hunt 9: 30/30 soups in each of 6 groups, 1152 soups/s, 1,332 objects (ships 103, osc 431, still 798), 67 distinct, 54 new | newest: still life 12c #de4e5b (B36/S23)
+    8  hunt     done     2026-11-16T07:18:45Z  hunt 8: 500/500 soups, 1508 soups/s, 11,099 objects (ships 1,004, osc 3,244, still 6,851), 24 distinct, 0 new | newest: still life 9c #8cae5a (B3/S23)
+    7  hunt     paused   2026-11-16T07:17:34Z  hunt 7: 171,450/2,000,000 soups, 2455 soups/s, 3,684,095 objects (ships 326,534, osc 1,065,949, still 2,291,612), 95 distinct, 58 new | newest: still life 14c #72adcc (B3/S23)
+    6  hunt     paused   2026-11-16T07:17:33Z  hunt 6: 576/2,000,000 soups, 479 soups/s, 12,721 objects (ships 1,146, osc 3,688, still 7,887), 25 distinct, 0 new | newest: still life 10c #07357a (B3/S23)
+    5  hunt     done     2026-11-16T07:17:31Z  hunt 5: 3,000/3,000 soups, 1878 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+    4  explore  paused   2026-11-16T07:14:18Z  explore 4: 12,840 runs (78/s), 2,101 elites in 1,053 niches (72 of them confirmed), 11 of 1,359 tilings; Apple M2 Max, Metal
+    3  explore  paused   2026-11-16T06:39:23Z  explore 3: 24,366 runs (57/s), 3,901 elites in 1,963 niches (173 of them confirmed), 18 of 1,359 tilings; Apple M2 Max, Metal
+    2  explore  paused   2026-11-16T06:30:10Z  explore 2: 1,278 runs (2/s), 393 elites in 215 niches (21 of them confirmed), 15 of 1,359 tilings; cpu only
+    1  explore  paused   2026-11-16T06:19:10Z  explore 1: 57,109 runs (103/s), 9,989 elites in 4,996 niches (419 of them confirmed), 34 of 1,359 tilings; Apple M2 Max, Metal
+9 job(s); 0 running

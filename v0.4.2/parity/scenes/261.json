@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA crystal overruns noise (4.8.8)",
+  "description": "The +1 rule grows still crystal that overruns the -1 noise. Found by a JACA rule search.",
+  "tiling": {
+    "family": "oct",
+    "size": {
+      "rect": {
+        "w": 134,
+        "h": 89
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 26,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B2/S13456 -B256/S135",
+      "rule": "JACA +B2/S13456 -B256/S135",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Aurora",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Lava"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "eddf8d9a0f99dcd3",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

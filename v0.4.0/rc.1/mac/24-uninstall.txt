@@ -1,0 +1,50 @@
+$ jetcarp uninstall --help   (02:06:48)
+Undo what JETCARP set up outside its folders (the host and its still on the desktop, login entry, GNOME extension, screen saver), and optionally delete its settings and data. Shows the plan unless --yes
+
+Usage: jetcarp uninstall [OPTIONS]
+
+Options:
+      --json      Print the result as JSON instead of text (commands that report a result)
+      --yes       Do it. Without this, only show what would be done
+      --settings  Also delete JETCARP's settings folder (except a picture the desktop still shows)
+      --data      Also delete JETCARP's data folder (the pattern library, search databases, packs). This cannot be undone
+  -h, --help      Print help
+exit 0
+
+$ jetcarp uninstall   (stdin from /dev/null)
+Would undo (run again with --yes):
+  forget the recorded host command
+
+Kept the data folder /Users/Jimmie/Library/Application Support/jetcarp/data (1.1 MB); add --data to delete it.
+Your pictures and exports in /Users/Jimmie/Pictures/JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `--uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+exit 0
+
+$ jetcarp uninstall --yes   (02:07:04)
+Undoing:
+  done: forget the recorded host command
+
+Kept the data folder /Users/Jimmie/Library/Application Support/jetcarp/data (1.1 MB); add --data to delete it.
+Your pictures and exports in /Users/Jimmie/Pictures/JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `--uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+exit 0
+
+$ jetcarp uninstall   (again: what is left to undo)
+Nothing to undo: JETCARP has not set anything up outside its folders.
+
+Kept the data folder /Users/Jimmie/Library/Application Support/jetcarp/data (1.1 MB); add --data to delete it.
+Your pictures and exports in /Users/Jimmie/Pictures/JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `--uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+exit 0
+
+$ ls -la ~/Library/Application\ Support/jetcarp
+total 24
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 12 02:07 .
+drwx------+ 47 Jimmie  staff  1504 Nov 12 00:52 ..
+-rw-r--r--@  1 Jimmie  staff  4215 Nov 12 01:16 app.json
+drwxr-xr-x@  4 Jimmie  staff   128 Nov 12 01:39 data
+drwxr-xr-x@  2 Jimmie  staff    64 Nov 12 01:34 desktop-pictures
+-rw-r--r--@  1 Jimmie  staff   580 Nov 12 01:50 host.json

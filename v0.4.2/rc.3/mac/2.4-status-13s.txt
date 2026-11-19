@@ -1,0 +1,8 @@
+explore 3: 1,024 runs (116/s), 210 elites in 121 niches (0 of them confirmed), 1 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 s run over every session, 0 confirmation runs, 1,024 candidates tried, 0.06 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  parents: 500 JACA runs of explore job 2 (its best ones: it has no reviews with the verdicts asked for); 379 with both signs holding to the end
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                      1,024   0.44   1.42     210
+  folder: /Users/Jimmie/jetcarp-rc-042c/data/searches/294b906e-1384-4a76-9ba5-b012745e1747

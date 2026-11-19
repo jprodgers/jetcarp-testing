@@ -1,0 +1,286 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling libc v0.2.191
+   Compiling cfg-if v1.0.5
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling autocfg v1.5.1
+   Compiling bitflags v2.13.2
+   Compiling libm v0.2.16
+   Compiling version_check v0.9.5
+   Compiling foldhash v0.2.0
+   Compiling zerocopy v0.8.63
+   Compiling portable-atomic v1.15.0
+   Compiling hashbrown v0.17.1
+   Compiling objc2-encode v4.1.0
+   Compiling crunchy v0.2.4
+   Compiling tiny-keccak v2.0.2
+   Compiling cfg_aliases v0.2.2
+   Compiling objc2 v0.6.5
+   Compiling once_cell v1.21.4
+   Compiling core-foundation-sys v0.8.7
+   Compiling getrandom v0.3.4
+   Compiling num-traits v0.2.19
+   Compiling ahash v0.8.12
+   Compiling thiserror v2.0.21
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling simd-adler32 v0.3.10
+   Compiling arrayvec v0.7.8
+   Compiling getrandom v0.2.17
+   Compiling jobserver v0.1.35
+   Compiling shlex v2.0.1
+   Compiling const-random-macro v0.1.16
+   Compiling find-msvc-tools v0.1.15
+   Compiling generic-array v0.14.7
+   Compiling cc v1.11.0
+   Compiling adler2 v2.0.1
+   Compiling crc32fast v1.5.4
+   Compiling log v0.4.35
+   Compiling pkg-config v0.3.34
+   Compiling block2 v0.6.2
+   Compiling objc2-core-foundation v0.3.2
+   Compiling const-random v0.1.18
+   Compiling typenum v1.20.1
+   Compiling semver v1.0.28
+   Compiling miniz_oxide v0.9.1
+   Compiling either v1.19.0
+   Compiling parking_lot_core v0.9.12
+   Compiling weezl v0.1.12
+   Compiling rustc_version v0.4.1
+   Compiling quick-error v2.0.1
+   Compiling crossbeam-utils v0.8.23
+   Compiling objc2-foundation v0.3.2
+   Compiling flate2 v1.1.10
+   Compiling objc2-core-graphics v0.3.2
+   Compiling miniz_oxide v0.8.9
+   Compiling num-integer v0.1.47
+   Compiling fdeflate v0.3.7
+   Compiling static_assertions v1.1.0
+   Compiling crossbeam-epoch v0.9.21
+   Compiling byteorder-lite v0.1.0
+   Compiling raw-window-handle v0.6.2
+   Compiling scopeguard v1.2.0
+   Compiling lock_api v0.4.14
+   Compiling png v0.18.1
+   Compiling num-bigint v0.5.1
+   Compiling crypto-common v0.1.7
+   Compiling bytes v1.12.1
+   Compiling equivalent v1.0.3
+   Compiling crossbeam-deque v0.8.8
+   Compiling zmij v1.0.23
+   Compiling indexmap v2.14.2
+   Compiling block-buffer v0.10.4
+   Compiling iana-time-zone v0.1.65
+   Compiling serde_json v1.0.154
+   Compiling rayon-core v1.13.0
+   Compiling rustc-hash v1.1.0
+   Compiling profiling v1.0.18
+   Compiling objc-sys v0.3.5
+   Compiling arrow-schema v60.1.0
+   Compiling chrono v0.4.45
+   Compiling digest v0.10.7
+   Compiling num-complex v0.4.6
+   Compiling naga v30.0.1
+   Compiling vcpkg v0.2.15
+   Compiling memchr v2.8.3
+   Compiling unicode-width v0.2.3
+   Compiling bit-vec v0.9.1
+   Compiling itoa v1.0.18
+   Compiling option-ext v0.2.0
+   Compiling dirs-sys v0.5.0
+   Compiling bit-set v0.10.0
+   Compiling codespan-reporting v0.13.1
+   Compiling objc2-metal v0.3.2
+   Compiling flatbuffers v25.12.19
+   Compiling polycool v0.4.0
+   Compiling cpufeatures v0.2.17
+   Compiling zstd-safe v8.2.0
+   Compiling sha2 v0.10.9
+   Compiling rayon v1.12.0
+   Compiling objc2 v0.5.3
+   Compiling dirs v7.0.0
+   Compiling image-webp v0.2.4
+   Compiling curve25519-dalek v4.1.3
+   Compiling gif v0.14.2
+   Compiling objc2-quartz-core v0.3.2
+   Compiling uuid v1.29.0
+   Compiling zstd-sys v2.1.2+zstd.1.5.7
+   Compiling libsqlite3-sys v0.39.1
+   Compiling euclid v0.22.14
+   Compiling wgpu-hal v30.0.1
+   Compiling ryu-js v1.0.3
+   Compiling linebender_resource_handle v0.1.1
+   Compiling base64ct v1.8.3
+   Compiling block2 v0.5.1
+   Compiling guillotiere v0.7.0
+   Compiling pem-rfc7468 v0.7.0
+   Compiling raw-window-metal v1.1.0
+   Compiling inout v0.1.4
+   Compiling hashlink v0.12.2
+   Compiling libloading v0.8.9
+   Compiling subtle v2.6.1
+   Compiling unicode-general-category v1.1.0
+   Compiling fearless_simd v0.4.1
+   Compiling dispatch v0.2.0
+   Compiling signature v2.2.0
+   Compiling fallible-streaming-iterator v0.1.9
+   Compiling fallible-iterator v0.3.0
+   Compiling objc2-foundation v0.2.2
+   Compiling ed25519 v2.2.3
+   Compiling cipher v0.4.4
+   Compiling ssh-encoding v0.2.0
+   Compiling core-foundation v0.9.4
+   Compiling wgpu-core v30.0.1
+   Compiling base64 v0.23.1
+   Compiling litrs v1.0.1
+   Compiling twox-hash v2.1.5
+   Compiling ref-cast v1.0.27
+   Compiling foreign-types-shared v0.3.1
+   Compiling bitflags v1.3.2
+   Compiling seq-macro v0.3.6
+   Compiling epaint_default_fonts v0.37.0
+   Compiling core-graphics-types v0.1.3
+   Compiling ssh-cipher v0.2.0
+   Compiling ed25519-dalek v2.2.0
+   Compiling serde_derive_internals v0.30.0
+   Compiling rand_core v0.6.4
+   Compiling document-features v0.2.12
+   Compiling memory-stats v1.2.0
+   Compiling smartstring v1.0.1
+   Compiling wgpu v30.0.1
+   Compiling winit v0.30.13
+   Compiling zune-core v0.5.3
+   Compiling unicode-segmentation v1.13.3
+   Compiling tracing-core v0.1.36
+   Compiling nohash-hasher v0.2.0
+   Compiling unicode-properties v0.1.5
+   Compiling pin-project-lite v0.2.17
+   Compiling self_cell v1.3.0
+   Compiling zeroize v1.9.1
+   Compiling objc2-app-kit v0.2.2
+   Compiling ssh-key v0.6.7
+   Compiling tracing v0.1.44
+   Compiling zune-jpeg v0.5.15
+   Compiling itertools v0.15.0
+   Compiling pxfm v0.1.30
+   Compiling dyn-clone v1.0.20
+   Compiling smol_str v0.2.2
+   Compiling dpi v0.1.2
+   Compiling fax v0.2.7
+   Compiling cursor-icon v1.2.0
+   Compiling objc2-app-kit v0.3.2
+   Compiling thin-vec v0.2.21
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-query v1.1.5
+   Compiling anstyle-parse v1.0.0
+   Compiling rustc-hash v2.1.3
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling ttf-parser v0.25.1
+   Compiling web-time v1.1.0
+   Compiling colorchoice v1.0.5
+   Compiling anstyle v1.0.14
+   Compiling moxcms v0.8.1
+   Compiling anstream v1.0.0
+   Compiling owned_ttf_parser v0.25.1
+   Compiling type-map v0.5.1
+   Compiling clap_lex v1.1.1
+   Compiling rfd v0.17.2
+   Compiling anyhow v1.0.104
+   Compiling jetcarp-mcp v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-mcp)
+   Compiling pollster v0.4.0
+   Compiling strsim v0.11.1
+   Compiling ab_glyph_rasterizer v0.1.10
+   Compiling heck v0.5.0
+   Compiling ab_glyph v0.2.32
+   Compiling clap_builder v4.6.7
+   Compiling dispatch2 v0.3.1
+   Compiling pollster v1.0.1
+   Compiling serde_derive v1.0.229
+   Compiling bytemuck_derive v1.12.1
+   Compiling thiserror-impl v2.0.21
+   Compiling zerocopy-derive v0.8.63
+   Compiling enumn v0.1.14
+   Compiling foreign-types-macros v0.2.4
+   Compiling ref-cast-impl v1.0.27
+   Compiling zstd v0.14.3
+   Compiling schemars_derive v1.2.3
+   Compiling rhai_codegen v3.3.0
+   Compiling clap_derive v4.6.7
+   Compiling foreign-types v0.5.0
+   Compiling core-graphics v0.23.2
+   Compiling bytemuck v1.25.2
+   Compiling color v0.3.3
+   Compiling naga-types v30.0.1
+   Compiling wgpu-types v30.0.1
+   Compiling clap v4.6.7
+   Compiling smallvec v1.16.4
+   Compiling font-types v0.12.7
+   Compiling jetcarp-core v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-core)
+   Compiling accesskit v0.25.2
+   Compiling emath v0.37.0
+   Compiling schemars v1.2.3
+   Compiling kurbo v0.13.1
+   Compiling parking_lot v0.12.5
+   Compiling ecolor v0.37.0
+   Compiling read-fonts v0.41.0
+   Compiling peniko v0.6.1
+   Compiling vello_common v0.2.0
+   Compiling accesskit_consumer v0.39.2
+   Compiling half v2.7.1
+   Compiling accesskit_macos v0.27.2
+   Compiling rhai v1.27.0
+   Compiling arrow-buffer v60.1.0
+   Compiling vello_cpu v0.2.0
+   Compiling arrow-data v60.1.0
+   Compiling arrow-array v60.1.0
+   Compiling tiff v0.11.3
+   Compiling rusqlite v0.41.1
+   Compiling accesskit_winit v0.34.2
+   Compiling arrow-cmp v60.1.0
+   Compiling skrifa v0.44.0
+   Compiling harfrust v0.12.0
+   Compiling image v0.25.10
+   Compiling wgpu-naga-bridge v30.0.1
+   Compiling arrow-select v60.1.0
+   Compiling jetcarp-store v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-store)
+   Compiling arrow-ipc v60.1.0
+   Compiling parquet v60.1.0
+   Compiling wgpu-core-deps-apple v30.0.1
+   Compiling epaint v0.37.0
+   Compiling arboard v3.7.0
+   Compiling egui v0.37.0
+   Compiling jetcarp-search v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-search)
+   Compiling jetcarp-pack v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-pack)
+   Compiling egui-wgpu v0.37.0
+   Compiling egui-winit v0.37.0
+   Compiling jetcarp-api v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-api)
+   Compiling jetcarp-gpu v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-gpu)
+   Compiling eframe v0.37.0
+   Compiling egui_tiles v0.18.0
+   Compiling jetcarp-script v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-script)
+   Compiling jetcarp-display v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-display)
+   Compiling jetcarp-app v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-app)
+    Finished `test` profile [optimized + debuginfo] target(s) in 2m 25s
+     Running unittests src/lib.rs (target/debug/deps/jetcarp_app-126079fd495c331f)
+
+running 1 test
+test app::menu::tests::cmd_m_minimises_through_appkit_not_egui ... FAILED
+
+failures:
+
+---- app::menu::tests::cmd_m_minimises_through_appkit_not_egui stdout ----
+
+thread 'app::menu::tests::cmd_m_minimises_through_appkit_not_egui' (3282154) panicked at ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/epaint-0.37.0/src/textures.rs:337:9:
+Dropped TexturesDelta with 1 unapplied deltas. Deltas need to be handled. If you want to drop this intentionally call `clear` before dropping.
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    app::menu::tests::cmd_m_minimises_through_appkit_not_egui
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 115 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p jetcarp-app --lib`
+exit 101

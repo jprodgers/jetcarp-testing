@@ -1,0 +1,80 @@
+#### MCP with JETCARP_OUT=$W/ro-out (chmod 555)
+== world_new {"tiling": "square", "width": 32, "height": 32, "cas": ["Life"]} -> isError=False
+   New world created.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf
+== world_status {"save_path": "a.json"} -> isError=True
+   could not write $W/ro-out/a.json: Permission denied (os error 13)
+== world_render {"max_side": 64, "save_path": "a.png"} -> isError=True
+   $W/ro-out/a.png: Permission denied (os error 13)
+== world_render {"wallpaper": {"size": "320x200"}} -> isError=True
+   the MCP tools may only write inside $W/ro-out or $W/library (got $W/ro-out/wallpapers/.keep)
+== run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_png(\"x.png\", #{ size: [64, 64] });"} -> isError=True
+   error at line 1, column 100: $W/ro-out/x.png: Permission denied (os error 13)
+   log:
+   error: line 1, column 100: $W/ro-out/x.png: Permission denied (os error 13)
+   
+== run_script {"script": "out_dir(\"ro\"); print(\"made\");"} -> isError=True
+   error at line 1, column 1: cannot create $W/ro-out/2026-11-15_13-02-16_ro: Permission denied (os error 13)
+   log:
+   error: line 1, column 1: cannot create $W/ro-out/2026-11-15_13-02-16_ro: Permission deni
+== search_start {"pile": {"grains": 1000}, "wait_s": 30} -> isError=True
+   $W/ro-out/piles: Permission denied (os error 13)
+== media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5} -> isError=True
+   the MCP tools may only write inside $W/ro-out or $W/library (got $W/ro-out/media/scene/.keep)
+== search_runs {"job": 3, "csv": "runs.csv", "limit": 3} -> isError=True
+   $W/ro-out/runs.csv: Permission denied (os error 13)
+== pack {"publish": {"feed": "f9-ro", "to": "ro-store", "no_media": true, "no_searches": true}} -> isError=True
+   the MCP tools may only write inside $W/ro-out or $W/library (got $W/ro-out/ro-store/.keep)
+== pack {"site": {"to": "ro-site", "render": false}} -> isError=True
+   the MCP tools may only write inside $W/ro-out or $W/library (got $W/ro-out/ro-site/.keep)
+== files_list {} -> isError=False
+   {
+     "entries": 0,
+     "folder": "$W/ro-out",
+     "newest_first": [],
+     "root": "$W/ro-out",
+     "shown": 0
+   }
+#### a read-only library: $W/ro-lib (folder 555, library.sqlite 444)
+$ JETCARP_LIBRARY=$W/ro-lib jetcarp library list --limit 2
+
+Error: library: attempt to write a readonly database
+exit 1
+$ JETCARP_LIBRARY=$W/ro-lib jetcarp search hunt --soups 100 --threads 4
+
+Error: library: attempt to write a readonly database
+exit 1
+== [read-only library] library_query {"limit": 1} -> isError=True
+   library: attempt to write a readonly database
+== [read-only library] library_curate {"id": "aab843d7ff96817d170d6725fb23e37c", "changes": {"rating": 5}} -> isError=True
+   library: attempt to write a readonly database
+== [read-only library] search_start {"hunt": {"soups": 100}, "threads": 4, "wait_s": 30} -> isError=True
+   library: attempt to write a readonly database
+== [read-only library] media_render {"pattern": "aab843d7ff96817d170d6725fb23e37c", "force": true} -> isError=True
+   {
+     "done": [],
+     "failed": [
+       {
+         "error": "library: attempt to write a readonly database",
+         "id": "aab843d7ff96817d170d6725fb23e37c",
+         "kind": "pattern"
+       }
+     ],
+     "skipped": 0,
+     "written": 0
+   }

@@ -1,0 +1,279 @@
+{
+  "board": {
+    "bytes": 1663488,
+    "cells": 802816,
+    "degrees": [
+      4
+    ],
+    "h": 896,
+    "i0": -448,
+    "j0": -448,
+    "kind": "lattice",
+    "tile_types": 1,
+    "w": 896
+  },
+  "centre": "cell",
+  "finished": true,
+  "grains": 1000000,
+  "grains_now": 1000000,
+  "image": {
+    "file": "pile.png",
+    "height": 1474,
+    "margin_cells": 4.0,
+    "palette": "Ember",
+    "preview": "preview.png",
+    "px_per_cell": 2.0,
+    "reverse": false,
+    "width": 1474
+  },
+  "jetcarp_version": "0.4.0-rc.1",
+  "job": 1,
+  "neighborhood": "edge",
+  "pile_height": 729.0,
+  "pile_width": 729.0,
+  "records": [
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 1,
+      "height": 1.0,
+      "seconds": 0.000506625,
+      "step": 1,
+      "sweeps": 0,
+      "topplings": 0,
+      "width": 1.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 3,
+      "height": 1.0,
+      "seconds": 0.000376334,
+      "step": 2,
+      "sweeps": 0,
+      "topplings": 0,
+      "width": 1.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 7,
+      "height": 3.0,
+      "seconds": 0.004948291,
+      "step": 3,
+      "sweeps": 1,
+      "topplings": 1,
+      "width": 3.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 15,
+      "height": 3.0,
+      "seconds": 0.001931833,
+      "step": 4,
+      "sweeps": 1,
+      "topplings": 1,
+      "width": 3.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 30,
+      "height": 5.0,
+      "seconds": 0.001818125,
+      "step": 5,
+      "sweeps": 4,
+      "topplings": 15,
+      "width": 5.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 61,
+      "height": 7.0,
+      "seconds": 0.001447916,
+      "step": 6,
+      "sweeps": 7,
+      "topplings": 45,
+      "width": 7.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 122,
+      "height": 9.0,
+      "seconds": 0.002581666,
+      "step": 7,
+      "sweeps": 9,
+      "topplings": 100,
+      "width": 9.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 244,
+      "height": 13.0,
+      "seconds": 0.002868125,
+      "step": 8,
+      "sweeps": 23,
+      "topplings": 524,
+      "width": 13.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 488,
+      "height": 17.0,
+      "seconds": 0.003277833,
+      "step": 9,
+      "sweeps": 62,
+      "topplings": 2496,
+      "width": 17.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 976,
+      "height": 25.0,
+      "seconds": 0.004907625,
+      "step": 10,
+      "sweeps": 129,
+      "topplings": 8813,
+      "width": 25.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 1953,
+      "height": 33.0,
+      "seconds": 0.007700459,
+      "step": 11,
+      "sweeps": 237,
+      "topplings": 33289,
+      "width": 33.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 3906,
+      "height": 47.0,
+      "seconds": 0.015649542,
+      "step": 12,
+      "sweeps": 530,
+      "topplings": 143288,
+      "width": 47.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 7812,
+      "height": 67.0,
+      "seconds": 0.026749666,
+      "step": 13,
+      "sweeps": 1249,
+      "topplings": 569796,
+      "width": 67.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 15625,
+      "height": 93.0,
+      "seconds": 0.030004833,
+      "step": 14,
+      "sweeps": 2081,
+      "topplings": 2133275,
+      "width": 93.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 147456,
+      "grains": 31250,
+      "height": 131.0,
+      "seconds": 0.055203584,
+      "step": 15,
+      "sweeps": 4811,
+      "topplings": 8977946,
+      "width": 131.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 409600,
+      "grains": 62500,
+      "height": 185.0,
+      "seconds": 0.101572417,
+      "step": 16,
+      "sweeps": 8838,
+      "topplings": 34465323,
+      "width": 185.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 409600,
+      "grains": 125000,
+      "height": 261.0,
+      "seconds": 0.231584291,
+      "step": 17,
+      "sweeps": 20385,
+      "topplings": 139019108,
+      "width": 261.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 409600,
+      "grains": 250000,
+      "height": 367.0,
+      "seconds": 0.409252791,
+      "step": 18,
+      "sweeps": 36247,
+      "topplings": 546729396,
+      "width": 367.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 409600,
+      "grains": 500000,
+      "height": 517.0,
+      "seconds": 0.873137834,
+      "step": 19,
+      "sweeps": 76609,
+      "topplings": 2177022587,
+      "width": 517.0
+    },
+    {
+      "backend": "gpu (Apple M2 Max, Metal)",
+      "board_cells": 802816,
+      "grains": 1000000,
+      "height": 729.0,
+      "seconds": 2.4455695410000002,
+      "step": 20,
+      "sweeps": 145588,
+      "topplings": 8674690397,
+      "width": 729.0
+    }
+  ],
+  "sources": [
+    {
+      "grains": 1000000,
+      "site": {
+        "lattice": {
+          "i": 0,
+          "j": 0,
+          "k": 0
+        }
+      }
+    }
+  ],
+  "started": "2026-11-12T01:09:24-05:00",
+  "steps": 20,
+  "steps_done": 20,
+  "sweeps": 296811,
+  "tiling": {
+    "boundary": "dead",
+    "family": "square"
+  },
+  "tiling_id": "square",
+  "topplings": 11583796400,
+  "wall_seconds": 4.221089331
+}

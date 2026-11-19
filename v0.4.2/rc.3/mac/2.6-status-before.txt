@@ -1,0 +1,1 @@
+explore 3: 24,366 runs (57/s), 3,901 elites in 1,963 niches (243 of them confirmed), 18 of 1,359 tilings; Apple M2 Max, Metal

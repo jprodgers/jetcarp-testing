@@ -1,0 +1,28 @@
+$ JETCARP_GPU=nosuchgpu jetcarp run --gpu --gens 300 --json parity/scenes/0.json  (backend, hash)
+gpu (Apple M2 Max, Metal; no nosuchgpu adapter was found, so the best one)
+d9c87f6d4f91849f
+
+$ JETCARP_GPU=nosuchgpu jetcarp doctor  (GPU block)
+GPU: auto, the adapter named nosuchgpu (JETCARP_GPU=nosuchgpu)
+  setting: /Users/Jimmie/jetcarp-rc-042/b/config/gpu.json (not saved)
+  the app: auto, from JETCARP_GPU=nosuchgpu (its own choice: follow)
+  the desktop background: auto, from JETCARP_GPU=nosuchgpu (its own choice: follow)
+  display: Apple M2 Max, Metal (integrated)
+      why: the adapter driving the screen (JETCARP_GPU=nosuchgpu); no nosuchgpu adapter was found, so the best one
+      limits: 29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers
+      self-test: passed (389 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      the GPU simulation uses it
+  compute: Apple M2 Max, Metal (integrated)
+      why: the fastest adapter (JETCARP_GPU=nosuchgpu); no nosuchgpu adapter was found, so the best one
+      limits: 29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers
+      self-test: passed (389 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      the GPU simulation uses it
+
+Graphics adapters (* = used for computing)
+
+$ WGPU_BACKEND=metal jetcarp doctor  (Environment block)
+Environment
+  JETCARP_CONFIG_DIR=/Users/Jimmie/jetcarp-rc-042/b/config
+  JETCARP_DATA_DIR=/Users/Jimmie/jetcarp-rc-042/b/data
+  JETCARP_OUT=/Users/Jimmie/jetcarp-rc-042/b/out
+  WGPU_BACKEND=metal

@@ -1,0 +1,64 @@
+{
+  "jetcarp_version": "0.4.0-rc.3",
+  "format": 1,
+  "name": "JACA B1/S23 — catalog:k4-073",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k4-073"
+    },
+    "size": {
+      "cells": 64000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "51639801869660970",
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B1/S23",
+      "rule": "JACA B1/S23",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Orchid",
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "all"
+          },
+          "fill": {
+            "density": 0.29,
+            "states": {
+              "signed": {
+                "negative": 0.53
+              }
+            }
+          }
+        }
+      },
+      "palette_neg": "Bone"
+    }
+  ],
+  "commands": [
+    {
+      "op": "step",
+      "gens": 104
+    }
+  ],
+  "view": {
+    "center": [
+      97.33601193388152,
+      100.24097888265946
+    ],
+    "speed": 15.0,
+    "zoom": 35.07793070947442
+  },
+  "record": {
+    "generation": 104,
+    "hash": "4e506491ab27b935",
+    "jetcarp_version": "0.4.0-rc.3",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/data/library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "0"
+    ],
+    [
+      "niches",
+      "0"
+    ],
+    [
+      "confirmed elites",
+      "0"
+    ]
+  ],
+  "created": "2026-11-16T07:21:09Z",
+  "deterministic": false,
+  "done": 0,
+  "elapsed_s": 0.0,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 10,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "running-export",
+  "line": "explore 10: 0 runs, running, elites 0, niches 0, confirmed elites 0",
+  "per_s": 0.0,
+  "progress": {
+    "job": 10,
+    "status": "running"
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "families": [
+      "life_like"
+    ],
+    "gpu": false,
+    "label": "running-export",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "started_with": {
+      "minutes": 3.0
+    },
+    "uuid": "837be89d-9e74-417b-8e64-6e3ac4e69c0c"
+  },
+  "stale": false,
+  "status": "running",
+  "title": "running-export: every tiling, life_like",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T07:21:10Z",
+  "waited_s": null
+}

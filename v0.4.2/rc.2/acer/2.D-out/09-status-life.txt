@@ -1,0 +1,9 @@
+running, pid 53616, up 929.0s, 478 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 353 · 230400 cells of 3 px · 60 fps, 60 generations a second · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+last tune: done
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+note: swept 1 scene(s); sizes saved

@@ -1,0 +1,79 @@
+{
+  "jetcarp_version": "0.4.2-rc.3",
+  "format": 1,
+  "name": "Empty world",
+  "description": "Add a CA from the panel on the left.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 321,
+        "h": 260
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 1,
+  "cas": [],
+  "commands": [
+    {
+      "op": "add_ca",
+      "ca": {
+        "rule": "B2/s23",
+        "enabled": true,
+        "steps_per_gen": 1
+      }
+    },
+    {
+      "op": "update_ca",
+      "id": 1,
+      "change": {
+        "palette": "Neon"
+      }
+    },
+    {
+      "op": "update_ca",
+      "id": 1,
+      "change": {
+        "palette": "Lava"
+      }
+    },
+    {
+      "op": "set_reseed",
+      "policies": [
+        {
+          "mode": {
+            "kind": "blobs",
+            "count": 2,
+            "min_radius": 0.06,
+            "max_radius": 0.16,
+            "live": 0.35
+          },
+          "when": {
+            "kind": "settled",
+            "activity": 0.002,
+            "for_gens": 60,
+            "cycle": 12,
+            "latest": 4000
+          },
+          "cooldown": 150,
+          "enabled": true
+        }
+      ]
+    }
+  ],
+  "view": {
+    "center": [
+      160.5546875,
+      130.0
+    ],
+    "speed": 15.0,
+    "zoom": 4.0
+  },
+  "record": {
+    "generation": 0,
+    "hash": "9c017365ae650188",
+    "jetcarp_version": "0.4.2-rc.3",
+    "dead_boundary": false
+  }
+}

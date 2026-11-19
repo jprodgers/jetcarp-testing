@@ -1,0 +1,37 @@
+# #95 on the Mac: what woke the display (NOTES, 2026-11-16 9:10 PM EST, main session)
+# pmset -g log, 21:03:00 to 21:08:30 EST (02:03 to 02:08 UTC), display, wake, user-activity and loginwindow lines
+$ pmset -g log | grep -E 'Display is turned (on|off)|DarkWake|Wake from|Notification Display|UserIsActive|loginwindow'
+2026-11-16 21:03:43 -0500 Notification        	Display is turned off
+2026-11-16 21:03:43 -0500 Assertions          	PID 618(WindowServer) Summary UserIsActive "com.apple.iohideventsystem.queue.tickle serviceID:10003bff2 service:AppleUserHIDEventService product:LOGI M240 eventType:17" 02:34:10  id:0x0x900008bcc [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:03:43 -0500 Assertions          	PID 611(bluetoothd) Summary UserIsActive "Bluetooth LE HID Activity" 02:36:07  id:0x0x900009556 [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:03:43 -0500 Assertions          	PID 561(powerd) Summary UserIsActive "com.apple.powermanagement.kernel.useractive AppleM68Buttons:sleepDisplayTickle kIOMessageSystemWillSleep" 13:59:37  id:0x0x90000a5ee [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:03:47 -0500 Assertions          	PID 611(bluetoothd) TurnedOn UserIsActive "Bluetooth LE HID Activity" 00:00:00  id:0x0x900009556 [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:03:47 -0500 Notification        	Display is turned on
+2026-11-16 21:04:17 -0500 Notification        	Display is turned off
+2026-11-16 21:04:17 -0500 Assertions          	PID 611(bluetoothd) Summary UserIsActive "Bluetooth LE HID Activity" 00:00:30  id:0x0x900009556 [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:04:17 -0500 Assertions          	PID 618(WindowServer) Summary UserIsActive "com.apple.iohideventsystem.queue.tickle serviceID:10003bff2 service:AppleUserHIDEventService product:LOGI M240 eventType:17" 02:34:44  id:0x0x900008bcc [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:04:17 -0500 Assertions          	PID 561(powerd) Summary UserIsActive "com.apple.powermanagement.kernel.useractive AppleM68Buttons:sleepDisplayTickle kIOMessageSystemWillSleep" 14:00:11  id:0x0x90000a5ee [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:05:09 -0500 Assertions          	PID 618(WindowServer) TurnedOn UserIsActive "com.apple.iohideventsystem.queue.tickle serviceID:10003d64c service:AppleUserHIDEventService product:LOGI M240 eventType:17" 00:00:00  id:0x0x900008bcc [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:05:09 -0500 Notification        	Display is turned on
+2026-11-16 21:05:17 -0500 Assertions          	PID 27322(loginwindow) Created UserIsActive "Loginwindow User Activity" 00:00:00  id:0x0x90000a274 [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:05:17 -0500 Assertions          	PID 27322(loginwindow) Released UserIsActive "Loginwindow User Activity" 00:00:00  id:0x0x90000a274 [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:07:15 -0500 Assertions          	PID 71198(caffeinate) Created UserIsActive "caffeinate command-line tool" 00:00:00  id:0x0x90000a27f [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+2026-11-16 21:07:17 -0500 Assertions          	PID 71198(caffeinate) TimedOut UserIsActive "caffeinate command-line tool" 00:00:02  id:0x0x90000a27f [System: PrevIdle PrevSleep DeclUser kCPU kDisp]
+
+# Reading it against soak-95.csv (EST; the system itself never slept: no "Wake from" or "DarkWake" lines)
+# 21:03:40  pmset displaysleepnow (the script)
+# 21:03:43  Display is turned off.
+# 21:03:47  Display is turned on: "Bluetooth LE HID Activity" (bluetoothd), 4 s later: Jimmie bumped the mouse. The Mac was at the lock screen.
+#  21:04:00 sample: held covered + dark ("windows cover the desktop; the screen is locked or off"), generation frozen
+# 21:04:17  Display is turned off (30 s idle at the lock screen).
+#  21:04:18 sample: held covered + dark; 21:04:36, 21:04:54, 21:05:11: held dark ("the screen is locked or off")
+# 21:05:09  Display is turned on: a mouse event (WindowServer, "LOGI M240"): Jimmie, back at the Mac.
+#  21:05:11 sample: still held dark: the display on, the Mac still locked
+# 21:05:17  loginwindow user activity: Jimmie signed in.
+#  21:05:29 sample: not held, 240 generations a second
+# 21:07:15  caffeinate -u -t 2 (the script): the display was already on.
+#
+# So the display was not off the whole time, and nothing let the hold go early: the host stayed held while the
+# display was off and while it was on at the lock screen (21:03:47 to 21:04:17, and 21:05:09 to 21:05:17), and ran
+# again only after the sign-in. The Bluetooth HID activity 4 s after displaysleepnow was Jimmie bumping the mouse by
+# accident (Jimmie said so afterwards).

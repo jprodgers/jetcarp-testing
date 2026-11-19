@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "explore 1 run 24416: JACA B123/S23 blast 1",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k6-260"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "51775453792829402",
+  "cas": [
+    {
+      "rule": "JACA B123/S23 blast 1",
+      "neighborhood": "edge",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "noise",
+            "scale": 0.22,
+            "threshold": 0.39,
+            "octaves": 4
+          },
+          "fill": {
+            "density": 0.78,
+            "states": {
+              "signed": {
+                "negative": 0.5
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

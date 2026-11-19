@@ -1,0 +1,556 @@
+== search_start (no detach) -> {
+  "folder": null,
+  "job": 5,
+  "kind": "hunt",
+  "line": "hunt 5: 0/50,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "background",
+  "note": "The job runs in the background: job_status {\"job\": 5, \"wait_s\": 300} waits for it, job_stop {\"job\": 5} stops it, search_start {\"resume\": 5} carries it on.",
+  "started": true,
+  "status": "running"
+}
+== MCP stdin closed at 01:03:33; server exit 0
+$ jetcarp --json jobs status 5
+{
+  "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite",
+  "counters": [
+    [
+      "settled",
+      "9,913"
+    ],
+    [
+      "died",
+      "27"
+    ],
+    [
+      "exploded",
+      "31"
+    ],
+    [
+      "unsettled",
+      "0"
+    ],
+    [
+      "objects",
+      "212,675"
+    ],
+    [
+      "distinct",
+      "42"
+    ],
+    [
+      "new to the catalog",
+      "5"
+    ],
+    [
+      "failed verification",
+      "0"
+    ],
+    [
+      "GPU",
+      "AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan"
+    ]
+  ],
+  "created": "2026-11-16T06:03:28Z",
+  "deterministic": true,
+  "done": 9971,
+  "elapsed_s": 5.1,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 5,
+  "kind": "hunt",
+  "kind_label": "Hunt",
+  "label": "f9-in-server",
+  "line": "hunt 5: 9,971/50,000,000 soups, 1952 soups/s, 212,675 objects (ships 18,890, osc 61,736, still 132,049), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)",
+  "per_s": 1952.3,
+  "progress": {
+    "by_class": {
+      "oscillator": 61736,
+      "spaceship": 18890,
+      "still life": 132049
+    },
+    "died": 27,
+    "distinct": 42,
+    "elapsed_s": 5.1,
+    "exploded": 31,
+    "failed": 0,
+    "gpu": "AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+    "groups": [
+      {
+        "by_class": {
+          "oscillator": 61736,
+          "spaceship": 18890,
+          "still life": 132049
+        },
+        "died": 27,
+        "distinct": 42,
+        "escaped": 18890,
+        "exploded": 31,
+        "failed": 0,
+        "generations": 5593506,
+        "new_patterns": 5,
+        "other": {},
+        "rule": "B3/S23",
+        "settled": 9913,
+        "soups": 9971,
+        "tiling": "Square",
+        "tiling_key": "{\"family\":\"square\",\"boundary\":\"dead\"}",
+        "unsettled": 0,
+        "unstored_distinct": 0
+      }
+    ],
+    "job": 5,
+    "new_patterns": 5,
+    "newest": [
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "ec30ee9c9d6bfb34da4f8db926a57ddb",
+        "label": "still life 13c #ec30ee",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 26.5,
+        "soup": 8533,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "e6a4b27599ff11da9d2eee273bbd6cda",
+        "label": "still life 15c #e6a4b2",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.5,
+        "soup": 6114,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "4b1e8d6b20cea5dc100f7444731eb9a4",
+        "label": "still life 14c #4b1e8d",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.0,
+        "soup": 4628,
+        "tiling": "Square"
+      },
+      {
+        "class": "spaceship",
+        "group": 0,
+        "id": "77364004b6d2c23cba74126b8aeb6ca3",
+        "label": "MWSS",
+        "new": true,
+        "period": 4,
+        "rule": "B3/S23",
+        "score": 84.4,
+        "soup": 4526,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "2f14f53077b021fe1ae019b7c5835852",
+        "label": "still life 9c #2f14f5",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.5,
+        "soup": 3049,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "f604b33e874ae8109ab13c34f6ed8484",
+        "label": "still life 8c #f604b3",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.0,
+        "soup": 2650,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "c8f20f137dfae2f393afe921c7c5e670",
+        "label": "snake",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 23.0,
+        "soup": 2540,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "076c1a268e4004b5a0c13876844e8864",
+        "label": "still life 9c #076c1a",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.5,
+        "soup": 2463,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "1741ff737fd4a9871f808a2bf46d7594",
+        "label": "still life 11c #1741ff",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 25.5,
+        "soup": 2048,
+        "tiling": "Square"
+      },
+      {
+        "class": "spaceship",
+        "group": 0,
+        "id": "1376072ec0c084fc67a9b92d361379f3",
+        "label": "HWSS",
+        "new": false,
+        "period": 4,
+        "rule": "B3/S23",
+        "score": 84.6,
+        "soup": 1816,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "b32698505127c4a3301ad2bda8c287b6",
+        "label": "still life 14c #b32698",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.0,
+        "soup": 1134,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "206b07b7500d36ca8dd72be030708a99",
+        "label": "long barge",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.0,
+        "soup": 1089,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "96b76be993a89daec4208a814ed05c13",
+        "label": "still life 9c #96b76b",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.5,
+        "soup": 1013,
+        "tiling": "Square"
+      },
+      {
+        "class": "oscillator",
+        "group": 0,
+        "id": "38420292236ab0f1a79cab0061c7b531",
+        "label": "pulsar",
+        "new": false,
+        "period": 3,
+        "rule": "B3/S23",
+        "score": 47.7,
+        "soup": 877,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "b1ce71f1ab83785f6d147f445f56acb2",
+        "label": "still life 14c #b1ce71",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.0,
+        "soup": 873,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "0ce0c6d26fe4517a1d597b905389c39b",
+        "label": "still life 16c #0ce0c6",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 28.0,
+        "soup": 813,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "266db0f937d6d921d494acf736e88791",
+        "label": "still life 12c #266db0",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 26.0,
+        "soup": 586,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "07357a31321fcd89ce5e2ee733b9e879",
+        "label": "still life 10c #07357a",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 25.0,
+        "soup": 560,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "8cae5af4a207f512f4f1575edff69583",
+        "label": "still life 9c #8cae5a",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.5,
+        "soup": 424,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "fcc17ecdc8daad5462ed2dac092962ab",
+        "label": "still life 8c #fcc17e",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.0,
+        "soup": 276,
+        "tiling": "Square"
+      },
+      {
+        "class": "spaceship",
+        "group": 0,
+        "id": "6dd55e69689ba784aff448b7dbbc9328",
+        "label": "LWSS",
+        "new": false,
+        "period": 4,
+        "rule": "B3/S23",
+        "score": 84.1,
+        "soup": 244,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "e9e58d494a7bc815b2c30eed2e18c6f0",
+        "label": "still life 14c #e9e58d",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.0,
+        "soup": 201,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "9b99f0405fe4ce5c883d06241171fac6",
+        "label": "still life 8c #9b99f0",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.0,
+        "soup": 172,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "9d035c1014869bfb702f6afbcabfcb17",
+        "label": "aircraft carrier",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 23.0,
+        "soup": 159,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "726d9f101c90abbb38b52ed691ef31f3",
+        "label": "still life 11c #726d9f",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 25.5,
+        "soup": 142,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "b20cf1816c080db0f735b9f82659f870",
+        "label": "mango",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 24.0,
+        "soup": 133,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "dfd22d6aa16676a219b75a6394a9c037",
+        "label": "eater 1",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 23.5,
+        "soup": 123,
+        "tiling": "Square"
+      },
+      {
+        "class": "oscillator",
+        "group": 0,
+        "id": "299d09888b99cae4935e015f36b49976",
+        "label": "beacon",
+        "new": false,
+        "period": 2,
+        "rule": "B3/S23",
+        "score": 39.0,
+        "soup": 61,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "e213607ba80479d6fa2ba28d6661337c",
+        "label": "still life 14c #e21360",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.0,
+        "soup": 46,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "e26450555beaf414bf5d9cbc2bb928cb",
+        "label": "barge",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 23.0,
+        "soup": 20,
+        "tiling": "Square"
+      },
+      {
+        "class": "oscillator",
+        "group": 0,
+        "id": "5b7cf8446ec16c81a9bca7374c8eb907",
+        "label": "toad",
+        "new": false,
+        "period": 2,
+        "rule": "B3/S23",
+        "score": 38.8,
+        "soup": 20,
+        "tiling": "Square"
+      },
+      {
+        "class": "still life",
+        "group": 0,
+        "id": "7fcf0f5457ec631337730e4857233de8",
+        "label": "tub",
+        "new": false,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 22.0,
+        "soup": 9,
+        "tiling": "Square"
+      }
+    ],
+    "objects": 212675,
+    "settled": 9913,
+    "soups_done": 9971,
+    "soups_per_s": 1952.3,
+    "soups_total": 50000000,
+    "status": "paused",
+    "threads": 8,
+    "unsettled": 0,
+    "updated": "2026-11-16T06:03:33Z"
+  },
+  "resumable": true,
+  "spec": {
+    "label": "f9-in-server",
+    "margin": 0,
+    "max_gens": 20000,
+    "max_period": 64,
+    "pop_cap": 0,
+    "rules": [
+      "B3/S23"
+    ],
+    "seed": 1,
+    "soup": {
+      "density": 0.5,
+      "h": 16,
+      "shape": "rect",
+      "w": 16
+    },
+    "soups": 50000000,
+    "store": {
+      "max_cells": 64,
+      "max_volume": 4000,
+      "min_seen": 2
+    },
+    "tilings": [
+      {
+        "boundary": "dead",
+        "family": "square"
+      }
+    ]
+  },
+  "stale": false,
+  "status": "paused",
+  "title": "f9-in-server: B3/S23 on Square, 16x16 soups at 0.5",
+  "total": 50000000,
+  "unit": "soups",
+  "updated": "2026-11-16T06:03:33Z",
+  "waited_s": null
+}
+
+exit 0
+$ jetcarp jobs list
+    5  hunt     paused   2026-11-16T06:03:28Z  hunt 5: 9,971/50,000,000 soups, 1952 soups/s, 212,675 objects (ships 18,890, osc 61,736, still 132,049), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)
+    4  pile     done     2026-11-16T06:03:24Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T06:02:21Z  explore 3: 13,337 runs (223/s), 1,510 elites in 715 niches (81 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    2  hunt     paused   2026-11-16T06:02:15Z  hunt 2: 797,289/10,000,000 soups, 11994 soups/s, 5,525,193 objects (ships 435,417, osc 823,628, still 4,266,148), 100 distinct, 100 new | newest: still life 13c #01469a (B36/S23)
+    1  hunt     done     2026-11-16T06:02:14Z  hunt 1: 3,000/3,000 soups, 2892 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+5 job(s); 0 running
+
+exit 0
+$ jetcarp jobs wait 5 --timeout 5
+hunt 5 is paused
+  hunt 5: 9,971/50,000,000 soups, 1952 soups/s, 212,675 objects (ships 18,890, osc 61,736, still 132,049), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)
+  `jetcarp jobs resume 5` resumes it exactly
+
+exit 3

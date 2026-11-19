@@ -1,0 +1,54 @@
+{
+  "jetcarp_version": "0.4.2-rc.3",
+  "format": 1,
+  "name": "Empty world",
+  "description": "Add a CA from the panel on the left.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 256,
+        "h": 256
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Life",
+      "rule": "B3/S23",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "commands": [
+    {
+      "op": "jump",
+      "gens": 1000
+    }
+  ],
+  "view": {
+    "center": [
+      128.0,
+      128.0
+    ],
+    "speed": 14.0,
+    "zoom": 3.25390625
+  },
+  "record": {
+    "generation": 1000,
+    "hash": "a1469f7cce19fa99",
+    "jetcarp_version": "0.4.2-rc.3",
+    "dead_boundary": false
+  }
+}

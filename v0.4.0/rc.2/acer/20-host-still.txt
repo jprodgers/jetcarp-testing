@@ -1,0 +1,25 @@
+> jetcarp host still on   (07:50:59)
+running, pid 24464, up 143.0s, 275 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 561 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 556 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)
+
+> jetcarp host stop   (07:51:00)
+stopped
+(exit 0, 07:51:00)
+
+> jetcarp host status
+Error: the JETCARP background host is not running
+(exit 1)
+
+> jetcarp host still off   (07:51:50)
+saved; the host is not running
+put the desktop's own picture back
+(exit 0)
+WallPaper: C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper
+Style: 10
+Transcoded sha256: 85ff3bb2371a84655aedf69d9f7c11d697f23b21efc221f7f2443a62edb767ac
+stills left: 

@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "AntiLife",
+  "description": "Conway's Life in negative: swap live and dead and every Life pattern behaves the same.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "15250696026773726163",
+  "cas": [
+    {
+      "id": 1,
+      "name": "AntiLife",
+      "rule": "B0123478/S01234678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ink",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "a375b273130e7a56",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

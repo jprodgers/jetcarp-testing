@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA halves buckle into islands (triangles)",
+  "description": "Starts as two halves; the front buckles and pinches off islands. Found by a JACA rule search.",
+  "tiling": {
+    "family": "triangle",
+    "size": {
+      "rect": {
+        "w": 124,
+        "h": 97
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 26,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B2,3,5,9,12/S0,1,2,5,8,11",
+      "rule": "JACA B2,3,5,9,12/S0,1,2,5,8,11",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Neon",
+      "seed": {
+        "halves": {
+          "density": 0.45
+        }
+      },
+      "palette_neg": "Synthwave"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "c32d21242e919304",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

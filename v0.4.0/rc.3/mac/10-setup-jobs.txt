@@ -1,0 +1,336 @@
+# For the main session's request (NOTES.md 2026-11-13 early). Recorded 2026-11-13 00:21:37 -0500, the app still open since 23:17 (Researcher setup done 23:34).
+
+$ jetcarp setup --status --json
+{
+  "bundled": [
+    {
+      "ants": 8,
+      "bytes": 1530826,
+      "description": "Starter content for JETCARP, picked by Jimmie Rodgers: 79 Quick Start entries, with the 26 pattern records and 8 ant records they show. 36 come from the atlas of an exploratory search over every tiling and rule family. The other 43 are top finds: 18 spaceships and 8 oscillators from soup searches on Archimedean, k-uniform, isohedral and aperiodic tilings, 8 ant and turmite highways, 7 sandpile identities, and 2 hat gliders (James Edmond's glider B, and a table JETCARP's evolutionary search found that runs exactly like it). The 63 built-in examples picked with them are featured in JETCARP itself.",
+      "error": null,
+      "feed": "jetcarp-starter",
+      "imported": true,
+      "manifest": "sha256:a78bbe8d5ee4cb18303e3eca9170b1a868dafbe78d3031179ba5f71ad29102ba",
+      "path": "/Users/Jimmie/.local/lib/jetcarp/packs/jetcarp-starter",
+      "patterns": 26,
+      "quickstart": 79,
+      "searches": 0,
+      "starter": true,
+      "title": "JETCARP starter pack",
+      "version_label": "2026.11"
+    }
+  ],
+  "counts": {
+    "ants": 8,
+    "jobs": 23,
+    "patterns": 26,
+    "quickstart": {
+      "atlas": 1070,
+      "builtin": 364,
+      "pack": 79
+    }
+  },
+  "data_source": "paths.json",
+  "done": true,
+  "folders": {
+    "bundled_packs": "/Users/Jimmie/.local/lib/jetcarp/packs",
+    "data": "/Users/Jimmie/Documents/jetcarp-data",
+    "output": "/Users/Jimmie/Pictures/JETCARP",
+    "settings": "/Users/Jimmie/Library/Application Support/jetcarp"
+  },
+  "free_bytes": 831662608384,
+  "gpu": {
+    "name": "Apple M2 Max",
+    "note": "",
+    "usable": true
+  },
+  "jobs": [
+    {
+      "done": 1,
+      "fraction": 1.0,
+      "here": false,
+      "job": 1,
+      "kind": "pack_import",
+      "label": "setup: JETCARP starter pack",
+      "line": "pack import 1: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs",
+      "stale": false,
+      "status": "done"
+    },
+    {
+      "done": 33335,
+      "fraction": 1.0,
+      "here": false,
+      "job": 2,
+      "kind": "explore",
+      "label": "Quick Start build",
+      "line": "Quick Start build (explore 2): 1,070 atlas entries published (1070 new, 0 updated, 0 removed); 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal",
+      "stale": false,
+      "status": "done"
+    }
+  ],
+  "library": "/Users/Jimmie/Documents/jetcarp-data/library.sqlite",
+  "profiles": [
+    {
+      "build_optional": false,
+      "bytes": 0,
+      "chooses_data_dir": false,
+      "chooses_packs": false,
+      "cost": "no extra disk space or time",
+      "desktop_offers": true,
+      "minutes": 0.0,
+      "name": "desktop-art",
+      "packs": "none",
+      "quickstart_minutes": 0.0,
+      "summary": "Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver.",
+      "title": "Desktop art"
+    },
+    {
+      "build_optional": true,
+      "bytes": 80000000,
+      "chooses_data_dir": false,
+      "chooses_packs": false,
+      "cost": "about 80 MB and 11 minutes",
+      "desktop_offers": false,
+      "minutes": 10.5,
+      "name": "explorer",
+      "packs": "starter",
+      "quickstart_minutes": 10.0,
+      "summary": "The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own.",
+      "title": "Explorer"
+    },
+    {
+      "build_optional": false,
+      "bytes": 240000000,
+      "chooses_data_dir": true,
+      "chooses_packs": true,
+      "cost": "about 240 MB and 31 minutes, plus the packs you add",
+      "desktop_offers": false,
+      "minutes": 30.5,
+      "name": "researcher",
+      "packs": "starter",
+      "quickstart_minutes": 30.0,
+      "summary": "For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search.",
+      "title": "Researcher"
+    },
+    {
+      "build_optional": false,
+      "bytes": 480000000,
+      "chooses_data_dir": true,
+      "chooses_packs": true,
+      "cost": "about 480 MB and 61 minutes, plus the packs you add",
+      "desktop_offers": true,
+      "minutes": 60.5,
+      "name": "everything",
+      "packs": "all",
+      "quickstart_minutes": 60.0,
+      "summary": "Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers.",
+      "title": "Everything"
+    },
+    {
+      "build_optional": false,
+      "bytes": 0,
+      "chooses_data_dir": false,
+      "chooses_packs": false,
+      "cost": "no extra disk space or time",
+      "desktop_offers": false,
+      "minutes": 0.0,
+      "name": "blank-slate",
+      "packs": "none",
+      "quickstart_minutes": 0.0,
+      "summary": "Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built.",
+      "title": "Blank slate"
+    }
+  ],
+  "record": {
+    "data_dir": "/Users/Jimmie/Documents/jetcarp-data",
+    "date": "2026-11-13T04:23:21Z",
+    "jetcarp": "0.4.0-rc.3",
+    "jobs": [
+      1,
+      2
+    ],
+    "library": "/Users/Jimmie/Documents/jetcarp-data/library.sqlite",
+    "packs": [
+      "JETCARP starter pack"
+    ],
+    "profile": "researcher",
+    "quickstart_minutes": 10.0,
+    "version": 1
+  }
+}
+
+
+$ cat ~/Library/Application\ Support/jetcarp/setup.json
+{
+  "version": 1,
+  "profile": "researcher",
+  "date": "2026-11-13T04:23:21Z",
+  "jetcarp": "0.4.0-rc.3",
+  "data_dir": "/Users/Jimmie/Documents/jetcarp-data",
+  "library": "/Users/Jimmie/Documents/jetcarp-data/library.sqlite",
+  "quickstart_minutes": 10.0,
+  "packs": [
+    "JETCARP starter pack"
+  ],
+  "jobs": [
+    1,
+    2
+  ]
+}
+
+
+$ jetcarp jobs status 2 --json | head -c 3000
+{
+  "catalog": "/Users/Jimmie/Documents/jetcarp-data/library.sqlite",
+  "counters": [
+    [
+      "searched",
+      "10 of 10 min"
+    ],
+    [
+      "published",
+      "1,070 entries"
+    ],
+    [
+      "elites",
+      "7,504"
+    ],
+    [
+      "niches",
+      "4,069"
+    ],
+    [
+      "confirmed elites",
+      "233"
+    ],
+    [
+      "tilings tried",
+      "46 of 1,359"
+    ],
+    [
+      "backend",
+      "Apple M2 Max, Metal"
+    ]
+  ],
+  "created": "2026-11-13T04:23:21Z",
+  "deterministic": false,
+  "done": 33335,
+  "elapsed_s": 639.2537145,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": "2026-11-13T04:34:02Z",
+  "here": false,
+  "job": 2,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "Quick Start build",
+  "line": "Quick Start build (explore 2): 1,070 atlas entries published (1070 new, 0 updated, 0 removed); 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal",
+  "per_s": 52.562230523340936,
+  "progress": {
+    "backend": "Apple M2 Max, Metal",
+    "build_minutes": 10.0,
+    "capped": 61,
+    "confirmed": 1002,
+    "confirmed_elites": 233,
+    "cores": 12,
+    "elapsed_s": 639.2537145,
+    "elites": 7504,
+    "error": null,
+    "families": [
+      {
+        "best": 1.4556270837783813,
+        "elites": 2106,
+        "family": "life_like",
+        "mean": 0.2866082478538673,
+        "runs": 10509
+      },
+      {
+        "best": 2.1169843673706055,
+        "elites": 1727,
+        "family": "generations",
+        "mean": 0.548383669759,
+        "runs": 8258
+      },
+      {
+        "best": 2.198603630065918,
+        "elites": 361,
+        "family": "ltl",
+        "mean": 0.3267977205897951,
+        "runs": 3295
+      },
+      {
+        "best": 2.145831346511841,
+        "elites": 860,
+        "family": "jaca",
+        "mean": 0.5377479287422007,
+        "runs": 3140
+      },
+      {
+        "best": 2.0961127281188965,
+        "elites": 725,
+        "family": "priority",
+        "mean": 0.3192386261245998,
+        "runs": 2356
+      },
+      {
+        "best": 2.1207191944122314,
+        "elites": 414,
+        "family": "rps",
+        "mean": 0.4358369034884671,
+        "runs": 1235
+      },
+      {
+        "best": 2.0782968997955322,
+        "elites": 410,
+        "family": "cyclic",
+        "mean": 0.4096371862829688,
+        "runs": 1184
+      },
+      {
+        "best": 2.2705836296081543,
+        "elites": 262,
+        "family": "hodgepodge",
+        "mean": 1.0943450859804515,
+        "runs": 1150
+      },
+      {
+        "best": 2.62451171875,
+        "elites": 179,
+        "family": "greenberg_hastings",
+        "mean": 0.5453861063184003,
+        "runs": 1102
+      },
+      {
+        "best": 1.0833097696304321,
+        "elites": 49,
+        "family": "wireworld",
+        "mean": 0.4747263182819422,
+        "runs": 224
+      },
+      {
+        "best": 1.3737883567810059,
+        "elites": 19,
+        "family": "spectre_glider",
+        "mean": 0.314544
+
+$ jetcarp setup --status   (text, for comparison)
+setup: Researcher on 2026-11-13 04:23 UTC (JETCARP 0.4.0-rc.3)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Documents/jetcarp-data (chosen in setup: paths.json), 831.7 GB free
+  library:  /Users/Jimmie/Documents/jetcarp-data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /Users/Jimmie/.local/lib/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack, imported
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 26 patterns, 8 ant runs, 23 jobs; Quick Start entries: 364 built in, 79 from packs, 1,070 from searches
+setup's jobs:
+  pack import 1: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs (done)
+  Quick Start build (explore 2): 1,070 atlas entries published (1070 new, 0 updated, 0 removed); 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal (done)
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 80 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)

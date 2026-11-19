@@ -1,0 +1,35 @@
+﻿# Step 5: the old way. 2026-11-12 04:46, Acer, jetcarp c5a58fc. Same folders as 02.
+
+> Start-Process -FilePath .\target\release\jetcarpw.exe -ArgumentList host,serve,--headless -PassThru
+started pid 3600
+
+ProcessId ParentProcessId CommandLine
+     3600            1736 "...\target\release\jetcarpw.exe" host serve --headless
+     2112            3600 "...\target\release\jetcarp.exe" host serve --headless
+
+--- 4:46:17 AM host status
+running, pid 2112, up 12.0s, 379 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Life (1 of 7) · generation 286 · 102240 cells · window
+caption: off
+exit 0
+--- 4:46:42 AM host status
+running, pid 2112, up 37.0s, 380 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Life (1 of 7) · generation 1042 · 102240 cells · window
+caption: off
+exit 0
+
+--- 4:46:50 AM host stop
+stopped
+exit 0
+--- 4:46:57 AM jetcarp processes left: 0
+
+--- watcher (PowerShell holding a handle on each process)
+04:46:52.808 jetcarp 2112 ended, exit code 0 (0x00000000)
+04:46:52.809 jetcarpw 3600 ended, exit code 0 (0x00000000)
+
+Result: lives, and stops cleanly (exit 0). On WARP the same start crashes like every other way
+(08-warp-matrix.txt, C and D).
+
+Aside, from reading crates/jetcarp/src/bin/jetcarpw.rs (not observed): jetcarpw.exe returns
+its child's code as `code.clamp(0, 255)`, and 0xC0000005 is negative as an i32, so a host that
+crashes makes jetcarpw exit with 0. The launcher hides a crash.

@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S34 on 3.4.6.4 rhombitrihexagonal",
+  "description": "Hexagons ringed by squares, triangles in the gaps. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "rhombitrihex",
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 117,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S34",
+      "rule": "B2/S34",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "ccd4c2e0ad210a7a",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

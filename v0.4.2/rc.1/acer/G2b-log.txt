@@ -1,0 +1,50 @@
+﻿
+19:34:56 src at c74c357 Tune test: a sweep may stop early after a size far over the limits
+19:37:17 cargo test UHD vulkan: exit 0 in 2.4 min
+19:37:17     test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+19:37:17     test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 4.21s
+19:37:17     test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 23.42s
+19:37:17     test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 69.60s
+19:37:17     test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.23s
+19:37:17     test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.75s
+19:37:17     test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.23s
+19:37:17     test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+19:37:17     test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+19:37:22     adapter: GPU tests on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+19:40:28 cargo test UHD dx12: exit 0 in 3.1 min
+19:40:28     test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+19:40:28     test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 6.63s
+19:40:28     test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 31.52s
+19:40:28     test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 76.51s
+19:40:28     test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.96s
+19:40:28     test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 43.34s
+19:40:28     test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.11s
+19:40:28     test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+19:40:28     test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+19:40:38     adapter: GPU tests on Intel(R) UHD Graphics (31.0.101.4146), Dx12
+19:46:10 cargo build -p jetcarp: exit 0 in 5.5 min
+19:46:12 built: jetcarp 0.4.2-rc.1
+19:46:24 doctor UHD vulkan: exit 0 in 12.2 s
+19:46:24     GPU: auto, the adapter named UHD (JETCARP_GPU=UHD)
+19:46:24     display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+19:46:24     self-test: passed (916 ms): 59 world rules and 33 explore batches matched the CPU
+19:46:24     compute: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+19:46:24     self-test: passed (916 ms): 59 world rules and 33 explore batches matched the CPU
+19:46:25 doctor UHD dx12: exit 0 in 0.5 s
+19:46:25     GPU: auto, the adapter named UHD (JETCARP_GPU=UHD)
+19:46:25     display: Intel(R) UHD Graphics (31.0.101.4146), Dx12 (integrated)
+19:46:25     self-test: passed (4184 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+19:46:25     compute: Intel(R) UHD Graphics (31.0.101.4146), Dx12 (integrated)
+19:46:25     self-test: passed (4184 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+19:46:25 parity set: 371 scenes; drop subset: 7 (drop:sq40x30-drop0, drop:sq40x30-drop1, drop:sq40x30-drop7, drop:sq40x30-touch-drop1, drop:hex30x24-drop2, drop:sq140-steps20-drop1, drop:sq40x30-saturate)
+19:46:33 parity G2b-drops-uhd-vulkan.csv (WGPU_BACKEND=) in 0.1 min:
+19:46:33     7 scenes: CPU matches 7, GPU matches 7; all 300 generations on the GPU in 7
+19:46:54 parity G2b-drops-uhd-dx12.csv (WGPU_BACKEND=dx12) in 0.4 min:
+19:46:54     7 scenes: CPU matches 7, GPU matches 7; all 300 generations on the GPU in 7
+19:54:01 parity G2b-all-uhd-vulkan.csv (WGPU_BACKEND=) in 7.1 min:
+19:54:01     371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+19:54:09 parity drops with rc.1 (UHD Vulkan):
+19:54:09     dbcd1af4","cpu_ok":true,"gpu_ok":false,"gpu_gens":300,"cpu_s":0.096,"gpu_s":0.614,"gpu_backend":"gpu (Intel(R) UHD 
+19:54:09     Graphics (Intel Corporation), Vulkan)"}
+19:54:09     7 scenes: CPU matches 7, GPU matches 1; all 300 generations on the GPU in 7
+19:54:09 done

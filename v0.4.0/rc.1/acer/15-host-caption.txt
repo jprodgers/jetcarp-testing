@@ -1,0 +1,15 @@
+> jetcarp host caption on   (00:02:13)
+running, pid 20848, up 251.0s, 283 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 7424 · 129600 cells
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+(exit 0)
+
+Jimmie: "It's readable, but it's behind the menu bar and cut off." (bottom-left, under the taskbar)
+
+> jetcarp host caption off   (00:03:16)
+running, pid 20848, up 313.0s, 283 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 22432 · 129600 cells
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+(exit 0)

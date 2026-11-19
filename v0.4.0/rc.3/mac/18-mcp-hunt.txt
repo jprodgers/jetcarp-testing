@@ -1,0 +1,30 @@
+# The hunt Claude Desktop ran through JETCARP's MCP tools (job 24 in the Researcher library), 00:33
+$ jetcarp jobs status 24 --library ~/Documents/jetcarp-data
+hunt 24: 20,000/20,000 soups, 2087 soups/s, 430,384 objects (ships 38,188, osc 124,582, still 267,614), 50 distinct, 50 new | newest: still life 12c #bf73c4 (B3/S23)
+  status done, 10 s run, 19892 settled, 52 died, 56 exploded, 0 unsettled
+  B3/S23 on Square: 20000 soups, 430384 objects (oscillator 124582, spaceship 38188, still life 267614), 50 distinct, 50 new
+  newest finds:
+    bf73c46c186561ca3b75a3884d0b5ab5  still life 12c #bf73c4             B3/S23     Square soup 17973  (new to the catalog)
+    9b8506f0c92bc91d9df0492db64b6124  still life 12c #9b8506             B3/S23     Square soup 16764  (new to the catalog)
+    917e6f33202346c9512b19aa8faa32b3  still life 10c #917e6f             B3/S23     Square soup 14630  (new to the catalog)
+    8df8d769457729de0b6d5ee6f12a08d5  still life 7c #8df8d7              B3/S23     Square soup 13732  (new to the catalog)
+    f241c8e566137cde275909e216cce670  still life 9c #f241c8              B3/S23     Square soup 12649  (new to the catalog)
+    48e6263a40eea259bcb22518b44d0c95  still life 8c #48e626              B3/S23     Square soup 12137  (new to the catalog)
+    fcd376611d86dc6548400951630b5532  still life 10c #fcd376             B3/S23     Square soup 10823  (new to the catalog)
+    5cd81b290a7ad4bd0d827385a78bcd1a  still life 14c #5cd81b             B3/S23     Square soup 10234  (new to the catalog)
+    ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+    e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23     Square soup 6114  (new to the catalog)
+
+$ jetcarp library list --class spaceship (Researcher library)
+catalog: /Users/Jimmie/Documents/jetcarp-data/library.sqlite (22 shown of 22 matching)
+a333894bd32cb3e2d1f0d2776637e7f9  c/2 orthogonal spaceship 18c #a33~ B2/S34       4.8.8 truncated square     p24    18c  seen 1     score  95.6  new  c/2 orthogonal
+6c774748e73f036e09683a7226f475ed  c/53 orthogonal spaceship 20c #6c~ B3,10,12,14~ [3^6; 3^4.6; 3^2.6^2] #1 ~ p53    20c  seen 4     score  90.4  new  c/53 orthogonal
+17453dab88a35cd7866af0f6937ea082  c/37 orthogonal spaceship 18c #17~ B4,5,9,10,1~ [3^4.6; 3^4.6; 3.6.3.6] #~ p37    18c  seen 8     score  86.8  new  c/37 orthogonal
+b3726ba10f9bf58158a454e3e1c7927c  c/44 orthogonal spaceship 11c #b3~ B4,5,6,7,8,~ [3^6; 3^3.4^2; 4^4] #4 (k~ p44    11c  seen 35    score  85.7  new  c/44 orthogonal
+57a0326cfcf334c1b31703df432c5f0b  c/14 orthogonal spaceship 8c #57a~ B3,10,12/S2~ 3.4.6.4 rhombitrihexagonal p42     8c  seen 63    score  84.7  new  c/14 orthogonal
+b79fe209ae0f269e744846d924b52872  c/32 orthogonal spaceship 14c #b7~ B4,5,6,7,8,~ [3^6; 3^3.4^2; 4^4] #4 (k~ p32    14c  seen 30    score  84.3  new  c/32 orthogonal
+d3cd39516cb8b868ed5973565d0fcbde  c/27 orthogonal spaceship 8c #d3c~ B3,7,11,12,~ 3.3.3.3.6 snub hexagonal   p27     8c  seen 30    score  82.6  new  c/27 orthogonal
+3e30b9ff0b6b2a7d66fd05e5bfaada83  c/4 orthogonal spaceship 17c #3e3~ B4,6,9,10/S~ 3.3.3.4.4 elongated trian~ p8     17c  seen 2     score  81.6  new  c/4 orthogonal
+2c3cee6705e49ecf1ee4caafedaf6a41  c/22 orthogonal spaceship 10c #2c~ B3,7,10,12,~ [3^6; 3^6; 3^4.6] #1 (k3-~ p22    10c  seen 359   score  80.7  new  c/22 orthogonal
+768974847f51f1c3360181e84f95ded6  c/2 orthogonal spaceship 18c #768~ B2/S34       4.8.8 truncated square     p16    18c  seen 271   score  79.9  new  c/2 orthogonal
+7ff20168bce5fd6718d86a63123f7f84  c/16 orthogonal spaceship 8c #7ff~ B3,4,7,8,11~ [3^2.4.12; 3.4.3.12; 3.12~ p16     8c  seen 466   score  78.5  new  c/16 orthogonal

@@ -1,0 +1,14 @@
+$ jetcarp verify 16-export-view.png
+Error: could not read 16-export-view.png: stream did not contain valid UTF-8
+exit 1
+$ jetcarp verify 16-export-world-full.png
+Error: could not read 16-export-world-full.png: stream did not contain valid UTF-8
+exit 1
+
+# jetcarp verify doesn't read a PNG; the scene embedded in each PNG (iTXt jetcarp:scene), extracted and verified:
+$ jetcarp verify <scene from 16-export-view.png>   (the PNG records generation 145, hash e9b5f31726b3e41e)
+ok: generation 145 hash e9b5f31726b3e41e
+exit 0
+$ jetcarp verify <scene from 16-export-world-full.png>   (the PNG records generation 1090, hash 7a27149159fbce5e)
+ok: generation 1090 hash 7a27149159fbce5e
+exit 0

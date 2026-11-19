@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Blinkers",
+  "description": "Life-like rule B345/S2.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "6304286141636339887",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Blinkers",
+      "rule": "B345/S2",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "aace4037e522cbb0",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

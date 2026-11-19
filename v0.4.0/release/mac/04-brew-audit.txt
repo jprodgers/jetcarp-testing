@@ -1,0 +1,74 @@
+# H2 check 5: brew audit --strict --online jprodgers/jetcarp/jetcarp, 2026-11-13 07:36:57 EST
+
+Fetching gem metadata from https://rubygems.org/.........
+Fetching erubi 1.13.1
+Fetching ast 2.4.3
+Fetching json 3.1.0
+Fetching language_server-protocol 3.17.0.6
+Fetching lint_roller 1.1.0
+Fetching parallel 2.3.0
+Installing json 3.1.0 with native extensions
+Fetching racc 1.8.1
+Fetching parser 3.3.13.0
+Fetching rainbow 3.1.1
+Fetching tsort 0.2.0
+Installing racc 1.8.1 with native extensions
+Fetching rbs 4.2.0
+Fetching rbi 0.5.0
+Fetching regexp_parser 2.13.1
+Fetching rexml 3.4.4
+Fetching rubocop-ast 1.50.0
+Fetching ruby-progressbar 1.13.0
+Fetching unicode-emoji 4.3.0
+Fetching unicode-display_width 3.3.0
+Fetching rubocop 1.92.2
+Fetching rubocop-md 2.0.4
+Fetching rubocop-performance 1.27.0
+Fetching rubocop-rspec 3.10.2
+Fetching sorbet-static 0.6.13610 (universal-darwin)
+Fetching sorbet 0.6.13610
+Fetching sorbet-static-and-runtime 0.6.13610
+Fetching thor 1.5.0
+Fetching spoom 1.8.13
+Fetching rubocop-sorbet 0.17.2
+Fetching rubydex 0.4.4 (arm64-darwin)
+Fetching test-prof 1.6.4
+Installing ast 2.4.3
+Installing erubi 1.13.1
+Installing language_server-protocol 3.17.0.6
+Installing lint_roller 1.1.0
+Installing parallel 2.3.0
+Installing rainbow 3.1.1
+Installing tsort 0.2.0
+Installing parser 3.3.13.0
+Installing rbi 0.5.0
+Installing regexp_parser 2.13.1
+Installing rubocop-ast 1.50.0
+Installing rbs 4.2.0 with native extensions
+Installing rexml 3.4.4
+Installing ruby-progressbar 1.13.0
+Installing unicode-display_width 3.3.0
+Installing unicode-emoji 4.3.0
+Installing rubocop-md 2.0.4
+Installing rubocop-performance 1.27.0
+Installing rubocop-rspec 3.10.2
+Installing rubocop 1.92.2
+Installing sorbet 0.6.13610
+Installing thor 1.5.0
+Installing sorbet-static-and-runtime 0.6.13610
+Installing spoom 1.8.13
+Installing rubocop-sorbet 0.17.2
+Installing test-prof 1.6.4
+Installing rubydex 0.4.4 (arm64-darwin)
+Installing sorbet-static 0.6.13610 (universal-darwin)
+Bundle complete! 38 Gemfile dependencies, 41 gems now installed.
+Bundled gems are installed into `../../../../../opt/homebrew/Library/Homebrew/vendor/bundle`
+3 installed gems you directly depend on are looking for funding.
+  Run `bundle fund` for details
+Warning: obsolete configuration found in the `rubocop-md` plugin:
+obsolete parameter `IgnoredPatterns` (for `Layout/LineLength`) found in /opt/homebrew/Library/Homebrew/vendor/bundle/ruby/4.0.0/gems/rubocop-md-2.0.4/config/default.yml
+`IgnoredPatterns` has been renamed to `AllowedPatterns`.
+Error: 1 problem in 1 formula detected.
+jprodgers/jetcarp/jetcarp
+  * Stable: `version 0.4.0` is redundant with version scanned from URL
+(exit 1)

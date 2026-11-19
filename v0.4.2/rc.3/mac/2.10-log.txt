@@ -1,0 +1,284 @@
+07:21:04 jetcarp jobs status 3 --json -> exit 0 in 0.1 s (1)
+        "screen_cells": 16000,
+        "screen_gens": 1024,
+        "seed": 0,
+        "started_with": {
+          "minutes": 6.0
+        },
+        "uuid": "294b906e-1384-4a76-9ba5-b012745e1747"
+      },
+      "stale": false,
+      "status": "paused",
+      "title": "smart-jaca: every tiling, jaca",
+      "total": null,
+      "unit": "runs",
+      "updated": "2026-11-16T07:14:08Z",
+      "waited_s": null
+    }
+07:21:05 job 3: uuid 294b906e-1384-4a76-9ba5-b012745e1747; .folder '', progress.folder /Users/Jimmie/jetcarp-rc-042c/data/searches/294b906e-1384-4a76-9ba5-b012745e1747; screened 24366 + confirmed 861; confirmed elites 173
+07:21:05 job 3's folder before the export: ./manifest.json 190531;./search.sqlite 12169216;
+07:21:05 jetcarp jobs runs 3 --limit 0 --format csv --out /Users/Jimmie/jetcarp-rc-042c/2.10/src-1.csv -> exit 0 in 0.2 s (2)
+    24366 run(s) of explore job 3 written to /Users/Jimmie/jetcarp-rc-042c/2.10/src-1.csv
+07:21:05 jetcarp jobs runs 3 --stage 2 --limit 0 --format csv --out /Users/Jimmie/jetcarp-rc-042c/2.10/src-2.csv -> exit 0 in 0.1 s (3)
+    861 run(s) of explore job 3 written to /Users/Jimmie/jetcarp-rc-042c/2.10/src-2.csv
+07:21:05 job 3 runs: stage 1 24366, stage 2 861
+07:21:05 jetcarp pack key --name RC tester (Mac) -> exit 0 in 0.0 s (4)
+    made publisher key SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY
+      ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcUILXjUentpcznWnY+40V1lMXLt+JNZp9qs6smAiyk jetcarp publisher
+      file /Users/Jimmie/jetcarp-rc-042c/config/pack/publisher_ed25519
+      named RC tester (Mac)
+07:21:05 jetcarp pack export --to /Users/Jimmie/jetcarp-rc-042c/M10-pack --feed rc-mac --title rc.3 test, Mac --search 294b906e-1384-4a76-9ba5-b012745e1747 --no-media -> exit 0 in 0.4 s (5)
+    exported sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d into /Users/Jimmie/jetcarp-rc-042c/M10-pack: 28 files, 2497748 bytes
+    the version was published first into /Users/Jimmie/jetcarp-rc-042c/.M10-pack.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /Users/Jimmie/jetcarp-rc-042c/.M10-pack.store` does (then `jetcarp pack export --from /Users/Jimmie/jetcarp-rc-042c/.M10-pack.store` lays it out)
+    explore job 3 (search 294b906e-1384-4a76-9ba5-b012745e1747): sealed its newest 25,227 runs first, so the pack carries every run
+    publishing feed rc-mac (version 1) into /Users/Jimmie/jetcarp-rc-042c/.M10-pack.store
+    134 patterns read, 134 new rows
+    search 294b906e-1384-4a76-9ba5-b012745e1747: copying its segments
+    version sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d written
+07:21:05 pack: 2512 KiB in 27 files
+07:21:05 job 3's folder after the export: ./search.sqlite-wal 0;./search.sqlite-shm 32768;./manifest.json 190839;./runs/part-000001.parquet 2242433;./search.sqlite 12169216;
+07:21:06 jetcarp pack check /Users/Jimmie/jetcarp-rc-042c/M10-pack -> exit 0 in 0.1 s (6)
+    checked sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d (feed rc-mac, SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY RC tester (Mac), signed by its publisher)
+      12 objects checked (2347305 bytes)
+    sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d: feed rc-mac, by SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY (RC tester (Mac)), checking every object
+    reading verifications, sightings, provenance and annotations
+    checking ids and patterns (a check stores nothing)
+    checking sightings, ants, Quick Start entries, media and ratings
+07:21:07 jetcarp pack import /Users/Jimmie/jetcarp-rc-042c/M10-pack --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite -> exit 0 in 1.5 s (7)
+    imported sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d (feed rc-mac, SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY RC tester (Mac), signed by its publisher)
+      12 objects checked (2347305 bytes)
+      patterns: 134 added, 0 merged, 0 flagged needs_reverify
+      sightings 248, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+      verified again (sample): 134 of 134 passed, 0 skipped, 0 failed
+    sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d: feed rc-mac, by SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY (RC tester (Mac)), checking every object
+    reading verifications, sightings, provenance and annotations
+    checking ids and storing patterns
+    search 294b906e-1384-4a76-9ba5-b012745e1747: copying its segments and rebuilding its state
+    merging sightings
+    search 294b906e-1384-4a76-9ba5-b012745e1747: 25227 runs, 3901 elites in 1963 niches, rebuilt in 1.4 s
+07:21:07 jetcarp jobs list --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite -> exit 0 in 0.1 s (8)
+        6  hunt     done     2026-11-16T07:21:07Z  hunt 6: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+        5  hunt     done     2026-11-16T07:21:07Z  hunt 5: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+        4  hunt     done     2026-11-16T07:21:07Z  hunt 4: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+        3  hunt     done     2026-11-16T07:21:07Z  hunt 3: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+        2  hunt     done     2026-11-16T07:21:07Z  hunt 2: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+        1  explore  paused   2026-11-16T07:21:06Z  explore 1: 24,366 runs (0/s), 3,901 elites in 1,963 niches (173 of them confirmed), 18 of 1,359 tilings; not run here yet
+    6 job(s); 0 running
+07:21:07 jetcarp jobs list --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite --json -> exit 0 in 0.1 s (9)
+          "done": 24366,
+          "here": false,
+          "job": 1,
+          "kind": "explore",
+          "kind_label": "Explore",
+          "label": "smart-jaca",
+          "line": "explore 1: 24,366 runs (0/s), 3,901 elites in 1,963 niches (173 of them confirmed), 18 of 1,359 tilings; not run here yet",
+          "stale": false,
+          "status": "paused",
+          "title": "smart-jaca: every tiling, jaca",
+          "total": null,
+          "unit": "runs",
+          "updated": "2026-11-16T07:21:07Z"
+        }
+      ]
+    }
+07:21:07 imported explore job: 1
+07:21:07 jetcarp jobs status 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite -> exit 0 in 0.1 s (10)
+    explore 1: 24,366 runs (0/s), 3,901 elites in 1,963 niches (173 of them confirmed), 18 of 1,359 tilings; not run here yet
+      status paused, 0 s run over every session, 861 confirmation runs, 25,227 candidates tried, 0.00 GB of memory
+      family                     runs   mean   best  elites
+      jaca                     24,366   0.19   2.05   3,901
+      folder: /Users/Jimmie/jetcarp-rc-042c/2.10/import/searches/294b906e-1384-4a76-9ba5-b012745e1747
+      note: its working database was rebuilt from its sealed runs
+      `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)
+07:21:08 jetcarp jobs status 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite --json -> exit 0 in 0.1 s (11)
+            -0.2740892154203744
+          ]
+        },
+        "screen_cells": 16000,
+        "screen_gens": 1024,
+        "seed": 0,
+        "uuid": "294b906e-1384-4a76-9ba5-b012745e1747"
+      },
+      "stale": false,
+      "status": "paused",
+      "title": "smart-jaca: every tiling, jaca",
+      "total": null,
+      "unit": "runs",
+      "updated": "2026-11-16T07:21:07Z",
+      "waited_s": null
+    }
+07:21:08 jetcarp jobs runs 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite --measures sign_balance,sign_sorted --limit 5 -> exit 0 in 0.1 s (12)
+           id  score  fate    family             sign_balance sign_sorted
+          432   2.05  running jaca               0.4132 0.9442
+          915   1.97  running jaca               0.3798 0.8965
+        14304   1.81  running jaca               0.4708 0.9727
+        25003   1.77  running jaca               0.4846 0.9225
+        20322   1.77  running jaca               0.4604 0.9747
+    5 run(s) of explore job 1
+07:21:08 jetcarp jobs runs 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite --limit 0 --format csv --out /Users/Jimmie/jetcarp-rc-042c/2.10/imp-1.csv -> exit 0 in 0.2 s (13)
+    24366 run(s) of explore job 1 written to /Users/Jimmie/jetcarp-rc-042c/2.10/imp-1.csv
+07:21:08 jetcarp jobs runs 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite --stage 2 --limit 0 --format csv --out /Users/Jimmie/jetcarp-rc-042c/2.10/imp-2.csv -> exit 0 in 0.1 s (14)
+    861 run(s) of explore job 1 written to /Users/Jimmie/jetcarp-rc-042c/2.10/imp-2.csv
+07:21:08 imported runs: stage 1 24366, stage 2 861
+07:21:08 same rows (all columns but the id): stage 1 True; stage 2 True
+07:21:08 R #54: confirmed elites, search 173, import 173
+07:21:10 jetcarp search explore --families life_like --minutes 3 --detach --label running-export -> exit 0 in 1.4 s (15)
+    explore search job 10 started (detached) in /Users/Jimmie/jetcarp-rc-042c/data/library.sqlite
+    explore 10: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+07:21:10 running search: job 10
+07:21:10 jetcarp jobs status 10 --json -> exit 0 in 0.1 s (16)
+        "screen_cells": 16000,
+        "screen_gens": 1024,
+        "seed": 0,
+        "started_with": {
+          "minutes": 3.0
+        },
+        "uuid": "837be89d-9e74-417b-8e64-6e3ac4e69c0c"
+      },
+      "stale": false,
+      "status": "running",
+      "title": "running-export: every tiling, life_like",
+      "total": null,
+      "unit": "runs",
+      "updated": "2026-11-16T07:21:10Z",
+      "waited_s": null
+    }
+07:21:10 job 10 at once: status running, runs 
+07:21:10 jetcarp pack export --to /Users/Jimmie/jetcarp-rc-042c/M10-running-empty --feed rc-mac-running --search 837be89d-9e74-417b-8e64-6e3ac4e69c0c --no-media -> exit 1 in 0.4 s (17)
+    Error: explore job 10 is running, and the pack would leave out every run it stores from now on
+    stop it first (jobs stop), then publish
+07:21:10 M10-running-empty exists afterwards: no
+07:21:51 jetcarp jobs status 10 --json -> exit 0 in 0.1 s (18)
+        "screen_cells": 16000,
+        "screen_gens": 1024,
+        "seed": 0,
+        "started_with": {
+          "minutes": 3.0
+        },
+        "uuid": "837be89d-9e74-417b-8e64-6e3ac4e69c0c"
+      },
+      "stale": false,
+      "status": "running",
+      "title": "running-export: every tiling, life_like",
+      "total": null,
+      "unit": "runs",
+      "updated": "2026-11-16T07:21:50Z",
+      "waited_s": null
+    }
+07:21:51 job 10 at +40 s: status running, runs 4096
+07:21:51 jetcarp pack export --to /Users/Jimmie/jetcarp-rc-042c/M10-running --feed rc-mac-running --search 837be89d-9e74-417b-8e64-6e3ac4e69c0c --no-media -> exit 1 in 0.3 s (19)
+    Error: explore job 10 is running, and its newest 4,096 runs are not sealed yet, so the pack would leave them out
+    stop it first (jobs stop), then publish
+07:21:51 M10-running exists afterwards: no
+07:21:51 jetcarp jobs stop 10 -> exit 0 in 0.1 s (20)
+    asked explore search 10 to stop at its next checkpoint
+07:21:53 jetcarp jobs wait 10 --timeout 120 -> exit 3 in 2.1 s (21)
+    explore search 10 is paused
+      explore 10: 5,120 runs (121/s), 1,070 elites in 563 niches (0 of them confirmed), 5 of 1,359 tilings; Apple M2 Max, Metal
+      `jetcarp jobs resume 10` continues it from its archive (not run for run: the search is not deterministic)
+07:21:53 M10-pack.zip 2252 KiB, sha256 caa624811b07b65ce6cbbaa0952310b1083a60decf5ce4f0228d4a2b201d2952
+07:21:53 jetcarp pack check /Users/Jimmie/jetcarp-rc-042c/2.10/unzip/M10-pack -> exit 0 in 0.1 s (22)
+    checked sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d (feed rc-mac, SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY RC tester (Mac), signed by its publisher)
+      12 objects checked (2347305 bytes)
+    sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d: feed rc-mac, by SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY (RC tester (Mac)), checking every object
+    reading verifications, sightings, provenance and annotations
+    checking ids and patterns (a check stores nothing)
+    checking sightings, ants, Quick Start entries, media and ratings
+07:21:53 acer's pack (/Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.2/acer/A10-pack.zip): /Users/Jimmie/jetcarp-rc-042c/2.10/acer/A10-pack
+07:21:54 jetcarp pack check /Users/Jimmie/jetcarp-rc-042c/2.10/acer/A10-pack -> exit 0 in 0.1 s (23)
+    checked sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 (feed rc-acer, SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 RC tester (Acer), signed by its publisher)
+      12 objects checked (1300747 bytes)
+    sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147: feed rc-acer, by SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 (RC tester (Acer)), checking every object
+    reading verifications, sightings, provenance and annotations
+    checking ids and patterns (a check stores nothing)
+    checking sightings, ants, Quick Start entries, media and ratings
+07:21:55 jetcarp pack import /Users/Jimmie/jetcarp-rc-042c/2.10/acer/A10-pack --library /Users/Jimmie/jetcarp-rc-042c/2.10/acer/library.sqlite -> exit 0 in 1.7 s (24)
+    imported sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 (feed rc-acer, SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 RC tester (Acer), signed by its publisher)
+      12 objects checked (1300747 bytes)
+      patterns: 113 added, 0 merged, 0 flagged needs_reverify
+      sightings 202, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+      verified again (sample): 113 of 113 passed, 0 skipped, 0 failed
+    sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147: feed rc-acer, by SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 (RC tester (Acer)), checking every object
+    reading verifications, sightings, provenance and annotations
+    checking ids and storing patterns
+    search 5cbba190-5548-46c8-bf58-4ed39e19b932: copying its segments and rebuilding its state
+    merging sightings
+    search 5cbba190-5548-46c8-bf58-4ed39e19b932: 13524 runs, 1994 elites in 1033 niches, rebuilt in 1.5 s
+07:21:55 jetcarp jobs list --library /Users/Jimmie/jetcarp-rc-042c/2.10/acer/library.sqlite -> exit 0 in 0.1 s (25)
+        5  hunt     done     2026-11-16T07:21:55Z  hunt 5: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+        4  hunt     done     2026-11-16T07:21:55Z  hunt 4: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+        3  hunt     done     2026-11-16T07:21:55Z  hunt 3: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+        2  hunt     done     2026-11-16T07:21:55Z  hunt 2: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+        1  explore  paused   2026-11-16T07:21:54Z  explore 1: 13,236 runs (0/s), 1,994 elites in 1,033 niches (67 of them confirmed), 12 of 1,359 tilings; not run here yet
+    5 job(s); 0 running
+07:21:55 jetcarp jobs list --library /Users/Jimmie/jetcarp-rc-042c/2.10/acer/library.sqlite --json -> exit 0 in 0.1 s (26)
+          "done": 13236,
+          "here": false,
+          "job": 1,
+          "kind": "explore",
+          "kind_label": "Explore",
+          "label": "smart-jaca",
+          "line": "explore 1: 13,236 runs (0/s), 1,994 elites in 1,033 niches (67 of them confirmed), 12 of 1,359 tilings; not run here yet",
+          "stale": false,
+          "status": "paused",
+          "title": "smart-jaca: every tiling, jaca",
+          "total": null,
+          "unit": "runs",
+          "updated": "2026-11-16T07:21:55Z"
+        }
+      ]
+    }
+07:21:56 jetcarp jobs runs 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/acer/library.sqlite --measures sign_balance,sign_sorted --limit 3 -> exit 0 in 0.1 s (27)
+           id  score  fate    family             sign_balance sign_sorted
+        12114   2.17  running jaca               0.1316 0.9949
+        12308   2.14  running jaca               0.1316 0.9975
+         5922   2.10  running jaca               0.0570 0.9425
+    3 run(s) of explore job 1
+07:21:56 framework's pack (/Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.2/framework/F10-pack.zip): /Users/Jimmie/jetcarp-rc-042c/2.10/framework/F10-pack
+07:21:56 jetcarp pack check /Users/Jimmie/jetcarp-rc-042c/2.10/framework/F10-pack -> exit 0 in 0.1 s (28)
+    checked sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), signed by its publisher)
+      12 objects checked (7853786 bytes)
+    sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+    reading verifications, sightings, provenance and annotations
+    checking ids and patterns (a check stores nothing)
+    checking sightings, ants, Quick Start entries, media and ratings
+07:21:58 jetcarp pack import /Users/Jimmie/jetcarp-rc-042c/2.10/framework/F10-pack --library /Users/Jimmie/jetcarp-rc-042c/2.10/framework/library.sqlite -> exit 0 in 1.8 s (29)
+    imported sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), signed by its publisher)
+      12 objects checked (7853786 bytes)
+      patterns: 341 added, 0 merged, 0 flagged needs_reverify
+      sightings 441, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+      verified again (sample): 341 of 341 passed, 0 skipped, 0 failed
+    sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+    reading verifications, sightings, provenance and annotations
+    checking ids and storing patterns
+    search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: copying its segments and rebuilding its state
+    merging sightings
+    search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: 99177 runs, 15668 elites in 7905 niches, rebuilt in 1.6 s
+07:21:58 jetcarp jobs list --library /Users/Jimmie/jetcarp-rc-042c/2.10/framework/library.sqlite -> exit 0 in 0.1 s (30)
+        2  hunt     done     2026-11-16T07:21:58Z  hunt 2: imported from pack rc.2 test, Framework (its finds came with the pack; nothing ran here)
+        1  explore  paused   2026-11-16T07:21:56Z  explore 1: 95,955 runs (0/s), 15,668 elites in 7,905 niches (816 of them confirmed), 66 of 1,359 tilings; not run here yet
+    2 job(s); 0 running
+07:21:58 jetcarp jobs list --library /Users/Jimmie/jetcarp-rc-042c/2.10/framework/library.sqlite --json -> exit 0 in 0.1 s (31)
+          "done": 95955,
+          "here": false,
+          "job": 1,
+          "kind": "explore",
+          "kind_label": "Explore",
+          "label": "f10",
+          "line": "explore 1: 95,955 runs (0/s), 15,668 elites in 7,905 niches (816 of them confirmed), 66 of 1,359 tilings; not run here yet",
+          "stale": false,
+          "status": "paused",
+          "title": "f10: every tiling, every family",
+          "total": null,
+          "unit": "runs",
+          "updated": "2026-11-16T07:21:58Z"
+        }
+      ]
+    }
+07:21:58 jetcarp jobs runs 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/framework/library.sqlite --measures sign_balance,sign_sorted --limit 3 -> exit 0 in 0.1 s (32)
+           id  score  fate    family             sign_balance sign_sorted
+        45021   2.59  cycle   greenberg_hastings - -
+        34899   2.55  cycle   greenberg_hastings - -
+        15635   2.53  cycle   greenberg_hastings - -
+    3 run(s) of explore job 1
+07:21:58 done

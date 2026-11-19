@@ -1,0 +1,4 @@
+made publisher key SHA256:LmWEb6wEYRlKeGI6Mt2KDl8EJ/Q6DGuN6B+vaQvAa1s
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHHrerMkTbksPAyR/BVz0cVggk1tiXbjsKJAyxZGrjU9 jetcarp publisher
+  file /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/config/pack/publisher_ed25519
+  named RC tester (Framework F9)

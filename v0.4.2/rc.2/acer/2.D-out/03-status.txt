@@ -1,0 +1,7 @@
+running, pid 53616, up 7.0s, 453 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 116 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)

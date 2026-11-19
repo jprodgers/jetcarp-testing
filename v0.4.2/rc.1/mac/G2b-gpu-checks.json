@@ -1,0 +1,7 @@
+{
+  "Apple M2 Max | Metal | 0000:0000 |  | 0.4.2-rc.1 | 9bad7813c3a55612.2": {
+    "passed": true,
+    "note": "59 world rules and 33 explore batches matched the CPU",
+    "millis": 389
+  }
+}

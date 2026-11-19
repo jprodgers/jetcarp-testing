@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Live Free or Die",
+  "description": "Explosive; only isolated cells survive. Rich in oscillators, spaceships and puffers, some stretchable to any size and period.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "9097811578956200213",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Live Free or Die",
+      "rule": "B2/S0",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "blob": {
+          "radius": 0.08,
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "64f914a15018e764",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

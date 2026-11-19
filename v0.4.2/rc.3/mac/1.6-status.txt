@@ -1,0 +1,19 @@
+hunt 1: 20,000/20,000 soups in each of 6 groups, 10519 soups/s, 760,892 objects (ships 51,012, osc 236,468, still 473,412), 1,783 distinct, 1,783 new | newest: still life 19c #916b39 (B3/S23)
+  status done, 11 s run, 97839 settled, 2006 died, 20155 exploded, 0 unsettled, GPU Apple M2 Max, Metal
+  B3/S23 on Square: 20000 soups, 424764 objects (oscillator 122822, spaceship 37577, still life 264365), 47 distinct, 47 new
+  B36/S23 on Square: 20000 soups, 139567 objects (oscillator 20601, spaceship 10841, still life 108125), 42 distinct, 42 new
+  B2/S34 on Square: 20000 soups, 2594 objects (spaceship 2594), 4 distinct, 4 new
+  B3/S23 on Hexagon: 20000 soups, 57703 objects (oscillator 523, still life 57180), 1160 distinct, 1160 new
+  B36/S23 on Hexagon: 20000 soups, 48374 objects (oscillator 4632, still life 43742), 508 distinct, 508 new
+  B2/S34 on Hexagon: 20000 soups, 87890 objects (oscillator 87890), 22 distinct, 22 new
+  newest finds:
+    916b39a4a2efcedb91ca6cabcb9e3ac8  still life 19c #916b39             B3/S23     Hexagon soup 19990  (new to the catalog)
+    7894f2ba44aab5f45536d923fe02d424  still life 16c #7894f2             B36/S23    Hexagon soup 19966  (new to the catalog)
+    bd260f89ebd64715d0216f8901065786  still life 17c #bd260f             B3/S23     Hexagon soup 19950  (new to the catalog)
+    2f29227dc04da9086530edb9b656c126  still life 17c #2f2922             B3/S23     Hexagon soup 19943  (new to the catalog)
+    3d1be5888643dd6b4f18bc5f68970e4c  still life 11c #3d1be5             B36/S23    Hexagon soup 19940  (new to the catalog)
+    a38ff2ed2b34695065a4cd3c10dc31eb  still life 20c #a38ff2             B3/S23     Hexagon soup 19916  (new to the catalog)
+    e8743f9e25a87f38b68496c549292854  still life 18c #e8743f             B3/S23     Hexagon soup 19891  (new to the catalog)
+    a54c55d2a0401b67b0ac0111da690bfc  still life 13c #a54c55             B3/S23     Hexagon soup 19884  (new to the catalog)
+    148f1cc07aa8a6983c38fd44bd30a65f  still life 20c #148f1c             B3/S23     Hexagon soup 19861  (new to the catalog)
+    1905769becdf782ac3eb49dc480da227  still life 13c #190576             B36/S23    Hexagon soup 19858  (new to the catalog)

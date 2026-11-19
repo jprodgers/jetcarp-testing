@@ -1,0 +1,11 @@
+Recorded 2026-11-13 10:13:44 -05:00 (Jimmie opened 'Four-colour turmite LLRR' and exported both, saving them here)
+
+12-export-view.png  9397 bytes  1062x850  sha256 3ab19e24f592cbe15aca44f44af8ef237f8fcc941d974ddf91fcd7ef6710f76f
+> jetcarp verify 12-export-view.png
+ok: generation 42 hash f2b91a6b95c4dfe7
+(exit 0)
+
+12-export-world.png  36367 bytes  2400x2400  sha256 529af80fdec135829d4b55f2cace474b18066596110a99b5c550a3a4e5085f2e
+> jetcarp verify 12-export-world.png
+ok: generation 67 hash 9c16fdd3f7b6629f
+(exit 0)

@@ -1,0 +1,6 @@
+12:38:40 === after the soak: Jimmie looked (12:37): 'Still looks right, smooth and moving, nothing odd'
+12:38:40 before stop: processes [25312 jetcarpw.exe, 32428 jetcarp.exe]; JetcarpDesktopSurface windows 1; TranscodedWallpaper 85FF3BB2371A 2026-11-15T15:57:24
+12:38:42 host stop -> exit 0 [stopped]
+12:38:46 after stop: processes []; JetcarpDesktopSurface windows 0; TranscodedWallpaper 85FF3BB2371A 2026-11-15T15:57:24
+12:38:46 HKCU Control Panel\Desktop WallPaper: ~\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper
+12:38:47 host status -> exit 1 [Error: the JETCARP background host is not running]

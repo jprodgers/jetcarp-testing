@@ -1,0 +1,3 @@
+﻿LWSS (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 8
+  soup 244 (rng state 7706952169838672439): 1 copy, 9 ships; settled at generation 2114; scene: C:\Users\jimmi\jetcarp-rc-042b\phase2\2.9\soup-6dd55e69.json
+  note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 2114, and land there

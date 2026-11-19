@@ -1,0 +1,41 @@
+JETCARP 0.4.2-rc.1 on linux x86_64 (32 threads)
+
+Folders
+  settings: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/cfg
+  data:     /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/data
+  output:   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/out
+  bundled:  /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/rc1-linux/jetcarp-0.4.2-rc.1-x86_64-unknown-linux-gnu/packs (1.5 MB)
+  library:  /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/data/library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: auto (automatic)
+  setting: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/cfg/gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (99 ms, kept from before): 53 world rules and 33 explore batches matched the CPU
+      the GPU simulation uses it
+  compute: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the fastest adapter (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (99 ms, kept from before): 53 world rules and 33 explore batches matched the CPU
+      the GPU simulation uses it
+
+Graphics adapters (* = used for computing)
+  * AMD Radeon 8060S Graphics (RADV STRIX_HALO) (Vulkan, IntegratedGpu, radv Mesa 26.2.6)
+    llvmpipe (LLVM 23.1.2, 256 bits) (Vulkan, Cpu, llvmpipe Mesa 26.2.6 (LLVM 23.1.2))
+      software adapter: the GPU simulation uses it only with JETCARP_GPU=software
+    AMD Radeon 8060S Graphics (radeonsi, strix_halo, ACO, DRM 3.64, 7.3.3-300.fc45.x86_64) (Gl, Other, 4.6 (Core Profile) Mesa 26.2.6)
+      neither discrete nor integrated (the system says other): the GPU simulation uses it only when JETCARP_GPU names it
+
+Desktop
+  background host: running
+  starts at login: yes
+  The GNOME extension is running.
+
+Environment
+  JETCARP_CONFIG_DIR=/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/cfg
+  JETCARP_DATA_DIR=/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/data
+  JETCARP_OUT=/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc/parity/out

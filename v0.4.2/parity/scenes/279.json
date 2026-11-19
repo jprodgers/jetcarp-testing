@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA maze war (3.4.6.4)",
+  "description": "B34/S12356 on the rhombitrihexagonal tiling: a maze-like texture at war with itself. Found by a JACA rule search.",
+  "tiling": {
+    "family": "rhombitrihex",
+    "size": {
+      "rect": {
+        "w": 72,
+        "h": 56
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 29,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B34/S12356",
+      "rule": "JACA B34/S12356",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Moss",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Autumn"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "a27d0008d05abf8c",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

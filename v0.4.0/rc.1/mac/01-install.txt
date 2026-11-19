@@ -1,0 +1,5 @@
+jetcarp-installer: getting JETCARP 0.4.0-rc.1 for aarch64-apple-darwin from https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.1
+jetcarp-installer: checked jetcarp-0.4.0-rc.1-aarch64-apple-darwin.tar.gz against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.0-rc.1 in /Users/Jimmie/.local/lib/jetcarp
+jetcarp-installer: linked /Users/Jimmie/.local/bin/jetcarp
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine

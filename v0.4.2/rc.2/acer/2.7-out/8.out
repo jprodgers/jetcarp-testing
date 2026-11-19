@@ -1,0 +1,3 @@
+hunt 7 is still marked running, but no process runs it
+  hunt 7: 9,330/2,000,000 soups, 1220 soups/s, 199,949 objects (ships 17,753, osc 58,090, still 124,106), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)
+  `jetcarp jobs resume 7` resumes it exactly

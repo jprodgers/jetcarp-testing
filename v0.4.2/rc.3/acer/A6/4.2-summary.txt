@@ -1,0 +1,32 @@
+(private) part 4.2 on the Acer, rc.3 (A-6, 2026-11-16): pass. Details only here and in the other 4.2* files.
+
+4.2, the folder rules (t42_folders.py, 4.2-folders.txt, 4.2-folders-a/b.jsonl)
+- Session A (no --allow): 243 calls. Every write and read outside $W\out and $W\library was refused, with the
+  path named ("the MCP tools may only write inside $W\out or $W\library (got ...)"), for every target:
+  an absolute path, ..\ and ../, a directory junction inside the output folder that points outside, %TEMP%,
+  $W\allowed without the flag, forward slashes, the \\?\ prefix, the 8.3 short name (JETCAR~3), and a
+  drive-relative path (C:name).
+  - run_script's out_dir("<outside path>") isn't refused: it makes a new folder inside $W\out named after the
+    path (e.g. $W\out\2026-11-16_11-23-15_C-Users-jimmi-jetcarp-rc-042c-a6-outside-scriptdir), as designed.
+  - System files: files_list on the hosts file and C:\Windows, and world_new on C:\Windows\win.ini, refused.
+  - Inside, three spellings work: relative, the output folder in capitals, and forward slashes.
+- Session B (--allow $W\allowed): every tool wrote into $W\allowed (and the same folder spelled in capitals);
+  $W\outside was still refused. The reads from $W\allowed worked.
+- Afterwards: nothing new in $W\outside (only the two files the script put there), none in %TEMP%'s target,
+  in the server's working folder ($W\cwd), or at C:\f9-drive-relative. (The listing's "1" beside a folder that
+  doesn't exist counts the "(folder does not exist)" line: a script slip.)
+
+4.2b, links inside the output folder (t42b_symlink.py, 4.2b-symlink*.txt/.jsonl)
+- Run 1 (no Developer Mode; symbolic links need it or administrator rights on Windows): reading through the
+  directory junction was refused. The file symbolic link couldn't be made, so its case waited for run 2.
+- Run 2 (Jimmie turned Developer Mode on):
+  - A file symbolic link $W\out\innocent.json -> $W\outside\victim.txt: files_list refused it as outside the
+    output folder, and world_status save_path "innocent.json" was refused. victim.txt unchanged.
+  - A directory symbolic link $W\out\link-sym -> $W\outside: world_new read, world_status, world_render (and its
+    wallpaper), run_script save_png and write_text, search_runs csv, media_render, pack export, a pile, and
+    files_list were all refused. Nothing was written in $W\outside.
+- For information only (the plan leaves hard links out of the fix, since a hard link is the file itself): a hard
+  link $W\out\innocent-hard.json to $W\outside\victim-hard.txt. files_list read it as inside the output folder,
+  and world_status save_path "innocent-hard.json" overwrote the outside file's contents (47 bytes of text became
+  the 654-byte scene) in both runs. Making a hard link needs no rights on NTFS (same volume).
+- Not run here: rc.4's planted links at an animation's poster.png and a pack export's pack.json (rc.4's R).

@@ -1,0 +1,3 @@
+2026-11-16 19:32:06 === cargo test --release --workspace --no-fail-fast, JETCARP_GPU=RTX, src 29fea86 host start straight after host stop: stop waits for the host's lock too, and a new host waits up to 2 s for it (#122); jetcarp 0.4.2-rc.3; watcher holds a box 10 s then closes it; timeout 10800 s
+2026-11-16 19:45:37 RESULT 1-rtx-29fea86 : pass:1043 passed, 0 failed, 41 ignored in 137 test binaries; exit 0, 14 min; message boxes closed by the watcher: 0
+2026-11-16 19:45:37 jetcarp processes at the end: 

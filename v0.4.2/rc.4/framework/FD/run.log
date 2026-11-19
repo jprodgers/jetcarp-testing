@@ -1,0 +1,60 @@
+04:31:23 every JETCARP folder is under the test folder: ok
+jetcarp 0.4.2-rc.4
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+04:31:24 settings land in the test's own dconf: ok
+04:31:24 == install the extension
+GNOME Shell was not found in this session.
+04:31:34 shell up; extension: 'version-name': <'0.4.2-rc.4'> 'state': <1.0> 
+monitors: [('Meta-0', '1920x1080'), ('Meta-1', '1280x720')]
+logical: [(0, 0, ['Meta-0']), (1920, 0, ['Meta-1'])]
+04:31:42 == wallpaper on
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+running, pid 3160096, up 18.0s, 467 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 276 · 280000 cells of 2.4 px · 30 fps, 30 generations a second · wallpaper on every monitor · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+monitors: 0: Meta-0, 1: Meta-1
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+screenshot: (True, '$W4/fd/shots/1-two-monitors.png')
+screenshot: (True, '$W4/fd/shots/2-five-seconds-later.png')
+04:32:01 == a monitor change: only the first monitor
+applied: [('Meta-0', '1920x1080')]
+** (xdg-desktop-portal-gnome:3159968): WARNING **: 04:32:01.101: Monitor 'MetaVendor' has no configuration which is-current!
+monitors: [('Meta-0', '1920x1080'), ('Meta-1', '1280x720')]
+logical: [(0, 0, ['Meta-0'])]
+running, pid 3160096, up 38.0s, 467 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 882 · 280000 cells of 2.4 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+screenshot: (True, '$W4/fd/shots/3-one-monitor.png')
+04:32:14 == both monitors again
+applied: [('Meta-0', '1920x1080'), ('Meta-1', '1280x720')]
+monitors: [('Meta-0', '1920x1080'), ('Meta-1', '1280x720')]
+logical: [(0, 0, ['Meta-0']), (1920, 0, ['Meta-1'])]
+running, pid 3160096, up 52.0s, 467 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 1290 · 280000 cells of 2.4 px · 30 fps, 30 generations a second · wallpaper on every monitor · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+monitors: 0: Meta-0, 1: Meta-1
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+screenshot: (True, '$W4/fd/shots/4-both-again.png')
+04:32:28 fit or tune lines in the host's log: 0
+04:32:28 == stop
+stopped
+04:32:31 picture after stop: 'file:///usr/share/backgrounds/f45/default/f45-01-day.jxl'
+screenshot: (True, '$W4/fd/shots/5-after-stop.png')
+Gdk-Message: 04:32:33.503: Error reading events from display: Broken pipe
+Gdk-Message: 04:32:33.503: Lost connection to Wayland compositor.
+04:32:33 shell log error lines: 3
+04:32:33 == done
+A connection to the bus can't be made
+(evolution-calendar-factory:3158974): GVFS-WARNING **: 04:32:33.584: Error: The connection is closed
+(evolution-addressbook-factory:3159009): libedbus-private-WARNING **: 04:32:33.584: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)
+(evolution-calendar-factory:3158974): libedbus-private-WARNING **: 04:32:33.584: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)
+(evolution-calendar-factory:3158974): libedbus-private-WARNING **: 04:32:33.584: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)

@@ -1,0 +1,140 @@
+﻿15:43:15.640 --- A-5 setup. Wallpaper: 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10; TranscodedWallpaper sha256 85FF3BB2371A8465; SCRNSAVE.EXE '' ScreenSaveActive 1 TimeOut 60
+15:43:18.159 host start -> exit 0
+15:43:18.327 host wallpaper on -> exit 0
+15:45:49.942 --- 2.D 8: Jimmie slept the laptop ~30 s and woke it: 'the desktop was live again after waking'
+15:45:50.317 [03-status-after-wake] host status -> exit 0 in 0.16 s
+15:45:50.322     running, pid 56296, up 154.0s, 458 MB, GPU Intel(R) UHD Graphics
+15:45:50.323     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 4962 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:45:50.324     monitors: 0: \\.\DISPLAY1
+15:45:50.325     wallpaper: showing
+15:45:50.326     caption: off
+15:45:50.327     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:45:50.328     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:47:40.001 --- 2.D 9: Jimmie locked (Win+L) ~20 s: 'lock screen showed Windows' picture, desktop live after'
+15:50:57.484 --- 5.4: Jimmie pressed Win+Ctrl+Shift+B with the app running a world: 'no screen blank ... everything is running normal'
+15:53:02.658 --- 5.4 retry: Jimmie pressed Win+Ctrl+Shift+B with the app visible and running: 'no flash, but a very quick bleep'
+15:53:43.567 5.4: after the beep (just after 15:52:06): host 56296 and app 54508 kept running on the UHD; no monitor gap; host log unchanged; 60 gens/s throughout. A device loss wasn't seen, so recovery wasn't exercised
+15:53:43.609 --- 2.D 12: host crash. host still: False
+15:53:43.805 killing host jetcarp.exe pid 56296 (parent 55224) with Stop-Process -Force
+15:53:51.099 [04-status-after-kill] host status -> exit 1 in 2.12 s
+15:53:51.103     Error: the JETCARP background host is not running
+15:53:51.170 after the kill: WallPaper 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0; BackgroundType 0; TranscodedWallpaper 249170 bytes, 11-12 07:51:50, sha256 85FF3BB2371A8465 (before: 85FF3BB2371A8465)
+15:54:28.594 2.D 12: after the hard kill, Jimmie: 'My own wallpaper'. No restart (launcher gone too)
+15:54:31.604 [05-host-start-after-kill] host start -> exit 0 in 2.99 s
+15:54:31.608     running, pid 53320, up 0.0s, 381 MB, GPU Intel(R) UHD Graphics
+15:54:31.609     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· starting Â· wallpaper
+15:54:31.611     wallpaper: showing
+15:54:31.611     caption: off
+15:54:31.612     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:54:31.613     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:54:36.787 [06-status-restarted] host status -> exit 0 in 0.15 s
+15:54:36.789     running, pid 53320, up 6.0s, 465 MB, GPU Intel(R) UHD Graphics
+15:54:36.790     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 318 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:54:36.791     monitors: 0: \\.\DISPLAY1
+15:54:36.792     wallpaper: showing
+15:54:36.793     caption: off
+15:54:36.794     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:54:36.795     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:54:37.131 [07-still-on] host still on -> exit 0 in 0.31 s
+15:54:37.133     running, pid 53320, up 6.0s, 465 MB, GPU Intel(R) UHD Graphics
+15:54:37.135     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 334 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:54:37.135     monitors: 0: \\.\DISPLAY1
+15:54:37.137     wallpaper: showing
+15:54:37.138     caption: off
+15:54:37.140     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:54:37.140     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:54:40.234 with still on, host running: WallPaper 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0; BackgroundType 0; TranscodedWallpaper 249170 bytes, 11-12 07:51:50, sha256 85FF3BB2371A8465 (before: 85FF3BB2371A8465)
+15:54:50.037 --- 2.D 12 with host still on: killing host pid 53320 with Stop-Process -Force
+15:54:56.140 after the second kill: WallPaper 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0; BackgroundType 0; TranscodedWallpaper 249170 bytes, 11-12 07:51:50, sha256 85FF3BB2371A8465 (before: 85FF3BB2371A8465)
+15:55:12.906 [08-status-after-kill2] host status -> exit 1 in 2.15 s
+15:55:12.913     Error: the JETCARP background host is not running
+15:55:55.532 2.D 12: after the second kill (host still on), Jimmie: 'My own wallpaper'; registry unchanged; no still set while running either
+15:55:55.537 --- 2.D 12 extra: host still on with a clean host stop
+15:55:58.182 [09-host-start-still] host start -> exit 0 in 2.63 s
+15:55:58.186     running, pid 63552, up 0.0s, 399 MB, GPU Intel(R) UHD Graphics
+15:55:58.188     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· starting Â· wallpaper
+15:55:58.188     wallpaper: showing
+15:55:58.190     caption: off
+15:55:58.190     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:55:58.191     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:56:06.477 [10-host-stop-still] host stop -> exit 0 in 0.27 s
+15:56:06.480     stopped
+15:56:10.565 after host stop with still on: WallPaper 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0; BackgroundType 0; TranscodedWallpaper 249170 bytes, 11-15 15:56:06, sha256 85FF3BB2371A8465 (before: 85FF3BB2371A8465)
+15:57:24.088 2.D 12 extra: after a clean host stop with still on, Jimmie: 'A still of Life' (still PNG config\desktop-pictures\still-*.png 40 KB; HKCU WallPaper unchanged, TranscodedWallpaper rewritten 15:56:06 with the same hash)
+15:57:24.254 [11-still-off] host still off -> exit 0 in 0.13 s
+15:57:24.258     saved; the host is not running
+15:57:24.259     put the desktop's own picture back
+15:57:28.349 after host still off: WallPaper 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0; BackgroundType 0; TranscodedWallpaper 249170 bytes, 11-15 15:57:24, sha256 85FF3BB2371A8465 (before: 85FF3BB2371A8465)
+16:00:59.946 2.D 12 extra: after host still off ('put the desktop's own picture back'), Jimmie: 'Yes, my own'; Transcoded_000 back to 249170 bytes (11-10)
+16:00:59.951 --- Jimmie on 10/11: run them here in his account with the default folders ('JETCARP on this laptop is only for testing ... I don't care if we nuke it, as I'll be reinstalling once 0.4.2 ships')
+16:01:15.619 [12-default-status] host status -> exit 1 in 0.09 s
+16:01:15.625     Error: the JETCARP background host is not running
+16:10:42.391 --- 2.D 11: Jimmie ran (new PowerShell, default folders) jetcarp.exe host saver install --rotation 'Wolfram series'; clicked OK with 1 minute; 'the screen saver showed the Wolfram series'
+16:10:42.401 SCRNSAVE.EXE 'C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr' ScreenSaveActive 1 TimeOut 60
+16:10:42.756 [13-saver-status] host saver status -> exit 0 in 0.13 s
+16:10:42.759     JETCARP is the selected screen saver.
+16:10:42.858 [14-saver-remove] host saver remove -> exit 1 in 0.1 s
+16:10:42.860     Error: C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr is in use, most likely by the preview in Screen Saver Settings. Close that dialog, then run `jetcarp host saver remove` again. Nothing was changed.
+16:10:42.863 after remove: SCRNSAVE.EXE 'C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr' ScreenSaveActive 1 TimeOut 60
+16:11:25.085 2.D 11: first 'host saver remove' refused clearly (the .scr in use by the Settings preview: rundll32 desk.cpl,InstallScreenSaver -> JETCARP.scr /p -> jetcarp.exe host scr /p). Jimmie closed Screen Saver Settings
+16:11:25.456 [15-saver-remove2] host saver remove -> exit 0 in 0.15 s
+16:11:25.460     removed
+16:11:25.470 after remove: SCRNSAVE.EXE '' ScreenSaveActive 1 TimeOut 60; scr exists: False
+16:11:25.601 [16-saver-status2] host saver status -> exit 0 in 0.13 s
+16:11:25.603     JETCARP's screen saver is not installed.
+16:12:06.967 2.D 11: second 'host saver remove' -> removed; SCRNSAVE.EXE '' again; .scr gone
+16:12:23.922 --- 2.D 10: start at login (default folders)
+16:12:25.543 [17-default-host-start] host start -> exit 0 in 1.55 s
+16:12:25.547     running, pid 64168, up 1.0s, 416 MB, GPU Intel(R) UHD Graphics
+16:12:25.548     screen 0: A classic a day Â· profile Cyclic spirals (4 of 7) Â· starting Â· window
+16:12:25.549     caption: off
+16:12:25.550     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+16:12:25.551     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+16:12:25.713 [18-default-wallpaper-on] host wallpaper on -> exit 0 in 0.16 s
+16:12:25.720     running, pid 64168, up 2.0s, 699 MB, GPU Intel(R) UHD Graphics
+16:12:25.721     screen 0: A classic a day Â· profile Cyclic spirals (4 of 7) Â· generation 3 Â· 102240 cells of 3 px Â· 30 fps, 30 generations a second Â· wallpaper
+16:12:25.722     monitors: 0: \\.\DISPLAY1
+16:12:25.742     wallpaper: showing
+16:12:25.745     caption: off
+16:12:25.747     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+16:12:25.749     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+16:12:26.037 [19-default-rotation] host rotation "Classics, hourly" -> exit 0 in 0.26 s
+16:12:26.039     running, pid 64168, up 2.0s, 709 MB, GPU Intel(R) UHD Graphics
+16:12:26.040     screen 0: Classics, hourly Â· profile Life (1 of 7) Â· starting Â· wallpaper
+16:12:26.041     monitors: 0: \\.\DISPLAY1
+16:12:26.041     wallpaper: showing
+16:12:26.042     caption: off
+16:12:26.043     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+16:12:26.045     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+16:12:30.250 [20-default-status] host status -> exit 0 in 0.19 s
+16:12:30.252     running, pid 64168, up 6.0s, 545 MB, GPU Intel(R) UHD Graphics
+16:12:30.253     screen 0: Classics, hourly Â· profile Life (1 of 7) Â· generation 125 Â· 230400 cells of 3 px Â· 30 fps, 30 generations a second Â· wallpaper
+16:12:30.254     monitors: 0: \\.\DISPLAY1
+16:12:30.254     wallpaper: showing
+16:12:30.255     caption: off
+16:12:30.256     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+16:12:30.256     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+16:12:30.524 [21-default-host-stop] host stop -> exit 0 in 0.25 s
+16:12:30.525     stopped
+16:12:43.993 [22-login-on] host login on -> exit 0 in 0.13 s
+16:12:44.002     "C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarpw.exe" host serve --login starts at login
+16:12:44.009 Run value JETCARP: '"C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarpw.exe" host serve --login'
+16:13:09.856 before logout: test app closed (True); monitors stopped. Jimmie now logs out and back in
+16:19:06.671 --- 2.D 10 after the logout/login. Jimmie: 'desktop eventually showed Life. It took a couple of minutes to start ... after another program and another program launched'
+16:19:08.942 [23-status-after-login] host status -> exit 0 in 0.56 s
+16:19:08.954     running, pid 12900, up 135.0s, 463 MB, GPU Intel(R) UHD Graphics
+16:19:08.955     screen 0: Classics, hourly Â· profile Life (1 of 7) Â· generation 3890 Â· 230400 cells of 3 px Â· 30 fps, 30 generations a second Â· wallpaper
+16:19:08.956     monitors: 0: \\.\DISPLAY1
+16:19:08.957     wallpaper: showing
+16:19:08.957     caption: off
+16:19:08.958     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+16:19:08.959     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+16:19:33.154 2.D 10: sign-in 16:15:13 (explorer); Windows ran the Run entries one by one (another program 16:15:32, another program 16:15:49-16:16:19, another program 16:16:19-16:16:49); JETCARP's at 16:16:50 (jetcarpw 10128), host serve --login pid 12900 at 16:16:53; Windows logged it finished at 16:17:20 (30 s wait: the launcher stays as the host's parent). host status: 'Classics, hourly', profile Life (1 of 7), wallpaper showing. Jimmie: desktop showed Life
+16:19:33.389 [24-login-off] host login off -> exit 0 in 0.22 s
+16:19:33.392     the host no longer starts at login
+16:19:33.697 [25-default-host-stop] host stop -> exit 0 in 0.3 s
+16:19:33.698     stopped
+16:19:36.785 after host stop: WallPaper 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0; BackgroundType 0; TranscodedWallpaper 249170 bytes, 11-15 15:57:24, sha256 85FF3BB2371A8465 (before: 85FF3BB2371A8465)
+16:20:26.808 2.D 10: host login off -> Run value gone; host stop -> wallpaper unchanged (hash same). Everyday library untouched (dated 11-13). host.lock in %LOCALAPPDATA%\jetcarp dated 14:36:21 (A-4's test host): runtime files use JETCARP_RUNTIME_DIR, which env2.ps1 doesn't set
+16:20:26.958 everyday settings folder restored from the copy made before A-5's steps 10-11 (removed: gpu-checks.json, host.json); app.json: same True; host-program: same True; setup.json: same True
+16:21:29.131 --- A-5 closed: no JETCARP processes, no Run value, no SCRNSAVE.EXE, wallpaper identical, everyday settings restored

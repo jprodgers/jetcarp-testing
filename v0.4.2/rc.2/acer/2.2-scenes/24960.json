@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 24960: B012/S23",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k6-260"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 2895003769622360,
+  "cas": [
+    {
+      "rule": "B012/S23",
+      "neighborhood": "edge",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "radial_gradient",
+            "centre": 0.89,
+            "edge": 0.16
+          },
+          "fill": {
+            "density": 0.75
+          }
+        }
+      }
+    }
+  ]
+}

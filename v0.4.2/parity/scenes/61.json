@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sticks",
+  "description": "Grows stick-like structures.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "13821808973222925625",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Sticks",
+      "rule": "B2/S3456/C6",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "baf0057776afc49e",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

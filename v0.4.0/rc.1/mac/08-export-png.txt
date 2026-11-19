@@ -1,0 +1,3 @@
+$ jetcarp verify 08-export-embedded-scene.json   (the jetcarp:scene chunk of 08-export.png)
+ok: generation 80 hash bea0a7c7ef71a0fc
+exit 0

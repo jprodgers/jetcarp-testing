@@ -1,0 +1,29 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.19s
+     Running tests\families.rs (target\release\deps\families-e5cc37b82ea4a0fc.exe)
+
+running 3 tests
+test sandpile_edges_drops_and_patches ... GPU tests on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+
+thread 'sandpile_edges_drops_and_patches' (48988) panicked at crates\jetcarp-gpu\tests\families.rs:54:5:
+assertion `left == right` failed: sandpile drop 1 on square Dead Edge: hash at generation 1
+  left: "60047217d97ba607"
+ right: "024298488f7067d5"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+test sandpile_repeats_and_scripts ... 
+thread 'sandpile_repeats_and_scripts' (45532) panicked at crates\jetcarp-gpu\tests\families.rs:54:5:
+assertion `left == right` failed: sandpile script: hash at generation 1
+  left: "3e93fe95da80cba1"
+ right: "f9fb28e4fdfb1611"
+FAILED
+test sandpile_scenes ... ok
+
+failures:
+
+failures:
+    sandpile_edges_drops_and_patches
+    sandpile_repeats_and_scripts
+
+test result: FAILED. 1 passed; 2 failed; 0 ignored; 0 measured; 13 filtered out; finished in 13.73s
+
+error: test failed, to rerun pass `-p jetcarp-gpu --test families`

@@ -1,0 +1,56 @@
+{
+  "jetcarp_version": "0.4.0-rc.3",
+  "format": 1,
+  "name": "JACA rainbow fronts (squares)",
+  "description": "Territories go still and age while the fronts stay active, so every front is a rainbow of ages. Found by a JACA rule search.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 190,
+        "h": 126
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 27,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B2/S12467",
+      "rule": "JACA B2/S12467",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Aurora",
+      "seed": {
+        "signed": {
+          "density": 0.1,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Lava"
+    }
+  ],
+  "commands": [
+    {
+      "op": "step",
+      "gens": 145
+    }
+  ],
+  "view": {
+    "center": [
+      84.08227574100871,
+      69.54536861920391
+    ],
+    "speed": 15.0,
+    "zoom": 37.272145514907514
+  },
+  "record": {
+    "generation": 145,
+    "hash": "e9b5f31726b3e41e",
+    "jetcarp_version": "0.4.0-rc.3",
+    "dead_boundary": false
+  }
+}

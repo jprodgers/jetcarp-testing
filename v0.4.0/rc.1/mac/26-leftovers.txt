@@ -1,0 +1,54 @@
+# What's left after jetcarp uninstall --yes and the installer's --uninstall (2026-11-12 02:08)
+$ ls ~/.local/lib/jetcarp ~/.local/bin/jetcarp
+ls: /Users/Jimmie/.local/bin/jetcarp: No such file or directory
+ls: /Users/Jimmie/.local/lib/jetcarp: No such file or directory
+
+$ command -v jetcarp
+(not found)
+
+$ ls ~/Library/Application\ Support/jetcarp ~/.cache/jetcarp ~/Pictures/JETCARP 2>&1   (the plan's line)
+/Users/Jimmie/.cache/jetcarp:
+host.lock
+
+/Users/Jimmie/Library/Application Support/jetcarp:
+app.json
+data
+desktop-pictures
+host.json
+
+/Users/Jimmie/Pictures/JETCARP:
+piles
+
+# In more detail
+~/Library/Application Support/jetcarp
+~/Pictures/JETCARP
+~/Library/Application Support/jetcarp/host.json  (580 bytes)
+~/Library/Application Support/jetcarp/app.json  (4215 bytes)
+~/Library/Application Support/jetcarp/desktop-pictures
+~/Library/Application Support/jetcarp/data
+~/Pictures/JETCARP/.DS_Store  (6148 bytes)
+~/Pictures/JETCARP/piles
+~/Library/Application Support/jetcarp/data/library.sqlite  (1064960 bytes)
+~/Library/Application Support/jetcarp/data/library.sqlite-jobs
+~/Pictures/JETCARP/piles/.DS_Store  (6148 bytes)
+~/Pictures/JETCARP/piles/2026-11-12_01-09-24_square-1000000
+~/Pictures/JETCARP/piles/2026-11-12_01-09-24_square-1000000/pile.json  (5965 bytes)
+~/Pictures/JETCARP/piles/2026-11-12_01-09-24_square-1000000/preview.png  (188009 bytes)
+~/Pictures/JETCARP/piles/2026-11-12_01-09-24_square-1000000/pile.png  (166479 bytes)
+~/Pictures/JETCARP/piles/2026-11-12_01-09-24_square-1000000/growth.csv  (1468 bytes)
+~/Pictures/JETCARP/piles/2026-11-12_01-09-24_square-1000000/steps
+~/Pictures/JETCARP/piles/2026-11-12_01-09-24_square-1000000/look.json  (44 bytes)
+
+$ ls ~/Library/Caches/jetcarp ~/Library/Saved\ Application\ State | grep -i jetcarp
+ls: /Users/Jimmie/Library/Caches/jetcarp: No such file or directory
+(no saved application state)
+(no ~/Library/Preferences entry)
+
+$ ls ~/Library/LaunchAgents ~/Library/Screen\ Savers
+/Users/Jimmie/Library/LaunchAgents:
+another-program.plist
+another-program.plist
+another-program.plist
+another-project.plist
+
+/Users/Jimmie/Library/Screen Savers:

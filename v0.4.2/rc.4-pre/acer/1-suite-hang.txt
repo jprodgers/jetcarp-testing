@@ -1,0 +1,35 @@
+rc.4 pre-check on the Acer, step 1 (the suite): a hang on Windows in host.rs (2026-11-16)
+
+Build: ~/jetcarp-rc-042c/src at af07766 (origin/release-0.4.2), jetcarp 0.4.2-rc.3 (the branch's version string).
+$ cargo test --release --workspace --no-fail-fast      (scratch folders; JETCARP_GPU=RTX, then =UHD; 3 h timeout)
+
+The test that hangs, on both GPUs:
+  crates/jetcarp/tests/host.rs:526  nothing_starts_on_screen_before_the_warning_is_accepted   (added in bc1d72f, #96)
+Its last case runs `jetcarp host serve --saver --seconds 1` with the warning not yet accepted and waits for it to
+end. On Windows that process puts up a modal message box and waits for OK, so the test never ends:
+  crates/jetcarp-host/src/lib.rs, run_saver(): on the refusal, `#[cfg(windows)] if mode == window::Mode::Saver
+  { desktop_win::message(&e); }`, which is MessageBoxW(MB_OK | MB_ICONINFORMATION) (desktop_win.rs:455).
+The message box is meant for Windows' own screen saver (JETCARP.scr /s), which has no console; `host serve --saver`
+from a terminal or a test reaches the same branch. The Mac and the Framework (Linux) pass this test because the
+branch is Windows-only.
+
+The window, read while the UHD run was hung (pid 29544, `jetcarp.exe host serve --saver --seconds 1`, started
+16:55:05, 0.08 s of CPU, 1 thread, 32 MB):
+  'JETCARP' class #32770 at 755,327-1182,766 (on the laptop's screen), visible; an OK button and the text
+  "JETCARP won't run the screen saver until its photosensitive seizure warning has been accepted." followed by
+  the whole warning (the same text as `host start`'s refusal in 0-build-setup.txt).
+
+RTX run (13:54:21): built in 3m 44s; the main binary's 14 unit tests and cli_json's 11 passed, then host.rs hung.
+  The 3 h timeout killed the tree at 16:54:21, so every test binary after host.rs went unrun on RTX, and host.rs's
+  failure report was lost with it. In that run host.rs also printed
+    test host_stop_returns_once_the_host_has_gone ... FAILED
+  (the reason is in the report that never printed; it passed on UHD, on rc.3 on this laptop, and on the Mac and
+  the Framework). Log: 1-tests-rtx-run1-timeout.txt.
+UHD run (16:54:21): hung the same way from 16:55:05. At 18:31:20 the session posted BM_CLICK to the OK button,
+  which did nothing; at 18:31:31 it posted WM_COMMAND IDOK to the dialog, which closed it. The saver process
+  ended, the test passed ("test nothing_starts_on_screen_before_the_warning_is_accepted ... ok"), host.rs ended
+  "15 passed; 0 failed; 3 ignored ... finished in 5782.85s", and the suite went on. OK in that box only closes it:
+  it accepts nothing (the test then accepts the warning itself with `jetcarp setup`).
+
+For a fix (not made here): the test could leave the saver case out on Windows, or run_saver could show the box only
+when started as the .scr (run_scr), not from `host serve --saver`.

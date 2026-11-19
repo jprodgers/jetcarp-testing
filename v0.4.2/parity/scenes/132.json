@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Grounded Life",
+  "description": "Stable; Life plus birth on 5. Life's usual ships fail, and the commonest ship is Glider 3736, orthogonal at 2c/5.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "18189117958256875733",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Grounded Life",
+      "rule": "B35/S23",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "3967ef3943c032da",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

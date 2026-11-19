@@ -1,0 +1,219 @@
+2026-11-15T09:01:22Z == Phase 1 starts: jetcarp 0.4.2-rc.2, 27.2.1, Now drawing from 'AC Power'
+2026-11-15T09:01:22Z everyday folder newest file: 2026-11-13 18:36:09 /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite-wal
+2026-11-15T09:01:22Z == 0 doctor, first run on the fresh test folder
+2026-11-15T09:01:23Z doctor exit 0, 1 s; self-test: passed (372 ms): 59 world rules and 33 explore batches matched the CPU
+2026-11-15T09:01:23Z doctor again exit 0, 0 s; self-test: passed (372 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+gpu-checks.json
+2026-11-15T09:01:23Z == 1.1 parity, 371 scenes, Metal
+2026-11-15T09:02:34Z 1.1 exit 0, 71 s
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (Apple M2 Max, Metal)
+2026-11-15T09:02:34Z == 1.2 long parity, 40 scenes x 5000, Metal
+2026-11-15T09:03:38Z 1.2 exit 0, 64 s
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (Apple M2 Max, Metal)
+2026-11-15T09:03:38Z == 1.3 cargo test --release --workspace --no-fail-fast (tag v0.4.2-rc.2)
+warning: refs/tags/v0.4.2-rc.2 ecc4009d350004c874704ba0932901e25b8f7652 is not a commit!
+Note: switching to '2d4b84ce09a5acb0cbb6e843d8a14d3e7eb18ea9'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+2026-11-15T09:03:40Z clone exit 0, commit 2d4b84c
+2026-11-15T09:15:09Z 1.3 exit 0, 689 s
+1.3 totals: 991 passed, 0 failed, 33 ignored, in 140 test binaries
+test app::reseed_ui::tests::preset_survey ... ignored
+test app::shots::ai_control_window_on_the_quick_start ... ignored
+test app::shots::shots_desktop_pane_cards ... ignored
+test app::shots::shots_desktop_show_just_this_scene ... ignored
+test app::shots::shots_new_tiling ... ignored
+test app::shots::shots_quick_start_atlas ... ignored
+test app::shots::shots_tour ... ignored
+test app::shots::shots_wallpaper ... ignored
+test big_world_reseed_timing ... ignored
+test explore::job::tests::cpu_cost_by_family ... ignored
+test gpu_prefix_speed ... ignored
+test gun_hashes ... ignored
+test hunt_one_soup ... ignored
+test hunt_profile ... ignored
+test hunt_throughput ... ignored
+test keepawake::tests::take_and_release ... ignored
+test offscreen::tests::offscreen_ants_stop_resume ... ignored
+test offscreen::tests::offscreen_ants_window ... ignored
+test offscreen::tests::offscreen_catalog_tools_window ... ignored
+test offscreen::tests::offscreen_dashboard_explore ... ignored
+test offscreen::tests::offscreen_dashboard_window ... ignored
+test offscreen::tests::offscreen_hashlife_window ... ignored
+test offscreen::tests::offscreen_sandpile_stop_resume ... ignored
+test offscreen::tests::offscreen_sandpile_window ... ignored
+test offscreen::tests::offscreen_start_screen ... ignored
+test offscreen::tests::offscreen_start_screen_starter_pack ... ignored
+test profiles::tests::profile_survey ... ignored
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.54s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.94s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.99s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.27s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 19.77s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.32s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.73s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.25s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.92s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.12s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.92s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.51s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.81s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.84s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.95s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.78s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.56s
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.08s
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.92s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.58s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.69s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.41s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.89s
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.70s
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 41.81s
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.41s
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.15s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.19s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.11s
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.71s
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.45s
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.10s
+test result: ok. 23 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 10.59s
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.18s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.25s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.76s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 36.53s
+test result: ok. 32 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.15s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.61s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.18s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.67s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.70s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 37.09s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.78s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 46.72s
+test result: ok. 4 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 11.90s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.25s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.23s
+test result: ok. 58 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.20s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.22s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.04s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.86s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.51s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.58s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.35s
+test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.19s
+test result: ok. 7 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 11.60s
+test result: ok. 73 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.79s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.65s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.51s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.80s
+test result: ok. 87 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.18s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.05s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.77s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.16s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 42.71s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.48s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.59s
+test result: ok. 9 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 3.29s
+test setup_ui::tests::offscreen_setup_wizard ... ignored
+test size_classes_exact_vs_float_level6 ... ignored, slow in debug builds; run with --release --ignored
+test spectre_exact_equals_float_level6 ... ignored, slow in debug builds; run with --release --ignored
+test spectre_window_equals_level_8_cell_for_cell ... ignored
+test world_larger_than_one_dispatch_dimension ... ignored, heavy: two worlds of 17 million cells
+test write_golden_packs ... ignored
+2026-11-15T09:15:09Z everyday folder newest file: 2026-11-13 18:36:09 /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite-wal
+2026-11-15T09:15:09Z == 1.6 deterministic hunt
+2026-11-15T09:15:21Z hunt exit 0, 12 s
+2026-11-15T09:15:21Z hunt job 1: hunt 1: 20,000/20,000 soups in each of 6 groups, 10337 soups/s, 760,892 objects (ships 51,012, osc 236,468, still 473,412), 1,783 distinct, 1,783 new | newest: still life 19c #916b39 (B3/S23)
+2026-11-15T09:15:21Z == 1.4 explore, 120 minutes, detached
+2026-11-15T09:15:22Z explore start exit 0
+2026-11-15T09:15:37Z explore job 2; its processes: 14087 /Users/Jimmie/jetcarp-rc-042b/bin/jetcarp jobs resume 2 --library /Users/Jimmie/jetcarp-rc-042b/data/library.sqlite --quiet --minutes 120;
+2026-11-15T10:15:44Z before the kill: explore 2: 272,936 runs (88/s), 27,735 elites in 13,251 niches (1,341 of them confirmed), 181 of 1,359 tilings; Apple M2 Max, Metal
+2026-11-15T10:15:44Z kill -9: 14087 
+2026-11-15T10:16:29Z jobs wait after the kill: exit 6 after 45 s (6 = gone)
+2026-11-15T10:16:29Z after the kill: explore 2: 272,936 runs (88/s), 27,735 elites in 13,251 niches (1,341 of them confirmed), 181 of 1,359 tilings; Apple M2 Max, Metal   status running, 1 h 0 min run over every session, 7,092 confirmation runs, 281,099 candidates tried, 5.52 GB of memory  | resumable=True stale=False
+2026-11-15T10:16:29Z resume exit 0
+2026-11-15T13:16:21Z over 4 hours: jobs stop
+asked explore search 2 to stop at its next checkpoint
+2026-11-15T13:16:29Z jobs wait at the end: exit 3 (0 = done), 241 min after the start
+2026-11-15T13:16:29Z end: explore 2: 1,120,514 runs (74/s), 51,926 elites in 23,283 niches (3,321 of them confirmed), 574 of 1,359 tilings; Apple M2 Max, Metal   status paused, 3 h 59 min run over every session, 17,733 confirmation runs, 1,139,316 candidates tried, 7.53 GB of memory 
+2026-11-15T13:16:35Z search runs: screened 1120514 + confirmed 17733; jobs runs csv: 1120514 rows
+2026-11-15T13:16:35Z == 1.4 pack export (no jobs seal) and import into a fresh library
+2026-11-15T13:16:35Z pack key exit 0
+2026-11-15T13:16:36Z export exit 0, 1 s; size  85M (86616 KiB)
+explore job 2 (search c022e749-295d-4369-928b-6c0fa3c35579): sealed its newest 138,247 runs first, so the pack carries every run
+2026-11-15T13:16:37Z pack check exit 0
+2026-11-15T13:16:42Z import exit 0, 5 s
+2026-11-15T13:16:42Z imported explore job: 1
+    2  hunt     done     2026-11-15T13:16:42Z  hunt 2: imported from pack rc2-long (its finds came with the pack; nothing ran here)
+    1  explore  paused   2026-11-15T13:16:37Z  explore 1: 1,120,514 runs (0/s), 51,926 elites in 23,283 niches (3,314 of them confirmed), 574 of 1,359 tilings; not run here yet
+2 job(s); 0 running
+2026-11-15T13:16:48Z imported runs: 1120514 rows (search: screened 1120514 + confirmed 17733)
+2026-11-15T13:16:48Z everyday folder newest file: 2026-11-13 18:36:09 /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite-wal; which jetcarp: /opt/homebrew/bin/jetcarp (jetcarp 0.4.1)
+2026-11-15T13:16:48Z jetcarp processes left: 
+2026-11-15T13:16:48Z == Phase 1 ends

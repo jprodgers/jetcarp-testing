@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Living On The Edge",
+  "description": "Highly chaotic; whether a pattern lasts or dies out is hard to predict. Also called LOTE. (Mirek Wójtowicz)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "8768870300318233223",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Living On The Edge",
+      "rule": "B3/S345/C6",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "ca2ccb499995fb7e",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

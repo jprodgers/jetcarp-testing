@@ -1,0 +1,101 @@
+﻿JETCARP_GPU=UHD, branch 472bec5 jobs wait: a stopped job has ended only once its run lets go of it, 2026-11-14T18:21:18
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.21s
+     Running unittests src\lib.rs (target\release\deps\jetcarp_gpu-8ad144e4c28d695a.exe)
+
+running 9 tests
+test select::tests::compute_prefers_discrete_and_display_integrated ... ok
+test select::tests::the_setting_reads_and_writes ... ok
+test select::tests::the_variable_then_the_command_then_the_own_choice_then_the_shared_setting ... ok
+test tests::forest_threshold_is_exact ... ok
+test select::tests::sizes_read_plainly ... ok
+test select::tests::the_variable_sets_mode_or_adapter ... ok
+test select::tests::decent_means_a_real_gpu_with_room ... ok
+test select::tests::a_request_wins_over_the_policy ... ok
+test select::tests::every_family_the_gpu_runs_is_in_the_self_test ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\batch.rs (target\release\deps\batch-86ab2ae626baa374.exe)
+
+running 8 tests
+test world_larger_than_one_dispatch_dimension ... ignored, heavy: two worlds of 17 million cells
+test unsupported_rules_are_refused ... ok
+test larger_than_life_matches ... ok
+test a_batch_is_given_up_when_cut ... ok
+test every_rule_every_tiling_matches ... ok
+test generations_split_over_submissions ... ok
+test many_worlds_reuse_and_frame_edge_cases ... ok
+test padding_and_multi_type_worlds ... ok
+
+test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 3.36s
+
+     Running tests\equality.rs (target\release\deps\equality-6d5b7daf8fea9f45.exe)
+
+running 11 tests
+test done_trigger ... ok
+test unsupported_rules_fall_back ... ok
+test scripts_and_period_detection ... ok
+test several_cas_and_steps_per_generation ... ok
+test commands_between_gpu_runs ... ok
+test priority_rules ... ok
+test reseed_policies_match_cpu ... ok
+test explicit_storage_spectre_level_7 ... ok
+test ages_saturate_like_the_cpu ... ok
+test explicit_storage_spectre ... ok
+test every_rule_tiling_and_boundary ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 26.69s
+
+     Running tests\families.rs (target\release\deps\families-e5cc37b82ea4a0fc.exe)
+
+running 16 tests
+test forest_fire ... ok
+test jaca_glow_and_counts ... ok
+test ltl_on_patches ... ok
+test sandpile_edges_drops_and_patches ... FAILED
+test b0_from_an_odd_tick ... ok
+test margolus_rules ... ok
+test jaca_on_patches ... ok
+test quick_start_entries ... ok
+test sandpile_scenes ... ok
+test b0_rules has been running for over 60 seconds
+test jaca_blast_radii has been running for over 60 seconds
+test jaca_commands_between_runs has been running for over 60 seconds
+test jaca_on_lattices has been running for over 60 seconds
+test jaca_scripts_reseeds_and_repeats has been running for over 60 seconds
+test ltl_on_lattices has been running for over 60 seconds
+test jaca_on_lattices ... ok
+test sandpile_repeats_and_scripts has been running for over 60 seconds
+test ltl_on_lattices ... ok
+test jaca_scripts_reseeds_and_repeats ... ok
+test b0_rules ... ok
+test jaca_commands_between_runs ... ok
+test sandpile_repeats_and_scripts ... FAILED
+test jaca_blast_radii ... ok
+
+failures:
+
+---- sandpile_edges_drops_and_patches stdout ----
+
+thread 'sandpile_edges_drops_and_patches' (43468) panicked at crates\jetcarp-gpu\tests\families.rs:54:5:
+assertion `left == right` failed: sandpile drop 1 on square Dead Edge: hash at generation 1
+  left: "60047217d97ba607"
+ right: "024298488f7067d5"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- sandpile_repeats_and_scripts stdout ----
+
+thread 'sandpile_repeats_and_scripts' (44632) panicked at crates\jetcarp-gpu\tests\families.rs:54:5:
+assertion `left == right` failed: sandpile script: hash at generation 1
+  left: "3e93fe95da80cba1"
+ right: "f9fb28e4fdfb1611"
+
+
+failures:
+    sandpile_edges_drops_and_patches
+    sandpile_repeats_and_scripts
+
+test result: FAILED. 14 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 69.54s
+
+error: test failed, to rerun pass `-p jetcarp-gpu --test families`
+exit 101 in 1.7 min

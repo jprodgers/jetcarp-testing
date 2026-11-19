@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Billiard ball machine",
+  "description": "Margolus 1984: balls fly diagonally and bounce elastically; reversible, conserves balls.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 160,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "13603884604091949485",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Billiard ball machine",
+      "rule": "Margolus 0,8,4,3,2,5,9,7,1,6,10,11,12,13,14,15",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "blob": {
+          "radius": 0.3,
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "efe91abf9f6d4c40",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

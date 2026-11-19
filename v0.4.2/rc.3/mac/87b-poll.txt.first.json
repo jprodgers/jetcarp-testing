@@ -1,0 +1,65 @@
+{
+  "cas": [
+    {
+      "affects_others": false,
+      "annihilation": {
+        "last_cancelled_births": 209,
+        "last_destroyed": 1380,
+        "last_touching": 538,
+        "total_destroyed": 777587,
+        "total_touching": 296573
+      },
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "JACA B1/S01V blast 1",
+      "neighborhood": "edge",
+      "palette": "Deep Sea",
+      "palette_neg": "Thermal",
+      "rule": "JACA B1/S01V blast 1",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 24056,
+  "cells_hash": "59960f623ea05469",
+  "done": "no: something can still change",
+  "fields": [
+    {
+      "ca_ids": [
+        1
+      ],
+      "field": 0,
+      "kind": "3-state",
+      "max_state": 2,
+      "negative": 6386,
+      "population": 11244,
+      "positive": 4858,
+      "shared": false
+    }
+  ],
+  "generation": 480,
+  "hash": "314f2118cba14fc6",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "app",
+    "note": "this is the world shown in the JETCARP app window; the user can change it too",
+    "playing": true,
+    "playing_note": "the app is running generations on its own (the user pressed Run), so the generation keeps advancing between calls",
+    "scene_name": "JACA rainbow fronts (triangles, edge)",
+    "screensaver": false
+  },
+  "script": null,
+  "status": "Running",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Any triangle (triangle): 24056 cells, 124x97 unit cells, 2 tile type(s), storage periodic, edges wrap",
+    "grid": {
+      "coordinates": "x = column 0..width-1, y = row 0..height-1 from the top; index = y * width + x",
+      "height": 97,
+      "tile_types_per_unit_cell": 2,
+      "width": 248
+    },
+    "id": "triangle",
+    "name": "Any triangle"
+  }
+}

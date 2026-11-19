@@ -1,0 +1,91 @@
+R4 #112b the not-connected monitor's screen, the Mac, 2026-11-17 03:04:11 AM EST; test folder $H = homes/fit (rc.3's host.json)
+$ $J host start
+running, pid 36251, up 0.0s, 20 MB, GPU Apple M2 Max
+screen 0: Wolfram series · W0 (1 of 256) · starting · wallpaper on monitor 0 · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+screen 1: A classic a day · profile Penrose waves (6 of 7) · starting · wallpaper on monitor 1 · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+[exit 0, 0.19 s]
+
+03:04:21 +10s  cpu  53.1%  | screen ? gen None monitor 0  connected rate None | screen ? gen None monitor 1  connected rate None 
+03:04:31 +20s  cpu  52.6%  | screen ? gen None monitor 0  connected rate None | screen ? gen None monitor 1  connected rate None 
+03:04:41 +30s  cpu  61.5%  | screen ? gen None monitor 0  connected rate None | screen ? gen None monitor 1  connected rate None 
+03:04:51 +40s  cpu  50.2%  | screen ? gen None monitor 0  connected rate None | screen ? gen None monitor 1  connected rate None 
+03:05:01 +50s  cpu  57.9%  | screen ? gen None monitor 0  connected rate None | screen ? gen None monitor 1  connected rate None 
+$ $J host status --json | python3 -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps(d["screens"][1], indent=1)[:1800])'
+{
+ "frames": 1517,
+ "hidden": false,
+ "monitor": 1,
+ "place": "wallpaper",
+ "simulation": {
+  "adapter": "Apple M2 Max, Metal",
+  "on": "gpu",
+  "why": null
+ },
+ "stage": {
+  "building": false,
+  "canvas": [
+   1280.0,
+   720.0
+  ],
+  "caption": [
+   "B2/S/C4",
+   "Penrose rhombs (P3) \u00b7 280,000 cells",
+   "A classic a day \u00b7 6 of 7 \u00b7 generation 1,508"
+  ],
+  "cell_px": 2.4000000953674316,
+  "cells": 280000,
+  "count": 7,
+  "frame_rate": 30.0,
+  "generation": 1508,
+  "label": "profile Penrose waves",
+  "level": 6,
+  "measured_speed": 30.023147583007812,
+  "number": 6,
+  "paused": false,
+  "rotation": "A classic a day",
+  "scale": 1.0,
+  "seconds_left": null,
+  "speed": 30.0
+ }
+}
+[exit 0, 0.09 s]
+
+$ $J host stop
+stopped
+[exit 0, 0.16 s]
+
+$ hosts
+no host process running
+[exit 0, 0.04 s]
+
+R4 #112b (more): the host's windows while screen 1's monitor isn't connected, 2026-11-17 03:05:21 AM EST
+$ $J host start | sed -n 1,3p
+running, pid 36405, up 0.0s, 18 MB, GPU Apple M2 Max
+screen 0: Wolfram series · W0 (1 of 256) · starting · wallpaper on monitor 0 · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+screen 1: A classic a day · profile Penrose waves (6 of 7) · starting · wallpaper on monitor 1 · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit , 0.19 s]
+
+$ ~/jetcarp-rc4-pre/bin/hostwin 36405
+3941 -2147483623 2056x1329 1
+3939 0 64x64 0
+[exit , 0.08 s]
+
+$ $J host status | sed -n 2,4p
+screen 0: Wolfram series · W0 (1 of 256) · generation 367 · 170648 cells of 8 px · 60 fps, 60 generations a second · wallpaper on monitor 0 (Built-in Retina Display) · simulation: CPU: automatic, and the world is too small to be worth the GPU
+screen 1: A classic a day · profile Penrose waves (6 of 7) · generation 176 · 280000 cells of 2.4 px · 30 fps, 30 generations a second · wallpaper on monitor 1 (not connected) · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+[exit , 0.04 s]
+
+$ $J host stop
+stopped
+[exit , 0.19 s]
+
+$ hosts
+no host process running
+[exit , 0.04 s]
+
+(These last five commands ran in zsh, where bash's PIPESTATUS is empty, hence the blank exits; each did what its output shows.)

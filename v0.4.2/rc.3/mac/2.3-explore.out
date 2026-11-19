@@ -1,0 +1,8 @@
+explore 2: 638 runs (1/s), 239 elites in 130 niches (13 of them confirmed), 8 of 1,359 tilings; cpu only
+  status paused, 4 min 59 s run over every session, 57 confirmation runs, 724 candidates tried, 0.14 GB of memory
+  threads: 10 for runs on the processor, of 12 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 9 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                        638   0.51   1.63     239
+  folder: /Users/Jimmie/jetcarp-rc-042c/data/searches/e3ac9ab9-d2ec-4b33-8fab-6bce34744961

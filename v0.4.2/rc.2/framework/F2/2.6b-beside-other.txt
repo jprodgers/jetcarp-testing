@@ -1,0 +1,33 @@
+explore search job 10 in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/library.sqlite
+GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 1,024 runs (105/s), 226 elites in 123 niches (0 of them confirmed), 1 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 1,024 runs (65/s), 226 elites in 123 niches (0 of them confirmed), 1 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 2,048 runs (93/s), 515 elites in 276 niches (0 of them confirmed), 2 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 3,072 runs (112/s), 725 elites in 383 niches (0 of them confirmed), 3 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 4,096 runs (124/s), 821 elites in 426 niches (0 of them confirmed), 4 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 4,096 runs (105/s), 821 elites in 426 niches (0 of them confirmed), 4 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 5,120 runs (116/s), 971 elites in 505 niches (0 of them confirmed), 5 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 5,120 runs (102/s), 971 elites in 505 niches (0 of them confirmed), 5 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 6,136 runs (108/s), 1,326 elites in 690 niches (0 of them confirmed), 6 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 6,136 runs (98/s), 1,326 elites in 690 niches (0 of them confirmed), 6 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 7,152 runs (105/s), 1,542 elites in 800 niches (0 of them confirmed), 7 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 7,152 runs (96/s), 1,542 elites in 800 niches (0 of them confirmed), 7 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 7,152 runs (89/s), 1,542 elites in 800 niches (0 of them confirmed), 7 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 7,152 runs (65/s), 1,542 elites in 800 niches (96 of them confirmed), 7 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 7,152 runs (59/s), 1,542 elites in 800 niches (96 of them confirmed), 7 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 7,152 runs (55/s), 1,542 elites in 800 niches (96 of them confirmed), 7 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 8,167 runs (56/s), 1,915 elites in 992 niches (96 of them confirmed), 8 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 8,167 runs (52/s), 1,915 elites in 992 niches (96 of them confirmed), 8 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 9,187 runs (55/s), 2,068 elites in 1,070 niches (96 of them confirmed), 9 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 9,187 runs (51/s), 2,068 elites in 1,070 niches (96 of them confirmed), 9 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 10,211 runs (55/s), 2,183 elites in 1,122 niches (96 of them confirmed), 10 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 11,235 runs (58/s), 2,233 elites in 1,146 niches (96 of them confirmed), 11 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 11,235 runs (54/s), 2,233 elites in 1,146 niches (96 of them confirmed), 11 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 12,259 runs (62/s), 2,287 elites in 1,168 niches (96 of them confirmed), 12 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 13,283 runs (91/s), 2,451 elites in 1,250 niches (96 of them confirmed), 13 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 14,307 runs (97/s), 2,510 elites in 1,272 niches (96 of them confirmed), 14 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 14,307 runs (90/s), 2,510 elites in 1,272 niches (96 of them confirmed), 14 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 14,307 runs (86/s), 2,510 elites in 1,272 niches (171 of them confirmed), 14 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 15,331 runs (91/s), 2,557 elites in 1,293 niches (171 of them confirmed), 15 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore search 10 paused (at its budget); `jetcarp jobs resume 10` continues it from its archive (not run for run: the search is not deterministic)

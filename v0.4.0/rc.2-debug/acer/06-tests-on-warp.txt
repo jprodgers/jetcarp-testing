@@ -1,0 +1,22 @@
+# 2026-11-12T04:53:38.8465262-05:00  jetcarp c5a58fc + the debug switch (JETCARP_DEBUG_FALLBACK=1: force_fallback_adapter, i.e. WARP)
+# cargo test --release --features jetcarp/windows-launcher -p jetcarp --test host -- host_start runs_scenes --nocapture
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.40s
+     Running tests\host.rs (target\release\deps\host-1a7e11086b6dfb59.exe)
+
+running 3 tests
+test a_host_started_at_login_leaves_window_screens_unseen ... ok
+test runs_scenes_and_answers_its_link ... ok
+thread 'host_start_can_be_captured_and_returns' (2548) panicked at crates\jetcarp\tests\host.rs:355:9:
+status after host start: link to the JETCARP app: An existing connection was forcibly closed by the remote host. (os error 10054); host pid Some(1804), alive: Some(false)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test host_start_can_be_captured_and_returns ... FAILED
+
+failures:
+
+failures:
+    host_start_can_be_captured_and_returns
+
+test result: FAILED. 2 passed; 1 failed; 0 ignored; 0 measured; 6 filtered out; finished in 7.82s
+
+error: test failed, to rerun pass `-p jetcarp --test host`
+exit: 101

@@ -1,0 +1,61 @@
+﻿app: ~\jetcarp-rc-042c\bin\jetcarp.exe --control  [22:09:41]
+app pid 24392, window 'JETCARP'
+world_new -> isError=False: New world created.
+app_display playing speed 30 -> isError=False
+   t(s)  phase      answer(s)  generation  gens/s  minimised  app-CPU(% of a core)
+    0.5  in view        0.48           1       -      False       -
+    2.0  in view        0.01          63    40.7      False      23
+    4.0  in view        0.01         123    30.0      False      13
+    6.3  in view        0.32         183    25.9      False      16
+    8.0  in view        0.01         243    35.4      False      22
+   10.0  in view        0.01         303    30.0      False      39
+   12.0  in view        0.01         363    30.0      False      32
+   14.0  in view        0.01         423    30.0      False      23
+   16.0  in view        0.01         483    30.0      False      13
+   18.3  in view        0.31         543    26.0      False      19
+  -- ShowWindow(h, 6) at 20.0 s
+   20.2  minimised      0.11         604    33.2       True      32
+   22.1  minimised      0.03         662    30.1       True       2
+   24.1  minimised      0.09         723    29.7       True       4
+   26.4  minimised      0.32         781    26.0       True       3
+   28.1  minimised      0.07         843    35.4       True       3
+   30.2  minimised      0.12         904    29.8       True       4
+   32.1  minimised      0.05         962    30.0       True       2
+   34.5  minimised      0.40        1023    25.9       True       5
+   36.1  minimised      0.04        1082    36.1       True       3
+   38.1  minimised      0.08        1143    29.8       True       4
+   40.5  minimised      0.42        1204    26.1       True       4
+   42.1  minimised      0.06        1262    35.5       True       3
+   44.2  minimised      0.10        1324    30.2       True       2
+   46.2  minimised      0.14        1385    30.0       True       4
+   48.1  minimised      0.06        1442    29.7       True       5
+   50.2  minimised      0.11        1504    30.3       True       2
+   52.4  minimised      0.38        1572    29.8       True       3
+   54.1  minimised      0.02        1622    30.6       True       0
+   56.8  minimised      0.72        1693    26.3       True       2
+   58.2  minimised      0.10        1744    37.0       True       2
+   60.1  minimised      0.02        1801    29.6       True       2
+   62.1  minimised      0.07        1863    30.2       True       3
+   64.2  minimised      0.13        1925    30.1       True       5
+   66.1  minimised      0.05        1982    29.6       True       2
+   68.2  minimised      0.10        2044    30.3       True       2
+   70.4  minimised      0.33        2102    26.0       True       4
+   72.1  minimised      0.07        2163    35.0       True       1
+   74.2  minimised      0.13        2225    30.2       True       3
+   76.1  minimised      0.05        2282    29.6       True       2
+   78.2  minimised      0.10        2344    30.2       True       4
+  -- ShowWindow(h, 9) at 80.1 s
+   80.1  restored       0.01        2407    32.0      False       4
+   82.4  restored       0.33        2466    25.5      False      31
+   84.4  restored       0.32        2526    30.2      False      31
+   86.1  restored       0.01        2586    35.5      False      34
+   88.1  restored       0.01        2646    29.9      False      39
+   90.4  restored       0.31        2706    26.2      False      50
+   92.1  restored       0.01        2766    35.2      False      54
+   94.1  restored       0.02        2827    30.4      False      34
+   96.1  restored       0.02        2887    29.9      False      27
+   98.4  restored       0.32        2947    26.1      False      31
+in view: 10 polls, 30.4 gens/s, slowest answer 0.48 s, app CPU mean 22% of a core
+minimised: 30 polls, 30.0 gens/s, slowest answer 0.72 s, app CPU mean 4% of a core
+restored: 10 polls, 29.5 gens/s, slowest answer 0.33 s, app CPU mean 34% of a core
+app closed: by WM_CLOSE (exit 0)

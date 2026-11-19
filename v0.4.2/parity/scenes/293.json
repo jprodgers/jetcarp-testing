@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA streaky shards (3.3.3.4.4)",
+  "description": "B3,11/S3456 on the elongated triangular tiling: streaky, shard-like territories. Found by a JACA rule search.",
+  "tiling": {
+    "family": "elongtri",
+    "size": {
+      "rect": {
+        "w": 148,
+        "h": 54
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 29,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B3,11/S3456",
+      "rule": "JACA B3,11/S3456",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Deep Sea",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Thermal"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "6ebbd72f5eff112d",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

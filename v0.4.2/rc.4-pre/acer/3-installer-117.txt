@@ -1,0 +1,115 @@
+#### 3. The PowerShell installer, 41f7f2f Windows: a refused host serve --saver says so on the command line, not in a message box (#120), 2026-11-16 18:48:02
+sha256 of install.ps1: cf1bbc0a8f0d64f1131af3372eac37bc81cda82b656febb22527c649ee53937e
+Parser::ParseFile errors: 0
+(PowerShell 5.1.26100.9818)
+user PATH before: type ExpandString, 770 characters, 19 entries; has %PNPM_HOME%: True
+
+#### A: install with -NoModifyPath
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -DownloadUrl "~\jetcarp-rc-042c" -InstallDir "~\jetcarp-rc4pre\inst-a\jetcarp" -NoModifyPath
+jetcarp-installer: getting JETCARP 0.4.2-rc.3 for x86_64-pc-windows-msvc from ~\jetcarp-rc-042c
+jetcarp-installer: checked jetcarp-0.4.2-rc.3-x86_64-pc-windows-msvc.zip against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.3 in ~\jetcarp-rc4pre\inst-a\jetcarp
+jetcarp-installer: the starter pack is in ~\jetcarp-rc4pre\inst-a\jetcarp\packs
+jetcarp-installer: left your PATH alone: run JETCARP as ~\jetcarp-rc4pre\inst-a\jetcarp\jetcarp.exe
+jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees
+exit 0
+(new jetcarp-* folders in %TEMP%: none)
+inst-a: packs, .jetcarp-installer, COPYING, jetcarp.exe, jetcarpw.exe, LICENSE-MIT, README.md, THIRD_PARTY_LICENSES.html, THIRD_PARTY_NOTICES.md, UNLICENSE
+marker: JETCARP 0.4.2-rc.3 x86_64-pc-windows-msvc | made ~\jetcarp-rc4pre\inst-a
+jetcarp --version from it: jetcarp 0.4.2-rc.3
+user PATH unchanged by A: True
+
+#### A: -Uninstall
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -InstallDir "~\jetcarp-rc4pre\inst-a\jetcarp" -Uninstall
+jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+jetcarp-installer: removed ~\jetcarp-rc4pre\inst-a\jetcarp and took it off your PATH
+jetcarp-installer: removed ~\jetcarp-rc4pre\inst-a (empty, made by the install)
+jetcarp-installer: kept your settings, data and pictures, usually in ~\AppData\Roaming\jetcarp, ~\AppData\Local\jetcarp and ~\OneDrive\Pictures\JETCARP; delete them by hand if you want them gone
+exit 0
+(new jetcarp-* folders in %TEMP%: none)
+inst-a left: (gone, with its parent)
+
+#### B: install, adding to the user PATH
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -DownloadUrl "~\jetcarp-rc-042c" -InstallDir "~\jetcarp-rc4pre\inst-b\jetcarp"
+jetcarp-installer: getting JETCARP 0.4.2-rc.3 for x86_64-pc-windows-msvc from ~\jetcarp-rc-042c
+jetcarp-installer: checked jetcarp-0.4.2-rc.3-x86_64-pc-windows-msvc.zip against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.3 in ~\jetcarp-rc4pre\inst-b\jetcarp
+jetcarp-installer: the starter pack is in ~\jetcarp-rc4pre\inst-b\jetcarp\packs
+jetcarp-installer: added ~\jetcarp-rc4pre\inst-b\jetcarp to your user PATH; open a new terminal to use `jetcarp`
+jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees
+exit 0
+(new jetcarp-* folders in %TEMP%: none)
+user PATH after install: type ExpandString, 20 entries; still has %PNPM_HOME% unexpanded: True; starts with the old value: True
+  what was added at the end: ';~\jetcarp-rc4pre\inst-b\jetcarp'
+
+#### B: the same install again (an update in place)
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -DownloadUrl "~\jetcarp-rc-042c" -InstallDir "~\jetcarp-rc4pre\inst-b\jetcarp"
+jetcarp-installer: getting JETCARP 0.4.2-rc.3 for x86_64-pc-windows-msvc from ~\jetcarp-rc-042c
+jetcarp-installer: checked jetcarp-0.4.2-rc.3-x86_64-pc-windows-msvc.zip against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.3 in ~\jetcarp-rc4pre\inst-b\jetcarp
+jetcarp-installer: the starter pack is in ~\jetcarp-rc4pre\inst-b\jetcarp\packs
+jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees
+exit 0
+(new jetcarp-* folders in %TEMP%: none)
+user PATH after the second install: entries 20 (no duplicate: True)
+
+#### B: -Uninstall
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -InstallDir "~\jetcarp-rc4pre\inst-b\jetcarp" -Uninstall
+jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+jetcarp-installer: removed ~\jetcarp-rc4pre\inst-b\jetcarp and took it off your PATH
+jetcarp-installer: removed ~\jetcarp-rc4pre\inst-b (empty, made by the install)
+jetcarp-installer: kept your settings, data and pictures, usually in ~\AppData\Roaming\jetcarp, ~\AppData\Local\jetcarp and ~\OneDrive\Pictures\JETCARP; delete them by hand if you want them gone
+exit 0
+(new jetcarp-* folders in %TEMP%: none)
+user PATH after -Uninstall: type ExpandString; identical to before (value and type): True
+inst-b left: (gone, with its parent)
+
+#### C: install into a folder the installer did not make (non-empty)
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -DownloadUrl "~\jetcarp-rc-042c" -InstallDir "~\jetcarp-rc4pre\not-mine" -NoModifyPath
+jetcarp-installer: ~\jetcarp-rc4pre\not-mine exists and was not made by this installer; choose another with -InstallDir
+exit 1
+(refusal: 1 non-empty line(s); PowerShell error block: False)
+(new jetcarp-* folders in %TEMP%: none)
+not-mine afterwards: keep.txt
+
+#### C: -Uninstall where nothing was installed
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -InstallDir "~\jetcarp-rc4pre\nothing-here" -Uninstall
+jetcarp-installer: no JETCARP installed by this installer in ~\jetcarp-rc4pre\nothing-here
+exit 1
+(refusal: 1 non-empty line(s); PowerShell error block: False)
+(new jetcarp-* folders in %TEMP%: none)
+
+#### C: a version that is not one
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version banana -DownloadUrl "~\jetcarp-rc-042c" -InstallDir "~\jetcarp-rc4pre\inst-c" -NoModifyPath
+jetcarp-installer: banana is not a JETCARP version (such as 0.4.0 or 0.4.0-rc.2)
+exit 1
+(refusal: 1 non-empty line(s); PowerShell error block: False)
+(new jetcarp-* folders in %TEMP%: none)
+
+#### C: a version with no files in the download folder
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.4 -DownloadUrl "~\jetcarp-rc-042c" -InstallDir "~\jetcarp-rc4pre\inst-c" -NoModifyPath
+jetcarp-installer: getting JETCARP 0.4.2-rc.4 for x86_64-pc-windows-msvc from ~\jetcarp-rc-042c
+jetcarp-installer: could not get jetcarp-0.4.2-rc.4-x86_64-pc-windows-msvc.zip from ~\jetcarp-rc-042c (a pre-release: is v0.4.2-rc.4 published? If the repository is private, try -UseGh): Cannot find path '~\jetcarp-rc-042c\jetcarp-0.4.2-rc.4-x86_64-pc-windows-msvc.zip' because it does not exist.
+exit 1
+(refusal: 2 non-empty line(s); PowerShell error block: False)
+(new jetcarp-* folders in %TEMP%: none)
+
+#### C: -DownloadUrl an empty folder (a refusal inside the download step)
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -DownloadUrl "~\jetcarp-rc4pre\empty-dl" -InstallDir "~\jetcarp-rc4pre\inst-c" -NoModifyPath
+jetcarp-installer: getting JETCARP 0.4.2-rc.3 for x86_64-pc-windows-msvc from ~\jetcarp-rc4pre\empty-dl
+jetcarp-installer: could not get SHA256SUMS from ~\jetcarp-rc4pre\empty-dl (a pre-release: is v0.4.2-rc.3 published? If the repository is private, try -UseGh): Cannot find path '~\jetcarp-rc4pre\empty-dl\SHA256SUMS' because it does not exist.
+exit 1
+(refusal: 2 non-empty line(s); PowerShell error block: False)
+(new jetcarp-* folders in %TEMP%: none)
+
+#### C: -DownloadUrl a folder with SHA256SUMS but no zip (refused after the first download)
+$ powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Version 0.4.2-rc.3 -DownloadUrl "~\jetcarp-rc4pre\sums-only" -InstallDir "~\jetcarp-rc4pre\inst-c" -NoModifyPath
+jetcarp-installer: getting JETCARP 0.4.2-rc.3 for x86_64-pc-windows-msvc from ~\jetcarp-rc4pre\sums-only
+jetcarp-installer: could not get jetcarp-0.4.2-rc.3-x86_64-pc-windows-msvc.zip from ~\jetcarp-rc4pre\sums-only (a pre-release: is v0.4.2-rc.3 published? If the repository is private, try -UseGh): Cannot find path '~\jetcarp-rc4pre\sums-only\jetcarp-0.4.2-rc.3-x86_64-pc-windows-msvc.zip' because it does not exist.
+exit 1
+(refusal: 2 non-empty line(s); PowerShell error block: False)
+(new jetcarp-* folders in %TEMP%: none)
+inst-c made by the refusals: False
+jetcarp-* folders in %TEMP% now: 33 (jetcarp-api-stopstat-11024, jetcarp-api-stopstat-11400, jetcarp-api-stopstat-7940, jetcarp-api-stopwait-11024, jetcarp-api-stopwait-11400, jetcarp-api-stopwait-4664, jetcarp-api-stopwait-50532, jetcarp-api-stopwait-7940, jetcarp-api-wait-11024, jetcarp-api-wait-11400, jetcarp-api-wait-4664, jetcarp-api-wait-50532, jetcarp-api-wait-7940, jetcarp-app-lib-11220, jetcarp-app-lib-17024, jetcarp-app-lib-30364, jetcarp-app-lib-50740, jetcarp-app-lib-51504, jetcarp-results-11220, jetcarp-results-13392, jetcarp-results-17024, jetcarp-results-2688, jetcarp-results-30364, jetcarp-results-50740, jetcarp-results-51320, jetcarp-results-51504, jetcarp-results-6220, jetcarp-results-7880, jetcarp-results-lib-11220, jetcarp-results-lib-17024, jetcarp-results-lib-30364, jetcarp-results-lib-50740, jetcarp-results-lib-51504)
+logs folder intact after C: True
+#### end 18:49:03

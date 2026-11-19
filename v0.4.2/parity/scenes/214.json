@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Rule 54",
+  "description": "Class 4: interacting particles on a periodic background.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 241,
+        "h": 160
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "8329921093972503031",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Rule 54",
+      "rule": "W54",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "top_random": {
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "b361ebe14306c022",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

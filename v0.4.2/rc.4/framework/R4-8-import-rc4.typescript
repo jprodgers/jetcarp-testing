@@ -1,0 +1,14 @@
+Script started on 2026-11-16 22:15:26-05:00 [COMMAND="stty cols 60 rows 40; $J pack import --allow-unsigned $H/pack-long" <not executed on terminal>]
+sha256:e51390406f3d0c546d11b8e02b8d19ba1e4cc2b9902050aa4f93c76aa069e2a0: feed rc3-long, by SHA256:cBV7+swIsZx5+xaenDSDuCmdozMJLVkF9xxXT9kWrfg (rc.3 test publisher), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 1360f637-bbf4-4110-be69-b01a55ab2fc8: copying its segments and rebuilding its state
+merging sightings
+imported sha256:e51390406f3d0c546d11b8e02b8d19ba1e4cc2b9902050aa4f93c76aa069e2a0 (feed rc3-long, SHA256:cBV7+swIsZx5+xaenDSDuCmdozMJLVkF9xxXT9kWrfg rc.3 test publisher, signed by its publisher)
+  14 objects checked (166327406 bytes)
+  patterns: 776 added, 678 merged, 0 flagged needs_reverify
+  sightings 1783, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 776 of 776 passed, 0 skipped, 0 failed
+search 1360f637-bbf4-4110-be69-b01a55ab2fc8: 2138868 runs, 66570 elites in 29146 niches, rebuilt in 4.8 s
+
+Script done on 2026-11-16 22:15:32-05:00 [COMMAND_EXIT_CODE="0"]

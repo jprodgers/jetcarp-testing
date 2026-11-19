@@ -1,0 +1,141 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Script: Rule 30, Day & Night, Seeds, Life, ants",
+  "description": "A scripted sequence on one shared field. Rule 30 fills the grid, Day & Night reshapes it until it calms down, Seeds bursts it apart, Life settles it, then ants wander the ash.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 200,
+        "h": 150
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 5,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Rule 30",
+      "rule": "W30",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "top_center"
+    },
+    {
+      "id": 2,
+      "name": "Day & Night",
+      "rule": "B3678/S34678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "empty"
+    },
+    {
+      "id": 3,
+      "name": "Seeds",
+      "rule": "B2/S",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "empty"
+    },
+    {
+      "id": 4,
+      "name": "Life",
+      "rule": "B3/S23",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "empty"
+    },
+    {
+      "id": 5,
+      "name": "Langton's ant",
+      "rule": "Ant RL",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 100,
+      "palette": "Ember",
+      "seed": {
+        "ants": {
+          "count": 3
+        }
+      }
+    }
+  ],
+  "script": {
+    "steps": [
+      {
+        "name": "Rule 30 fills the grid",
+        "run": [
+          "Rule 30"
+        ],
+        "until": {
+          "when": "generations",
+          "n": 149
+        }
+      },
+      {
+        "name": "Day & Night until it calms",
+        "run": [
+          "Day & Night"
+        ],
+        "until": {
+          "when": "activity_below",
+          "fraction": 0.002,
+          "for_gens": 20
+        },
+        "max_gens": 400
+      },
+      {
+        "name": "Seeds bursts it",
+        "run": [
+          "Seeds"
+        ],
+        "until": {
+          "when": "generations",
+          "n": 12
+        }
+      },
+      {
+        "name": "Life settles",
+        "run": [
+          "Life"
+        ],
+        "until": {
+          "when": "repeats",
+          "max_period": 6
+        },
+        "max_gens": 2000
+      },
+      {
+        "name": "Ants",
+        "run": [
+          "Langton's ant"
+        ],
+        "until": {
+          "when": "never"
+        }
+      }
+    ],
+    "repeat": false
+  },
+  "record": {
+    "generation": 0,
+    "hash": "5874b399f2e585e2",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

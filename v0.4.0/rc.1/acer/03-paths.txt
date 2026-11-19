@@ -1,0 +1,7 @@
+> jetcarp paths
+(new PowerShell process, PATH rebuilt from the registry as a new window would have it)
+settings: C:\Users\jimmi\AppData\Roaming\jetcarp
+data:     C:\Users\jimmi\AppData\Local\jetcarp
+output:   C:\Users\jimmi\OneDrive\Pictures\JETCARP
+bundled:  (no packs came with the program)
+(exit code 0, 80 ms)

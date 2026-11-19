@@ -1,0 +1,107 @@
+﻿App started from the terminal (jetcarp) at 23:33:32; closed by Jimmie with the window's X at 23:51:45.
+Console output: none. Exit code: -1073741819 = 0xC0000005 (STATUS_ACCESS_VIOLATION).
+Jimmie saw the window close normally (no error dialog).
+
+=== 11/11/2026 23:51:45 | Event 1000 | Application Error
+Faulting application name: jetcarp.exe, version: 0.0.0.0, time stamp: 0x6af53aeb
+Faulting module name: nvoglv64.dll_unloaded, version: 31.0.15.4618, time stamp: 0x654d8fda
+Exception code: 0xc0000005
+Fault offset: 0x0000000000e4e5a2
+Faulting process id: 0x7038
+Faulting application start time: 0x1DD725EF97B85B9
+Faulting application path: C:\Users\jimmi\AppData\Local\Programs\jetcarp\jetcarp.exe
+Faulting module path: nvoglv64.dll
+Report Id: 089fe21e-73ce-4a8e-81f0-37ba3fe5a91b
+Faulting package full name: 
+Faulting package-relative application ID: 
+
+=== 11/11/2026 23:51:51 | Event 1001 | Windows Error Reporting
+Fault bucket 1948694767222698524, type 5
+Event Name: BEX64
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: jetcarp.exe
+P2: 0.0.0.0
+P3: 6af53aeb
+P4: nvoglv64.dll_unloaded
+P5: 31.0.15.4618
+P6: 654d8fda
+P7: 0000000000e4e5a2
+P8: c0000005
+P9: 0000000000000008
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.3a8de5ba-934b-481d-b4f1-a1c2f385325a.tmp.dmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b886c98d-08ea-4d8a-86b7-31be2c14bcbd.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.355550ca-0095-4fcc-a79d-141ebba23b03.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.1f32b109-fd47-49c7-a74c-e726dd9be507.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f8cca0ff-226e-494e-b9c8-fe1282cfe98e.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_jetcarp.exe_bbf5478b133f88757f85984bbb5d829578f8_edc142c5_2bbb687f-a903-4025-9794-5663a7f38e0a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 089fe21e-73ce-4a8e-81f0-37ba3fe5a91b
+Report Status: 268435456
+Hashed bucket: 52222033074d648a6b0b2790eff8b21c
+Cab Guid: 0
+
+=== WER report folder: C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_jetcarp.exe_bbf5478b133f88757f85984bbb5d829578f8_edc142c5_2bbb687f-a903-4025-9794-5663a7f38e0a
+  Report.wer  120478 bytes
+
+=== Report.wer (selected lines)
+EventType=BEX64
+Sig[0].Name=Application Name
+Sig[0].Value=jetcarp.exe
+Sig[1].Name=Application Version
+Sig[1].Value=0.0.0.0
+Sig[2].Name=Application Timestamp
+Sig[2].Value=6af53aeb
+Sig[3].Name=Fault Module Name
+Sig[3].Value=nvoglv64.dll_unloaded
+Sig[4].Name=Fault Module Version
+Sig[4].Value=31.0.15.4618
+Sig[5].Name=Fault Module Timestamp
+Sig[5].Value=654d8fda
+Sig[6].Name=Exception Offset
+Sig[6].Value=0000000000e4e5a2
+Sig[7].Name=Exception Code
+Sig[7].Value=c0000005
+Sig[8].Name=Exception Data
+Sig[8].Value=0000000000000008
+DynamicSig[1].Name=OS Version
+DynamicSig[1].Value=10.0.26300.2.0.0.768.101
+DynamicSig[2].Name=Locale ID
+DynamicSig[2].Value=1033
+DynamicSig[22].Name=Additional Information 1
+DynamicSig[22].Value=b4ee
+DynamicSig[23].Name=Additional Information 2
+DynamicSig[23].Value=b4ee5de6a2322745523997a782b35692
+DynamicSig[24].Name=Additional Information 3
+DynamicSig[24].Value=277e
+DynamicSig[25].Name=Additional Information 4
+DynamicSig[25].Value=277e19c30fbd5f6bb531ec9e027c37c3
+LoadedModule[19]=C:\WINDOWS\SYSTEM32\opengl32.dll
+LoadedModule[20]=C:\WINDOWS\SYSTEM32\dxgi.dll
+LoadedModule[74]=C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_2c21aacb05120ae0\igxelpicd64.dll
+LoadedModule[85]=C:\WINDOWS\system32\d3d11.dll
+
+=== Later sessions (to look for a repro)
+Session 2: jetcarpw.exe double-clicked in Explorer at 23:53:14, app opened, closed with X at 23:54:11 without doing anything.
+jetcarp.exe (20500) exited at 23:54:11 with code 0 (0x00000000)
+jetcarpw.exe (12216) exited: True, code 0 (0x00000000)
+
+Session 3: jetcarp from a terminal at 23:55:27; Tools > Large sandpile (1,000,000 grains on square, Topple on the GPU), then closed with X.
+jetcarp.exe (8700) exited at 23:56:07 with code 0 (0x00000000)
+No new Application Error / WER event after sessions 2 and 3.
+
+Command line: jetcarp pile --gpu --grains 100000 (three runs, scratch library): all exit 0, no crash events.
+
+So the crash on close happened once, at the end of the long first session (Quick Start, 6 entries opened, rating/hiding,
+save/open scene, export PNG, large sandpile on the GPU, soup hunt, pattern library, maximise/restore/resize), and did not
+recur in two short sessions. nvoglv64.dll is NVIDIA's OpenGL and Vulkan driver; Exception Data 8 means an attempt to
+execute code in the already-unloaded DLL, so something (a driver thread or a callback) ran after the DLL was unloaded at exit.

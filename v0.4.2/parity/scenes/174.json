@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Burst II",
+  "description": "Chaotic; Burst minus its one-cell still life (no S0). Has ships fast and slow, methuselahs, and a signature oscillator of period 500+. (Michael Sweney)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "2902532057959193579",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Burst II",
+      "rule": "B3468/S235678/C9",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "a19d587021d9b7af",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

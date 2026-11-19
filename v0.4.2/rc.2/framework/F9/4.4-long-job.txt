@@ -1,0 +1,133 @@
+== search_start hunt detach=true -> isError=False
+{
+  "folder": null,
+  "job": 4,
+  "kind": "hunt",
+  "line": "hunt 4: 0/50,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "detached",
+  "note": "The job runs in a process of its own: job_status {\"job\": 4, \"wait_s\": 300} waits for it, job_stop {\"job\": 4} stops it, search_start {\"resume\": 4} carries it on.",
+  "started": true,
+  "status": "running"
+}
+== search_start explore (no detach given) -> isError=False
+{
+  "folder": null,
+  "job": 5,
+  "kind": "explore",
+  "line": "explore 5: 0 runs, paused, elites 0, niches 0, confirmed elites 0",
+  "mode": "detached",
+  "note": "The job runs in a process of its own: job_status {\"job\": 5, \"wait_s\": 300} waits for it, job_stop {\"job\": 5} stops it, search_start {\"resume\": 5} carries it on.",
+  "started": true,
+  "status": "running"
+}
+== job_status 4 (inside the session) -> hunt 4: 7,327/50,000,000 soups, 2782 soups/s, 154,525 objects (ships 13,833, osc 44,947, still 95,745), 41 distinct, 4 new | newest: still life 15c #e6a4b2 (B3/S23)
+  status running, 3 s run, 7283 settled, 20 died, 24 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  B3/S23 on Square: 7327 soups, 154525 objects (oscillator 44947, spaceship 13833, still life 95745), 41 distinct, 4 new
+  newest finds:
+    e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23     Square soup 6114  (new to the catalog)
+    4b1e8d6b20cea5dc100f7444731eb9a4
+== MCP server closed at 12:53:21: exit 0, stderr: []
+$ jetcarp jobs list
+    5  explore  running  2026-11-15T17:53:18Z  explore 5: 1,024 runs (147/s), 195 elites in 109 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    4  hunt     running  2026-11-15T17:53:17Z  hunt 4: 17,249/50,000,000 soups, 2955 soups/s, 369,055 objects (ships 32,606, osc 106,984, still 229,465), 49 distinct, 12 new | newest: still life 12c #9b8506 (B3/S23)
+    3  explore  paused   2026-11-15T17:50:45Z  explore 3: 4,902 runs (79/s), 768 elites in 398 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    2  hunt     running  2026-11-15T17:50:40Z  hunt 2: 803,838/10,000,000 soups, 11695 soups/s, 5,570,552 objects (ships 439,121, osc 830,467, still 4,300,964), 100 distinct, 100 new | newest: still life 13c #01469a (B36/S23)
+    1  hunt     done     2026-11-15T17:50:38Z  hunt 1: 3,000/3,000 soups, 1835 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+5 job(s); 3 running
+
+exit 0
+$ jetcarp jobs status 4
+hunt 4: 17,249/50,000,000 soups, 2955 soups/s, 369,055 objects (ships 32,606, osc 106,984, still 229,465), 49 distinct, 12 new | newest: still life 12c #9b8506 (B3/S23)
+  status running, 6 s run, 17157 settled, 46 died, 46 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  B3/S23 on Square: 17249 soups, 369055 objects (oscillator 106984, spaceship 32606, still life 229465), 49 distinct, 12 new
+  newest finds:
+    9b8506f0c92bc91d9df0492db64b6124  still life 12c #9b8506             B3/S23     Square soup 16764  (new to the catalog)
+    917e6f33202346c9512b19aa8faa32b3  still life 10c #917e6f             B3/S23     Square soup 14630  (new to the catalog)
+    8df8d769457729de0b6d5ee6f12a08d5  still life 7c #8df8d7              B3/S23     Square soup 13732  (new to the catalog)
+    f241c8e566137cde275909e216cce670  still life 9c #f241c8              B3/S23     Square soup 12649  (new to the catalog)
+    48e6263a40eea259bcb22518b44d0c95  still life 8c #48e626              B3/S23     Square soup 12137  (new to the catalog)
+    fcd376611d86dc6548400951630b5532  still life 10c #fcd376             B3/S23     Square soup 10823  (new to the catalog)
+    5cd81b290a7ad4bd0d827385a78bcd1a  still life 14c #5cd81b             B3/S23     Square soup 10234  (new to the catalog)
+    ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+    e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23     Square soup 6114  (new to the catalog)
+    4b1e8d6b20cea5dc100f7444731eb9a4  still life 14c #4b1e8d             B3/S23     Square soup 4628  (new to the catalog)
+
+exit 0
+$ jetcarp jobs status 5
+explore 5: 1,024 runs (147/s), 195 elites in 109 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 7 s run over every session, 0 confirmation runs, 2,048 candidates tried, 0.40 GB of memory
+  threads: 10 for runs on the processor and 6 for the GPU's batches, of 32 cores (16 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 1,024   0.35   0.84     195
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library/searches/a2bafdc5-453f-439a-abad-f0d628bc039e
+
+exit 0
+$ pgrep -af 'jetcarp jobs resume'
+1122659 /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/jetcarp jobs resume 4 --library /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library/library.sqlite --quiet --threads 8
+1122748 /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/jetcarp jobs resume 5 --library /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library/library.sqlite --quiet --threads 16 --minutes 4
+== 25 s after the MCP server exited:
+$ jetcarp jobs status 4
+hunt 4: 81,685/50,000,000 soups, 3035 soups/s, 1,760,430 objects (ships 155,824, osc 509,664, still 1,094,942), 73 distinct, 36 new | newest: still life 15c #de0c2a (B3/S23)
+  status running, 27 s run, 81231 settled, 224 died, 230 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  B3/S23 on Square: 81685 soups, 1760430 objects (oscillator 509664, spaceship 155824, still life 1094942), 73 distinct, 36 new
+  newest finds:
+    de0c2aea84331dde841c563372137cf0  still life 15c #de0c2a             B3/S23     Square soup 80116  (new to the catalog)
+    60ea744a112888b6145ebf7acd12d6c9  still life 13c #60ea74             B3/S23     Square soup 76061  (new to the catalog)
+    166c059919129bde1e6c2d5cb7c104ea  still life 14c #166c05             B3/S23     Square soup 71009  (new to the catalog)
+    e06b195ad0debb8efb8ebd8b5b47f983  still life 16c #e06b19             B3/S23     Square soup 68613  (new to the catalog)
+    cc999376f643a3c81b515653bb133ba6  still life 10c #cc9993             B3/S23     Square soup 66602  (new to the catalog)
+    931257315c5760eaff17656138b3245d  still life 12c #931257             B3/S23     Square soup 54702  (new to the catalog)
+    bb006764a2f8ff4c75be8afd65585202  still life 14c #bb0067             B3/S23     Square soup 47075  (new to the catalog)
+    f0e883251888a774e1e8d53e0fdb61d6  still life 10c #f0e883             B3/S23     Square soup 44484  (new to the catalog)
+    c42cde186d92d5fcfa9f966e93c05a1f  still life 10c #c42cde             B3/S23     Square soup 41269  (new to the catalog)
+    4f7c81953d2e778ea32af97e37ead0b5  still life 14c #4f7c81             B3/S23     Square soup 40613  (new to the catalog)
+
+exit 0
+$ jetcarp jobs status 5
+explore 5: 6,144 runs (221/s), 749 elites in 351 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 28 s run over every session, 0 confirmation runs, 6,144 candidates tried, 0.40 GB of memory
+  threads: 10 for runs on the processor and 6 for the GPU's batches, of 32 cores (16 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 6,144   0.36   1.33     749
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library/searches/a2bafdc5-453f-439a-abad-f0d628bc039e
+
+exit 0
+== new MCP session: job_stop 4 -> isError=False
+{
+  "job": 4,
+  "kind": "hunt",
+  "note": "It stops at its next checkpoint and stays resumable with search_start {\"resume\": 4}.",
+  "status": "running",
+  "stopping": true
+}
+== job_status 4 wait_s 60 -> isError=False
+hunt 4: 81,685/50,000,000 soups, 3035 soups/s, 1,760,430 objects (ships 155,824, osc 509,664, still 1,094,942), 73 distinct, 36 new | newest: still life 15c #de0c2a (B3/S23)
+  status paused, 27 s run, 81231 settled, 224 died, 230 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  B3/S23 on Square: 81685 soups, 1760430 objects (oscillator 509664, spaceship 155824, still life 1094942), 73 distinct, 36 new
+  newest finds:
+    de0c2aea84331dde841c563372137cf0  still life 15c #de0c2a             B3/S23     Square soup 80116  (new to the catalog)
+    60ea744a112888b6145ebf7acd12d6c9  still life 13c #60ea74             B3/S23     Square soup 76061  (new to the catalog)
+    166c059919129bde1e6c2d5cb7c104ea  still life 14c #166c05             B3/S23     Square s
+$ jetcarp jobs stop 5
+asked explore search 5 to stop at its next checkpoint
+
+exit 0
+$ jetcarp jobs wait 5 --timeout 90
+explore search 5 is paused
+  explore 5: 7,168 runs (222/s), 811 elites in 376 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  `jetcarp jobs resume 5` continues it from its archive (not run for run: the search is not deterministic)
+
+exit 3
+$ jetcarp jobs list
+    5  explore  paused   2026-11-15T17:53:18Z  explore 5: 7,168 runs (222/s), 811 elites in 376 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    4  hunt     paused   2026-11-15T17:53:17Z  hunt 4: 84,100/50,000,000 soups, 2808 soups/s, 1,811,286 objects (ships 160,381, osc 524,048, still 1,126,857), 74 distinct, 37 new | newest: still life 14c #5a79a9 (B3/S23)
+    3  explore  paused   2026-11-15T17:50:45Z  explore 3: 4,902 runs (79/s), 768 elites in 398 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    2  hunt     running  2026-11-15T17:50:40Z  hunt 2: 803,838/10,000,000 soups, 11695 soups/s, 5,570,552 objects (ships 439,121, osc 830,467, still 4,300,964), 100 distinct, 100 new | newest: still life 13c #01469a (B36/S23)
+    1  hunt     done     2026-11-15T17:50:38Z  hunt 1: 3,000/3,000 soups, 1835 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+5 job(s); 1 running
+
+exit 0
+$ pgrep -af 'jetcarp jobs resume'
+

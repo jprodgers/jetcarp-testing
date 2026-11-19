@@ -1,0 +1,34 @@
+{
+    "jetcarp_version":  "0.4.2-rc.1",
+    "format":  1,
+    "name":  "sq140-steps20-drop1",
+    "tiling":  {
+                   "family":  "square",
+                   "size":  {
+                                "rect":  {
+                                             "h":  140,
+                                             "w":  140
+                                         }
+                            },
+                   "boundary":  "dead"
+               },
+    "rng_state":  7,
+    "cas":  [
+                {
+                    "id":  1,
+                    "name":  "Abelian sandpile",
+                    "rule":  "Sandpile",
+                    "neighborhood":  "edge",
+                    "enabled":  true,
+                    "affects_others":  false,
+                    "steps_per_gen":  20,
+                    "palette":  "Ember",
+                    "seed":  {
+                                 "pile":  {
+                                              "grains":  30000
+                                          }
+                             },
+                    "drop_per_gen":  1
+                }
+            ]
+}

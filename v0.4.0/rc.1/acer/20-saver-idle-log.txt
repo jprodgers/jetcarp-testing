@@ -1,0 +1,14 @@
+Screen saver process log during A3 checks 8-10 (sampled about once a second; only changes shown).
+The Screen Saver Settings dialog (rundll32 desk.cpl,InstallScreenSaver) stayed open throughout.
+
+00:11:01 idle=14s procs=[rundll32.exe[15128] JETCARP.scr; JETCARP.scr[32848] JETCARP.scr /p 460416; jetcarp.exe[30784] jetcarp.exe" host scr /p 460416]
+00:12:36 idle=0s procs=[rundll32.exe[15128] JETCARP.scr; JETCARP.scr[32848] JETCARP.scr /p 460416; jetcarp.exe[30784] jetcarp.exe" host scr /p 460416; JETCARP.scr[32072] JETCARP.scr /s; jetcarp.exe[32860] jetcarp.exe" host scr /s]
+00:12:37 idle=1s procs=[rundll32.exe[15128] JETCARP.scr; JETCARP.scr[32848] JETCARP.scr /p 460416; jetcarp.exe[30784] jetcarp.exe" host scr /p 460416]
+00:13:51 idle=0s procs=[rundll32.exe[15128] JETCARP.scr; JETCARP.scr[32848] JETCARP.scr /p 460416; jetcarp.exe[30784] jetcarp.exe" host scr /p 460416; JETCARP.scr[29992] JETCARP.scr /s; jetcarp.exe[32252] jetcarp.exe" host scr /s]
+00:14:18 idle=0s procs=[rundll32.exe[15128] JETCARP.scr; JETCARP.scr[32848] JETCARP.scr /p 460416; jetcarp.exe[30784] jetcarp.exe" host scr /p 460416]
+00:16:58 idle=18s procs=[rundll32.exe[15128] JETCARP.scr; JETCARP.scr[32848] JETCARP.scr /p 460416; jetcarp.exe[30784] jetcarp.exe" host scr /p 460416]
+00:17:24 idle=0s procs=[]
+00:17:48 idle=16s procs=[]
+
+00:12:36 /s started (the 1-minute timeout); gone by 00:12:37. Jimmie: 'Either it didn't launch the first time, or I bumped the mouse.'
+00:13:51 /s started again after another minute idle; ended 00:14:18 when Jimmie moved the mouse.

@@ -1,0 +1,324 @@
+== 11:42:20 | Now drawing from 'AC Power'
+running, pid 87495, up 2329.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 108 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:23 | Now drawing from 'AC Power'
+running, pid 87495, up 2331.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 232 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:25 | Now drawing from 'AC Power'
+running, pid 87495, up 2333.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 358 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:27 | Now drawing from 'AC Power'
+running, pid 87495, up 2335.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 483 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:29 | Now drawing from 'AC Power'
+running, pid 87495, up 2337.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 608 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:31 | Now drawing from 'AC Power'
+running, pid 87495, up 2339.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 732 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:33 | Now drawing from 'AC Power'
+running, pid 87495, up 2341.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 855 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:35 | Now drawing from 'AC Power'
+running, pid 87495, up 2344.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 979 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:37 | Now drawing from 'AC Power'
+running, pid 87495, up 2346.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 1103 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:39 | Now drawing from 'AC Power'
+running, pid 87495, up 2348.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 1226 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:41 | Now drawing from 'AC Power'
+running, pid 87495, up 2350.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 1349 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:43 | Now drawing from 'AC Power'
+running, pid 87495, up 2352.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 78 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:45 | Now drawing from 'AC Power'
+running, pid 87495, up 2354.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 202 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:47 | Now drawing from 'AC Power'
+running, pid 87495, up 2356.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 328 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:49 | Now drawing from 'AC Power'
+running, pid 87495, up 2358.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 452 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:52 | Now drawing from 'AC Power'
+running, pid 87495, up 2360.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 576 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:54 | Now drawing from 'AC Power'
+running, pid 87495, up 2362.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 700 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:56 | Now drawing from 'AC Power'
+running, pid 87495, up 2364.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 825 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:42:58 | Now drawing from 'AC Power'
+running, pid 87495, up 2366.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 950 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:00 | Now drawing from 'AC Power'
+running, pid 87495, up 2368.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1074 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:02 | Now drawing from 'AC Power'
+running, pid 87495, up 2370.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1198 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:04 | Now drawing from 'AC Power'
+running, pid 87495, up 2372.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1322 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:06 | Now drawing from 'AC Power'
+running, pid 87495, up 2375.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1447 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:08 | Now drawing from 'AC Power'
+running, pid 87495, up 2377.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1571 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:10 | Now drawing from 'AC Power'
+running, pid 87495, up 2379.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1696 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:12 | Now drawing from 'AC Power'
+running, pid 87495, up 2381.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1820 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:14 | Now drawing from 'AC Power'
+running, pid 87495, up 2383.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1945 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:16 | Now drawing from 'AC Power'
+running, pid 87495, up 2385.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2071 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:19 | Now drawing from 'AC Power'
+running, pid 87495, up 2387.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2197 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:21 | Now drawing from 'AC Power'
+running, pid 87495, up 2389.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2321 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:23 | Now drawing from 'AC Power'
+running, pid 87495, up 2391.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2447 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:25 | Now drawing from 'AC Power'
+running, pid 87495, up 2393.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2570 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:27 | Now drawing from 'AC Power'
+running, pid 87495, up 2395.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2693 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:29 | Now drawing from 'AC Power'
+running, pid 87495, up 2397.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2818 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:31 | Now drawing from 'AC Power'
+running, pid 87495, up 2399.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2942 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:33 | Now drawing from 'AC Power'
+running, pid 87495, up 2402.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3065 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:35 | Now drawing from 'AC Power'
+running, pid 87495, up 2404.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3188 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:37 | Now drawing from 'AC Power'
+running, pid 87495, up 2406.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3310 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:39 | Now drawing from 'AC Power'
+running, pid 87495, up 2408.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3436 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:41 | Now drawing from 'AC Power'
+running, pid 87495, up 2410.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3561 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:43 | Now drawing from 'AC Power'
+running, pid 87495, up 2412.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3684 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:45 | Now drawing from 'AC Power'
+running, pid 87495, up 2414.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3808 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:47 | Now drawing from 'AC Power'
+running, pid 87495, up 2416.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3931 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:50 | Now drawing from 'AC Power'
+running, pid 87495, up 2418.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4054 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:43:52 | Now drawing from 'AC Power'
+running, pid 87495, up 2420.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:43:54 | Now drawing from 'AC Power'
+running, pid 87495, up 2422.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:43:56 | Now drawing from 'AC Power'
+running, pid 87495, up 2425.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:43:58 | Now drawing from 'AC Power'
+running, pid 87495, up 2427.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:00 | Now drawing from 'AC Power'
+running, pid 87495, up 2429.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:03 | Now drawing from 'AC Power'
+running, pid 87495, up 2431.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:05 | Now drawing from 'AC Power'
+running, pid 87495, up 2433.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:07 | Now drawing from 'AC Power'
+running, pid 87495, up 2436.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:09 | Now drawing from 'AC Power'
+running, pid 87495, up 2438.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:11 | Now drawing from 'AC Power'
+running, pid 87495, up 2440.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:14 | Now drawing from 'AC Power'
+running, pid 87495, up 2442.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:16 | Now drawing from 'AC Power'
+running, pid 87495, up 2444.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:18 | Now drawing from 'AC Power'
+running, pid 87495, up 2447.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:20 | Now drawing from 'AC Power'
+running, pid 87495, up 2449.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:22 | Now drawing from 'AC Power'
+running, pid 87495, up 2451.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:25 | Now drawing from 'AC Power'
+running, pid 87495, up 2453.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:27 | Now drawing from 'AC Power'
+running, pid 87495, up 2455.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:29 | Now drawing from 'AC Power'
+running, pid 87495, up 2458.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:31 | Now drawing from 'AC Power'
+running, pid 87495, up 2460.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:33 | Now drawing from 'AC Power'
+running, pid 87495, up 2462.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: held by the desktop: windows cover it (resumes by itself)
+== 11:44:36 | Now drawing from 'AC Power'
+running, pid 87495, up 2464.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4106 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:38 | Now drawing from 'AC Power'
+running, pid 87495, up 2466.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4230 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:40 | Now drawing from 'AC Power'
+running, pid 87495, up 2468.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4354 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:42 | Now drawing from 'AC Power'
+running, pid 87495, up 2471.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4479 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:44 | Now drawing from 'AC Power'
+running, pid 87495, up 2473.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4604 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:46 | Now drawing from 'AC Power'
+running, pid 87495, up 2475.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4728 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:48 | Now drawing from 'AC Power'
+running, pid 87495, up 2477.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4852 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:50 | Now drawing from 'AC Power'
+running, pid 87495, up 2479.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4978 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:52 | Now drawing from 'Battery Power'
+running, pid 87495, up 2481.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5098 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:44:54 | Now drawing from 'Battery Power'
+running, pid 87495, up 2483.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5218 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: on battery (resumes by itself)
+== 11:44:57 | Now drawing from 'Battery Power'
+running, pid 87495, up 2485.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5218 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: on battery (resumes by itself)
+== 11:44:59 | Now drawing from 'Battery Power'
+running, pid 87495, up 2488.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5218 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: on battery (resumes by itself)
+== 11:45:01 | Now drawing from 'Battery Power'
+running, pid 87495, up 2490.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5218 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: on battery (resumes by itself)
+== 11:45:03 | Now drawing from 'Battery Power'
+running, pid 87495, up 2492.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5218 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: on battery (resumes by itself)
+== 11:45:05 | Now drawing from 'Battery Power'
+running, pid 87495, up 2494.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5218 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: on battery (resumes by itself)
+== 11:45:08 | Now drawing from 'Battery Power'
+running, pid 87495, up 2496.0s, 161 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5218 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · paused
+held: on battery (resumes by itself)
+== 11:45:10 | Now drawing from 'AC Power'
+running, pid 87495, up 2498.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5236 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:12 | Now drawing from 'AC Power'
+running, pid 87495, up 2500.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 57 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:14 | Now drawing from 'AC Power'
+running, pid 87495, up 2503.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 181 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:16 | Now drawing from 'AC Power'
+running, pid 87495, up 2505.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 305 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:18 | Now drawing from 'AC Power'
+running, pid 87495, up 2507.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 430 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:20 | Now drawing from 'AC Power'
+running, pid 87495, up 2509.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 555 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:22 | Now drawing from 'AC Power'
+running, pid 87495, up 2511.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 680 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:24 | Now drawing from 'AC Power'
+running, pid 87495, up 2513.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 804 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:26 | Now drawing from 'AC Power'
+running, pid 87495, up 2515.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 928 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:29 | Now drawing from 'AC Power'
+running, pid 87495, up 2517.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1053 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:31 | Now drawing from 'AC Power'
+running, pid 87495, up 2519.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1179 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:33 | Now drawing from 'AC Power'
+running, pid 87495, up 2521.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1304 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:35 | Now drawing from 'AC Power'
+running, pid 87495, up 2523.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1429 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:37 | Now drawing from 'AC Power'
+running, pid 87495, up 2525.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1553 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:39 | Now drawing from 'AC Power'
+running, pid 87495, up 2527.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1678 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:41 | Now drawing from 'AC Power'
+running, pid 87495, up 2530.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1804 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:43 | Now drawing from 'AC Power'
+running, pid 87495, up 2532.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1928 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:45 | Now drawing from 'AC Power'
+running, pid 87495, up 2534.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 2053 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 11:45:47 | Now drawing from 'AC Power'
+running, pid 87495, up 2536.0s, 162 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 2176 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)

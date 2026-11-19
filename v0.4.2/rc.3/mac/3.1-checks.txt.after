@@ -1,0 +1,20 @@
+== 14:42:28 after the uninstall (jetcarp uninstall --yes, --settings --data, the installer's --uninstall)
+jetcarp not found
+gone: /Users/Jimmie/.local/bin/jetcarp
+gone: /Users/Jimmie/.local/lib/jetcarp
+gone: /Users/Jimmie/Library/Application Support/jetcarp
+gone: /Users/Jimmie/.cache/jetcarp
+gone: /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+gone: /Users/Jimmie/Library/Screen Savers/JETCARP.saver
+kept by design: ~/Pictures/JETCARP: brians_brain_gen200.png hex_ship_gen0.png hex_ship_gen30.png 
+wallpaper and screen saver choices: as before M-4
+-- anything else named jetcarp in ~/Library (depth 3) or ~/.local, ~/.config, ~/.cache:
+/Users/Jimmie/Library/Application Support/CrashReporter/jetcarp_HARDWARE-UUID.plist
+/Users/Jimmie/Library/Logs/Claude/mcp-server-jetcarp.log
+/Users/Jimmie/Library/Logs/DiagnosticReports/jetcarp-2026-11-16-083330.ips
+/Users/Jimmie/Library/Logs/Homebrew/jetcarp
+/Users/Jimmie/Library/Caches/claude-cli-nodejs/-Users-Jimmie-Documents-jetcarp-test
+/Users/Jimmie/Library/Caches/Homebrew/jetcarp--0.4.1.tar.gz
+Bad request.
+-- Claude Code:
+jetcarp: jetcarp mcp - ✘ Failed to connect — ENOENT: Executable not found in $PATH: "jetcarp"

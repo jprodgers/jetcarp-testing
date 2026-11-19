@@ -1,0 +1,298 @@
+{
+ "format": "jetcarp-ratings 1",
+ "job": 3,
+ "search": "294b906e-1384-4a76-9ba5-b012745e1747",
+ "round": "2.6-clips",
+ "rater": "Jimmie Rodgers",
+ "ratings": [
+  {
+   "run": 3099,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812277321
+  },
+  {
+   "run": 3319,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812280737
+  },
+  {
+   "run": 3322,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812282604
+  },
+  {
+   "run": 3471,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812289607
+  },
+  {
+   "run": 3490,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812291543
+  },
+  {
+   "run": 3618,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812292158
+  },
+  {
+   "run": 3717,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812296375
+  },
+  {
+   "run": 3838,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812296621
+  },
+  {
+   "run": 3890,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812296837
+  },
+  {
+   "run": 3984,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812297046
+  },
+  {
+   "run": 5560,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812297262
+  },
+  {
+   "run": 6662,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812297751
+  },
+  {
+   "run": 9445,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812304574
+  },
+  {
+   "run": 9526,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812305096
+  },
+  {
+   "run": 9577,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812305591
+  },
+  {
+   "run": 9658,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812305979
+  },
+  {
+   "run": 9674,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812306613
+  },
+  {
+   "run": 9716,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812309171
+  },
+  {
+   "run": 9742,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812317489
+  },
+  {
+   "run": 9850,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812317857
+  },
+  {
+   "run": 9911,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812318279
+  },
+  {
+   "run": 9958,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812320802
+  },
+  {
+   "run": 9973,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812322754
+  },
+  {
+   "run": 9976,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812324300
+  },
+  {
+   "run": 10010,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812344017
+  },
+  {
+   "run": 10077,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812344423
+  },
+  {
+   "run": 10108,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812346418
+  },
+  {
+   "run": 10140,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812348371
+  },
+  {
+   "run": 10164,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812351922
+  },
+  {
+   "run": 10280,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812352797
+  },
+  {
+   "run": 10293,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812354754
+  },
+  {
+   "run": 10404,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812355079
+  },
+  {
+   "run": 10652,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812355671
+  },
+  {
+   "run": 10760,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812359321
+  },
+  {
+   "run": 11141,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812362454
+  },
+  {
+   "run": 12162,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812369338
+  },
+  {
+   "run": 12474,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812388596
+  },
+  {
+   "run": 12637,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812388847
+  },
+  {
+   "run": 12818,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812389084
+  },
+  {
+   "run": 12935,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812389650
+  },
+  {
+   "run": 20144,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812392192
+  },
+  {
+   "run": 20667,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812394994
+  },
+  {
+   "run": 22510,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812398867
+  },
+  {
+   "run": 22515,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812404142
+  },
+  {
+   "run": 22767,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812405283
+  },
+  {
+   "run": 22773,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812406821
+  },
+  {
+   "run": 23631,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794812413517
+  },
+  {
+   "run": 24180,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794812416798
+  }
+ ],
+ "note": "One of the worst sets yet."
+}

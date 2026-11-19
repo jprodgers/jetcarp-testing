@@ -1,0 +1,6 @@
+RESULT pattern=G family=trihex patch=151x51 cells_in_patch=23103 rule=B3/S23 start_cells=42 generations_checked=400 last_generation=400 live_cells_compared=17200 generations_that_differ=0 first_difference=None final_population=42 final_hash=6aa43daf78c75edd
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+RESULT pattern=B1 family=trihex patch=62x51 cells_in_patch=9486 rule=B3/S23 start_cells=96 generations_checked=464 last_generation=464 live_cells_compared=42416 generations_that_differ=0 first_difference=None final_population=96 final_hash=7b63535961171dcd
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+RESULT pattern=gun family=trihex patch=1018x95 cells_in_patch=290130 rule=B3/S23 start_cells=428 generations_checked=1104 last_generation=1104 live_cells_compared=462300 generations_that_differ=0 first_difference=None final_population=444 final_hash=ea26d7cadc37d8fc
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.20s

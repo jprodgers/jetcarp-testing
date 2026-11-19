@@ -1,0 +1,8 @@
+zip sha256 aa024bbac5e9f549bce9e6b6898d0e3a08e5ac7715722a75eb181042a9d15a14 = SHA256SUMS (fresh download, 70 files, identical to bin)
+jetcarp 0.4.2-rc.2
+settings: C:\Users\jimmi\jetcarp-rc-042b\config
+data:     C:\Users\jimmi\jetcarp-rc-042b\data
+output:   C:\Users\jimmi\jetcarp-rc-042b\out
+bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs
+where.exe jetcarp (registry PATH): C:\Users\jimmi\scoop\shims\jetcarp.exe -> jetcarp 0.4.1
+doctor first 10.4 s (gpu-checks.json written), second 0.8 s

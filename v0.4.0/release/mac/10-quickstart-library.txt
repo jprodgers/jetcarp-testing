@@ -1,0 +1,174 @@
+# H3 step 3: Quick Start entries after the Explorer build (read-only queries of a copy of library.sqlite + -wal taken at 07:59, checkpointed in the copy only)
+
+Before the build the library had no atlas or pack entries (01-library-before.txt), so every atlas entry below is this build's (explore 4, published 12:56:55Z-12:57:00Z UTC).
+
+## By source (source, entries, hidden, featured)
+atlas|713|0|0
+builtin|364|1|71
+pack|79|0|0
+
+## Atlas: entries, distinct titles, titles used once, titles used more than once
+713|515|445|70
+
+## Most repeated atlas titles (title, entries), all with 3 or more
+Oscillating Priority|44
+Battle JACA|18
+Forest fire|14
+Spectre glider (Edmond 2026)|10
+Short-lived Continuous|9
+WireWorld|9
+Greenberg-Hastings|8
+Turbulent Priority|8
+Frozen Priority|6
+Abelian sandpile|4
+Frozen Cyclic 23/6|4
+Oscillating GH 14/1|4
+Turbulent B123/S|4
+Agents|3
+Frozen Cyclic 9/2|3
+Frozen RPS 7/2|3
+Oscillating Cyclic 9/1|3
+Oscillating GH 22/1|3
+Oscillating GH 5/1|3
+Rock-paper-scissors|3
+Short-lived Priority|3
+Turbulent B1345/S13/C30|3
+Wave GH 22/1|3
+Wave RPS 3/2|3
+Wave RPS 8/1|3
+
+## Repetition histogram (entries per title, titles)
+1|445
+2|45
+3|12
+4|4
+6|1
+8|2
+9|2
+10|1
+14|1
+18|1
+44|1
+
+## Atlas titles per family (family, entries, distinct titles, up to 6 sample titles)
+other|417|313|Oscillating GH 14/1 | Oscillating GH 21/1 | Wave GH 21/2 | Wave RPS 8/2 | Wave GH 15/2 | Oscillating GH 9/1
+lifelike|72|67|Neon Blobs | Living B4/S01234 | Living B4/S0,1,2,3,4,11 | Turbulent B3/S01239 | Life | Living B3/S123
+generations|67|63|Oscillating B16/S4569/C24 | Oscillating B1/S/C21 | Oscillating B234/S345/C10 | Oscillating B1/S6,8,11/C14 | Oscillating B13/S/C15 | Oscillating B1/S/C11
+priority|64|6|Oscillating Priority | Turbulent Priority | Living Priority | Frozen Priority | Static Priority | Short-lived Priority
+ltl|60|60|Oscillating R3,C4,S21-38,B32-40 | Oscillating R3,C3,S22-47,B21-31 | Frozen R3,C2,S22-46,B27-42 | Frozen R3,C2,S21-41,B34-38 | Frozen R3,C2,S18-29,B22-37 | Frozen R3,C6,S19-48,B21-32
+lenia|14|4|Ash Continuous | Growing Continuous | Patterned Continuous | Short-lived Continuous
+spectre_glider|10|1|Spectre glider (Edmond 2026)
+wireworld|9|1|WireWorld
+
+## By category (category, entries)
+Turbulence|149
+Oscillators|128
+Frozen at once|94
+Quick deaths|91
+Battles|60
+Fractals & rows|47
+Waves & spirals|43
+Ants & turmites|22
+Quiet rows|19
+Wildfire|14
+Living textures|14
+Static|12
+Growth|6
+Ash & debris|5
+Sandpiles|4
+Labyrinths|3
+Spots & stripes|1
+Long fades|1
+
+## Titles that are only a family name or mood + family (no rule notation): any atlas title without a digit, B/S notation or Rule/Turmite/Ant
+Oscillating Priority|44
+Battle JACA|18
+Forest fire|14
+WireWorld|9
+Short-lived Continuous|9
+Turbulent Priority|8
+Greenberg-Hastings|8
+Frozen Priority|6
+Abelian sandpile|4
+Short-lived Priority|3
+Rock-paper-scissors|3
+Agents|3
+Living Priority|2
+JACA Life vs Day & Night|2
+Growing Continuous|2
+Ash Continuous|2
+Turmite NNULN|1
+Turmite LURNRL|1
+Turmite LUL|1
+Turmite LNNNLU|1
+Static Priority|1
+Stains|1
+Solid islands grow amongst static|1
+Short-lived JACA|1
+Serviettes|1
+Patterned Continuous|1
+Oils|1
+Neon Blobs|1
+Mazectric with Mice|1
+Life|1
+Hodgepodge machine|1
+Gems Minor|1
+Frozen JACA|1
+Fireworks|1
+DotLife|1
+Cheerios|1
+Bombers|1
+Assimilation|1
+
+## Why titles repeat: entries, distinct rules, distinct tilings, per repeated plain title
+Oscillating Priority|44|34|9
+Battle JACA|18|16|8
+Forest fire|14|14|5
+Spectre glider (Edmond 2026)|10|1|10
+WireWorld|9|1|9
+Short-lived Continuous|9|9|4
+Turbulent Priority|8|6|4
+Greenberg-Hastings|8|1|7
+Frozen Priority|6|6|5
+Abelian sandpile|4|1|4
+Short-lived Priority|3|3|2
+Rock-paper-scissors|3|1|3
+Agents|3|3|2
+
+## JACA: length of the rule notation (rule minus "JACA ") for plain titles (Battle/Frozen/Short-lived JACA) vs notated ones (kind, length, entries)
+notated|7|2
+notated|8|1
+notated|9|2
+notated|10|3
+notated|13|1
+notated|14|1
+notated|15|8
+notated|16|4
+notated|17|8
+notated|18|5
+notated|19|1
+notated|20|6
+plain|22|1
+plain|23|1
+plain|24|1
+plain|25|2
+plain|26|3
+plain|27|4
+plain|28|4
+plain|30|1
+plain|31|1
+plain|32|1
+plain|34|1
+
+## Sample plain "Battle JACA" rules (rule, tiling)
+JACA +B14/S124 -B12/S345 blast 1|k6-665
+JACA +B12/S1 -B34/S0 blast 1|Hexagon
+JACA +B123/S7 -B38/S26 blast 1|3.4.6.4 rhombitrihexagonal
+JACA +B12/S12 -B123/S123 blast 1|Hexagon
+JACA B125/S0,1,6,10 blast 1|3.4.6.4 rhombitrihexagonal
+JACA +B12/S89 -B126/S89 blast 1|k6-665
+
+## Sample "Oscillating Priority" rules (rule, tiling)
+Priority 6: *|n4>=3->5; 2|always->4; 0|always->4; *|n5>=1->1; *|n4>=3&n4>=3->1; 0|n0>=3->2|Penrose rhombs (P3)
+Priority 2: 1|n0>=1&n1>=2->0; 0|n1>=3->1; *|n0>=3&n0>=3->1; 1|n1>=2->0; *|n0>=4&n1>=3->1; 0|n0>=4->0|3.4.6.4 rhombitrihexagonal
+Priority 2: 0|n0>=4->1; 0|n1>=4&n1>=2->0; 1|always->0; 1|n0>=3->1; 0|n0>=4->0|3.4.6.4 rhombitrihexagonal

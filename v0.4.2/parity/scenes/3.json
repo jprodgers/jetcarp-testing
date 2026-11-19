@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Ternary hexagon rule 8229",
+  "description": "An elementary rule on hexagons with three states, where each cell reads the two cells touching it in the row above. Rule 8229 adds them mod 3: Pascal's triangle mod 3. Use < and > on the card to step through all 19,683 rules.",
+  "tiling": {
+    "family": "hex",
+    "size": {
+      "rect": {
+        "w": 161,
+        "h": 81
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Hex ternary 8229 (sum mod 3)",
+      "rule": "HexW3 8229",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "top_center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "4502cd08a6e46399",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

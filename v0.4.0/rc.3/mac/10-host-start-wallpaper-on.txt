@@ -1,0 +1,22 @@
+$ jetcarp host start   (23:59:20)
+Error: the host is already running
+exit 1
+
+$ jetcarp host wallpaper on   (23:59:20)
+running, pid 6128, up 2330.0s, 124 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 68773 · 303455 cells · wallpaper
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+exit 0
+
+$ jetcarp host status
+running, pid 6128, up 2330.0s, 124 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 68775 · 303455 cells · wallpaper
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+
+$ ps (jetcarp processes)
+ 6089  6084    41:39 jetcarp
+ 6128  6089    38:50 /Users/Jimmie/.local/bin/jetcarp host serve

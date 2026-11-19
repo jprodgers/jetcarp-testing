@@ -1,0 +1,7 @@
+> jetcarp host start | tee host.txt   (Git Bash, 07:55:19)
+running, pid 16792, up 0.0s, 205 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · starting · wallpaper on monitor 0 (not connected)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · starting · wallpaper on monitor 1 (not connected)
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(pipeline exit 0 after 722 ms; 124 would mean the 60 s timeout)

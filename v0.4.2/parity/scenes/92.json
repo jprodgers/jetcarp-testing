@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "WireWorld",
+  "description": "Electrons flow along painted wire.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 120,
+        "h": 60
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "9112229503749454829",
+  "cas": [
+    {
+      "id": 1,
+      "name": "WireWorld",
+      "rule": "WireWorld",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "wire_demo"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e8b397c69fc38209",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

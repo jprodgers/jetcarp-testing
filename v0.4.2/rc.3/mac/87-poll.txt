@@ -1,0 +1,245 @@
+05:46:17 start: server jetcarp 0.4.2-rc.3; every 2.0 s for 900.0 s
+05:46:17 gen 0 rate -/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 180 MB footprint 139 MB
+05:46:19 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 192 MB footprint 139 MB
+05:46:21 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 179 MB footprint 140 MB
+05:46:23 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 179 MB footprint 139 MB
+05:46:25 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 192 MB footprint 141 MB
+05:46:27 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 180 MB footprint 139 MB
+05:46:29 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 178 MB footprint 138 MB
+05:46:31 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 193 MB footprint 141 MB
+05:46:33 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 178 MB footprint 138 MB
+05:46:35 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 188 MB footprint 144 MB
+05:46:37 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 193 MB footprint 144 MB
+05:46:39 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 182 MB footprint 144 MB
+05:46:41 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 184 MB footprint 144 MB
+05:46:43 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 195 MB footprint 148 MB
+05:46:45 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 181 MB footprint 144 MB
+05:46:47 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 191 MB footprint 144 MB
+05:46:49 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 181 MB footprint 144 MB
+05:46:51 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 186 MB footprint 144 MB
+05:46:53 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 188 MB footprint 145 MB
+05:46:55 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 185 MB footprint 144 MB
+05:46:57 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 196 MB footprint 146 MB
+05:46:59 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 181 MB footprint 144 MB
+05:47:01 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 193 MB footprint 144 MB
+05:47:03 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 181 MB footprint 144 MB
+05:47:05 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 196 MB footprint 144 MB
+05:47:07 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 182 MB footprint 144 MB
+05:47:09 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 193 MB footprint 144 MB
+05:47:11 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 182 MB footprint 144 MB
+05:47:13 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 185 MB footprint 144 MB
+05:47:15 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 182 MB footprint 145 MB
+05:47:17 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 183 MB footprint 144 MB
+05:47:19 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 184 MB footprint 144 MB
+05:47:21 gen 27 rate 13.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 9832 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:23 gen 57 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 11808 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 185 MB footprint 158 MB
+05:47:25 gen 88 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12149 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 185 MB footprint 158 MB
+05:47:27 gen 117 rate 14.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12556 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:29 gen 148 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12469 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:31 gen 178 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12613 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:33 gen 208 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12647 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:35 gen 238 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13115 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 185 MB footprint 158 MB
+05:47:37 gen 268 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12922 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 185 MB footprint 158 MB
+05:47:39 gen 298 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12977 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:41 gen 328 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13182 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:43 gen 358 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13454 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:45 gen 388 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13500 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:47 gen 418 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13459 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:49 gen 448 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13495 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:51 gen 478 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13275 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:53 gen 508 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13391 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:55 gen 538 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13141 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:57 gen 568 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13105 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:47:59 gen 598 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13157 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:48:01 gen 628 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13037 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:48:03 gen 658 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12744 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:48:05 gen 688 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12920 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 158 MB
+05:48:07 gen 718 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13090 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 185 MB footprint 159 MB
+05:48:09 gen 748 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12818 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 185 MB footprint 159 MB
+05:48:11 gen 779 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12862 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 159 MB
+05:48:13 gen 809 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13138 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 159 MB
+05:48:15 gen 839 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13326 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 184 MB footprint 159 MB
+05:48:17 gen 869 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13236 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 185 MB footprint 159 MB
+05:48:19 gen 899 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13011 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 160 MB
+05:48:21 gen 929 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13208 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:23 gen 959 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13320 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 159 MB
+05:48:25 gen 989 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13274 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 159 MB
+05:48:27 gen 1019 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13306 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:29 gen 1049 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13357 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:31 gen 1079 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13370 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:33 gen 1109 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13303 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 159 MB
+05:48:35 gen 1139 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13225 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 159 MB
+05:48:37 gen 1169 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13320 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 159 MB
+05:48:39 gen 1199 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13128 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:41 gen 1229 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13287 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:43 gen 1259 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13150 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:45 gen 1289 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13193 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 160 MB
+05:48:47 gen 1319 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13116 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 160 MB
+05:48:49 gen 1349 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 12974 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 160 MB
+05:48:51 gen 1379 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13256 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 160 MB
+05:48:53 gen 1408 rate 14.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13113 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 160 MB
+05:48:56 gen 1439 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13122 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 144 MB
+05:48:57 gen 1468 rate 14.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13206 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 144 MB
+05:48:59 gen 1498 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13216 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 143 MB
+05:49:02 gen 1529 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13333 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 143 MB
+05:49:03 gen 1558 rate 14.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13309 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 143 MB
+05:49:06 gen 1589 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13091 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 143 MB
+05:49:08 gen 1619 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13193 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 143 MB
+05:49:09 gen 1648 rate 14.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13169 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 143 MB
+05:49:12 gen 1679 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13274 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 143 MB
+05:49:13 gen 1707 rate 14.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13350 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 159 MB
+05:49:15 gen 1737 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13505 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 159 MB
+05:49:17 gen 1767 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13454 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 160 MB
+05:49:19 gen 1797 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13633 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 175 MB
+05:49:21 gen 1827 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13444 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:23 gen 1857 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13670 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:25 gen 1887 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13613 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:27 gen 1917 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13578 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:29 gen 1947 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13727 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:31 gen 1977 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13596 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:33 gen 2007 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13664 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:35 gen 2037 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13809 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:37 gen 2068 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13780 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:39 gen 2098 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13708 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:41 gen 2128 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13786 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:43 gen 2158 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13825 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:46 gen 2188 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13838 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:48 gen 2218 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13834 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:50 gen 2248 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13830 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:52 gen 2278 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13727 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:54 gen 2308 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13961 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:56 gen 2338 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13771 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:49:58 gen 2368 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13924 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:00 gen 2398 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13751 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:02 gen 2428 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13789 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:04 gen 2458 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13816 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:06 gen 2488 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13713 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:08 gen 2518 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13657 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:10 gen 2548 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13857 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:12 gen 2578 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13684 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:14 gen 2609 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13919 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:16 gen 2639 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13758 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:18 gen 2669 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13617 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 188 MB footprint 172 MB
+05:50:20 gen 2699 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13446 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 160 MB
+05:50:22 gen 2729 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13735 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:24 gen 2759 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13550 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:26 gen 2789 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13422 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:28 gen 2819 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13346 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:30 gen 2849 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13532 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:32 gen 2879 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13590 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:34 gen 2909 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13681 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:36 gen 2939 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13627 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:38 gen 2969 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13697 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:40 gen 2999 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13451 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:42 gen 3029 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13500 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:44 gen 3060 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13659 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:46 gen 3089 rate 14.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13598 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:48 gen 3120 rate 15.5/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13527 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:50 gen 3150 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13498 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:52 gen 3180 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13279 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:54 gen 3210 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13194 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:56 gen 3240 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13266 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:50:58 gen 3270 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13308 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:00 gen 3300 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13309 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:02 gen 3330 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13247 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:04 gen 3360 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13512 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:06 gen 3390 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13425 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:08 gen 3420 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13484 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:10 gen 3450 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13438 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:12 gen 3480 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13486 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:14 gen 3510 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13420 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:16 gen 3541 rate 15.4/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13412 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:18 gen 3571 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13428 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:20 gen 3601 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13385 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:22 gen 3631 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13367 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:24 gen 3661 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13204 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 189 MB footprint 161 MB
+05:51:26 gen 3691 rate 15.0/s cells 24174 playing True tiling trihex rules 'JACA B29/S2,3,5,6,7,9,11,12' pop 13076 scene 'JACA rainbow fronts (3.6.3.6)' sim '' rss 190 MB footprint 161 MB
+05:51:28 gen 0 rate -/s cells 83460 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 190 MB footprint 168 MB
+05:51:30 gen 0 rate 0.0/s cells 83460 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 190 MB footprint 169 MB
+05:51:32 gen 0 rate 0.0/s cells 83460 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 189 MB footprint 171 MB
+05:51:34 gen 0 rate 0.0/s cells 83460 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 189 MB footprint 171 MB
+05:51:36 gen 0 rate 0.0/s cells 66560 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:51:38 gen 0 rate 0.0/s cells 6400 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:51:40 gen 0 rate 0.0/s cells 65536 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:51:42 gen 0 rate 0.0/s cells 65536 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:51:44 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:51:46 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 195 MB footprint 172 MB
+05:51:48 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:51:50 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:51:52 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:51:54 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:51:56 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:51:58 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 195 MB footprint 171 MB
+05:52:00 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:02 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:04 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:06 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:08 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 195 MB footprint 172 MB
+05:52:10 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 171 MB
+05:52:12 gen 0 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 19767 scene 'Empty world' sim '' rss 196 MB footprint 171 MB
+05:52:14 gen 1048576 rate 523408.4/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:16 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:18 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 196 MB footprint 171 MB
+05:52:20 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:22 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 196 MB footprint 172 MB
+05:52:54 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 199 MB footprint 167 MB
+05:52:54 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 199 MB footprint 167 MB
+05:52:56 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 199 MB footprint 168 MB
+05:52:58 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 199 MB footprint 167 MB
+05:53:00 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 199 MB footprint 168 MB
+05:53:02 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:53:04 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:06 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:08 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:10 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:12 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:14 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:16 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:18 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:20 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:22 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:24 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:26 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:28 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:30 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:32 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:34 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:36 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:38 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:40 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:42 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:44 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:46 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:48 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:50 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:52 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:54 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:56 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:53:58 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:00 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:02 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:04 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:06 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:08 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:10 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:12 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:14 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:16 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:18 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:20 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 167 MB
+05:54:22 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:24 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:26 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:28 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 199 MB footprint 168 MB
+05:54:30 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 199 MB footprint 168 MB
+05:54:32 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:34 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:36 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:38 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:40 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:42 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:44 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:46 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:48 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:50 gen 1048576 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 1969 scene 'Empty world' sim '' rss 198 MB footprint 168 MB
+05:54:52 end; mcp exit 0; stderr: jetcarp mcp: connected to the JETCARP app on port 47811

@@ -1,0 +1,6 @@
+sha256:d8bc9bed5e582726922ae3eabb1e6cf001340f9a54b6633f3d84a136b1a07db0: feed rc3-long, by SHA256:PJUWZRrHVfDeNOgntx++rFG2RyPvsQehMHyLCNW6hzI (rc.3 test publisher), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search db00e0e0-6959-4398-b766-bc9a0703d55e: copying its segments and rebuilding its state
+merging sightings
+search db00e0e0-6959-4398-b766-bc9a0703d55e: 574607 runs, 40020 elites in 18608 niches, rebuilt in 4.2 s

@@ -1,0 +1,112 @@
+PASS: docs/src/reference/mcp.md (at cf5cbdf, v0.4.2-rc.4) writes all 11 placeholders #92 named as &lt;...> (&lt;Pictures>, &lt;id> x2 plus find:&lt;id>, &lt;run id>, &lt;explore job>, &lt;sweep folder>, &lt;scene file>, L&lt;level> x2, atlas:&lt;...>); no other "<" outside code spans except the page's own <details><summary>. Built with mdbook 0.5.4 (a copy, in the scratch home), the page shows <id>, L<level>, <Pictures>/JETCARP, <run id>, <explore job>, <sweep folder>, <scene file>, find:<id>, atlas:<...>. `jetcarp mcp` serves the identical text (resources/read jetcarp://docs/reference/mcp.md and help {"page":"reference/mcp"}, 88,922 chars each, equal to the book's file).
+Note: as served over MCP the page is the Markdown source, so a client that reads it as plain text sees "&lt;id>" and "L&lt;level>", not "<id>"; rendered, it is right.
+
+R4-9 #92 the MCP reference's placeholders, Framework, 2026-11-16 10:09:54 PM EST
+source: $SRC = the jetcarp repo at cf5cbdf (v0.4.2-rc.4); fresh home $H = homes/docs
+
+#### The ten placeholders #92 named (7bccc8c), in docs/src/reference/mcp.md
+$ grep -n -o -E '(L|find:|atlas:)?&lt;[A-Za-z. ]+>' $SRC/docs/src/reference/mcp.md | sed 's/^/  /'
+  332:&lt;Pictures>
+  424:&lt;id>
+  447:&lt;id>
+  447:&lt;run id>
+  447:&lt;explore job>
+  447:&lt;sweep folder>
+  447:&lt;scene file>
+  519:L&lt;level>
+  632:L&lt;level>
+  1134:find:&lt;id>
+  1134:atlas:&lt;...>
+[exit 0, 0.00 s]
+
+#### Any '<' outside code spans left in the page (not HTML comments): none expected
+$ python3 - $SRC/docs/src/reference/mcp.md <<'PY'
+import re, sys
+bad = []
+infence = False
+for n, line in enumerate(open(sys.argv[1], encoding='utf-8'), 1):
+    if line.lstrip().startswith('```'):
+        infence = not infence
+        continue
+    if infence:
+        continue
+    s = re.sub(r'`[^`]*`', '', line)          # code spans out
+    s = re.sub(r'<!--.*?-->', '', s)            # comments out
+    for m in re.finditer(r'<[A-Za-z.]', s):
+        bad.append((n, s[max(0, m.start()-30):m.start()+30].strip()))
+print('unescaped < outside code:', len(bad))
+for b in bad[:20]: print('  ', b)
+PY
+unescaped < outside code: 2
+   (1041, "<details><summary>The book's p")
+   (1041, "<details><summary>The book's pages</sum")
+[exit 0, 0.02 s]
+
+(line 1041's <details><summary> is the page's own HTML, not a placeholder)
+#### The page as mdbook renders it (docs copied to $H/book and built there; mdbook 0.5 turns straight quotes into curly ones, so the placeholders are counted bare)
+$ cd $H/book && mdbook build -d $H/book/out 2>&1 | tail -5
+ INFO Book building has started
+ INFO Running the html backend
+ INFO HTML book written to `$H/book/out`
+[exit 0, 0.43 s]
+
+$ python3 - $H/book/out/reference/mcp.html <<'PY'
+import html, re, sys
+raw = open(sys.argv[1], encoding='utf-8').read()
+text = html.unescape(re.sub(r'<[^>]+>', '', raw))
+for p in ['<Pictures>/JETCARP', '<id>', '<run id>', '<explore job>', '<sweep folder>', '<scene file>', 'L<level>', 'find:<id>', 'atlas:<...>']:
+    print(f'  {text.count(p):3d} x  {p}')
+PY
+    2 x  <Pictures>/JETCARP
+    5 x  <id>
+    1 x  <run id>
+    1 x  <explore job>
+    1 x  <sweep folder>
+    1 x  <scene file>
+    2 x  L<level>
+    2 x  find:<id>
+    1 x  atlas:<...>
+[exit 0, 0.02 s]
+
+#### The same page served by jetcarp mcp: resources/read and help {page}
+$ python3 $R/R4-scripts/mcall.py $R/R4-9-mcp.jsonl '[["help",{"page":"reference/mcp"}]]' --resource jetcarp://docs/reference/mcp.md --maxlog 0 > $H/served.txt; head -12 $H/served.txt; grep -c . $H/served.txt
+initialize -> ok
+== resources/read jetcarp://docs/reference/mcp.md -> 88922 chars
+# MCP tools
+
+JETCARP is an MCP server (the [Model Context Protocol](https://modelcontextprotocol.io)), so an AI
+assistant can build worlds, run them, look at them, search for patterns and read the library
+through the same operations the app and the command line use. This page lists every tool with its
+arguments and an example, and the resources the server offers. For a walk through a first session
+== tools/call help {"page": "reference/mcp"} -> isError=False
+   # MCP tools
+   
+   JETCARP is an MCP server (the [Model Context Protocol](https://modelcontextprotocol.io)), so an AI
+1145
+[exit 0, 0.23 s]
+
+$ python3 - $R/R4-9-mcp.jsonl $SRC/docs/src/reference/mcp.md <<'PY'
+import json, re, sys
+msgs = [json.loads(l[3:]) for l in open(sys.argv[1], encoding='utf-8') if l.startswith('<< ')]
+src = open(sys.argv[2], encoding='utf-8').read()
+pat = r'(?:L|find:|atlas:)?&lt;[A-Za-z. ]+>'
+print('the book source:', len(re.findall(pat, src)), 'escaped placeholders')
+for m in msgs:
+    r = m.get('result', {})
+    if 'contents' in r:
+        t = ''.join(c.get('text', '') for c in r['contents']); what = 'resources/read jetcarp://docs/reference/mcp.md'
+    elif 'content' in r:
+        t = ''.join(c.get('text', '') for c in r['content']); what = 'help {page: reference/mcp}'
+    else:
+        continue
+    found = re.findall(pat, t)
+    print(f'{what}: {len(t)} chars, {len(found)} escaped placeholders: {sorted(set(found))}')
+    print('   same text as docs/src/reference/mcp.md:', t.strip() == src.strip(), '| source contained in it:', src.strip()[:2000] in t)
+PY
+the book source: 11 escaped placeholders
+resources/read jetcarp://docs/reference/mcp.md: 88922 chars, 11 escaped placeholders: ['&lt;Pictures>', '&lt;explore job>', '&lt;id>', '&lt;run id>', '&lt;scene file>', '&lt;sweep folder>', 'L&lt;level>', 'atlas:&lt;...>', 'find:&lt;id>']
+   same text as docs/src/reference/mcp.md: True | source contained in it: True
+help {page: reference/mcp}: 88922 chars, 11 escaped placeholders: ['&lt;Pictures>', '&lt;explore job>', '&lt;id>', '&lt;run id>', '&lt;scene file>', '&lt;sweep folder>', 'L&lt;level>', 'atlas:&lt;...>', 'find:&lt;id>']
+   same text as docs/src/reference/mcp.md: True | source contained in it: True
+[exit 0, 0.02 s]
+

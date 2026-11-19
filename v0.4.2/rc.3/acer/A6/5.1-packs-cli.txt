@@ -1,0 +1,176 @@
+
+#### good
+$ jetcarp pack info $W\packs\good
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\good
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and patterns (a check stores nothing)
+checking sightings, ants, Quick Start entries, media and ratings
+checked sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), signed by its publisher)
+  12 objects checked (7853786 bytes)
+exit 0
+$ jetcarp pack --library $W\import-lib\good.sqlite import $W\packs\good
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: copying its segments and rebuilding its state
+merging sightings
+imported sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), signed by its publisher)
+  12 objects checked (7853786 bytes)
+  patterns: 341 added, 0 merged, 0 flagged needs_reverify
+  sightings 441, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 341 of 341 passed, 0 skipped, 0 failed
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: 99177 runs, 15668 elites in 7905 niches, rebuilt in 2.5 s
+exit 0
+
+#### truncated
+$ jetcarp pack info $W\packs\truncated
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\truncated
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack --library $W\import-lib\truncated.sqlite import $W\packs\truncated
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+exit 1
+
+#### truncated-manifest
+$ jetcarp pack info $W\packs\truncated-manifest
+Error: manifest: not JSON: EOF while parsing a string at line 1 column 300
+exit 1
+$ jetcarp pack check $W\packs\truncated-manifest
+Error: manifest: not JSON: EOF while parsing a string at line 1 column 300
+exit 1
+$ jetcarp pack --library $W\import-lib\truncated-manifest.sqlite import $W\packs\truncated-manifest
+Error: manifest: not JSON: EOF while parsing a string at line 1 column 300
+exit 1
+
+#### onebyte
+$ jetcarp pack info $W\packs\onebyte
+export sha256:e28b03a09a10f6d2706076f164a30c7c9fca79235b3d8fa79eb20bcf809c5c29 (feed rc-framework)
+  rc.3 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error)
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\onebyte
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+$ jetcarp pack --library $W\import-lib\onebyte.sqlite import $W\packs\onebyte
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+
+#### onebyte-part
+$ jetcarp pack info $W\packs\onebyte-part
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\onebyte-part
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: part sha256:d718f867e9850f271a627ab2a6ade0bf4e53687a3c3aa34e0212a3365fb51b8c (tables/rules/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack --library $W\import-lib\onebyte-part.sqlite import $W\packs\onebyte-part
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: part sha256:d718f867e9850f271a627ab2a6ade0bf4e53687a3c3aa34e0212a3365fb51b8c (tables/rules/part-000001.parquet) is altered or truncated
+exit 1
+
+#### unsigned
+$ jetcarp pack info $W\packs\unsigned
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), not signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\unsigned
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE; to check it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+exit 1
+$ jetcarp pack --library $W\import-lib\unsigned.sqlite import $W\packs\unsigned
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE; to import it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+exit 1
+
+#### other-signer
+$ jetcarp pack info $W\packs\other-signer
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig is signed by SHA256:5E4vGUIKHQMH0T71WYbNGv0PXews/G/FkqLuaupvNGQ)
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\other-signer
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig is signed by SHA256:5E4vGUIKHQMH0T71WYbNGv0PXews/G/FkqLuaupvNGQ
+exit 1
+$ jetcarp pack --library $W\import-lib\other-signer.sqlite import $W\packs\other-signer
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig is signed by SHA256:5E4vGUIKHQMH0T71WYbNGv0PXews/G/FkqLuaupvNGQ
+exit 1
+
+#### unsigned, with --allow-unsigned
+$ jetcarp pack --library $W\import-lib\unsigned-allowed.sqlite import $W\packs\unsigned --allow-unsigned
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: copying its segments and rebuilding its state
+merging sightings
+imported sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), not signed)
+  12 objects checked (7853786 bytes)
+  patterns: 341 added, 0 merged, 0 flagged needs_reverify
+  sightings 441, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 341 of 341 passed, 0 skipped, 0 failed
+exit 0

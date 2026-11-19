@@ -1,0 +1,92 @@
+# H4 step 1: host login on, host start, 2026-11-13 09:18:52 EST
+
+$ ls -la ~/Library/LaunchAgents | grep -i jetcarp   (before)
+(exit 1)
+
+$ jetcarp host login on
+"/opt/homebrew/bin/jetcarp" host serve --login starts at login
+(exit 0)
+
+$ ls -la ~/Library/LaunchAgents | grep -i jetcarp
+-rw-r--r--@  1 Jimmie  staff   561 Nov 13 09:18 com.jimmieprodgers.jetcarp.host.plist
+
+$ cat /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jimmieprodgers.jetcarp.host</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/jetcarp</string>
+        <string>host</string>
+        <string>serve</string>
+        <string>--login</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+</dict>
+</plist>
+
+$ plutil -extract ProgramArguments json -o - (the LaunchAgent)
+["\/opt\/homebrew\/bin\/jetcarp","host","serve","--login"]
+
+$ launchctl print gui/$(id -u)/com.jimmieprodgers.jetcarp.host | head -20
+gui/502/com.jimmieprodgers.jetcarp.host = {
+	active count = 0
+	path = /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+	type = LaunchAgent
+	state = not running
+
+	program = /Users/Jimmie/.local/bin/jetcarp
+	arguments = {
+		/Users/Jimmie/.local/bin/jetcarp
+		host
+		serve
+	}
+
+	inherited environment = {
+		SSH_AUTH_SOCK => /var/run/com.apple.launchd.mJzPFGc6Ng/Listeners
+	}
+
+	default environment = {
+		PATH => /usr/bin:/bin:/usr/sbin:/sbin
+	}
+
+$ jetcarp host start   (09:19:06)
+running, pid 16338, up 0.0s, 99 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · starting · window
+caption: off
+(exit 0)
+
+$ jetcarp host status
+running, pid 16338, up 0.0s, 111 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · starting · window
+monitors: 0: Built-in Retina Display
+caption: off
+
+$ ps -axo pid,ppid,command | grep [j]etcarp
+16328 12251 /bin/zsh -c source /Users/Jimmie/.claude/shell-snapshots/snapshot-zsh-1794573262200-tb4bgz.sh 2>/dev/null || true && setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL 2>/dev/null || true && { \builtin unalias -- 'which'; \builtin unset -f -- 'which'; } >/dev/null 2>&1 || true && { \builtin unalias -- 'unsetenv'; \builtin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && eval 'AS=~/Library/Application\ Support/jetcarp; LA=~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist; head -n 11 results/v0.4.0/mac/14-host-login-start.txt > results/v0.4.0/mac/14.tmp && mv results/v0.4.0/mac/14.tmp results/v0.4.0/mac/14-host-login-start.txt; { echo\012echo "\$ cat $LA"; cat "$LA"; echo\012echo '"'"'$ plutil -extract ProgramArguments json -o - (the LaunchAgent)'"'"'; plutil -extract ProgramArguments json -o - "$LA"; echo; echo\012echo '"'"'$ launchctl print gui/$(id -u)/com.jimmieprodgers.jetcarp.host | head -20'"'"'; launchctl print gui/$(id -u)/com.jimmieprodgers.jetcarp.host 2>&1 | head -20; echo\012echo "\$ jetcarp host start   ($(date '"'"'+%H:%M:%S'"'"'))"; jetcarp host start 2>&1; echo "(exit $?)"; echo\012echo '"'"'$ jetcarp host status'"'"'; jetcarp host status 2>&1; echo\012echo '"'"'$ ps -axo pid,ppid,command | grep [j]etcarp'"'"'; ps -axo pid,ppid,command | grep '"'"'[j]etcarp'"'"'; echo\012echo '"'"'$ ls -la ~/Library/Application\ Support/jetcarp'"'"'; ls -la "$AS"; echo\012echo '"'"'$ cat ~/Library/Application\ Support/jetcarp/host-program'"'"'; cat "$AS/host-program" 2>&1; echo; echo\012echo '"'"'$ grep -rn "Cellar\|/opt/homebrew" ~/Library/Application\ Support/jetcarp (not data/)'"'"'; grep -rn '"'"'Cellar\|/opt/homebrew'"'"' "$AS" --exclude-dir=data 2>&1; echo "(exit $?)"\012} >> results/v0.4.0/mac/14-host-login-start.txt 2>&1; sed -n '"'"'12,$p'"'"' results/v0.4.0/mac/14-host-login-start.txt' < /dev/null && pwd -P >| /tmp/claude-1a7e-cwd
+16338     1 /opt/homebrew/bin/jetcarp host serve
+
+$ ls -la ~/Library/Application\ Support/jetcarp
+total 32
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 13 09:19 .
+drwx------+ 48 Jimmie  staff  1536 Nov 13 07:42 ..
+-rw-r--r--@  1 Jimmie  staff  4341 Nov 13 09:12 app.json
+drwxr-xr-x@  7 Jimmie  staff   224 Nov 13 09:19 data
+-rw-r--r--@  1 Jimmie  staff    37 Nov 13 09:19 host-program
+-rw-r--r--@  1 Jimmie  staff   362 Nov 13 07:54 setup.json
+
+$ cat ~/Library/Application\ Support/jetcarp/host-program
+/opt/homebrew/bin/jetcarp
+host
+serve
+
+
+$ grep -rn "Cellar\|/opt/homebrew" ~/Library/Application\ Support/jetcarp (not data/)
+/Users/Jimmie/Library/Application Support/jetcarp/host-program:1:/opt/homebrew/bin/jetcarp
+(exit 0)

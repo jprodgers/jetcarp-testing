@@ -1,0 +1,68 @@
+# H1. Before installing, 2026-11-13 07:34 EST
+
+$ which -a jetcarp
+jetcarp not found
+(exit 1)
+
+$ type -a jetcarp
+jetcarp not found
+
+$ ls -la ~/.local/bin/jetcarp ~/.local/lib/jetcarp /opt/homebrew/bin/jetcarp /usr/local/bin/jetcarp
+ls: /Users/Jimmie/.local/bin/jetcarp: No such file or directory
+ls: /Users/Jimmie/.local/lib/jetcarp: No such file or directory
+ls: /opt/homebrew/bin/jetcarp: No such file or directory
+ls: /usr/local/bin/jetcarp: No such file or directory
+
+$ brew --version
+Homebrew 7.0.12
+(exit 0)
+
+$ which brew; brew --prefix
+/opt/homebrew/bin/brew
+/opt/homebrew
+
+$ brew tap
+
+$ brew list --versions | grep -i jetcarp
+(exit 1)
+
+$ ls -la ~/Library/Application\ Support/jetcarp
+total 48
+drwxr-xr-x@  8 Jimmie  staff   256 Nov 13 00:41 .
+drwx------+ 47 Jimmie  staff  1504 Nov 13 00:46 ..
+-rw-r--r--@  1 Jimmie  staff  4342 Nov 13 00:40 app.json
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 13 00:00 data
+-rw-r--r--@  1 Jimmie  staff   482 Nov 13 00:03 host.json
+-rw-r--r--@  1 Jimmie  staff    73 Nov 12 23:23 paths.json
+-rw-r--r--@  1 Jimmie  staff   334 Nov 12 23:23 setup.json
+-rw-r--r--@  1 Jimmie  staff  2664 Nov 13 00:13 wallpaper-store-before-saver-remove.plist
+
+$ cat ~/Library/Application\ Support/jetcarp/paths.json
+{
+  "data_dir": "/Users/Jimmie/Documents/jetcarp-data",
+  "version": 1
+}
+
+
+$ ls -la ~/Library/Application\ Support/jetcarp/data
+total 2168
+drwxr-xr-x@ 6 Jimmie  staff      192 Nov 13 00:00 .
+drwxr-xr-x@ 8 Jimmie  staff      256 Nov 13 00:41 ..
+-rw-r--r--@ 1 Jimmie  staff  1064960 Nov 12 23:16 library.sqlite
+drwxr-xr-x@ 2 Jimmie  staff       64 Nov 12 01:12 library.sqlite-jobs
+-rw-r--r--@ 1 Jimmie  staff    32768 Nov 13 00:00 library.sqlite-shm
+-rw-r--r--@ 1 Jimmie  staff        0 Nov 13 00:00 library.sqlite-wal
+
+$ ls -la ~/Documents/jetcarp-data
+ls: /Users/Jimmie/Documents/jetcarp-data: No such file or directory
+
+$ ls -la ~/Library/LaunchAgents | grep -i jetcarp
+(exit 1)
+
+$ ls -la ~/Library/Screen\ Savers
+total 0
+drwx------+  2 Jimmie  staff    64 Nov 13 00:14 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+
+$ ls -d ~/Library/Application\ Support/jetcarp-rc*
+(eval):16: no matches found: /Users/Jimmie/Library/Application Support/jetcarp-rc*

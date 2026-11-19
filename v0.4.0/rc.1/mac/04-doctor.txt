@@ -1,0 +1,19 @@
+$ jetcarp doctor
+JETCARP 0.4.0-rc.1 on macos aarch64 (12 threads)
+
+Folders
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  none (looked in /Users/Jimmie/.local/lib/share/jetcarp/packs, /Users/Jimmie/.local/lib/jetcarp/packs)
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite (not created yet)
+  data in use: 0 B
+
+Graphics adapters (* = used by the GPU simulation)
+  * Apple M2 Max (Metal, IntegratedGpu)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+exit 0 after 0 s

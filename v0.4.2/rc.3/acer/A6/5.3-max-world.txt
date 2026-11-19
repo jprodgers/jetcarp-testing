@@ -1,0 +1,33 @@
+$ JETCARP_GPU=RTX jetcarp run $W\limits\max-16000x16000.json --gens 20 --gpu
+scene:      $W\limits\max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       5.14s on 12 threads
+exit 0   [wall 6.3 s, peak working set 2.82 GB, peak private 5.89 GB]
+$ JETCARP_GPU=UHD jetcarp run $W\limits\max-16000x16000.json --gens 20 --gpu
+scene:      $W\limits\max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       11.37s on 12 threads
+exit 0   [wall 12.7 s, peak working set 5.14 GB, peak private 5.87 GB]
+$ jetcarp run $W\limits\max-16000x16000.json --gens 20 --cpu --threads 12
+scene:      $W\limits\max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    cpu (12 threads)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       40.02s on 12 threads
+exit 0   [wall 41.0 s, peak working set 1.92 GB, peak private 1.92 GB]

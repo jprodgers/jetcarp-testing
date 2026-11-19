@@ -1,0 +1,36 @@
+# R4 #102 on the Mac, 2026-11-17 05:31 AM EST; claude 2.1.325 (Claude Code); only JETCARP's lines of claude mcp list are kept
+$ claude mcp get jetcarp   (before)
+No MCP server named "jetcarp". (The other servers it lists are left out.)
+
+$ claude mcp add --scope user jetcarp -- jetcarp mcp
+Added stdio MCP server jetcarp with command: jetcarp mcp to user config
+File modified: ~/.claude.json
+exit 0
+
+$ cd ~/Desktop/jetcarp-test && claude mcp list | grep jetcarp
+jetcarp: jetcarp mcp - ✔ Connected
+
+$ cd ~/jetcarp-rc4/homes && claude mcp list | grep jetcarp
+jetcarp: jetcarp mcp - ✔ Connected
+
+$ cd ~/Documents && claude mcp list | grep jetcarp
+jetcarp: jetcarp mcp - ✔ Connected
+
+$ cd ~/Documents && claude mcp get jetcarp
+jetcarp:
+  Scope: User config (available in all your projects)
+  Status: ✔ Connected
+  Type: stdio
+  Command: jetcarp
+  Args: mcp
+  Environment:
+
+To remove this server, run: claude mcp remove jetcarp -s user
+
+$ claude mcp remove jetcarp -s user
+Removed MCP server jetcarp from user config
+File modified: ~/.claude.json
+exit 0
+
+$ claude mcp get jetcarp   (after)
+No MCP server named "jetcarp". (The other servers it lists are left out.)

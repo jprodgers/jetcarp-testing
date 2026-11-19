@@ -1,0 +1,35 @@
+2026-11-17 04:24:37 === 1.5 soak starts: jetcarp 0.4.2-rc.4; rotation "Classics, hourly"; 8 h, a sample every 300 s; folder ~\jetcarp-rc4\soak
+2026-11-17 04:24:37 power: Balanced; sleep on mains Current AC Power Setting Index: 0x00000000; display off on mains Current AC Power Setting Index: 0x00000000; battery 100%, status 2 (2 = mains)
+2026-11-17 04:24:37 monitors: \\.\DISPLAY1 1920x1080; adapters (LUID low part): 00011C23=Microsoft Basic Render Driver, 00011CA8=RTX, 00011966=UHD; 12 threads
+2026-11-17 04:24:37 desktop before: wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; SCRNSAVE.EXE []; jetcarp processes: 19720 "~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve | 31424 "~\jetcarp-rc-042c\bin\jetcarp.exe" host serve
+2026-11-17 04:24:37 host stop (any earlier host in this folder): exit 0: stopped
+2026-11-17 04:24:38 host start: exit 0: running, pid 32428, up 0.0s, 369 MB, GPU Intel(R) UHD Graphics / screen 0: Classics, hourly · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan / wallpaper: showing / caption: off / pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower) / note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+2026-11-17 04:24:38 host rotation "Classics, hourly": exit 0: running, pid 32428, up 1.0s, 457 MB, GPU Intel(R) UHD Graphics / screen 0: Classics, hourly · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 3 · 518400 cells of 2 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan) / monitors: 0: \\.\DISPLAY1 / wallpaper: showing / caption: off / pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower) / note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+2026-11-17 04:24:38 host wallpaper on: exit 0: running, pid 32428, up 1.0s, 458 MB, GPU Intel(R) UHD Graphics / screen 0: Classics, hourly · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 8 · 518400 cells of 2 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan) / monitors: 0: \\.\DISPLAY1 / wallpaper: showing / caption: off / pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower) / note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+2026-11-17 04:24:56 k=0 alive=True pid=32428 mem=459MB ws=459 priv=427.8 cpu=% gpu=[UHD/3d 27.0%] Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) gen 314 518400 cells, 30 of 30.0 held=[] paused=[False] power=2/100%
+2026-11-17 04:24:56 shot soak-shot-00h.jpg : PrintWindow True, 1920x1080, mean 47.4, lit 100.0%
+2026-11-17 05:24:56 k=12 alive=True pid=32428 mem=445MB ws=445.1 priv=426.1 cpu=27% gpu=[UHD/3d 21.1%] profile Cyclic spirals (4 of 7) gen 44666 230400 cells, 30 of 30.0 held=[] paused=[False] power=2/100%
+2026-11-17 05:24:57 shot soak-shot-01h.jpg : PrintWindow True, 1920x1080, mean 155.4, lit 100.0%
+2026-11-17 05:25:01 hourly push: pushed 3d85a16
+2026-11-17 06:24:56 k=24 alive=True pid=32428 mem=214MB ws=214.4 priv=426.5 cpu=25.3% gpu=[UHD/3d 14.7%] profile Life (1 of 7) gen 44666 230400 cells, 30 of 30.0 held=[] paused=[False] power=2/100%
+2026-11-17 06:24:56 shot soak-shot-02h.jpg : PrintWindow True, 1920x1080, mean 38.4, lit 100.0%
+2026-11-17 06:24:59 hourly push: pushed 3c0d9ba
+2026-11-17 07:24:56 k=36 alive=True pid=32428 mem=230MB ws=230 priv=430.2 cpu=52.4% gpu=[UHD/3d 21.5%] Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) gen 44664 518400 cells, 30 of 30.0 held=[] paused=[False] power=2/100%
+2026-11-17 07:24:57 shot soak-shot-03h.jpg : PrintWindow True, 1920x1080, mean 48.2, lit 100.0%
+2026-11-17 07:25:01 hourly push: pushed 6c0b1ff
+2026-11-17 08:24:56 k=48 alive=True pid=32428 mem=227MB ws=227.6 priv=426.3 cpu=28.7% gpu=[UHD/3d 12.1%] profile Hodgepodge (7 of 7) gen 44667 230400 cells, 30 of 30.0 held=[] paused=[False] power=2/100%
+2026-11-17 08:24:56 shot soak-shot-04h.jpg : PrintWindow True, 1920x1080, mean 142.8, lit 100.0%
+2026-11-17 08:25:01 hourly push: pushed fe29ba8
+2026-11-17 09:24:56 k=60 alive=True pid=32428 mem=228MB ws=228.8 priv=429 cpu=40% gpu=[UHD/3d 21.5%] Quick Start langtons-ant (2 of 7) gen 357338 129600 cells, 240 of 240.0 held=[] paused=[False] power=2/100%
+2026-11-17 09:24:56 shot soak-shot-05h.jpg : PrintWindow True, 1920x1080, mean 34.5, lit 100.0%
+2026-11-17 09:25:00 hourly push: pushed 0e92bd6
+2026-11-17 10:24:56 k=72 alive=True pid=32428 mem=265MB ws=265.3 priv=481.8 cpu=30.5% gpu=[UHD/3d 48.8%] profile Penrose waves (6 of 7) gen 44652 280000 cells, 30 of 30.0 held=[] paused=[False] power=2/100%
+2026-11-17 10:24:57 shot soak-shot-06h.jpg : PrintWindow True, 1920x1080, mean 14.1, lit 3.3%
+2026-11-17 10:25:00 hourly push: pushed 6c854ba
+2026-11-17 11:24:56 k=84 alive=True pid=32428 mem=262MB ws=262.6 priv=477.4 cpu=40.4% gpu=[UHD/3d 21.9%] Quick Start turmite-llrr (5 of 7) gen 357335 129600 cells, 240 of 240.0 held=[] paused=[False] power=2/100%
+2026-11-17 11:24:56 shot soak-shot-07h.jpg : PrintWindow True, 1920x1080, mean 78.5, lit 100.0%
+2026-11-17 11:25:00 hourly push: pushed a449d70
+2026-11-17 12:24:56 k=96 alive=True pid=32428 mem=237MB ws=237.5 priv=439.1 cpu=25% gpu=[UHD/3d 16.0%] profile Cyclic spirals (4 of 7) gen 44666 230400 cells, 30 of 30.0 held=[] paused=[False] power=2/100%
+2026-11-17 12:24:56 shot soak-shot-08h.jpg : PrintWindow True, 1920x1080, mean 155.1, lit 100.0%
+2026-11-17 12:24:57 === soak ends; summary in soak-summary.txt
+2026-11-17 12:25:00 final push: pushed 105a8ca

@@ -1,0 +1,134 @@
+# Hunt job 2 from library.sqlite (jobs table), and the patterns it stored
+{"margin":0,"max_gens":20000,"max_period":64,"pop_cap":0,"rules":["B3/S23"],"seed":1,"soup":{"density":0.5,"h":16,"shape":"rect","w":16},"soups":10000,"store":{"max_cells":64,"max_volume":4000,"min_seen":2},"tilings":[{"boundary":"dead","family":"square"}]}
+{
+ "by_class": {
+  "oscillator": 62009,
+  "spaceship": 18987,
+  "still life": 132590
+ },
+ "died": 27,
+ "distinct": 64,
+ "elapsed_s": 4.6,
+ "exploded": 31,
+ "failed": 0,
+ "job": 2,
+ "new_patterns": 64,
+ "newest": [
+  {
+   "class": "oscillator",
+   "group": 0,
+   "id": "fc44535078f613d7c7dd83f41d50d74e",
+   "label": "p2 oscillator 16c #fc4453",
+   "new": true,
+   "period": 2,
+   "rule": "B3/S23",
+   "score": 40.0,
+   "soup": 9513,
+   "tiling": "Square"
+  },
+  {
+   "class": "oscillator",
+   "group": 0,
+   "id": "d95ba00268bda1003001f3af0aefcd13",
+   "label": "p2 oscillator 12c #d95ba0",
+   "new": true,
+   "period": 2,
+   "rule": "B3/S23",
+   "score": 39.5,
+   "soup": 9493,
+   "tiling": "Square"
+  },
+  {
+   "class": "oscillator",
+   "group": 0,
+   "id": "fec01cfd3784adfbf87e477180dfe099",
+   "label": "p3 oscillator 62c #fec01c",
+   "new": true,
+   "period": 3,
+   "rule": "B3/S23",
+   "score": 47.7,
+   "soup": 9059,
+   "tiling": "Square"
+  },
+  {
+   "class": "oscillator",
+   "group": 0,
+   "id": "9aff2b9e2fe67e41842a92e3a5edfc82",
+   "label": "p2 oscillator 14c #9aff2b",
+   "new": true,
+   "period": 2,
+   "rule": "B3/S23",
+   "score": 39.8,
+   "soup": 8701,
+   "tiling": "Square"
+  },
+  {
+   "class": "oscillator",
+   "group": 0,
+   "id": "0082ead540c1e29af5fe0250d2e0867a",
+   "label": "p2 oscillator 18c #0082ea",
+   "new": true,
+   "period": 2,
+   "rule": "B3/S23",
+   "score": 40.3,
+   "soup": 8634,
+   "tiling": "Square"
+  },
+  {
+   "class": "still life",
+   "group": 0,
+   "id": "f6c1da299a701e8b8753806143fe00f2",
+   "label": "still life 14c #f6c1da",
+   "new": true,
+   "period": 1,
+   "rule": "B3/S23",
+   "score": 27.0,
+   "soup": 8633,
+   "tiling": "Square"
+  },
+  {
+   "class": "still life",
+   "group": 0,
+   "id": "ec30ee9c9d6bfb34da4f8db926a57ddb",
+   "label": "still life 13c #ec30ee",
+   "new": true,
+   "period": 1,
+   "rule": "B3/S23",
+   "score": 26.5,
+   "soup": 8533,
+   "tiling": "Square"
+  },
+  {
+   "class": "still life",
+   "group": 0,
+   "id": "161b19fa34467ea50f156b7ce128a411",
+   "label": "still life 10c #161b19",
+   "new": true,
+   "period": 1,
+   "rule": "B3/S23",
+   "score": 25.0,
+   "soup": 7664,
+   "tiling": "Square"
+  },
+  {
+   "class": "oscillator",
+   "group": 0,
+   "id": "25575c0df6aaa781141563b8042235d0",
+   "label": "p2 oscillator 12c #25575c",
+   "new": true,
+   "period": 2,
+   "rule": "B3/S23",
+   "score": 39.5,
+   "soup": 7511,
+   "tiling": "Square"
+  },
+  {
+   "class": "oscillator",
+   "group": 0,
+   "id": "26b82cdd33b2c7eb0513a66360
+2026-11-12T06:12:10Z|2026-11-12T06:12:14Z
+
+patterns:
+patterns
+64
+id model tiling tiling_key tiling_name pin_key geometry_pin tile_types neighborhood steps_per_gen class period dx dy speed cells min_cells max_cells canonical rule range_bits birth_min birth_max survive_min survive_max states_min states_max seen score rating state name label tags notes discovered_by emits needs_reverify engine_version created updated body family semantics 

@@ -1,0 +1,64 @@
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      },
+      "steps_per_gen": 1
+    }
+  ],
+  "commands": [
+    {
+      "op": "set_reseed",
+      "policies": [
+        {
+          "cooldown": 0,
+          "enabled": true,
+          "mode": {
+            "flip": 0.0,
+            "kind": "random"
+          },
+          "when": {
+            "activity": 0.002,
+            "cycle": 12,
+            "for_gens": 60,
+            "kind": "settled",
+            "latest": 30000
+          }
+        }
+      ]
+    },
+    {
+      "gens": 921,
+      "op": "step"
+    }
+  ],
+  "format": 1,
+  "jetcarp_version": "0.4.2-rc.1",
+  "record": {
+    "dead_boundary": false,
+    "generation": 921,
+    "hash": "1bc6b8ea0056c0c0",
+    "jetcarp_version": "0.4.2-rc.1"
+  },
+  "rng_state": "9861208236182182347",
+  "tiling": {
+    "boundary": "wrap",
+    "family": "square",
+    "size": {
+      "rect": {
+        "h": 67,
+        "w": 120
+      }
+    }
+  }
+}

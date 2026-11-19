@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="JETCARP 0.4.2-rc.3">
+<title>Rate clips · explore job 3</title>
+<style>
+/* JETCARP's clip-rating page: batches of looping clips under a sticky strip (progress, tally,
+   name, save); the current clip carries a ring for keyboard rating. Everything is in this file,
+   so it works offline from the clips folder. */
+:root {
+  --ground: #f5f6f8; --panel: #ffffff; --line: #d3d8e1; --ink: #161a22; --dim: #5b6576;
+  --keep: #0e8a70; --maybe: #a26a00; --drop: #c63a2c; --star: #7a4fcf;
+  --on-keep: #ffffff; --on-maybe: #ffffff; --on-drop: #ffffff; --on-star: #ffffff;
+  --display: Georgia, "Times New Roman", serif;
+  --body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #0e1118; --panel: #181d28; --line: #2a3140; --ink: #e8ebf1; --dim: #99a3b5;
+    --keep: #58e0c2; --maybe: #ffc23e; --drop: #ff6a5a; --star: #c9a7ff;
+    --on-keep: #06201a; --on-maybe: #2a1e00; --on-drop: #2c0805; --on-star: #1d0d38;
+  }
+}
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--body); }
+.wrap { max-width: 1320px; margin: 0 auto; padding: 28px 16px 64px; }
+h1 { font-family: var(--display); font-weight: 650; font-size: clamp(28px, 5vw, 42px); margin: 0 0 8px; text-wrap: balance; }
+.lede { color: var(--dim); max-width: 72ch; line-height: 1.55; margin: 0 0 10px; }
+.lede b { color: var(--ink); font-weight: 600; }
+.lede code { font: 13px var(--mono); color: var(--ink); }
+.keys { color: var(--dim); font-size: 13px; margin: 0 0 22px; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+kbd { font: 500 12px var(--mono); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 3px; padding: 1px 5px; }
+.bar { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; background: var(--ground); border-bottom: 1px solid var(--line); padding-block: 10px; margin-bottom: 8px; }
+.count { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.track { flex: 1 1 160px; height: 6px; background: var(--panel); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; min-width: 0; }
+.track i { display: block; height: 100%; width: 0; background: var(--keep); transition: width .2s; }
+.tally { font-family: var(--mono); font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.who { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--dim); }
+.who input { font: 13px var(--body); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 6px 8px; width: 11em; }
+.state { color: var(--dim); font-size: 13px; flex-basis: 100%; }
+section { margin-top: 30px; }
+h2 { font-family: var(--display); font-weight: 500; font-size: 24px; margin: 0 0 12px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+h2 small { font-family: var(--mono); font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; position: relative; scroll-margin-top: 90px; }
+figure.keep { box-shadow: 0 0 0 2px var(--keep); } figure.maybe { box-shadow: 0 0 0 2px var(--maybe); } figure.drop { box-shadow: 0 0 0 2px var(--drop); }
+figure.cur { outline: 3px solid var(--ink); outline-offset: 3px; }
+figure.drop img { opacity: .45; }
+figure img { display: block; width: 100%; max-width: 100%; aspect-ratio: 1; image-rendering: pixelated; background: #000; cursor: pointer; }
+.starred { position: absolute; top: 8px; right: 8px; font: 500 12px var(--mono); background: var(--star); color: var(--on-star); border-radius: 3px; padding: 2px 6px; }
+figcaption { padding: 8px 10px 2px; font-size: 12px; line-height: 1.45; min-width: 0; }
+.rule { font-family: var(--mono); font-size: 11.5px; overflow-wrap: anywhere; }
+.meta { color: var(--dim); overflow-wrap: anywhere; }
+.btns { display: grid; grid-template-columns: repeat(3, 1fr) auto; gap: 6px; padding: 8px 10px 10px; }
+button { font: 500 12.5px var(--body); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 4px; padding: 7px 0; cursor: pointer; }
+.btns button[data-v="star"] { padding: 7px 10px; }
+button:hover { border-color: var(--dim); }
+button:focus-visible, textarea:focus-visible, input:focus-visible { outline: 2px solid var(--keep); outline-offset: 1px; }
+.btns button[aria-pressed="true"][data-v="keep"] { background: var(--keep); border-color: var(--keep); color: var(--on-keep); }
+.btns button[aria-pressed="true"][data-v="maybe"] { background: var(--maybe); border-color: var(--maybe); color: var(--on-maybe); }
+.btns button[aria-pressed="true"][data-v="drop"] { background: var(--drop); border-color: var(--drop); color: var(--on-drop); }
+.btns button[aria-pressed="true"][data-v="star"] { background: var(--star); border-color: var(--star); color: var(--on-star); }
+#save { padding: 7px 14px; background: var(--keep); border-color: var(--keep); color: var(--on-keep); }
+.note { margin-top: 36px; }
+.note label { font-family: var(--display); font-size: 22px; display: block; margin-bottom: 8px; }
+textarea { width: 100%; box-sizing: border-box; min-height: 110px; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 10px; font: 14px/1.5 var(--body); }
+@media (prefers-reduced-motion: reduce) { .track i { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Rate the clips of explore job 3</h1>
+  <p class="lede">48 clips from explore job 3 (smart-jaca), in the folder 2.5-clips.</p>
+  <p class="lede"><b>Keep</b> the runs you would like to see more of, <b>Maybe</b> those you would not mind, <b>Drop</b> the rest. <b>★</b> marks a clip you would show someone; it goes with any verdict. Rate as many as you like, in any order. This browser keeps your ratings as you click, so you can come back later; <b>Save ratings</b> downloads them as one file, which <code>jetcarp jobs review 3 --from FILE</code> reads.</p>
+  <p class="keys"><span><kbd>←</kbd> <kbd>→</kbd> move</span><span><kbd>K</kbd> keep</span><span><kbd>M</kbd> maybe</span><span><kbd>D</kbd> drop</span><span><kbd>S</kbd> star</span><span>Click a clip to make it the current one. Rating moves on to the next clip.</span></p>
+  <div class="bar">
+    <span class="count" id="count">0 of 0 rated</span><div class="track"><i id="fill"></i></div><span class="tally" id="tally"></span>
+    <label class="who">Your name <input id="rater" autocomplete="name" placeholder="optional"></label>
+    <button type="button" id="save">Save ratings</button>
+    <span class="state" id="state" aria-live="polite"></span>
+  </div>
+  <div id="sections"></div>
+  <div class="note"><label for="note">Anything you noticed?</label>
+  <textarea id="note" placeholder="What makes a run good or bad to you: movement, fronts, colours, speed, tilings, kinds of behaviour you want more of…"></textarea></div>
+</div>
+<script id="meta" type="application/json">{"job":3,"key":"2f15cecbf81e625b","round":"2.5-clips","search":"294b906e-1384-4a76-9ba5-b012745e1747"}</script>
+<script id="clips" type="application/json">[{"id":1471,"file":"1471.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k4-044","rule":"JACA B34/S2345","fate":"running","score":0.57,"seed":"all, 38% density, signed 50% neg"},{"id":2744,"file":"2744.gif","category":"Battles","family":"jaca","bucket":"","tiling":"triangle","rule":"JACA +B12/S6 -B12/S56 blast 1","fate":"running","score":1.27,"seed":"92 clusters r2.161, 74% density, by region"},{"id":3283,"file":"3283.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-582","rule":"JACA B1/S234","fate":"running","score":1.3,"seed":"disc r0.38, 59% density, signed 50% neg"},{"id":3348,"file":"3348.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-582","rule":"JACA +B3/S -B23/S34 blast 2","fate":"cycle","score":0.52,"seed":"stripes p0.24 39% 7deg, 32% density, signed 50% neg"},{"id":3673,"file":"3673.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-582","rule":"JACA B2/S23","fate":"cycle","score":0.6,"seed":"7 rings w0.04, 60% density, by region"},{"id":3736,"file":"3736.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-582","rule":"JACA +B235/S5 -B14/S14 blast 1","fate":"running","score":0.39,"seed":"ring r0.35 w0.09, 80% density, signed 50% neg"},{"id":4738,"file":"4738.gif","category":"Battles","family":"jaca","bucket":"","tiling":"hex","rule":"JACA B12/S45","fate":"running","score":1.27,"seed":"noise s0.1 t0.68, 65% density, by region"},{"id":4805,"file":"4805.gif","category":"Battles","family":"jaca","bucket":"","tiling":"hex","rule":"JACA B123/S0 blast 1","fate":"running","score":1.49,"seed":"all, 48% density, signed 50% neg"},{"id":6614,"file":"6614.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-rhomb","rule":"JACA +B129/S246 -B12/S24 blast 1","fate":"running","score":1.39,"seed":"all, 47% density, signed 54% neg"},{"id":6720,"file":"6720.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-rhomb","rule":"JACA +B2568/S59 -B2/S1,4,7,10 blast 2","fate":"running","score":1.22,"seed":"all, 4% density, signed 40% neg"},{"id":6888,"file":"6888.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-rhomb","rule":"JACA B123/S012","fate":"running","score":1.45,"seed":"all, 25% density, signed 50% neg"},{"id":7094,"file":"7094.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-rhomb","rule":"JACA B124/S1278","fate":"running","score":1.4,"seed":"36 clusters r3.275, 84% density, signed 50% neg"},{"id":7535,"file":"7535.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k3-007","rule":"JACA +B12/S0126 -B12/S012","fate":"running","score":1.41,"seed":"Sym order 6, disc r0.28, 50% density, signed 74% neg"},{"id":8413,"file":"8413.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k5-304","rule":"JACA +B45/S1,2,3,4,5,6,15 -B45/S2356","fate":"running","score":0.36,"seed":"voronoi 7 keep 86%, 85% density, by region"},{"id":9143,"file":"9143.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k5-304","rule":"JACA +B12/S23 -B12/S2","fate":"running","score":0.51,"seed":"noise s0.08 t0.52, 77% density, signed 50% neg"},{"id":9299,"file":"9299.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k5-304","rule":"JACA +B1,2,3,11/S0125 -B123/S0126 blast 1","fate":"running","score":0.4,"seed":"Sym order 3 mirror, disc r0.36, 50% density, signed 32% neg"},{"id":9631,"file":"9631.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-628","rule":"JACA B123/S blast 1","fate":"cycle","score":0.27,"seed":"radial 91%-14%, 73% density, by region"},{"id":10129,"file":"10129.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-628","rule":"JACA +B12/S134 -B12/S13 blast 1","fate":"running","score":1.53,"seed":"dots every 11.104 tiles, 76% density, by region"},{"id":10531,"file":"10531.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-011","rule":"JACA +B123/S1239 -B1234/S123","fate":"running","score":1.36,"seed":"36 clusters r3.275, 84% density, signed 50% neg"},{"id":10679,"file":"10679.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-011","rule":"JACA +B1/S123 -B1/S124 blast 1","fate":"running","score":0.44,"seed":"all, 62% density, signed 50% neg"},{"id":11134,"file":"11134.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-011","rule":"JACA +B45/S23456 -B4,5,18/S2356","fate":"cycle","score":0.4,"seed":"all, 39% density, signed 50% neg"},{"id":11887,"file":"11887.gif","category":"Battles","family":"jaca","bucket":"","tiling":"snubhex","rule":"JACA +B1,2,4,11/S023 -B1245/S023 blast 1","fate":"running","score":1.33,"seed":"all, 15% density, signed 50% neg"},{"id":12879,"file":"12879.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-591","rule":"JACA B1/S3","fate":"running","score":0.5,"seed":"38 clusters r5.488, 37% density, signed 50% neg"},{"id":13254,"file":"13254.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-591","rule":"JACA +B1/S0,1,2,12 -B1/S012 blast 1","fate":"running","score":0.36,"seed":"all, 21% density, signed 50% neg"},{"id":13280,"file":"13280.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-591","rule":"JACA B123/S0123 blast 1","fate":"running","score":1.28,"seed":"28 clusters r4.274, 66% density, signed 53% neg"},{"id":13851,"file":"13851.gif","category":"Battles","family":"jaca","bucket":"","tiling":"oct","rule":"JACA +B34/S2345 -B3456/S234 blast 3","fate":"running","score":1.13,"seed":"51 clusters r5.123, 38% density, by region"},{"id":13955,"file":"13955.gif","category":"Battles","family":"jaca","bucket":"","tiling":"oct","rule":"JACA +B45/S234567 -B4/S2356 blast 1","fate":"cycle","score":0.78,"seed":"voronoi 7 keep 86%, 85% density, by region"},{"id":15463,"file":"15463.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-668","rule":"JACA +B124/S013789 -B124/S13789","fate":"running","score":0.52,"seed":"36 clusters r3.275, 84% density, signed 60% neg"},{"id":15666,"file":"15666.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k6-668","rule":"JACA B147/S689 blast 3","fate":"running","score":1.18,"seed":"stripes p0.3 48% 95deg, 33% density, by region"},{"id":15824,"file":"15824.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k5-017","rule":"JACA B1/S1234","fate":"running","score":1.46,"seed":"all, 47% density, signed 50% neg"},{"id":15967,"file":"15967.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k5-017","rule":"JACA B1234/S15","fate":"running","score":1.39,"seed":"4 blobs r0.08-0.1, 22% density, signed 50% neg"},{"id":16136,"file":"16136.gif","category":"Battles","family":"jaca","bucket":"","tiling":"catalog:k5-017","rule":"JACA +B3/S12345 -B3/S12347","fate":"cycle","score":1.06,"seed":"voronoi 7 keep 86%, 85% density, by region"},{"id":17253,"file":"17253.gif","category":"Battles","family":"jaca","bucket":"","tiling":"oct","rule":"JACA +B12/S12 -B123/S0126 blast 1","fate":"cycle","score":0.42,"seed":"Sym order 3 mirror, disc r0.36, 50% density, signed 32% neg"},{"id":17509,"file":"17509.gif","category":"Battles","family":"jaca","bucket":"","tiling":"oct","rule":"JACA B256/S46 blast 2","fate":"cycle","score":0.22,"seed":"gradient 13%-87% 62deg, 57% density, signed 50% neg"},{"id":18648,"file":"18648.gif","category":"Battles","family":"jaca","bucket":"","tiling":"cairo","rule":"JACA +B234/S02 -B3/S12","fate":"running","score":0.42,"seed":"all, 32% density, signed 74% neg"},{"id":19004,"file":"19004.gif","category":"Battles","family":"jaca","bucket":"","tiling":"trihex","rule":"JACA B378/S3,4,6,12","fate":"cycle","score":0.47,"seed":"3 blobs r0.05-0.1, 32% density, signed 57% neg"},{"id":19349,"file":"19349.gif","category":"Battles","family":"jaca","bucket":"","tiling":"trihex","rule":"JACA +B12/S24 -B12/S25 blast 1","fate":"running","score":0.39,"seed":"all, 47% density, signed 54% neg"},{"id":20276,"file":"20276.gif","category":"Battles","family":"jaca","bucket":"","tiling":"cairo","rule":"JACA +B23/S2 -B3/S014","fate":"running","score":0.41,"seed":"all, 24% density, signed 61% neg"},{"id":20304,"file":"20304.gif","category":"Battles","family":"jaca","bucket":"","tiling":"cairo","rule":"JACA B123/S023","fate":"running","score":1.34,"seed":"all, 52% density, signed 33% neg"},{"id":21189,"file":"21189.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-kd","rule":"JACA +B3/S1,2,3,4,10,11 -B3/S1234 blast 2","fate":"running","score":0.52,"seed":"voronoi 32 keep 31%, 49% density, by region"},{"id":22344,"file":"22344.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-kd","rule":"JACA B13/S34","fate":"running","score":0.5,"seed":"voronoi 30 keep 37%, 85% density, by region"},{"id":22894,"file":"22894.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-kd","rule":"JACA B12/S012","fate":"cycle","score":1.3,"seed":"gradient 12%-86% 71deg, 41% density, signed 50% neg"},{"id":22975,"file":"22975.gif","category":"Battles","family":"jaca","bucket":"","tiling":"penrose-kd","rule":"JACA +B1/S012 -B1/S0123 blast 1","fate":"cycle","score":0.45,"seed":"all, 34% density, signed 40% neg"},{"id":23691,"file":"23691.gif","category":"Battles","family":"jaca","bucket":"","tiling":"snubhex","rule":"JACA +B123/S0123 -B123/S023 blast 1","fate":"froze","score":0.34,"seed":"all, 15% density, signed 50% neg"},{"id":23825,"file":"23825.gif","category":"Battles","family":"jaca","bucket":"","tiling":"snubhex","rule":"JACA B123/S023 blast 2","fate":"cycle","score":1.1,"seed":"4 rings w0.02, 96% density, signed 40% neg"},{"id":24392,"file":"24392.gif","category":"Battles","family":"jaca","bucket":"","tiling":"snubsq","rule":"JACA +B1/S0,4,9,10 -B3/S blast 3","fate":"running","score":0.34,"seed":"noise s0.05 t0.58, 45% density, by region"},{"id":24589,"file":"24589.gif","category":"Battles","family":"jaca","bucket":"","tiling":"snubsq","rule":"JACA +B123/S012 -B1236/S012","fate":"running","score":1.36,"seed":"all, 2% density, signed 32% neg"},{"id":24711,"file":"24711.gif","category":"Battles","family":"jaca","bucket":"","tiling":"snubsq","rule":"JACA +B1/S012 -B1/S0127 blast 1","fate":"running","score":1.33,"seed":"all, 23% density, signed 51% neg"}]</script>
+<script>
+"use strict";
+const META = JSON.parse(document.getElementById("meta").textContent);
+const clips = JSON.parse(document.getElementById("clips").textContent);
+const KEY = "jetcarp-ratings:" + META.key;
+const votes = new Map();   // run id -> {verdict, star, ts}
+const cards = new Map();
+const order = [];
+const root = document.getElementById("sections");
+const state = document.getElementById("state");
+const note = document.getElementById("note");
+const rater = document.getElementById("rater");
+let cur = -1;
+let unsaved = false;
+
+// Batches: the clips' buckets when they have them, else 24 at a time.
+const batches = [];
+if (clips.some(c => c.bucket)) {
+  for (const c of clips) {
+    const b = c.bucket || "other";
+    let x = batches.find(y => y.name === b);
+    if (!x) { x = { name: b, list: [] }; batches.push(x); }
+    x.list.push(c);
+  }
+} else {
+  for (let i = 0; i < clips.length; i += 24) batches.push({ name: "Batch " + (batches.length + 1), list: clips.slice(i, i + 24) });
+}
+for (const b of batches) {
+  const sec = document.createElement("section");
+  const h = document.createElement("h2"); h.textContent = b.name;
+  const sm = document.createElement("small"); sm.textContent = b.list.length + " clips"; h.append(sm); sec.append(h);
+  const g = document.createElement("div"); g.className = "grid";
+  for (const c of b.list) {
+    const idx = order.length; order.push(c.id);
+    const fig = document.createElement("figure"); fig.id = "c" + c.id;
+    const img = document.createElement("img"); img.src = c.file; img.loading = "lazy"; img.alt = c.rule + " on " + c.tiling;
+    img.addEventListener("click", () => setCur(idx, false));
+    fig.append(img);
+    const st = document.createElement("span"); st.className = "starred"; st.textContent = "★"; st.hidden = true; fig.append(st);
+    const cap = document.createElement("figcaption");
+    const r = document.createElement("div"); r.className = "rule"; r.textContent = c.rule;
+    const m = document.createElement("div"); m.className = "meta"; m.textContent = c.tiling;
+    const s = document.createElement("div"); s.className = "meta"; s.textContent = c.seed;
+    cap.append(r, m, s); fig.append(cap);
+    const bx = document.createElement("div"); bx.className = "btns";
+    for (const [v, label] of [["keep", "Keep"], ["maybe", "Maybe"], ["drop", "Drop"], ["star", "★"]]) {
+      const bt = document.createElement("button"); bt.type = "button"; bt.textContent = label; bt.dataset.v = v; bt.setAttribute("aria-pressed", "false");
+      if (v === "star") bt.setAttribute("aria-label", "Star");
+      bt.addEventListener("click", () => { setCur(idx, false); v === "star" ? toggleStar(c.id) : vote(c.id, v, false); });
+      bx.append(bt);
+    }
+    fig.append(bx); g.append(fig); cards.set(c.id, fig);
+  }
+  sec.append(g); root.append(sec);
+}
+
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function setCur(i, scroll) {
+  if (i < 0 || i >= order.length) return;
+  if (cur >= 0) cards.get(order[cur]).classList.remove("cur");
+  cur = i;
+  const fig = cards.get(order[cur]); fig.classList.add("cur");
+  if (scroll) fig.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" });
+}
+function paint(id) {
+  const fig = cards.get(id); if (!fig) return;
+  const v = votes.get(id) || {};
+  fig.classList.remove("keep", "maybe", "drop");
+  if (v.verdict) fig.classList.add(v.verdict);
+  fig.querySelector(".starred").hidden = !v.star;
+  fig.querySelectorAll(".btns button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === "star" ? !!v.star : b.dataset.v === v.verdict)));
+}
+function count() {
+  let n = 0, k = 0, m = 0, d = 0, s = 0;
+  for (const [id, v] of votes) {
+    if (!cards.has(id)) continue;
+    if (v.verdict) n++;
+    if (v.verdict === "keep") k++; if (v.verdict === "maybe") m++; if (v.verdict === "drop") d++;
+    if (v.star) s++;
+  }
+  document.getElementById("count").textContent = n + " of " + clips.length + " rated";
+  document.getElementById("fill").style.width = (100 * n / Math.max(1, clips.length)) + "%";
+  document.getElementById("tally").textContent = k + " keep · " + m + " maybe · " + d + " drop · " + s + " ★";
+}
+
+// Kept in this browser, under this clips folder's manifest.
+let store = null;
+try { store = window.localStorage; store.getItem(KEY); } catch (e) { store = null; }
+function keep() {
+  unsaved = true;
+  if (!store) { state.textContent = "This browser cannot keep ratings for this page: save them before you close it."; return; }
+  try {
+    store.setItem(KEY, JSON.stringify({ votes: Object.fromEntries(votes), note: note.value, rater: rater.value }));
+    state.textContent = "Kept in this browser. Save ratings to make the file.";
+  } catch (e) { state.textContent = "This browser would not keep the ratings: save them before you close the page."; }
+}
+function restore() {
+  if (!store) return;
+  try {
+    const s = JSON.parse(store.getItem(KEY) || "null");
+    if (!s) return;
+    for (const [id, v] of Object.entries(s.votes || {})) if (cards.has(Number(id))) votes.set(Number(id), v);
+    note.value = s.note || ""; rater.value = s.rater || "";
+    if (votes.size) state.textContent = "Your ratings from before are back.";
+  } catch (e) {}
+}
+function set(id, v) {
+  if (v.verdict || v.star) votes.set(id, { verdict: v.verdict || null, star: !!v.star, ts: Date.now() });
+  else votes.delete(id);
+  paint(id); count(); keep();
+}
+function vote(id, v, advance) {
+  const old = votes.get(id) || {};
+  set(id, { verdict: old.verdict === v && !advance ? null : v, star: old.star });
+  if (advance) setCur(cur + 1, true);
+}
+function toggleStar(id) {
+  const old = votes.get(id) || {};
+  set(id, { verdict: old.verdict, star: !old.star });
+}
+function save() {
+  const ratings = [];
+  for (const c of clips) {
+    const v = votes.get(c.id);
+    if (v && (v.verdict || v.star)) ratings.push({ run: c.id, verdict: v.verdict || null, star: !!v.star, ts: v.ts });
+  }
+  const out = { format: "jetcarp-ratings 1", job: META.job, search: META.search, round: META.round, rater: rater.value.trim(), ratings: ratings, note: note.value.trim() };
+  const blob = new Blob([JSON.stringify(out, null, 1) + "\n"], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "ratings-" + META.round + ".json";
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  unsaved = false;
+  state.textContent = "Saved " + ratings.length + " ratings as " + a.download + " (in your downloads).";
+}
+document.getElementById("save").addEventListener("click", save);
+document.addEventListener("keydown", e => {
+  if (e.target === note || e.target === rater || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  if (k === "arrowright") { setCur(cur < 0 ? 0 : cur + 1, true); e.preventDefault(); return; }
+  if (k === "arrowleft") { setCur(cur < 0 ? 0 : cur - 1, true); e.preventDefault(); return; }
+  if (cur < 0) return;
+  const id = order[cur];
+  if (k === "k") vote(id, "keep", true);
+  else if (k === "m") vote(id, "maybe", true);
+  else if (k === "d") vote(id, "drop", true);
+  else if (k === "s") toggleStar(id);
+});
+let typing = null;
+for (const el of [note, rater]) el.addEventListener("input", () => { clearTimeout(typing); typing = setTimeout(keep, 500); });
+window.addEventListener("beforeunload", e => { if (unsaved && !store) { e.preventDefault(); e.returnValue = ""; } });
+restore();
+for (const id of cards.keys()) paint(id);
+count();
+if (!state.textContent) state.textContent = store ? "This browser keeps your ratings as you click." : "This browser cannot keep ratings for this page: save them before you close it.";
+</script>
+</body>
+</html>

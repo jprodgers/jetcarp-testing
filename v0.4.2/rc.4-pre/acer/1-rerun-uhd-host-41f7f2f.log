@@ -1,0 +1,4 @@
+2026-11-16 19:04:27 === cargo test --release -p jetcarp --test host, JETCARP_GPU=UHD, src 41f7f2f Windows: a refused host serve --saver says so on the command line, not in a message box (#120); jetcarp 0.4.2-rc.3; watcher holds a box 10 s then closes it; timeout 3600 s
+2026-11-16 19:04:44 RESULT 1-uhd-host-41f7f2f : FAIL:18 passed, 0 failed, 0 ignored in 3 test binaries; exit 101, 0 min; message boxes closed by the watcher: 0; failed: host_stop_returns_once_the_host_has_gone
+2026-11-16 19:04:44 jetcarp processes at the end: 
+(correction, added afterwards: the counts above are wrong, a bug in t1_suite_rerun.ps1 with a single test binary, since fixed; the run itself, 1-tests-uhd-host-41f7f2f.txt, says "test result: FAILED. 14 passed; 1 failed; 3 ignored", in 1 test binary)

@@ -1,0 +1,158 @@
+started CLI explore, pid 23500  [11:47:26]
+== MCP search_start hunt (server thread) -> isError=False
+{
+  "folder": null,
+  "job": 14,
+  "kind": "hunt",
+  "line": "hunt 14: 0/20,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "background",
+  "note": "The job runs in the background: job_status {\"job\": 14, \"wait_s\": 300} waits for it, job_stop {\"job\": 14} stops it, search_start {\"resume\": 14} carries it on.",
+  "started": true,
+  "status": "running"
+}
+$ jetcarp jobs list   [11:47:40]
+   14  hunt     running  2026-11-16T16:47:34Z  hunt 14: 4,121/20,000,000 soups in each of 2 groups, 1975 soups/s, 114,663 objects (ships 9,904, osc 29,308, still 75,451), 66 distinct, 0 new | newest: snake (B36/S23)
+   13  explore  running  2026-11-16T16:47:28Z  explore 13: 1,024 runs (136/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   12  hunt     paused   2026-11-16T16:44:56Z  hunt 12: 86,061/2,000,000 soups, 1396 soups/s, 1,855,464 objects (ships 164,331, osc 536,750, still 1,154,383), 74 distinct, 13 new | newest: still life 14c #5a79a9 (B3/S23)
+   11  explore  paused   2026-11-16T16:26:18Z  explore 11: 3,341 runs (58/s), 1,638 elites in 980 niches (0 of them confirmed), 9 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   10  explore  paused   2026-11-16T16:26:07Z  explore 10: 13 runs (2/s), 13 elites in 8 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    9  hunt     done     2026-11-16T16:26:02Z  hunt 9: 300/300 soups, 849 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    8  hunt     paused   2026-11-16T16:24:24Z  hunt 8: 5,754/50,000,000 soups, 1129 soups/s, 120,746 objects (ships 10,810, osc 35,083, still 74,853), 40 distinct, 0 new | newest: still life 14c #4b1e8d (B3/S23)
+    7  explore  paused   2026-11-16T16:23:44Z  explore 7: 3,072 runs (88/s), 476 elites in 237 niches (0 of them confirmed), 1 of 1 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    6  hunt     paused   2026-11-16T16:23:40Z  hunt 6: 36,177/50,000,000 soups, 903 soups/s, 776,533 objects (ships 68,651, osc 225,333, still 482,549), 61 distinct, 24 new | newest: pentadecathlon (B3/S23)
+    5  pile     done     2026-11-16T16:23:33Z  pile 5: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    4  pile     done     2026-11-16T16:23:32Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T16:22:10Z  explore 3: 4,035 runs (69/s), 666 elites in 353 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    2  hunt     paused   2026-11-16T16:22:03Z  hunt 2: 368,834/10,000,000 soups, 5196 soups/s, 2,557,277 objects (ships 201,578, osc 381,045, still 1,974,654), 78 distinct, 78 new | newest: still life 11c #aabb5f (B36/S23)
+    1  hunt     done     2026-11-16T16:22:00Z  hunt 1: 3,000/3,000 soups, 1517 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+14 job(s); 2 running
+
+exit 0
+== MCP job_status {status: running} -> isError=False
+{
+  "catalog": "C:\\Users\\jimmi\\jetcarp-rc-042c\\a6\\library\\library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-16T16:47:34Z",
+      "job": 14,
+      "kind": "hunt",
+      "label": "f9-5.2-mcp",
+      "line": "hunt 14: 4,121/20,000,000 soups in each of 2 groups, 1975 soups/s, 114,663 objects (ships 9,904, osc 29,308, still 75,451), 66 distinct, 0 new | newest: snake (B36/S23)",
+      "status": "running",
+      "updated": "2026-11-16T16:47:39Z"
+    },
+    {
+      "created": "2026-11-16T16:47:28Z",
+      "job": 13,
+      "kind": "explore",
+      "label": "f9-5.2-cli",
+      "line": "explore 13: 1,024 runs (136/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+      "status": "running",
+      "updated": "2026-11-16T16:47:38Z"
+    }
+  ]
+}
+(the CLI explore is job 13, the MCP hunt job 14)
+== MCP job_stop 13 (the CLI's explore) -> isError=False
+{
+  "job": 13,
+  "kind": "explore",
+  "note": "It stops at its next checkpoint and stays resumable with search_start {\"resume\": 13}.",
+  "status": "running",
+  "stopping": true
+}
+$ jetcarp jobs stop 14   [11:47:50]
+asked hunt 14 to stop at its next checkpoint
+
+exit 0
+CLI explore process exited 0 6.8 s after MCP's job_stop
+== MCP job_status 14 wait_s 60 (after the CLI's jobs stop) -> isError=False
+hunt 14: 14,895/20,000,000 soups in each of 2 groups, 1840 soups/s, 421,719 objects (ships 36,377, osc 107,656, still 277,686), 87 distinct, 0 new | newest: still life 9c #2f14f5 (B36/S23)
+  status paused, 16 s run, 29449 settled, 231 died, 109 exploded, 1 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B36/S23 on Square: 14895 soups, 102513 objects (oscillator 15219, spaceship 8126, still life 79168), 39 distinct, 0 new
+  B3/S23 on Square: 14895 soups, 319206 objects (oscillator 92437, spaceship 28251, still life 198518), 48 distinct, 0 new
+  newest finds:
+    2f14f53077b021fe1ae019b7c5835852  still life 9c #2f14f5              B36/S23    Square soup 14795
+    917e6
+$ jetcarp jobs list   [11:47:57]
+   14  hunt     paused   2026-11-16T16:47:34Z  hunt 14: 14,895/20,000,000 soups in each of 2 groups, 1840 soups/s, 421,719 objects (ships 36,377, osc 107,656, still 277,686), 87 distinct, 0 new | newest: still life 9c #2f14f5 (B36/S23)
+   13  explore  paused   2026-11-16T16:47:28Z  explore 13: 2,048 runs (77/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   12  hunt     paused   2026-11-16T16:44:56Z  hunt 12: 86,061/2,000,000 soups, 1396 soups/s, 1,855,464 objects (ships 164,331, osc 536,750, still 1,154,383), 74 distinct, 13 new | newest: still life 14c #5a79a9 (B3/S23)
+   11  explore  paused   2026-11-16T16:26:18Z  explore 11: 3,341 runs (58/s), 1,638 elites in 980 niches (0 of them confirmed), 9 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   10  explore  paused   2026-11-16T16:26:07Z  explore 10: 13 runs (2/s), 13 elites in 8 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    9  hunt     done     2026-11-16T16:26:02Z  hunt 9: 300/300 soups, 849 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    8  hunt     paused   2026-11-16T16:24:24Z  hunt 8: 5,754/50,000,000 soups, 1129 soups/s, 120,746 objects (ships 10,810, osc 35,083, still 74,853), 40 distinct, 0 new | newest: still life 14c #4b1e8d (B3/S23)
+    7  explore  paused   2026-11-16T16:23:44Z  explore 7: 3,072 runs (88/s), 476 elites in 237 niches (0 of them confirmed), 1 of 1 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    6  hunt     paused   2026-11-16T16:23:40Z  hunt 6: 36,177/50,000,000 soups, 903 soups/s, 776,533 objects (ships 68,651, osc 225,333, still 482,549), 61 distinct, 24 new | newest: pentadecathlon (B3/S23)
+    5  pile     done     2026-11-16T16:23:33Z  pile 5: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    4  pile     done     2026-11-16T16:23:32Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T16:22:10Z  explore 3: 4,035 runs (69/s), 666 elites in 353 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    2  hunt     paused   2026-11-16T16:22:03Z  hunt 2: 368,834/10,000,000 soups, 5196 soups/s, 2,557,277 objects (ships 201,578, osc 381,045, still 1,974,654), 78 distinct, 78 new | newest: still life 11c #aabb5f (B36/S23)
+    1  hunt     done     2026-11-16T16:22:00Z  hunt 1: 3,000/3,000 soups, 1517 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+14 job(s); 0 running
+
+exit 0
+== MCP job_status listing -> {
+  "catalog": "C:\\Users\\jimmi\\jetcarp-rc-042c\\a6\\library\\library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-16T16:47:34Z",
+      "job": 14,
+      "kind": "hunt",
+      "label": "f9-5.2-mcp",
+      "line": "hunt 14: 14,895/20,000,000 soups in each of 2 groups, 1840 soups/s, 421,719 objects (ships 36,377, osc 107,656, still 277,686), 87 distinct, 0 new | newest: still life 9c #2f14f5 (B36/S23)",
+      "status": "paused",
+      "updated": "2026-11-16T16:47:51Z"
+    },
+    {
+      "created": "2026-11-16T16:47:28Z",
+      "job": 13,
+      "kind": "explore",
+      "label": "f9-5.2-cli",
+      "line": "explore 13: 2,048 runs (77/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+      "status": "paused",
+      "updated": "2026-11-16T16:47:57Z"
+    },
+    {
+      "created": "2026-11-16T16:44:56Z",
+      "job": 12,
+      "kind": "hunt",
+      "label": "a6-hidden",
+      "line": "hunt 12: 86,061/2,000,000 soups, 1396 soups/s, 1,855,464 objects (ships 164,331, osc 536,750, still 1,154,383), 74 distinct, 13 new | newest: still life 14c #5a79a9 (B3/S23)",
+      "status": "paused",
+      "updated": "2026-11-16T16:45:59Z"
+    }
+  ]
+}
+== the CLI explore's own output (last lines):
+explore 13: 1,024 runs (74/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 1,024 runs (50/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 2,048 runs (77/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 2,048 runs (77/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status paused, 27 s run over every session, 0 confirmation runs, 2,048 candidates tried, 0.34 GB of memory
+  threads: 5 for runs on the processor and 3 for the GPU's batches, of 12 cores (4 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 1,129   0.34   1.25     315
+  generations                 919   0.76   1.76     290
+  folder: $W\library\searches\54d6d379-e903-4cd6-9eac-e083e6b543e0
+explore search 13 paused (as asked); `jetcarp jobs resume 13` continues it from its archive (not run for run: the search is not deterministic)
+
+$ jetcarp jobs list   [11:47:58]
+   14  hunt     paused   2026-11-16T16:47:34Z  hunt 14: 14,895/20,000,000 soups in each of 2 groups, 1840 soups/s, 421,719 objects (ships 36,377, osc 107,656, still 277,686), 87 distinct, 0 new | newest: still life 9c #2f14f5 (B36/S23)
+   13  explore  paused   2026-11-16T16:47:28Z  explore 13: 2,048 runs (77/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   12  hunt     paused   2026-11-16T16:44:56Z  hunt 12: 86,061/2,000,000 soups, 1396 soups/s, 1,855,464 objects (ships 164,331, osc 536,750, still 1,154,383), 74 distinct, 13 new | newest: still life 14c #5a79a9 (B3/S23)
+   11  explore  paused   2026-11-16T16:26:18Z  explore 11: 3,341 runs (58/s), 1,638 elites in 980 niches (0 of them confirmed), 9 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   10  explore  paused   2026-11-16T16:26:07Z  explore 10: 13 runs (2/s), 13 elites in 8 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    9  hunt     done     2026-11-16T16:26:02Z  hunt 9: 300/300 soups, 849 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    8  hunt     paused   2026-11-16T16:24:24Z  hunt 8: 5,754/50,000,000 soups, 1129 soups/s, 120,746 objects (ships 10,810, osc 35,083, still 74,853), 40 distinct, 0 new | newest: still life 14c #4b1e8d (B3/S23)
+    7  explore  paused   2026-11-16T16:23:44Z  explore 7: 3,072 runs (88/s), 476 elites in 237 niches (0 of them confirmed), 1 of 1 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    6  hunt     paused   2026-11-16T16:23:40Z  hunt 6: 36,177/50,000,000 soups, 903 soups/s, 776,533 objects (ships 68,651, osc 225,333, still 482,549), 61 distinct, 24 new | newest: pentadecathlon (B3/S23)
+    5  pile     done     2026-11-16T16:23:33Z  pile 5: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    4  pile     done     2026-11-16T16:23:32Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T16:22:10Z  explore 3: 4,035 runs (69/s), 666 elites in 353 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    2  hunt     paused   2026-11-16T16:22:03Z  hunt 2: 368,834/10,000,000 soups, 5196 soups/s, 2,557,277 objects (ships 201,578, osc 381,045, still 1,974,654), 78 distinct, 78 new | newest: still life 11c #aabb5f (B36/S23)
+    1  hunt     done     2026-11-16T16:22:00Z  hunt 1: 3,000/3,000 soups, 1517 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+14 job(s); 0 running
+
+exit 0

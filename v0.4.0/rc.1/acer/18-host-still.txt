@@ -1,0 +1,32 @@
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg; style 10]
+
+> jetcarp host still on   (00:07:35)
+running, pid 20848, up 573.0s, 312 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 2782 · 518400 cells
+screen 1: Classics, hourly · Quick Start langtons-ant (2 of 7) · generation 22707 · 230400 cells
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+(exit 0)
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg; style 10]
+
+> jetcarp host stop   (00:07:36)
+stopped
+(exit 0)
+  [registry WallPaper = C:\Users\jimmi\AppData\Roaming\jetcarp\desktop-pictures\still-1794460056513.png; style 10]
+
+> tasklist jetcarp*
+
+> jetcarp host status   (00:07:39)
+Error: the JETCARP background host is not running
+(exit 1)
+  [registry WallPaper = C:\Users\jimmi\AppData\Roaming\jetcarp\desktop-pictures\still-1794460056513.png; style 10]
+
+
+Still left: 1920x1080 PNG of screen 0 only (18-still-left-by-host.png). Jimmie: a still on both monitors, the same forest fire on each (the AOC has no picture of its own screen).
+
+> jetcarp host still off   (00:08:42)
+saved; the host is not running
+put the desktop's own picture back
+(exit 0)
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg; style 10]
+  desktop-pictures now: 

@@ -1,0 +1,641 @@
+{
+  "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/data/library.sqlite",
+  "counters": [
+    [
+      "settled",
+      "97,839"
+    ],
+    [
+      "died",
+      "2,006"
+    ],
+    [
+      "exploded",
+      "20,155"
+    ],
+    [
+      "unsettled",
+      "0"
+    ],
+    [
+      "objects",
+      "760,892"
+    ],
+    [
+      "distinct",
+      "1,783"
+    ],
+    [
+      "new to the catalog",
+      "1,783"
+    ],
+    [
+      "failed verification",
+      "0"
+    ],
+    [
+      "groups (rule x tiling)",
+      "6"
+    ],
+    [
+      "GPU",
+      "AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan"
+    ]
+  ],
+  "created": "2026-11-16T00:06:26Z",
+  "deterministic": true,
+  "done": 120000,
+  "elapsed_s": 4.5,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": "2026-11-16T00:06:30Z",
+  "here": false,
+  "job": 1,
+  "kind": "hunt",
+  "kind_label": "Hunt",
+  "label": "det",
+  "line": "hunt 1: 20,000/20,000 soups in each of 6 groups, 26914 soups/s, 760,892 objects (ships 51,012, osc 236,468, still 473,412), 1,783 distinct, 1,783 new | newest: still life 19c #916b39 (B3/S23)",
+  "per_s": 26914.4,
+  "progress": {
+    "by_class": {
+      "oscillator": 236468,
+      "spaceship": 51012,
+      "still life": 473412
+    },
+    "died": 2006,
+    "distinct": 1783,
+    "elapsed_s": 4.5,
+    "exploded": 20155,
+    "failed": 0,
+    "gpu": "AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+    "groups": [
+      {
+        "by_class": {
+          "oscillator": 122822,
+          "spaceship": 37577,
+          "still life": 264365
+        },
+        "died": 48,
+        "distinct": 47,
+        "escaped": 37577,
+        "exploded": 57,
+        "failed": 0,
+        "generations": 11261740,
+        "new_patterns": 47,
+        "other": {},
+        "rule": "B3/S23",
+        "settled": 19895,
+        "soups": 20000,
+        "tiling": "Square",
+        "tiling_key": "{\"family\":\"square\",\"boundary\":\"dead\"}",
+        "unsettled": 0,
+        "unstored_distinct": 0
+      },
+      {
+        "by_class": {
+          "oscillator": 20601,
+          "spaceship": 10841,
+          "still life": 108125
+        },
+        "died": 270,
+        "distinct": 42,
+        "escaped": 10841,
+        "exploded": 98,
+        "failed": 0,
+        "generations": 7580518,
+        "new_patterns": 42,
+        "other": {},
+        "rule": "B36/S23",
+        "settled": 19632,
+        "soups": 20000,
+        "tiling": "Square",
+        "tiling_key": "{\"family\":\"square\",\"boundary\":\"dead\"}",
+        "unsettled": 0,
+        "unstored_distinct": 0
+      },
+      {
+        "by_class": {
+          "spaceship": 2594
+        },
+        "died": 0,
+        "distinct": 4,
+        "escaped": 2594,
+        "exploded": 20000,
+        "failed": 0,
+        "generations": 1052507,
+        "new_patterns": 4,
+        "other": {},
+        "rule": "B2/S34",
+        "settled": 0,
+        "soups": 20000,
+        "tiling": "Square",
+        "tiling_key": "{\"family\":\"square\",\"boundary\":\"dead\"}",
+        "unsettled": 0,
+        "unstored_distinct": 0
+      },
+      {
+        "by_class": {
+          "oscillator": 523,
+          "still life": 57180
+        },
+        "died": 457,
+        "distinct": 1160,
+        "escaped": 0,
+        "exploded": 0,
+        "failed": 0,
+        "generations": 468923,
+        "new_patterns": 1160,
+        "other": {},
+        "rule": "B3/S23",
+        "settled": 19543,
+        "soups": 20000,
+        "tiling": "Hexagon",
+        "tiling_key": "{\"family\":\"hex\",\"boundary\":\"dead\"}",
+        "unsettled": 0,
+        "unstored_distinct": 0
+      },
+      {
+        "by_class": {
+          "oscillator": 4632,
+          "still life": 43742
+        },
+        "died": 1173,
+        "distinct": 508,
+        "escaped": 0,
+        "exploded": 0,
+        "failed": 0,
+        "generations": 444669,
+        "new_patterns": 508,
+        "other": {},
+        "rule": "B36/S23",
+        "settled": 18827,
+        "soups": 20000,
+        "tiling": "Hexagon",
+        "tiling_key": "{\"family\":\"hex\",\"boundary\":\"dead\"}",
+        "unsettled": 0,
+        "unstored_distinct": 0
+      },
+      {
+        "by_class": {
+          "oscillator": 87890
+        },
+        "died": 58,
+        "distinct": 22,
+        "escaped": 0,
+        "exploded": 0,
+        "failed": 0,
+        "generations": 1273396,
+        "new_patterns": 22,
+        "other": {},
+        "rule": "B2/S34",
+        "settled": 19942,
+        "soups": 20000,
+        "tiling": "Hexagon",
+        "tiling_key": "{\"family\":\"hex\",\"boundary\":\"dead\"}",
+        "unsettled": 0,
+        "unstored_distinct": 0
+      }
+    ],
+    "job": 1,
+    "new_patterns": 1783,
+    "newest": [
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "916b39a4a2efcedb91ca6cabcb9e3ac8",
+        "label": "still life 19c #916b39",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 29.5,
+        "soup": 19990,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "7894f2ba44aab5f45536d923fe02d424",
+        "label": "still life 16c #7894f2",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 28.0,
+        "soup": 19966,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "bd260f89ebd64715d0216f8901065786",
+        "label": "still life 17c #bd260f",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 28.5,
+        "soup": 19950,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "2f29227dc04da9086530edb9b656c126",
+        "label": "still life 17c #2f2922",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 28.5,
+        "soup": 19943,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "3d1be5888643dd6b4f18bc5f68970e4c",
+        "label": "still life 11c #3d1be5",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 25.5,
+        "soup": 19940,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "a38ff2ed2b34695065a4cd3c10dc31eb",
+        "label": "still life 20c #a38ff2",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 30.0,
+        "soup": 19916,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "e8743f9e25a87f38b68496c549292854",
+        "label": "still life 18c #e8743f",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 29.0,
+        "soup": 19891,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "a54c55d2a0401b67b0ac0111da690bfc",
+        "label": "still life 13c #a54c55",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 26.5,
+        "soup": 19884,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "148f1cc07aa8a6983c38fd44bd30a65f",
+        "label": "still life 20c #148f1c",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 30.0,
+        "soup": 19861,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "1905769becdf782ac3eb49dc480da227",
+        "label": "still life 13c #190576",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 26.5,
+        "soup": 19858,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "0516484236ead77c404cdfb2d16a1ef4",
+        "label": "still life 14c #051648",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 27.0,
+        "soup": 19825,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "e6a352df1605311bf04689b16799eaa9",
+        "label": "still life 27c #e6a352",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 32.0,
+        "soup": 19810,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "15a4e7c72930031358ec9bcfb86ccf08",
+        "label": "still life 17c #15a4e7",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 28.5,
+        "soup": 19808,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "128fa8d7f4693408094c349cc22105f9",
+        "label": "still life 14c #128fa8",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 27.0,
+        "soup": 19766,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "a01d3b7a927a466d1b9c99a947457c98",
+        "label": "still life 20c #a01d3b",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 30.0,
+        "soup": 19728,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "d5e163d0d3a173df83bafed0262eda97",
+        "label": "still life 25c #d5e163",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 32.0,
+        "soup": 19727,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "1111c2cc17dec7b5a8719096ed3d78dd",
+        "label": "still life 21c #1111c2",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 30.5,
+        "soup": 19720,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "d6ff321bdb634d6b1edf55564d599ba9",
+        "label": "still life 17c #d6ff32",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 28.5,
+        "soup": 19709,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "0d1eaa45ded671ead5df1919190ca141",
+        "label": "still life 14c #0d1eaa",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 27.0,
+        "soup": 19687,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 4,
+        "id": "f449ca5305fa7469b2fd33b88bf2ff87",
+        "label": "still life 16c #f449ca",
+        "new": true,
+        "period": 1,
+        "rule": "B36/S23",
+        "score": 28.0,
+        "soup": 19686,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "d7ef1a9d0a2fc5e8a4777aeeafa91d8f",
+        "label": "still life 19c #d7ef1a",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 29.5,
+        "soup": 19664,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "fd8fcc86dc30a5252f8aed81f5858955",
+        "label": "still life 19c #fd8fcc",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 29.5,
+        "soup": 19652,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "e8e01c886fd45c087227a94623c162a7",
+        "label": "still life 19c #e8e01c",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 29.5,
+        "soup": 19639,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "ba05134a9a8fd9abf947a98a2a162405",
+        "label": "still life 15c #ba0513",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.5,
+        "soup": 19626,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "oscillator",
+        "group": 4,
+        "id": "d0f6b0fd77fce56ad51405362a18eb41",
+        "label": "p5 oscillator 22c #d0f6b0",
+        "new": true,
+        "period": 5,
+        "rule": "B36/S23",
+        "score": 51.3,
+        "soup": 19622,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "14b8d3fcc327975422e01db5855328e3",
+        "label": "still life 16c #14b8d3",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 28.0,
+        "soup": 19612,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "7af42e3fe87bc63088dbdf85f0bda04a",
+        "label": "still life 14c #7af42e",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.0,
+        "soup": 19595,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "afc3f2f7e4c39e465d39a83f42649efb",
+        "label": "still life 15c #afc3f2",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.5,
+        "soup": 19575,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "a623fc9582ca00d8e716345563f14670",
+        "label": "still life 20c #a623fc",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 30.0,
+        "soup": 19564,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "6e94700bb08060168271798ab74cbf2f",
+        "label": "still life 18c #6e9470",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 29.0,
+        "soup": 19533,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "67e4c40addf3d76d4944c5bfce2ea908",
+        "label": "still life 15c #67e4c4",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 27.5,
+        "soup": 19515,
+        "tiling": "Hexagon"
+      },
+      {
+        "class": "still life",
+        "group": 3,
+        "id": "0580b977ea009e191ad702952d5bc5d2",
+        "label": "still life 23c #0580b9",
+        "new": true,
+        "period": 1,
+        "rule": "B3/S23",
+        "score": 31.5,
+        "soup": 19502,
+        "tiling": "Hexagon"
+      }
+    ],
+    "objects": 760892,
+    "settled": 97839,
+    "soups_done": 20000,
+    "soups_per_s": 26914.4,
+    "soups_total": 20000,
+    "status": "done",
+    "threads": 32,
+    "unsettled": 0,
+    "updated": "2026-11-16T00:06:30Z"
+  },
+  "resumable": true,
+  "spec": {
+    "label": "det",
+    "margin": 0,
+    "max_gens": 20000,
+    "max_period": 64,
+    "pop_cap": 0,
+    "rules": [
+      "B3/S23",
+      "B36/S23",
+      "B2/S34"
+    ],
+    "seed": 4242,
+    "soup": {
+      "density": 0.5,
+      "h": 16,
+      "shape": "rect",
+      "w": 16
+    },
+    "soups": 20000,
+    "store": {
+      "max_cells": 64,
+      "max_volume": 4000,
+      "min_seen": 2
+    },
+    "tilings": [
+      {
+        "boundary": "dead",
+        "family": "square"
+      },
+      {
+        "boundary": "dead",
+        "family": "hex"
+      }
+    ]
+  },
+  "stale": false,
+  "status": "done",
+  "title": "det: B3/S23, B36/S23, B2/S34 on Square, Hexagon, 16x16 soups at 0.5",
+  "total": 120000,
+  "unit": "soups",
+  "updated": "2026-11-16T00:06:30Z",
+  "waited_s": null
+}

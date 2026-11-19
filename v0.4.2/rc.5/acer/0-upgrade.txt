@@ -1,0 +1,8 @@
+#### 0. The upgrade from rc.4 to rc.5, 2026-11-17 12:45:26
+download (gh release download v0.4.2-rc.5): the Windows zip e0f270b3df855624..., jetcarp-installer.ps1 5572295e4d7caf1f..., the win_amd64 wheel 1b01c60f7fef35a4...: each matches SHA256SUMS
+rc.4 as installed: jetcarp 0.4.2-rc.4; jetcarp.exe sha256 1e9dda182366b4a8...; 70 files in bin
+jetcarp processes before: []
+rc.5's zip unpacked to ~\jetcarp-rc-042c\rc5-dl\unz\jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc; each of its files copied over rc.4's at the same place in ~\jetcarp-rc-042c\bin (Copy-Item -Force)
+rc.5's 70 files in place; differing from the zip: 0 ; in bin but not in rc.5's zip: 0 
+jetcarp.exe sha256 now 5f4c823095b66296...; jetcarpw.exe beside it: True
+$ jetcarp --version: jetcarp 0.4.2-rc.5

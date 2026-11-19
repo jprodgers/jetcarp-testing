@@ -1,0 +1,9 @@
+2026-11-17T08:17:38Z == start; jetcarp 0.4.2-rc.4; sha256 f66c440abdd178ac…; source cf5cbdf Release 0.4.2-rc.4 (v0.4.2-rc.4)
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+2026-11-17T08:17:38Z == 1.1 parity, 300 generations, Metal
+2026-11-17T08:18:53Z RESULT 1.1 parity: pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; exit 0, 75 s
+2026-11-17T08:18:53Z == 1.2 parity, 5000 generations, Metal
+2026-11-17T08:19:57Z RESULT 1.2 parity: pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; exit 0, 64 s
+2026-11-17T08:19:57Z == 1.3 cargo test --release --workspace --no-fail-fast, at cf5cbdf
+2026-11-17T08:30:59Z RESULT 1.3 suite: pass: commit cf5cbdf; 1058 passed, 0 failed, 41 ignored, in 143 test binaries; exit 0, 11 min 2 s; 0 warning lines
+2026-11-17T08:30:59Z == done

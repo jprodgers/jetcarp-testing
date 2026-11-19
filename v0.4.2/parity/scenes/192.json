@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Soft Freeze",
+  "description": "Chaotic, on the edge between frozen and fluid: crystals grow, melt and regrow next to an active phase, seemingly without end. (John Elliott)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "2293970584654268671",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Soft Freeze",
+      "rule": "B38/S13458/C6",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e7116717da562f24",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

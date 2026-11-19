@@ -1,0 +1,12 @@
+explore 1: 57,109 runs (103/s), 9,989 elites in 4,996 niches (419 of them confirmed), 34 of 1,359 tilings; Apple M2 Max, Metal
+  status paused, 9 min 59 s run over every session, 1,860 confirmation runs, 58,993 candidates tried, 2.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 0 runs on the processor stopped at their time cap (kept with the generations they reached), 16 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                24,949   0.32   1.46   3,962
+  generations              19,929   0.67   2.07   3,013
+  jaca                      9,238   0.56   2.11   2,258
+  cyclic                    2,993   0.48   2.10     756
+  folder: /Users/Jimmie/jetcarp-rc-042c/data/searches/0fb80670-f64c-4325-b526-369b1e5a09c3
+  `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)

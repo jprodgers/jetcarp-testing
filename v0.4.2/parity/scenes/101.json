@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Parity (von Neumann table)",
+  "description": "A rule table: each cell becomes the XOR of its four edge neighbours.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 161,
+        "h": 161
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "11887164180396278141",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Parity (von Neumann table)",
+      "rule": "Table parity",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "dfe4b21265d724e3",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

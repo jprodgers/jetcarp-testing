@@ -1,0 +1,22 @@
+== 15:22:13 R #73: screen 0 to 'Wolfram series' (never fitted), then host tune --screen 0
+screen 0: Wolfram series · W0 (1 of 256) · starting · wallpaper on monitor 0 (Built-in Retina Display) · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+tune exit 0 in 737 s
+screen 0: rotation 'Wolfram series'; its fit: rotation 'Wolfram series', 40 scenes: ['W0', 'W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7'] …
+screen 1: rotation 'A classic a day'; its fit: rotation 'A classic a day', 7 scenes: ['profile Life', 'Quick Start langtons-ant', 'Quick Start rule:ForestFire 0.01/0.0001', 'profile Cyclic spirals', 'Quick Start turmite-llrr', 'profile Penrose waves', 'profile Hodgepodge']
+running, pid 28818, up 1889.0s, 377 MB, GPU Apple M2 Max
+screen 0: Wolfram series · W0 (1 of 256) · generation 6 · 10496 cells of 32.1 px (tuned) · 60 fps, 60 generations a second · wallpaper on monitor 0 (Built-in Retina Display) · simulation: CPU: automatic, and the world is too small to be worth the GPU
+screen 1: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 241607 · 230400 cells of 4 px · 60 fps, 240 generations a second · wallpaper on monitor 1 (Q3277) · simulation: CPU: automatic, and the world is too small to be worth the GPU
+-- R #73: pass. After the automatic fit (the monitors changed), each screen's fit held only its own rotation; after
+   screen 0 moved to "Wolfram series" and was fitted alone, its fit holds only Wolfram series' 40 scenes (no row of
+   "Until it settles" left), and screen 1's fit (A classic a day, 7 scenes) is untouched.
+-- The fit took 737 s (12.3 min): it sampled 40 of the series' 256 rules (W0, W1, …), up to 9 sizes each. Only 7 of the
+   40 had a size within the limits (two screens: the CPU limit halved); recommended 12–32 px; W0 shows at 32.1 px.
+-- Jimmie: "Just a note, a fit should never sweep through hundreds of options, it should pick a single rule and just fit
+   with one in the series, not every one in the series. That's a bit crazy, and not at all what I wanted."
+   A series (one kind of scene, the rule number changing) should be fitted once, on one representative rule (or one per
+   kind of scene), and that size used for the whole series.
+== 15:38:26 2.MM step 4: the Q3277's resolution changed and set back (Jimmie: "Changed resolution, but it did not refit.")
+screen 1 refilled: 261,888 cells at 3 px (15:36:40), 230,400 at 3 px (15:37:16), 230,400 at 4 px (15:37:21); the host logged "the monitors changed; sweeping the desktop background's sizes again" and began an automatic fit of 47 scenes, screen 0's 40 Wolfram rules first ("screen 0, scene 6 of 47: W5 at 32 px" at 15:38).
+host memory before stopping: status 339 MB, footprint 781 MB
+== host stop (ends the sweep)
+stopped

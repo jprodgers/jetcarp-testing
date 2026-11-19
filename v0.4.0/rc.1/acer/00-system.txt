@@ -1,0 +1,21 @@
+﻿Recorded: 2026-11-11 23:29:59 -05:00
+Machine: Acer Nitro ANV15-51
+OS: Microsoft Windows 11 Home, version 10.0.26300, build 26300.9974 (26H2)
+Shell: Windows PowerShell 5.1.26100.9818; running as administrator: False
+
+Graphics adapters:
+  NVIDIA GeForce RTX 3050 6GB Laptop GPU, driver 31.0.15.4618, status OK
+  Intel(R) UHD Graphics, driver 31.0.101.4146, status OK
+
+Monitors attached:
+  \\.\DISPLAY1 primary=True 1920x1080 at (0,0)
+  (internal panel only; external monitor not attached yet)
+Display scaling: AppliedDPI 96 (96 = 100%)
+
+Power: Online (mains), battery 100%
+
+Before install:
+  jetcarp on PATH: no; %LOCALAPPDATA%\Programs\jetcarp: absent; %APPDATA%\jetcarp: absent; %LOCALAPPDATA%\jetcarp: absent; Pictures\JETCARP: absent
+  uv: not installed; pipx: not installed; gh: C:\Program Files\GitHub CLI\gh.exe; python: C:\Users\jimmi\AppData\Local\Programs\Python\Python314\python.exe
+  Wallpaper: c:\windows\web\wallpaper\themea\img20.jpg
+  Screen saver (SCRNSAVE.EXE): none set

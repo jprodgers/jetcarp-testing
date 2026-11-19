@@ -1,0 +1,92 @@
+﻿
+09:34:11.308 jobs status 3 --json: .folder = ''; progress.folder = 'C:\Users\jimmi\jetcarp-rc-042b\data\searches\5cbba190-5548-46c8-bf58-4ed39e19b932'; uuid 5cbba190-5548-46c8-bf58-4ed39e19b932
+09:34:11.332 job 3: screened 13236 + confirmed 288
+09:34:11.373 job 3's search folder before the export: manifest.json 189344; search.sqlite 6455296
+09:34:12.788 job 3 runs csv: stage 1 13236, stage 2 288
+09:34:13.000 pack key --name "RC tester (Acer)" -> exit 0 in 0.18 s
+09:34:13.024     made publisher key SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4
+09:34:13.030       ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM+9tYvknqqDJiVCzXTcYQzqHIvw23804ZYaEwf4V2w0 jetcarp publisher
+09:34:13.044       file C:\Users\jimmi\jetcarp-rc-042b\config\pack\publisher_ed25519
+09:34:13.062       named RC tester (Acer)
+09:34:14.634 pack export --to A10-pack --feed rc-acer --title "rc.2 test, Acer" --search 5cbba190-5548-46c8-bf58-4ed39e19b932 --no-media -> exit 0 in 1.55 s
+09:34:14.644     exported sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 into C:\Users\jimmi\jetcarp-rc-042b\phase2\A10-pack: 28 files, 1450390 bytes
+09:34:14.655     the version was published first into C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-pack.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-pack.store` does (then `jetcarp pack export --from C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-pack.store` lays it out)
+09:34:14.668     explore job 3 (search 5cbba190-5548-46c8-bf58-4ed39e19b932): sealed its newest 13,524 runs first, so the pack carries every run
+09:34:14.687     publishing feed rc-acer (version 1) into C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-pack.store
+09:34:14.699     113 patterns read, 113 new rows
+09:34:14.710     search 5cbba190-5548-46c8-bf58-4ed39e19b932: copying its segments
+09:34:14.721     version sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 written
+09:34:14.755 pack: 1449774 bytes in 27 files
+09:34:14.772 job 3's search folder after the export: manifest.json 189652; search.sqlite 6455296; runs\part-000001.parquet 1199145
+09:34:15.199 pack check A10-pack -> exit 0 in 0.41 s
+09:34:15.208     checked sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 (feed rc-acer, SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 RC tester (Acer), signed by its publisher)
+09:34:15.219       12 objects checked (1300747 bytes)
+09:34:15.231     sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147: feed rc-acer, by SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 (RC tester (Acer)), checking every object
+09:34:15.246     reading verifications, sightings, provenance and annotations
+09:34:15.259     checking ids and patterns (a check stores nothing)
+09:34:15.270     checking sightings, ants, Quick Start entries, media and ratings
+09:34:18.723 pack import A10-pack --library import10 -> exit 0 in 3.41 s
+09:34:18.737     imported sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 (feed rc-acer, SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 RC tester (Acer), signed by its publisher)
+09:34:18.743       12 objects checked (1300747 bytes)
+09:34:18.754       patterns: 113 added, 0 merged, 0 flagged needs_reverify
+09:34:18.777       sightings 202, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+09:34:18.789       verified again (sample): 113 of 113 passed, 0 skipped, 0 failed
+09:34:18.804     sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147: feed rc-acer, by SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 (RC tester (Acer)), checking every object
+09:34:18.822     reading verifications, sightings, provenance and annotations
+09:34:18.849     checking ids and storing patterns
+09:34:18.872     search 5cbba190-5548-46c8-bf58-4ed39e19b932: copying its segments and rebuilding its state
+09:34:18.910     merging sightings
+09:34:18.926     search 5cbba190-5548-46c8-bf58-4ed39e19b932: 13524 runs, 1994 elites in 1033 niches, rebuilt in 2.6 s
+09:34:19.397 jobs list --library import10 -> exit 0 in 0.41 s
+09:34:19.414     5  hunt     done     2026-11-15T14:34:18Z  hunt 5: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+09:34:19.425         4  hunt     done     2026-11-15T14:34:18Z  hunt 4: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+09:34:19.436         3  hunt     done     2026-11-15T14:34:18Z  hunt 3: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+09:34:19.453         2  hunt     done     2026-11-15T14:34:18Z  hunt 2: imported from pack rc.2 test, Acer (its finds came with the pack; nothing ran here)
+09:34:19.463         1  explore  paused   2026-11-15T14:34:15Z  explore 1: 13,236 runs (0/s), 1,994 elites in 1,033 niches (67 of them confirmed), 12 of 1,359 tilings; not run here yet
+09:34:19.487     5 job(s); 0 running
+09:34:19.935 imported explore job: 1
+09:34:20.300 jobs status 1 --library import10 -> exit 0 in 0.34 s
+09:34:20.317     explore 1: 13,236 runs (0/s), 1,994 elites in 1,033 niches (67 of them confirmed), 12 of 1,359 tilings; not run here yet
+09:34:20.339       status paused, 0 s run over every session, 288 confirmation runs, 13,524 candidates tried, 0.00 GB of memory
+09:34:20.352       family                     runs   mean   best  elites
+09:34:20.365       jaca                     13,236   0.46   2.17   1,994
+09:34:20.377       folder: C:\Users\jimmi\jetcarp-rc-042b\phase2\import10\searches\5cbba190-5548-46c8-bf58-4ed39e19b932
+09:34:20.390       note: its working database was rebuilt from its sealed runs
+09:34:20.401       `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)
+09:34:20.771 jobs runs --library import10 --measures sign_balance,sign_sorted --limit 5 -> exit 0 in 0.36 s
+09:34:20.793     id  score  fate    family             sign_balance sign_sorted
+09:34:20.805         12114   2.17  running jaca               0.1316 0.9949
+09:34:20.827         12308   2.14  running jaca               0.1316 0.9975
+09:34:20.840          5922   2.10  running jaca               0.0570 0.9425
+09:34:20.852         10740   2.09  running jaca               0.1133 0.9969
+09:34:20.869          3841   2.08  running jaca               0.0548 0.9988
+09:34:20.882     5 run(s) of explore job 1
+09:34:22.260 imported runs csv: stage 1 13236, stage 2 288
+09:34:24.467 stage-1 rows identical (rule, tiling, rng, origin, fate) after sorting: True
+09:34:27.469 search explore --families life_like --minutes 3 --detach --label running-export -> exit 0 in 2.98 s
+09:34:27.489     explore search job 10 started (detached) in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+09:34:27.503     explore 10: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+09:34:42.787 job 10 status: running; uuid 994538d5-4fb7-4239-980b-6fa2c0549bf7
+09:34:43.547 pack export (the running search 10) -> exit 0 in 0.76 s
+09:34:43.549     exported sha256:65496910de08593e8a88a0f8fa7661ad8f8e6da381a94def1758d5ab547a6cda into C:\Users\jimmi\jetcarp-rc-042b\phase2\A10-running: 27 files, 111831 bytes
+09:34:43.551     the version was published first into C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-running.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-running.store` does (then `jetcarp pack export --from C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-running.store` lays it out)
+09:34:43.552     publishing feed rc-acer-running (version 1) into C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-running.store
+09:34:43.553     113 patterns read, 113 new rows
+09:34:43.555     search 994538d5-4fb7-4239-980b-6fa2c0549bf7: copying its segments
+09:34:43.556     version sha256:65496910de08593e8a88a0f8fa7661ad8f8e6da381a94def1758d5ab547a6cda written
+09:34:43.559 A10-running exists afterwards: True
+09:34:43.840 jobs stop 10 -> exit 0 in 0.28 s
+09:34:43.842     asked explore search 10 to stop at its next checkpoint
+09:34:47.086 jobs wait 10 --timeout 120 -> exit 3 in 3.24 s
+09:34:47.087     explore search 10 is paused
+09:34:47.088       explore 10: 1,024 runs (83/s), 219 elites in 124 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+09:34:47.089       `jetcarp jobs resume 10` continues it from its archive (not run for run: the search is not deterministic)
+09:34:47.197 A10-pack.zip 1.21 MB, sha256 a0385f4476d14750e4966d0c6ae680b435b52090b7ea1e67c6eee5d9a1ee4f72
+09:34:47.780 pack check (unzipped) -> exit 0 in 0.54 s
+09:34:47.797     checked sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 (feed rc-acer, SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 RC tester (Acer), signed by its publisher)
+09:34:47.798       12 objects checked (1300747 bytes)
+09:34:47.799     sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147: feed rc-acer, by SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 (RC tester (Acer)), checking every object
+09:34:47.800     reading verifications, sightings, provenance and annotations
+09:34:47.801     checking ids and patterns (a check stores nothing)
+09:34:47.802     checking sightings, ants, Quick Start entries, media and ratings
+09:34:47.803 done

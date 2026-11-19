@@ -1,0 +1,1 @@
+search hunt --rules '' --rules-file /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.8-rules.txt --soups 20 

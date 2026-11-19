@@ -1,0 +1,41 @@
+﻿2026-11-16 12:45:20 src at af07766 host status gives the speed a screen reaches when it falls short of its scene's (#116)
+2026-11-16 12:51:16 === rc.4 pre-check, long part, starts; src af07766 host status gives the speed a screen reaches when it falls short of its scene's (#116); build ~\jetcarp-rc-042c\src\target\release\jetcarp.exe
+2026-11-16 12:51:16 version: jetcarp 0.4.2-rc.3
+2026-11-16 12:51:16 jetcarp processes at start: 
+2026-11-16 12:51:16 power: battery 100%, status 2 (2 = mains)
+2026-11-16 12:51:16 parity copied from the repository: 371 scenes, long 40 scenes
+2026-11-16 12:51:16 === 2.371-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 300 gens)
+2026-11-16 12:59:05 2.371-rtx-vulkan adapters used: 335x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-16 12:59:05 RESULT 2.371-rtx-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 7.8 min
+2026-11-16 12:59:05 === 2.371-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 300 gens)
+2026-11-16 13:16:49 2.371-rtx-dx12 adapters used: 335x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12)
+2026-11-16 13:16:49 RESULT 2.371-rtx-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 17.7 min
+2026-11-16 13:16:49 === 2.371-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 300 gens)
+2026-11-16 13:23:49 2.371-uhd-vulkan adapters used: 335x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-16 13:23:49 RESULT 2.371-uhd-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 7.0 min
+2026-11-16 13:23:49 === 2.371-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 300 gens)
+2026-11-16 13:42:40 2.371-uhd-dx12 adapters used: 335x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-16 13:42:40 RESULT 2.371-uhd-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 18.9 min
+2026-11-16 13:42:40 === 2.40-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 5000 gens)
+2026-11-16 13:44:56 2.40-rtx-vulkan adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-16 13:44:56 RESULT 2.40-rtx-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.3 min
+2026-11-16 13:44:56 === 2.40-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 5000 gens)
+2026-11-16 13:48:15 2.40-rtx-dx12 adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12)
+2026-11-16 13:48:15 RESULT 2.40-rtx-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.3 min
+2026-11-16 13:48:15 === 2.40-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 5000 gens)
+2026-11-16 13:50:36 2.40-uhd-vulkan adapters used: 40x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-16 13:50:36 RESULT 2.40-uhd-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.4 min
+2026-11-16 13:50:36 === 2.40-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 5000 gens)
+2026-11-16 13:54:21 2.40-uhd-dx12 adapters used: 40x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-16 13:54:21 RESULT 2.40-uhd-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.7 min
+2026-11-16 13:54:21 === 1. the suite
+2026-11-16 16:54:21 TIMEOUT after 10800 s: cargo test --release --workspace --no-fail-fast; killing its tree
+2026-11-16 16:54:21 1 RTX ignored: a_tuned_size_is_applied_and_recorded, host_tune_sweeps_off_screen_with_no_host, the_host_sweeps_its_own_screen_and_shows_the_recommended_size
+2026-11-16 16:54:21 RESULT 1-suite-rtx : FAIL: 25 passed, 0 failed, 0 ignored in 2 test binaries; exit TIMEOUT, 180 min; failed: host_stop_returns_once_the_host_has_gone
+2026-11-16 18:31:20 (by hand, from the session) the UHD suite hung since 16:55:05 in host.rs's nothing_starts_on_screen_before_the_warning_is_accepted on a modal message box (JETCARP, #32770, OK) from jetcarp.exe host serve --saver --seconds 1 (pid 29544): OK clicked by BM_CLICK
+2026-11-16 18:31:31 (by hand) BM_CLICK did not close it; WM_COMMAND IDOK posted to the dialog
+2026-11-16 18:45:48 cargo test --release --workspace --no-fail-fast -> exit 0 in 111.4 min
+2026-11-16 18:45:48 1 UHD ignored: a_tuned_size_is_applied_and_recorded, host_tune_sweeps_off_screen_with_no_host, the_host_sweeps_its_own_screen_and_shows_the_recommended_size, app::reseed_ui::tests::preset_survey, app::shots::a_rule_being_typed_applies_before_save, app::shots::ai_control_window_on_the_quick_start, app::shots::jump_field_takes_typing, app::shots::shots_desktop_pane_cards, app::shots::shots_desktop_show_just_this_scene, app::shots::shots_new_tiling, app::shots::shots_photosensitivity_warning, app::shots::shots_quick_start_atlas, app::shots::shots_tour, app::shots::shots_wallpaper, keepawake::tests::take_and_release, offscreen::tests::offscreen_ants_stop_resume, offscreen::tests::offscreen_ants_window, offscreen::tests::offscreen_catalog_tools_window, offscreen::tests::offscreen_dashboard_explore, offscreen::tests::offscreen_dashboard_window, offscreen::tests::offscreen_hashlife_window, offscreen::tests::offscreen_sandpile_stop_resume, offscreen::tests::offscreen_sandpile_window, offscreen::tests::offscreen_start_screen, offscreen::tests::offscreen_start_screen_starter_pack, setup_ui::tests::offscreen_setup_wizard, size_classes_exact_vs_float_level6, spectre_exact_equals_float_level6, gun_hashes, hunt_one_soup, hunt_throughput, big_world_reseed_timing, spectre_window_equals_level_8_cell_for_cell, profiles::tests::profile_survey, world_larger_than_one_dispatch_dimension, write_golden_packs, explore::job::tests::cpu_cost_by_family, gpu_prefix_speed, hunt_profile
+2026-11-16 18:45:48 RESULT 1-suite-uhd : pass: 1043 passed, 0 failed, 39 ignored in 137 test binaries; exit 0, 111 min
+2026-11-16 18:45:48 jetcarp processes at the end: 
+2026-11-16 18:45:48 === long part ends

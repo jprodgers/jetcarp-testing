@@ -1,0 +1,1004 @@
+#### Session A: jetcarp mcp (no --allow)
+== [A abs-outside] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scene.json)
+== [A abs-outside] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/pic.png)
+== [A abs-outside] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.keep)
+== [A abs-outside] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png); use out_dir("label") for a new output folder
+   
+== [A abs-outside] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt); use out_dir("label") for a new output folder
+   
+== [A abs-outside] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds":
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/2026-11-15_12-55-18_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc2-f9-outside-scriptdir
+   log:
+   wrote
+   
+== [A abs-outside] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/runs.csv)
+== [A abs-outside] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/sheet.png)
+== [A abs-outside] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/run.json)
+== [A abs-outside] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/try.png)
+== [A abs-outside] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A abs-outside] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/.keep)
+== [A abs-outside] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/.keep)
+== [A abs-outside] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/.keep)
+== [A abs-outside] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site/.keep)
+== [A abs-outside] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/.keep)
+== [A abs-outside] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [A dotdot] world_status {"save_path": "../outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scene.json)
+== [A dotdot] world_render {"max_side": 64, "save_path": "../outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/pic.png)
+== [A dotdot] world_render {"wallpaper": {"size": "320x200", "out": "../outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.keep)
+== [A dotdot] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"../outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png); use out_dir("label") for a new output folder
+   
+== [A dotdot] run_script {"script": "write_text(\"../outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt); use out_dir("label") for a new output folder
+   
+== [A dotdot] run_script {"script": "out_dir(\"../outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/2026-11-15_12-55-18_outside-scriptdir
+   log:
+   wrote
+   
+== [A dotdot] search_runs {"job": 3, "csv": "../outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/runs.csv)
+== [A dotdot] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "../outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/sheet.png)
+== [A dotdot] search_runs {"job": 3, "scene": {"run": 1, "save": "../outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/run.json)
+== [A dotdot] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "../outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/try.png)
+== [A dotdot] search_runs {"refit": {"jobs": [3], "out": "../outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A dotdot] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "../outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/.keep)
+== [A dotdot] pack {"publish": {"feed": "f9-folders", "to": "../outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/.keep)
+== [A dotdot] pack {"export": {"to": "../outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/.keep)
+== [A dotdot] pack {"site": {"to": "../outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site/.keep)
+== [A dotdot] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "../outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/.keep)
+== [A dotdot] files_list {"path": "../outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [A symlink] world_status {"save_path": "link-outside/scene.json"}
+   isError=False
+   Saved the scene (654 bytes, generation 0, hash 834a296f41a38d58) to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/scene.json.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf881246efa1379",
+     "done": "no: something can still change",
+     "fields
+== [A symlink] world_render {"max_side": 64, "save_path": "link-outside/pic.png"}
+   isError=False
+   64 x 64 px picture of generation 0 (Square (parallelogram), 1024 cells; hash 834a296f41a38d58). Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/pic.png.
+   [content types: ['text', 'image']]
+== [A symlink] world_render {"wallpaper": {"size": "320x200", "out": "link-outside/wall.png"}}
+   isError=False
+   {
+     "files": [
+       {
+         "height": 200,
+         "path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/wall.png",
+         "width": 320
+       }
+     ],
+     "fit": {
+       "kind": "cover"
+     },
+     "generation": 0,
+     "hash": "834a296f41a38d58"
+   }
+== [A symlink] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"link-outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   wrote
+   
+== [A symlink] run_script {"script": "write_text(\"link-outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   wrote
+   
+== [A symlink] run_script {"script": "out_dir(\"link-outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/2026-11-15_12-55-18_link-outside-scriptdir
+   log:
+   wrote
+   
+== [A symlink] search_runs {"job": 3, "csv": "link-outside/runs.csv", "limit": 5}
+   isError=False
+   {
+     "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/runs.csv",
+     "job": 3,
+     "measures": [],
+     "runs": 5
+   }
+== [A symlink] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "link-outside/sheet.png", "px": 64}}
+   isError=False
+   2 runs of explore job 3 (296 x 102 px); saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/sheet.png
+   [content types: ['text', 'image']]
+== [A symlink] search_runs {"job": 3, "scene": {"run": 1, "save": "link-outside/run.json"}}
+   isError=False
+   Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/run.json.
+   {
+     "cas": [
+       {
+         "enabled": true,
+         "neighborhood": "edge",
+         "rule": "B12/S1",
+         "seed": {
+           "pattern": {
+             "fill": {
+               "density": 0.29
+             },
+             "shape": {
+               "kind": "all"
+             }
+           }
+         },
+         "steps_per_gen": 1
+       }
+     ],
+     "format": 1,
+     "jetcarp_version": "0.4.2-rc.2",
+     "name": "explore 3 run 1: B12/S1",
+     "rng_state": "
+== [A symlink] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "link-outside/try.png"}}
+   isError=False
+   {
+     "activity": 0.08520418405532837,
+     "category": "Living textures",
+     "density": 0.11532764136791229,
+     "entropy": 0.5047380328178406,
+     "family": "life_like",
+     "fate": "running",
+     "mover_speed": 0.0,
+     "movers": 0,
+     "period": 0,
+     "score": 0.566,
+     "settle": 50,
+     "smooth": 0.24667783081531525
+   }
+   [content types: ['text', 'image']]
+== [A symlink] search_runs {"refit": {"jobs": [3], "out": "link-outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A symlink] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "link-outside/media"}
+   isError=False
+   {
+     "done": [],
+     "failed": [],
+     "files": {
+       "anim": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/media/anim.webp",
+       "frames": [
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/media/frames/0000.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/media/frames/0001.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/media/frames/0002.png",
+         "/home/jimmie/Documents/jetca
+== [A symlink] pack {"publish": {"feed": "f9-folders", "to": "link-outside/store", "no_media": true, "no_searches": true}}
+   isError=False
+   published f9-folders version 1 into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/store
+     manifest sha256:4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd
+     publisher SHA256:LmWEb6wEYRlKeGI6Mt2KDl8EJ/Q6DGuN6B+vaQvAa1s
+     annotations      26 rows added, 1 part
+     patterns        129 rows added, 3 parts
+     provenance      129 rows added, 1 part
+     rules             2 rows added, 1 part
+     sightings       252 rows added, 1 part
+     tilings            1 row added, 1 
+== [A symlink] pack {"export": {"to": "link-outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=False
+   exported sha256:4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/export: 24 files, 95066 bytes
+   the version was published first into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/.export.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/l
+== [A symlink] pack {"site": {"to": "link-outside/site", "render": false}}
+   isError=False
+   {
+     "ants": 0,
+     "deleted": [],
+     "dir": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/site",
+     "media_failed": [],
+     "patterns": 0,
+     "quickstart": 0,
+     "rendered": 0,
+     "unchanged": 0,
+     "written": [
+       "manifest.json",
+       "index.html"
+     ]
+   }
+== [A symlink] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "link-outside/piles"}, "wait_s": 30}
+   isError=False
+   Sandpile job 7 started (background).
+   pile 7: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+     image: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/piles/2026-11-15_12-55-19_square-1000/pile.png
+     preview: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/piles/2026-11-15_12-55-19_square-1000/preview.png
+     folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/link-outside/piles/2026-11-15_12-55-19_square-1000
+     Sand
+== [A symlink] files_list {"path": "link-outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [A tmp] world_status {"save_path": "/tmp/f9-jetcarp-outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/scene.json)
+== [A tmp] world_render {"max_side": 64, "save_path": "/tmp/f9-jetcarp-outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/pic.png)
+== [A tmp] world_render {"wallpaper": {"size": "320x200", "out": "/tmp/f9-jetcarp-outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/.keep)
+== [A tmp] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/tmp/f9-jetcarp-outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /tmp/f9-jetcarp-outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /tmp/f9-jetcarp-outside/script.png); use out_dir("label") for a new output folder
+   
+== [A tmp] run_script {"script": "write_text(\"/tmp/f9-jetcarp-outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /tmp/f9-jetcarp-outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /tmp/f9-jetcarp-outside/text.txt); use out_dir("label") for a new output folder
+   
+== [A tmp] run_script {"script": "out_dir(\"/tmp/f9-jetcarp-outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/2026-11-15_12-55-19_tmp-f9-jetcarp-outside-scriptdir
+   log:
+   wrote
+   
+== [A tmp] search_runs {"job": 3, "csv": "/tmp/f9-jetcarp-outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/runs.csv)
+== [A tmp] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/tmp/f9-jetcarp-outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/sheet.png)
+== [A tmp] search_runs {"job": 3, "scene": {"run": 1, "save": "/tmp/f9-jetcarp-outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/run.json)
+== [A tmp] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/tmp/f9-jetcarp-outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/try.png)
+== [A tmp] search_runs {"refit": {"jobs": [3], "out": "/tmp/f9-jetcarp-outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A tmp] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/tmp/f9-jetcarp-outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/media/.keep)
+== [A tmp] pack {"publish": {"feed": "f9-folders", "to": "/tmp/f9-jetcarp-outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/store/.keep)
+== [A tmp] pack {"export": {"to": "/tmp/f9-jetcarp-outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/export/.keep)
+== [A tmp] pack {"site": {"to": "/tmp/f9-jetcarp-outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/site/.keep)
+== [A tmp] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/tmp/f9-jetcarp-outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /tmp/f9-jetcarp-outside/piles/.keep)
+== [A tmp] files_list {"path": "/tmp/f9-jetcarp-outside"}
+   isError=True
+   /tmp/f9-jetcarp-outside does not exist
+== [A allowed-without-flag] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/scene.json)
+== [A allowed-without-flag] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/pic.png)
+== [A allowed-without-flag] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.keep)
+== [A allowed-without-flag] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/script.png); use out_dir("label") for a new output folder
+   
+== [A allowed-without-flag] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/text.txt); use out_dir("label") for a new output folder
+   
+== [A allowed-without-flag] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds":
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/2026-11-15_12-55-19_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc2-f9-allowed-scriptdir
+   log:
+   wrote
+   
+== [A allowed-without-flag] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/runs.csv)
+== [A allowed-without-flag] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/sheet.png)
+== [A allowed-without-flag] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/run.json)
+== [A allowed-without-flag] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/try.png)
+== [A allowed-without-flag] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A allowed-without-flag] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/.keep)
+== [A allowed-without-flag] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store", "no_media": true, "no_searches": true}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store/.keep)
+== [A allowed-without-flag] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/.keep)
+== [A allowed-without-flag] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/site/.keep)
+== [A allowed-without-flag] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles/.keep)
+== [A allowed-without-flag] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [A read] world_new {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json"}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json
+== [A read] run_script {"script": "let w = load_scene(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json\"); print(`read ${w.population()}`);", "max_seconds": 10}
+   isError=True
+   error at line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json
+   log:
+   error: line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json
+   
+== [A read] run_script {"script": "let t = read_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/rules.txt\"); print(t);", "max_seconds": 10}
+   isError=True
+   error at line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/rules.txt
+   log:
+   error: line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/rules.txt
+   
+== [A read] files_list {"file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [A read] pack {"info": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/../packs/good
+== [A read] pack {"check": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/../packs/good
+== [A read] library_curate {"quickstart": {"scene": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json", "title": "outside"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json
+== [A read] search_start {"search": {"rules_file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/rules.txt", "soups": 2}, "wait_s": 20}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/rules.txt
+== [A sys] files_list {"file": "/etc/passwd"}
+   isError=True
+   /etc/passwd is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [A sys] files_list {"path": "/etc"}
+   isError=True
+   /etc is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [A sys] world_new {"path": "/etc/hostname"}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /etc/hostname
+== [A inside] world_status {"save_path": "f9-inside/scene.json"}
+   isError=False
+   Saved the scene (654 bytes, generation 0, hash 834a296f41a38d58) to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/f9-inside/scene.json.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf881246efa1379",
+     "done": "no: something can still change",
+     "fields": 
+#### Session B: jetcarp mcp --allow /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed
+== [B allowed] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/scene.json"}
+   isError=False
+   Saved the scene (654 bytes, generation 0, hash 834a296f41a38d58) to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/scene.json.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf881246efa1379",
+     "done": "no: something can still change",
+     "fields": [
+       
+== [B allowed] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/pic.png"}
+   isError=False
+   64 x 64 px picture of generation 0 (Square (parallelogram), 1024 cells; hash 834a296f41a38d58). Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/pic.png.
+   [content types: ['text', 'image']]
+== [B allowed] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/wall.png"}}
+   isError=False
+   {
+     "files": [
+       {
+         "height": 200,
+         "path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/wall.png",
+         "width": 320
+       }
+     ],
+     "fit": {
+       "kind": "cover"
+     },
+     "generation": 0,
+     "hash": "834a296f41a38d58"
+   }
+== [B allowed] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   wrote
+   
+== [B allowed] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   wrote
+   
+== [B allowed] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds":
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/2026-11-15_12-55-20_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc2-f9-allowed-scriptdir
+   log:
+   wrote
+   
+== [B allowed] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/runs.csv", "limit": 5}
+   isError=False
+   {
+     "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/runs.csv",
+     "job": 3,
+     "measures": [],
+     "runs": 5
+   }
+== [B allowed] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/sheet.png", "px": 64}}
+   isError=False
+   2 runs of explore job 3 (296 x 102 px); saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/sheet.png
+   [content types: ['text', 'image']]
+== [B allowed] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/run.json"}}
+   isError=False
+   Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/run.json.
+   {
+     "cas": [
+       {
+         "enabled": true,
+         "neighborhood": "edge",
+         "rule": "B12/S1",
+         "seed": {
+           "pattern": {
+             "fill": {
+               "density": 0.29
+             },
+             "shape": {
+               "kind": "all"
+             }
+           }
+         },
+         "steps_per_gen": 1
+       }
+     ],
+     "format": 1,
+     "jetcarp_version": "0.4.2-rc.2",
+     "name": "explore 3 run 1: B12/S1",
+     "rng_state": "531555727
+== [B allowed] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/try.png"}}
+   isError=False
+   {
+     "activity": 0.08520418405532837,
+     "category": "Living textures",
+     "density": 0.11532764136791229,
+     "entropy": 0.5047380328178406,
+     "family": "life_like",
+     "fate": "running",
+     "mover_speed": 0.0,
+     "movers": 0,
+     "period": 0,
+     "score": 0.566,
+     "settle": 50,
+     "smooth": 0.24667783081531525
+   }
+   [content types: ['text', 'image']]
+== [B allowed] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [B allowed] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media"}
+   isError=False
+   {
+     "done": [],
+     "failed": [],
+     "files": {
+       "anim": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/anim.webp",
+       "frames": [
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/frames/0000.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/frames/0001.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/frames/0002.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/med
+== [B allowed] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store", "no_media": true, "no_searches": true}}
+   isError=False
+   published f9-folders version 1 into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store
+     manifest sha256:c8e392c1d2ec89d542f06b6c30b8f119f09f2943c0b8c4a128ca640089a8407b
+     publisher SHA256:LmWEb6wEYRlKeGI6Mt2KDl8EJ/Q6DGuN6B+vaQvAa1s
+     annotations      26 rows added, 1 part
+     patterns        129 rows added, 3 parts
+     provenance      129 rows added, 1 part
+     rules             2 rows added, 1 part
+     sightings       252 rows added, 1 part
+     tilings            1 row added, 1 part
+     ve
+== [B allowed] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=False
+   exported sha256:c8e392c1d2ec89d542f06b6c30b8f119f09f2943c0b8c4a128ca640089a8407b into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export: 24 files, 95066 bytes
+   the version was published first into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store` 
+== [B allowed] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/site", "render": false}}
+   isError=False
+   {
+     "ants": 0,
+     "deleted": [],
+     "dir": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/site",
+     "media_failed": [],
+     "patterns": 0,
+     "quickstart": 0,
+     "rendered": 0,
+     "unchanged": 0,
+     "written": [
+       "manifest.json",
+       "index.html"
+     ]
+   }
+== [B allowed] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles"}, "wait_s": 30}
+   isError=False
+   Sandpile job 8 started (background).
+   pile 8: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+     image: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles/2026-11-15_12-55-20_square-1000/pile.png
+     preview: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles/2026-11-15_12-55-20_square-1000/preview.png
+     folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles/2026-11-15_12-55-20_square-1000
+     Sandpile 8: done, 1,000 grains 
+== [B allowed] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [B still-outside] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scene.json)
+== [B still-outside] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/pic.png)
+== [B still-outside] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.keep)
+== [B still-outside] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/ji
+== [B still-outside] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/D
+== [B still-outside] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds":
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out/2026-11-15_12-55-20_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc2-f9-outside-scriptdir
+   log:
+   wrote
+   
+== [B still-outside] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/runs.csv)
+== [B still-outside] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/sheet.png)
+== [B still-outside] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/run.json)
+== [B still-outside] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/try.png)
+== [B still-outside] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [B still-outside] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/.keep)
+== [B still-outside] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/.keep)
+== [B still-outside] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/.keep)
+== [B still-outside] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site/.keep)
+== [B still-outside] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/.keep)
+== [B still-outside] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [B allowed read] world_new {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/good.json"}
+   isError=False
+   Scene loaded.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 4096,
+     "cells_hash": "9de7c0b18977de1f",
+     "done": "no: something can still change",
+     "fields": [
+       {
+         "ca_ids": [
+           1
+         ],
+         "field": 0,
+         "kind": "binary",
+         "max_state": 1,
+         "population": 1250
+== [B allowed read] run_script {"script": "let w = load_scene(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/good.json\"); print(`read ${w.population()}`);", "max_seconds": 10}
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   read 1250
+   
+== [B allowed read] run_script {"script": "let t = read_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/rules.txt\"); print(t);", "max_seconds": 10}
+   isError=True
+   error at line 1, column 9: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/rules.txt: No such file or directory (os error 2)
+   log:
+   error: line 1, column 9: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/rules.txt: No such file or directory (os error 2)
+   
+== [B allowed read] files_list {"file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/good.json"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/good.json is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library); files_list only reads those
+== [B allowed read] pack {"info": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/../packs/good
+== [B allowed read] pack {"check": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/../packs/good
+== [B allowed read] library_curate {"quickstart": {"scene": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/good.json", "title": "outside"}}
+   isError=False
+   promoted: outside
+   entry:    find:scene-f8e2ff6c825d0b00 in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/library/library.sqlite
+   It appears in the app's Quick Start under "My finds".
+   Open it with world_new {"quickstart": "find:scene-f8e2ff6c825d0b00"}.
+== [B allowed read] search_start {"search": {"rules_file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/rules.txt", "soups": 2}, "wait_s": 20}
+   isError=True
+   reading /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/rules.txt: No such file or directory (os error 2)
+#### files written outside (find /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside /tmp/f9-jetcarp-outside -newer t42_folders.py):
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/rules.txt
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/good.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/scene.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/pic.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/wall.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/script.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/text.txt
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/runs.csv
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/sheet.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/run.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/try.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/frames
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/frames/0000.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/frames/0001.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/frames/0002.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/frames/0003.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/frames/0004.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/frames/0005.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/anim.webp
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/poster.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/media/thumb.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/jetcarp-store.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/77
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/77/7754dbed45c2592f649c0e55bc46ae0aa57533382958affeb85aad12fd5fcd4f.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/7a
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/7a/7a739596477a681ae4ed4f6058fe8a6c42736644b0bf408fc762859c1bd441a1.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/c0
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/c0/c0d7c5fb99af0dd0a0c5f976dd85d1681ac78423350d43bad00c22fe44dfe82c.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/0e
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/0e/0ed1f884b6c0a87f6e80ec095e2aa74dff4f597066102874d83f0ca28dd5733c.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/a5
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/a5/a5f6fc46e7bb1f8b217dc64db2690bf9d8b2258f8176588f7abb17904c2f53ea.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/15
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/15/15506fea0eb5383d01509ba386cdc365e9001290f99f44b73d9ba4197c7da3ff.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/16
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/16/16e715957be0e29aed027b18e8c35f9a86926661bbe09c58fb75b2925225162e.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/ac
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/ac/acd6eb2bc05c75a708e8b1383e3e998712f387332e5d1ebe418a8cccc5e88f24.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/d2
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/d2/d2c0aaddfb491d50aec9929a284c49e847d9defe70fa8862df9ee9cdf5f0408f.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/ad
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/ad/ad971d738e2ad54c5007649cb28abaa2958e8a3b4992246f040b7a97a0c73cd2.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/49
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/49/4903eb0672680ca61cb353399a483571cbb58d5c71ad6d5040e9d06e41188b09.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/12
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/12/12d94131f677e360bc08828d27dcaab000cfcc43d5973b7fd422436f827437fb.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/3c
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/3c/3cfeac5a96c7ac6d8acfb39830528e83918ba570becede29ed1bfdcff79e2264.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/ef
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/ef/eff482003042aaeddf15af11a973a9492c0db948f8ee886abadfea3a0289f302.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/6d
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/6d/6dabd46805a45cca8d43c1718858015d6bc4e3649c40ae7f30ec96af9746d206.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/18
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/18/18b9e2d14686c3ae2f7b9898e3a5fbd590f23a9a811f74cb40b119e63dbf71de.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/4c
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/objects/sha256/4c/4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/keys
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/keys/2e65846fac0461194a78623a32dd8a0e5f0427f43a0c6b8de81faf690bc06b5b.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/sigs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/sigs/sha256
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/sigs/sha256/4c
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/sigs/sha256/4c/4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/sigs/sha256/4c/4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd/2e65846fac0461194a78623a32dd8a0e5f0427f43a0c6b8de81faf690bc06b5b.sig
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/refs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/store/refs/f9-folders.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/pack.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index/18b9e2d14686c3ae2f7b9898e3a5fbd590f23a9a811f74cb40b119e63dbf71de.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index/acd6eb2bc05c75a708e8b1383e3e998712f387332e5d1ebe418a8cccc5e88f24.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index/eff482003042aaeddf15af11a973a9492c0db948f8ee886abadfea3a0289f302.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index/16e715957be0e29aed027b18e8c35f9a86926661bbe09c58fb75b2925225162e.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index/12d94131f677e360bc08828d27dcaab000cfcc43d5973b7fd422436f827437fb.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index/a5f6fc46e7bb1f8b217dc64db2690bf9d8b2258f8176588f7abb17904c2f53ea.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/index/ad971d738e2ad54c5007649cb28abaa2958e8a3b4992246f040b7a97a0c73cd2.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/annotations
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/annotations/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=oscillator
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=oscillator/tiling_group=square
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=oscillator/tiling_group=square/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=spaceship
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=spaceship/tiling_group=square
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=spaceship/tiling_group=square/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=still_life
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=still_life/tiling_group=square
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/patterns/class_group=still_life/tiling_group=square/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/provenance
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/provenance/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/rules
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/rules/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/sightings
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/sightings/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/tilings
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/tilings/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/verifications
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/tables/verifications/part-000001.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/sigs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/sigs/2e65846fac0461194a78623a32dd8a0e5f0427f43a0c6b8de81faf690bc06b5b.sig
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/keys
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/keys/2e65846fac0461194a78623a32dd8a0e5f0427f43a0c6b8de81faf690bc06b5b.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/views.sql
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/README.md
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/CITATION.cff
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/export/LICENSE
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/jetcarp-store.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/77
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/77/7754dbed45c2592f649c0e55bc46ae0aa57533382958affeb85aad12fd5fcd4f.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/7a
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/7a/7a739596477a681ae4ed4f6058fe8a6c42736644b0bf408fc762859c1bd441a1.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/c0
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/c0/c0d7c5fb99af0dd0a0c5f976dd85d1681ac78423350d43bad00c22fe44dfe82c.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/0e
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/0e/0ed1f884b6c0a87f6e80ec095e2aa74dff4f597066102874d83f0ca28dd5733c.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/a5
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/a5/a5f6fc46e7bb1f8b217dc64db2690bf9d8b2258f8176588f7abb17904c2f53ea.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/15
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/15/15506fea0eb5383d01509ba386cdc365e9001290f99f44b73d9ba4197c7da3ff.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/16
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/16/16e715957be0e29aed027b18e8c35f9a86926661bbe09c58fb75b2925225162e.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/ac
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/ac/acd6eb2bc05c75a708e8b1383e3e998712f387332e5d1ebe418a8cccc5e88f24.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/d2
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/d2/d2c0aaddfb491d50aec9929a284c49e847d9defe70fa8862df9ee9cdf5f0408f.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/ad
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/ad/ad971d738e2ad54c5007649cb28abaa2958e8a3b4992246f040b7a97a0c73cd2.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/49
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/49/4903eb0672680ca61cb353399a483571cbb58d5c71ad6d5040e9d06e41188b09.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/12
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/12/12d94131f677e360bc08828d27dcaab000cfcc43d5973b7fd422436f827437fb.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/3c
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/3c/3cfeac5a96c7ac6d8acfb39830528e83918ba570becede29ed1bfdcff79e2264.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/ef
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/ef/eff482003042aaeddf15af11a973a9492c0db948f8ee886abadfea3a0289f302.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/6d
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/6d/6dabd46805a45cca8d43c1718858015d6bc4e3649c40ae7f30ec96af9746d206.parquet
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/18
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/18/18b9e2d14686c3ae2f7b9898e3a5fbd590f23a9a811f74cb40b119e63dbf71de.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/4c
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/objects/sha256/4c/4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/keys
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/keys/2e65846fac0461194a78623a32dd8a0e5f0427f43a0c6b8de81faf690bc06b5b.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/sigs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/sigs/sha256
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/sigs/sha256/4c
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/sigs/sha256/4c/4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/sigs/sha256/4c/4ce6990d83317bab35f2f4fbd6763c099de028b1d3ca50637e6c32a9f2ee93bd/2e65846fac0461194a78623a32dd8a0e5f0427f43a0c6b8de81faf690bc06b5b.sig
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/refs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/.export.store/refs/f9-folders.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site/manifest.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/site/index.html
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-01.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-02.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-03.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-04.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-05.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-06.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-07.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-08.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-09.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/steps/step-10.pile
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/look.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/growth.csv
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/pile.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/preview.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/outside/piles/2026-11-15_12-55-19_square-1000/pile.json
+find: ‘/tmp/f9-jetcarp-outside’: No such file or directory
+
+#### the allowed folder:
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/scene.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/pic.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/wall.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/script.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/text.txt
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/runs.csv
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/sheet.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/run.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/try.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/frames
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/anim.webp
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/poster.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/media/thumb.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store/jetcarp-store.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store/objects
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store/keys
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store/sigs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/store/refs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/pack.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/index
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/tables
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/sigs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/keys
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/views.sql
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/README.md
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/CITATION.cff
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/export/LICENSE
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store/jetcarp-store.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store/objects
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store/keys
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store/sigs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/.export.store/refs
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/site
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/site/manifest.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/site/index.html
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/piles/2026-11-15_12-55-20_square-1000
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f9/allowed/good.json
+

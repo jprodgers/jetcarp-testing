@@ -1,0 +1,102 @@
+PASS: a 3-minute JACA-only explore (CPU, 8 threads: 503 runs, 8 tilings), then `jobs clips 1 --sample 48`: 34 clips, Static 26 (25 cycle, 1 froze), Battles 8 (all running); no Battle whose run settled. Control, rc.3's build on a copy of the same job: 8 clips, all Battles, 2 of them settled (cycle).
+Note: 34 clips rather than 48, and Static well over its cap of 3 (a sixteenth of 48): a 3-minute search on 8 tilings has only 8 running runs with rules of their own, so the round's top-up falls back to Static, as taste_sample's top-up does by design.
+
+R4-5 #86 JACA clips, Framework, 2026-11-16 10:09:00 PM EST
+fresh home $H = homes/jaca
+
+$ $J search explore --families jaca --minutes 3 --cpu --threads 8 --label jaca86 --quiet
+explore search job 1 in $H/library/library.sqlite
+explore 1: 503 runs (2/s), 244 elites in 135 niches (12 of them confirmed), 8 of 1,359 tilings; cpu only
+  status paused, 3 min 0 s run over every session, 36 confirmation runs, 572 candidates tried, 0.12 GB of memory
+  threads: 8 for runs on the processor, of 32 cores (24 left free)
+  this session: 5 runs on the processor stopped at their time cap (kept with the generations they reached), 8 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                        503   0.57   1.59     244
+  folder: $H/library/searches/95e3b01b-5eb1-4d48-b67b-a135eb9b93b2
+explore search 1 paused (at its budget); `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)
+[exit 0, 180.44 s]
+
+$ $J jobs list
+    1  explore  paused   2026-11-17T03:09:00Z  explore 1: 503 runs (2/s), 244 elites in 135 niches (12 of them confirmed), 8 of 1,359 tilings; cpu only
+1 job(s); 0 running
+[exit 0, 0.03 s]
+
+job: 1
+$ $J jobs status 1 | head -20
+explore 1: 503 runs (2/s), 244 elites in 135 niches (12 of them confirmed), 8 of 1,359 tilings; cpu only
+  status paused, 3 min 0 s run over every session, 36 confirmation runs, 572 candidates tried, 0.12 GB of memory
+  threads: 8 for runs on the processor, of 32 cores (24 left free)
+  this session: 5 runs on the processor stopped at their time cap (kept with the generations they reached), 8 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                        503   0.57   1.59     244
+  folder: $H/library/searches/95e3b01b-5eb1-4d48-b67b-a135eb9b93b2
+  `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)
+[exit 0, 0.03 s]
+
+$ $J jobs clips 1 --sample 48 --out $H/out/clips86
+34 clips in $H/out/clips86
+categories: Static 26, Battles 8
+[exit 0, 2.80 s]
+
+$ ls $H/out/clips86 | head; ls $H/out/clips86 | wc -l
+107.gif
+127.gif
+166.gif
+248.gif
+25.gif
+28.gif
+294.gif
+314.gif
+320.gif
+326.gif
+35
+[exit 0, 0.00 s]
+
+#### The manifest's categories, against each run's fate
+$ python3 - $H/out/clips86/manifest.json <<'PY'
+import json, sys, collections
+m = json.load(open(sys.argv[1]))
+clips = m if isinstance(m, list) else (m.get('clips') or m.get('runs') or m.get('items') or [])
+print('manifest keys:', list(m)[:20] if isinstance(m, dict) else 'list')
+print('clips:', len(clips))
+if clips: print('first clip:', json.dumps(clips[0])[:700])
+def g(c, *ks):
+    for k in ks:
+        if k in c: return c[k]
+    return None
+cat = collections.Counter(g(c, 'category', 'cat', 'bucket') for c in clips)
+print('categories:', dict(cat))
+x = collections.Counter((g(c, 'category', 'cat', 'bucket'), g(c, 'fate')) for c in clips)
+print('category x fate:')
+for (k, f), n in sorted(x.items(), key=lambda t: str(t)): print(f'   {k!s:16} {f!s:10} {n}')
+fam = collections.Counter(g(c, 'family', 'fam') for c in clips)
+print('families:', dict(fam))
+bad = [c for c in clips if g(c, 'category', 'cat', 'bucket') == 'Battles' and g(c, 'fate') not in ('running', 'capped')]
+print('Battles whose run settled (should be none):', len(bad))
+PY
+manifest keys: list
+clips: 34
+first clip: {"id": 25, "file": "25.gif", "category": "Static", "family": "jaca", "bucket": "", "tiling": "catalog:k5-234", "rule": "JACA B3/S", "fate": "cycle", "score": 0.34, "seed": "5 blobs r0.05-0.18, 60% density, signed 50% neg"}
+categories: {'Static': 26, 'Battles': 8}
+category x fate:
+   Battles          running    8
+   Static           cycle      25
+   Static           froze      1
+families: {'jaca': 34}
+Battles whose run settled (should be none): 0
+[exit 0, 0.02 s]
+
+
+#### Control: rc.3's build ($J3), the same job copied (home $H = homes/jaca-rc3), the same command
+$ $J3 --version; $J3 jobs clips 1 --sample 48 --out $H/out/clips86-rc3
+jetcarp 0.4.2-rc.3
+8 clips in $H/out/clips86-rc3
+categories: Battles 8
+[exit 0, 1.60 s]
+
+$ python3 -c 'import json,sys,collections; m=json.load(open(sys.argv[1])); print(dict(collections.Counter((c["category"], c["fate"]) for c in m)))' $H/out/clips86-rc3/manifest.json
+{('Battles', 'cycle'): 2, ('Battles', 'running'): 6}
+[exit 0, 0.02 s]
+

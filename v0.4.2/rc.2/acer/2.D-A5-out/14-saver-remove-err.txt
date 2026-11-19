@@ -1,0 +1,1 @@
+Error: C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr is in use, most likely by the preview in Screen Saver Settings. Close that dialog, then run `jetcarp host saver remove` again. Nothing was changed.

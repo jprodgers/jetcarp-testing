@@ -1,0 +1,2 @@
+$ jetcarp   (H3 step 1, rc3's settings in place; started 07:37:52)
+exit 0 at 07:42:02

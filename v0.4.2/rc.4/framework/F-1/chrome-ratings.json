@@ -1,0 +1,70 @@
+{
+ "format": "jetcarp-ratings 1",
+ "job": 2,
+ "search": "6cf3ea8d-abd6-4991-a08a-91b9e04732b1",
+ "round": "clips",
+ "rater": "Test User",
+ "ratings": [
+  {
+   "run": 21,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794917197981
+  },
+  {
+   "run": 1073,
+   "verdict": "maybe",
+   "star": true,
+   "ts": 1794917252403
+  },
+  {
+   "run": 1959,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794917215247
+  },
+  {
+   "run": 2152,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794917202371
+  },
+  {
+   "run": 2420,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794917226834
+  },
+  {
+   "run": 5105,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794917220769
+  },
+  {
+   "run": 5287,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794917217908
+  },
+  {
+   "run": 7297,
+   "verdict": "keep",
+   "star": true,
+   "ts": 1794917248865
+  },
+  {
+   "run": 8877,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794917209794
+  },
+  {
+   "run": 23676,
+   "verdict": null,
+   "star": true,
+   "ts": 1794917233849
+  }
+ ],
+ "note": "This is a chrome test, everything saves when reloading."
+}

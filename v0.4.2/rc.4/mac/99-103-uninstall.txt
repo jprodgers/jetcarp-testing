@@ -1,0 +1,120 @@
+R4 #99 and #103, uninstall, the Mac, 2026-11-17 05:37:48 AM EST; jetcarp 0.4.2-rc.4; installed at /Users/Jimmie/.local/lib/jetcarp/jetcarp
+
+#### login on: the host running, as a tester has it
+$ jetcarp host login on
+"~/.local/bin/jetcarp" host serve --login starts at login
+registered with launchd, which started the host (pid 67214)
+[exit 0, 0.25 s]
+
+$ jetcarp host status | head -2; launchctl print gui/502/com.jimmieprodgers.jetcarp.host > /dev/null 2>&1; echo "launchctl print exit $?"
+running, pid 67214, up 3.0s, 333 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 83 · 280000 cells of 5 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+launchctl print exit 0
+[exit 0, 0.06 s]
+
+$ ls -A "~/Library/Application Support/jetcarp"; ls -A "~/Library/Application Support/jetcarp/data" 2>/dev/null | head; ls -A ~/.cache/jetcarp 2>/dev/null
+app.json
+data
+gpu-checks.json
+host-program
+host.json
+photosensitivity.json
+setup.json
+library.sqlite
+library.sqlite-jobs
+app-endpoint.json
+host-endpoint.json
+host.lock
+[exit 0, 0.02 s]
+
+#### jetcarp uninstall (the plan only)
+$ jetcarp uninstall
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Would undo (run again with --yes):
+  stop the background host
+  stop the host starting at login
+  remove the host's lock file ~/.cache/jetcarp/host.lock
+  remove the empty folder of job locks ~/Library/Application Support/jetcarp/data/library.sqlite-jobs
+  forget the recorded host command
+
+Kept the data folder ~/Library/Application Support/jetcarp/data (995.3 KB); add --data to delete it.
+Kept the settings folder ~/Library/Application Support/jetcarp; add --settings to delete it.
+Your pictures and exports in ~/Pictures/JETCARP are never deleted.
+
+Then, to remove the program itself (in ~/.local/lib/jetcarp, installed with JETCARP's installer), run this:
+
+    curl -LsSf https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.sh | sh -s -- --uninstall
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+[exit 0, 0.06 s]
+
+#### jetcarp uninstall --yes --settings --data
+$ jetcarp uninstall --yes --settings --data
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Undoing:
+  done: stop the background host
+  done: stop the host starting at login
+  done: remove the host's lock file ~/.cache/jetcarp/host.lock
+  done: remove the empty folder of job locks ~/Library/Application Support/jetcarp/data/library.sqlite-jobs
+  done: delete the data folder ~/Library/Application Support/jetcarp/data (995.3 KB)
+  done: delete the settings folder ~/Library/Application Support/jetcarp
+
+Your pictures and exports in ~/Pictures/JETCARP are never deleted.
+
+To remove the program itself (in ~/.local/lib/jetcarp, installed with JETCARP's installer), run this:
+
+    curl -LsSf https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.sh | sh -s -- --uninstall
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+[exit 0, 0.28 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host > /dev/null 2>&1; echo "launchctl print exit $? (at once)"; ls -l ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist 2>&1; pgrep -fl 'jetcarp host serve' || echo 'no host process running'
+launchctl print exit 113 (at once)
+ls: ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: No such file or directory
+no host process running
+[exit 0, 0.04 s]
+
+$ ls -A "~/Library/Application Support/jetcarp" 2>&1; ls -A ~/.cache/jetcarp 2>&1; ls -A ~/Pictures/JETCARP 2>&1 | head -5
+ls: ~/Library/Application Support/jetcarp: No such file or directory
+app-endpoint.json
+brians_brain_gen200.png
+hex_ship_gen0.png
+hex_ship_gen30.png
+[exit 0, 0.02 s]
+
+$ ls -l ~/.local/bin/jetcarp ~/.local/lib/jetcarp 2>&1 | head -4; which jetcarp; jetcarp --version
+lrwxr-xr-x@ 1 Jimmie  staff  40 Nov 16 22:03 ~/.local/bin/jetcarp -> ~/.local/lib/jetcarp/jetcarp
+
+~/.local/lib/jetcarp:
+total 149456
+~/.local/bin/jetcarp
+jetcarp 0.4.2-rc.4
+[exit 0, 0.03 s]
+
+#### rc.4's installer, --uninstall
+$ sh ~/jetcarp-rc4/dl/rc4/jetcarp-installer.sh --uninstall
+jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+jetcarp-installer: removed ~/.local/bin/jetcarp
+jetcarp-installer: removed ~/.local/lib/jetcarp
+jetcarp-installer: removed ~/.local/lib (empty, made by the install)
+jetcarp-installer: kept your settings, data and pictures, usually in ~/Library/Application Support/jetcarp (with the data in its data folder) and ~/Pictures/JETCARP; delete them by hand if you want them gone
+[exit 0, 0.06 s]
+
+$ ls -l ~/.local/bin/jetcarp ~/.local/lib/jetcarp 2>&1; which jetcarp || echo 'jetcarp: not on the PATH'
+ls: ~/.local/bin/jetcarp: No such file or directory
+ls: ~/.local/lib/jetcarp: No such file or directory
+jetcarp: not on the PATH
+[exit 0, 0.02 s]
+
+$ ls -A ~/.local/lib 2>&1 | head; ls -A ~/.local/bin 2>&1 | head
+ls: ~/.local/lib: No such file or directory
+claude
+[exit 0, 0.02 s]
+
+#### the installer's --uninstall again, with nothing installed
+$ sh ~/jetcarp-rc4/dl/rc4/jetcarp-installer.sh --uninstall
+jetcarp-installer: error: no JETCARP installed by this installer in ~/.local/lib/jetcarp
+[exit 1, 0.02 s]
+

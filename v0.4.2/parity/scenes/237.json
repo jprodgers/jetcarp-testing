@@ -1,0 +1,39 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA trenches on the hat",
+  "description": "Blast 1 on the hat tiling: glowing trenches between the two signs' territories. Found by a JACA rule search.",
+  "tiling": {
+    "family": "hat",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 22,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B1/S7 -B1/S blast 1",
+      "rule": "JACA +B1/S7 -B1/S blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Aurora",
+      "seed": {
+        "signed": {
+          "density": 0.1,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Lava"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "8788651d3708c116",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

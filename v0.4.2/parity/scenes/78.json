@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Rule 30",
+  "description": "Wolfram's chaotic rule, row by row.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 241,
+        "h": 160
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "8331759477414493373",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Rule 30",
+      "rule": "W30",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": "top_center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "7193f0c1d4933c1c",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

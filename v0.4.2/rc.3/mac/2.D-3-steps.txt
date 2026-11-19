@@ -1,0 +1,54 @@
+11:11:41 == 3a Life every generation (Until it settles), 40 s more
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 1638 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+11:12:21 == 3b host rotation 'A classic a day' (the turmite, 240 gens/s), max-fps 60
+running, pid 87495, up 530.0s, 146 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 10816 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+11:13:07 == 3b host max-fps refresh
+running, pid 87495, up 575.0s, 144 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 10824 · 170648 cells of 8 px · 120 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to the monitor's refresh rate)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 21644 · 170648 cells of 8 px · 120 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+11:13:52 == 3b host max-fps 60
+running, pid 87495, up 620.0s, 144 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 21654 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+11:13:57 == 3c host rotation 'Until it settles'; host pacing low-power
+running, pid 87495, up 625.0s, 144 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+running, pid 87495, up 625.0s, 144 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: low power, 30 fps (each scene at most 30 generations a second)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1352 · 303455 cells of 6 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+11:14:42 == 3c host pacing every-generation
+running, pid 87495, up 670.0s, 146 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1354 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 1657 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+11:14:47 == 3 done

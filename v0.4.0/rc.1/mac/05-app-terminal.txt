@@ -1,0 +1,4 @@
+$ jetcarp   (started 00:48:56)
+exit 0 at 01:15:17
+$ jetcarp   (second start, to close with the red button; started 01:15:28)
+exit 0 at 01:16:25

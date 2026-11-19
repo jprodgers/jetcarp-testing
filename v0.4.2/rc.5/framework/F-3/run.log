@@ -1,0 +1,97 @@
+2026-11-17 09:10:00 AM EST F-3 start; jetcarp 0.4.2-rc.5; every JETCARP folder under the test folder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gtk.vfs.Daemon' requested by ':1.0' (uid=1000 pid=3524074 comm="gsettings set org.gnome.shell enabled-extensions [" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gtk.vfs.Daemon'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='ca.desrt.dconf' requested by ':1.0' (uid=1000 pid=3524074 comm="gsettings set org.gnome.shell enabled-extensions [" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'ca.desrt.dconf'
+GNOME Shell was not found in this session.
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.a11y.Bus' requested by ':1.7' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activated service 'org.a11y.Bus' failed: Failed to execute program org.a11y.Bus: Permission denied
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.Shell.Screencast' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.Shell.CalendarServer' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.evolution.dataserver.Sources5' requested by ':1.10' (uid=1000 pid=3524186 comm="/usr/libexec/gnome-shell-calendar-server" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.Shell.Notifications' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.freedesktop.portal.IBus' requested by ':1.14' (uid=1000 pid=3524214 comm="ibus-daemon --panel disable" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.OnlineAccounts' requested by ':1.11' (uid=1000 pid=3524200 comm="/usr/libexec/evolution-source-registry" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.freedesktop.portal.IBus'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.Shell.Notifications'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.evolution.dataserver.Sources5'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.evolution.dataserver.Calendar8' requested by ':1.10' (uid=1000 pid=3524186 comm="/usr/libexec/gnome-shell-calendar-server" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+goa-daemon-Message: 09:10:01.699: goa-daemon version 3.58.1 starting
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.Shell.CalendarServer'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.Identity' requested by ':1.18' (uid=1000 pid=3524251 comm="/usr/libexec/goa-daemon" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.OnlineAccounts'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.Identity'
+
+(process:3524296): libgoaidentity-WARNING **: 09:10:01.707: GoaKerberosIdentityManager: Using polling for change notification for credential cache type 'KCM'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.evolution.dataserver.Calendar8'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.evolution.dataserver.AddressBook10' requested by ':1.19' (uid=1000 pid=3524283 comm="/usr/libexec/evolution-calendar-factory" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gtk.vfs.Metadata' requested by ':1.19' (uid=1000 pid=3524283 comm="/usr/libexec/evolution-calendar-factory" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gtk.vfs.Metadata'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook10'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gtk.vfs.UDisks2VolumeMonitor' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gtk.vfs.AfcVolumeMonitor' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gtk.vfs.GPhoto2VolumeMonitor' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gtk.vfs.MTPVolumeMonitor' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gtk.vfs.GoaVolumeMonitor' requested by ':1.6' (uid=1000 pid=3524131 comm="gnome-shell --headless --wayland --no-x11 --virtua" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.a11y.Bus' requested by ':1.31' (uid=1000 pid=3524241 comm="/usr/libexec/ibus-extension-gtk3" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activated service 'org.a11y.Bus' failed: Failed to execute program org.a11y.Bus: Permission denied
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.freedesktop.portal.Desktop' requested by ':1.17' (uid=1000 pid=3524241 comm="/usr/libexec/ibus-extension-gtk3" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.freedesktop.portal.Documents' requested by ':1.32' (uid=1000 pid=3525332 comm="/usr/libexec/xdg-desktop-portal" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.freedesktop.portal.Documents'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.gnome' requested by ':1.32' (uid=1000 pid=3525332 comm="/usr/libexec/xdg-desktop-portal" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.gnome.Settings.GlobalShortcutsProvider' requested by ':1.34' (uid=1000 pid=3525351 comm="/usr/libexec/xdg-desktop-portal-gnome" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.Settings.GlobalShortcutsProvider'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.gnome'
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.gtk' requested by ':1.32' (uid=1000 pid=3525332 comm="/usr/libexec/xdg-desktop-portal" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.a11y.Bus' requested by ':1.37' (uid=1000 pid=3525389 comm="/usr/libexec/xdg-desktop-portal-gtk" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activated service 'org.a11y.Bus' failed: Failed to execute program org.a11y.Bus: Permission denied
+
+(xdg-desktop-portal-gtk:3525389): atspi-WARNING **: 09:10:02.341: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.Spawn.ExecFailed: Failed to execute program org.a11y.Bus: Permission denied
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+
+(/usr/libexec/xdg-desktop-portal:3525332): xdg-desktop-portal-WARNING **: 09:10:02.356: Failed to connect to PipeWire: Couldn't connect to PipeWire
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.oo7' requested by ':1.32' (uid=1000 pid=3525332 comm="/usr/libexec/xdg-desktop-portal" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Activated service 'org.freedesktop.impl.portal.desktop.oo7' failed: Process org.freedesktop.impl.portal.desktop.oo7 exited with status 1
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.freedesktop.portal.Desktop'
+
+(/usr/libexec/xdg-desktop-portal:3525332): xdg-desktop-portal-WARNING **: 09:10:02.367: Failed to create secret proxy: Error calling StartServiceByName for org.freedesktop.impl.portal.desktop.oo7: Process org.freedesktop.impl.portal.desktop.oo7 exited with status 1
+dbus-daemon[3524048]: [session uid=1000 pid=3524048 pidfd=5] Successfully activated service 'org.gnome.Shell.Screencast'
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+running, pid 3525518, up 18.0s, 334 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: Classics, hourly · Quick Start langtons-ant (2 of 7) · generation 2244 · 230400 cells of 4 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+2026-11-17 09:10:32 AM EST hour 0: 09:10:31,0,3525518,True,334,43.0,334,"Quick Start langtons-ant",2,2568,230400,4.0,240.0,240.0,"cpu","",False
+2026-11-17 10:10:50 AM EST hour 1: 10:10:49,60,3525518,True,467,27.9,467,"profile Penrose waves",6,19463,280000,2.61,30.0,30.0,"gpu","",False
+2026-11-17 11:11:08 AM EST hour 2: 11:11:07,120,3525518,True,467,54.9,467,"Quick Start turmite-llrr",5,160088,230400,4.0,240.0,240.0,"cpu","",False
+2026-11-17 12:11:26 PM EST hour 3: 12:11:25,180,3525518,True,407,33.9,407,"profile Cyclic spirals",4,20548,409440,3.0,30.0,30.0,"gpu","",False
+2026-11-17 01:11:44 PM EST hour 4: 13:11:43,241,3525518,True,407,30.9,407,"profile Life",1,21094,409440,3.0,30.0,30.0,"gpu","",False
+2026-11-17 02:12:02 PM EST hour 5: 14:12:01,301,3525518,True,408,53.9,408,"Quick Start langtons-ant",2,173088,230400,4.0,240.0,240.05,"cpu","",False
+2026-11-17 03:12:20 PM EST hour 6: 15:12:19,361,3525518,True,409,58.9,409,"Quick Start turmite-llrr",5,177408,230400,4.0,240.0,239.99,"cpu","",False
+2026-11-17 04:12:39 PM EST hour 7: 16:12:37,422,3525518,True,409,62.9,409,"Quick Start rule:ForestFire 0.01/0.0001",3,22717,921600,2.0,30.0,30.0,"gpu","",False
+2026-11-17 05:10:29 PM EST == 480 minutes done
+running, pid 3525518, up 28818.0s, 409 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: Classics, hourly · profile Hodgepodge (7 of 7) · generation 18877 · 409440 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+stopped
+Gdk-Message: 17:10:32.666: Lost connection to Wayland compositor.
+Gdk-Message: 17:10:32.667: Error reading events from display: Broken pipe
+2026-11-17 05:10:32 PM EST shell log error lines: 2; host log lines: 1
+2026-11-17 05:10:32 PM EST == F-3 done
+A connection to the bus can't be made
+
+(evolution-calendar-factory:3524283): libedbus-private-WARNING **: 17:10:32.752: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)
+
+(evolution-calendar-factory:3524283): libedbus-private-WARNING **: 17:10:32.752: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)
+
+(evolution-addressbook-factory:3524350): libedbus-private-WARNING **: 17:10:32.752: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)

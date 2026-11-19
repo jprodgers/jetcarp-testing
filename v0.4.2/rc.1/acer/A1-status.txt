@@ -1,0 +1,11 @@
+﻿explore 1: 32,606 runs (39/s), 6,733 elites in 3,428 niches, 290 confirmed, 21 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status paused, 9 min 59 s run over every session, 1,104 confirmation runs, 33,718 candidates tried, 0.67 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                14,194   0.31   1.46   2,531
+  generations              11,418   0.67   2.02   2,143
+  jaca                      5,311   0.56   2.11   1,496
+  cyclic                    1,683   0.45   2.10     563
+  folder: C:\Users\jimmi\jetcarp-rc-042\data\searches\7715bd85-b868-4463-b2a7-77a9fbac4f8a
+  `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)

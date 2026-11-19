@@ -1,0 +1,12 @@
+== world_new {"tiling": "square", "width": 4096, "height": 4096, "cas": ["Life"]} -> isError=True; cells []
+   4096 x 4096 on square is 16,777,216 cells, over the limit of 4,000,000 cells (try 2000 x 2000)
+== world_step {"generations": 100} -> isError=True; cells []
+   no CA is enabled, so nothing would change. Enable one with the command update_ca {"enabled": true} (world_edit commands), or add one.
+== world_render {"max_side": 256} -> isError=False; cells []
+   256 x 256 px picture of generation 0 (Square (parallelogram), 4096 cells; hash a8c7f832281a39c5).
+== world_new {"tiling": "trihex", "width": 4096, "height": 4096, "cas": ["Life"]} -> isError=True; cells []
+   4096 x 4096 on trihex is 50,331,648 cells (3 in each unit cell), over the limit of 4,000,000 cells (try 1154 x 1154)
+== world_step {"generations": 10} -> isError=True; cells []
+   no CA is enabled, so nothing would change. Enable one with the command update_ca {"enabled": true} (world_edit commands), or add one.
+== world_status {} -> isError=False; cells ['4096']
+   

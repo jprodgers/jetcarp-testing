@@ -1,0 +1,44 @@
+# The JETCARP saver's own lines in the system log (log show, process legacyScreenSaver), 01:40-01:43
+# 70961 = System Settings' preview; 70963 = the full-screen saver; 71652 = made after it ended
+2026-11-12 01:40:22.085 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-12 01:40:22.085 Df legacyScreenSaver[70961:1116042] (JETCARP) jetcarp-saver: view made, preview true
+2026-11-12 01:40:22.086 Df legacyScreenSaver[70961:1116042] (JETCARP) jetcarp-saver: rotation "A classic a day", 7 items
+2026-11-12 01:40:22.086 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: rotation "A classic a day", 7 items
+2026-11-12 01:40:22.086 Df legacyScreenSaver[70961:1116042] [com.apple.ScreenSaver:Modules] -[ScreenSaverView setScreenSaverModule:] -- Setting module “JETCARP” for view: 0x787f089400
+2026-11-12 01:40:22.086 Df legacyScreenSaver[70963:11160ba] [com.apple.ScreenSaver:Modules] -[ScreenSaverView setScreenSaverModule:] -- Setting module “JETCARP” for view: 0x7be9089400
+2026-11-12 01:40:22.087 Df legacyScreenSaver[70961:1116042] (JETCARP) jetcarp-saver: in a window: true, 0 x 0, preview true
+2026-11-12 01:40:22.087 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: in a window: true, 4112 x 2658, preview false
+2026-11-12 01:40:22.591 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: startAnimation 0.5 s after the view was made, preview false
+2026-11-12 01:40:22.608 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: GPU Apple M2 Max
+2026-11-12 01:40:22.617 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: surface made at 4112 x 2658 (preview false; window "NSKVONotifying_NSServiceViewControllerWindow", on screen as macOS sees it: false)
+2026-11-12 01:40:22.624 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: 1 frames shown (preview false)
+2026-11-12 01:40:25.901 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: 100 frames shown (preview false)
+2026-11-12 01:40:55.905 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: 1000 frames shown (preview false)
+2026-11-12 01:42:28.922 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: macOS says a screen saver started
+2026-11-12 01:42:29.028 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: startAnimation 126.9 s after the view was made (made ahead of time), preview false
+2026-11-12 01:42:29.038 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: startAnimation 127.0 s after the view was made (made ahead of time), preview false
+2026-11-12 01:42:29.047 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-12 01:42:29.047 Df legacyScreenSaver[70963:11160ba] [com.apple.ScreenSaver:Modules] -[ScreenSaverView setScreenSaverModule:] -- Setting module “JETCARP” for view: 0x7be908a800
+2026-11-12 01:42:29.047 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: in a window: true, 5120 x 2880, preview false
+2026-11-12 01:42:29.054 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-12 01:42:29.054 Df legacyScreenSaver[70963:11160ba] [com.apple.ScreenSaver:Modules] -[ScreenSaverView setScreenSaverModule:] -- Setting module “JETCARP” for view: 0x7be908bc00
+2026-11-12 01:42:29.054 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: in a window: true, 4112 x 2658, preview false
+2026-11-12 01:42:29.577 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: startAnimation 0.5 s after the view was made, preview false
+2026-11-12 01:42:29.578 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: startAnimation 0.5 s after the view was made, preview false
+2026-11-12 01:42:29.582 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: surface made at 2560 x 1440 (preview false; window "NSKVONotifying_NSServiceViewControllerWindow", on screen as macOS sees it: false)
+2026-11-12 01:42:29.587 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: 1 frames shown (preview false)
+2026-11-12 01:42:29.591 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: surface made at 4112 x 2658 (preview false; window "NSKVONotifying_NSServiceViewControllerWindow", on screen as macOS sees it: false)
+2026-11-12 01:42:29.600 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: 1 frames shown (preview false)
+2026-11-12 01:42:30.609 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: no frame: a newer view of this size is drawing, so this one draws once a second, after 3666 shown (preview false; window "NSKVONotifying_NSServiceViewControllerWindow", on scr
+2026-11-12 01:42:32.881 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: 100 frames shown (preview false)
+2026-11-12 01:42:32.888 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: 100 frames shown (preview false)
+2026-11-12 01:43:01.240 Df legacyScreenSaver[70963:11160ba] (JETCARP) jetcarp-saver: macOS says the screen saver is stopping; ending this process
+2026-11-12 01:43:01.701 Df legacyScreenSaver[71652:1116d44] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-12 01:43:01.701 Df legacyScreenSaver[71652:1116d44] (JETCARP) jetcarp-saver: rotation "A classic a day", 7 items
+2026-11-12 01:43:01.701 Df legacyScreenSaver[71652:1116d44] [com.apple.ScreenSaver:Modules] -[ScreenSaverView setScreenSaverModule:] -- Setting module “JETCARP” for view: 0x7c35089400
+2026-11-12 01:43:01.701 Df legacyScreenSaver[71652:1116d44] (JETCARP) jetcarp-saver: in a window: true, 4112 x 2658, preview false
+2026-11-12 01:43:01.707 Df legacyScreenSaver[71652:1116d44] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-12 01:43:01.707 Df legacyScreenSaver[71652:1116d44] [com.apple.ScreenSaver:Modules] -[ScreenSaverView setScreenSaverModule:] -- Setting module “JETCARP” for view: 0x7c3508a800
+2026-11-12 01:43:01.707 Df legacyScreenSaver[71652:1116d44] (JETCARP) jetcarp-saver: in a window: true, 4112 x 2658, preview false
+2026-11-12 01:43:01.708 Df legacyScreenSaver[71652:1116d44] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-12 01:43:01.708 Df legacyScreenSaver[71652:1116d44] [com.apple.ScreenSaver:Modules] -[ScreenSaverView setScreenSaverModule:] -- Setting module “JETCARP” for view: 0x7c3508bc00

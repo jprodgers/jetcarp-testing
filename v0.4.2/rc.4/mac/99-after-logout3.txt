@@ -1,0 +1,33 @@
+R4 #99 after logout 3, the Mac, 2026-11-17 05:37:18 AM EST
+
+$ last -5 $USER | head -5
+Jimmie     ttys000                         Tue Nov 17 05:36   still logged in
+Jimmie     console                         Tue Nov 17 05:36   still logged in
+Jimmie     ttys000                         Tue Nov 17 05:34 - 05:34  (00:00)
+Jimmie     console                         Mon Nov 16 22:09 - 05:36  (07:27)
+Jimmie     ttys002                         Mon Nov 16 22:01 - 22:01  (00:00)
+[exit 0, 0.04 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host > /dev/null 2>&1; echo "launchctl print exit $?"
+launchctl print exit 113
+[exit 0, 0.02 s]
+
+$ ls -l ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist 2>&1
+ls: ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: No such file or directory
+[exit 1, 0.02 s]
+
+$ pgrep -fl 'jetcarp host serve' || echo 'no host process running'
+no host process running
+[exit 0, 0.03 s]
+
+$ jetcarp host status 2>&1 | head -2
+Error: the JETCARP background host is not running
+[exit 0, 0.02 s]
+
+$ jetcarp doctor | sed -n '/^Desktop/,/^$/p'
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+[exit 0, 0.04 s]
+

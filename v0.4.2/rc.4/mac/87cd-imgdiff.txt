@@ -1,0 +1,52 @@
+# imgdiff (R4-scripts/imgdiff.swift): each capture against the one before it, pixel by pixel
+87c-before-1.png -> 87c-before-2.png: 290892 pixels differ, in the box x 412-2799, y 77-1848 of 2800x1864
+87c-before-2.png -> 87c-after-01.png: 262450 pixels differ, in the box x 18-2799, y 17-1859 of 2800x1864
+87c-after-01.png -> 87c-after-02.png: identical pixels (2800x1864)
+87c-after-02.png -> 87c-after-03.png: identical pixels (2800x1864)
+87c-after-03.png -> 87c-after-04.png: identical pixels (2800x1864)
+87c-after-04.png -> 87c-after-05.png: identical pixels (2800x1864)
+87c-after-05.png -> 87c-after-06.png: identical pixels (2800x1864)
+87c-after-06.png -> 87c-after-07.png: identical pixels (2800x1864)
+87c-after-07.png -> 87c-after-08.png: identical pixels (2800x1864)
+87c-after-08.png -> 87c-after-09.png: identical pixels (2800x1864)
+87c-after-09.png -> 87c-after-10.png: identical pixels (2800x1864)
+87c-after-10.png -> 87c-after-11.png: identical pixels (2800x1864)
+87c-after-11.png -> 87c-after-12.png: 3350 pixels differ, in the box x 18-287, y 17-46 of 2800x1864
+87c-after-12.png -> 87c-after-13.png: identical pixels (2800x1864)
+87c-after-13.png -> 87c-after-14.png: identical pixels (2800x1864)
+87c-after-14.png -> 87c-after-15.png: 3350 pixels differ, in the box x 18-287, y 17-46 of 2800x1864
+87c-after-15.png -> 87c-after-16.png: identical pixels (2800x1864)
+87c-after-16.png -> 87c-after-17.png: identical pixels (2800x1864)
+87c-after-17.png -> 87c-after-18.png: identical pixels (2800x1864)
+87c-after-18.png -> 87c-after-19.png: 3350 pixels differ, in the box x 18-287, y 17-46 of 2800x1864
+87c-after-19.png -> 87c-after-20.png: identical pixels (2800x1864)
+87c-after-20.png -> 87c-after-21.png: identical pixels (2800x1864)
+87c-after-21.png -> 87c-after-22.png: identical pixels (2800x1864)
+87c-after-22.png -> 87c-after-23.png: identical pixels (2800x1864)
+87c-after-23.png -> 87c-after-24.png: identical pixels (2800x1864)
+87d-before-1.png -> 87d-before-2.png: 290518 pixels differ, in the box x 412-2799, y 77-1848 of 2800x1864
+87d-before-2.png -> 87d-after-01.png: 271926 pixels differ, in the box x 412-2799, y 77-1859 of 2800x1864
+87d-after-01.png -> 87d-after-02.png: 24180 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87d-after-02.png -> 87d-after-03.png: 22017 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87d-after-03.png -> 87d-after-04.png: 50931 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87d-after-04.png -> 87d-after-05.png: 12275 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87d-after-05.png -> 87d-after-06.png: 12481 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87d-after-06.png -> 87d-after-07.png: 10385 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87d-after-07.png -> 87d-after-08.png: 44036 pixels differ, in the box x 18-2799, y 17-1848 of 2800x1864
+87d-after-08.png -> 87d-after-09.png: 40093 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87d-after-09.png -> 87d-after-10.png: 6169 pixels differ, in the box x 413-2784, y 77-1848 of 2800x1864
+87d-after-10.png -> 87d-after-11.png: 4043 pixels differ, in the box x 433-2768, y 77-1848 of 2800x1864
+87d-after-11.png -> 87d-after-12.png: 36743 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87d-after-12.png -> 87d-after-13.png: 35515 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87d-after-13.png -> 87d-after-14.png: 35957 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87d-after-14.png -> 87d-after-15.png: 36049 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87d-after-15.png -> 87d-after-16.png: 35335 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87d-after-16.png -> 87d-after-17.png: 2618 pixels differ, in the box x 422-2719, y 77-1848 of 2800x1864
+87d-after-17.png -> 87d-after-18.png: 2264 pixels differ, in the box x 433-2719, y 77-1848 of 2800x1864
+87d-after-18.png -> 87d-after-19.png: 2955 pixels differ, in the box x 422-2719, y 77-1848 of 2800x1864
+87d-after-19.png -> 87d-after-20.png: 2691 pixels differ, in the box x 423-2719, y 77-1848 of 2800x1864
+87d-after-20.png -> 87d-after-21.png: 1956 pixels differ, in the box x 433-2719, y 77-1848 of 2800x1864
+87d-after-21.png -> 87d-after-22.png: 2679 pixels differ, in the box x 423-2719, y 77-1848 of 2800x1864
+87d-after-22.png -> 87d-after-23.png: 2442 pixels differ, in the box x 433-2719, y 77-1848 of 2800x1864
+87d-after-23.png -> 87d-after-24.png: 2533 pixels differ, in the box x 423-2719, y 77-1848 of 2800x1864
+87d-after-24.png -> 87d-after-25.png: 2614 pixels differ, in the box x 423-2719, y 77-1848 of 2800x1864

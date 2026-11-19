@@ -1,0 +1,90 @@
+R4 #87 run7: the world running; minimised with the yellow button (not ⌘M), restored from the Dock, left alone, the Mac, {time.strftime('%Y-%m-%d %I:%M:%S %p %Z')}; test folder $H = homes/app87
+app: $J --control  [04:49:35]
+app pid 46641, window frame [65, 58, 1400, 932, 1]
+world_new -> isError=False: New world created.
+app_display playing speed 30 -> isError=False
+   t(s)  phase      answer(s)  generation  gens/s  frame (x y w h on-screen)  app-CPU(% of a core)
+    0.0  in view          0.01           0       -      [65, 58, 1400, 932, 1]       -
+    2.0  in view          0.01          60    29.9      [65, 58, 1400, 932, 1]      36
+    4.0  in view          0.01         120    30.0      [65, 58, 1400, 932, 1]      46
+    6.0  in view          0.01         180    29.9      [65, 58, 1400, 932, 1]      46
+    8.0  in view          0.01         240    30.0      [65, 58, 1400, 932, 1]      52
+   10.0  in view          0.01         300    30.0      [65, 58, 1400, 932, 1]      53
+   12.0  in view          0.01         360    29.9      [65, 58, 1400, 932, 1]      47
+  -- before: ('87e-run7-before-1.png', '0f9490fae11a4e1e') and ('87e-run7-before-2.png', '0c4ddc32a66b439b'): CHANGED: drawing
+   14.5  in view          0.00         435    30.2      [65, 58, 1400, 932, 1]      34
+   16.5  in view          0.01         495    29.8      [65, 58, 1400, 932, 1]      32
+   18.5  in view          0.01         555    29.9      [65, 58, 1400, 932, 1]      45
+   20.5  in view          0.01         615    30.0      [65, 58, 1400, 932, 1]      53
+   22.5  in view          0.01         676    30.4      [65, 58, 1400, 932, 1]      51
+   24.5  in view          0.01         736    30.0      [65, 58, 1400, 932, 1]      52
+   26.6  in view          0.01         796    29.9      [65, 58, 1400, 932, 1]      53
+   28.6  in view          0.01         856    30.0      [65, 58, 1400, 932, 1]      52
+   30.6  in view          0.01         916    30.0      [65, 58, 1400, 932, 1]      32
+   32.6  in view          0.01         976    29.9      [65, 58, 1400, 932, 1]      45
+   34.6  in view          0.01        1036    30.0      [65, 58, 1400, 932, 1]      44
+  -- minimised (off screen) by 36.6 s
+   36.6  minimised        0.08        1091    26.5     [623, 707, 721, 489, 0]      37
+   38.6  minimised        0.01        1153    32.2      [65, 58, 1400, 932, 0]       7
+   40.6  minimised        0.08        1215    29.8      [65, 58, 1400, 932, 0]       2
+   42.6  minimised        0.04        1274    30.0      [65, 58, 1400, 932, 0]       3
+   44.7  minimised        0.11        1336    29.8      [65, 58, 1400, 932, 0]       2
+   46.6  minimised        0.07        1395    30.1      [65, 58, 1400, 932, 0]       3
+   48.6  minimised        0.03        1454    30.1      [65, 58, 1400, 932, 0]       3
+   50.7  minimised        0.10        1516    29.9      [65, 58, 1400, 932, 0]       2
+   52.7  minimised        0.06        1575    30.0      [65, 58, 1400, 932, 0]       3
+   54.6  minimised        0.02        1634    30.0      [65, 58, 1400, 932, 0]       3
+   56.7  minimised        0.09        1696    29.8      [65, 58, 1400, 932, 0]       5
+   58.7  minimised        0.05        1755    30.1      [65, 58, 1400, 932, 0]       5
+  -- back on screen by 60.6 s
+   60.6  in view again    0.01        1811    28.5      [65, 58, 1400, 932, 1]      28
+  -- + 0.0 s after the restore: 87e-run7-after-01.png e97968b410e08916: first
+   62.6  in view again    0.01        1871    30.0      [65, 58, 1400, 932, 1]      39
+  -- + 2.0 s after the restore: 87e-run7-after-02.png e6d2b4ca09bfe5a8: CHANGED: drawing
+   64.6  in view again    0.01        1931    29.9      [65, 58, 1400, 932, 1]      41
+  -- + 4.0 s after the restore: 87e-run7-after-03.png fd6e5402f6411286: CHANGED: drawing
+   66.6  in view again    0.01        1991    30.0      [65, 58, 1400, 932, 1]      46
+  -- + 6.0 s after the restore: 87e-run7-after-04.png 35398249d29edc88: CHANGED: drawing
+   68.6  in view again    0.01        2051    29.9      [65, 58, 1400, 932, 1]      43
+  -- + 8.0 s after the restore: 87e-run7-after-05.png bffcd881459d873b: CHANGED: drawing
+   70.6  in view again    0.00        2111    30.0      [65, 58, 1400, 932, 1]      44
+  -- +10.0 s after the restore: 87e-run7-after-06.png e0b763132863efc6: CHANGED: drawing
+   72.6  in view again    0.01        2171    29.9      [65, 58, 1400, 932, 1]      22
+  -- +12.0 s after the restore: 87e-run7-after-07.png 1cfe6ae130561825: CHANGED: drawing
+   74.7  in view again    0.02        2231    29.8      [65, 58, 1400, 932, 1]      35
+  -- +14.0 s after the restore: 87e-run7-after-08.png e69b196a9a691651: CHANGED: drawing
+   76.6  in view again    0.01        2291    30.2      [65, 58, 1400, 932, 1]      25
+  -- +16.0 s after the restore: 87e-run7-after-09.png a3386d8e92020d71: CHANGED: drawing
+   78.6  in view again    0.01        2351    30.0      [65, 58, 1400, 932, 1]      43
+  -- +18.0 s after the restore: 87e-run7-after-10.png 34763f6c243d585c: CHANGED: drawing
+   80.6  in view again    0.00        2411    30.0      [65, 58, 1400, 932, 1]      39
+  -- +20.0 s after the restore: 87e-run7-after-11.png feea415c3e2caf8d: CHANGED: drawing
+   82.6  in view again    0.01        2472    30.3      [65, 58, 1400, 932, 1]      34
+  -- +22.0 s after the restore: 87e-run7-after-12.png 08da53d1193cfa84: CHANGED: drawing
+   84.7  in view again    0.01        2532    29.9      [65, 58, 1400, 932, 1]      28
+  -- +24.0 s after the restore: 87e-run7-after-13.png 81e845fd4c521b80: CHANGED: drawing
+   86.7  in view again    0.01        2592    30.0      [65, 58, 1400, 932, 1]      28
+  -- +26.0 s after the restore: 87e-run7-after-14.png 5b1085e7e4f8a3a3: CHANGED: drawing
+   88.7  in view again    0.01        2652    29.9      [65, 58, 1400, 932, 1]      34
+  -- +28.1 s after the restore: 87e-run7-after-15.png fdde3a4826298562: CHANGED: drawing
+   90.7  in view again    0.01        2712    30.0      [65, 58, 1400, 932, 1]      29
+  -- +30.0 s after the restore: 87e-run7-after-16.png 4117c2de6215fb5b: CHANGED: drawing
+   92.7  in view again    0.01        2772    29.9      [65, 58, 1400, 932, 1]      32
+  -- +32.1 s after the restore: 87e-run7-after-17.png d5afa5d732e617a7: CHANGED: drawing
+   94.7  in view again    0.01        2832    30.0      [65, 58, 1400, 932, 1]      33
+  -- +34.1 s after the restore: 87e-run7-after-18.png 6ae1d3cb70b4ee4a: CHANGED: drawing
+   96.7  in view again    0.01        2892    30.0      [65, 58, 1400, 932, 1]      26
+  -- +36.1 s after the restore: 87e-run7-after-19.png 337fe02622e78add: CHANGED: drawing
+   98.7  in view again    0.01        2953    30.4      [65, 58, 1400, 932, 1]      32
+  -- +38.1 s after the restore: 87e-run7-after-20.png 2b7904673957fbf9: CHANGED: drawing
+  100.7  in view again    0.01        3013    29.9      [65, 58, 1400, 932, 1]      30
+  -- +40.1 s after the restore: 87e-run7-after-21.png 4140d4d66428d619: CHANGED: drawing
+  102.7  in view again    0.01        3073    30.0      [65, 58, 1400, 932, 1]      31
+  -- +42.1 s after the restore: 87e-run7-after-22.png 3c076081bb710b78: CHANGED: drawing
+  104.7  in view again    0.01        3133    30.0      [65, 58, 1400, 932, 1]      32
+  -- +44.1 s after the restore: 87e-run7-after-23.png 5c4b359f54fa3a98: CHANGED: drawing
+
+in view: 18 polls over 35 s, 0 errors, 29.9 gens/s, slowest answer 0.01 s, longest gap 2.5 s, app CPU median 46% of a core (range 32 to 53)
+minimised: 12 polls over 22 s, 0 errors, 30.0 gens/s, slowest answer 0.11 s, longest gap 2.1 s, app CPU median 3% of a core (range 2 to 37)
+in view again: 23 polls over 44 s, 0 errors, 30.0 gens/s, slowest answer 0.02 s, longest gap 2.1 s, app CPU median 32% of a core (range 22 to 46)
+the app closed (exit -15)

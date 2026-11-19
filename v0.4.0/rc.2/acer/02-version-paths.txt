@@ -1,0 +1,11 @@
+﻿> where.exe jetcarp
+C:\Users\jimmi\AppData\Local\Programs\jetcarp\jetcarp.exe
+> jetcarp --version
+jetcarp 0.4.0-rc.2
+(exit 0)
+> jetcarp paths
+settings: C:\Users\jimmi\AppData\Roaming\jetcarp
+data:     C:\Users\jimmi\AppData\Local\jetcarp
+output:   C:\Users\jimmi\OneDrive\Pictures\JETCARP
+bundled:  C:\Users\jimmi\AppData\Local\Programs\jetcarp\packs
+(exit 0)

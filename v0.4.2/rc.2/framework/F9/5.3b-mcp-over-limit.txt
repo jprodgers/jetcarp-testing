@@ -1,0 +1,18 @@
+== world_new {"tiling": "square", "width": 4096, "height": 4096, "cas": ["Life"]} -> isError=False; cells ['16777216']
+   New world created.
+           1
+== world_step {"generations": 100} -> isError=False; cells []
+   Ran 100 generation(s) in 0.43s.
+   Generation 100. Status: Running. Hash c35660208982ba88 (with generation and ages); cells hash 40107d868a9eac0d (cell states only: equal when the cells repeat).
+   field 0 [Life (id 1)]: 1599806 live
+== world_render {"max_side": 256} -> isError=False; cells []
+   256 x 256 px picture of generation 100 (Square (parallelogram), 16777216 cells; hash c35660208982ba88).
+== world_new {"tiling": "trihex", "width": 4096, "height": 4096, "cas": ["Life"]} -> isError=False; cells ['50331648']
+   New world created.
+           1
+== world_step {"generations": 10} -> isError=False; cells []
+   Ran 10 generation(s) in 0.37s.
+   Generation 10. Status: Running. Hash 86666f7edb6e1e67 (with generation and ages); cells hash b6ecd7d6a960618c (cell states only: equal when the cells repeat).
+   field 0 [Life (id 1)]: 17544587 live
+== world_status {} -> isError=False; cells ['50331648']
+           1

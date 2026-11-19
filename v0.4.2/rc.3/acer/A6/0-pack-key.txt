@@ -1,0 +1,6 @@
+$ jetcarp pack key --name rc.3 A-6 test publisher
+made publisher key SHA256:6EXKkU4Sr5nXSwOZ4gW2JB1CeVw0imD4suIM0wupx2A
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOb7zUlx2H5LNc07ffWG0aWNkNnOOjkmmfnZIuxuflSi jetcarp publisher
+  file $W\config\pack\publisher_ed25519
+  named rc.3 A-6 test publisher
+exit 0

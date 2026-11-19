@@ -1,0 +1,41 @@
+Notes F2
+
+Here are my notes for following along with the intoduction on a new user account.
+
+A1 - Installer went fine with the modified link, running jetcarp 0.4.2-rc.5
+
+A2 - Setup with Desktop art profile. I selected desktop wallpaper and on login. A window opened up runnign Brian's Brain, but nothing is showing on the desktop.
+
+A3 - Terminal output:
+test@framework:~$ jetcarp setup --status
+setup: Desktop art on 2026-11-17 12:40 UTC (JETCARP 0.4.2-rc.5)
+  settings: /home/test/.config/jetcarp
+  data:     /home/test/.local/share/jetcarp, 7.0 TB free
+  library:  /home/test/.local/share/jetcarp/library.sqlite
+  output:   /home/test/Pictures/JETCARP
+  bundled:  /home/test/.local/lib/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+
+A4 - all went as expected.
+
+A5 - No Claude, skipping
+
+A6 - Ran, but the terminal locked up on me, see the image /tmp/A6-lockup.png
+
+B notes
+B1 - installed fine
+B2 - It started up with a known profile (no seizure warning, no setup), I apparently failed to delete the previous data. It started out skewed, see tmp/skewed_start.png
+Once I resized the window, it fixed itself. It otherwise seems to work as expected.
+
+B3 - Upgraded fine, and the proper version number is showing, but this time it also started very strange. It looks grainy, and the mouse and hover-on-mouse highlights aren't synced. When you click you click in a different area. Resizing fixed the issue, but two starts this happened in a row. That's a problem. No desktop wallpaper on reboot.
+
+B4 - Uninstalled fine this time.

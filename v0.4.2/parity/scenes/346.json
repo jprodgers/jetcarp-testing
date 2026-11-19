@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Life on Isohedral IH74",
+  "description": "Kaplan's IH74: 4 corners, 1 edge shape (1 half-turn), 1 orientation per unit cell, 1 shape parameter. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "ih74",
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 128,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Life",
+      "rule": "B3/S23",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "7be229ec57b8a5e6",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

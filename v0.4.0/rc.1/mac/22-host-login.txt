@@ -1,0 +1,99 @@
+$ jetcarp host wallpaper on   (01:50:23; host stopped, so this only saves the setting, before the login test)
+saved; the host is not running
+exit 0
+host.json screens: [{'monitor': 0, 'rotation': 'A classic a day', 'place': 'wallpaper'}, {'monitor': 1, 'rotation': 'Classics, hourly', 'place': 'wallpaper'}]
+
+$ jetcarp host login on   (01:50:36)
+"/Users/Jimmie/.local/bin/jetcarp" host serve starts at login
+exit 0
+
+# ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jimmieprodgers.jetcarp.host</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/Jimmie/.local/bin/jetcarp</string>
+        <string>host</string>
+        <string>serve</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+</dict>
+</plist>
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host (summary)
+
+$ jetcarp host status
+Error: the JETCARP background host is not running
+exit 1
+
+# After a real reboot (2:04  up 3 mins, 1 user, load averages: 15.25 12.62 5.66). Jimmie: no Terminal window, nothing strange; both screens as expected; one screen was sluggish for a few seconds, then normal speed
+$ jetcarp host status   (02:04:39)
+running, pid 738, up 128.0s, 139 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 3771 · 303455 cells
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 3771 · 409440 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+exit 0
+
+$ ps -axo pid,ppid,lstart,etime,command | grep jetcarp
+  738     1 Thu Nov 12 02:02:30 2026       02:09 /Users/Jimmie/.local/bin/jetcarp host serve
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host (selected lines)
+	type = LaunchAgent
+	state = running
+	program = /Users/Jimmie/.local/bin/jetcarp
+	arguments = {
+	runs = 1
+	pid = 738
+	last exit code = (never exited)
+		type = resource
+		state = active
+		type = jetsam
+		state = active
+
+$ jetcarp host login off   (02:04:46)
+the host no longer starts at login
+exit 0
+
+$ ls ~/Library/LaunchAgents
+another-program.plist
+another-program.plist
+another-program.plist
+another-project.plist
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host | head -3
+gui/502/com.jimmieprodgers.jetcarp.host = {
+	active count = 4
+	path = /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+
+$ jetcarp host status
+running, pid 738, up 136.0s, 139 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 3991 · 303455 cells
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 3991 · 409440 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+exit 0
+
+$ jetcarp host stop   (02:04:52)
+stopped
+exit 0
+
+$ jetcarp host status   (5 s later)
+Error: the JETCARP background host is not running
+exit 1
+
+$ pgrep -lf "jetcarp host"
+(none)
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host | head -3
+	state = not running
+	last exit code = 0
+		state = active
+		state = active

@@ -1,0 +1,38 @@
+== 13:36:55 jetcarp uninstall (the plan)
+Would undo (run again with --yes):
+  stop the background host
+  stop the host starting at login
+  remove the host's lock file /Users/Jimmie/.cache/jetcarp/host.lock
+  remove the empty folder of job locks /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite-jobs
+  forget the recorded host command
+
+Kept the data folder /Users/Jimmie/Library/Application Support/jetcarp/data (9.8 MB); add --data to delete it.
+Kept the settings folder /Users/Jimmie/Library/Application Support/jetcarp; add --settings to delete it.
+Your pictures and exports in /Users/Jimmie/Pictures/JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `--uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+exit 0
+== 13:36:55 jetcarp uninstall --yes
+Undoing:
+  done: stop the background host
+  done: stop the host starting at login
+  done: remove the host's lock file /Users/Jimmie/.cache/jetcarp/host.lock
+  done: remove the empty folder of job locks /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite-jobs
+  done: forget the recorded host command
+
+Kept the data folder /Users/Jimmie/Library/Application Support/jetcarp/data (9.8 MB); add --data to delete it.
+Kept the settings folder /Users/Jimmie/Library/Application Support/jetcarp; add --settings to delete it.
+Your pictures and exports in /Users/Jimmie/Pictures/JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `--uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+exit 0
+-- afterwards
+no host process
+no JETCARP LaunchAgent
+gui/502/com.jimmieprodgers.jetcarp.host = {
+no JETCARP screen saver
+app.json
+data
+gpu-checks.json
+host.json
+setup.json

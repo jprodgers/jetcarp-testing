@@ -1,0 +1,90 @@
+#### R4 #112: Fit to this computer is hidden, 2026-11-16 22:07:10
+(folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\f96\config, \data, \out, \library, \run)
+$ jetcarp host --help   (exit 0): lines naming tune: []; its commands: serve, start, stop, status, next, previous, pause, resume, rotation, caption, fps, pacing, max-fps, still, battery, busy, login, wallpaper, lock, gnome, saver, scene, help
+$ jetcarp host tune
+Error: Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+(exit 1, 0.1 s)
+$ jetcarp host tune --dry-run
+Error: Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+(exit 1, 0.1 s)
+$ jetcarp host tune --help
+Fit the desktop background to this computer: run each scene of the wallpaper's rotation at its screen's size and keep, for each, the most cells that stay within the processor and GPU limits at a smooth frame rate (saved). The rules and colours stay as they are. A running host pauses while it runs, then shows the sizes found
+
+Usage: jetcarp.exe host tune [OPTIONS]
+
+Options:
+      --cpu-limit <PERCENT>            JETCARP's processor time, in percent of the whole machine, every core counted (saved; default 10)
+      --gpu-limit <PERCENT>            JETCARP's share of the GPU's time, in percent (saved; default 25)
+      --fps <FPS>                      Frames per second it must keep (saved; default: the monitor's refresh rate, or 60, at most the rate each scene draws at)
+      --screen <SCREEN>                Only this screen (counted from 0). Default: every screen on the desktop
+      --pick <WHICH>                   Which size each scene is left at: recommended (the finest within the limits; the default), finest (the finest shown), own (the scene's own), or a cell size in pixels. Without it, a size chosen before is kept while it is still within the limits
+      --crops <DIR>                    Save each size's picture here as a PNG (they are kept beside the host's settings too)
+      --canvas <CANVAS>                The screen's size in pixels, as WxH, when no host is running to say (default: the size it was tuned for before, else its monitor's)
+      --trial-seconds <TRIAL_SECONDS>  Seconds each size shows for (the last three quarters are measured) [default: 2]
+      --dry-run                        Measure and report, but save nothing
+      --stop                           Stop the sweep a running host is making (the scenes already done stay saved)
+      --json                           Print the host's reply as JSON
+  -h, --help                           Print help
+(exit 0, 0.1 s)
+(MCP's schema and tune calls: 96-mcp-refuse.txt and 96-mcp-accepted.txt)
+
+## rc.1's host.json with its saved sizes, on a window host
+The Acer has no rc.3 host.json with saved sizes (no Fit ran here under rc.3). rc.1's (~\jetcarp-rc-042\config\host.json, 2026-11-14) saved 16 px for the three scenes of 'Until it settles' (design 3 px), for a 1920 x 1080 wallpaper. A copy, with the screen's place 'wallpaper' made 'window' and its rotation 'Classics, hourly' made 'Until it settles' (the tuned one), so the tuned scenes are what it shows:
+(folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\h112\config, \data, \out, \library, \run)
+$ jetcarp setup --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+(exit 0, 0.1 s)
+$ jetcarp host start
+running, pid 28248, up 1.0s, 404 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.3 s)
+$ jetcarp host status
+running, pid 28248, up 16.0s, 450 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 878 · 102240 cells of 3 px · 60 fps, 60 generations a second · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.3 s)
+$ jetcarp host status --json
+{"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":450,"monitor_hz":[144.0],"monitors":["\\\\.\\DISPLAY1"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28248,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles"],"run_at_login":false,"running":true,"screens":[{"frames":893,"hidden":false,"monitor":null,"place":"window","simulation":{"adapter":"Intel(R) UHD Graphics (Intel Corporation), Vulkan","on":"gpu","why":null},"stage":{"building":false,"canvas":[1280.0,720.0],"caption":["Life · B3/S23","Square grid · 426 × 240 · wraps","Until it settles · 1 of 3 · generation 892"],"cell_px":3.0,"cells":102240,"count":3,"frame_rate":60.0,"generation":892,"grid":[426,240],"label":"Quick Start rule:B3/S23","measured_speed":60.00424575805664,"number":1,"paused":false,"rotation":"Until it settles","scale":1.0,"seconds_left":null,"speed":60.0}}],"uptime_s":17.0,"wallpaper":false}
+(exit 0, 0.2 s)
+$ jetcarp host next
+running, pid 28248, up 17.0s, 450 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · starting · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.2 s)
+$ jetcarp host status
+running, pid 28248, up 25.0s, 450 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 490 · 102240 cells of 3 px · 60 fps, 60 generations a second · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.2 s)
+$ jetcarp host next
+running, pid 28248, up 25.0s, 450 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · starting · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.2 s)
+$ jetcarp host status
+running, pid 28248, up 33.0s, 451 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B368/S245 (3 of 3) · generation 485 · 102240 cells of 3 px · 60 fps, 60 generations a second · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.2 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.4 s)
+host.json after the host (tuning block kept?): True

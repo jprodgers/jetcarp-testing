@@ -1,0 +1,13 @@
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+hunt job 7 in C:\Users\jimmi\jetcarp-rc-042\data\library.sqlite
+hunt 7: 15,168/2,000,000 soups, 689 soups/s, 324,387 objects (ships 28,722, osc 93,989, still 201,676), 48 distinct, 11 new | newest: still life 10c #917e6f (B3/S23)
+hunt 7: 25,504/2,000,000 soups, 1256 soups/s, 548,598 objects (ships 48,581, osc 159,303, still 340,714), 52 distinct, 15 new | newest: still life 11c #24157d (B3/S23)
+hunt 7: 35,178/2,000,000 soups, 1380 soups/s, 755,993 objects (ships 66,863, osc 219,390, still 469,740), 60 distinct, 23 new | newest: still life 17c #ab0929 (B3/S23)
+hunt 7: 44,585/2,000,000 soups, 1436 soups/s, 960,861 objects (ships 85,104, osc 278,511, still 597,246), 66 distinct, 29 new | newest: still life 10c #f0e883 (B3/S23)
+hunt 7: 54,271/2,000,000 soups, 1466 soups/s, 1,167,566 objects (ships 103,310, osc 338,538, still 725,718), 67 distinct, 30 new | newest: still life 14c #bb0067 (B3/S23)
+hunt 7: 63,727/2,000,000 soups, 1486 soups/s, 1,371,690 objects (ships 121,365, osc 397,602, still 852,723), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+hunt 7: 73,096/2,000,000 soups, 1488 soups/s, 1,574,325 objects (ships 139,308, osc 455,750, still 979,267), 71 distinct, 34 new | newest: still life 14c #166c05 (B3/S23)
+hunt 7: 82,061/2,000,000 soups, 1494 soups/s, 1,767,906 objects (ships 156,471, osc 511,829, still 1,099,606), 73 distinct, 36 new | newest: still life 15c #de0c2a (B3/S23)
+hunt 7: 90,968/2,000,000 soups, 1494 soups/s, 1,960,402 objects (ships 173,561, osc 567,244, still 1,219,597), 76 distinct, 39 new | newest: still life 20c #cb823f (B3/S23)
+hunt 7: 99,858/2,000,000 soups, 1488 soups/s, 2,150,091 objects (ships 190,519, osc 622,054, still 1,337,518), 79 distinct, 42 new | newest: still life 19c #a0bb0d (B3/S23)
+hunt 7 paused (at its budget); `jetcarp jobs resume 7` resumes it exactly

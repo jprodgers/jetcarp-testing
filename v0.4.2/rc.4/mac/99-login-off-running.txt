@@ -1,0 +1,50 @@
+R4 #99 login off with the host running, the Mac, 2026-11-17 05:35:38 AM EST; jetcarp 0.4.2-rc.4
+
+$ jetcarp host status | head -2
+running, pid 43936, up 4129.0s, 332 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 15695 · 280000 cells of 5 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+[exit 0, 0.04 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host | grep -E '^\s+(state|pid|program) =|job state' ; echo "launchctl print exit ${PIPESTATUS[0]}"
+	state = running
+	program = ~/.local/bin/jetcarp
+	pid = 43936
+		state = active
+		state = active
+	job state = running
+launchctl print exit 0
+[exit 0, 0.02 s]
+
+$ ls -l ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist; grep -c 'Registered with launchd' ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+-rw-r--r--@ 1 Jimmie  staff  627 Nov 17 04:26 ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+1
+[exit 0, 0.02 s]
+
+#### login off, the host running
+$ jetcarp host login off
+the host no longer starts at login
+[exit 0, 0.03 s]
+
+$ jetcarp host status | head -2
+running, pid 43936, up 4132.0s, 332 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 15792 · 280000 cells of 5 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+[exit 0, 0.05 s]
+
+$ pgrep -fl 'jetcarp host serve' || echo 'no host process running'
+43936 ~/.local/bin/jetcarp host serve --login
+[exit 0, 0.03 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host 2>&1 | grep -E '^\s+(state|pid|program) =|job state|Could not find' ; echo "launchctl print exit ${PIPESTATUS[0]}"
+	state = running
+	program = ~/.local/bin/jetcarp
+	pid = 43936
+		state = active
+		state = active
+	job state = running
+launchctl print exit 0
+[exit 0, 0.02 s]
+
+$ ls -l ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist 2>&1
+ls: ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: No such file or directory
+[exit 1, 0.02 s]
+

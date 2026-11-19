@@ -1,0 +1,39 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA noise conquers crystal (Penrose rhombs)",
+  "description": "Noise eats a still crystal, front by front, until it is gone (by about generation 4,000). Found by a JACA rule search.",
+  "tiling": {
+    "family": "penrose-rhomb",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 28,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B267/S1,3,4,6,7,8,9,10,11 -B267/S1,3,4,6,7,9,10,11",
+      "rule": "JACA +B267/S1,3,4,6,7,8,9,10,11 -B267/S1,3,4,6,7,9,10,11",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Phosphor",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "22f7a44aa667048e",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

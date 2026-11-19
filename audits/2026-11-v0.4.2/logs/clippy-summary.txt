@@ -1,0 +1,36 @@
+# cargo +stable(1.100.0) clippy --workspace --all-targets --locked at a3e829a: lint warnings by kind (no errors)
+      5 clippy::type_complexity
+      5 clippy::needless_range_loop
+      5 clippy::manual_is_multiple_of
+      3 clippy::chunks_exact_to_as_chunks
+      1 clippy::while_let_loop
+      1 clippy::useless_format
+      1 clippy::unnecessary_get_then_check
+      1 clippy::unnecessary_cast
+      1 clippy::too_many_arguments
+      1 clippy::redundant_guards
+      1 clippy::question_mark
+      1 clippy::manual_range_contains
+      1 clippy::empty_line_after_doc_comments
+      1 clippy::doc_nested_refdefs
+      1 clippy::collapsible_match
+
+# all warning lines, counted
+     16 warning: very complex type used. Consider factoring parts into `…` definitions
+      7 warning: the loop variable `…` is used to index `…`
+      5 warning: manual implementation of `…`
+      4 warning: using `…` with a constant chunk size
+      3 warning: casting to the same type is unnecessary (`…` -> `…`)
+      2 warning: the loop variable `…` is only used to index `…`
+      1 warning: useless use of `…`
+      1 warning: unused field `…` in `…`
+      1 warning: unused dependency `…`
+      1 warning: unnecessary use of `…`
+      1 warning: this loop could be written as a `…` loop
+      1 warning: this function has too many arguments (8/7)
+      1 warning: this `…` expression can be replaced with `…`
+      1 warning: this `…` can be collapsed into the outer `…`
+      1 warning: redundant guard
+      1 warning: manual `…` implementation
+      1 warning: link reference defined in list item
+      1 warning: empty line after doc comment

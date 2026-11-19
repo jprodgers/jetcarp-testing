@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Waffle",
+  "description": "An expanding range-7 rule. (Kellie Evans)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 252,
+        "h": 168
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "13876099470572252995",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Waffle",
+      "rule": "R7,C2,S99-199,B75-170",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "3500ef63b1b7a272",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

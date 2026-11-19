@@ -1,0 +1,24 @@
+[accepted] folder ~\jetcarp-rc4\f96; server {'name': 'jetcarp', 'title': 'JETCARP cellular automata', 'version': '0.4.2-rc.4'}
+tools/list: 21 tools; host_control's properties: ['action', 'name', 'on', 'screen']
+host_control's action: {"description": "Default status. wallpaper: every screen on the desktop background (GNOME: with the extension) or in a window; login: start at login or not; open_app opens the app; reload rereads host.json; scene: a screen's scene.", "enum": ["status", "next", "previous", "pause", "resume", "rotation", "wallpaper", "login", "open_app", "reload", "scene", "quit"], "type": "string"}
+'tune' in host_control's schema: False; 'pick' or 'fps' properties: False, False
+'fit' or 'tune' in its description: False
+description: Controls the JETCARP background host, which runs live scenes as wallpapers or windows without the app. Returns its status (each screen's scene, cell size and caption, and recent problems). Fails if it is not running (`jetcarp host start` starts it). Refuses scenes until the user accepts the seizure warning.
+== host_control {"action": "status"} -> isError=False
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":311,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+== host_control {"action": "resume"} -> isError=False
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":311,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+== host_control {"action": "next"} -> isError=False
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":311,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+== host_control {"action": "previous"} -> isError=False
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":323,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+== host_control {"action": "rotation", "name": "A classic a day"} -> isError=False
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":381,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+== host_control {"action": "tune", "dry_run": true} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== host_control {"action": "tune_stop"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== host_control {"action": "tune_events"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== host_control {"action": "tuning"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.

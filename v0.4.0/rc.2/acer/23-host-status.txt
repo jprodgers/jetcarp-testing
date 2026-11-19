@@ -1,0 +1,8 @@
+> jetcarp host status   (07:55:28)
+running, pid 16792, up 10.0s, 279 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 285 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 285 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)

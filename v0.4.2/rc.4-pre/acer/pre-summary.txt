@@ -1,0 +1,10 @@
+﻿2.371-rtx-vulkan: pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 7.8 min
+2.371-rtx-dx12: pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 17.7 min
+2.371-uhd-vulkan: pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 7.0 min
+2.371-uhd-dx12: pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 18.9 min
+2.40-rtx-vulkan: pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.3 min
+2.40-rtx-dx12: pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.3 min
+2.40-uhd-vulkan: pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.4 min
+2.40-uhd-dx12: pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.7 min
+1-suite-rtx: FAIL: 25 passed, 0 failed, 0 ignored in 2 test binaries; exit TIMEOUT, 180 min; failed: host_stop_returns_once_the_host_has_gone
+1-suite-uhd: pass: 1043 passed, 0 failed, 39 ignored in 137 test binaries; exit 0, 111 min

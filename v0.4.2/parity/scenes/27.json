@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Seeds",
+  "description": "Every live cell dies each generation; explosive.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "4360579169762551335",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Seeds",
+      "rule": "B2/S",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "blob": {
+          "radius": 0.08,
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "c41319da5c13f648",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

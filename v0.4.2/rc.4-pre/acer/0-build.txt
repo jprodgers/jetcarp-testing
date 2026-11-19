@@ -1,0 +1,32 @@
+    Updating crates.io index
+   Compiling windows-sys v0.61.2
+   Compiling dirs-sys v0.5.0
+   Compiling dirs v7.0.0
+   Compiling jetcarp-core v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-core)
+   Compiling anstyle-query v1.1.5
+   Compiling anstyle-wincon v3.0.11
+   Compiling error-code v3.4.0
+   Compiling image v0.25.10
+   Compiling jetcarp-mcp v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-mcp)
+   Compiling clipboard-win v5.4.3
+   Compiling anstream v1.0.0
+   Compiling muda v0.21.2
+   Compiling rfd v0.17.2
+   Compiling ctrlc v3.5.2
+   Compiling clap_builder v4.6.7
+   Compiling tray-icon v0.26.1
+   Compiling arboard v3.7.0
+   Compiling clap v4.6.7
+   Compiling egui-winit v0.37.0
+   Compiling eframe v0.37.0
+   Compiling jetcarp-store v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-store)
+   Compiling jetcarp-gpu v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-gpu)
+   Compiling jetcarp-search v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-search)
+   Compiling jetcarp-pack v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-pack)
+   Compiling jetcarp-api v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-api)
+   Compiling jetcarp-script v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-script)
+   Compiling jetcarp-display v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-display)
+   Compiling jetcarp-host v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-host)
+   Compiling jetcarp-app v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-app)
+   Compiling jetcarp v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp)
+    Finished `release` profile [optimized + debuginfo] target(s) in 3m 09s

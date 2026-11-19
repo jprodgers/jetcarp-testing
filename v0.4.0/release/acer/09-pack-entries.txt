@@ -1,0 +1,26 @@
+# S3: the starter pack's Quick Start entries after setup re-imported it (read-only queries, mode=ro, at 10:08)
+# rc2's import (job 4, manifest a78bbe8d) and 0.4.0's (job 32, manifest 722f7750) are both in the library.
+
+pack rows by created minute, source_ref:
+   ('2026-11-12T12:05', 'sha256:a78bbe8d5ee4cb18303e3eca9170b1a868dafbe78d3031179ba5f71ad29102ba', 79)
+   ('2026-11-13T15:02', 'sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29', 48)
+old (rc2) pack entries: 79  new (0.4.0) pack entries: 48  shared handles: 0
+same (title, rule, tiling) in both: 10
+new titles also in old titles: 10
+titles shown twice (old and new):
+   'Abelian sandpile'  rule/tiling identical to an old one: True
+   'Agents'  rule/tiling identical to an old one: True
+   'Agents'  rule/tiling identical to an old one: True
+   'Agents'  rule/tiling identical to an old one: True
+   'Forest fire'  rule/tiling identical to an old one: True
+   'Gliding Continuous'  rule/tiling identical to an old one: True
+   'Growing Continuous'  rule/tiling identical to an old one: True
+   'Hex3 rule 90 (NW xor NE)'  rule/tiling identical to an old one: True
+   'Rock-paper-scissors'  rule/tiling identical to an old one: True
+   'Rule 105'  rule/tiling identical to an old one: True
+sample handles old: ['qs-1d6159091e08f6c54eb929438e49fe7a', 'qs-7dadbacc82b08b130f88ee0040d9512b', 'qs-5225e195c0cbcd4db059294aa1c1aa49']
+sample handles new: ['qs-25fcd52736178576150fd5a8ba074db3', 'qs-e4d78c759cd5fc57c76b639ecfb09b3d', 'qs-c94f20ae236e2acb1dc65054e4883538']
+new titles not in old (first 15): ['Wave RPS 3/2', 'Oscillating Hodgepodge 89/2/1/16', '3.3.3.4.4: c/4 orthogonal p8 ship (13-17 cells, B4,6,9,10/S3,4,5,8,10,11)', 'Turbulent Hodgepodge 117/3/1/21', 'Battle JACA +B13/S -B234/S3456', 'Fractal HexW3 4080', 'Oscillating R5,C2,S38-60,B27-45,NN', 'Oscillating GH 6/2', 'Static GH 13/1', 'Oscillating Hodgepodge 78/1/2/38', 'k3-009: c/16 orthogonal p16 ship (4-10 cells, B3,4,7,8,11,13,16,18,19/S2,3,7,10,11,13,14,15,16,19)', 'k3-029: c/10 orthogonal p10 ship (4-9 cells, B3,6,9,10,11/S2,3,7,10,12)', 'Fractal Layer 6/0343', 'k3-058: c/22 orthogonal p22 ship (4-12 cells, B3,7,10,12,14,16,18/S2,5,9,13,14,15,17)', 'k3-038: c/53 orthogonal p53 ship (4-24 cells, B3,10,12,14/S1,3,6,9,13)']
+old titles not in new (first 15): ['1L1,0L0/0L1,1N0 highway on Hexagon', '3.3.3.3.6: c/27 orthogonal p27 ship (4-18 cells, B37/S2,5,6,10)', '3.3.3.4.4: c/4 orthogonal p8 ship (13-17 cells, B46/S3458)', '3.3.3.4.4: p56 oscillator (33 cells)', '3.4.6.4: c/14 orthogonal p42 ship (7-15 cells, B3/S235)', '4.6.12: p17 oscillator (13 cells)', '4.8.8: c/2 orthogonal p16 ship (14-28 cells, B2/S34)', '4.8.8: c/2 orthogonal p2 ship (5-9 cells, B2/S3)', '4.8.8: c/2 orthogonal p24 ship (14-21 cells, B2/S3)', '4.8.8: c/2 orthogonal p4 ship (7 cells, B2/S2)', '4.8.8: c/3 orthogonal p6 ship (7-13 cells, B2/S2)', 'Battle JACA', "Edmond's hat glider B (for comparison)", 'Fractal Hexagonal elementary', 'Fractal Layered']
+sample old row: {'id': 'qs-1d6159091e08f6c54eb929438e49fe7a', 'handle': 'qs-1d6159091e08f6c54eb929438e49fe7a', 'source': 'pack', 'source_ref': 'sha256:a78bbe8d5ee4cb18303e3eca9170b1a868dafbe78d3031179ba5f71ad29102ba', 'target_kind': 'scene', 'target_id': 'None', 'title': 'Oscillating Hodgepodge', 'description': 'Hodgepodge 89/2/1/16 on cairo\nSeed: all pattern, density 0.48\nScore 2.14', 'category': 'Oscillators', 'grid_group': 'Other periodic', 'family': 'Hodgepodge', 'tiling_key': 'cairo', 'tiling_name': 'Cairo pentagon', 'rule': 'Hodgepodge 89/2/1/16', 'rule_family': 'other', 'behaviour': 'Oscillators', 'scene': '{\n  "jetcarp_version": "0.4.0-rc.1",\n  "format": 1,\n  "name": "Hodgepodge 89/2/1', 'preview': 'None', 'mature_gen': '0', 'mature': 'None', 'score': 'None', 'rank': '0', 'featured': '0', 'hidden': '0', 'pin_key': '{"family":"cairo","boundary":"dead"}', 'geometry_pin': '04ef9e816510a832c91f210b45c0215f', 'needs_reverify': '0', 'engine_version': '0.4.0-rc.2', 'created': '2026-11-12T12:05:18Z', 'updated': '2026-11-12T12:05:18Z'}
+sample new row: {'id': 'qs-25fcd52736178576150fd5a8ba074db3', 'handle': 'qs-25fcd52736178576150fd5a8ba074db3', 'source': 'pack', 'source_ref': 'sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29', 'target_kind': 'scene', 'target_id': 'None', 'title': 'Wave RPS 3/2', 'description': 'RPS 3/2 on cairo\nSeed: gradient pattern, density 0.7\nScore 2.17', 'category': 'Waves & spirals', 'grid_group': 'Other periodic', 'family': 'Rock-paper-scissors', 'tiling_key': 'cairo', 'tiling_name': 'Cairo pentagon', 'rule': 'RPS 3/2', 'rule_family': 'other', 'behaviour': 'Waves & spirals', 'scene': '{\n  "jetcarp_version": "0.4.0",\n  "format": 1,\n  "name": "RPS 3/2 — cairo",\n  "t', 'preview': 'None', 'mature_gen': '0', 'mature': 'None', 'score': 'None', 'rank': '0', 'featured': '0', 'hidden': '0', 'pin_key': '{"family":"cairo","boundary":"dead"}', 'geometry_pin': '04ef9e816510a832c91f210b45c0215f', 'needs_reverify': '0', 'engine_version': '0.4.0', 'created': '2026-11-13T15:02:54Z', 'updated': '2026-11-13T15:02:54Z'}

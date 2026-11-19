@@ -1,0 +1,15 @@
+explore search job 12 in /Users/Jimmie/jetcarp-rc-042c/m6/library/library.sqlite
+GPU: Apple M2 Max, Metal
+explore 12: 1,024 runs (339/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; Apple M2 Max, Metal
+explore 12: 1,024 runs (111/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; Apple M2 Max, Metal
+explore 12: 2,048 runs (131/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+explore 12: 2,048 runs (94/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+explore 12: 3,072 runs (135/s), 785 elites in 437 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+  status paused, 23 s run over every session, 0 confirmation runs, 3,072 candidates tried, 0.42 GB of memory
+  threads: 5 for runs on the processor and 3 for the GPU's batches, of 12 cores (4 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 1,674   0.36   1.25     404
+  generations               1,398   0.78   1.85     381
+  folder: /Users/Jimmie/jetcarp-rc-042c/m6/library/searches/ce46e0d0-d396-43a3-835a-bdd1ad0c488c
+explore search 12 paused (as asked); `jetcarp jobs resume 12` continues it from its archive (not run for run: the search is not deterministic)

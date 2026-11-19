@@ -1,0 +1,77 @@
+R4 #92 the MCP reference's placeholders, the Mac, 2026-11-17 03:15:55 AM EST
+source: ~/jetcarp-rc-042c/src at cf5cbdf (v0.4.2-rc.4); test folder $H = homes/docs
+
+#### The placeholders #92 named, in docs/src/reference/mcp.md
+$ grep -n -o -E '(L|find:|atlas:)?&lt;[A-Za-z. ]+>' ~/jetcarp-rc-042c/src/docs/src/reference/mcp.md | sed 's/^/  /'
+  332:&lt;Pictures>
+  424:&lt;id>
+  447:&lt;id>
+  447:&lt;run id>
+  447:&lt;explore job>
+  447:&lt;sweep folder>
+  447:&lt;scene file>
+  519:L&lt;level>
+  632:L&lt;level>
+  1134:find:&lt;id>
+  1134:atlas:&lt;...>
+[exit 0, 0.02 s]
+
+#### Any bare '<' outside code spans and fences (HTML comments aside): only the page's own HTML expected
+$ python3 - ~/jetcarp-rc-042c/src/docs/src/reference/mcp.md <<'PY'
+import re, sys
+bad = []
+infence = False
+for n, line in enumerate(open(sys.argv[1], encoding='utf-8'), 1):
+    if line.lstrip().startswith('```'):
+        infence = not infence
+        continue
+    if infence:
+        continue
+    s = re.sub(r'`[^`]*`', '', line)
+    s = re.sub(r'<!--.*?-->', '', s)
+    for m in re.finditer(r'<[A-Za-z.]', s):
+        bad.append((n, s[max(0, m.start()-30):m.start()+30].strip()))
+print('bare < outside code:', len(bad))
+for b in bad[:20]: print('  ', b)
+PY
+bare < outside code: 2
+   (1041, "<details><summary>The book's p")
+   (1041, "<details><summary>The book's pages</sum")
+[exit 0, 0.04 s]
+
+#### The same page served by jetcarp mcp: resources/read and help {page}
+$ python3 $R/R4-scripts/mcall.py $R/92-mcp.jsonl '[["help",{"page":"reference/mcp"}]]' --resource jetcarp://docs/reference/mcp.md --maxlog 0 > $H/served.txt; head -6 $H/served.txt; grep -c . $H/served.txt
+initialize -> ok
+== resources/read jetcarp://docs/reference/mcp.md -> 88922 chars
+# MCP tools
+
+JETCARP is an MCP server (the [Model Context Protocol](https://modelcontextprotocol.io)), so an AI
+assistant can build worlds, run them, look at them, search for patterns and read the library
+1145
+[exit 0, 0.29 s]
+
+$ python3 - $R/92-mcp.jsonl ~/jetcarp-rc-042c/src/docs/src/reference/mcp.md <<'PY'
+import json, re, sys
+msgs = [json.loads(l[3:]) for l in open(sys.argv[1], encoding='utf-8') if l.startswith('<< ')]
+src = open(sys.argv[2], encoding='utf-8').read()
+pat = r'(?:L|find:|atlas:)?&lt;[A-Za-z. ]+>'
+print('the book source:', len(re.findall(pat, src)), 'escaped placeholders')
+for m in msgs:
+    r = m.get('result', {})
+    if 'contents' in r:
+        t = ''.join(c.get('text', '') for c in r['contents']); what = 'resources/read jetcarp://docs/reference/mcp.md'
+    elif 'content' in r:
+        t = ''.join(c.get('text', '') for c in r['content']); what = 'help {page: reference/mcp}'
+    else:
+        continue
+    found = re.findall(pat, t)
+    print(f'{what}: {len(t)} chars, {len(found)} escaped placeholders: {sorted(set(found))}')
+    print('   the same text as the source page:', t.strip() == src.strip(), '| the source within it:', src.strip()[:2000] in t)
+PY
+the book source: 11 escaped placeholders
+resources/read jetcarp://docs/reference/mcp.md: 88922 chars, 11 escaped placeholders: ['&lt;Pictures>', '&lt;explore job>', '&lt;id>', '&lt;run id>', '&lt;scene file>', '&lt;sweep folder>', 'L&lt;level>', 'atlas:&lt;...>', 'find:&lt;id>']
+   the same text as the source page: True | the source within it: True
+help {page: reference/mcp}: 88922 chars, 11 escaped placeholders: ['&lt;Pictures>', '&lt;explore job>', '&lt;id>', '&lt;run id>', '&lt;scene file>', '&lt;sweep folder>', 'L&lt;level>', 'atlas:&lt;...>', 'find:&lt;id>']
+   the same text as the source page: True | the source within it: True
+[exit 0, 0.05 s]
+

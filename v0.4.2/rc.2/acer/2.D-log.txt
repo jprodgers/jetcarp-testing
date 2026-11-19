@@ -1,0 +1,965 @@
+﻿14:36:21.790 --- A-4 (2.D) setup: D1 everyday 0.4.1 host not running (exit 1), no JETCARP Run value, no SCRNSAVE.EXE; wallpaper backed up (TranscodedWallpaper sha256 85FF3BB2371A8465)
+14:36:24.186 [01-host-start] host start -> exit 0 in 2.38 s
+14:36:24.190     running, pid 53616, up 2.0s, 404 MB, GPU Intel(R) UHD Graphics
+14:36:24.191     screen 0: A classic a day Â· profile Cyclic spirals (4 of 7) Â· starting Â· window
+14:36:24.191     caption: off
+14:36:24.192     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:36:24.193     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:36:24.666 [02-wallpaper-on] host wallpaper on -> exit 0 in 0.47 s
+14:36:24.668     running, pid 53616, up 2.0s, 439 MB, GPU Intel(R) UHD Graphics
+14:36:24.669     screen 0: A classic a day Â· profile Cyclic spirals (4 of 7) Â· generation 4 Â· 102240 cells of 3 px Â· 30 fps, 30 generations a second Â· wallpaper
+14:36:24.670     monitors: 0: \\.\DISPLAY1
+14:36:24.671     wallpaper: showing
+14:36:24.672     caption: off
+14:36:24.685     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:36:24.686     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:36:28.940 [03-status] host status -> exit 0 in 0.24 s
+14:36:28.943     running, pid 53616, up 7.0s, 453 MB, GPU Intel(R) UHD Graphics
+14:36:28.944     screen 0: A classic a day Â· profile Cyclic spirals (4 of 7) Â· generation 116 Â· 230400 cells of 3 px Â· 30 fps, 30 generations a second Â· wallpaper
+14:36:28.945     monitors: 0: \\.\DISPLAY1
+14:36:28.946     wallpaper: showing
+14:36:28.947     caption: off
+14:36:28.948     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:36:28.948     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:36:29.099 [04-status-json] host status --json -> exit 0 in 0.15 s
+14:36:29.101     {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":"raised","extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)"],"login":false,"max_fps":60.0,"memory_mb":455,"monitor_hz":[144.0],"monitors":["\\\\.\\DISPLAY1"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":53616,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles"],"run_at_login":false,"running":true,"screens":[{"frames":145,"hidden":false,"monitor":null,"place":"wallpaper","stage":{"building":false,"canvas":[1920.0,1080.0],"caption":["Cyclic CA Â· Cyclic 16/1","Square grid Â· 640 Ã— 360 Â· wraps","A classic a day Â· 4 of 7 Â· generation 123"],"cell_px":3.0,"cells":230400,"count":7,"frame_rate":30.0,"generation":123,"grid":[640,360],"label":"profile Cyclic spirals","number":4,"paused":false,"rotation":"A classic a day","scale":1.0,"seconds_left":null,"speed":30.0,"tuned":false}}],"tune":{"auto":true,"cpu_percent":10.0,"gpu_percent":25.0},"tuning":{"auto":false,"here":false,"running":false},"uptime_s":7.0,"wallpaper":true}
+14:40:02.081 --- 2.D 1: Jimmie opened 'JACA war on the hat tiling' and clicked Show just this scene; desktop switched to it
+14:40:02.352 [05-status-d1] host status -> exit 0 in 0.18 s
+14:40:02.356     running, pid 53616, up 220.0s, 461 MB, GPU Intel(R) UHD Graphics
+14:40:02.357     screen 0: JACA war on the hat tiling Â· profile JACA war on the hat tiling (1 of 1) Â· generation 628 Â· 35000 cells of 5.1 px Â· 30 fps, 15 generations a second Â· wallpaper
+14:40:02.358     monitors: 0: \\.\DISPLAY1
+14:40:02.359     wallpaper: showing
+14:40:02.360     caption: off
+14:40:02.361     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:40:02.362     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:49:00.153 --- 2.D 2: Jimmie made a rotation with New (a profile + a Quick Start entry), saved (Save easy to find), then Edit, swapped the order, saved
+14:49:00.454 [06-status-d2] host status -> exit 0 in 0.19 s
+14:49:00.457     running, pid 53616, up 758.0s, 469 MB, GPU Intel(R) UHD Graphics
+14:49:00.458     screen 0: My rotation Â· scene C:\Users\jimmi\OneDrive\Desktop\jaca_background_scene.json (1 of 3) Â· generation 1204 Â· 129150 cells of 4 px Â· 30 fps, 30 generations a second Â· wallpaper
+14:49:00.459     monitors: 0: \\.\DISPLAY1
+14:49:00.459     wallpaper: showing
+14:49:00.460     caption: off
+14:49:00.461     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:49:00.461     last tune: done
+14:49:00.462     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:49:00.463     note: swept 1 scene(s); sizes saved
+14:51:24.742 --- 2.D 2 redo: Jimmie misunderstood at first (3 scene files); now added a profile and a Quick Start entry
+14:51:25.034 [07-status-d2b] host status -> exit 0 in 0.21 s
+14:51:25.037     running, pid 53616, up 903.0s, 468 MB, GPU Intel(R) UHD Graphics
+14:51:25.038     screen 0: My rotation Â· scene C:\Users\jimmi\OneDrive\Desktop\kaplan_sand.json (3 of 4) Â· generation 1018 Â· 129600 cells of 4 px Â· 30 fps, 30 generations a second Â· wallpaper
+14:51:25.039     monitors: 0: \\.\DISPLAY1
+14:51:25.040     wallpaper: showing
+14:51:25.041     caption: off
+14:51:25.042     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:51:25.043     last tune: done
+14:51:25.045     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:51:25.047     note: swept 1 scene(s); sizes saved
+14:51:43.724 --- 2.D 3: every generation (#42)
+14:51:44.318 [08-rotation-settles] host rotation "Until it settles" -> exit 0 in 0.58 s
+14:51:44.322     running, pid 53616, up 922.0s, 465 MB, GPU Intel(R) UHD Graphics
+14:51:44.323     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· starting Â· wallpaper
+14:51:44.324     monitors: 0: \\.\DISPLAY1
+14:51:44.325     wallpaper: showing
+14:51:44.326     caption: off
+14:51:44.328     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:51:44.328     last tune: done
+14:51:44.329     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:51:44.330     note: swept 1 scene(s); sizes saved
+14:51:50.520 [09-status-life] host status -> exit 0 in 0.17 s
+14:51:50.522     running, pid 53616, up 929.0s, 478 MB, GPU Intel(R) UHD Graphics
+14:51:50.522     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 353 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+14:51:50.523     monitors: 0: \\.\DISPLAY1
+14:51:50.524     wallpaper: showing
+14:51:50.525     caption: off
+14:51:50.526     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:51:50.528     last tune: done
+14:51:50.540     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:51:50.542     note: swept 1 scene(s); sizes saved
+14:53:00.701 2.D 3: Jimmie: Life blinkers blink 'Even and steady' (60 fps, 60 gens/s)
+14:53:00.963 [10-rotation-classic] host rotation "A classic a day" -> exit 0 in 0.23 s
+14:53:00.967     running, pid 53616, up 999.0s, 473 MB, GPU Intel(R) UHD Graphics
+14:53:00.967     screen 0: A classic a day Â· profile Cyclic spirals (4 of 7) Â· starting Â· wallpaper
+14:53:00.969     monitors: 0: \\.\DISPLAY1
+14:53:00.970     wallpaper: showing
+14:53:00.971     caption: off
+14:53:00.972     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:53:00.972     last tune: done
+14:53:00.973     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:53:00.974     note: swept 1 scene(s); sizes saved
+14:53:01.321 [11-next-0] host next -> exit 0 in 0.17 s
+14:53:01.323     running, pid 53616, up 999.0s, 476 MB, GPU Intel(R) UHD Graphics
+14:53:01.324     screen 0: A classic a day Â· Quick Start turmite-llrr (5 of 7) Â· starting Â· wallpaper
+14:53:01.325     monitors: 0: \\.\DISPLAY1
+14:53:01.326     wallpaper: showing
+14:53:01.327     caption: off
+14:53:01.327     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:53:01.329     last tune: done
+14:53:01.329     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:53:01.330     note: swept 1 scene(s); sizes saved
+14:53:03.677 [11-next-1] host next -> exit 0 in 0.19 s
+14:53:03.680     running, pid 53616, up 1002.0s, 478 MB, GPU Intel(R) UHD Graphics
+14:53:03.680     screen 0: A classic a day Â· profile Penrose waves (6 of 7) Â· starting Â· wallpaper
+14:53:03.681     monitors: 0: \\.\DISPLAY1
+14:53:03.682     wallpaper: showing
+14:53:03.683     caption: off
+14:53:03.684     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:53:03.685     last tune: done
+14:53:03.685     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:53:03.686     note: swept 1 scene(s); sizes saved
+14:53:06.000 [11-next-2] host next -> exit 0 in 0.16 s
+14:53:06.014     running, pid 53616, up 1004.0s, 511 MB, GPU Intel(R) UHD Graphics
+14:53:06.014     screen 0: A classic a day Â· profile Hodgepodge (7 of 7) Â· starting Â· wallpaper
+14:53:06.016     monitors: 0: \\.\DISPLAY1
+14:53:06.016     wallpaper: showing
+14:53:06.017     caption: off
+14:53:06.018     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:53:06.018     last tune: done
+14:53:06.019     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:53:06.019     note: swept 1 scene(s); sizes saved
+14:53:08.386 [11-next-3] host next -> exit 0 in 0.2 s
+14:53:08.391     running, pid 53616, up 1006.0s, 479 MB, GPU Intel(R) UHD Graphics
+14:53:08.392     screen 0: A classic a day Â· profile Life (1 of 7) Â· starting Â· wallpaper
+14:53:08.392     monitors: 0: \\.\DISPLAY1
+14:53:08.393     wallpaper: showing
+14:53:08.393     caption: off
+14:53:08.394     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:53:08.395     last tune: done
+14:53:08.395     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:53:08.396     note: swept 1 scene(s); sizes saved
+14:53:11.040 [11-next-4] host next -> exit 0 in 0.17 s
+14:53:11.043     running, pid 53616, up 1009.0s, 480 MB, GPU Intel(R) UHD Graphics
+14:53:11.043     screen 0: A classic a day Â· Quick Start langtons-ant (2 of 7) Â· starting Â· wallpaper
+14:53:11.044     monitors: 0: \\.\DISPLAY1
+14:53:11.045     wallpaper: showing
+14:53:11.045     caption: off
+14:53:11.046     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:53:11.047     last tune: done
+14:53:11.047     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:53:11.048     note: swept 1 scene(s); sizes saved
+14:53:58.236 Langton's ant, max-fps 60: 5 samples, host UHD 3D 38% (range 36-39), host CPU 3.6%, status 60.0 fps / 240.0 gens/s
+14:53:58.709 [12-maxfps-refresh] host max-fps refresh -> exit 0 in 0.46 s
+14:53:58.711     running, pid 53616, up 1056.0s, 477 MB, GPU Intel(R) UHD Graphics
+14:53:58.712     screen 0: A classic a day Â· Quick Start langtons-ant (2 of 7) Â· generation 11360 Â· 129600 cells of 4 px Â· 144 fps, 240 generations a second Â· wallpaper
+14:53:58.714     monitors: 0: \\.\DISPLAY1
+14:53:58.714     wallpaper: showing
+14:53:58.716     caption: off
+14:53:58.717     pacing: every generation (at least 30 fps, up to the monitor's refresh rate)
+14:53:58.717     last tune: done
+14:53:58.718     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:53:58.719     note: swept 1 scene(s); sizes saved
+14:54:28.741 Langton's ant, max-fps refresh: 5 samples, host UHD 3D 78% (range 69-83), host CPU 5.9%, status 144.0 fps / 240.0 gens/s
+14:54:28.913 [13-maxfps-60] host max-fps 60 -> exit 0 in 0.17 s
+14:54:28.914     running, pid 53616, up 1087.0s, 477 MB, GPU Intel(R) UHD Graphics
+14:54:28.915     screen 0: A classic a day Â· Quick Start langtons-ant (2 of 7) Â· generation 18681 Â· 129600 cells of 4 px Â· 60 fps, 240 generations a second Â· wallpaper
+14:54:28.916     monitors: 0: \\.\DISPLAY1
+14:54:28.916     wallpaper: showing
+14:54:28.917     caption: off
+14:54:28.918     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:54:28.919     last tune: done
+14:54:28.920     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:54:28.920     note: swept 1 scene(s); sizes saved
+14:54:46.151 [14-rotation-settles2] host rotation "Until it settles" -> exit 0 in 0.21 s
+14:54:46.159     running, pid 53616, up 1104.0s, 477 MB, GPU Intel(R) UHD Graphics
+14:54:46.159     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· starting Â· wallpaper
+14:54:46.161     monitors: 0: \\.\DISPLAY1
+14:54:46.162     wallpaper: showing
+14:54:46.163     caption: off
+14:54:46.164     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:54:46.164     last tune: done
+14:54:46.165     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:54:46.166     note: swept 1 scene(s); sizes saved
+14:55:24.258 Life (Until it settles), every generation, max 60: 5 samples, host UHD 3D 50% (range 49-51), host CPU 3.9%, status  fps /  gens/s
+14:55:34.584 measured generations: 2281 -> 2888 = 59.8 gens/s
+14:55:34.773 [15-pacing-low] host pacing low-power -> exit 0 in 0.19 s
+14:55:34.778     running, pid 53616, up 1153.0s, 482 MB, GPU Intel(R) UHD Graphics
+14:55:34.779     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 2895 Â· 230400 cells of 3 px Â· 30 fps, 30 generations a second Â· wallpaper
+14:55:34.780     monitors: 0: \\.\DISPLAY1
+14:55:34.780     wallpaper: showing
+14:55:34.781     caption: off
+14:55:34.782     pacing: low power, 30 fps (each scene at most 30 generations a second)
+14:55:34.783     last tune: done
+14:55:34.783     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:55:34.784     note: swept 1 scene(s); sizes saved
+14:56:04.807 Life (Until it settles), low power: 5 samples, host UHD 3D 27% (range 26-29), host CPU 2.0%, status  fps /  gens/s
+14:56:15.130 measured generations: 3801 -> 4106 = 30.0 gens/s
+14:56:15.347 [16-pacing-every] host pacing every-generation -> exit 0 in 0.21 s
+14:56:15.349     running, pid 53616, up 1193.0s, 478 MB, GPU Intel(R) UHD Graphics
+14:56:15.350     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 4111 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+14:56:15.350     monitors: 0: \\.\DISPLAY1
+14:56:15.351     wallpaper: showing
+14:56:15.352     caption: off
+14:56:15.352     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+14:56:15.353     last tune: done
+14:56:15.354     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+14:56:15.355     note: swept 1 scene(s); sizes saved
+14:56:34.348 2.D 3 done: pacing back to every-generation, max-fps 60
+15:13:39.511 --- 2.D 4: Jimmie ran Fit to this computer from the pane: swept several sizes per scene; 4 recommendations, one per scene
+15:14:34.654 --- 2.D 4 (command line): host tune --json --crops
+15:15:24.557 [17-tune-json] host tune --json --crops "C:\Users\jimmi\jetcarp-rc-042b\phase2\2.D-out\tune-crops" -> exit 0 in 49.89 s
+15:15:24.561     {"event":"start","screens":[0],"scenes":3,"fps":60.0,"gpu":"Intel(R) UHD Graphics"}
+15:15:24.562     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:15:24.563     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.0363408,"gpu_percent":90.01311,"p95_ms":2.3,"fps":59.0304,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}}
+15:15:24.563     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:15:24.564     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.644519,"gpu_percent":90.14911,"p95_ms":2.3694,"fps":59.161854,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false}}
+15:15:24.565     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:15:24.566     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":1.2081358,"gpu_percent":81.28021,"p95_ms":5.5252,"fps":58.98502,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false}}
+15:15:24.566     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:15:24.569     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":0.8625502,"gpu_percent":78.04005,"p95_ms":6.0053,"fps":58.29508,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false}}
+15:15:24.570     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:15:24.571     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.4716777,"gpu_percent":74.76335,"p95_ms":6.2483,"fps":59.172497,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false}}
+15:15:24.572     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:15:24.573     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":2.1635487,"gpu_percent":73.781075,"p95_ms":7.3859,"fps":59.153767,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true}}
+15:15:24.574     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:15:24.574     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":4.0666614,"gpu_percent":57.248142,"p95_ms":17.9606,"fps":59.14209,"on_gpu":true,"fits":false,"over":"frames 18.0 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b3-s23-2px.png","own":false}}
+15:15:24.575     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:15:24.576     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":13.285824,"gpu_percent":55.514458,"p95_ms":39.6882,"fps":30.478212,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%), frames 39.7 ms (at 60 fps, 16.7 ms), slow: 46 of 91 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false}}
+15:15:24.577     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B3/S23","tiling":"square","design_px":3.0,"cell_px":3.0,"chosen":false,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":13.285824,"gpu_percent":55.514458,"p95_ms":39.6882,"fps":30.478212,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%), frames 39.7 ms (at 60 fps, 16.7 ms), slow: 46 of 91 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":4.0666614,"gpu_percent":57.248142,"p95_ms":17.9606,"fps":59.14209,"on_gpu":true,"fits":false,"over":"frames 18.0 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b3-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":2.1635487,"gpu_percent":73.781075,"p95_ms":7.3859,"fps":59.153767,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.4716777,"gpu_percent":74.76335,"p95_ms":6.2483,"fps":59.172497,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":0.8625502,"gpu_percent":78.04005,"p95_ms":6.0053,"fps":58.29508,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":1.2081358,"gpu_percent":81.28021,"p95_ms":5.5252,"fps":58.98502,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.644519,"gpu_percent":90.14911,"p95_ms":2.3694,"fps":59.161854,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.0363408,"gpu_percent":90.01311,"p95_ms":2.3,"fps":59.0304,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:15:24.590     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:15:24.591     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.3816857,"gpu_percent":89.74217,"p95_ms":2.1525,"fps":58.362797,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}}
+15:15:24.592     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:15:24.593     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.1252795,"gpu_percent":89.62445,"p95_ms":2.3919,"fps":59.16591,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false}}
+15:15:24.593     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:15:24.594     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":0.7780195,"gpu_percent":78.712494,"p95_ms":5.6202,"fps":58.424793,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false}}
+15:15:24.595     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:15:24.596     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":1.1153564,"gpu_percent":77.780525,"p95_ms":7.6774,"fps":57.985287,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false}}
+15:15:24.596     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:15:24.598     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.8186243,"gpu_percent":73.45607,"p95_ms":7.1774,"fps":59.19413,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false}}
+15:15:24.599     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:15:24.599     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":1.6422889,"gpu_percent":68.3851,"p95_ms":9.5705,"fps":59.081726,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true}}
+15:15:24.600     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:15:24.601     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":4.667183,"gpu_percent":55.733208,"p95_ms":13.5548,"fps":58.413,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-2px.png","own":false}}
+15:15:24.602     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:15:24.603     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":15.558477,"gpu_percent":54.19902,"p95_ms":40.3069,"fps":28.887785,"on_gpu":true,"fits":false,"over":"processor 16% (over 8.0%: the 10% limit, less 20%), frames 40.3 ms (at 60 fps, 16.7 ms), slow: 44 of 91 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false}}
+15:15:24.604     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B36/S23","tiling":"square","design_px":3.0,"cell_px":2.0,"chosen":false,"recommended":{"px":2.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":15.558477,"gpu_percent":54.19902,"p95_ms":40.3069,"fps":28.887785,"on_gpu":true,"fits":false,"over":"processor 16% (over 8.0%: the 10% limit, less 20%), frames 40.3 ms (at 60 fps, 16.7 ms), slow: 44 of 91 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":4.667183,"gpu_percent":55.733208,"p95_ms":13.5548,"fps":58.413,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":1.6422889,"gpu_percent":68.3851,"p95_ms":9.5705,"fps":59.081726,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.8186243,"gpu_percent":73.45607,"p95_ms":7.1774,"fps":59.19413,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":1.1153564,"gpu_percent":77.780525,"p95_ms":7.6774,"fps":57.985287,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":0.7780195,"gpu_percent":78.712494,"p95_ms":5.6202,"fps":58.424793,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.1252795,"gpu_percent":89.62445,"p95_ms":2.3919,"fps":59.16591,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.3816857,"gpu_percent":89.74217,"p95_ms":2.1525,"fps":58.362797,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:15:24.605     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":16.0},"rung":1,"rungs":8}
+15:15:24.606     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.0416007,"gpu_percent":90.30571,"p95_ms":2.1304,"fps":59.99668,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}}
+15:15:24.607     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":12.0},"rung":2,"rungs":8}
+15:15:24.607     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.3018562,"gpu_percent":90.702995,"p95_ms":2.0911,"fps":59.989983,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false}}
+15:15:24.608     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":8.0},"rung":3,"rungs":8}
+15:15:24.609     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":1.2877321,"gpu_percent":77.40127,"p95_ms":7.3207,"fps":59.998756,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false}}
+15:15:24.609     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":6.0},"rung":4,"rungs":8}
+15:15:24.610     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":1.475281,"gpu_percent":78.50485,"p95_ms":5.8849,"fps":59.98366,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false}}
+15:15:24.611     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":4.0},"rung":5,"rungs":8}
+15:15:24.613     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":0.8649136,"gpu_percent":76.322845,"p95_ms":6.2455,"fps":59.11901,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false}}
+15:15:24.614     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":3.0},"rung":6,"rungs":8}
+15:15:24.615     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":3.4718683,"gpu_percent":73.26502,"p95_ms":6.9907,"fps":59.994526,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true}}
+15:15:24.615     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":2.0},"rung":7,"rungs":8}
+15:15:24.616     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":5.4751782,"gpu_percent":56.33627,"p95_ms":18.4433,"fps":59.13215,"on_gpu":true,"fits":false,"over":"frames 18.4 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b368-s245-2px.png","own":false}}
+15:15:24.616     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":1.0},"rung":8,"rungs":8}
+15:15:24.618     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":13.3273,"gpu_percent":53.48705,"p95_ms":39.5769,"fps":29.715761,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%), frames 39.6 ms (at 60 fps, 16.7 ms), slow: 45 of 91 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false}}
+15:15:24.619     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B368/S245","tiling":"square","design_px":3.0,"cell_px":3.0,"chosen":false,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":13.3273,"gpu_percent":53.48705,"p95_ms":39.5769,"fps":29.715761,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%), frames 39.6 ms (at 60 fps, 16.7 ms), slow: 45 of 91 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":5.4751782,"gpu_percent":56.33627,"p95_ms":18.4433,"fps":59.13215,"on_gpu":true,"fits":false,"over":"frames 18.4 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b368-s245-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":3.4718683,"gpu_percent":73.26502,"p95_ms":6.9907,"fps":59.994526,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":0.8649136,"gpu_percent":76.322845,"p95_ms":6.2455,"fps":59.11901,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":1.475281,"gpu_percent":78.50485,"p95_ms":5.8849,"fps":59.98366,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":1.2877321,"gpu_percent":77.40127,"p95_ms":7.3207,"fps":59.998756,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.3018562,"gpu_percent":90.702995,"p95_ms":2.0911,"fps":59.989983,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.0416007,"gpu_percent":90.30571,"p95_ms":2.1304,"fps":59.99668,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}],"gpu_timing":"submission"}}
+15:15:24.620     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042b\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+15:16:18.225 --- 2.D 5: picks (#39)
+15:17:08.317 [18-pick-4] host tune --pick 4 --json -> exit 0 in 50.08 s
+15:17:08.322     {"event":"start","screens":[0],"scenes":3,"fps":60.0,"gpu":"Intel(R) UHD Graphics"}
+15:17:08.323     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:17:08.324     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.1993356,"gpu_percent":90.37749,"p95_ms":2.1508,"fps":59.213017,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}}
+15:17:08.325     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:17:08.326     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.3798277,"gpu_percent":87.16301,"p95_ms":2.4682,"fps":58.284374,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false}}
+15:17:08.327     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:17:08.328     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":1.0384579,"gpu_percent":76.97841,"p95_ms":6.5916,"fps":59.151096,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false}}
+15:17:08.329     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:17:08.329     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":1.9896712,"gpu_percent":76.68697,"p95_ms":7.2501,"fps":59.12998,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false}}
+15:17:08.331     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:17:08.332     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.5562071,"gpu_percent":73.783264,"p95_ms":8.2523,"fps":59.0948,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false}}
+15:17:08.333     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:17:08.334     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":2.0807014,"gpu_percent":74.07105,"p95_ms":6.2627,"fps":59.258938,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true}}
+15:17:08.334     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:17:08.335     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":4.46404,"gpu_percent":58.446617,"p95_ms":13.4418,"fps":58.01918,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-2px.png","own":false}}
+15:17:08.335     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:17:08.337     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":11.752986,"gpu_percent":57.290787,"p95_ms":39.5912,"fps":29.86664,"on_gpu":true,"fits":false,"over":"processor 12% (over 8.0%: the 10% limit, less 20%), frames 39.6 ms (at 60 fps, 16.7 ms), slow: 45 of 90 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false}}
+15:17:08.339     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B3/S23","tiling":"square","design_px":3.0,"cell_px":4.0,"chosen":true,"recommended":{"px":2.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":11.752986,"gpu_percent":57.290787,"p95_ms":39.5912,"fps":29.86664,"on_gpu":true,"fits":false,"over":"processor 12% (over 8.0%: the 10% limit, less 20%), frames 39.6 ms (at 60 fps, 16.7 ms), slow: 45 of 90 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":4.46404,"gpu_percent":58.446617,"p95_ms":13.4418,"fps":58.01918,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":2.0807014,"gpu_percent":74.07105,"p95_ms":6.2627,"fps":59.258938,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.5562071,"gpu_percent":73.783264,"p95_ms":8.2523,"fps":59.0948,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":1.9896712,"gpu_percent":76.68697,"p95_ms":7.2501,"fps":59.12998,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":1.0384579,"gpu_percent":76.97841,"p95_ms":6.5916,"fps":59.151096,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.3798277,"gpu_percent":87.16301,"p95_ms":2.4682,"fps":58.284374,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.1993356,"gpu_percent":90.37749,"p95_ms":2.1508,"fps":59.213017,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:17:08.355     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:17:08.356     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.2103543,"gpu_percent":89.59302,"p95_ms":2.2456,"fps":59.093555,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}}
+15:17:08.357     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:17:08.358     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":0.9524914,"gpu_percent":90.34349,"p95_ms":1.9088,"fps":59.1866,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false}}
+15:17:08.359     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:17:08.360     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":0.77807677,"gpu_percent":79.484985,"p95_ms":5.615,"fps":59.092854,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false}}
+15:17:08.360     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:17:08.362     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":0.9503487,"gpu_percent":78.582886,"p95_ms":5.358,"fps":58.38983,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false}}
+15:17:08.363     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:17:08.363     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":2.8577409,"gpu_percent":74.89323,"p95_ms":7.1971,"fps":59.19217,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false}}
+15:17:08.364     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:17:08.365     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":3.011088,"gpu_percent":72.718994,"p95_ms":7.5702,"fps":58.80452,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true}}
+15:17:08.365     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:17:08.367     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":13.381392,"gpu_percent":57.410133,"p95_ms":12.4524,"fps":59.009857,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%)","crop":"s0-quick-start-rule-b36-s23-2px.png","own":false}}
+15:17:08.367     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:17:08.368     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":12.970511,"gpu_percent":56.12763,"p95_ms":41.4927,"fps":28.835873,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%), frames 41.5 ms (at 60 fps, 16.7 ms), slow: 44 of 92 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false}}
+15:17:08.369     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B36/S23","tiling":"square","design_px":3.0,"cell_px":4.0,"chosen":true,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":12.970511,"gpu_percent":56.12763,"p95_ms":41.4927,"fps":28.835873,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%), frames 41.5 ms (at 60 fps, 16.7 ms), slow: 44 of 92 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":13.381392,"gpu_percent":57.410133,"p95_ms":12.4524,"fps":59.009857,"on_gpu":true,"fits":false,"over":"processor 13% (over 8.0%: the 10% limit, less 20%)","crop":"s0-quick-start-rule-b36-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":3.011088,"gpu_percent":72.718994,"p95_ms":7.5702,"fps":58.80452,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":2.8577409,"gpu_percent":74.89323,"p95_ms":7.1971,"fps":59.19217,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":0.9503487,"gpu_percent":78.582886,"p95_ms":5.358,"fps":58.38983,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":0.77807677,"gpu_percent":79.484985,"p95_ms":5.615,"fps":59.092854,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":0.9524914,"gpu_percent":90.34349,"p95_ms":1.9088,"fps":59.1866,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.2103543,"gpu_percent":89.59302,"p95_ms":2.2456,"fps":59.093555,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:17:08.369     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":16.0},"rung":1,"rungs":8}
+15:17:08.370     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":0.7730799,"gpu_percent":89.99479,"p95_ms":2.4218,"fps":58.053535,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}}
+15:17:08.371     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":12.0},"rung":2,"rungs":8}
+15:17:08.371     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.2051051,"gpu_percent":88.541885,"p95_ms":2.1164,"fps":58.83708,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false}}
+15:17:08.373     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":8.0},"rung":3,"rungs":8}
+15:17:08.374     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":0.43124953,"gpu_percent":76.98722,"p95_ms":6.5491,"fps":58.291756,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false}}
+15:17:08.374     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":6.0},"rung":4,"rungs":8}
+15:17:08.375     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":2.2489843,"gpu_percent":78.932335,"p95_ms":6.5903,"fps":59.124557,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false}}
+15:17:08.376     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":4.0},"rung":5,"rungs":8}
+15:17:08.377     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":2.248087,"gpu_percent":74.234604,"p95_ms":6.4043,"fps":59.101894,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false}}
+15:17:08.378     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":3.0},"rung":6,"rungs":8}
+15:17:08.378     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":2.8382244,"gpu_percent":72.123634,"p95_ms":6.741,"fps":58.127415,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true}}
+15:17:08.379     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":2.0},"rung":7,"rungs":8}
+15:17:08.380     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":3.5456636,"gpu_percent":56.269264,"p95_ms":16.5856,"fps":59.111134,"on_gpu":true,"fits":false,"over":"frames 16.6 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b368-s245-2px.png","own":false}}
+15:17:08.381     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":1.0},"rung":8,"rungs":8}
+15:17:08.382     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":11.135537,"gpu_percent":53.82033,"p95_ms":41.5692,"fps":28.724802,"on_gpu":true,"fits":false,"over":"processor 11% (over 8.0%: the 10% limit, less 20%), frames 41.6 ms (at 60 fps, 16.7 ms), slow: 44 of 92 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false}}
+15:17:08.382     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B368/S245","tiling":"square","design_px":3.0,"cell_px":4.0,"chosen":true,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":11.135537,"gpu_percent":53.82033,"p95_ms":41.5692,"fps":28.724802,"on_gpu":true,"fits":false,"over":"processor 11% (over 8.0%: the 10% limit, less 20%), frames 41.6 ms (at 60 fps, 16.7 ms), slow: 44 of 92 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":3.5456636,"gpu_percent":56.269264,"p95_ms":16.5856,"fps":59.111134,"on_gpu":true,"fits":false,"over":"frames 16.6 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b368-s245-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":2.8382244,"gpu_percent":72.123634,"p95_ms":6.741,"fps":58.127415,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":2.248087,"gpu_percent":74.234604,"p95_ms":6.4043,"fps":59.101894,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":2.2489843,"gpu_percent":78.932335,"p95_ms":6.5903,"fps":59.124557,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":0.43124953,"gpu_percent":76.98722,"p95_ms":6.5491,"fps":58.291756,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.2051051,"gpu_percent":88.541885,"p95_ms":2.1164,"fps":58.83708,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":0.7730799,"gpu_percent":89.99479,"p95_ms":2.4218,"fps":58.053535,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}],"gpu_timing":"submission"}}
+15:17:08.383     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042b\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+15:17:10.935 after --pick 4 -> host.json: B3/S23 4.0 px (chosen True, placed False); B36/S23 4.0 px (chosen True, placed False); B368/S245 4.0 px (chosen True, placed False) | showing: Quick Start rule:B3/S23 129600 cells of 4.0 px, tuned True
+15:18:00.788 [18-pick-own] host tune --pick own --json -> exit 0 in 49.85 s
+15:18:00.792     {"event":"start","screens":[0],"scenes":3,"fps":60.0,"gpu":"Intel(R) UHD Graphics"}
+15:18:00.792     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:18:00.793     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.2938352,"gpu_percent":89.25212,"p95_ms":2.1326,"fps":58.295914,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}}
+15:18:00.794     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:18:00.794     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.2121661,"gpu_percent":90.258415,"p95_ms":1.9084,"fps":59.18194,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false}}
+15:18:00.795     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:18:00.797     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":0.69196486,"gpu_percent":78.18869,"p95_ms":7.1605,"fps":59.122585,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false}}
+15:18:00.798     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:18:00.798     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":1.98948,"gpu_percent":78.49396,"p95_ms":5.9498,"fps":59.124382,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false}}
+15:18:00.799     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:18:00.800     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.2986075,"gpu_percent":74.77599,"p95_ms":6.3977,"fps":59.17536,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false}}
+15:18:00.800     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:18:00.803     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":1.4646211,"gpu_percent":73.521614,"p95_ms":8.4281,"fps":58.227013,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true}}
+15:18:00.804     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:18:00.805     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":5.442922,"gpu_percent":55.832897,"p95_ms":11.4227,"fps":59.0539,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-2px.png","own":false}}
+15:18:00.806     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:18:00.806     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":12.244903,"gpu_percent":56.271194,"p95_ms":38.0257,"fps":29.593843,"on_gpu":true,"fits":false,"over":"processor 12% (over 8.0%: the 10% limit, less 20%), frames 38.0 ms (at 60 fps, 16.7 ms), slow: 45 of 91 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false}}
+15:18:00.807     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B3/S23","tiling":"square","design_px":3.0,"cell_px":3.0,"chosen":true,"recommended":{"px":2.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":12.244903,"gpu_percent":56.271194,"p95_ms":38.0257,"fps":29.593843,"on_gpu":true,"fits":false,"over":"processor 12% (over 8.0%: the 10% limit, less 20%), frames 38.0 ms (at 60 fps, 16.7 ms), slow: 45 of 91 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":5.442922,"gpu_percent":55.832897,"p95_ms":11.4227,"fps":59.0539,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":1.4646211,"gpu_percent":73.521614,"p95_ms":8.4281,"fps":58.227013,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.2986075,"gpu_percent":74.77599,"p95_ms":6.3977,"fps":59.17536,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":1.98948,"gpu_percent":78.49396,"p95_ms":5.9498,"fps":59.124382,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":0.69196486,"gpu_percent":78.18869,"p95_ms":7.1605,"fps":59.122585,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.2121661,"gpu_percent":90.258415,"p95_ms":1.9084,"fps":59.18194,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.2938352,"gpu_percent":89.25212,"p95_ms":2.1326,"fps":58.295914,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:18:00.807     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:18:00.808     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":0.692864,"gpu_percent":90.10456,"p95_ms":2.2196,"fps":59.198708,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}}
+15:18:00.809     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:18:00.810     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.1252166,"gpu_percent":89.70563,"p95_ms":1.9999,"fps":59.16293,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false}}
+15:18:00.810     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:18:00.811     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":1.20743,"gpu_percent":80.03068,"p95_ms":5.3762,"fps":58.28824,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false}}
+15:18:00.812     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:18:00.821     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":1.6434534,"gpu_percent":78.45264,"p95_ms":6.673,"fps":59.123444,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false}}
+15:18:00.821     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:18:00.822     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.2925242,"gpu_percent":72.7304,"p95_ms":8.6484,"fps":58.236595,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false}}
+15:18:00.823     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:18:00.824     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":1.4678398,"gpu_percent":70.16472,"p95_ms":8.1302,"fps":59.01807,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true}}
+15:18:00.824     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:18:00.826     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":9.418229,"gpu_percent":57.243107,"p95_ms":14.5969,"fps":58.39712,"on_gpu":true,"fits":false,"over":"processor 9.4% (over 8.0%: the 10% limit, less 20%)","crop":"s0-quick-start-rule-b36-s23-2px.png","own":false}}
+15:18:00.827     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:18:00.827     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":11.458185,"gpu_percent":54.493736,"p95_ms":40.0157,"fps":29.55209,"on_gpu":true,"fits":false,"over":"processor 11% (over 8.0%: the 10% limit, less 20%), frames 40.0 ms (at 60 fps, 16.7 ms), slow: 45 of 91 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false}}
+15:18:00.828     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B36/S23","tiling":"square","design_px":3.0,"cell_px":3.0,"chosen":true,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":11.458185,"gpu_percent":54.493736,"p95_ms":40.0157,"fps":29.55209,"on_gpu":true,"fits":false,"over":"processor 11% (over 8.0%: the 10% limit, less 20%), frames 40.0 ms (at 60 fps, 16.7 ms), slow: 45 of 91 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":9.418229,"gpu_percent":57.243107,"p95_ms":14.5969,"fps":58.39712,"on_gpu":true,"fits":false,"over":"processor 9.4% (over 8.0%: the 10% limit, less 20%)","crop":"s0-quick-start-rule-b36-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":1.4678398,"gpu_percent":70.16472,"p95_ms":8.1302,"fps":59.01807,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.2925242,"gpu_percent":72.7304,"p95_ms":8.6484,"fps":58.236595,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":1.6434534,"gpu_percent":78.45264,"p95_ms":6.673,"fps":59.123444,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":1.20743,"gpu_percent":80.03068,"p95_ms":5.3762,"fps":58.28824,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.1252166,"gpu_percent":89.70563,"p95_ms":1.9999,"fps":59.16293,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":0.692864,"gpu_percent":90.10456,"p95_ms":2.2196,"fps":59.198708,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:18:00.829     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":16.0},"rung":1,"rungs":8}
+15:18:00.829     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":0.60099596,"gpu_percent":90.70132,"p95_ms":2.1801,"fps":60.003933,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}}
+15:18:00.831     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":12.0},"rung":2,"rungs":8}
+15:18:00.832     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":0.8655099,"gpu_percent":89.40694,"p95_ms":2.3528,"fps":59.159885,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false}}
+15:18:00.832     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":8.0},"rung":3,"rungs":8}
+15:18:00.833     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":0.6867285,"gpu_percent":78.90126,"p95_ms":5.9247,"fps":59.993,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false}}
+15:18:00.833     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":6.0},"rung":4,"rungs":8}
+15:18:00.833     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":1.8030705,"gpu_percent":78.59682,"p95_ms":6.3478,"fps":60.00662,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false}}
+15:18:00.834     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":4.0},"rung":5,"rungs":8}
+15:18:00.835     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.6487595,"gpu_percent":76.44669,"p95_ms":7.391,"fps":59.98076,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false}}
+15:18:00.836     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":3.0},"rung":6,"rungs":8}
+15:18:00.836     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":1.3019192,"gpu_percent":72.2424,"p95_ms":7.3606,"fps":59.993282,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true}}
+15:18:00.837     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":2.0},"rung":7,"rungs":8}
+15:18:00.838     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":6.3784246,"gpu_percent":56.82816,"p95_ms":15.742,"fps":58.254456,"on_gpu":true,"fits":false,"over":"frames 15.7 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b368-s245-2px.png","own":false}}
+15:18:00.839     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":1.0},"rung":8,"rungs":8}
+15:18:00.839     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":15.269151,"gpu_percent":54.96649,"p95_ms":40.4697,"fps":28.987604,"on_gpu":true,"fits":false,"over":"processor 15% (over 8.0%: the 10% limit, less 20%), frames 40.5 ms (at 60 fps, 16.7 ms), slow: 44 of 91 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false}}
+15:18:00.840     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B368/S245","tiling":"square","design_px":3.0,"cell_px":3.0,"chosen":true,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":15.269151,"gpu_percent":54.96649,"p95_ms":40.4697,"fps":28.987604,"on_gpu":true,"fits":false,"over":"processor 15% (over 8.0%: the 10% limit, less 20%), frames 40.5 ms (at 60 fps, 16.7 ms), slow: 44 of 91 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":6.3784246,"gpu_percent":56.82816,"p95_ms":15.742,"fps":58.254456,"on_gpu":true,"fits":false,"over":"frames 15.7 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b368-s245-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":1.3019192,"gpu_percent":72.2424,"p95_ms":7.3606,"fps":59.993282,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.6487595,"gpu_percent":76.44669,"p95_ms":7.391,"fps":59.98076,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":1.8030705,"gpu_percent":78.59682,"p95_ms":6.3478,"fps":60.00662,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":0.6867285,"gpu_percent":78.90126,"p95_ms":5.9247,"fps":59.993,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":0.8655099,"gpu_percent":89.40694,"p95_ms":2.3528,"fps":59.159885,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":0.60099596,"gpu_percent":90.70132,"p95_ms":2.1801,"fps":60.003933,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}],"gpu_timing":"submission"}}
+15:18:00.841     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042b\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+15:18:02.987 after --pick own -> host.json: B3/S23 3.0 px (chosen True, placed False); B36/S23 3.0 px (chosen True, placed False); B368/S245 3.0 px (chosen True, placed False) | showing: Quick Start rule:B3/S23 230400 cells of 3.0 px, tuned False
+15:18:52.804 [18-pick-2] host tune --pick 2 --json -> exit 0 in 49.81 s
+15:18:52.806     {"event":"start","screens":[0],"scenes":3,"fps":60.0,"gpu":"Intel(R) UHD Graphics"}
+15:18:52.807     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:18:52.808     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":0.949231,"gpu_percent":88.58419,"p95_ms":2.4001,"fps":58.98387,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}}
+15:18:52.809     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:18:52.810     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":0.60476756,"gpu_percent":89.02485,"p95_ms":2.1778,"fps":59.053562,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false}}
+15:18:52.811     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:18:52.812     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":0.86440784,"gpu_percent":78.517296,"p95_ms":5.8152,"fps":59.084763,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false}}
+15:18:52.812     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:18:52.813     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":2.073849,"gpu_percent":75.79233,"p95_ms":7.4879,"fps":59.063663,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false}}
+15:18:52.814     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:18:52.814     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":2.066905,"gpu_percent":73.189445,"p95_ms":7.3227,"fps":58.20445,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false}}
+15:18:52.815     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:18:52.816     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":2.857881,"gpu_percent":70.483215,"p95_ms":8.4309,"fps":59.19504,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true}}
+15:18:52.817     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:18:52.818     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":3.2858772,"gpu_percent":55.690113,"p95_ms":15.5296,"fps":59.10484,"on_gpu":true,"fits":false,"over":"frames 15.5 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b3-s23-2px.png","own":false}}
+15:18:52.819     {"event":"rung","screen":0,"number":1,"of":3,"scene":"Quick Start rule:B3/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:18:52.819     {"event":"measured","screen":0,"scene":"Quick Start rule:B3/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":14.380087,"gpu_percent":54.70256,"p95_ms":39.9481,"fps":29.40723,"on_gpu":true,"fits":false,"over":"processor 14% (over 8.0%: the 10% limit, less 20%), frames 39.9 ms (at 60 fps, 16.7 ms), slow: 45 of 92 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false}}
+15:18:52.821     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B3/S23","tiling":"square","design_px":3.0,"cell_px":2.0,"chosen":true,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":14.380087,"gpu_percent":54.70256,"p95_ms":39.9481,"fps":29.40723,"on_gpu":true,"fits":false,"over":"processor 14% (over 8.0%: the 10% limit, less 20%), frames 39.9 ms (at 60 fps, 16.7 ms), slow: 45 of 92 generations","crop":"s0-quick-start-rule-b3-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":3.2858772,"gpu_percent":55.690113,"p95_ms":15.5296,"fps":59.10484,"on_gpu":true,"fits":false,"over":"frames 15.5 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b3-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":2.857881,"gpu_percent":70.483215,"p95_ms":8.4309,"fps":59.19504,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":2.066905,"gpu_percent":73.189445,"p95_ms":7.3227,"fps":58.20445,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":2.073849,"gpu_percent":75.79233,"p95_ms":7.4879,"fps":59.063663,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":0.86440784,"gpu_percent":78.517296,"p95_ms":5.8152,"fps":59.084763,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b3-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":0.60476756,"gpu_percent":89.02485,"p95_ms":2.1778,"fps":59.053562,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":0.949231,"gpu_percent":88.58419,"p95_ms":2.4001,"fps":58.98387,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b3-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:18:52.822     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":16.0},"rung":1,"rungs":8}
+15:18:52.825     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.1251577,"gpu_percent":89.38995,"p95_ms":2.226,"fps":59.15957,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}}
+15:18:52.826     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":12.0},"rung":2,"rungs":8}
+15:18:52.827     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":0.86286783,"gpu_percent":88.040886,"p95_ms":2.414,"fps":58.31648,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false}}
+15:18:52.827     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":8.0},"rung":3,"rungs":8}
+15:18:52.828     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":1.8186662,"gpu_percent":76.582,"p95_ms":9.282,"fps":59.19655,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false}}
+15:18:52.830     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":6.0},"rung":4,"rungs":8}
+15:18:52.831     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":1.2938852,"gpu_percent":78.44664,"p95_ms":7.1591,"fps":58.297813,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false}}
+15:18:52.832     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":4.0},"rung":5,"rungs":8}
+15:18:52.833     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.1235275,"gpu_percent":74.77015,"p95_ms":6.8222,"fps":59.07376,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false}}
+15:18:52.834     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":3.0},"rung":6,"rungs":8}
+15:18:52.835     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":2.4128761,"gpu_percent":70.35552,"p95_ms":10.7546,"fps":59.564106,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true}}
+15:18:52.837     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":2.0},"rung":7,"rungs":8}
+15:18:52.838     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":7.3301406,"gpu_percent":57.00273,"p95_ms":20.2086,"fps":57.62087,"on_gpu":true,"fits":false,"over":"frames 20.2 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b36-s23-2px.png","own":false}}
+15:18:52.839     {"event":"rung","screen":0,"number":2,"of":3,"scene":"Quick Start rule:B36/S23","size":{"px":1.0},"rung":8,"rungs":8}
+15:18:52.840     {"event":"measured","screen":0,"scene":"Quick Start rule:B36/S23","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":13.866023,"gpu_percent":55.17157,"p95_ms":36.5929,"fps":30.42627,"on_gpu":true,"fits":false,"over":"processor 14% (over 8.0%: the 10% limit, less 20%), frames 36.6 ms (at 60 fps, 16.7 ms), slow: 46 of 91 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false}}
+15:18:52.840     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B36/S23","tiling":"square","design_px":3.0,"cell_px":2.0,"chosen":true,"recommended":{"px":3.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":13.866023,"gpu_percent":55.17157,"p95_ms":36.5929,"fps":30.42627,"on_gpu":true,"fits":false,"over":"processor 14% (over 8.0%: the 10% limit, less 20%), frames 36.6 ms (at 60 fps, 16.7 ms), slow: 46 of 91 generations","crop":"s0-quick-start-rule-b36-s23-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":7.3301406,"gpu_percent":57.00273,"p95_ms":20.2086,"fps":57.62087,"on_gpu":true,"fits":false,"over":"frames 20.2 ms (at 60 fps, 16.7 ms)","crop":"s0-quick-start-rule-b36-s23-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":2.4128761,"gpu_percent":70.35552,"p95_ms":10.7546,"fps":59.564106,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.1235275,"gpu_percent":74.77015,"p95_ms":6.8222,"fps":59.07376,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":1.2938852,"gpu_percent":78.44664,"p95_ms":7.1591,"fps":58.297813,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":1.8186662,"gpu_percent":76.582,"p95_ms":9.282,"fps":59.19655,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b36-s23-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":0.86286783,"gpu_percent":88.040886,"p95_ms":2.414,"fps":58.31648,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.1251577,"gpu_percent":89.38995,"p95_ms":2.226,"fps":59.15957,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}],"gpu_timing":"submission"}}
+15:18:52.841     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":16.0},"rung":1,"rungs":8}
+15:18:52.842     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":1.2924423,"gpu_percent":89.6377,"p95_ms":2.1604,"fps":58.23272,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}}
+15:18:52.842     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":12.0},"rung":2,"rungs":8}
+15:18:52.843     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":12.0},"cells":14400,"cpu_percent":1.7355715,"gpu_percent":91.09143,"p95_ms":2.2376,"fps":59.982216,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false}}
+15:18:52.844     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":8.0},"rung":3,"rungs":8}
+15:18:52.844     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":8.0},"cells":32400,"cpu_percent":1.5558134,"gpu_percent":79.678474,"p95_ms":6.4291,"fps":59.07991,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false}}
+15:18:52.845     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":6.0},"rung":4,"rungs":8}
+15:18:52.846     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":6.0},"cells":57600,"cpu_percent":0.85862345,"gpu_percent":77.859245,"p95_ms":5.7166,"fps":60.008057,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false}}
+15:18:52.846     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":4.0},"rung":5,"rungs":8}
+15:18:52.847     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":4.0},"cells":129600,"cpu_percent":1.2019191,"gpu_percent":74.58627,"p95_ms":7.1638,"fps":60.000397,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false}}
+15:18:52.847     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":3.0},"rung":6,"rungs":8}
+15:18:52.848     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":3.0},"cells":230400,"cpu_percent":1.6431347,"gpu_percent":73.10862,"p95_ms":7.1157,"fps":59.112057,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true}}
+15:18:52.849     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":2.0},"rung":7,"rungs":8}
+15:18:52.850     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":2.0},"cells":518400,"cpu_percent":6.1612654,"gpu_percent":55.754406,"p95_ms":11.2795,"fps":59.315334,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-2px.png","own":false}}
+15:18:52.851     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":1.0},"rung":8,"rungs":8}
+15:18:52.852     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":1.0},"cells":2073600,"cpu_percent":20.585718,"gpu_percent":53.891422,"p95_ms":40.8055,"fps":29.15758,"on_gpu":true,"fits":false,"over":"processor 21% (over 8.0%: the 10% limit, less 20%), frames 40.8 ms (at 60 fps, 16.7 ms), slow: 45 of 93 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false}}
+15:18:52.854     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B368/S245","tiling":"square","design_px":3.0,"cell_px":2.0,"chosen":true,"recommended":{"px":2.0},"placed":false,"rungs":[{"size":{"px":1.0},"cells":2073600,"cpu_percent":20.585718,"gpu_percent":53.891422,"p95_ms":40.8055,"fps":29.15758,"on_gpu":true,"fits":false,"over":"processor 21% (over 8.0%: the 10% limit, less 20%), frames 40.8 ms (at 60 fps, 16.7 ms), slow: 45 of 93 generations","crop":"s0-quick-start-rule-b368-s245-1px.png","own":false},{"size":{"px":2.0},"cells":518400,"cpu_percent":6.1612654,"gpu_percent":55.754406,"p95_ms":11.2795,"fps":59.315334,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-2px.png","own":false},{"size":{"px":3.0},"cells":230400,"cpu_percent":1.6431347,"gpu_percent":73.10862,"p95_ms":7.1157,"fps":59.112057,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-3px.png","own":true},{"size":{"px":4.0},"cells":129600,"cpu_percent":1.2019191,"gpu_percent":74.58627,"p95_ms":7.1638,"fps":60.000397,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-4px.png","own":false},{"size":{"px":6.0},"cells":57600,"cpu_percent":0.85862345,"gpu_percent":77.859245,"p95_ms":5.7166,"fps":60.008057,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-6px.png","own":false},{"size":{"px":8.0},"cells":32400,"cpu_percent":1.5558134,"gpu_percent":79.678474,"p95_ms":6.4291,"fps":59.07991,"on_gpu":true,"fits":true,"crop":"s0-quick-start-rule-b368-s245-8px.png","own":false},{"size":{"px":12.0},"cells":14400,"cpu_percent":1.7355715,"gpu_percent":91.09143,"p95_ms":2.2376,"fps":59.982216,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-12px.png","own":false},{"size":{"px":16.0},"cells":8040,"cpu_percent":1.2924423,"gpu_percent":89.6377,"p95_ms":2.1604,"fps":58.23272,"on_gpu":false,"fits":true,"crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}],"gpu_timing":"submission"}}
+15:18:52.855     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042b\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+15:18:55.003 after --pick 2 -> host.json: B3/S23 2.0 px (chosen True, placed False); B36/S23 2.0 px (chosen True, placed False); B368/S245 2.0 px (chosen True, placed False) | showing: Quick Start rule:B3/S23 518400 cells of 2.0 px, tuned True
+15:21:02.972 2.D 5: Jimmie pressed the pane's 'Use the scenes' own sizes': 'Coarser, worked'
+15:21:03.200 after the pane's own sizes -> host.json:  0 px (chosen ) | showing: Quick Start rule:B3/S23 230400 cells of 3.0 px, tuned False
+15:21:04.234 [19-doctor-before-d6] doctor -> exit 0 in 1.02 s
+15:21:04.238     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:21:04.239     
+15:21:04.240     Folders
+15:21:04.240       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:21:04.241       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:21:04.243       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:21:04.244       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:21:04.255       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:21:04.257       data in use: 31.2 MB
+15:21:04.257     
+15:21:04.259     GPU: auto (the setting in gpu.json)
+15:21:04.259       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:21:04.260       the app: auto, from the setting in gpu.json (its own choice: follow)
+15:21:04.261       the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:21:04.262       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:21:04.263           why: the adapter driving the screen (the setting in gpu.json)
+15:21:04.264           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:21:04.265           self-test: passed (380 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:21:04.266           the app and the desktop background simulate on it
+15:21:04.267       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:21:04.268           why: the fastest adapter (the setting in gpu.json)
+15:21:04.269           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:21:04.270           self-test: passed (598 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:21:04.271           runs, searches and scripts simulate on it
+15:21:04.272     
+15:21:04.272     Graphics adapters (* = used for computing)
+15:21:04.273         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:21:04.274       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:21:04.274         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:21:04.275         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:21:04.276         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:21:04.277           Windows' software renderer (WARP), which the GPU simulation never uses
+15:21:04.278         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:21:04.279     
+15:21:04.280     Desktop
+15:21:04.280       background host: running
+15:21:04.281       starts at login: no
+15:21:04.283       JETCARP's screen saver is not installed.
+15:21:04.283     
+15:21:04.284     Environment
+15:21:04.285       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:21:04.286       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:21:04.287       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:21:27.969 gpuwatch start: desktop background 'follow', shared 'auto'
+15:23:22.435 gpuwatch: setting changed: desktop background 'off', shared 'auto' (was desktop background 'follow', shared 'auto')
+15:23:26.669 [20-gpuwatch-1-status] host status -> exit 0 in 0.2 s
+15:23:26.676     running, pid 53616, up 2825.0s, 163 MB, GPU Intel(R) UHD Graphics
+15:23:26.678     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 9978 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:23:26.680     monitors: 0: \\.\DISPLAY1
+15:23:26.681     wallpaper: showing
+15:23:26.682     caption: off
+15:23:26.682     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:23:26.683     last tune: done
+15:23:26.684     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:23:26.685     note: swept 1 scene(s); sizes saved
+15:23:26.686     note: swept 3 scene(s); sizes saved
+15:23:26.688     note: swept 3 scene(s); sizes saved
+15:23:26.688     note: swept 3 scene(s); sizes saved
+15:23:26.689     note: swept 3 scene(s); sizes saved
+15:23:26.689     note: swept 3 scene(s); sizes saved
+15:23:27.565 [20-gpuwatch-1-doctor] doctor -> exit 0 in 0.87 s
+15:23:27.574     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:23:27.575     
+15:23:27.577     Folders
+15:23:27.579       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:23:27.581       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:23:27.583       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:23:27.585       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:23:27.587       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:23:27.588       data in use: 31.2 MB
+15:23:27.589     
+15:23:27.590     GPU: auto (the setting in gpu.json)
+15:23:27.592       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:23:27.594       the app: auto, from the setting in gpu.json (its own choice: follow)
+15:23:27.595       the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:23:27.597       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:23:27.598           why: the adapter driving the screen (the setting in gpu.json)
+15:23:27.601           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:23:27.602           self-test: passed (380 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:23:27.604           the app and the desktop background simulate on it
+15:23:27.606       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:23:27.607           why: the fastest adapter (the setting in gpu.json)
+15:23:27.608           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:23:27.609           self-test: passed (598 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:23:27.610           runs, searches and scripts simulate on it
+15:23:27.613     
+15:23:27.615     Graphics adapters (* = used for computing)
+15:23:27.616         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:23:27.618       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:23:27.620         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:23:27.622         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:23:27.624         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:23:27.626           Windows' software renderer (WARP), which the GPU simulation never uses
+15:23:27.627         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:23:27.629     
+15:23:27.631     Desktop
+15:23:27.632       background host: running
+15:23:27.633       starts at login: no
+15:23:27.636       JETCARP's screen saver is not installed.
+15:23:27.637     
+15:23:27.639     Environment
+15:23:27.641       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:23:27.642       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:23:27.644       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:23:27.664 gpuwatch 1: status says: running, pid 53616, up 2825.0s, 163 MB, GPU Intel(R) UHD Graphics || screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 9978 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper || note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:23:27.680 gpuwatch 1: doctor says: GPU: auto (the setting in gpu.json) ||   the app: auto, from the setting in gpu.json (its own choice: follow) ||   the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:23:28.688 gpuwatch: setting changed: desktop background 'follow', shared 'auto' (was desktop background 'off', shared 'auto')
+15:23:32.874 [20-gpuwatch-2-status] host status -> exit 0 in 0.18 s
+15:23:32.876     running, pid 53616, up 2831.0s, 163 MB, GPU Intel(R) UHD Graphics
+15:23:32.878     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 10343 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:23:32.878     monitors: 0: \\.\DISPLAY1
+15:23:32.879     wallpaper: showing
+15:23:32.880     caption: off
+15:23:32.881     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:23:32.882     last tune: done
+15:23:32.883     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:23:32.884     note: swept 1 scene(s); sizes saved
+15:23:32.885     note: swept 3 scene(s); sizes saved
+15:23:32.886     note: swept 3 scene(s); sizes saved
+15:23:32.886     note: swept 3 scene(s); sizes saved
+15:23:32.887     note: swept 3 scene(s); sizes saved
+15:23:32.888     note: swept 3 scene(s); sizes saved
+15:23:34.087 [20-gpuwatch-2-doctor] doctor -> exit 0 in 1.2 s
+15:23:34.090     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:23:34.090     
+15:23:34.091     Folders
+15:23:34.092       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:23:34.092       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:23:34.093       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:23:34.094       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:23:34.094       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:23:34.095       data in use: 31.2 MB
+15:23:34.096     
+15:23:34.097     GPU: auto (the setting in gpu.json)
+15:23:34.097       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:23:34.097       the app: auto, from the setting in gpu.json (its own choice: follow)
+15:23:34.098       the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:23:34.099       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:23:34.099           why: the adapter driving the screen (the setting in gpu.json)
+15:23:34.100           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:23:34.101           self-test: passed (380 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:23:34.103           the app and the desktop background simulate on it
+15:23:34.104       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:23:34.106           why: the fastest adapter (the setting in gpu.json)
+15:23:34.107           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:23:34.107           self-test: passed (598 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:23:34.108           runs, searches and scripts simulate on it
+15:23:34.108     
+15:23:34.109     Graphics adapters (* = used for computing)
+15:23:34.110         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:23:34.111       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:23:34.111         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:23:34.112         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:23:34.112         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:23:34.113           Windows' software renderer (WARP), which the GPU simulation never uses
+15:23:34.113         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:23:34.115     
+15:23:34.116     Desktop
+15:23:34.116       background host: running
+15:23:34.120       starts at login: no
+15:23:34.120       JETCARP's screen saver is not installed.
+15:23:34.121     
+15:23:34.121     Environment
+15:23:34.123       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:23:34.123       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:23:34.124       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:23:34.125 gpuwatch 2: status says: running, pid 53616, up 2831.0s, 163 MB, GPU Intel(R) UHD Graphics || screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 10343 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper || note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:23:34.126 gpuwatch 2: doctor says: GPU: auto (the setting in gpu.json) ||   the app: auto, from the setting in gpu.json (its own choice: follow) ||   the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:23:39.196 gpuwatch: setting changed: desktop background 'off', shared 'auto' (was desktop background 'follow', shared 'auto')
+15:23:43.381 [20-gpuwatch-3-status] host status -> exit 0 in 0.18 s
+15:23:43.387     running, pid 53616, up 2841.0s, 164 MB, GPU Intel(R) UHD Graphics
+15:23:43.388     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 10958 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:23:43.392     monitors: 0: \\.\DISPLAY1
+15:23:43.394     wallpaper: showing
+15:23:43.396     caption: off
+15:23:43.398     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:23:43.400     last tune: done
+15:23:43.402     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:23:43.404     note: swept 1 scene(s); sizes saved
+15:23:43.405     note: swept 3 scene(s); sizes saved
+15:23:43.406     note: swept 3 scene(s); sizes saved
+15:23:43.409     note: swept 3 scene(s); sizes saved
+15:23:43.410     note: swept 3 scene(s); sizes saved
+15:23:43.412     note: swept 3 scene(s); sizes saved
+15:23:44.406 [20-gpuwatch-3-doctor] doctor -> exit 0 in 0.99 s
+15:23:44.413     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:23:44.416     
+15:23:44.417     Folders
+15:23:44.419       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:23:44.421       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:23:44.422       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:23:44.424       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:23:44.426       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:23:44.429       data in use: 31.2 MB
+15:23:44.431     
+15:23:44.433     GPU: auto (the setting in gpu.json)
+15:23:44.434       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:23:44.436       the app: auto, from the setting in gpu.json (its own choice: follow)
+15:23:44.437       the desktop background: off, from the desktop background's own setting (its own choice: off)
+15:23:44.439       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:23:44.441           why: the adapter driving the screen (the setting in gpu.json)
+15:23:44.443           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:23:44.446           self-test: passed (380 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:23:44.448           the app and the desktop background simulate on it
+15:23:44.449       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:23:44.450           why: the fastest adapter (the setting in gpu.json)
+15:23:44.451           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:23:44.452           self-test: passed (598 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:23:44.452           runs, searches and scripts simulate on it
+15:23:44.454     
+15:23:44.455     Graphics adapters (* = used for computing)
+15:23:44.457         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:23:44.459       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:23:44.461         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:23:44.463         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:23:44.464         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:23:44.468           Windows' software renderer (WARP), which the GPU simulation never uses
+15:23:44.470         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:23:44.471     
+15:23:44.473     Desktop
+15:23:44.474       background host: running
+15:23:44.478       starts at login: no
+15:23:44.479       JETCARP's screen saver is not installed.
+15:23:44.480     
+15:23:44.482     Environment
+15:23:44.484       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:23:44.485       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:23:44.487       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:23:44.489 gpuwatch 3: status says: running, pid 53616, up 2841.0s, 164 MB, GPU Intel(R) UHD Graphics || screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 10958 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper || note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:23:44.494 gpuwatch 3: doctor says: GPU: auto (the setting in gpu.json) ||   the app: auto, from the setting in gpu.json (its own choice: follow) ||   the desktop background: off, from the desktop background's own setting (its own choice: off)
+15:24:02.744 gpuwatch: setting changed: desktop background 'on', shared 'auto' (was desktop background 'off', shared 'auto')
+15:24:06.946 [20-gpuwatch-4-status] host status -> exit 0 in 0.19 s
+15:24:06.952     running, pid 53616, up 2865.0s, 164 MB, GPU Intel(R) UHD Graphics
+15:24:06.954     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 12349 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:24:06.954     monitors: 0: \\.\DISPLAY1
+15:24:06.956     wallpaper: showing
+15:24:06.957     caption: off
+15:24:06.959     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:24:06.960     last tune: done
+15:24:06.962     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:24:06.963     note: swept 1 scene(s); sizes saved
+15:24:06.964     note: swept 3 scene(s); sizes saved
+15:24:06.965     note: swept 3 scene(s); sizes saved
+15:24:06.966     note: swept 3 scene(s); sizes saved
+15:24:06.968     note: swept 3 scene(s); sizes saved
+15:24:06.969     note: swept 3 scene(s); sizes saved
+15:24:07.870 [20-gpuwatch-4-doctor] doctor -> exit 0 in 0.9 s
+15:24:07.874     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:24:07.878     
+15:24:07.880     Folders
+15:24:07.880       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:24:07.881       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:24:07.884       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:24:07.887       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:24:07.889       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:24:07.892       data in use: 31.2 MB
+15:24:07.894     
+15:24:07.894     GPU: auto (the setting in gpu.json)
+15:24:07.896       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:24:07.898       the app: auto, from the setting in gpu.json (its own choice: follow)
+15:24:07.898       the desktop background: on, from the desktop background's own setting (its own choice: on)
+15:24:07.899       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:24:07.900           why: the adapter driving the screen (the setting in gpu.json)
+15:24:07.900           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:24:07.902           self-test: passed (380 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:24:07.903           the app and the desktop background simulate on it
+15:24:07.905       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:24:07.906           why: the fastest adapter (the setting in gpu.json)
+15:24:07.906           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:24:07.907           self-test: passed (598 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:24:07.908           runs, searches and scripts simulate on it
+15:24:07.908     
+15:24:07.909     Graphics adapters (* = used for computing)
+15:24:07.910         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:24:07.912       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:24:07.913         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:24:07.915         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:24:07.916         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:24:07.916           Windows' software renderer (WARP), which the GPU simulation never uses
+15:24:07.918         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:24:07.919     
+15:24:07.923     Desktop
+15:24:07.924       background host: running
+15:24:07.925       starts at login: no
+15:24:07.925       JETCARP's screen saver is not installed.
+15:24:07.926     
+15:24:07.927     Environment
+15:24:07.928       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:24:07.930       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:24:07.931       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:24:07.934 gpuwatch 4: status says: running, pid 53616, up 2865.0s, 164 MB, GPU Intel(R) UHD Graphics || screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 12349 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper || note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:24:07.936 gpuwatch 4: doctor says: GPU: auto (the setting in gpu.json) ||   the app: auto, from the setting in gpu.json (its own choice: follow) ||   the desktop background: on, from the desktop background's own setting (its own choice: on)
+15:24:51.536 gpuwatch: setting changed: desktop background 'follow', shared 'auto' (was desktop background 'on', shared 'auto')
+15:24:55.760 [20-gpuwatch-5-status] host status -> exit 0 in 0.21 s
+15:24:55.763     running, pid 53616, up 2914.0s, 164 MB, GPU Intel(R) UHD Graphics
+15:24:55.763     screen 0: Until it settles Â· Quick Start rule:B36/S23 (2 of 3) Â· generation 540 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:24:55.764     monitors: 0: \\.\DISPLAY1
+15:24:55.765     wallpaper: showing
+15:24:55.766     caption: off
+15:24:55.766     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:24:55.767     last tune: done
+15:24:55.768     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:24:55.768     note: swept 1 scene(s); sizes saved
+15:24:55.769     note: swept 3 scene(s); sizes saved
+15:24:55.770     note: swept 3 scene(s); sizes saved
+15:24:55.771     note: swept 3 scene(s); sizes saved
+15:24:55.771     note: swept 3 scene(s); sizes saved
+15:24:55.772     note: swept 3 scene(s); sizes saved
+15:24:56.736 [20-gpuwatch-5-doctor] doctor -> exit 0 in 0.96 s
+15:24:56.739     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:24:56.740     
+15:24:56.741     Folders
+15:24:56.741       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:24:56.742       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:24:56.742       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:24:56.743       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:24:56.744       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:24:56.744       data in use: 31.2 MB
+15:24:56.745     
+15:24:56.746     GPU: auto (the setting in gpu.json)
+15:24:56.746       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:24:56.747       the app: auto, from the setting in gpu.json (its own choice: follow)
+15:24:56.748       the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:24:56.748       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:24:56.750           why: the adapter driving the screen (the setting in gpu.json)
+15:24:56.751           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:24:56.752           self-test: passed (380 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:24:56.753           the app and the desktop background simulate on it
+15:24:56.753       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:24:56.754           why: the fastest adapter (the setting in gpu.json)
+15:24:56.755           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:24:56.755           self-test: passed (598 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:24:56.756           runs, searches and scripts simulate on it
+15:24:56.757     
+15:24:56.758     Graphics adapters (* = used for computing)
+15:24:56.758         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:24:56.759       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:24:56.759         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:24:56.760         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:24:56.760         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:24:56.764           Windows' software renderer (WARP), which the GPU simulation never uses
+15:24:56.765         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:24:56.766     
+15:24:56.766     Desktop
+15:24:56.767       background host: running
+15:24:56.768       starts at login: no
+15:24:56.769       JETCARP's screen saver is not installed.
+15:24:56.770     
+15:24:56.771     Environment
+15:24:56.771       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:24:56.772       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:24:56.773       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:24:56.774 gpuwatch 5: status says: running, pid 53616, up 2914.0s, 164 MB, GPU Intel(R) UHD Graphics || screen 0: Until it settles Â· Quick Start rule:B36/S23 (2 of 3) Â· generation 540 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper || note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:24:56.775 gpuwatch 5: doctor says: GPU: auto (the setting in gpu.json) ||   the app: auto, from the setting in gpu.json (its own choice: follow) ||   the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:25:40.190 [21-status-json-d6] host status --json -> exit 0 in 0.16 s
+15:25:40.197     {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":"raised","extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)","swept 1 scene(s); sizes saved","swept 3 scene(s); sizes saved","swept 3 scene(s); sizes saved","swept 3 scene(s); sizes saved","swept 3 scene(s); sizes saved","swept 3 scene(s); sizes saved"],"login":false,"max_fps":60.0,"memory_mb":164,"monitor_hz":[144.0],"monitors":["\\\\.\\DISPLAY1"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":53616,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles","JACA war on the hat tiling","My rotation"],"run_at_login":false,"running":true,"screens":[{"frames":106118,"hidden":false,"monitor":null,"place":"wallpaper","stage":{"building":false,"canvas":[1920.0,1080.0],"caption":["HighLife Â· B36/S23","Square grid Â· 640 Ã— 360 Â· wraps","Until it settles Â· 2 of 3 Â· generation 3,162"],"cell_px":3.0,"cells":230400,"count":3,"frame_rate":60.0,"generation":3162,"grid":[640,360],"label":"Quick Start rule:B36/S23","number":2,"paused":false,"rotation":"Until it settles","scale":1.0,"seconds_left":null,"speed":60.0,"tuned":false}}],"tune":{"auto":true,"cpu_percent":10.0,"gpu_percent":25.0},"tuning":{"auto":false,"here":false,"last":{"auto":false,"outcome":"done","scenes":3},"running":false},"uptime_s":2958.0,"wallpaper":true}
+15:26:13.750 gpuwatch: setting changed: desktop background 'follow', shared 'off' (was desktop background 'follow', shared 'auto')
+15:26:17.928 [20-gpuwatch-6-status] host status -> exit 0 in 0.16 s
+15:26:17.930     running, pid 53616, up 2996.0s, 165 MB, GPU Intel(R) UHD Graphics
+15:26:17.935     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 193 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:26:17.938     monitors: 0: \\.\DISPLAY1
+15:26:17.940     wallpaper: showing
+15:26:17.942     caption: off
+15:26:17.944     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:26:17.946     last tune: done
+15:26:17.947     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:26:17.951     note: swept 1 scene(s); sizes saved
+15:26:17.953     note: swept 3 scene(s); sizes saved
+15:26:17.955     note: swept 3 scene(s); sizes saved
+15:26:17.956     note: swept 3 scene(s); sizes saved
+15:26:17.957     note: swept 3 scene(s); sizes saved
+15:26:17.960     note: swept 3 scene(s); sizes saved
+15:26:18.936 [20-gpuwatch-6-doctor] doctor -> exit 0 in 0.97 s
+15:26:18.940     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:26:18.943     
+15:26:18.948     Folders
+15:26:18.949       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:26:18.950       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:26:18.951       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:26:18.952       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:26:18.954       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:26:18.955       data in use: 31.2 MB
+15:26:18.958     
+15:26:18.960     GPU: off (the setting in gpu.json)
+15:26:18.963       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:26:18.964       the app: off, from the setting in gpu.json (its own choice: follow)
+15:26:18.965       the desktop background: off, from the setting in gpu.json (its own choice: follow)
+15:26:18.967       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:26:18.968           why: the adapter driving the screen (the setting in gpu.json)
+15:26:18.970           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:26:18.971           not used, and not tested: the GPU simulation is off
+15:26:18.974       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:26:18.975           why: the fastest adapter (the setting in gpu.json)
+15:26:18.977           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:26:18.978           not used, and not tested: the GPU simulation is off
+15:26:18.982     
+15:26:18.984     Graphics adapters (* = used for computing)
+15:26:18.985         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:26:18.986       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:26:18.988         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:26:18.991         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:26:18.992         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:26:18.997           Windows' software renderer (WARP), which the GPU simulation never uses
+15:26:19.000         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:26:19.001     
+15:26:19.003     Desktop
+15:26:19.005       background host: running
+15:26:19.006       starts at login: no
+15:26:19.007       JETCARP's screen saver is not installed.
+15:26:19.009     
+15:26:19.010     Environment
+15:26:19.011       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:26:19.014       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:26:19.016       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:26:19.018 gpuwatch 6: status says: running, pid 53616, up 2996.0s, 165 MB, GPU Intel(R) UHD Graphics || screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 193 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper || note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:26:19.019 gpuwatch 6: doctor says: GPU: off (the setting in gpu.json) ||   the app: off, from the setting in gpu.json (its own choice: follow) ||   the desktop background: off, from the setting in gpu.json (its own choice: follow)
+15:26:54.484 gpuwatch: setting changed: desktop background 'follow', shared 'auto' (was desktop background 'follow', shared 'off')
+15:26:58.688 [20-gpuwatch-7-status] host status -> exit 0 in 0.19 s
+15:26:58.690     running, pid 53616, up 3037.0s, 158 MB, GPU Intel(R) UHD Graphics
+15:26:58.691     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 2595 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:26:58.691     monitors: 0: \\.\DISPLAY1
+15:26:58.692     wallpaper: showing
+15:26:58.693     caption: off
+15:26:58.694     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:26:58.695     last tune: done
+15:26:58.696     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:26:58.697     note: swept 1 scene(s); sizes saved
+15:26:58.697     note: swept 3 scene(s); sizes saved
+15:26:58.698     note: swept 3 scene(s); sizes saved
+15:26:58.699     note: swept 3 scene(s); sizes saved
+15:26:58.699     note: swept 3 scene(s); sizes saved
+15:26:58.700     note: swept 3 scene(s); sizes saved
+15:26:59.591 [20-gpuwatch-7-doctor] doctor -> exit 0 in 0.89 s
+15:26:59.593     JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+15:26:59.595     
+15:26:59.596     Folders
+15:26:59.596       settings: C:\Users\jimmi\jetcarp-rc-042b\config
+15:26:59.597       data:     C:\Users\jimmi\jetcarp-rc-042b\data
+15:26:59.597       output:   C:\Users\jimmi\jetcarp-rc-042b\out
+15:26:59.598       bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+15:26:59.599       library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (1.5 MB)
+15:26:59.600       data in use: 31.2 MB
+15:26:59.600     
+15:26:59.601     GPU: auto (the setting in gpu.json)
+15:26:59.602       setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (saved)
+15:26:59.602       the app: auto, from the setting in gpu.json (its own choice: follow)
+15:26:59.603       the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:26:59.604       display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+15:26:59.604           why: the adapter driving the screen (the setting in gpu.json)
+15:26:59.605           limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+15:26:59.606           self-test: passed (380 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:26:59.606           the app and the desktop background simulate on it
+15:26:59.608       compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+15:26:59.609           why: the fastest adapter (the setting in gpu.json)
+15:26:59.609           limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+15:26:59.610           self-test: passed (598 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+15:26:59.611           runs, searches and scripts simulate on it
+15:26:59.612     
+15:26:59.613     Graphics adapters (* = used for computing)
+15:26:59.614         Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+15:26:59.614       * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+15:26:59.615         Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+15:26:59.616         NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+15:26:59.616         Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+15:26:59.617           Windows' software renderer (WARP), which the GPU simulation never uses
+15:26:59.617         Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+15:26:59.618     
+15:26:59.619     Desktop
+15:26:59.619       background host: running
+15:26:59.620       starts at login: no
+15:26:59.621       JETCARP's screen saver is not installed.
+15:26:59.621     
+15:26:59.623     Environment
+15:26:59.623       JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+15:26:59.624       JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+15:26:59.625       JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out
+15:26:59.626 gpuwatch 7: status says: running, pid 53616, up 3037.0s, 158 MB, GPU Intel(R) UHD Graphics || screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 2595 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper || note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:26:59.627 gpuwatch 7: doctor says: GPU: auto (the setting in gpu.json) ||   the app: auto, from the setting in gpu.json (its own choice: follow) ||   the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+15:27:32.932 2.D 6 done: overrides behave (Off: host CPU 13.5-17.8%; On/Follow 2-4%; shared Off with Follow: 14.5-17.1%); doctor right each time; host status note stays 'GPU simulation auto (the setting in gpu.json)'
+15:27:33.032 gpuwatch end
+15:27:52.143 --- 2.D 7: pauses. (a) busy: a 2-minute CPU hunt on every thread (host busy is 80)
+15:27:52.354 [22-busy-hunt] search hunt --cpu --minutes 2 --soups 100000000 --label busy-pause --detach -> exit 0 in 0.19 s
+15:27:52.358     hunt job 11 started (detached) in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+15:27:52.360     hunt 11: 0/100,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+15:27:54.018 15:27:54 machine cpu 100% | host paused False  | gen 5813
+15:27:59.198 15:27:59 machine cpu 100% | host paused False  | gen 5922
+15:28:03.830 15:28:03 machine cpu 98% | host paused False  | gen 6007
+15:28:08.708 15:28:08 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:28:13.624 15:28:13 machine cpu 93% | host paused False the processor is busy | gen 6062
+15:28:18.390 15:28:18 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:28:23.488 15:28:23 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:28:28.364 15:28:28 machine cpu 88% | host paused False the processor is busy | gen 6062
+15:28:33.166 15:28:33 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:28:38.060 15:28:38 machine cpu 88% | host paused False the processor is busy | gen 6062
+15:28:42.759 15:28:42 machine cpu 94% | host paused False the processor is busy | gen 6062
+15:28:47.779 15:28:47 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:28:52.960 15:28:52 machine cpu 96% | host paused False the processor is busy | gen 6062
+15:28:57.953 15:28:57 machine cpu 95% | host paused False the processor is busy | gen 6062
+15:29:02.356 15:29:02 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:29:07.250 15:29:07 machine cpu 97% | host paused False the processor is busy | gen 6062
+15:29:12.256 15:29:12 machine cpu 94% | host paused False the processor is busy | gen 6062
+15:29:17.054 15:29:17 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:29:21.894 15:29:21 machine cpu 89% | host paused False the processor is busy | gen 6062
+15:29:26.806 15:29:26 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:29:31.714 15:29:31 machine cpu 96% | host paused False the processor is busy | gen 6062
+15:29:36.619 15:29:36 machine cpu 96% | host paused False the processor is busy | gen 6062
+15:29:41.801 15:29:41 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:29:46.392 15:29:46 machine cpu 93% | host paused False the processor is busy | gen 6062
+15:29:51.242 15:29:51 machine cpu 100% | host paused False the processor is busy | gen 6062
+15:29:55.487 15:29:55 machine cpu 15% | host paused False the processor is busy | gen 6062
+15:29:59.673 15:29:59 machine cpu 18% | host paused False the processor is busy | gen 6062
+15:30:03.891 15:30:03 machine cpu 13% | host paused False the processor is busy | gen 6062
+15:30:08.041 15:30:08 machine cpu 14% | host paused False  | gen 6214
+15:30:12.202 15:30:12 machine cpu 19% | host paused False  | gen 6458
+15:30:16.361 15:30:16 machine cpu 16% | host paused False  | gen 6702
+15:30:20.517 15:30:20 machine cpu 23% | host paused False  | gen 6946
+15:30:24.670 15:30:24 machine cpu 22% | host paused False  | gen 7190
+15:30:28.817 15:30:28 machine cpu 13% | host paused False  | gen 7435
+15:30:52.657 2.D 7 (a) busy: pass. paused_why 'the processor is busy' from ~15:28:10 (hunt at 93-100%), generation frozen at 6062; resumed ~15:30:05 after the hunt ended (15:29:59). JSON 'paused' stays false meanwhile
+15:30:58.950 [23-battery-on] host battery on -> exit 0 in 0.2 s
+15:30:58.954     running, pid 53616, up 3277.0s, 158 MB, GPU Intel(R) UHD Graphics
+15:30:58.955     screen 0: Until it settles Â· Quick Start rule:B3/S23 (1 of 3) Â· generation 9206 Â· 230400 cells of 3 px Â· 60 fps, 60 generations a second Â· wallpaper
+15:30:58.956     monitors: 0: \\.\DISPLAY1
+15:30:58.956     wallpaper: showing
+15:30:58.957     caption: off
+15:30:58.958     pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+15:30:58.959     last tune: done
+15:30:58.960     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+15:30:58.961     note: swept 1 scene(s); sizes saved
+15:30:58.962     note: swept 3 scene(s); sizes saved
+15:30:58.963     note: swept 3 scene(s); sizes saved
+15:30:58.964     note: swept 3 scene(s); sizes saved
+15:30:58.965     note: swept 3 scene(s); sizes saved
+15:30:58.966     note: swept 3 scene(s); sizes saved
+15:37:56.457 2.D 7 (b) full-screen video (Chrome): paused_why 'held by the desktop: windows cover it' 15:34:27-15:35:46, generation still at 1279, then moving. (c) battery: Offline 15:36:32 -> 'on battery' 15:36:34, still at 3876; Online 15:37:04 -> moving. Jimmie: both paused and resumed
+15:37:56.659 [24-jobs-busy] jobs list --label busy-pause -> exit 0 in 0.18 s
+15:37:56.664        11  hunt     paused   2026-11-15T20:27:52Z  hunt 11: 144,131/100,000,000 soups, 1199 soups/s, 3,101,063 objects (ships 274,779, osc 896,947, still 1,929,337), 87 distinct, 13 new | newest: still life 13c #66e25d (B3/S23)
+15:37:56.665     1 job(s); 0 running
+15:37:56.671 --- end of A-4: put it back
+15:37:56.953 [25-host-stop] host stop -> exit 0 in 0.28 s
+15:37:56.956     stopped
+15:38:00.072 [26-status-after-stop] host status -> exit 1 in 0.11 s
+15:38:00.074     Error: the JETCARP background host is not running
+15:38:00.171 WallPaper now 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0; BackgroundType 0; history0 'c:\windows\web\wallpaper\themea\img20.jpg'; TranscodedWallpaper 249170 bytes 11/12/2026 07:51:50, same as before: True; SCRNSAVE.EXE ''
+15:38:22.166 app closed (WM_CLOSE): True; monitors stopped

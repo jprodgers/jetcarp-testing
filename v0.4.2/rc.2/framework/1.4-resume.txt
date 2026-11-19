@@ -1,0 +1,6 @@
+explore search job 2 resumed (detached) in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data/library.sqlite
+explore 2: 513,902 runs (142/s), 37,406 elites in 17,387 niches (2,085 of them confirmed), 256 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore search 2 is paused
+  explore 2: 2,231,745 runs (191/s), 66,824 elites in 29,158 niches (5,261 of them confirmed), 787 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+wait exit 3

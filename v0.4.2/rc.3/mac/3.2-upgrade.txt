@@ -1,0 +1,4 @@
+== 13:32:18 the upgrade: rc.3's programs in place of Homebrew's 0.4.1 (in /opt/homebrew/Cellar/jetcarp/0.4.1)
+before: jetcarp 0.4.1; bf1bcb6cd795699f bin/jetcarp; 1fa54a09b6b7cba9 libjetcarp_saver.dylib; packs: jetcarp-starter 
+after: jetcarp 0.4.2-rc.3; 713269f5f5061e2a bin/jetcarp (= the test bin's 713269f5f5061e2a); dc0f7f3c79034090 libjetcarp_saver.dylib; which jetcarp: /opt/homebrew/bin/jetcarp
+the running host (0.4.1, still the old file): running, pid 21259, up 37.0s, 114 MB, GPU Apple M2 Max

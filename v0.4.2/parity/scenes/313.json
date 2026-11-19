@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile on Penrose rhombs (P3)",
+  "description": "Thick and thin rhombs, edge to edge. Thick outnumber thin by φ to 1. Grains dropped on the centre topple outward.",
+  "tiling": {
+    "family": "penrose-rhomb",
+    "size": {
+      "level": 4
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 4,
+      "palette": "Prism",
+      "seed": {
+        "pile": {
+          "grains": 30000
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "470065469174bb1a",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

@@ -1,0 +1,7 @@
+hunt 6: 39,819/2,000,000 soups, 2365 soups/s, 859,302 objects (ships 76,136, osc 249,332, still 533,834), 63 distinct, 26 new | newest: still life 16c #5f6193 (B3/S23)
+hunt 6: 55,757/2,000,000 soups, 2475 soups/s, 1,200,378 objects (ships 106,248, osc 348,148, still 745,982), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+hunt 6: 73,174/2,000,000 soups, 2585 soups/s, 1,576,167 objects (ships 139,458, osc 456,303, still 980,406), 71 distinct, 34 new | newest: still life 14c #166c05 (B3/S23)
+hunt 6: 90,328/2,000,000 soups, 2588 soups/s, 1,946,148 objects (ships 172,361, osc 563,058, still 1,210,729), 75 distinct, 38 new | newest: still life 12c #a81f1a (B3/S23)
+hunt 6: 105,463/2,000,000 soups, 2596 soups/s, 2,269,980 objects (ships 201,098, osc 656,918, still 1,411,964), 81 distinct, 44 new | newest: p2 oscillator 6c #6b54ca (B3/S23)
+hunt 6 is still running after 40 s
+  hunt 6: 113,800/2,000,000 soups, 2580 soups/s, 2,448,492 objects (ships 216,987, osc 708,275, still 1,523,230), 82 distinct, 45 new | newest: still life 16c #60d43f (B3/S23)

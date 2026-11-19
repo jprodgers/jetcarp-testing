@@ -1,0 +1,13 @@
+2026-11-16 19:45:37 === cargo test --release -p jetcarp --test host -- --test-threads=1, 10 runs, src 29fea86 host start straight after host stop: stop waits for the host's lock too, and a new host waits up to 2 s for it (#122); jetcarp 0.4.2-rc.3
+2026-11-16 19:46:23 run 1: exit 0 in 45 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 44.73s
+2026-11-16 19:47:07 run 2: exit 0 in 45 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 44.23s
+2026-11-16 19:47:50 run 3: exit 0 in 43 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 42.19s
+2026-11-16 19:48:32 run 4: exit 0 in 42 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 41.39s
+2026-11-16 19:49:15 run 5: exit 0 in 43 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 42.30s
+2026-11-16 19:50:00 run 6: exit 0 in 45 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 44.25s
+2026-11-16 19:50:43 run 7: exit 0 in 44 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 43.25s
+2026-11-16 19:51:25 run 8: exit 0 in 41 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 40.80s
+2026-11-16 19:52:06 run 9: exit 0 in 41 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 40.84s
+2026-11-16 19:52:49 run 10: exit 0 in 43 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 42.59s
+2026-11-16 19:52:49 RESULT host.rs serial x10 on 29fea86 : 10 of 10 passed
+2026-11-16 19:52:49 jetcarp processes at the end: 

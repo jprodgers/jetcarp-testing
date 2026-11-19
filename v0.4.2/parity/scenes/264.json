@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA pink plasma vs cyan (squares)",
+  "description": "+B2/S12467 against -B256/S0245678: still pink plasma blobs fight a cyan soup. Found by a JACA rule search.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 190,
+        "h": 126
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 23,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B2/S12467 -B256/S0245678",
+      "rule": "JACA +B2/S12467 -B256/S0245678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Neon",
+      "seed": {
+        "signed": {
+          "density": 0.1,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Synthwave"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "76d6d03a89ba9ae6",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

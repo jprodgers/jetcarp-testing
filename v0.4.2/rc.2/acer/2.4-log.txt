@@ -1,0 +1,4 @@
+﻿
+08:53:47 start: search explore --gpu --families jaca --parents-from 2 --reviewed keep,maybe --minutes 6 --label smart-jaca
+09:00:10 explore exit 0
+09:00:11 done

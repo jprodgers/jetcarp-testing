@@ -1,0 +1,164 @@
+PASS: rc.4 reads rc.3's test settings and data: --version 0.4.2-rc.4; doctor clean (GPU self-test passed); `library list` shows all 1454 records; rc.3's two jobs listed; `host status` says not running; `host start --headless` refused (exit 1) naming the photosensitive seizure warning (#96), and no host process started.
+(rc.3's originals were copied, not used. Note: before this check, a read-only Python sqlite3 look at rc.3's original data/library.sqlite created an empty library.sqlite-wal and a library.sqlite-shm beside it; both were removed afterwards, library.sqlite itself was never changed.)
+
+R4-0 upgrade from rc.3, Framework, 2026-11-16 10:05:42 PM EST
+home $H = homes/upgrade; config and data copied from rc.3's work folder ($W3 = $W4/../0.4.2-rc3)
+
+$ ls -a $H/config $H/data
+$H/config:
+.
+..
+gpu-checks.json
+pack
+
+$H/data:
+.
+..
+library.sqlite
+library.sqlite-jobs
+library.sqlite-shm
+library.sqlite-wal
+searches
+[exit 0, 0.00 s]
+
+$ test -e $H/config/photosensitivity.json && echo present || echo 'no photosensitivity.json (rc.3 never asked)'
+no photosensitivity.json (rc.3 never asked)
+[exit 0, 0.00 s]
+
+$ $J --version
+jetcarp 0.4.2-rc.4
+[exit 0, 0.00 s]
+
+$ $J paths
+settings: $H/config
+data:     $H/data
+output:   $H/out
+bundled:  $W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs
+runtime:  $H/run
+[exit 0, 0.00 s]
+
+$ $J doctor
+JETCARP 0.4.2-rc.4 on linux x86_64 (32 threads)
+
+Folders
+  settings: $H/config
+  data:     $H/data
+  output:   $H/out
+  runtime:  $H/run
+  bundled:  $W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs (1.5 MB)
+  library:  $H/data/library.sqlite (3.8 MB)
+  data in use: 597.4 MB
+
+GPU: auto (automatic)
+  setting: $H/config/gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (184 ms): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the fastest adapter (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (184 ms): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+
+Graphics adapters (* = used for computing)
+  * AMD Radeon 8060S Graphics (RADV STRIX_HALO) (Vulkan, IntegratedGpu, radv Mesa 26.2.5 (git-ddaf85e353))
+    llvmpipe (LLVM 21.1.8, 256 bits) (Vulkan, Cpu, llvmpipe Mesa 26.2.5 (git-ddaf85e353) (LLVM 21.1.8))
+      software adapter: the GPU simulation uses it only with JETCARP_GPU=software
+    AMD Radeon 8060S Graphics (radeonsi, strix_halo, ACO, DRM 3.64, 7.3.3-300.fc45.x86_64) (Gl, Other, 4.6 (Core Profile) Mesa 26.2.5 (git-ddaf85e353))
+      neither discrete nor integrated (the system says other): the GPU simulation uses it only when JETCARP_GPU names it
+
+Desktop
+  background host: not running
+  starts at login: no
+  GNOME Shell was not found in this session.
+
+Environment
+  JETCARP_CONFIG_DIR=$H/config
+  JETCARP_DATA_DIR=$H/data
+  JETCARP_OUT=$H/out
+  JETCARP_RUNTIME_DIR=$H/run
+[exit 0, 0.27 s]
+
+$ $J library list | head -30
+catalog: $H/data/library.sqlite (1454 shown of 1454 matching)
+aab843d7ff96817d170d6725fb23e37c  c/6 diagonal spaceship 25c #aab843 B36/S23      Square                     p48    25c  seen 2     score  98.0  new  c/6 diagonal
+1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 2     score  77.1  new  c/2 orthogonal
+5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 48304 score  74.5  new  c/4 diagonal
+77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23       Square                     p4     11c  seen 24    score  72.1  new  c/2 orthogonal
+4c2049301f8a0a38eea26b58ee2c0c53  c orthogonal spaceship 7c #4c2049  B2/S34       Square                     p4      7c  seen 45    score  71.2  new  c orthogonal
+6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23       Square                     p4      9c  seen 86    score  71.1  new  c/2 orthogonal
+a8f11bfaf062e47e360f6c8c34c24415  pentadecathlon                     B3/S23       Square                     p15    22c  seen 1     score  64.0  new
+aca19ca34a34f5ec588c3f2019bb641d  c orthogonal spaceship 4c #aca19c  B2/S34       Square                     p1      4c  seen 368   score  62.1  new  c orthogonal
+12334684ad3495652c4d2c2786cf41e1  c orthogonal spaceship 4c #123346  B2/S34       Square                     p1      4c  seen 477   score  62.0  new  c orthogonal
+484e9fe106c96e1fef5e85032d347cfe  c orthogonal spaceship 4c #484e9f  B2/S34       Square                     p1      4c  seen 1704  score  61.8  new  c orthogonal
+cd820aed3bc0d3954d9497e7103fc964  p48 oscillator 10c #cd820a         B2/S34       Hexagon                    p48    10c  seen 41    score  58.6  new
+b3e114483adedf075ce6c02c52bc4caf  p5 oscillator 23c #b3e114          B3/S23       Hexagon                    p5     23c  seen 1     score  51.5  new
+d0f6b0fd77fce56ad51405362a18eb41  p5 oscillator 22c #d0f6b0          B36/S23      Hexagon                    p5     22c  seen 1     score  51.3  new
+1d85c4c8de7a93ba3b6236f3032454fc  p5 oscillator 21c #1d85c4          B3/S23       Hexagon                    p5     21c  seen 1     score  51.2  new
+791856741aac3d6c12ce867c49b8ec73  p5 oscillator 21c #791856          B3/S23       Hexagon                    p5     21c  seen 1     score  51.2  new
+358288ba208c326d26e0b0bd49aa6395  p10 oscillator 33c #358288         B2/S34       Hexagon                    p10    33c  seen 5     score  50.2  new
+4e584b3dc33603dc7dac4bfc36822a68  p5 oscillator 12c #4e584b          B2/S34       Hexagon                    p5     12c  seen 1     score  50.1  new
+2f414911717e1eb87fe2b74f22ec9fb8  p4 oscillator 25c #2f4149          B3/S23       Hexagon                    p4     25c  seen 1     score  49.1  new
+373dbea167cb88444ed491463deec431  p4 oscillator 20c #373dbe          B3/S23       Hexagon                    p4     20c  seen 1     score  48.5  new
+147ffc1047e33ffc7da1fb1f96eb58f9  p12 oscillator 9c #147ffc          B2/S34       Hexagon                    p12     9c  seen 9     score  48.4  new
+561baae6d66d152f3e3f0ea04aa4f257  p4 oscillator 17c #561baa          B3/S23       Hexagon                    p4     17c  seen 1     score  48.1  new
+7a1776a742299243d49d4a2b22574fb8  p4 oscillator 17c #7a1776          B36/S23      Hexagon                    p4     17c  seen 1     score  48.1  new
+445d9da0f56fa9a0c4fc09d5d09d9de3  p4 oscillator 16c #445d9d          B36/S23      Hexagon                    p4     16c  seen 1     score  48.0  new
+68d9881b653d002e209dda490ade3895  p4 oscillator 15c #68d988          B3/S23       Hexagon                    p4     15c  seen 1     score  47.9  new
+03541123ade616e9ec80742a59f160da  p4 oscillator 10c #035411          B2/S34       Hexagon                    p4     10c  seen 1     score  47.3  new
+a00aa266578103739fb11f52742f14f1  p4 oscillator 8c #a00aa2           B2/S34       Hexagon                    p4      8c  seen 1     score  47.0  new
+53a141902a46a975c6a1028d2965fefe  p3 oscillator 34c #53a141          B3/S23       Hexagon                    p3     34c  seen 1     score  46.9  new
+3d3c4b66a9cc56db0912173ee4d4b48f  p3 oscillator 31c #3d3c4b          B3/S23       Hexagon                    p3     31c  seen 1     score  46.6  new
+5a4d1ac184a20b30413018a4bd0473e8  p3 oscillator 29c #5a4d1a          B3/S23       Hexagon                    p3     29c  seen 1     score  46.3  new
+[exit 0, 0.12 s]
+
+$ $J library list --json | python3 -c 'import json,sys; d=json.load(sys.stdin); d=d if isinstance(d,list) else d.get("patterns", d.get("records", d)); print("records listed:", len(d))'
+records listed: 1454
+[exit 0, 0.07 s]
+
+$ $J jobs list
+    2  explore  paused   2026-11-16T00:06:31Z  explore 2: 2,111,460 runs (178/s), 66,570 elites in 29,146 niches (4,943 of them confirmed), 776 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    1  hunt     done     2026-11-16T00:06:26Z  hunt 1: 20,000/20,000 soups in each of 6 groups, 26914 soups/s, 760,892 objects (ships 51,012, osc 236,468, still 473,412), 1,783 distinct, 1,783 new | newest: still life 19c #916b39 (B3/S23)
+2 job(s); 0 running
+[exit 0, 0.03 s]
+
+$ $J host status
+Error: the JETCARP background host is not running
+[exit 1, 0.00 s]
+
+$ $J host status --json
+Error: the JETCARP background host is not running
+[exit 1, 0.00 s]
+
+$ $J host start --headless
+Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.00 s]
+
+$ $J host status
+Error: the JETCARP background host is not running
+[exit 1, 0.00 s]
+
+$ hosts
+no rc.4 host process running
+[exit 0, 0.01 s]
+
+$ $J host stop
+Error: the JETCARP background host is not running
+[exit 1, 0.00 s]
+

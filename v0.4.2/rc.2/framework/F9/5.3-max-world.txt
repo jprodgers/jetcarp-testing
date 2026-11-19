@@ -1,0 +1,23 @@
+## doctor: 2 GiB storage bindings and 2 GiB buffers -> 2 GiB / 4 bytes = 536,870,912 cells on the GPU; the program's own lattice limit is 256,000,000 cells, so the largest world is 16000 x 16000
+$ jetcarp run max-16000x16000.json --gens 20 --gpu
+scene:      max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       2.50s on 32 threads
+[exit 0, wall 3.3 s, max RSS 1.74 GB]
+$ jetcarp run max-16000x16000.json --gens 20 --cpu --threads 16
+scene:      max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    cpu (16 threads)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       13.73s on 16 threads
+[exit 0, wall 14.6 s, max RSS 1.92 GB]

@@ -1,0 +1,720 @@
+2026-11-16T00:06:46Z
+VmRSS:	  448600 kB
+explore 2: 2,048 runs (146/s), 827 elites in 498 niches (0 of them confirmed), 2 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 14 s run over every session, 0 confirmation runs, 3,232 candidates tried, 0.12 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 14 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                   728   0.29   1.43     232
+  generations                 564   0.63   1.92     199
+  jaca                        200   0.44   1.40      95
+  priority                    181   0.26   1.27      92
+  cyclic                       87   0.38   1.50      63
+  greenberg_hastings           87   0.69   2.11      35
+
+2026-11-16T00:11:46Z
+VmRSS:	 1037828 kB
+explore 2: 53,925 runs (166/s), 11,203 elites in 5,844 niches (481 of them confirmed), 39 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 5 min 14 s run over every session, 1,827 confirmation runs, 56,856 candidates tried, 0.60 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 219 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                15,824   0.32   1.43   3,140
+  generations              12,703   0.65   2.11   2,318
+  ltl                       6,570   0.37   2.21     507
+  jaca                      5,727   0.55   2.00   1,726
+  priority                  3,661   0.40   2.14   1,086
+  cyclic                    1,913   0.50   2.12     672
+
+2026-11-16T00:16:46Z
+VmRSS:	 1117864 kB
+explore 2: 76,068 runs (59/s), 14,144 elites in 7,272 niches (630 of them confirmed), 55 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 10 min 14 s run over every session, 2,562 confirmation runs, 79,601 candidates tried, 0.67 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 329 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                22,560   0.32   1.43   3,939
+  generations              17,957   0.65   2.11   2,900
+  ltl                       8,618   0.41   2.41     822
+  jaca                      8,162   0.54   2.00   2,247
+  priority                  5,190   0.41   2.14   1,320
+  cyclic                    2,704   0.50   2.17     749
+
+2026-11-16T00:21:46Z
+VmRSS:	 1346732 kB
+explore 2: 117,776 runs (187/s), 18,151 elites in 9,133 niches (918 of them confirmed), 71 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 15 min 13 s run over every session, 3,861 confirmation runs, 121,643 candidates tried, 1.13 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 506 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                34,659   0.32   1.43   4,961
+  generations              27,438   0.64   2.11   3,577
+  ltl                      14,550   0.44   2.44   1,158
+  jaca                     12,471   0.54   2.00   3,077
+  priority                  7,944   0.40   2.14   1,630
+  greenberg_hastings        4,105   0.64   2.60     370
+
+2026-11-16T00:26:46Z
+VmRSS:	 1839256 kB
+explore 2: 170,844 runs (180/s), 21,875 elites in 10,721 niches (1,102 of them confirmed), 98 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 20 min 14 s run over every session, 5,016 confirmation runs, 177,050 candidates tried, 1.75 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 651 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                50,649   0.32   1.43   5,942
+  generations              39,967   0.64   2.11   4,249
+  ltl                      20,418   0.46   2.44   1,350
+  jaca                     18,080   0.53   2.00   3,876
+  priority                 11,727   0.40   2.14   2,019
+  hodgepodge                5,997   1.13   2.52     822
+
+2026-11-16T00:31:46Z
+VmRSS:	 1907432 kB
+explore 2: 210,502 runs (116/s), 23,989 elites in 11,667 niches (1,250 of them confirmed), 117 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 25 min 14 s run over every session, 5,865 confirmation runs, 216,526 candidates tried, 1.46 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 828 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                60,672   0.32   1.43   6,342
+  generations              47,705   0.64   2.12   4,526
+  ltl                      30,284   0.45   2.44   1,749
+  jaca                     21,604   0.53   2.01   4,273
+  priority                 14,007   0.40   2.14   2,192
+  rps                       7,186   0.54   2.41     992
+
+2026-11-16T00:36:46Z
+VmRSS:	 1963204 kB
+explore 2: 266,037 runs (139/s), 26,875 elites in 12,941 niches (1,382 of them confirmed), 143 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 30 min 15 s run over every session, 6,747 confirmation runs, 273,740 candidates tried, 1.55 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,036 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                76,941   0.33   1.45   6,962
+  generations              60,528   0.64   2.12   4,986
+  ltl                      37,435   0.44   2.45   2,036
+  jaca                     27,520   0.52   2.06   4,868
+  priority                 17,844   0.41   2.14   2,462
+  rps                       9,125   0.55   2.41   1,065
+
+2026-11-16T00:41:46Z
+VmRSS:	 1977000 kB
+explore 2: 329,305 runs (209/s), 29,863 elites in 14,221 niches (1,522 of them confirmed), 167 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 35 min 13 s run over every session, 7,692 confirmation runs, 338,188 candidates tried, 1.62 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,239 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                97,053   0.32   1.57   7,658
+  generations              76,551   0.64   2.13   5,507
+  ltl                      41,376   0.44   2.45   2,192
+  jaca                     34,654   0.51   2.06   5,654
+  priority                 22,631   0.41   2.14   2,786
+  rps                      11,486   0.55   2.41   1,148
+
+2026-11-16T00:46:46Z
+VmRSS:	 1828968 kB
+explore 2: 383,405 runs (179/s), 32,079 elites in 15,189 niches (1,702 of them confirmed), 193 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 40 min 14 s run over every session, 8,652 confirmation runs, 392,065 candidates tried, 1.98 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,422 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               112,709   0.33   1.57   8,202
+  generations              88,695   0.64   2.13   5,905
+  ltl                      49,141   0.41   2.45   2,300
+  jaca                     40,253   0.51   2.06   6,107
+  priority                 26,281   0.41   2.14   3,038
+  rps                      13,306   0.55   2.41   1,232
+
+2026-11-16T00:51:47Z
+VmRSS:	 2094728 kB
+explore 2: 408,882 runs (77/s), 33,092 elites in 15,614 niches (1,844 of them confirmed), 204 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 45 min 14 s run over every session, 9,264 confirmation runs, 419,338 candidates tried, 1.73 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,540 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               119,743   0.33   1.57   8,395
+  generations              94,249   0.64   2.13   6,049
+  ltl                      53,658   0.40   2.45   2,461
+  jaca                     42,854   0.51   2.08   6,345
+  priority                 27,905   0.40   2.14   3,137
+  greenberg_hastings       14,168   0.60   2.60     620
+
+2026-11-16T00:56:47Z
+VmRSS:	 2185656 kB
+explore 2: 455,793 runs (144/s), 34,651 elites in 16,267 niches (1,959 of them confirmed), 219 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 50 min 14 s run over every session, 9,984 confirmation runs, 466,809 candidates tried, 1.76 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,661 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               134,200   0.33   1.57   8,702
+  generations             105,684   0.64   2.13   6,293
+  ltl                      57,465   0.40   2.45   2,539
+  jaca                     48,161   0.50   2.10   6,754
+  priority                 31,251   0.41   2.15   3,316
+  greenberg_hastings       15,840   0.61   2.60     649
+
+2026-11-16T01:01:47Z
+VmRSS:	 2186428 kB
+explore 2: 491,031 runs (158/s), 35,905 elites in 16,780 niches (2,032 of them confirmed), 233 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 55 min 14 s run over every session, 10,503 confirmation runs, 502,726 candidates tried, 2.05 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,839 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               144,369   0.33   1.57   9,016
+  generations             113,874   0.64   2.13   6,495
+  ltl                      62,207   0.40   2.45   2,638
+  jaca                     51,944   0.50   2.10   7,034
+  priority                 33,640   0.41   2.15   3,474
+  greenberg_hastings       17,012   0.60   2.62     664
+
+2026-11-16T01:07:06Z
+VmRSS:	  656180 kB
+explore 2: 520,419 runs (127/s), 36,670 elites in 17,086 niches (2,021 of them confirmed), 248 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 0 min run over every session, 10,629 confirmation runs, 532,241 candidates tried, 0.15 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               152,744   0.33   1.72   9,180
+  generations             120,495   0.64   2.13   6,610
+  ltl                      66,380   0.39   2.45   2,673
+  jaca                     55,115   0.50   2.14   7,255
+  priority                 35,687   0.41   2.15   3,582
+  greenberg_hastings       18,006   0.60   2.62     671
+
+2026-11-16T01:12:06Z
+VmRSS:	 1157012 kB
+explore 2: 569,328 runs (146/s), 38,358 elites in 17,788 niches (2,122 of them confirmed), 266 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 5 min run over every session, 11,259 confirmation runs, 581,695 candidates tried, 1.02 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 217 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               167,784   0.33   1.72   9,503
+  generations             132,163   0.64   2.13   6,831
+  ltl                      71,001   0.40   2.45   2,899
+  jaca                     60,385   0.50   2.14   7,645
+  priority                 39,167   0.41   2.15   3,766
+  greenberg_hastings       19,764   0.60   2.62     703
+
+2026-11-16T01:17:06Z
+VmRSS:	 1185400 kB
+explore 2: 615,684 runs (123/s), 39,700 elites in 18,358 niches (2,157 of them confirmed), 288 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 10 min run over every session, 11,616 confirmation runs, 628,493 candidates tried, 1.05 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 416 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               181,277   0.33   1.72   9,754
+  generations             142,747   0.64   2.13   7,005
+  ltl                      77,485   0.40   2.45   3,114
+  jaca                     65,250   0.49   2.14   7,940
+  priority                 42,211   0.41   2.15   3,922
+  greenberg_hastings       21,373   0.60   2.62     731
+
+2026-11-16T01:22:06Z
+VmRSS:	 1191748 kB
+explore 2: 648,151 runs (99/s), 40,792 elites in 18,825 niches (2,277 of them confirmed), 299 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 15 min run over every session, 12,102 confirmation runs, 660,263 candidates tried, 1.26 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 531 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               190,090   0.33   1.72   9,947
+  generations             149,750   0.64   2.13   7,149
+  ltl                      83,713   0.40   2.45   3,365
+  jaca                     68,397   0.49   2.14   8,192
+  priority                 44,290   0.41   2.15   4,033
+  greenberg_hastings       22,401   0.60   2.62     742
+
+2026-11-16T01:27:06Z
+VmRSS:	 1422444 kB
+explore 2: 689,861 runs (114/s), 41,774 elites in 19,263 niches (2,330 of them confirmed), 317 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 20 min run over every session, 12,516 confirmation runs, 703,571 candidates tried, 1.17 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 633 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               201,806   0.33   1.72  10,126
+  generations             158,939   0.64   2.13   7,293
+  ltl                      90,671   0.40   2.45   3,474
+  jaca                     72,632   0.49   2.14   8,425
+  priority                 47,051   0.41   2.27   4,169
+  rps                      23,760   0.57   2.41   1,523
+
+2026-11-16T01:32:06Z
+VmRSS:	 1542468 kB
+explore 2: 737,336 runs (164/s), 43,392 elites in 19,956 niches (2,503 of them confirmed), 342 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 25 min run over every session, 13,377 confirmation runs, 751,822 candidates tried, 1.20 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 843 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               215,934   0.33   1.72  10,456
+  generations             169,927   0.64   2.13   7,554
+  ltl                      95,906   0.39   2.45   3,553
+  jaca                     77,809   0.49   2.14   8,807
+  priority                 50,398   0.41   2.27   4,380
+  rps                      25,462   0.57   2.44   1,575
+
+2026-11-16T01:37:06Z
+VmRSS:	 1626092 kB
+explore 2: 792,706 runs (201/s), 44,817 elites in 20,519 niches (2,648 of them confirmed), 361 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 30 min run over every session, 14,097 confirmation runs, 807,927 candidates tried, 1.47 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,047 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               232,371   0.33   1.72  10,697
+  generations             182,733   0.64   2.13   7,770
+  ltl                     102,892   0.40   2.45   3,716
+  jaca                     83,676   0.49   2.14   9,217
+  priority                 54,147   0.41   2.27   4,535
+  rps                      27,434   0.57   2.47   1,610
+
+2026-11-16T01:42:07Z
+VmRSS:	 2485032 kB
+explore 2: 841,069 runs (170/s), 45,875 elites in 20,942 niches (2,804 of them confirmed), 386 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 35 min run over every session, 14,832 confirmation runs, 857,022 candidates tried, 1.89 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,263 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               246,415   0.33   1.72  10,878
+  generations             193,868   0.64   2.20   7,901
+  ltl                     109,018   0.40   2.45   3,798
+  jaca                     88,914   0.49   2.14   9,463
+  priority                 57,440   0.41   2.27   4,682
+  rps                      29,115   0.57   2.47   1,632
+
+2026-11-16T01:47:07Z
+VmRSS:	 4988228 kB
+explore 2: 891,635 runs (139/s), 47,094 elites in 21,432 niches (3,095 of them confirmed), 401 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 40 min run over every session, 15,978 confirmation runs, 908,708 candidates tried, 5.15 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,476 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               261,218   0.33   1.72  11,094
+  generations             205,499   0.64   2.20   8,082
+  ltl                     115,297   0.40   2.45   3,876
+  jaca                     94,357   0.49   2.14   9,794
+  priority                 60,884   0.41   2.27   4,858
+  rps                      30,906   0.57   2.47   1,656
+
+2026-11-16T01:52:07Z
+VmRSS:	 2174444 kB
+explore 2: 939,310 runs (161/s), 48,045 elites in 21,821 niches (3,135 of them confirmed), 417 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 45 min run over every session, 16,332 confirmation runs, 956,841 candidates tried, 1.87 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,702 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               275,444   0.33   1.72  11,247
+  generations             216,604   0.64   2.20   8,219
+  ltl                     121,053   0.40   2.45   3,949
+  jaca                     99,473   0.49   2.14  10,074
+  priority                 64,148   0.41   2.27   4,985
+  rps                      32,555   0.57   2.47   1,681
+
+2026-11-16T01:57:07Z
+VmRSS:	 2419500 kB
+explore 2: 986,140 runs (138/s), 49,081 elites in 22,246 niches (3,259 of them confirmed), 430 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 50 min run over every session, 17,052 confirmation runs, 1,004,392 candidates tried, 2.30 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 1,879 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               289,942   0.33   1.72  11,413
+  generations             227,881   0.64   2.20   8,351
+  ltl                     124,780   0.40   2.45   4,027
+  jaca                    104,810   0.49   2.14  10,352
+  priority                 67,535   0.41   2.27   5,155
+  rps                      34,267   0.57   2.47   1,708
+
+2026-11-16T02:02:07Z
+VmRSS:	 3579936 kB
+explore 2: 1,035,321 runs (162/s), 49,992 elites in 22,631 niches (3,414 of them confirmed), 451 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 55 min run over every session, 17,745 confirmation runs, 1,054,107 candidates tried, 2.22 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 2,019 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               304,571   0.33   1.72  11,561
+  generations             239,281   0.64   2.20   8,457
+  ltl                     130,858   0.40   2.45   4,188
+  jaca                    109,884   0.49   2.20  10,572
+  priority                 70,934   0.41   2.27   5,266
+  rps                      35,925   0.57   2.47   1,722
+
+2026-11-16T02:07:07Z
+VmRSS:	 2521156 kB
+explore 2: 1,088,517 runs (186/s), 51,119 elites in 23,085 niches (3,508 of them confirmed), 464 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 0 min run over every session, 18,345 confirmation runs, 1,107,968 candidates tried, 2.25 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 2,260 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               321,586   0.33   1.72  11,789
+  generations             252,542   0.64   2.20   8,615
+  ltl                     133,624   0.39   2.45   4,197
+  jaca                    116,040   0.49   2.20  10,902
+  priority                 74,939   0.41   2.27   5,455
+  greenberg_hastings       37,900   0.58   2.63     912
+
+2026-11-16T02:12:07Z
+VmRSS:	 2437688 kB
+explore 2: 1,143,034 runs (181/s), 52,265 elites in 23,542 niches (3,544 of them confirmed), 488 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 5 min run over every session, 18,720 confirmation runs, 1,162,861 candidates tried, 2.24 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 2,487 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               337,860   0.33   1.72  12,009
+  generations             265,374   0.64   2.20   8,795
+  ltl                     139,758   0.39   2.45   4,246
+  jaca                    121,843   0.49   2.20  11,228
+  priority                 78,721   0.41   2.27   5,590
+  greenberg_hastings       39,824   0.58   2.63     940
+
+2026-11-16T02:17:07Z
+VmRSS:	 2522804 kB
+explore 2: 1,195,432 runs (191/s), 53,180 elites in 23,886 niches (3,651 of them confirmed), 507 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 10 min run over every session, 19,323 confirmation runs, 1,215,959 candidates tried, 2.42 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 2,698 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               352,749   0.33   1.72  12,152
+  generations             277,040   0.64   2.20   8,909
+  ltl                     148,188   0.39   2.45   4,422
+  jaca                    127,168   0.49   2.27  11,460
+  priority                 82,203   0.41   2.27   5,727
+  greenberg_hastings       41,572   0.58   2.63     950
+
+2026-11-16T02:22:07Z
+VmRSS:	 2617980 kB
+explore 2: 1,245,990 runs (162/s), 54,201 elites in 24,299 niches (3,715 of them confirmed), 527 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 15 min run over every session, 19,821 confirmation runs, 1,267,015 candidates tried, 2.21 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 2,860 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               367,603   0.33   1.72  12,337
+  generations             288,773   0.64   2.20   9,059
+  ltl                     154,778   0.39   2.45   4,475
+  jaca                    132,548   0.49   2.27  11,754
+  priority                 85,711   0.41   2.27   5,848
+  greenberg_hastings       43,337   0.58   2.63     969
+
+2026-11-16T02:27:07Z
+VmRSS:	 2752864 kB
+explore 2: 1,298,572 runs (181/s), 55,153 elites in 24,672 niches (3,734 of them confirmed), 545 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 20 min run over every session, 20,115 confirmation runs, 1,319,804 candidates tried, 2.47 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 3,064 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               382,510   0.33   1.72  12,491
+  generations             300,545   0.64   2.20   9,181
+  ltl                     163,073   0.39   2.45   4,566
+  jaca                    137,882   0.49   2.27  12,022
+  priority                 89,199   0.41   2.27   5,954
+  greenberg_hastings       44,979   0.58   2.63     982
+
+2026-11-16T02:32:07Z
+VmRSS:	 5274780 kB
+explore 2: 1,346,115 runs (78/s), 56,088 elites in 25,051 niches (3,871 of them confirmed), 565 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 25 min run over every session, 20,760 confirmation runs, 1,367,078 candidates tried, 2.50 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 3,245 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               396,278   0.33   1.72  12,673
+  generations             311,413   0.64   2.20   9,329
+  ltl                     169,721   0.39   2.45   4,636
+  jaca                    142,933   0.49   2.27  12,282
+  priority                 92,422   0.41   2.27   6,077
+  greenberg_hastings       46,556   0.58   2.63     998
+
+2026-11-16T02:37:07Z
+VmRSS:	 2808788 kB
+explore 2: 1,399,435 runs (183/s), 57,126 elites in 25,483 niches (3,925 of them confirmed), 580 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 30 min run over every session, 21,183 confirmation runs, 1,421,825 candidates tried, 2.68 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 3,405 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               413,231   0.33   1.72  12,851
+  generations             324,807   0.64   2.20   9,446
+  ltl                     172,770   0.39   2.45   4,684
+  jaca                    148,934   0.49   2.27  12,598
+  priority                 96,462   0.41   2.27   6,229
+  greenberg_hastings       48,580   0.58   2.63   1,016
+
+2026-11-16T02:42:07Z
+VmRSS:	 2741276 kB
+explore 2: 1,451,795 runs (178/s), 57,846 elites in 25,765 niches (4,011 of them confirmed), 599 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 35 min run over every session, 21,705 confirmation runs, 1,474,707 candidates tried, 2.41 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 3,569 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               429,678   0.33   1.72  12,969
+  generations             337,990   0.64   2.20   9,545
+  ltl                     175,882   0.39   2.45   4,703
+  jaca                    154,968   0.49   2.27  12,828
+  priority                100,386   0.41   2.27   6,334
+  greenberg_hastings       50,570   0.58   2.63   1,037
+
+2026-11-16T02:47:07Z
+VmRSS:	 4937152 kB
+explore 2: 1,502,457 runs (175/s), 58,553 elites in 26,035 niches (4,026 of them confirmed), 614 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 40 min run over every session, 21,957 confirmation runs, 1,525,525 candidates tried, 4.67 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 3,779 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               444,749   0.33   1.72  13,092
+  generations             350,019   0.64   2.20   9,632
+  ltl                     181,233   0.39   2.45   4,769
+  jaca                    160,532   0.49   2.27  13,028
+  priority                103,974   0.41   2.27   6,417
+  greenberg_hastings       52,390   0.58   2.63   1,049
+
+2026-11-16T02:52:07Z
+VmRSS:	 3094344 kB
+explore 2: 1,537,483 runs (64/s), 59,399 elites in 26,399 niches (4,058 of them confirmed), 621 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 45 min run over every session, 22,179 confirmation runs, 1,560,777 candidates tried, 2.60 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 3,882 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               455,403   0.33   1.72  13,231
+  generations             358,393   0.64   2.20   9,719
+  ltl                     184,900   0.39   2.45   4,988
+  jaca                    164,323   0.49   2.27  13,207
+  priority                106,521   0.41   2.27   6,508
+  greenberg_hastings       53,586   0.58   2.63   1,062
+
+2026-11-16T02:57:07Z
+VmRSS:	 3164824 kB
+explore 2: 1,564,359 runs (138/s), 59,775 elites in 26,542 niches (4,052 of them confirmed), 630 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 50 min run over every session, 22,320 confirmation runs, 1,587,809 candidates tried, 2.60 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 4,003 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               462,024   0.33   1.72  13,267
+  generations             363,777   0.64   2.20   9,755
+  ltl                     191,680   0.39   2.45   5,085
+  jaca                    166,717   0.49   2.27  13,325
+  priority                108,105   0.41   2.27   6,546
+  greenberg_hastings       54,387   0.58   2.63   1,063
+
+2026-11-16T03:02:08Z
+VmRSS:	 3873956 kB
+explore 2: 1,611,332 runs (147/s), 60,464 elites in 26,822 niches (4,159 of them confirmed), 643 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 2 h 55 min run over every session, 22,890 confirmation runs, 1,635,337 candidates tried, 2.64 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 4,251 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               476,073   0.33   1.72  13,372
+  generations             375,017   0.64   2.20   9,838
+  ltl                     196,413   0.39   2.45   5,162
+  jaca                    171,897   0.49   2.27  13,530
+  priority                111,374   0.41   2.27   6,655
+  greenberg_hastings       56,062   0.57   2.63   1,074
+
+2026-11-16T03:07:08Z
+VmRSS:	 3143824 kB
+explore 2: 1,621,885 runs (51/s), 60,574 elites in 26,856 niches (4,188 of them confirmed), 645 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 0 min run over every session, 23,043 confirmation runs, 1,646,052 candidates tried, 2.69 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 4,356 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               478,495   0.33   1.72  13,385
+  generations             376,984   0.64   2.20   9,843
+  ltl                     199,158   0.39   2.45   5,181
+  jaca                    172,839   0.49   2.27  13,554
+  priority                111,964   0.41   2.27   6,682
+  greenberg_hastings       56,358   0.57   2.63   1,074
+
+2026-11-16T03:12:08Z
+VmRSS:	 5696416 kB
+explore 2: 1,676,019 runs (150/s), 61,239 elites in 27,081 niches (4,209 of them confirmed), 661 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 5 min run over every session, 23,328 confirmation runs, 1,700,556 candidates tried, 2.76 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 4,562 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               493,511   0.33   1.72  13,472
+  generations             388,886   0.64   2.20   9,905
+  ltl                     208,300   0.39   2.45   5,275
+  jaca                    178,481   0.49   2.27  13,730
+  priority                115,575   0.41   2.27   6,792
+  rps                      58,144   0.58   2.47   2,000
+
+2026-11-16T03:17:08Z
+VmRSS:	 3348104 kB
+explore 2: 1,725,683 runs (146/s), 61,827 elites in 27,319 niches (4,338 of them confirmed), 673 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 10 min run over every session, 23,955 confirmation runs, 1,750,848 candidates tried, 3.11 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 4,768 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               507,889   0.33   1.72  13,547
+  generations             400,272   0.64   2.20   9,977
+  ltl                     214,541   0.39   2.45   5,339
+  jaca                    183,815   0.49   2.27  13,896
+  priority                118,921   0.41   2.27   6,884
+  greenberg_hastings       59,857   0.58   2.63   1,091
+
+2026-11-16T03:22:08Z
+VmRSS:	 3202584 kB
+explore 2: 1,771,534 runs (172/s), 62,467 elites in 27,558 niches (4,434 of them confirmed), 685 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 15 min run over every session, 24,408 confirmation runs, 1,797,153 candidates tried, 2.79 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 4,896 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               521,607   0.33   1.72  13,649
+  generations             411,093   0.64   2.20  10,063
+  ltl                     219,657   0.39   2.45   5,410
+  jaca                    188,842   0.49   2.27  14,089
+  priority                122,167   0.41   2.27   6,966
+  hodgepodge               61,501   1.11   2.52   2,545
+
+2026-11-16T03:27:08Z
+VmRSS:	 3301264 kB
+explore 2: 1,792,378 runs (54/s), 62,835 elites in 27,705 niches (4,441 of them confirmed), 691 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 20 min run over every session, 24,543 confirmation runs, 1,817,840 candidates tried, 2.87 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 5,010 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               527,569   0.33   1.72  13,727
+  generations             415,827   0.64   2.20  10,108
+  ltl                     222,295   0.39   2.45   5,427
+  jaca                    191,072   0.49   2.27  14,182
+  priority                123,515   0.41   2.27   7,019
+  hodgepodge               62,229   1.11   2.52   2,559
+
+2026-11-16T03:32:08Z
+VmRSS:	 6290692 kB
+explore 2: 1,845,035 runs (189/s), 63,607 elites in 28,030 niches (4,491 of them confirmed), 707 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 25 min run over every session, 24,927 confirmation runs, 1,871,082 candidates tried, 5.97 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 5,188 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               543,732   0.33   1.72  13,833
+  generations             428,762   0.64   2.20  10,208
+  ltl                     226,729   0.39   2.45   5,572
+  jaca                    196,933   0.49   2.27  14,358
+  priority                127,225   0.41   2.27   7,119
+  hodgepodge               64,204   1.11   2.52   2,589
+
+2026-11-16T03:37:08Z
+VmRSS:	 3553788 kB
+explore 2: 1,876,984 runs (102/s), 64,035 elites in 28,179 niches (4,511 of them confirmed), 715 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 30 min run over every session, 25,152 confirmation runs, 1,903,252 candidates tried, 2.99 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 5,300 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               553,355   0.33   1.72  13,909
+  generations             436,131   0.64   2.20  10,274
+  ltl                     230,392   0.39   2.45   5,597
+  jaca                    200,363   0.49   2.27  14,480
+  priority                129,524   0.41   2.27   7,183
+  hodgepodge               65,384   1.11   2.52   2,612
+
+2026-11-16T03:42:08Z
+VmRSS:	 3634220 kB
+explore 2: 1,929,400 runs (182/s), 64,785 elites in 28,476 niches (4,636 of them confirmed), 733 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 35 min run over every session, 25,752 confirmation runs, 1,956,268 candidates tried, 3.12 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 5,526 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               570,003   0.33   1.72  14,036
+  generations             449,087   0.64   2.20  10,371
+  ltl                     233,400   0.39   2.45   5,625
+  jaca                    206,388   0.49   2.27  14,723
+  priority                133,479   0.41   2.27   7,276
+  hodgepodge               67,348   1.11   2.52   2,641
+
+2026-11-16T03:47:08Z
+VmRSS:	 3608592 kB
+explore 2: 1,985,126 runs (178/s), 65,357 elites in 28,682 niches (4,725 of them confirmed), 744 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 40 min run over every session, 26,274 confirmation runs, 2,012,543 candidates tried, 3.34 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 5,727 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               586,200   0.33   1.72  14,137
+  generations             461,908   0.64   2.20  10,447
+  ltl                     240,742   0.39   2.45   5,658
+  jaca                    212,241   0.49   2.27  14,887
+  priority                137,329   0.41   2.27   7,370
+  hodgepodge               69,297   1.11   2.52   2,662
+
+2026-11-16T03:52:08Z
+VmRSS:	 3622460 kB
+explore 2: 1,993,384 runs (47/s), 65,437 elites in 28,714 niches (4,746 of them confirmed), 746 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 45 min run over every session, 26,382 confirmation runs, 2,020,822 candidates tried, 3.13 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 5,789 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               588,657   0.33   1.72  14,154
+  generations             463,824   0.64   2.20  10,457
+  ltl                     241,672   0.39   2.45   5,668
+  jaca                    213,153   0.49   2.27  14,914
+  priority                137,890   0.41   2.27   7,377
+  hodgepodge               69,612   1.11   2.52   2,665
+
+2026-11-16T03:57:08Z
+VmRSS:	 3616304 kB
+explore 2: 2,025,906 runs (174/s), 65,744 elites in 28,818 niches (4,842 of them confirmed), 752 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 50 min run over every session, 26,787 confirmation runs, 2,053,909 candidates tried, 3.17 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 5,930 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               597,448   0.33   1.72  14,195
+  generations             470,749   0.64   2.20  10,491
+  ltl                     247,954   0.39   2.45   5,714
+  jaca                    216,384   0.49   2.27  14,979
+  priority                139,964   0.41   2.27   7,419
+  hodgepodge               70,649   1.11   2.52   2,677
+
+2026-11-16T04:02:08Z
+VmRSS:	 3633172 kB
+explore 2: 2,076,363 runs (154/s), 66,217 elites in 28,995 niches (4,907 of them confirmed), 765 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 3 h 55 min run over every session, 27,153 confirmation runs, 2,104,715 candidates tried, 3.26 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 6,112 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 36,619 elites, 529,009 identities, 22,503 coverage rows in 0.12 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               613,290   0.33   1.72  14,265
+  generations             483,312   0.64   2.20  10,545
+  ltl                     251,212   0.39   2.45   5,736
+  jaca                    222,207   0.49   2.27  15,125
+  priority                143,660   0.41   2.27   7,479
+  hodgepodge               72,537   1.11   2.52   2,696
+

@@ -1,0 +1,73 @@
+# imgdiff (R4-scripts/imgdiff.swift): each capture against the one before it, pixel by pixel
+87e-run5-before-1.png -> 87e-run5-before-2.png: 288790 pixels differ, in the box x 412-2799, y 77-1848 of 2800x1864
+87e-run5-before-2.png -> 87e-run5-after-01.png: 249314 pixels differ, in the box x 18-2799, y 17-1859 of 2800x1864
+87e-run5-after-01.png -> 87e-run5-after-02.png: identical pixels (2800x1864)
+87e-run5-after-02.png -> 87e-run5-after-03.png: identical pixels (2800x1864)
+87e-run5-after-03.png -> 87e-run5-after-04.png: identical pixels (2800x1864)
+87e-run5-after-04.png -> 87e-run5-after-05.png: identical pixels (2800x1864)
+87e-run5-after-05.png -> 87e-run5-after-06.png: identical pixels (2800x1864)
+87e-run5-after-06.png -> 87e-run5-after-07.png: identical pixels (2800x1864)
+87e-run5-after-07.png -> 87e-run5-after-08.png: identical pixels (2800x1864)
+87e-run5-after-08.png -> 87e-run5-after-09.png: identical pixels (2800x1864)
+87e-run5-after-09.png -> 87e-run5-after-10.png: identical pixels (2800x1864)
+87e-run5-after-10.png -> 87e-run5-after-11.png: identical pixels (2800x1864)
+87e-run5-after-11.png -> 87e-run5-after-12.png: identical pixels (2800x1864)
+87e-run5-after-12.png -> 87e-run5-after-13.png: identical pixels (2800x1864)
+87e-run5-after-13.png -> 87e-run5-after-14.png: identical pixels (2800x1864)
+87e-run5-after-14.png -> 87e-run5-after-15.png: identical pixels (2800x1864)
+87e-run5-after-15.png -> 87e-run5-after-16.png: sizes differ: 2800x1864 and 3052x2080
+87e-run5-after-16.png -> 87e-run5-after-17.png: sizes differ: 3052x2080 and 3160x2144
+87e-run5-after-17.png -> 87e-run5-after-18.png: 3350 pixels differ, in the box x 18-287, y 17-46 of 3160x2144
+87e-run5-after-18.png -> 87e-run5-after-19.png: identical pixels (3160x2144)
+87e-run5-after-19.png -> 87e-run5-after-20.png: identical pixels (3160x2144)
+87e-run5-after-20.png -> 87e-run5-after-21.png: identical pixels (3160x2144)
+87e-run5-after-21.png -> 87e-run5-after-22.png: identical pixels (3160x2144)
+87e-run5-after-22.png -> 87e-run5-after-23.png: identical pixels (3160x2144)
+87e-run6-before-1.png -> 87e-run6-before-2.png: identical pixels (2800x1864)
+87e-run6-before-2.png -> 87e-run6-after-01.png: 362 pixels differ, in the box x 2691-2719, y 77-96 of 2800x1864
+87e-run6-after-01.png -> 87e-run6-after-02.png: identical pixels (2800x1864)
+87e-run6-after-02.png -> 87e-run6-after-03.png: identical pixels (2800x1864)
+87e-run6-after-03.png -> 87e-run6-after-04.png: identical pixels (2800x1864)
+87e-run6-after-04.png -> 87e-run6-after-05.png: identical pixels (2800x1864)
+87e-run6-after-05.png -> 87e-run6-after-06.png: identical pixels (2800x1864)
+87e-run6-after-06.png -> 87e-run6-after-07.png: identical pixels (2800x1864)
+87e-run6-after-07.png -> 87e-run6-after-08.png: 3350 pixels differ, in the box x 18-287, y 17-46 of 2800x1864
+87e-run6-after-08.png -> 87e-run6-after-09.png: identical pixels (2800x1864)
+87e-run6-after-09.png -> 87e-run6-after-10.png: identical pixels (2800x1864)
+87e-run6-after-10.png -> 87e-run6-after-11.png: identical pixels (2800x1864)
+87e-run6-after-11.png -> 87e-run6-after-12.png: identical pixels (2800x1864)
+87e-run6-after-12.png -> 87e-run6-after-13.png: identical pixels (2800x1864)
+87e-run6-after-13.png -> 87e-run6-after-14.png: identical pixels (2800x1864)
+87e-run6-after-14.png -> 87e-run6-after-15.png: identical pixels (2800x1864)
+87e-run6-after-15.png -> 87e-run6-after-16.png: identical pixels (2800x1864)
+87e-run6-after-16.png -> 87e-run6-after-17.png: identical pixels (2800x1864)
+87e-run6-after-17.png -> 87e-run6-after-18.png: identical pixels (2800x1864)
+87e-run6-after-18.png -> 87e-run6-after-19.png: identical pixels (2800x1864)
+87e-run6-after-19.png -> 87e-run6-after-20.png: identical pixels (2800x1864)
+87e-run6-after-20.png -> 87e-run6-after-21.png: identical pixels (2800x1864)
+87e-run6-after-21.png -> 87e-run6-after-22.png: identical pixels (2800x1864)
+87e-run6-after-22.png -> 87e-run6-after-23.png: identical pixels (2800x1864)
+87e-run7-before-1.png -> 87e-run7-before-2.png: 291972 pixels differ, in the box x 18-2799, y 17-1848 of 2800x1864
+87e-run7-before-2.png -> 87e-run7-after-01.png: 263736 pixels differ, in the box x 412-2799, y 77-1859 of 2800x1864
+87e-run7-after-01.png -> 87e-run7-after-02.png: 53159 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-02.png -> 87e-run7-after-03.png: 10633 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87e-run7-after-03.png -> 87e-run7-after-04.png: 6007 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-04.png -> 87e-run7-after-05.png: 6482 pixels differ, in the box x 413-2799, y 77-1848 of 2800x1864
+87e-run7-after-05.png -> 87e-run7-after-06.png: 46292 pixels differ, in the box x 18-2799, y 17-1848 of 2800x1864
+87e-run7-after-06.png -> 87e-run7-after-07.png: 20953 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-07.png -> 87e-run7-after-08.png: 28234 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87e-run7-after-08.png -> 87e-run7-after-09.png: 59037 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-09.png -> 87e-run7-after-10.png: 22561 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87e-run7-after-10.png -> 87e-run7-after-11.png: 24596 pixels differ, in the box x 422-2799, y 77-1848 of 2800x1864
+87e-run7-after-11.png -> 87e-run7-after-12.png: 58819 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-12.png -> 87e-run7-after-13.png: 22199 pixels differ, in the box x 422-2799, y 77-1848 of 2800x1864
+87e-run7-after-13.png -> 87e-run7-after-14.png: 18551 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-14.png -> 87e-run7-after-15.png: 47605 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87e-run7-after-15.png -> 87e-run7-after-16.png: 46214 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87e-run7-after-16.png -> 87e-run7-after-17.png: 43490 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-17.png -> 87e-run7-after-18.png: 7336 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87e-run7-after-18.png -> 87e-run7-after-19.png: 7345 pixels differ, in the box x 433-2799, y 77-1848 of 2800x1864
+87e-run7-after-19.png -> 87e-run7-after-20.png: 10651 pixels differ, in the box x 423-2799, y 77-1848 of 2800x1864
+87e-run7-after-20.png -> 87e-run7-after-21.png: 8304 pixels differ, in the box x 413-2784, y 77-1848 of 2800x1864
+87e-run7-after-21.png -> 87e-run7-after-22.png: 4441 pixels differ, in the box x 433-2768, y 77-1848 of 2800x1864
+87e-run7-after-22.png -> 87e-run7-after-23.png: 3516 pixels differ, in the box x 423-2768, y 77-1848 of 2800x1864

@@ -1,0 +1,154 @@
+{
+ "format": "jetcarp-ratings 1",
+ "job": 3,
+ "search": "668eb340-e9e8-45b2-8eea-bcfe9df3be76",
+ "round": "A5-clips",
+ "rater": "Jimmie Rodgers",
+ "ratings": [
+  {
+   "run": 10,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794701244401
+  },
+  {
+   "run": 161,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701245851
+  },
+  {
+   "run": 347,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701247276
+  },
+  {
+   "run": 751,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701254402
+  },
+  {
+   "run": 838,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701256201
+  },
+  {
+   "run": 1013,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701261014
+  },
+  {
+   "run": 1136,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701261590
+  },
+  {
+   "run": 1289,
+   "verdict": "keep",
+   "star": true,
+   "ts": 1794701283178
+  },
+  {
+   "run": 1774,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701285838
+  },
+  {
+   "run": 2355,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701290225
+  },
+  {
+   "run": 2588,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701292725
+  },
+  {
+   "run": 2685,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794701294757
+  },
+  {
+   "run": 2751,
+   "verdict": "keep",
+   "star": true,
+   "ts": 1794701324967
+  },
+  {
+   "run": 2904,
+   "verdict": "keep",
+   "star": true,
+   "ts": 1794701326441
+  },
+  {
+   "run": 3225,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794701308834
+  },
+  {
+   "run": 3300,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794701309275
+  },
+  {
+   "run": 3465,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794701309889
+  },
+  {
+   "run": 3675,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794701310391
+  },
+  {
+   "run": 4464,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701312484
+  },
+  {
+   "run": 5636,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701313307
+  },
+  {
+   "run": 5917,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701314145
+  },
+  {
+   "run": 6018,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701316411
+  },
+  {
+   "run": 6392,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701317027
+  },
+  {
+   "run": 6463,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794701317410
+  }
+ ],
+ "note": "This is a test note, lots of static in this one."
+}

@@ -1,0 +1,36 @@
+$ jetcarp doctor
+JETCARP 0.4.0-rc.3 on macos aarch64 (12 threads)
+
+Folders
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /Users/Jimmie/.local/lib/jetcarp/packs (1.5 MB)
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite (1.1 MB)
+  data in use: 1.1 MB
+
+Graphics adapters (* = used by the GPU simulation)
+  * Apple M2 Max (Metal, IntegratedGpu)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+$ jetcarp setup --status
+setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data, 832.6 GB free
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /Users/Jimmie/.local/lib/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 64 patterns, 0 ant runs, 2 jobs; Quick Start entries: 364 built in
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)

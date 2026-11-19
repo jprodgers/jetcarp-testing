@@ -1,0 +1,9 @@
+Recorded: 2026-11-12 01:18 -0500, before M3
+Monitors: the built-in panel only (Color LCD, 2056x1329 points, 3456x2234 pixels)
+Desktop picture (from ~/Library/Application Support/com.apple.wallpaper/Store/Index.plist):
+  default Space, all displays: ~/Pictures/own-picture.png, placement Crop
+    (sha256 40dfaec960f0f076f479aaa48d8b73961993c9c1b9e8469e441a39c63979ffd6)
+  one other Space (SPACE-1-UUID): ~/Library/Application Support/cart/desktop-pictures/still-1794302967475.png
+    (left by the old CART build; the file no longer exists)
+  Idle (screen saver / lock): the same screenshot, SizeToFit, style dark
+Screen saver: com.apple.screensaver idleTime 0 (never); ~/Library/Screen Savers empty

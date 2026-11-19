@@ -1,0 +1,678 @@
+#### Session A: jetcarp mcp (no --allow)
+== [A abs-outside] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/scene.json)
+== [A abs-outside] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/pic.png)
+== [A abs-outside] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/wall.png)
+== [A abs-outside] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/script.png); use out_dir("label") for a new output folder
+   
+== [A abs-outside] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/text.txt); use out_dir("label") for a new output folder
+   
+== [A abs-outside] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/2026-11-16_01-03-22_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc3-r-outside-scriptdir
+   log:
+   wrote
+   
+== [A abs-outside] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/runs.csv)
+== [A abs-outside] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/sheet.png)
+== [A abs-outside] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/run.json)
+== [A abs-outside] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/try.png)
+== [A abs-outside] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A abs-outside] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/media)
+== [A abs-outside] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A abs-outside] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A abs-outside] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/site)
+== [A abs-outside] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/piles)
+== [A abs-outside] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A dotdot] world_status {"save_path": "../outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/scene.json)
+== [A dotdot] world_render {"max_side": 64, "save_path": "../outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/pic.png)
+== [A dotdot] world_render {"wallpaper": {"size": "320x200", "out": "../outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/wall.png)
+== [A dotdot] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"../outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/script.png); use out_dir("label") for a new output folder
+   
+== [A dotdot] run_script {"script": "write_text(\"../outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/text.txt); use out_dir("label") for a new output folder
+   
+== [A dotdot] run_script {"script": "out_dir(\"../outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/2026-11-16_01-03-22_outside-scriptdir
+   log:
+   wrote
+   
+== [A dotdot] search_runs {"job": 3, "csv": "../outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/runs.csv)
+== [A dotdot] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "../outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/sheet.png)
+== [A dotdot] search_runs {"job": 3, "scene": {"run": 1, "save": "../outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/run.json)
+== [A dotdot] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "../outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/try.png)
+== [A dotdot] search_runs {"refit": {"jobs": [3], "out": "../outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A dotdot] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "../outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/media)
+== [A dotdot] pack {"publish": {"feed": "f9-folders", "to": "../outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A dotdot] pack {"export": {"to": "../outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A dotdot] pack {"site": {"to": "../outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/site)
+== [A dotdot] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "../outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/piles)
+== [A dotdot] files_list {"path": "../outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A symlink] world_status {"save_path": "link-outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/scene.json)
+== [A symlink] world_render {"max_side": 64, "save_path": "link-outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/pic.png)
+== [A symlink] world_render {"wallpaper": {"size": "320x200", "out": "link-outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/wall.png)
+== [A symlink] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"link-outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/script.png); use out_dir("label") for a new output folder
+   
+== [A symlink] run_script {"script": "write_text(\"link-outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/text.txt); use out_dir("label") for a new output folder
+   
+== [A symlink] run_script {"script": "out_dir(\"link-outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/2026-11-16_01-03-22_link-outside-scriptdir
+   log:
+   wrote
+   
+== [A symlink] search_runs {"job": 3, "csv": "link-outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/runs.csv)
+== [A symlink] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "link-outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/sheet.png)
+== [A symlink] search_runs {"job": 3, "scene": {"run": 1, "save": "link-outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/run.json)
+== [A symlink] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "link-outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/try.png)
+== [A symlink] search_runs {"refit": {"jobs": [3], "out": "link-outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A symlink] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "link-outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/media)
+== [A symlink] pack {"publish": {"feed": "f9-folders", "to": "link-outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A symlink] pack {"export": {"to": "link-outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A symlink] pack {"site": {"to": "link-outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/site)
+== [A symlink] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "link-outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside/piles)
+== [A symlink] files_list {"path": "link-outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/link-outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A tmp] world_status {"save_path": "/tmp/f9-jetcarp-outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/scene.json)
+== [A tmp] world_render {"max_side": 64, "save_path": "/tmp/f9-jetcarp-outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/pic.png)
+== [A tmp] world_render {"wallpaper": {"size": "320x200", "out": "/tmp/f9-jetcarp-outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/wall.png)
+== [A tmp] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/tmp/f9-jetcarp-outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /tmp/f9-jetcarp-outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /tmp/f9-jetcarp-outside/script.png); use out_dir("label") for a new output folder
+   
+== [A tmp] run_script {"script": "write_text(\"/tmp/f9-jetcarp-outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /tmp/f9-jetcarp-outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /tmp/f9-jetcarp-outside/text.txt); use out_dir("label") for a new output folder
+   
+== [A tmp] run_script {"script": "out_dir(\"/tmp/f9-jetcarp-outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/2026-11-16_01-03-23_tmp-f9-jetcarp-outside-scriptdir
+   log:
+   wrote
+   
+== [A tmp] search_runs {"job": 3, "csv": "/tmp/f9-jetcarp-outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/runs.csv)
+== [A tmp] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/tmp/f9-jetcarp-outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/sheet.png)
+== [A tmp] search_runs {"job": 3, "scene": {"run": 1, "save": "/tmp/f9-jetcarp-outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/run.json)
+== [A tmp] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/tmp/f9-jetcarp-outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/try.png)
+== [A tmp] search_runs {"refit": {"jobs": [3], "out": "/tmp/f9-jetcarp-outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A tmp] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/tmp/f9-jetcarp-outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/media)
+== [A tmp] pack {"publish": {"feed": "f9-folders", "to": "/tmp/f9-jetcarp-outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A tmp] pack {"export": {"to": "/tmp/f9-jetcarp-outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A tmp] pack {"site": {"to": "/tmp/f9-jetcarp-outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/site)
+== [A tmp] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/tmp/f9-jetcarp-outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /tmp/f9-jetcarp-outside/piles)
+== [A tmp] files_list {"path": "/tmp/f9-jetcarp-outside"}
+   isError=True
+   /tmp/f9-jetcarp-outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A allowed-without-flag] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/scene.json)
+== [A allowed-without-flag] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/pic.png)
+== [A allowed-without-flag] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/wall.png)
+== [A allowed-without-flag] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/script.png); use out_dir("label") for a new output folder
+   
+== [A allowed-without-flag] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/text.txt); use out_dir("label") for a new output folder
+   
+== [A allowed-without-flag] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/2026-11-16_01-03-23_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc3-r-allowed-scriptdir
+   log:
+   wrote
+   
+== [A allowed-without-flag] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/runs.csv)
+== [A allowed-without-flag] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/sheet.png)
+== [A allowed-without-flag] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/run.json)
+== [A allowed-without-flag] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/try.png)
+== [A allowed-without-flag] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [A allowed-without-flag] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media)
+== [A allowed-without-flag] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/store", "no_media": true, "no_searches": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A allowed-without-flag] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [A allowed-without-flag] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/site)
+== [A allowed-without-flag] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles)
+== [A allowed-without-flag] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A read] world_new {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json"}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json
+== [A read] run_script {"script": "let w = load_scene(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json\"); print(`read ${w.population()}`);", "max_seconds": 10}
+   isError=True
+   error at line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json
+   log:
+   error: line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json
+   
+== [A read] run_script {"script": "let t = read_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/rules.txt\"); print(t);", "max_seconds": 10}
+   isError=True
+   error at line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/rules.txt
+   log:
+   error: line 1, column 9: this run may only read inside the output folders, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/rules.txt
+   
+== [A read] files_list {"file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A read] pack {"info": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/packs/good
+== [A read] pack {"check": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/packs/good
+== [A read] library_curate {"quickstart": {"scene": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json", "title": "outside"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/good.json
+== [A read] search_start {"search": {"rules_file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/rules.txt", "soups": 2}, "wait_s": 20}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/rules.txt
+== [A sys] files_list {"file": "/etc/passwd"}
+   isError=True
+   /etc/passwd is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A sys] files_list {"path": "/etc"}
+   isError=True
+   /etc is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out) and the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library); files_list only reads those
+== [A sys] world_new {"path": "/etc/hostname"}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /etc/hostname
+== [A inside] world_status {"save_path": "f9-inside/scene.json"}
+   isError=False
+   Saved the scene (654 bytes, generation 0, hash 834a296f41a38d58) to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9-inside/scene.json.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf881246efa1379",
+     "done": "no: something can still change",
+     "fields": [
+#### Session B: jetcarp mcp --allow /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed
+== [B allowed] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/scene.json"}
+   isError=False
+   Saved the scene (654 bytes, generation 0, hash 834a296f41a38d58) to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/scene.json.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf881246efa1379",
+     "done": "no: something can still change",
+     "fields": [
+       {
+== [B allowed] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/pic.png"}
+   isError=False
+   64 x 64 px picture of generation 0 (Square (parallelogram), 1024 cells; hash 834a296f41a38d58). Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/pic.png.
+   [content types: ['text', 'image']]
+== [B allowed] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/wall.png"}}
+   isError=False
+   {
+     "files": [
+       {
+         "height": 200,
+         "path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/wall.png",
+         "width": 320
+       }
+     ],
+     "fit": {
+       "kind": "cover"
+     },
+     "generation": 0,
+     "hash": "834a296f41a38d58"
+   }
+== [B allowed] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   wrote
+   
+== [B allowed] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   wrote
+   
+== [B allowed] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/2026-11-16_01-03-24_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc3-r-allowed-scriptdir
+   log:
+   wrote
+   
+== [B allowed] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/runs.csv", "limit": 5}
+   isError=False
+   {
+     "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/runs.csv",
+     "job": 3,
+     "measures": [],
+     "runs": 5
+   }
+== [B allowed] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/sheet.png", "px": 64}}
+   isError=False
+   2 runs of explore job 3 (296 x 102 px); saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/sheet.png
+   [content types: ['text', 'image']]
+== [B allowed] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/run.json"}}
+   isError=False
+   Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/run.json.
+   {
+     "cas": [
+       {
+         "enabled": true,
+         "neighborhood": "edge",
+         "rule": "B12/S1",
+         "seed": {
+           "pattern": {
+             "fill": {
+               "density": 0.29
+             },
+             "shape": {
+               "kind": "all"
+             }
+           }
+         },
+         "steps_per_gen": 1
+       }
+     ],
+     "format": 1,
+     "jetcarp_version": "0.4.2-rc.3",
+     "name": "explore 3 run 1: B12/S1",
+     "rng_state": "5315557273
+== [B allowed] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/try.png"}}
+   isError=False
+   {
+     "activity": 0.08520418405532837,
+     "category": "Living textures",
+     "density": 0.11532764136791229,
+     "entropy": 0.5047380328178406,
+     "family": "life_like",
+     "fate": "running",
+     "mover_speed": 0.0,
+     "movers": 0,
+     "period": 0,
+     "score": 0.566,
+     "settle": 50,
+     "smooth": 0.24667783081531525
+   }
+   [content types: ['text', 'image']]
+== [B allowed] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [B allowed] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media"}
+   isError=False
+   {
+     "done": [],
+     "failed": [],
+     "files": {
+       "anim": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/anim.webp",
+       "frames": [
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/frames/0000.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/frames/0001.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/frames/0002.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/fr
+== [B allowed] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/store", "no_media": true, "no_searches": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [B allowed] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [B allowed] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/site", "render": false}}
+   isError=False
+   {
+     "ants": 0,
+     "deleted": [],
+     "dir": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/site",
+     "media_failed": [],
+     "patterns": 0,
+     "quickstart": 0,
+     "rendered": 0,
+     "unchanged": 0,
+     "written": [
+       "manifest.json",
+       "index.html"
+     ]
+   }
+== [B allowed] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles"}, "wait_s": 30}
+   isError=False
+   Sandpile job 4 started (background).
+   pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+     image: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles/2026-11-16_01-03-24_square-1000/pile.png
+     preview: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles/2026-11-16_01-03-24_square-1000/preview.png
+     folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles/2026-11-16_01-03-24_square-1000
+     Sandpile 4: done, 1,000 grains on 
+== [B allowed] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed"}
+   isError=False
+   {
+     "entries": 12,
+     "folder": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed",
+     "newest_first": [
+       {
+         "entries": 4,
+         "kind": "dir",
+         "modified": "2026-11-16T06:03:24Z",
+         "name": "media"
+       },
+       {
+         "bytes": 1455,
+         "kind": "file",
+         "modified": "2026-11-16T06:03:24Z",
+         "name": "pic.png"
+       },
+       {
+         "entries": 1,
+         "kind": "dir",
+         "modified": "2026-11-16T06:03:24Z",
+         "name": "piles"
+       },
+       {
+         "bytes": 540,
+     
+== [B still-outside] world_status {"save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/scene.json"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/scene.json)
+== [B still-outside] world_render {"max_side": 64, "save_path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/pic.png"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/pic.png)
+== [B still-outside] world_render {"wallpaper": {"size": "320x200", "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/wall.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/wall.png)
+== [B still-outside] run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(5); w.save_png(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/script.png\", #{ size: [64, 64] }); print(\"wrote\");", "max_
+   isError=True
+   error at line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/script.png); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 111: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/
+== [B still-outside] run_script {"script": "write_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/text.txt\", \"hello\"); print(\"wrote\");", "max_seconds": 20}
+   isError=True
+   error at line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/text.txt); use out_dir("label") for a new output folder
+   log:
+   error: line 1, column 1: scripts may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Docume
+== [B still-outside] run_script {"script": "out_dir(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/scriptdir\"); let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_scene(\"s.json\"); print(\"wrote\");", "max_seconds": 
+   isError=False
+   ok: finished in 0.00 s
+   output folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/2026-11-16_01-03-24_home-jimmie-Documents-jetcarp-dev-work-0.4.2-rc3-r-outside-scriptdir
+   log:
+   wrote
+   
+== [B still-outside] search_runs {"job": 3, "csv": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/runs.csv", "limit": 5}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/runs.csv)
+== [B still-outside] search_runs {"job": 3, "sheet": {"ids": [1, 2], "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/sheet.png", "px": 64}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/sheet.png)
+== [B still-outside] search_runs {"job": 3, "scene": {"run": 1, "save": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/run.json"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/run.json)
+== [B still-outside] search_runs {"try": {"tiling": "square", "rule": "B3/S23", "cells": 2000, "gens": 50, "png": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/try.png"}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/try.png)
+== [B still-outside] search_runs {"refit": {"jobs": [3], "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/model.json"}}
+   isError=True
+   a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 1 runs, 0 keeps and 0 drops
+   review more runs: jobs clips makes clips to rate, jobs review records the ratings
+== [B still-outside] media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/media"}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/media)
+== [B still-outside] pack {"publish": {"feed": "f9-folders", "to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/store", "no_media": true, "no_searches": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [B still-outside] pack {"export": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/export", "publish": {"feed": "f9-folders", "no_media": true, "no_searches": true}}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== [B still-outside] pack {"site": {"to": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/site", "render": false}}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/site)
+== [B still-outside] search_start {"pile": {"tiling": "square", "grains": 1000, "out": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/piles"}, "wait_s": 30}
+   isError=True
+   the MCP tools may only write inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed (got /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/piles)
+== [B still-outside] files_list {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside is outside JETCARP's output folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out), the catalog's folder (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library) and the allowed folders (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed); files_list only reads those
+== [B allowed read] world_new {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json"}
+   isError=True
+   could not read /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json: No such file or directory (os error 2)
+== [B allowed read] run_script {"script": "let w = load_scene(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json\"); print(`read ${w.population()}`);", "max_seconds": 10}
+   isError=True
+   error at line 1, column 9: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json: No such file or directory (os error 2)
+   log:
+   error: line 1, column 9: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json: No such file or directory (os error 2)
+   
+== [B allowed read] run_script {"script": "let t = read_text(\"/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/rules.txt\"); print(t);", "max_seconds": 10}
+   isError=True
+   error at line 1, column 9: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/rules.txt: No such file or directory (os error 2)
+   log:
+   error: line 1, column 9: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/rules.txt: No such file or directory (os error 2)
+   
+== [B allowed read] files_list {"file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json does not exist
+== [B allowed read] pack {"info": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/packs/good
+== [B allowed read] pack {"check": {"path": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/../packs/good"}}
+   isError=True
+   the MCP tools may only read inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/packs/good
+== [B allowed read] library_curate {"quickstart": {"scene": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json", "title": "outside"}}
+   isError=True
+   reading /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/good.json: No such file or directory (os error 2)
+== [B allowed read] search_start {"search": {"rules_file": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/rules.txt", "soups": 2}, "wait_s": 20}
+   isError=True
+   reading /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/rules.txt: No such file or directory (os error 2)
+#### files written outside (find /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside /tmp/f9-jetcarp-outside -newer t42_folders.py):
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/outside/rules.txt
+find: ‘/tmp/f9-jetcarp-outside’: No such file or directory
+
+#### the allowed folder:
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/scene.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/pic.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/wall.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/script.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/text.txt
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/runs.csv
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/sheet.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/run.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/try.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/frames
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/anim.webp
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/poster.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/media/thumb.png
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/site
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/site/manifest.json
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/site/index.html
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/allowed/piles/2026-11-16_01-03-24_square-1000
+

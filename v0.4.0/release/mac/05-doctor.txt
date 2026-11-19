@@ -1,0 +1,54 @@
+# H2 check 6: jetcarp doctor (and setup --status), 2026-11-13 07:37:14 EST
+
+$ jetcarp doctor
+JETCARP 0.4.0 on macos aarch64 (12 threads)
+
+Folders
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Documents/jetcarp-data
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /opt/homebrew/Cellar/jetcarp/0.4.0/share/jetcarp/packs (1.5 MB)
+  library:  /Users/Jimmie/Documents/jetcarp-data/library.sqlite (not created yet)
+  data in use: 0 B
+
+Graphics adapters (* = used by the GPU simulation)
+  * Apple M2 Max (Metal, IntegratedGpu)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+(exit 0)
+
+$ jetcarp setup --status
+setup: Researcher on 2026-11-13 04:23 UTC (JETCARP 0.4.0-rc.3)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Documents/jetcarp-data (chosen in setup: paths.json), 832.3 GB free
+  library:  /Users/Jimmie/Documents/jetcarp-data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /opt/homebrew/Cellar/jetcarp/0.4.0/share/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+(exit 0)
+
+$ ls -la ~/Documents/jetcarp-data
+ls: /Users/Jimmie/Documents/jetcarp-data: No such file or directory
+
+$ ls -la ~/Library/Application\ Support/jetcarp
+total 48
+drwxr-xr-x@  8 Jimmie  staff   256 Nov 13 00:41 .
+drwx------+ 47 Jimmie  staff  1504 Nov 13 00:46 ..
+-rw-r--r--@  1 Jimmie  staff  4342 Nov 13 00:40 app.json
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 13 00:00 data
+-rw-r--r--@  1 Jimmie  staff   482 Nov 13 00:03 host.json
+-rw-r--r--@  1 Jimmie  staff    73 Nov 12 23:23 paths.json
+-rw-r--r--@  1 Jimmie  staff   334 Nov 12 23:23 setup.json
+-rw-r--r--@  1 Jimmie  staff  2664 Nov 13 00:13 wallpaper-store-before-saver-remove.plist

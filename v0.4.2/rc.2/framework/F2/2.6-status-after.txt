@@ -1,0 +1,10 @@
+explore 2: 93,243 runs (13/s), 5,753 elites in 2,564 niches (0 of them confirmed), 1,007 of 1,359 tilings; cpu only
+  status paused, 1 h 41 min run over every session, 0 confirmation runs, 401,520 candidates tried, 1.28 GB of memory
+  threads: 30 for runs on the processor, of 32 cores (2 left free)
+  this session: 6 runs on the processor stopped at their time cap (kept with the generations they reached), 30 runs given up at a stop or the end (not kept)
+  score: the score model 'Jimmie Rodgers, jaca on explore job 2' (for jaca runs)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                     93,243   0.58   2.13   5,740
+  folder: /home/jimmie/.local/share/jetcarp/searches/db6ff353-5ce5-4203-8463-0ba2744bf19b
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

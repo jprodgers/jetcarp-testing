@@ -1,0 +1,25 @@
+# System Settings open at the Screen Saver page, JETCARP selected (Jimmie); idleTime back to 0 (Never)
+$ jetcarp host saver status   (01:46:31)
+JETCARP's screen saver is at /Users/Jimmie/Library/Screen Savers/JETCARP.saver, showing "A classic a day". Choose it in System Settings, Wallpaper, Screen Saver….
+exit 0
+
+$ jetcarp host saver remove   (01:46:31)
+removed
+exit 0
+
+$ jetcarp host saver status
+JETCARP's screen saver is not installed.
+exit 0
+
+$ ls ~/Library/Screen\ Savers
+total 0
+drwx------+  2 Jimmie  staff    64 Nov 12 01:46 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+
+# After remove, macOS's wallpaper store (Index.plist) still has JETCARP selected as the screen saver
+# ("Idle" choice, provider com.apple.wallpaper.choice.screen-saver, module
+# file:///Users/Jimmie/Library/Screen%20Savers/JETCARP.saver) on every display and Space.
+# Before the test, the Idle choice was the desktop picture (com.apple.wallpaper.choice.image).
+# Jimmie: System Settings, open during remove, still listed JETCARP, selected, after switching panes.
+# After quitting and reopening System Settings: JETCARP is gone from the list; the selection
+# shows a blank screen and "custom".

@@ -1,0 +1,39 @@
+2026-11-17 16:22:08 === rc.5 wave, long part, starts; build ~\jetcarp-rc-042c\bin\jetcarp.exe: jetcarp 0.4.2-rc.5
+2026-11-17 16:22:09 jetcarp processes at start: 
+2026-11-17 16:22:09 power: battery 100%, status 2 (2 = mains)
+2026-11-17 16:22:09 parity copied from the repository: 371 scenes, long 40 scenes
+2026-11-17 16:22:09 === 1.1-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 300 gens)
+2026-11-17 16:27:47 1.1-rtx-vulkan adapters used: 335x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-17 16:27:47 RESULT 1.1-rtx-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 5.6 min
+2026-11-17 16:27:47 === 1.1-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 300 gens)
+2026-11-17 16:44:46 1.1-rtx-dx12 adapters used: 335x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12)
+2026-11-17 16:44:46 RESULT 1.1-rtx-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 17.0 min
+2026-11-17 16:44:46 === 1.1-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 300 gens)
+2026-11-17 16:50:07 1.1-uhd-vulkan adapters used: 335x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-17 16:50:07 RESULT 1.1-uhd-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 5.4 min
+2026-11-17 16:50:07 === 1.1-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 300 gens)
+2026-11-17 17:07:54 1.1-uhd-dx12 adapters used: 335x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-17 17:07:54 RESULT 1.1-uhd-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 17.8 min
+2026-11-17 17:07:54 === 1.2-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 5000 gens)
+2026-11-17 17:09:52 1.2-rtx-vulkan adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-17 17:09:52 RESULT 1.2-rtx-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.0 min
+2026-11-17 17:09:52 === 1.2-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 5000 gens)
+2026-11-17 17:13:04 1.2-rtx-dx12 adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12)
+2026-11-17 17:13:04 RESULT 1.2-rtx-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.2 min
+2026-11-17 17:13:04 === 1.2-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 5000 gens)
+2026-11-17 17:15:09 1.2-uhd-vulkan adapters used: 40x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-17 17:15:09 RESULT 1.2-uhd-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.1 min
+2026-11-17 17:15:09 === 1.2-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 5000 gens)
+2026-11-17 17:18:29 1.2-uhd-dx12 adapters used: 40x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-17 17:18:29 RESULT 1.2-uhd-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.3 min
+2026-11-17 17:18:29 === 1.3: the source at the tag
+2026-11-17 17:18:29 before: cf5cbdff Release 0.4.2-rc.4 (HEAD)
+2026-11-17 17:18:30 git fetch --tags origin: git.exe : From https://github.com/jprodgers/jetcarp / At <repo>\results\v0.4.2-rc5\acer\t1_long.ps1:58 char:7 / + $fe = & git -C $SRC fetch --tags origin 2>&1 | Out-String / +       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /     + CategoryInfo          : NotSpecified: (From https://gi...rodgers/jetcarp:String) [], RemoteException /     + FullyQualifiedErrorId : NativeCommandError /   /  * [new tag]           v0.4.2-rc.5 -> v0.4.2-rc.5
+2026-11-17 17:18:30 git checkout --detach v0.4.2-rc.5: git.exe : Previous HEAD position was cf5cbdff Release 0.4.2-rc.4 / At <repo>\results\v0.4.2-rc5\acer\t1_long.ps1:60 char:7 / + $co = & git -C $SRC checkout --detach v0.4.2-rc.5 2>&1 | Out-String / +       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /     + CategoryInfo          : NotSpecified: (Previous HEAD p...ease 0.4.2-rc.4:String) [], RemoteException /     + FullyQualifiedErrorId : NativeCommandError /   / HEAD is now at c0db1abc Release 0.4.2-rc.5
+2026-11-17 17:18:30 now: c0db1abc Release 0.4.2-rc.5; status: []
+2026-11-17 17:18:30 === 1.3 RTX
+2026-11-17 17:40:33 RTX: 2026-11-17 17:40:33 RESULT 1-rtx-tag : pass:1048 passed, 0 failed, 41 ignored in 137 test binaries; exit 0, 22 min; message boxes closed by the watcher: 0
+2026-11-17 17:40:33 === 1.3 UHD
+2026-11-17 17:54:49 UHD: 2026-11-17 17:54:49 RESULT 1-uhd-tag : pass:1048 passed, 0 failed, 41 ignored in 137 test binaries; exit 0, 14 min; message boxes closed by the watcher: 0
+2026-11-17 17:54:50 jetcarp processes at the end: 
+2026-11-17 17:54:50 === long part ends

@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile on hexagons",
+  "description": "An Abelian sandpile: a cell with as many grains as neighbours topples, giving one to each. A large pile spreads into a fractal.",
+  "tiling": {
+    "family": "hex",
+    "size": {
+      "rect": {
+        "w": 140,
+        "h": 120
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 20,
+      "palette": "Tide",
+      "seed": {
+        "pile": {
+          "grains": 30000
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "1fa2526d808c90ba",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

@@ -1,0 +1,4 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.19s
+     Running tests\recovery.rs (target\release\deps\recovery-2419414a165dc7eb.exe)
+
+running 2 tests

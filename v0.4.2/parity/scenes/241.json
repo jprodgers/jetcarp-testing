@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA wide trench conquest (blast 2)",
+  "description": "Blast 2 on triangles: one sign pushes the other back behind a wide trench until it is gone. Found by a JACA rule search.",
+  "tiling": {
+    "family": "triangle",
+    "size": {
+      "rect": {
+        "w": 124,
+        "h": 97
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 22,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B12359/S0,1,4,8,10,11 -B12359/S1,8,9,10,11 blast 2",
+      "rule": "JACA +B12359/S0,1,4,8,10,11 -B12359/S1,8,9,10,11 blast 2",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Moss",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Autumn"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "998c5b2e138e2206",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

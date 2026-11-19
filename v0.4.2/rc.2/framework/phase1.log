@@ -1,0 +1,105 @@
+2026-11-15T08:43:46Z == F1 2.0 version and hash
+jetcarp 0.4.2-rc.2
+2026-11-15T08:43:46Z == F1 2.G1 first doctor (fresh self-test)
+2026-11-15T08:43:46Z == F1 second doctor (kept from before)
+2026-11-15T08:43:46Z == F1 #21 JETCARP_GPU=nosuchgpu
+2026-11-15T08:43:46Z == F1 #26 WGPU_BACKEND in doctor
+2026-11-15T08:43:46Z == F1 software adapter doctor
+2026-11-15T08:43:46Z == FG 1.1 parity, 371 scenes, Radeon
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+2026-11-15T08:44:57Z == FG 1.1 parity, 371 scenes, llvmpipe
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (llvmpipe (LLVM 21.1.8, 256 bits) (llvmpipe), Vulkan)
+2026-11-15T08:46:46Z == FG 1.2 long parity, 40 scenes x 5000, Radeon
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+2026-11-15T08:47:43Z == FG 1.2 long parity, 40 scenes x 5000, llvmpipe
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (llvmpipe (LLVM 21.1.8, 256 bits) (llvmpipe), Vulkan)
+2026-11-15T08:49:02Z == 1.6 deterministic hunt
+2026-11-15T08:49:09Z hunt job 1
+2026-11-15T08:49:09Z == 1.4 explore, 120 minutes, detached
+{
+  "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data/library.sqlite",
+  "created": true,
+  "files": [],
+  "job": 2,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "long",
+  "line": "explore 2: 0 runs, paused, elites 0, niches 0, confirmed elites 0",
+  "mode": "detached",
+  "progress": {
+    "job": 2,
+    "status": "paused"
+  },
+  "result": null,
+  "seconds": 0.346028995,
+  "status": "running",
+  "stopped": null
+}
+2026-11-15T08:49:09Z explore job 2
+2026-11-15T09:49:25Z kill -9 the explore process 1026929
+2026-11-15T09:49:35Z == 1.4 status after the kill (expect stalled, resumable)
+explore 2: 513,902 runs (142/s), 37,406 elites in 17,387 niches (2,085 of them confirmed), 256 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status running, 1 h 0 min run over every session, 10,803 confirmation runs, 525,824 candidates tried, 3.27 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 2,130 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               158,390   0.33   1.66   9,311
+  generations             124,489   0.66   2.12   6,849
+  jaca                     56,585   0.51   2.18   7,067
+  ltl                      42,751   0.37   2.53   2,480
+  priority                 37,117   0.41   2.17   3,849
+  rps                      18,712   0.56   2.40   1,446
+  hodgepodge               18,704   1.17   2.48   1,467
+  greenberg_hastings       18,508   0.61   2.65     669
+  cyclic                   18,498   0.52   2.42   1,497
+  wireworld                 3,507   0.47   1.31     321
+  spectre_glider            3,201   0.38   1.45      46
+  turmite                   3,089   0.84   1.90     707
+  layered                   2,593   0.66   1.88     413
+  lenia                     1,599   1.09   2.39     358
+  forest_fire               1,499   0.74   1.13     262
+  sandpile                  1,189   0.67   2.33     152
+  hex_tri                     800   0.62   1.74      57
+  margolus                    716   0.66   1.92     358
+  hex_wolfram                 656   0.63   1.74      38
+  wolfram                     656   0.71   1.71      47
+  table                       643   0.29   0.49      12
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data/searches/7b460dca-febf-44c7-b350-f0e7a224c163
+2026-11-15T09:49:35Z == 1.4 resume to the end
+explore 2: 2,231,745 runs (191/s), 66,824 elites in 29,158 niches (5,261 of them confirmed), 787 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status paused, 4 h 15 min run over every session, 29,232 confirmation runs, 2,262,069 candidates tried, 6.96 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 6,908 runs on the processor stopped at their time cap (kept with the generations they reached), 1,038 runs given up at a stop or the end (not kept)
+  loaded 37,397 elites, 523,538 identities, 25,574 coverage rows in 0.11 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               667,513   0.34   1.70  14,257
+  generations             525,398   0.65   2.15  10,926
+  ltl                     243,195   0.37   2.53   5,448
+  jaca                    240,912   0.51   2.24  14,622
+  priority                156,461   0.40   2.22   7,990
+  hodgepodge               79,322   1.13   2.51   2,819
+  rps                      79,118   0.57   2.49   2,186
+  cyclic                   78,837   0.53   2.42   2,222
+  greenberg_hastings       78,518   0.57   2.65   1,141
+  wireworld                14,956   0.47   1.73     608
+  spectre_glider           13,275   0.38   1.45      59
+  turmite                  12,252   0.83   2.18   1,472
+  layered                  10,527   0.65   1.93     644
+  lenia                     6,685   1.10   2.43     693
+  forest_fire               6,188   0.75   1.16     463
+  sandpile                  4,902   0.67   2.33     268
+  hex_wolfram               2,762   0.64   1.80      49
+  wolfram                   2,758   0.70   1.75      54
+  table                     2,726   0.30   1.74      15
+  hex_tri                   2,720   0.63   1.91      62
+  margolus                  2,720   0.71   2.21     826
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data/searches/7b460dca-febf-44c7-b350-f0e7a224c163
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+2026-11-15T13:09:53Z == 1.4 pack with no jobs seal, import into a fresh library
+2026-11-15T13:10:10Z imported job 1: 2231745 runs
+2026-11-15T13:10:10Z == done

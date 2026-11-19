@@ -1,0 +1,26 @@
+GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+hunt job 6 in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/library.sqlite
+hunt 6: 127,048/2,000,000 soups, 1868 soups/s, 2,734,492 objects (ships 242,089, osc 790,865, still 1,701,538), 84 distinct, 47 new | newest: still life 10c #d7dd71 (B3/S23)
+hunt 6: 143,548/2,000,000 soups, 2265 soups/s, 3,088,079 objects (ships 273,625, osc 893,184, still 1,921,270), 87 distinct, 50 new | newest: still life 13c #66e25d (B3/S23)
+hunt 6: 160,350/2,000,000 soups, 2416 soups/s, 3,448,269 objects (ships 305,572, osc 997,837, still 2,144,860), 91 distinct, 54 new | newest: still life 12c #3a7048 (B3/S23)
+hunt 6: 176,441/2,000,000 soups, 2484 soups/s, 3,790,212 objects (ships 336,003, osc 1,096,193, still 2,358,016), 95 distinct, 58 new | newest: still life 14c #72adcc (B3/S23)
+hunt 6: 192,243/2,000,000 soups, 2512 soups/s, 4,132,141 objects (ships 366,406, osc 1,195,406, still 2,570,329), 98 distinct, 61 new | newest: still life 13c #29f096 (B3/S23)
+hunt 6: 208,318/2,000,000 soups, 2525 soups/s, 4,480,771 objects (ships 397,297, osc 1,296,186, still 2,787,288), 99 distinct, 62 new | newest: still life 12c #db8ddb (B3/S23)
+hunt 6: 224,111/2,000,000 soups, 2544 soups/s, 4,825,709 objects (ships 427,794, osc 1,396,276, still 3,001,639), 105 distinct, 68 new | newest: still life 13c #e30e34 (B3/S23)
+hunt 6: 240,515/2,000,000 soups, 2562 soups/s, 5,184,297 objects (ships 459,501, osc 1,500,256, still 3,224,540), 108 distinct, 71 new | newest: still life 10c #7db073 (B3/S23)
+hunt 6: 256,618/2,000,000 soups, 2571 soups/s, 5,537,260 objects (ships 490,469, osc 1,602,624, still 3,444,167), 110 distinct, 73 new | newest: still life 12c #768b02 (B3/S23)
+hunt 6: 268,787/2,000,000 soups, 2576 soups/s, 5,804,692 objects (ships 514,043, osc 1,680,327, still 3,610,322), 112 distinct, 75 new | newest: still life 16c #244ffd (B3/S23)
+  status paused, 104 s run, 267335 settled, 714 died, 738 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  B3/S23 on Square: 268787 soups, 5804692 objects (oscillator 1680327, spaceship 514043, still life 3610322), 112 distinct, 75 new
+  newest finds:
+    244ffd5a9d5d221a9036a0d5f2ffce58  still life 16c #244ffd             B3/S23     Square soup 267394  (new to the catalog)
+    93cf2ec8439397f9da0a1c3168e710d0  still life 8c #93cf2e              B3/S23     Square soup 260241  (new to the catalog)
+    768b02a1a9250fe08314bb861b8ba6c1  still life 12c #768b02             B3/S23     Square soup 252695  (new to the catalog)
+    484e3ad69380f4f4fed8b53eccd9b77f  still life 15c #484e3a             B3/S23     Square soup 247323  (new to the catalog)
+    7db073660d730ca84bcdae369e25452d  still life 10c #7db073             B3/S23     Square soup 230389  (new to the catalog)
+    bca0f58e44ac86ce8d45669cf58a531e  still life 17c #bca0f5             B3/S23     Square soup 230116  (new to the catalog)
+    3efc691ffd874c9bdee6ffb4d29d0592  still life 11c #3efc69             B3/S23     Square soup 226330  (new to the catalog)
+    e30e34dd3494aff6904263a8c3bbd3cb  still life 13c #e30e34             B3/S23     Square soup 223634  (new to the catalog)
+    aa73ec7128f4d48e76ae1a1442738a2b  still life 11c #aa73ec             B3/S23     Square soup 218151  (new to the catalog)
+    0e7d1377f92f361aca0739c2fa7ac607  still life 15c #0e7d13             B3/S23     Square soup 217003  (new to the catalog)
+hunt 6 paused (at its budget); `jetcarp jobs resume 6` resumes it exactly

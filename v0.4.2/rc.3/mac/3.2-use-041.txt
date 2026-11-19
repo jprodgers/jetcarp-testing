@@ -1,0 +1,68 @@
+== 13:31:26 jetcarp 0.4.1 (Homebrew), default folders
+-- setup --profile desktop-art --yes --quickstart-minutes 0
+
+setting up JETCARP as Desktop art:
+  1. record the profile Desktop art in /Users/Jimmie/Library/Application Support/jetcarp/setup.json
+  2. offer the live wallpaper and the screen saver (nothing changes unless you say yes)
+recorded Desktop art in /Users/Jimmie/Library/Application Support/jetcarp/setup.json
+
+To use JETCARP on your desktop (nothing was changed there):
+  Show a live wallpaper on the desktop: jetcarp host wallpaper on && jetcarp host start
+  Start the live wallpaper when you log in: jetcarp host login on
+  Use JETCARP as the screen saver: jetcarp host saver install
+Open the app with `jetcarp`; `jetcarp setup` again changes your mind.
+exit 0
+-- search hunt --rules B3/S23,B36/S23 --soups 5000 --label m7-041-hunt
+    c8f20f137dfae2f393afe921c7c5e670  snake                              B3/S23     Square soup 2540
+    076c1a268e4004b5a0c13876844e8864  still life 9c #076c1a              B3/S23     Square soup 2463
+    1741ff737fd4a9871f808a2bf46d7594  still life 11c #1741ff             B3/S23     Square soup 2048
+exit 0
+-- library list --class spaceship --limit 5
+catalog: /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite (5 shown of 22 matching)
+a333894bd32cb3e2d1f0d2776637e7f9  c/2 orthogonal spaceship 18c #a33~ B2/S34       4.8.8 truncated square     p24    18c  seen 1     score  95.6  new  c/2 orthogonal
+6c774748e73f036e09683a7226f475ed  c/53 orthogonal spaceship 20c #6c~ B3,10,12,14~ [3^6; 3^4.6; 3^2.6^2] #1 ~ p53    20c  seen 4     score  90.4  new  c/53 orthogonal
+17453dab88a35cd7866af0f6937ea082  c/37 orthogonal spaceship 18c #17~ B4,5,9,10,1~ [3^4.6; 3^4.6; 3.6.3.6] #~ p37    18c  seen 8     score  86.8  new  c/37 orthogonal
+b3726ba10f9bf58158a454e3e1c7927c  c/44 orthogonal spaceship 11c #b3~ B4,5,6,7,8,~ [3^6; 3^3.4^2; 4^4] #4 (k~ p44    11c  seen 35    score  85.7  new  c/44 orthogonal
+57a0326cfcf334c1b31703df432c5f0b  c/14 orthogonal spaceship 8c #57a~ B3,10,12/S2~ 3.4.6.4 rhombitrihexagonal p42     8c  seen 63    score  84.7  new  c/14 orthogonal
+-- library update c8f20f137dfae2f393afe921c7c5e670 4 --rating 
+error: a value is required for '--rating <RATING>' but none was supplied
+
+-- library update a333894bd32cb3e2d1f0d2776637e7f9 5 --rating 
+error: a value is required for '--rating <RATING>' but none was supplied
+
+-- library update 6c774748e73f036e09683a7226f475ed 3 --rating 
+error: a value is required for '--rating <RATING>' but none was supplied
+
+-- host wallpaper on; host start; host rotation 'Classics, hourly'; host login on
+saved; the host is not running
+running, pid 21259, up 0.0s, 90 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · wallpaper
+screen 0: Classics, hourly · Quick Start langtons-ant (2 of 7) · starting · wallpaper
+"/opt/homebrew/bin/jetcarp" host serve --login starts at login
+== state before the upgrade (13:31:49)
+patterns 94, rules 25, pattern rules 119, sightings 159 (356069 copies), jobs 26, Quick Start 1156, ratings 1, media 0, ants 8
+running, pid 21259, up 7.0s, 111 MB, GPU Apple M2 Max
+screen 0: Classics, hourly · Quick Start langtons-ant (2 of 7) · generation 745 · 170648 cells · wallpaper
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+  "ProgramArguments" => [
+    0 => "/opt/homebrew/bin/jetcarp"
+    1 => "host"
+    2 => "serve"
+    3 => "--login"
+  ]
+/opt/homebrew/bin/jetcarp host serve 
+total 40
+drwxr-xr-x@  7 Jimmie  staff   224 Nov 16 08:31 .
+drwx------+ 47 Jimmie  staff  1504 Nov 13 09:23 ..
+-rw-r--r--   1 Jimmie  staff  4467 Nov 15 14:24 app.json
+drwxr-xr-x@  7 Jimmie  staff   224 Nov 16 08:31 data
+-rw-r--r--@  1 Jimmie  staff    37 Nov 16 08:31 host-program
+-rw-r--r--@  1 Jimmie  staff   486 Nov 16 08:31 host.json
+-rw-r--r--@  1 Jimmie  staff   319 Nov 16 08:31 setup.json
+-- (redone: zsh hadn't split the arguments above) library update … --rating
+updated c8f20f137dfae2f393afe921c7c5e670 (snake), state new
+updated a333894bd32cb3e2d1f0d2776637e7f9 (c/2 orthogonal spaceship 18c #a33389), state new
+updated 6c774748e73f036e09683a7226f475ed (c/53 orthogonal spaceship 20c #6c7747), state new
+-- library info after rating
+patterns 94, rules 25, pattern rules 119, sightings 159 (356069 copies), jobs 26, Quick Start 1156, ratings 1, media 0, ants 8

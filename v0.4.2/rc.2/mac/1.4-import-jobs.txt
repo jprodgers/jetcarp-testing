@@ -1,0 +1,3 @@
+    2  hunt     done     2026-11-15T13:16:42Z  hunt 2: imported from pack rc2-long (its finds came with the pack; nothing ran here)
+    1  explore  paused   2026-11-15T13:16:37Z  explore 1: 1,120,514 runs (0/s), 51,926 elites in 23,283 niches (3,314 of them confirmed), 574 of 1,359 tilings; not run here yet
+2 job(s); 0 running

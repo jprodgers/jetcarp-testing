@@ -1,0 +1,5 @@
+# pmset -g assertions, JETCARP's lines, every 2 s; started 04:52:42
+04:52:43 (none)
+04:55:28 pid 47149(jetcarp): [0x000320ea000587bc] NoDisplaySleepAssertion named: "JETCARP is showing cellular automata"  |
+04:55:38 (none)
+# ended 05:19:56

@@ -1,0 +1,15 @@
+# R4 #100 on the Mac, 2026-11-17 05:35 AM EST: the book built from the tag (cf5cbdf) with mdBook v0.5.4 (GitHub's release, sha256 03e8a6d8… as GitHub's digest), served on 127.0.0.1:3000
+# Jimmie copied the first three commands of tutorials/hunting-spaceships.html with the copy buttons and ran them in Terminal.app, in the default folders: "All three ran as pasted, output matches the book"
+# Afterwards, read back here:
+$ jetcarp jobs list --kind hunt
+    1  hunt     done     2026-11-17T10:34:14Z  hunt 1: 5,000/5,000 soups, 1203 soups/s, 13,674 objects (ships 6,900, osc 5,824, still 950), 20 distinct, 20 new | newest: still life 7c #9cdec3 (B3/S23)
+1 job(s); 0 running
+$ jetcarp jobs status --label k2-017 | head -6
+    1  hunt     done     2026-11-17T10:34:14Z  hunt 1: 5,000/5,000 soups, 1203 soups/s, 13,674 objects (ships 6,900, osc 5,824, still 950), 20 distinct, 20 new | newest: still life 7c #9cdec3 (B3/S23)
+1 job(s); 0 running
+$ jetcarp library list --class spaceship
+catalog: ~/Library/Application Support/jetcarp/data/library.sqlite (1 shown of 1 matching)
+16bc37c99a1397bc3ab3656a351b6008  c/4 orthogonal spaceship 6c #16bc~ B3/S23       [3^3.4^2; 3^2.4.3.4] #2 (~ p4      6c  seen 6900  score  69.8  new  c/4 orthogonal
+# The page says:
+  p search hunt --tilings k2-017 --soups 5000 --label k2-017  It prints: hunt job 1 in /home/ada/.local/share/jetcarp/library.sqlite   status done, 2 s run, 3357 settled, 788 died, 703 exploded, 152 unsettled   B3/S23 on [3^3.4^2; 3^2.4.3.4] #2 (k2-017): 5000 soups, 13674 objects (oscillator 5824, spaceship 6900, still life 950
+  library. The library is in JETCARP’s data folder, which differs by system (see Folders). 3. Look at the ship jetcarp library list --class spaceship  It prints: 16bc37c99a1397bc3ab3656a351b6008  c/4 orthogonal spaceship 6c #16bc37  B3/S23  [3^3.4^2; 3^2.4.3.4] #2 (k2-017)  p4  6c  seen 6900  …  All 6,900 spaceships were one s

@@ -1,0 +1,53 @@
+## JETCARP_OUT=$W/ro-out (chmod 555, read-only)
+$ jetcarp paths
+output:   $W/ro-out
+$ jetcarp script tiny.rhai
+error: line 1, column 1: cannot create $W/ro-out/2026-11-15_13-01-41_f9-ro: Permission denied (os error 13)
+time:   0.00s
+Error: tiny.rhai: line 1, column 1: cannot create $W/ro-out/2026-11-15_13-01-41_f9-ro: Permission denied (os error 13)
+exit 1
+$ jetcarp script --example hexw-all
+error: line 9, column 1: cannot create $W/ro-out/2026-11-15_13-01-41_HexW: Permission denied (os error 13)
+time:   0.00s
+Error: hexw-all.rhai: line 9, column 1: cannot create $W/ro-out/2026-11-15_13-01-41_HexW: Permission denied (os error 13)
+exit 1
+$ jetcarp pile --grains 1000
+Error: $W/ro-out/piles: Permission denied (os error 13)
+exit 1
+$ jetcarp wallpaper --scene good.json --size 320x200
+  tip: a similar argument exists: '--center'
+
+Usage: jetcarp wallpaper --center <CENTER> <SOURCE>
+
+For more information, try '--help'.
+exit 2
+$ jetcarp wallpaper --quickstart life --size 320x200
+  tip: to pass '--quickstart' as a value, use '-- --quickstart'
+
+Usage: jetcarp wallpaper [OPTIONS] <SOURCE>
+
+For more information, try '--help'.
+exit 2
+$ jetcarp media --scene good.json --gens 5
+error: unexpected argument '--scene' found
+
+Usage: jetcarp media [OPTIONS] <COMMAND>
+
+For more information, try '--help'.
+exit 2
+$ jetcarp run good.json --gens 5 --png $W/ro-out/x.png
+Error: $W/ro-out/x.png: Permission denied (os error 13)
+exit 1
+$ jetcarp wallpaper good.json --size 320x200
+Error: could not create folder $W/ro-out/wallpapers: Permission denied (os error 13)
+exit 1
+$ jetcarp wallpaper life --size 320x200
+Error: could not create folder $W/ro-out/wallpapers: Permission denied (os error 13)
+exit 1
+$ jetcarp media render --scene good.json --gens 5
+Error: could not create folder $W/ro-out/media/good: Permission denied (os error 13)
+exit 1
+$ jetcarp sheet
+Usage: jetcarp sheet [OPTIONS] --png <PNG>
+      --kind <KIND>                w (squares, 0-255), hexw (binary hexagon, 0-15), hexw3 (ternary hexagon, 0-19682), hext (flat-top hexagons, three parents, 0-255), hext3 (0 to 3^27 - 1), or hext3sum (totalistic ternary three-parent rules, 0-2186) [default: w]
+      --from <FROM>                [default: 0]

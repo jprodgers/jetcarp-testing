@@ -1,0 +1,29 @@
+rc.4 1.5 soak on the Acer: jetcarp 0.4.2-rc.4, rotation "Classics, hourly", 2026-11-17T04:24:48 to 2026-11-17T12:24:48, a sample every 300 s
+alive: 97 of 97 samples; host pids: 32428
+host status memory_mb: first hour median 445, last hour median 262, range 213-459, slope -18.34 MB/h
+private bytes (MB): first hour median 427.8, last hour median 477.4, range 425.7-482.8, slope 6.63 MB/h
+working set (MB): first hour median 445.9, last hour median 262.6, range 213.6-459
+GPU dedicated (MB): first hour median 0, last hour median 0, range 0-0; shared: range 483.4-485
+handles: range 453-545, slope -4.36/h; threads: range 27-30
+CPU (% of one core): median 30.5, range 22.2-55; GPU (all engines, %): median 21.2, range 11.6-68.5
+intervals where the same scene's generation didn't move: 0; samples held: 0; paused: 0; power: 2 (2 = mains)
+scene changes: 8
+  2026-11-17T05:04:48 Quick Start rule:ForestFire 0.01/0.0001 -> profile Cyclic spirals (4 of 7)
+  2026-11-17T06:04:48 profile Cyclic spirals -> profile Life (1 of 7)
+  2026-11-17T07:04:48 profile Life -> Quick Start rule:ForestFire 0.01/0.0001 (3 of 7)
+  2026-11-17T08:04:48 Quick Start rule:ForestFire 0.01/0.0001 -> profile Hodgepodge (7 of 7)
+  2026-11-17T09:04:48 profile Hodgepodge -> Quick Start langtons-ant (2 of 7)
+  2026-11-17T10:04:48 Quick Start langtons-ant -> profile Penrose waves (6 of 7)
+  2026-11-17T11:04:48 profile Penrose waves -> Quick Start turmite-llrr (5 of 7)
+  2026-11-17T12:04:48 Quick Start turmite-llrr -> profile Cyclic spirals (4 of 7)
+scenes:
+  Quick Start rule:ForestFire 0.01/0.0001: 20 samples, 518400 cells of 2.0 px, gpu Intel(R) UHD Graphics (Intel Corporation), Vulkan, measured speed 29.98-30.04 of 30.0, CPU median 52.9% of a core, GPU median 23.8%
+  profile Cyclic spirals: 17 samples, 230400 cells of 3.0 px, gpu Intel(R) UHD Graphics (Intel Corporation), Vulkan, measured speed 29.99-30.01 of 30.0, CPU median 25.7% of a core, GPU median 15%
+  profile Life: 12 samples, 230400 cells of 3.0 px, gpu Intel(R) UHD Graphics (Intel Corporation), Vulkan, measured speed 29.99-30.01 of 30.0, CPU median 24.9% of a core, GPU median 15%
+  profile Hodgepodge: 12 samples, 230400 cells of 3.0 px, gpu Intel(R) UHD Graphics (Intel Corporation), Vulkan, measured speed 29.99-30 of 30.0, CPU median 28.2% of a core, GPU median 14.5%
+  Quick Start langtons-ant: 12 samples, 129600 cells of 4.0 px, cpu , measured speed 239.95-240.08 of 240.0, CPU median 40% of a core, GPU median 21.5%
+  profile Penrose waves: 12 samples, 280000 cells of 2.40 px, gpu Intel(R) UHD Graphics (Intel Corporation), Vulkan, measured speed 29.99-30.01 of 30.0, CPU median 30.5% of a core, GPU median 52.6%
+  Quick Start turmite-llrr: 12 samples, 129600 cells of 4.0 px, cpu , measured speed 239.97-240.36 of 240.0, CPU median 43% of a core, GPU median 22.1%
+wallpaper picture: before 85FF3BB2371A 2026-11-15T15:57:24, now (host still running) 85FF3BB2371A 2026-11-15T15:57:24
+jetcarp processes now: 25312 "~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve | 32428 "~\jetcarp-rc-042c\bin\jetcarp.exe" host serve
+The host is left running: Jimmie looks, then it is stopped and the wallpaper checked.

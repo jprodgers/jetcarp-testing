@@ -1,0 +1,31 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 30711: B0145/S",
+  "tiling": {
+    "family": "oct",
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "60966925255871002",
+  "cas": [
+    {
+      "rule": "B0145/S",
+      "neighborhood": "touch",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "all"
+          },
+          "fill": {
+            "density": 0.41
+          }
+        }
+      }
+    }
+  ]
+}

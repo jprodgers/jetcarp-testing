@@ -1,0 +1,6 @@
+MWSS (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 7
+  the best 3 of 10000 soups run again:
+  soup 4526 (rng state 17520777392164346969): 1 copy, 38 ships; settled at generation 8551; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best.json
+  soup 7794 (rng state 4855138336969939636): 1 copy, 7 ships; settled at generation 1096; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best-2.json
+  soup 9324 (rng state 13478847407322822410): 1 copy, 7 ships; settled at generation 1613; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best-3.json
+  note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 8551, and land there

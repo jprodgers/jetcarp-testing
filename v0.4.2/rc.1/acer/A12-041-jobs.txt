@@ -1,0 +1,34 @@
+﻿   33  explore  done     2026-11-13T15:02:52Z  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   32  pack_import done     2026-11-13T15:02:50Z  pack import 32: JETCARP starter pack imported: 0 patterns new, 26 merged, 48 Quick Start entries, 0 ant runs
+   31  explore  done     2026-11-13T06:06:56Z  Quick Start build (explore 31): 900 atlas entries published (900 new, 0 updated, 0 removed); 17,408 runs (26/s), 4,240 elites in 2,328 niches, 216 confirmed, 25 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+   30  hunt     done     2026-11-12T13:18:26Z  hunt 30: 20,000/20,000 soups, 1577 soups/s, 430,384 objects (ships 38,188, osc 124,582, still 267,614), 50 distinct, 8 new | newest: still life 12c #bf73c4 (B3/S23)
+   29  pile     done     2026-11-12T12:47:03Z  pile 29: 1000000 grains on square, step 20/20 (1000000 grains), 1.158e10 topplings, 7.8 s
+   28  pile     done     2026-11-12T12:42:35Z  pile 28: 1000000 grains on square, step 20/20 (1000000 grains), 1.158e10 topplings, 7.4 s
+   27  pile     done     2026-11-12T12:35:13Z  pile 27: 1000000 grains on square, step 20/20 (1000000 grains), 1.158e10 topplings, 11.3 s
+   26  hunt     done     2026-11-12T12:05:17Z  hunt 26: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   25  hunt     done     2026-11-12T12:05:17Z  hunt 25: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   24  hunt     done     2026-11-12T12:05:17Z  hunt 24: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   23  hunt     done     2026-11-12T12:05:17Z  hunt 23: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   22  hunt     done     2026-11-12T12:05:17Z  hunt 22: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   21  hunt     done     2026-11-12T12:05:17Z  hunt 21: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   20  search   done     2026-11-12T12:05:17Z  search 20: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   19  hunt     done     2026-11-12T12:05:17Z  hunt 19: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   18  hunt     done     2026-11-12T12:05:17Z  hunt 18: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   17  search   done     2026-11-12T12:05:17Z  search 17: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   16  hunt     done     2026-11-12T12:05:17Z  hunt 16: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   15  hunt     done     2026-11-12T12:05:17Z  hunt 15: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   14  hunt     done     2026-11-12T12:05:17Z  hunt 14: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   13  hunt     done     2026-11-12T12:05:17Z  hunt 13: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   12  hunt     done     2026-11-12T12:05:17Z  hunt 12: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   11  hunt     done     2026-11-12T12:05:17Z  hunt 11: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+   10  hunt     done     2026-11-12T12:05:17Z  hunt 10: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+    9  hunt     done     2026-11-12T12:05:17Z  hunt 9: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+    8  hunt     done     2026-11-12T12:05:17Z  hunt 8: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+    7  hunt     done     2026-11-12T12:05:17Z  hunt 7: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+    6  hunt     done     2026-11-12T12:05:17Z  hunt 6: imported from pack jetcarp-starter (its finds came with the pack; nothing ran here)
+    5  explore  done     2026-11-12T12:05:17Z  Quick Start build (explore 5): 879 atlas entries published (879 new, 0 updated, 0 removed); 46,311 runs (44/s), 9,881 elites in 5,144 niches, 501 confirmed, 33 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    4  pack_import done     2026-11-12T12:05:15Z  pack import 4: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs
+    3  pile     done     2026-11-12T04:55:49Z  pile 3: 0 grains on , step 0/0 (0 grains), 0.000e0 topplings, 0.0 s
+    2  hunt     done     2026-11-12T04:49:13Z  hunt 2: 10,000/10,000 soups, 1352 soups/s, 213,586 objects (ships 18,987, osc 62,009, still 132,590), 64 distinct, 64 new | newest: p2 oscillator 16c #fc4453 (B3/S23)
+    1  pile     done     2026-11-12T04:46:56Z  pile 1: 0 grains on , step 0/0 (0 grains), 0.000e0 topplings, 0.0 s
+33 job(s); 0 running

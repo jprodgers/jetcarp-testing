@@ -1,0 +1,3 @@
+catalog:        /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data-copy-041/library.sqlite
+schema version: 3
+patterns 0, rules 0, pattern rules 0, sightings 0 (0 copies), jobs 2, Quick Start 1194, ratings 227, media 0, ants 0

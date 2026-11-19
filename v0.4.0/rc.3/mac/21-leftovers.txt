@@ -1,0 +1,60 @@
+# After jetcarp uninstall --yes and the installer's --uninstall (2026-11-13 00:43)
+$ which jetcarp
+jetcarp not found
+
+== /Users/Jimmie/Library/Application Support/jetcarp
+drwxr-xr-x@  8 Jimmie  staff   256 Nov 13 00:41 .
+drwx------+ 48 Jimmie  staff  1536 Nov 12 23:04 ..
+-rw-r--r--@  1 Jimmie  staff  4342 Nov 13 00:40 app.json
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 13 00:00 data
+-rw-r--r--@  1 Jimmie  staff   482 Nov 13 00:03 host.json
+-rw-r--r--@  1 Jimmie  staff    73 Nov 12 23:23 paths.json
+-rw-r--r--@  1 Jimmie  staff   334 Nov 12 23:23 setup.json
+-rw-r--r--@  1 Jimmie  staff  2664 Nov 13 00:13 wallpaper-store-before-saver-remove.plist
+
+== /Users/Jimmie/Library/Application Support/jetcarp/data
+drwxr-xr-x@ 6 Jimmie  staff      192 Nov 13 00:00 .
+drwxr-xr-x@ 8 Jimmie  staff      256 Nov 13 00:41 ..
+-rw-r--r--@ 1 Jimmie  staff  1064960 Nov 12 23:16 library.sqlite
+drwxr-xr-x@ 2 Jimmie  staff       64 Nov 12 01:12 library.sqlite-jobs
+-rw-r--r--@ 1 Jimmie  staff    32768 Nov 13 00:00 library.sqlite-shm
+-rw-r--r--@ 1 Jimmie  staff        0 Nov 13 00:00 library.sqlite-wal
+
+== /Users/Jimmie/Library/Caches/jetcarp
+
+== /Users/Jimmie/.cache/jetcarp
+
+== /Users/Jimmie/.local/lib
+drwxr-xr-x  2 Jimmie  staff   64 Nov 13 00:42 .
+drwxr-xr-x@ 6 Jimmie  staff  192 Nov 12 00:46 ..
+
+== /Users/Jimmie/.local/bin
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 13 00:42 .
+drwxr-xr-x@ 6 Jimmie  staff  192 Nov 12 00:46 ..
+lrwxr-xr-x@ 1 Jimmie  staff   50 Nov  2 11:16 claude -> /Users/Jimmie/.local/share/claude/versions/2.1.316
+
+== /Users/Jimmie/Pictures/JETCARP
+drwxr-xr-x@ 6 Jimmie  staff   192 Nov 13 00:35 .
+drwx------+ 7 Jimmie  staff   224 Nov 12 01:09 ..
+-rw-r--r--@ 1 Jimmie  staff  6148 Nov 12 01:10 .DS_Store
+-rw-r--r--@ 1 Jimmie  staff  7004 Nov 13 00:31 brians_brain_120x80_gen200.png
+-rw-r--r--@ 1 Jimmie  staff  1136 Nov 13 00:35 jaca_rainbow_fronts_before_brians_brain.json
+drwxr-xr-x@ 4 Jimmie  staff   128 Nov 12 01:10 piles
+
+== /Users/Jimmie/Library/LaunchAgents
+drwx------@  6 Jimmie  staff   192 Nov 12 02:04 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+-rw-r--r--@  1 Jimmie  staff   873 Sep 26 15:09 another-program.plist
+-rw-r--r--@  1 Jimmie  staff   181 Sep 27 09:36 another-program.plist
+-rw-r--r--@  1 Jimmie  staff   181 Sep 27 09:36 another-program.plist
+-rw-r--r--@  1 Jimmie  staff   512 Oct 11 14:48 another-project.plist
+
+== /Users/Jimmie/Library/Screen Savers
+drwx------+  2 Jimmie  staff    64 Nov 13 00:14 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+
+== the Researcher data folder ~/Documents/jetcarp-data: moved to the Trash by hand (~/.Trash/jetcarp-data-rc3-researcher, 22 MB); its library.sqlite-wal was 0 bytes
+
+== macOS wallpaper store: identical to 00-wallpaper-choices-flurry.txt (desktop picture and Flurry everywhere)
+
+== Claude Desktop config: JETCARP removed; identical to before M5

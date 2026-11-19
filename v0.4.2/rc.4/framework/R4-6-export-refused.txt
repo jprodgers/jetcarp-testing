@@ -1,0 +1,83 @@
+PASS: with a detached explore running, `pack export --to $H/exp/p57 --feed r57 --no-media` is refused ("explore job 2 is running, and the pack would leave out every run it stores from now on / stop it first (jobs stop), then publish", exit 1), and `ls -a $H/exp` shows only . and .. (no p57, no .p57.store), also after a second refused export with --json. Control: once the search is stopped, the same export makes p57 and .p57.store.
+
+R4-6 #57 a refused export leaves nothing behind, Framework, 2026-11-16 10:16:43 PM EST
+fresh home $H = homes/export57; the settings' pack folder (the rc.3 test publisher's key) copied from rc.3's test settings
+
+$ $J search hunt --rules B3/S23 --tilings square --soups 300 --cpu --quiet | tail -2
+hunt job 1 in $H/library/library.sqlite
+    299d09888b99cae4935e015f36b49976  beacon                             B3/S23     Square soup 61  (new to the catalog)
+    e213607ba80479d6fa2ba28d6661337c  still life 14c #e21360             B3/S23     Square soup 46  (new to the catalog)
+[exit 0, 0.22 s]
+
+$ $J search explore --families jaca --detach --minutes 5 --cpu --threads 4 --label r57
+explore search job 2 started (detached) in $H/library/library.sqlite
+explore 2: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+[exit 0, 0.45 s]
+
+$ $J jobs list
+    2  explore  running  2026-11-17T03:16:44Z  explore 2: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; cpu only
+    1  hunt     done     2026-11-17T03:16:43Z  hunt 1: 300/300 soups, 2483 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 23 new | newest: still life 8c #fcc17e (B3/S23)
+2 job(s); 1 running
+[exit 0, 0.03 s]
+
+the running search: job 2
+$ ls -a $H/exp
+.
+..
+[exit 0, 0.00 s]
+
+#### The export while the search runs
+$ $J pack export --to $H/exp/p57 --feed r57 --no-media
+Error: explore job 2 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+[exit 1, 0.23 s]
+
+$ ls -a $H/exp
+.
+..
+[exit 0, 0.00 s]
+
+$ $J pack export --to $H/exp/p57b --feed r57 --no-media --json
+Error: explore job 2 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+[exit 1, 0.23 s]
+
+$ ls -a $H/exp; ls -a $H | grep -i -E 'p57|store' || echo 'nothing named p57 or store in $H either'
+.
+..
+nothing named p57 or store in $H either
+[exit 0, 0.00 s]
+
+#### Stop the search, then the same export (control: it makes the folder and the hidden store)
+$ $J jobs stop 2
+asked explore search 2 to stop at its next checkpoint
+[exit 0, 0.03 s]
+
+$ $J jobs wait 2 --timeout 120 | tail -2
+  explore 2: 22 runs (4/s), 19 elites in 11 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+[exit 0, 1.04 s]
+
+$ $J jobs list
+    2  explore  paused   2026-11-17T03:16:44Z  explore 2: 22 runs (4/s), 19 elites in 11 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+    1  hunt     done     2026-11-17T03:16:43Z  hunt 1: 300/300 soups, 2483 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 23 new | newest: still life 8c #fcc17e (B3/S23)
+2 job(s); 0 running
+[exit 0, 0.03 s]
+
+$ $J pack export --to $H/exp/p57 --feed r57 --no-media | tail -4
+explore job 2 (search b81f9ef2-d5b3-4bf0-bbea-e4821ba5143d): sealed its newest 22 runs first, so the pack carries every run
+publishing feed r57 (version 1) into $H/exp/.p57.store
+23 patterns read, 23 new rows
+search b81f9ef2-d5b3-4bf0-bbea-e4821ba5143d: copying its segments
+version sha256:6c2983af762db5145000e166ca5f55bd33a53c8184c664a1295f8d9860dfce12 written
+exported sha256:6c2983af762db5145000e166ca5f55bd33a53c8184c664a1295f8d9860dfce12 into $H/exp/p57: 26 files, 81255 bytes
+the version was published first into $H/exp/.p57.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to $H/exp/.p57.store` does (then `jetcarp pack export --from $H/exp/.p57.store` lays it out)
+[exit 0, 0.06 s]
+
+$ ls -a $H/exp
+.
+..
+p57
+.p57.store
+[exit 0, 0.00 s]
+

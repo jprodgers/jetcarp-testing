@@ -1,0 +1,9 @@
+running, pid 53616, up 1087.0s, 477 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 18681 · 129600 cells of 4 px · 60 fps, 240 generations a second · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+last tune: done
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+note: swept 1 scene(s); sizes saved

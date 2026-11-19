@@ -1,0 +1,15 @@
+replaying on Apple M2 Max, Metal
+fitted to 239 review(s) of 239 run(s) of explore job(s) 3 by Jimmie Rodgers (7 keep, 36 maybe, 196 drop; jaca runs only)
+held-out AUC 0.806 (keep against drop; on the runs fitted 0.885; the built-in score 0.468)
+strongest terms (pull per standard deviation):
+  jaca:sign_sorted         +0.381
+  jaca:sign_trade          -0.288
+  same_nb                  -0.247
+  movers                   +0.233
+  growth                   +0.192
+  settle_frac              +0.187
+  density_late             -0.164
+  jaca:sign_balance        +0.146
+  largest                  +0.144
+  travel                   +0.144
+model: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.6-model.json

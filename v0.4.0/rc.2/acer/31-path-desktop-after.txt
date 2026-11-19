@@ -1,0 +1,20 @@
+﻿== user PATH after uninstall (08:29)
+type: ExpandString
+value:  [18 other entries left out]
+
+== compared with 00-path-before.txt (type ExpandString)
+identical: False
+identical apart from the trailing ';': True
+before ends with ';': True; now ends with ';': False
+contains %PNPM_HOME%\bin: True
+contains jetcarp: False
+
+== desktop
+WallPaper: C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper
+WallpaperStyle: 10; SCRNSAVE.EXE: ''; ScreenSaveActive: 1; ScreenSaveTimeOut: 60
+TranscodedWallpaper sha256: 85FF3BB2371A84655AEDF69D9F7C11D697F23B21EFC221F7F2443A62EDB767AC
+Run JETCARP present: False
+JETCARP.scr present: False
+
+== a new shell, PATH rebuilt from the registry
+jetcarp: not found

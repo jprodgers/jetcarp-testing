@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Assimilation",
+  "description": "Diamond shapes that absorb their neighbours.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "12173764085631930403",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Assimilation",
+      "rule": "B345/S4567",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.2
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "be7c9e800a848706",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

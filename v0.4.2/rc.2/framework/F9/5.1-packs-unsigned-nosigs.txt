@@ -1,0 +1,26 @@
+## unsigned = a copy of F10-pack with its sigs/ folder removed
+$ jetcarp pack info unsigned
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), not signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check unsigned
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (allow unsigned packs to import it anyway)
+exit 1
+$ jetcarp pack check unsigned --allow-unsigned
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and patterns (a check stores nothing)
+checking sightings, ants, Quick Start entries, media and ratings
+checked sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), not signed)
+  12 objects checked (7853786 bytes)
+exit 0

@@ -1,0 +1,24 @@
+# H3 step 2: after moving rc3's settings aside, 2026-11-13 07:42:29 EST
+
+moved to ~/Library/Application Support/jetcarp-rc3-settings/: app.json, host.json, setup.json, paths.json, wallpaper-store-before-saver-remove.plist (no desktop-pictures/ existed); data/ left in place
+
+$ jetcarp paths
+settings: /Users/Jimmie/Library/Application Support/jetcarp
+data:     /Users/Jimmie/Library/Application Support/jetcarp/data
+output:   /Users/Jimmie/Pictures/JETCARP
+bundled:  /opt/homebrew/Cellar/jetcarp/0.4.0/share/jetcarp/packs
+
+$ jetcarp setup --status
+setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data, 832.3 GB free
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /opt/homebrew/Cellar/jetcarp/0.4.0/share/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 64 patterns, 0 ant runs, 2 jobs; Quick Start entries: 364 built in
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+(profiles list cut)

@@ -1,0 +1,241 @@
+{
+  "catalog": "C:\\Users\\jimmi\\jetcarp-rc-042c\\import14\\library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "40,020"
+    ],
+    [
+      "niches",
+      "18,608"
+    ],
+    [
+      "confirmed elites",
+      "1,953"
+    ],
+    [
+      "tilings tried",
+      "344 of 1,359"
+    ],
+    [
+      "backend",
+      "not run here yet"
+    ]
+  ],
+  "created": "2026-11-16T06:07:50Z",
+  "deterministic": false,
+  "done": 564350,
+  "elapsed_s": 0.0,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": "2026-11-16T06:07:50Z",
+  "here": false,
+  "job": 1,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "long",
+  "line": "explore 1: 564,350 runs (0/s), 40,020 elites in 18,608 niches (1,953 of them confirmed), 344 of 1,359 tilings; not run here yet",
+  "per_s": 0.0,
+  "progress": {
+    "backend": "not run here yet",
+    "build_minutes": null,
+    "capped": 0,
+    "confirmed": 10257,
+    "confirmed_elites": 1953,
+    "cores": 0,
+    "elapsed_s": 0.0,
+    "elites": 40020,
+    "error": null,
+    "families": [
+      {
+        "best": 1.6379214525222778,
+        "elites": 9856,
+        "family": "life_like",
+        "mean": 0.3286281949885612,
+        "runs": 170884
+      },
+      {
+        "best": 2.153454542160034,
+        "elites": 7210,
+        "family": "generations",
+        "mean": 0.6337808701270088,
+        "runs": 134228
+      },
+      {
+        "best": 2.1833982467651367,
+        "elites": 8329,
+        "family": "jaca",
+        "mean": 0.5115887205334182,
+        "runs": 60662
+      },
+      {
+        "best": 2.4114110469818115,
+        "elites": 2728,
+        "family": "ltl",
+        "mean": 0.34769641422089903,
+        "runs": 58829
+      },
+      {
+        "best": 2.243900775909424,
+        "elites": 3872,
+        "family": "priority",
+        "mean": 0.4210039934662419,
+        "runs": 39744
+      },
+      {
+        "best": 2.378063201904297,
+        "elites": 1578,
+        "family": "cyclic",
+        "mean": 0.5078116806184299,
+        "runs": 20180
+      },
+      {
+        "best": 2.5147783756256104,
+        "elites": 1579,
+        "family": "hodgepodge",
+        "mean": 1.1145780144350168,
+        "runs": 20014
+      },
+      {
+        "best": 2.469247579574585,
+        "elites": 1469,
+        "family": "rps",
+        "mean": 0.5552945943613871,
+        "runs": 20012
+      },
+      {
+        "best": 2.675279378890991,
+        "elites": 730,
+        "family": "greenberg_hastings",
+        "mean": 0.5781057589905912,
+        "runs": 19747
+      },
+      {
+        "best": 1.7615059614181519,
+        "elites": 365,
+        "family": "wireworld",
+        "mean": 0.46528164283166146,
+        "runs": 3679
+      },
+      {
+        "best": 1.4452767372131348,
+        "elites": 47,
+        "family": "spectre_glider",
+        "mean": 0.3253549764028555,
+        "runs": 3405
+      },
+      {
+        "best": 1.8318657875061035,
+        "elites": 686,
+        "family": "turmite",
+        "mean": 0.8209334963607964,
+        "runs": 2989
+      },
+      {
+        "best": 2.013564109802246,
+        "elites": 399,
+        "family": "layered",
+        "mean": 0.6382822552511885,
+        "runs": 2563
+      },
+      {
+        "best": 2.411179304122925,
+        "elites": 330,
+        "family": "lenia",
+        "mean": 1.071690409585054,
+        "runs": 1548
+      },
+      {
+        "best": 1.1224576234817505,
+        "elites": 244,
+        "family": "forest_fire",
+        "mean": 0.7628705578613771,
+        "runs": 1460
+      },
+      {
+        "best": 2.3190340995788574,
+        "elites": 121,
+        "family": "sandpile",
+        "mean": 0.6797496049414647,
+        "runs": 1135
+      },
+      {
+        "best": 0.4944666922092438,
+        "elites": 12,
+        "family": "table",
+        "mean": 0.28887494063165137,
+        "runs": 674
+      },
+      {
+        "best": 1.8925734758377075,
+        "elites": 53,
+        "family": "hex_tri",
+        "mean": 0.6446355632296694,
+        "runs": 672
+      },
+      {
+        "best": 2.1790878772735596,
+        "elites": 325,
+        "family": "margolus",
+        "mean": 0.6586332997503859,
+        "runs": 644
+      },
+      {
+        "best": 2.0170533657073975,
+        "elites": 44,
+        "family": "hex_wolfram",
+        "mean": 0.6302461219011122,
+        "runs": 642
+      },
+      {
+        "best": 1.6613514423370361,
+        "elites": 43,
+        "family": "wolfram",
+        "mean": 0.727317117819204,
+        "runs": 639
+      }
+    ],
+    "folder": "C:\\Users\\jimmi\\jetcarp-rc-042c\\import14\\searches\\db00e0e0-6959-4398-b766-bc9a0703d55e",
+    "given_up": 0,
+    "gpu_error": null,
+    "gpu_threads": 0,
+    "job": 1,
+    "line": "explore 1: 564,350 runs (0/s), 40,020 elites in 18,608 niches (1,953 of them confirmed), 344 of 1,359 tilings; not run here yet",
+    "loaded": null,
+    "niches": 18608,
+    "note": "its working database was rebuilt from its sealed runs",
+    "panics": 0,
+    "per_s": 0.0,
+    "published": null,
+    "rss_gb": 0.0,
+    "screened": 564350,
+    "seen": 574607,
+    "session_s": 0.0,
+    "status": "paused",
+    "threads": 0,
+    "tilings": 1359,
+    "tilings_tried": 344
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "gpu": false,
+    "imported_from": "sha256:d8bc9bed5e582726922ae3eabb1e6cf001340f9a54b6633f3d84a136b1a07db0",
+    "label": "long",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "uuid": "db00e0e0-6959-4398-b766-bc9a0703d55e"
+  },
+  "stale": false,
+  "status": "paused",
+  "title": "long: every tiling, every family",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T06:07:54Z",
+  "waited_s": null
+}

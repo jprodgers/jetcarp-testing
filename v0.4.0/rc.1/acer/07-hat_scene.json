@@ -1,0 +1,51 @@
+{
+  "jetcarp_version": "0.4.0-rc.1",
+  "format": 1,
+  "name": "B2/S34 on the hat",
+  "description": "The hat monotile: every hat touches six or seven others, as a hexagon touches six. The hexagonal rule B2/S34 stays busy on it, with small clusters forming and breaking up for as long as you run it.",
+  "tiling": {
+    "family": "hat",
+    "size": {
+      "level": 4
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 5,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S34",
+      "rule": "B2/S34",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "commands": [
+    {
+      "op": "step",
+      "gens": 41
+    }
+  ],
+  "view": {
+    "center": [
+      0.2692307692308731,
+      -0.46632137126850637
+    ],
+    "speed": 15.0,
+    "zoom": 3.5006795483212496
+  },
+  "record": {
+    "generation": 41,
+    "hash": "331637905fbdc519",
+    "jetcarp_version": "0.4.0-rc.1",
+    "dead_boundary": true
+  }
+}

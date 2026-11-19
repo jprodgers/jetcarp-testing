@@ -1,0 +1,17 @@
+## pack publish with a settings folder that has no publisher key (JETCARP_CONFIG_DIR=$W/config-nokey)
+$ jetcarp pack publish --to $W/packs/nokey-store --feed f9-nokey --no-searches --no-media
+  patterns        129 rows added, 3 parts
+  provenance      130 rows added, 1 part
+  quickstart         1 row added, 1 part
+  rules             2 rows added, 1 part
+  sightings       368 rows added, 1 part
+  tilings            1 row added, 1 part
+  verifications   174 rows added, 1 part
+  90552 bytes in all
+exit 0
+$W/config-nokey:
+pack
+
+$W/config-nokey/pack:
+publisher_ed25519
+publisher_ed25519.pub

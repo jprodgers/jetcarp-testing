@@ -1,0 +1,9 @@
+#!/bin/sh
+# F-1 guard: JETCARP may read GNOME settings here, but never change Jimmie's real ones.
+case "$1" in
+  set|reset|reset-recursively)
+    echo "$(date '+%H:%M:%S') refused: gsettings $*" >> "$(dirname "$0")/refused.log"
+    echo "gsettings: refused by the F-1 test guard (Jimmie's real GNOME settings)" >&2
+    exit 1;;
+esac
+exec /usr/bin/gsettings "$@"

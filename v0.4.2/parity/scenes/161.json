@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Pedestrian Life without Death",
+  "description": "Pedestrian Life in which cells never die.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "12379286880114750681",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Pedestrian Life without Death",
+      "rule": "B38/S012345678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "blob": {
+          "radius": 0.15,
+          "density": 0.4
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e7c7cc5806422c98",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

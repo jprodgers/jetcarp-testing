@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile on [3.4.3.12; 3.12^2] (k2-002)",
+  "description": "A 2-uniform tiling from Galebach's catalog (k2-002). Galebach 2-uniform #2 of 20. Symmetry p4m. 8 vertices per cell; 4 triangles, 1 square, 1 dodecagon. Grains dropped on the centre topple outward.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k2-002"
+    },
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 4,
+      "palette": "Prism",
+      "seed": {
+        "pile": {
+          "grains": 3000
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "44fdf2ac39d20cb8",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

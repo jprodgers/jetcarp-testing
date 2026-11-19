@@ -1,0 +1,6 @@
+sha256:2bf5fd6a47a9fb1ddd56146d1d4fa34d88336450dc19519aa836dda58886883f: feed rc2-long, by SHA256:uZnkiMS8GBgFD+hmv3FqlqGEOji+so517QRvfEmOecM (rc.2 test publisher), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and patterns (a check stores nothing)
+checking sightings, ants, Quick Start entries, media and ratings
+checked sha256:2bf5fd6a47a9fb1ddd56146d1d4fa34d88336450dc19519aa836dda58886883f (feed rc2-long, SHA256:uZnkiMS8GBgFD+hmv3FqlqGEOji+so517QRvfEmOecM rc.2 test publisher, signed by its publisher)
+  13 objects checked (88614163 bytes)

@@ -1,0 +1,6 @@
+  [SCRNSAVE.EXE = ''; ScreenSaveActive = 1; ScreenSaveTimeOut = 60; ScreenSaverIsSecure = 0]
+
+> jetcarp host saver install   (00:09:59)
+copied to C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr; Screen Saver Settings is opening
+(exit 0, 127 ms)
+  [SCRNSAVE.EXE = 'C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr'; ScreenSaveActive = 1; ScreenSaveTimeOut = 60; ScreenSaverIsSecure = 0]

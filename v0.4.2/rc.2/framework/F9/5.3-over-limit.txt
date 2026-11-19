@@ -1,0 +1,17 @@
+$ jetcarp run over-16001x16000.json --gens 1 --gpu
+Error: grid is larger than 256 million cells
+exit 1
+$ jetcarp run over-37x6918919.json --gens 1 --gpu
+Error: grid is larger than 256 million cells
+exit 1
+$ jetcarp run over-cells-256000001.json --gens 1 --gpu
+scene:      over-cells-256000001.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+generation: 1
+hash:       cdc31664a185bca3
+status:     Running
+done:       no
+field 0:    shared binary, 87830165 live: Life [B3/S23]
+time:       1.76s on 32 threads
+exit 0

@@ -1,0 +1,40 @@
+$ jetcarp setup --seizure-warning no-disorder --profile blank-slate --quickstart-minutes 0 --quiet
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+
+setting up JETCARP as Blank slate:
+  1. record the profile Blank slate in ~/jetcarp-rc4/homes/soak/config/setup.json
+  2. nothing to import or build: the built-in examples are in the Quick Start already
+recorded Blank slate in ~/jetcarp-rc4/homes/soak/config/setup.json
+Open the app with `jetcarp`; `jetcarp setup` again changes your mind.
+exit 0
+$ jetcarp host wallpaper on
+saved; the host is not running
+exit 0
+$ jetcarp host start   (wallpaper on left no host)
+running, pid 71955, up 0.0s, 127 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal · held
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+held: windows cover the desktop (resumes by itself)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+$ jetcarp host rotation "Classics, hourly"
+running, pid 71955, up 5.0s, 372 MB, GPU Apple M2 Max
+screen 0: Classics, hourly · profile Cyclic spirals (4 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+
+$ jetcarp host status   [10:54:19]
+running, pid 71955, up 25.0s, 296 MB, GPU Apple M2 Max
+screen 0: Classics, hourly · profile Cyclic spirals (4 of 7) · generation 601 · 303455 cells of 6 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)

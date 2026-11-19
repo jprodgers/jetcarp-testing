@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Rule 184",
+  "description": "Traffic flow: particles move right when the next cell is empty.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 241,
+        "h": 160
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "15299462410717969321",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Rule 184",
+      "rule": "W184",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "top_random": {
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "b7ef7a7ee3ac6856",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

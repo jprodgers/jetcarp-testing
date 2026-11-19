@@ -1,0 +1,32 @@
+# Reconstructed on 2026-11-15 from the copy this session had printed: the original file in the test
+# folder was deleted by mistake (a helper named Rd ran PowerShell's rd alias, Remove-Item). See notes.md.
+# pack export (stdout, stderr), then pack import (stdout, stderr); then jobs status 2 and the 1-minute session's last report
+exported sha256:0432e25bcf8d05b318a4859456d437814099dbbfdc50161d72f7758aaf806705 into C:\Users\jimmi\jetcarp-rc-042b\P14b-pack: 28 files, 20679628 bytes
+the version was published first into C:\Users\jimmi\jetcarp-rc-042b\.P14b-pack.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to C:\Users\jimmi\jetcarp-rc-042b\.P14b-pack.store` does (then `jetcarp pack export --from C:\Users\jimmi\jetcarp-rc-042b\.P14b-pack.store` lays it out)
+explore job 2 (search e1d375fb-aa49-42bc-9995-4f4b40e87a40): sealed its newest 261,392 runs first, so the pack carries every run
+publishing feed rc2-long (version 1) into C:\Users\jimmi\jetcarp-rc-042b\.P14b-pack.store
+1454 patterns read, 1454 new rows
+search e1d375fb-aa49-42bc-9995-4f4b40e87a40: copying its segments
+version sha256:0432e25bcf8d05b318a4859456d437814099dbbfdc50161d72f7758aaf806705 written
+imported sha256:0432e25bcf8d05b318a4859456d437814099dbbfdc50161d72f7758aaf806705 (feed rc2-long, SHA256:yuRcloy+pzMOjgeKYROHdeEAT4tnQdi7uU0G0XEzsQY rc.2 test publisher, signed by its publisher)
+  12 objects checked (20669044 bytes)
+  patterns: 1454 added, 0 merged, 0 flagged needs_reverify
+  sightings 1783, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 1454 of 1454 passed, 0 skipped, 0 failed
+sha256:0432e25bcf8d05b318a4859456d437814099dbbfdc50161d72f7758aaf806705: feed rc2-long, by SHA256:yuRcloy+pzMOjgeKYROHdeEAT4tnQdi7uU0G0XEzsQY (rc.2 test publisher), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search e1d375fb-aa49-42bc-9995-4f4b40e87a40: copying its segments and rebuilding its state
+merging sightings
+search e1d375fb-aa49-42bc-9995-4f4b40e87a40: 261392 runs, 26665 elites in 12931 niches, rebuilt in 3.1 s
+--- final text
+explore 2: 254,912 runs (41/s), 26,665 elites in 12,931 niches (1,334 of them confirmed), 188 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status paused, 1 h 59 min run over every session, 6,480 confirmation runs, 261,580 candidates tried, 0.44 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 21 runs on the processor stopped at their time cap (kept with the generations they reached), 152 runs given up at a stop or the end (not kept)
+  loaded 26,591 elites, 259,031 identities, 15,024 coverage rows in 0.12 s (no other runs read)
+explore 2: 254,912 runs (41/s), 26,665 elites in 12,931 niches (1,334 of them confirmed), 188 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status paused, 1 h 59 min run over every session, 6,480 confirmation runs, 261,580 candidates tried, 0.44 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 21 runs on the processor stopped at their time cap (kept with the generations they reached), 152 runs given up at a stop or the end (not kept)
+  loaded 26,591 elites, 259,031 identities, 15,024 coverage rows in 0.12 s (no other runs read)

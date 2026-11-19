@@ -1,0 +1,46 @@
+> jetcarp uninstall --help
+Undo what JETCARP set up outside its folders (the host and its still on the desktop, login entry, GNOME extension, screen saver), and optionally delete its settings and data. Shows the plan unless --yes
+
+Usage: jetcarp.exe uninstall [OPTIONS]
+
+Options:
+      --json      Print the result as JSON instead of text (commands that report a result)
+      --yes       Do it. Without this, only show what would be done
+      --settings  Also delete JETCARP's settings folder (except a picture the desktop still shows)
+      --data      Also delete JETCARP's data folder (the pattern library, search databases, packs). This cannot be undone
+  -h, --help      Print help
+(exit 0)
+
+> jetcarp uninstall   (00:34:45)
+Would undo (run again with --yes):
+  forget the recorded host command
+
+Kept the data folder C:\Users\jimmi\AppData\Local\jetcarp (1.1 MB); add --data to delete it.
+Your pictures and exports in C:\Users\jimmi\OneDrive\Pictures\JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `--uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+(exit 0)
+
+> jetcarp uninstall --yes   (00:34:59)
+Undoing:
+  done: forget the recorded host command
+
+Kept the data folder C:\Users\jimmi\AppData\Local\jetcarp (1.1 MB); add --data to delete it.
+Your pictures and exports in C:\Users\jimmi\OneDrive\Pictures\JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `--uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+(exit 0)
+
+After:
+  total 29
+  drwxr-xr-x 1 jimmi 197609    0 Nov 12 00:34 .
+  drwxr-xr-x 1 jimmi 197609    0 Nov 11 23:35 ..
+  -rw-r--r-- 1 jimmi 197609 4214 Nov 11 23:56 app.json
+  drwxr-xr-x 1 jimmi 197609    0 Nov 12 00:08 desktop-pictures
+  -rw-r--r-- 1 jimmi 197609  580 Nov 12 00:27 host.json
+  wallpaper: c:\windows\web\wallpaper\themea\img20.jpg; SCRNSAVE.EXE: ''; Run\JETCARP: False; .scr: False
+
+> jetcarp uninstall   (again: anything left to undo?)
+Nothing to undo: JETCARP has not set anything up outside its folders.
+
+Kept the data folder C:\Users\jimmi\AppData\Local\jetcarp (1.1 MB); add --data to delete it.

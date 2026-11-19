@@ -1,0 +1,24 @@
+pass (automatic): 97 samples over 8.0 h; alive 97/97, pid 44732; screen 0 moved in 96 of 96 intervals (1 items seen); footprint 211.0 MB (first hour) -> 211.0 MB (last hour), max 233.0, -0.06 MB/h; status memory 209 -> 210 MB (-0.11 MB/h); RSS 111-113 MB; CPU (top) median 64.5%; whole GPU median 13%; held in 0 samples
+items seen on screen 0: ['Quick Start turmite-llrr']
+(speed, measured speed) pairs seen: [('240.0', '239.51681518554688'), ('240.0', '239.5328826904297'), ('240.0', '239.80335998535156'), ('240.0', '239.9338836669922'), ('240.0', '239.954345703125'), ('240.0', '239.98834228515625'), ('240.0', '239.98867797851562'), ('240.0', '239.9910125732422'), ('240.0', '239.991455078125'), ('240.0', '239.99327087402344'), ('240.0', '239.9937744140625'), ('240.0', '239.99420166015625'), ('240.0', '239.9944305419922'), ('240.0', '239.99444580078125'), ('240.0', '239.9947967529297'), ('240.0', '239.99545288085938'), ('240.0', '239.99551391601562'), ('240.0', '239.99560546875'), ('240.0', '239.99578857421875'), ('240.0', '239.9960479736328')]
+
+#95 (pmset displaysleepnow, then caffeinate -u):
+  02:03:43       before: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6919842 hidden False | cpu 55.2% footprint 211.0 MB
+  02:04:00   asleep+15s: held ['covered', 'dark'] windows cover the desktop; the screen is locked or off | paused False  | s0 'Quick Start turmite-llrr' gen 6920542 hidden False | cpu 0.1% footprint 51.0 MB
+  02:04:18   asleep+30s: held ['covered', 'dark'] windows cover the desktop; the screen is locked or off | paused False  | s0 'Quick Start turmite-llrr' gen 6920542 hidden False | cpu 0.4% footprint 51.0 MB
+  02:04:36   asleep+45s: held ['dark'] the screen is locked or off | paused False  | s0 'Quick Start turmite-llrr' gen 6920542 hidden False | cpu 0.1% footprint 51.0 MB
+  02:04:54   asleep+60s: held ['dark'] the screen is locked or off | paused False  | s0 'Quick Start turmite-llrr' gen 6920542 hidden False | cpu 0.1% footprint 51.0 MB
+  02:05:11   asleep+75s: held ['dark'] the screen is locked or off | paused False  | s0 'Quick Start turmite-llrr' gen 6920542 hidden False | cpu 1.3% footprint 51.0 MB
+  02:05:29   asleep+90s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6922847 hidden False | cpu 62.1% footprint 210.0 MB
+  02:05:47  asleep+105s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6927083 hidden False | cpu 59.4% footprint 210.0 MB
+  02:06:04  asleep+120s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6931318 hidden False | cpu 52.3% footprint 210.0 MB
+  02:06:22  asleep+135s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6935567 hidden False | cpu 51.1% footprint 210.0 MB
+  02:06:40  asleep+150s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6939806 hidden False | cpu 64.5% footprint 210.0 MB
+  02:06:57  asleep+165s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6944039 hidden False | cpu 62.5% footprint 210.0 MB
+  02:07:15  asleep+180s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6948279 hidden False | cpu 63.9% footprint 210.0 MB
+  02:07:35    awake+15s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6953023 hidden False | cpu 65.4% footprint 210.0 MB
+  02:07:52    awake+30s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6957258 hidden False | cpu 65.7% footprint 210.0 MB
+  02:08:10    awake+45s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6961498 hidden False | cpu 66.4% footprint 210.0 MB
+  02:08:28    awake+60s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6965730 hidden False | cpu 65.2% footprint 210.0 MB
+  02:08:45    awake+75s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6969970 hidden False | cpu 65.6% footprint 210.0 MB
+  02:09:03    awake+90s: held []  | paused False  | s0 'Quick Start turmite-llrr' gen 6974206 hidden False | cpu 65.6% footprint 210.0 MB

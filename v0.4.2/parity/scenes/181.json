@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Glisserati",
+  "description": "Explosive; simple seeds tend to fill with gliders in kaleidoscopic patterns, though some runs stay sparse, like Transers, with very long transients. (John Elliott)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "14667255554507703935",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Glisserati",
+      "rule": "B245678/S035678/C7",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "23aa5955076eb11b",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

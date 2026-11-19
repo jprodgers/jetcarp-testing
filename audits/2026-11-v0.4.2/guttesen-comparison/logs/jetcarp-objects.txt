@@ -1,0 +1,48 @@
+What JETCARP 0.4.2's own object finder (jetcarp objects) reports. Built from source at a3e829a.
+
+--- JETCARP's published kagome ship (docs/scenes/tilings/glider-guttesen-kagome.json)
+generation: 0  hash 601691a1ab89735e
+rule:       B3/S23 (CA 1, field 0), 5 live cells
+objects:    1 (still lifes 0, oscillators 0, spaceships 1, other 0), 12 symmetries, periods up to 16
+census:     c/4 ship 5c #47fc3f x 1
+     1  spaceship        4      5  47fc3f43  c/4 ship 5c #47fc3f, c/4 orthogonal
+
+--- Guttesen's kagome glider, frame 0 of his animation, as a scene
+generation: 0  hash 325d7b8ecd407154
+rule:       B3/S23 (CA 1, field 0), 4 live cells
+objects:    1 (still lifes 0, oscillators 0, spaceships 1, other 0), 12 symmetries, periods up to 16
+census:     c/4 ship 5c #47fc3f x 1
+     1  spaceship        4      4  47fc3f43  c/4 ship 5c #47fc3f, c/4 orthogonal
+
+--- JETCARP's published snub-square ship (docs/scenes/tilings/glider-guttesen-snubsq.json)
+generation: 0  hash 87cc1d6f0b301e7a
+rule:       B3/S23 (CA 1, field 0), 12 live cells
+objects:    1 (still lifes 0, oscillators 0, spaceships 1, other 0), 8 symmetries, periods up to 16
+census:     c/4 ship 12c #c574f8 x 1
+     1  spaceship        8     12  c574f8e3  c/4 ship 12c #c574f8, c/4 orthogonal
+
+--- Guttesen's snub-square glider, frame 0 of his animation, as a scene
+generation: 0  hash c4c8a90a093ac37c
+rule:       B3/S23 (CA 1, field 0), 8 live cells
+objects:    1 (still lifes 0, oscillators 0, spaceships 1, other 0), 8 symmetries, periods up to 16
+census:     c/4 ship 12c #c574f8 x 1
+     1  spaceship        8      8  c574f8e3  c/4 ship 12c #c574f8, c/4 orthogonal
+
+--- Guttesen's large glider G (his cells, as a scene)
+generation: 0  hash 1a03462e78c85e7e
+rule:       B3/S23 (CA 1, field 0), 42 live cells
+objects:    1 (still lifes 0, oscillators 0, spaceships 1, other 0), 12 symmetries, periods up to 64
+census:     c/4 ship 44c #466744 x 1
+     1  spaceship       40     42  46674486  c/4 ship 44c #466744, c/4 orthogonal
+
+--- Guttesen's glider gun after 1,104 generations (his cells, as a scene on a 1024 by 96 patch)
+generation: 1104  hash c6ac5d246f2ac7ac
+rule:       B3/S23 (CA 1, field 0), 444 live cells
+objects:    23 (still lifes 6, oscillators 1, spaceships 10, other 6), 12 symmetries, periods up to 8
+census:     c/4 ship 5c #47fc3f x 10, still life 26c #93f540 x 6, other (unsettled) x 4, other (dies) x 2, p2 oscillator 4c #ef4478 x 1
+    10  spaceship        4      4  47fc3f43  c/4 ship 5c #47fc3f, c/4 orthogonal
+     6  still life       1     26  93f540ea  still life 26c #93f540
+     4  other            -     50            other (unsettled)
+     2  other            -     14            other (dies)
+     1  oscillator       2      4  ef447830  p2 oscillator 4c #ef4478
+

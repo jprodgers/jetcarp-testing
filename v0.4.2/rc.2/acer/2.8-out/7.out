@@ -1,0 +1,19 @@
+hunt 9: 30/30 soups in each of 6 groups, 1116 soups/s, 1,332 objects (ships 103, osc 431, still 798), 67 distinct, 54 new | newest: still life 12c #de4e5b (B36/S23)
+  status done, 0 s run, 146 settled, 3 died, 31 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 30 soups, 861 objects (oscillator 259, spaceship 82, still life 520), 13 distinct, 0 new
+  B36/S23 on Square: 30 soups, 172 objects (oscillator 22, spaceship 18, still life 132), 9 distinct, 9 new
+  B2/S34 on Square: 30 soups, 3 objects (spaceship 3), 2 distinct, 2 new
+  B3/S23 on Hexagon: 30 soups, 78 objects (still life 78), 18 distinct, 18 new
+  B36/S23 on Hexagon: 30 soups, 74 objects (oscillator 6, still life 68), 18 distinct, 18 new
+  B2/S34 on Hexagon: 30 soups, 144 objects (oscillator 144), 7 distinct, 7 new
+  newest finds:
+    de4e5b712d9952d1ee333a73aed45063  still life 12c #de4e5b             B36/S23    Hexagon soup 29  (new to the catalog)
+    41690ebdb661f14f0a70e94826d6b762  still life 11c #41690e             B3/S23     Hexagon soup 28  (new to the catalog)
+    fe9047cf64e9a78c6ba4aac9c6e01ff5  still life 11c #fe9047             B36/S23    Hexagon soup 26  (new to the catalog)
+    90d2c019f143302557f8734ab0c26220  still life 9c #90d2c0              B36/S23    Hexagon soup 25  (new to the catalog)
+    02f8b9382ebbec3c8fad24ccd51bb0dd  still life 8c #02f8b9              B36/S23    Hexagon soup 23  (new to the catalog)
+    5df8bf2ce546b9685e3f24038d321de6  still life 12c #5df8bf             B36/S23    Hexagon soup 22  (new to the catalog)
+    f8e7d5010d333fdcd4888b908421b350  still life 18c #f8e7d5             B36/S23    Hexagon soup 21  (new to the catalog)
+    101ca040674b501dd6a8e0b0888d99dc  still life 6c #101ca0              B3/S23     Hexagon soup 21  (new to the catalog)
+    9a523226074e01695d7faae9ff326e80  still life 17c #9a5232             B36/S23    Hexagon soup 20  (new to the catalog)
+    069974a131d8e8af29cfdbf9049dabe6  still life 14c #069974             B3/S23     Hexagon soup 20  (new to the catalog)

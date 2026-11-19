@@ -1,0 +1,19 @@
+scene:      /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/2.9-soup.json
+tiling:     Square (parallelogram) (square): 24964 cells, 158x158 unit cells, 1 tile type(s), storage dense, edges dead
+generation: 1600  hash 9d4d03ac3e4fe8d6
+rule:       B2/S34 (CA 1, field 0), 8079 live cells
+objects:    6 (still lifes 0, oscillators 0, spaceships 0, other 6), 8 symmetries, periods up to 64
+census:     other (dies) x 4, other (grows) x 1, other (unsettled) x 1
+
+ count  class       period  cells  key       name
+     4  other            -      1            other (dies)
+     1  other            -   8073            other (grows)
+     1  other            -      2            other (unsettled)
+
+#0     other (grows)                cells 8073  centroid (79.1, 79.0)  
+#1     other (dies)                 cells    1  centroid (1.5, 10.5)  
+#2     other (dies)                 cells    1  centroid (58.5, 34.5)  
+#3     other (unsettled)            cells    2  centroid (49.0, 39.5)  
+#4     other (dies)                 cells    1  centroid (0.5, 75.5)  
+#5     other (dies)                 cells    1  centroid (53.5, 157.5)  
+time:       0.41s on 32 threads

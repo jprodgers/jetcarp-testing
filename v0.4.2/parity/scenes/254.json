@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA diagonal rainbow (brick)",
+  "description": "On bricks the still territories stretch into diagonal rainbow streaks. Found by a JACA rule search.",
+  "tiling": {
+    "family": "brick",
+    "size": {
+      "rect": {
+        "w": 190,
+        "h": 126
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 32,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B2/S0124",
+      "rule": "JACA B2/S0124",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "signed": {
+          "density": 0.45,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "f8196447182311b5",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

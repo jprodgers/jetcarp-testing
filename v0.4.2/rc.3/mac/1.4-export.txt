@@ -1,0 +1,7 @@
+explore job 2 (search 9ca7d1d5-b002-4daa-8b1f-ea02b06e9964): sealed its newest 160,217 runs first, so the pack carries every run
+publishing feed rc3-long (version 1) into /Users/Jimmie/jetcarp-rc-042c/.rc3-long.store
+1454 patterns read, 1454 new rows
+search 9ca7d1d5-b002-4daa-8b1f-ea02b06e9964: copying its segments
+version sha256:a4c4f63963f66897bdd582864d4ceedacdb8b83e24aea6dbb8a08c09174ff66d written
+exported sha256:a4c4f63963f66897bdd582864d4ceedacdb8b83e24aea6dbb8a08c09174ff66d into /Users/Jimmie/jetcarp-rc-042c/rc3-long: 29 files, 90470006 bytes
+the version was published first into /Users/Jimmie/jetcarp-rc-042c/.rc3-long.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /Users/Jimmie/jetcarp-rc-042c/.rc3-long.store` does (then `jetcarp pack export --from /Users/Jimmie/jetcarp-rc-042c/.rc3-long.store` lays it out)

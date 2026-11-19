@@ -1,0 +1,198 @@
+# build poll, every 10 s; CPU in cores of 12 (from CPU time deltas); GPU = sum of the process's engine utilisation
+=== 10:01:58
+  pid  30284 jetcarp  cores   n/a ws   311 MB cpu_s 42 gpu 23%
+  pid  29972 jetcarpw cores   n/a ws     5 MB cpu_s 0 gpu %
+=== 10:02:08
+  pid  30284 jetcarp  cores  0.82 ws   312 MB cpu_s 50 gpu 22%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+=== 10:02:18
+  pid  30284 jetcarp  cores  0.81 ws   312 MB cpu_s 58 gpu 22%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+=== 10:02:28
+  pid  30284 jetcarp  cores  0.78 ws   311 MB cpu_s 66 gpu 18%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+=== 10:02:38
+  pid  30284 jetcarp  cores  0.73 ws   313 MB cpu_s 73 gpu 14%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+=== 10:02:48
+  pid  30284 jetcarp  cores  0.59 ws   312 MB cpu_s 79 gpu 10%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+=== 10:02:58
+  pid  30284 jetcarp  cores  8.72 ws   525 MB cpu_s 166 gpu 17%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  (build is job 33)
+  Quick Start build (explore 33): 0.1 of 2 min, 64 runs (0/s), 50 elites in 38 niches, 0 confirmed, 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 4 s run over every session, 0 confirmation runs, 1,136 candidates tried, 0.44 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+    family                     runs   mean   best  elites
+=== 10:03:08
+  pid  30284 jetcarp  cores  5.54 ws   784 MB cpu_s 222 gpu 19%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 0.2 of 2 min, 83 runs (6/s), 68 elites in 55 niches, 0 confirmed, 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 15 s run over every session, 0 confirmation runs, 1,136 candidates tried, 0.44 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 3 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:03:18
+  pid  30284 jetcarp  cores  8.21 ws   611 MB cpu_s 304 gpu 16%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 0.4 of 2 min, 1,107 runs (0/s), 439 elites in 261 niches, 0 confirmed, 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 25 s run over every session, 0 confirmation runs, 2,208 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 3 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:03:28
+  pid  30284 jetcarp  cores  6.07 ws   614 MB cpu_s 365 gpu 16%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 0.6 of 2 min, 1,119 runs (1/s), 450 elites in 269 niches, 0 confirmed, 4 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 35 s run over every session, 0 confirmation runs, 2,208 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 6 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:03:38
+  pid  30284 jetcarp  cores  2.62 ws   754 MB cpu_s 391 gpu 16%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 0.8 of 2 min, 1,119 runs (0/s), 450 elites in 269 niches, 0 confirmed, 4 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 45 s run over every session, 0 confirmation runs, 2,208 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 6 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:03:48
+  pid  30284 jetcarp  cores  9.08 ws 1,339 MB cpu_s 482 gpu 25%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 0.9 of 2 min, 2,143 runs (0/s), 786 elites in 443 niches, 0 confirmed, 5 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 55 s run over every session, 0 confirmation runs, 3,280 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 9 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:03:58
+  pid  30284 jetcarp  cores  5.27 ws   630 MB cpu_s 535 gpu 25%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 1.1 of 2 min, 2,166 runs (1/s), 806 elites in 458 niches, 0 confirmed, 6 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 1 min 5 s run over every session, 0 confirmation runs, 3,280 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:04:08
+  pid  30284 jetcarp  cores  4.92 ws   635 MB cpu_s 584 gpu 25%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 1.3 of 2 min, 2,166 runs (1/s), 806 elites in 458 niches, 0 confirmed, 6 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 1 min 15 s run over every session, 0 confirmation runs, 3,280 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:04:18
+  pid  30284 jetcarp  cores  4.84 ws   637 MB cpu_s 632 gpu 25%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 1.4 of 2 min, 2,166 runs (1/s), 806 elites in 458 niches, 0 confirmed, 6 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 1 min 24 s run over every session, 0 confirmation runs, 3,280 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:04:28
+  pid  30284 jetcarp  cores  3.25 ws   651 MB cpu_s 665 gpu 97%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 1.6 of 2 min, 2,166 runs (0/s), 806 elites in 458 niches, 0 confirmed, 6 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 1 min 34 s run over every session, 0 confirmation runs, 3,280 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:04:38
+  pid  30284 jetcarp  cores  4.58 ws   756 MB cpu_s 711 gpu 19%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 1.7 of 2 min, 2,166 runs (0/s), 806 elites in 458 niches, 0 confirmed, 6 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 1 min 45 s run over every session, 0 confirmation runs, 3,280 candidates tried, 0.58 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:04:48
+  pid  30284 jetcarp  cores  8.62 ws   883 MB cpu_s 797 gpu 16%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 1.9 of 2 min, 3,238 runs (6/s), 1,078 elites in 603 niches, 0 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status running, 1 min 55 s run over every session, 0 confirmation runs, 3,574 candidates tried, 0.60 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:04:58
+  pid  30284 jetcarp  cores  8.97 ws   657 MB cpu_s 888 gpu 8%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 2 of 2 min, 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan; publishing its atlas into the Quick Start
+    status running, 2 min 3 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:05:09
+  pid  30284 jetcarp  cores 10.53 ws   640 MB cpu_s 994 gpu 21%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 2 of 2 min, 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan; publishing its atlas into the Quick Start
+    status running, 2 min 3 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:05:19
+  pid  30284 jetcarp  cores 10.29 ws   634 MB cpu_s 1,097 gpu 20%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 2 of 2 min, 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan; publishing its atlas into the Quick Start
+    status running, 2 min 3 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:05:29
+  pid  30284 jetcarp  cores  4.02 ws   355 MB cpu_s 1,137 gpu 12%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status done, 2 min 28 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  (job 33 no longer running)
+=== 10:05:39
+  pid  30284 jetcarp  cores  0.90 ws   356 MB cpu_s 1,146 gpu 13%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status done, 2 min 28 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:05:49
+  pid  30284 jetcarp  cores  0.74 ws   356 MB cpu_s 1,153 gpu 21%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status done, 2 min 28 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:05:59
+  pid  30284 jetcarp  cores  0.99 ws   356 MB cpu_s 1,163 gpu 21%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status done, 2 min 28 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:06:09
+  pid  30284 jetcarp  cores  0.91 ws   356 MB cpu_s 1,172 gpu 21%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status done, 2 min 28 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:06:19
+  pid  30284 jetcarp  cores  1.03 ws   356 MB cpu_s 1,183 gpu 21%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status done, 2 min 28 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+=== 10:06:29
+  pid  30284 jetcarp  cores  0.96 ws   356 MB cpu_s 1,192 gpu 22%
+  pid  29972 jetcarpw cores  0.00 ws     5 MB cpu_s 0 gpu %
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    status done, 2 min 28 s run over every session, 18 confirmation runs, 3,574 candidates tried, 0.64 GB of memory
+    threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+    this session: 11 runs on the processor stopped at their time cap (kept with the generations they reached), 218 runs given up at a stop or the end (not kept)
+    loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+# stopped: a minute after the job ended

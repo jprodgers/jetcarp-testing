@@ -1,0 +1,44 @@
+host stop, then the old process: how long it stays after stop returns (41f7f2f, JETCARP_GPU=RTX, a fresh scratch folder ~\jetcarp-rc4pre\stoprace)
+round 1: host pid 26984; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 2: host pid 23780; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 3: host pid 25692; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 4: host pid 28920; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 5: host pid 31016; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 6: host pid 23056; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 7: host pid 29380; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 8: host pid 21948; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 9: host pid 24232; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 10: host pid 31448; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 11: host pid 26580; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 12: host pid 25324; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 13: host pid 23976; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 14: host pid 4900; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 15: host pid 31188; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 16: host pid 28920; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 17: host pid 19380; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 18: host pid 22332; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 19: host pid 29032; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+round 20: host pid 29740; stop said 'stopped'; process still there when stop returned: False; gone 0 ms later
+linger after stop returned: alive in 0 of 20 rounds; max 0 ms, median 0 ms
+start-stop-start 1: second start exit 0 in 1.0 s
+start-stop-start 2: second start exit 0 in 0.6 s
+start-stop-start 3: second start exit 0 in 0.6 s
+start-stop-start 4: second start exit 0 in 1.0 s
+start-stop-start 5: second start exit 0 in 0.5 s
+start-stop-start 6: second start exit 0 in 0.6 s
+start-stop-start 7: second start exit 0 in 0.6 s
+start-stop-start 8: second start exit 0 in 1.0 s
+start-stop-start 9: second start exit 0 in 0.6 s
+start-stop-start 10: second start exit 0 in 0.6 s
+start-stop-start 11: second start exit 0 in 0.6 s
+start-stop-start 12: second start exit 0 in 0.6 s
+start-stop-start 13: second start exit 0 in 1.0 s
+start-stop-start 14: second start exit 0 in 1.0 s
+start-stop-start 15: second start exit 0 in 0.5 s
+start-stop-start 16: second start exit 0 in 0.9 s
+start-stop-start 17: second start exit 0 in 0.6 s
+start-stop-start 18: second start exit 0 in 0.6 s
+start-stop-start 19: second start exit 0 in 0.8 s
+start-stop-start 20: second start exit 0 in 0.9 s
+second start failed in 0 of 20
+jetcarp processes at the end: 

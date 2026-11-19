@@ -1,0 +1,205 @@
+R5 #134 on the Mac, 2026-11-17 03:05:22 PM EST; rc.5's installer, sha256 bac32379622d4916…; no JETCARP_* variable set
+
+######## (a) a scratch HOME ($H/kept/home), the settings kept
+$ HOME=$H/kept/home sh ~/jetcarp-rc5/dl/rc5/jetcarp-installer.sh --url ~/jetcarp-rc5/dl/rc5
+jetcarp-installer: getting JETCARP 0.4.2-rc.5 for aarch64-apple-darwin from ~/jetcarp-rc5/dl/rc5
+jetcarp-installer: checked jetcarp-0.4.2-rc.5-aarch64-apple-darwin.tar.gz against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.5 in $H/kept/home/.local/lib/jetcarp
+jetcarp-installer: linked $H/kept/home/.local/bin/jetcarp
+jetcarp-installer: the starter pack is in $H/kept/home/.local/lib/jetcarp/packs
+jetcarp-installer: $H/kept/home/.local/bin is not on your PATH. Add it, for example with this line in ~/.profile, ~/.bashrc or ~/.zshrc:
+
+    export PATH="$H/kept/home/.local/bin:$PATH"
+
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine
+[exit 0, 0.81 s]
+
+$ HOME=$H/kept/home $H/kept/home/.local/bin/jetcarp setup --seizure-warning no-disorder --profile blank-slate --quickstart-minutes 0 --quiet | tail -1
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+
+setting up JETCARP as Blank slate:
+  1. record the profile Blank slate in $H/kept/home/Library/Application Support/jetcarp/setup.json
+  2. nothing to import or build: the built-in examples are in the Quick Start already
+Open the app with `jetcarp`; `jetcarp setup` again changes your mind.
+[exit 0, 0.43 s]
+
+$ ls -A '$H/kept/home/Library/Application Support/jetcarp'; ls -d $H/kept/home/Pictures/JETCARP 2>&1
+gpu-checks.json
+photosensitivity.json
+setup.json
+ls: $H/kept/home/Pictures/JETCARP: No such file or directory
+[exit 1, 0.02 s]
+
+$ HOME=$H/kept/home sh ~/jetcarp-rc5/dl/rc5/jetcarp-installer.sh --uninstall
+jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+jetcarp-installer: removed $H/kept/home/.local/bin/jetcarp
+jetcarp-installer: removed $H/kept/home/.local/lib/jetcarp
+jetcarp-installer: removed $H/kept/home/.local/lib (empty, made by the install)
+jetcarp-installer: removed $H/kept/home/.local/bin (empty, made by the install)
+jetcarp-installer: removed $H/kept/home/.local (empty, made by the install)
+jetcarp-installer: kept your settings, data and pictures in $H/kept/home/Library/Application Support/jetcarp; delete them by hand if you want them gone
+[exit 0, 0.05 s]
+
+$ ls -A $H/kept/home; ls -A $H/kept/home/.local 2>&1
+Library
+ls: $H/kept/home/.local: No such file or directory
+[exit 1, 0.02 s]
+
+######## (b) the real HOME, the tester's way
+$ ls -d ~/.local/lib/jetcarp ~/.local/bin/jetcarp "~/Library/Application Support/jetcarp" ~/Pictures/JETCARP 2>&1; ls -A "~/Library/Application Support/jetcarp" 2>&1
+ls: ~/.local/bin/jetcarp: No such file or directory
+ls: ~/.local/lib/jetcarp: No such file or directory
+~/Library/Application Support/jetcarp
+~/Pictures/JETCARP
+gpu-checks.json
+host-program
+photosensitivity.json
+setup.json
+[exit 0, 0.02 s]
+
+$ sh ~/jetcarp-rc5/dl/rc5/jetcarp-installer.sh
+jetcarp-installer: getting JETCARP 0.4.2-rc.5 for aarch64-apple-darwin from https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.5
+jetcarp-installer: checked jetcarp-0.4.2-rc.5-aarch64-apple-darwin.tar.gz against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.5 in ~/.local/lib/jetcarp
+jetcarp-installer: linked ~/.local/bin/jetcarp
+jetcarp-installer: the starter pack is in ~/.local/lib/jetcarp/packs
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine
+[exit 0, 2.03 s]
+
+$ command -v jetcarp; jetcarp --version
+~/.local/bin/jetcarp
+jetcarp 0.4.2-rc.5
+[exit 0, 0.02 s]
+
+$ jetcarp setup --seizure-warning no-disorder --profile blank-slate --quickstart-minutes 0 --quiet | tail -1
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+
+setting up JETCARP as Blank slate:
+  1. record the profile Blank slate in ~/Library/Application Support/jetcarp/setup.json
+  2. nothing to import or build: the built-in examples are in the Quick Start already
+Open the app with `jetcarp`; `jetcarp setup` again changes your mind.
+[exit 0, 0.04 s]
+
+$ jetcarp paths
+settings: ~/Library/Application Support/jetcarp
+data:     ~/Library/Application Support/jetcarp/data
+output:   ~/Pictures/JETCARP
+bundled:  ~/.local/lib/jetcarp/packs
+runtime:  ~/.cache/jetcarp
+[exit 0, 0.02 s]
+
+$ jetcarp uninstall --yes --settings --data
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Undoing:
+  done: remove the host's lock file ~/.cache/jetcarp/host.lock
+  done: delete the settings folder ~/Library/Application Support/jetcarp
+
+Your pictures and exports in ~/Pictures/JETCARP are never deleted.
+
+To remove the program itself (in ~/.local/lib/jetcarp, installed with JETCARP's installer), run this:
+
+    curl -LsSf https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.sh | sh -s -- --uninstall
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+[exit 0, 0.07 s]
+
+$ ls -d ~/.local/lib/jetcarp ~/.local/bin/jetcarp "~/Library/Application Support/jetcarp" ~/Pictures/JETCARP 2>&1
+ls: ~/Library/Application Support/jetcarp: No such file or directory
+~/.local/bin/jetcarp
+~/.local/lib/jetcarp
+~/Pictures/JETCARP
+[exit 1, 0.02 s]
+
+$ sh ~/jetcarp-rc5/dl/rc5/jetcarp-installer.sh --uninstall
+jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+jetcarp-installer: removed ~/.local/bin/jetcarp
+jetcarp-installer: removed ~/.local/lib/jetcarp
+jetcarp-installer: removed ~/.local/lib (empty, made by the install)
+jetcarp-installer: kept your settings, data and pictures in ~/Pictures/JETCARP; delete them by hand if you want them gone
+[exit 0, 0.05 s]
+
+$ ls -d ~/.local/lib/jetcarp ~/.local/bin/jetcarp "~/Library/Application Support/jetcarp" 2>&1; ls ~/Pictures/JETCARP
+ls: ~/.local/bin/jetcarp: No such file or directory
+ls: ~/.local/lib/jetcarp: No such file or directory
+ls: ~/Library/Application Support/jetcarp: No such file or directory
+brians_brain_gen200.png
+hex_ship_gen0.png
+hex_ship_gen30.png
+[exit 0, 0.02 s]
+
+######## (c) a scratch HOME ($H/none/home), nothing left
+$ HOME=$H/none/home sh ~/jetcarp-rc5/dl/rc5/jetcarp-installer.sh --url ~/jetcarp-rc5/dl/rc5
+jetcarp-installer: getting JETCARP 0.4.2-rc.5 for aarch64-apple-darwin from ~/jetcarp-rc5/dl/rc5
+jetcarp-installer: checked jetcarp-0.4.2-rc.5-aarch64-apple-darwin.tar.gz against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.5 in $H/none/home/.local/lib/jetcarp
+jetcarp-installer: linked $H/none/home/.local/bin/jetcarp
+jetcarp-installer: the starter pack is in $H/none/home/.local/lib/jetcarp/packs
+jetcarp-installer: $H/none/home/.local/bin is not on your PATH. Add it, for example with this line in ~/.profile, ~/.bashrc or ~/.zshrc:
+
+    export PATH="$H/none/home/.local/bin:$PATH"
+
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine
+[exit 0, 0.71 s]
+
+$ HOME=$H/none/home $H/none/home/.local/bin/jetcarp setup --seizure-warning no-disorder --profile blank-slate --quickstart-minutes 0 --quiet | tail -1
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+
+setting up JETCARP as Blank slate:
+  1. record the profile Blank slate in $H/none/home/Library/Application Support/jetcarp/setup.json
+  2. nothing to import or build: the built-in examples are in the Quick Start already
+Open the app with `jetcarp`; `jetcarp setup` again changes your mind.
+[exit 0, 0.24 s]
+
+$ HOME=$H/none/home $H/none/home/.local/bin/jetcarp uninstall --yes --settings --data
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Undoing:
+  done: delete the settings folder $H/none/home/Library/Application Support/jetcarp
+
+Your pictures and exports in $H/none/home/Pictures/JETCARP are never deleted.
+
+To remove the program itself (in $H/none/home/.local/lib/jetcarp, installed with JETCARP's installer), run this:
+
+    curl -LsSf https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.sh | sh -s -- --uninstall
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+[exit 0, 0.07 s]
+
+$ ls -A $H/none/home; ls -A $H/none/home/Library 2>&1
+.local
+Library
+Application Support
+[exit 0, 0.02 s]
+
+$ HOME=$H/none/home sh ~/jetcarp-rc5/dl/rc5/jetcarp-installer.sh --uninstall
+jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+jetcarp-installer: removed $H/none/home/.local/bin/jetcarp
+jetcarp-installer: removed $H/none/home/.local/lib/jetcarp
+jetcarp-installer: removed $H/none/home/.local/lib (empty, made by the install)
+jetcarp-installer: removed $H/none/home/.local/bin (empty, made by the install)
+jetcarp-installer: removed $H/none/home/.local (empty, made by the install)
+[exit 0, 0.05 s]
+
+$ ls -A $H/none/home; ls -A $H/none/home/.local 2>&1
+Library
+ls: $H/none/home/.local: No such file or directory
+[exit 1, 0.02 s]
+
+######## (d) the real HOME: rc.5 installed again
+$ sh ~/jetcarp-rc5/dl/rc5/jetcarp-installer.sh --url ~/jetcarp-rc5/dl/rc5
+jetcarp-installer: getting JETCARP 0.4.2-rc.5 for aarch64-apple-darwin from ~/jetcarp-rc5/dl/rc5
+jetcarp-installer: checked jetcarp-0.4.2-rc.5-aarch64-apple-darwin.tar.gz against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.5 in ~/.local/lib/jetcarp
+jetcarp-installer: linked ~/.local/bin/jetcarp
+jetcarp-installer: the starter pack is in ~/.local/lib/jetcarp/packs
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine
+[exit 0, 0.73 s]
+
+$ command -v jetcarp; jetcarp --version; ls -A "~/Library/Application Support/jetcarp" 2>&1
+~/.local/bin/jetcarp
+jetcarp 0.4.2-rc.5
+ls: ~/Library/Application Support/jetcarp: No such file or directory
+[exit 1, 0.03 s]
+
+(done 2026-11-17 03:05:28 PM EST)

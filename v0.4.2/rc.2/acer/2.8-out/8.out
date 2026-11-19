@@ -1,0 +1,10 @@
+    9  hunt     done     2026-11-15T14:29:10Z  hunt 9: 30/30 soups in each of 6 groups, 1116 soups/s, 1,332 objects (ships 103, osc 431, still 798), 67 distinct, 54 new | newest: still life 12c #de4e5b (B36/S23)
+    8  hunt     done     2026-11-15T14:29:01Z  hunt 8: 500/500 soups, 1072 soups/s, 11,099 objects (ships 1,004, osc 3,244, still 6,851), 24 distinct, 0 new | newest: still life 9c #8cae5a (B3/S23)
+    7  hunt     paused   2026-11-15T14:27:02Z  hunt 7: 86,857/2,000,000 soups, 1290 soups/s, 1,872,460 objects (ships 165,852, osc 541,588, still 1,165,020), 74 distinct, 37 new | newest: still life 14c #5a79a9 (B3/S23)
+    6  hunt     paused   2026-11-15T14:27:00Z  hunt 6: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+    5  hunt     done     2026-11-15T14:26:57Z  hunt 5: 3,000/3,000 soups, 1320 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+    4  explore  paused   2026-11-15T14:23:39Z  explore 4: 9,510 runs (52/s), 1,976 elites in 1,032 niches (51 of them confirmed), 9 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    3  explore  paused   2026-11-15T13:53:49Z  explore 3: 13,236 runs (15/s), 1,994 elites in 1,033 niches (67 of them confirmed), 12 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    2  explore  paused   2026-11-15T13:44:19Z  explore 2: 679 runs (0/s), 244 elites in 131 niches (18 of them confirmed), 9 of 1,359 tilings; cpu only
+    1  explore  paused   2026-11-15T13:32:18Z  explore 1: 32,598 runs (48/s), 6,733 elites in 3,428 niches (286 of them confirmed), 21 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+9 job(s); 0 running

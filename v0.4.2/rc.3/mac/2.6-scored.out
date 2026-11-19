@@ -1,0 +1,9 @@
+explore 4: 12,840 runs (78/s), 2,101 elites in 1,053 niches (72 of them confirmed), 11 of 1,359 tilings; Apple M2 Max, Metal
+  status paused, 3 min 2 s run over every session, 288 confirmation runs, 13,149 candidates tried, 1.88 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  score: the score model 'Jimmie Rodgers, jaca on explore job 3' (for jaca runs)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                     12,840   0.20   1.86   2,101
+  folder: /Users/Jimmie/jetcarp-rc-042c/data/searches/abf36fc7-74fd-4073-a507-c21bb78da122
+exit 0

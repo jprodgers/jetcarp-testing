@@ -1,0 +1,9 @@
+> (Jimmie, new Windows PowerShell window, 01:02, in Downloads)
+> Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.3/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+> powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 | Tee-Object ...\01-install-raw.txt
+jetcarp-installer: getting JETCARP 0.4.0-rc.3 for x86_64-pc-windows-msvc from https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.3
+jetcarp-installer: checked jetcarp-0.4.0-rc.3-x86_64-pc-windows-msvc.zip against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.0-rc.3 in C:\Users\jimmi\AppData\Local\Programs\jetcarp
+jetcarp-installer: the starter pack is in C:\Users\jimmi\AppData\Local\Programs\jetcarp\packs
+jetcarp-installer: added C:\Users\jimmi\AppData\Local\Programs\jetcarp to your user PATH; open a new terminal to use `jetcarp`
+jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees

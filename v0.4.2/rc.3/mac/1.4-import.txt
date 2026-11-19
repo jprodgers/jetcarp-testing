@@ -1,0 +1,11 @@
+sha256:a4c4f63963f66897bdd582864d4ceedacdb8b83e24aea6dbb8a08c09174ff66d: feed rc3-long, by SHA256:oSR9FRE0ULpCsRMAuErTDi/wF5ZdtTkpGMQEiKMivsI (rc.3 test publisher), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 9ca7d1d5-b002-4daa-8b1f-ea02b06e9964: copying its segments and rebuilding its state
+merging sightings
+imported sha256:a4c4f63963f66897bdd582864d4ceedacdb8b83e24aea6dbb8a08c09174ff66d (feed rc3-long, SHA256:oSR9FRE0ULpCsRMAuErTDi/wF5ZdtTkpGMQEiKMivsI rc.3 test publisher, signed by its publisher)
+  13 objects checked (90459076 bytes)
+  patterns: 1454 added, 0 merged, 0 flagged needs_reverify
+  sightings 1783, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 1454 of 1454 passed, 0 skipped, 0 failed
+search 9ca7d1d5-b002-4daa-8b1f-ea02b06e9964: 1160217 runs, 52560 elites in 23474 niches, rebuilt in 4.2 s

@@ -1,0 +1,29 @@
+explore 2: 1,120,514 runs (74/s), 51,926 elites in 23,283 niches (3,321 of them confirmed), 574 of 1,359 tilings; Apple M2 Max, Metal
+  status paused, 3 h 59 min run over every session, 17,733 confirmation runs, 1,139,316 candidates tried, 7.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 1,656 runs on the processor stopped at their time cap (kept with the generations they reached), 1,030 runs given up at a stop or the end (not kept)
+  loaded 27,367 elites, 272,784 identities, 14,956 coverage rows in 0.07 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               335,999   0.33   1.70  12,161
+  generations             263,463   0.65   2.26   8,860
+  ltl                     131,647   0.39   2.43   4,212
+  jaca                    121,560   0.54   2.28  11,244
+  priority                 78,381   0.42   2.27   5,338
+  hodgepodge               39,681   1.11   2.50   2,171
+  greenberg_hastings       39,520   0.59   2.63     960
+  cyclic                   39,494   0.52   2.39   1,903
+  rps                      39,397   0.56   2.44   1,810
+  wireworld                 7,344   0.47   1.58     487
+  spectre_glider            6,912   0.36   1.45      53
+  turmite                   3,926   0.85   1.96     866
+  layered                   3,254   0.63   1.93     494
+  lenia                     1,985   1.01   2.46     344
+  forest_fire               1,984   0.76   1.12     307
+  sandpile                  1,536   0.63   2.23     151
+  hex_tri                     912   0.64   1.72      52
+  wolfram                     903   0.71   1.74      47
+  margolus                    879   0.66   2.17     409
+  table                       870   0.29   0.49      11
+  hex_wolfram                 867   0.65   1.91      46
+  folder: /Users/Jimmie/jetcarp-rc-042b/data/searches/c022e749-295d-4369-928b-6c0fa3c35579
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

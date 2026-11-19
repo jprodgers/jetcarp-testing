@@ -1,0 +1,87 @@
+R4 #99 login off with the host stopped, the Mac, 2026-11-17 03:01:33 AM EST; jetcarp 0.4.2-rc.4
+
+$ jetcarp host status | head -2
+running, pid 75667, up 17127.0s, 334 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 326786 · 280000 cells of 5 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+[exit 0, 0.09 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host | grep -E '^\s+(state|pid|program) =' ; echo "launchctl print exit ${PIPESTATUS[0]}"
+	state = running
+	program = ~/.local/bin/jetcarp
+	pid = 75667
+		state = active
+		state = active
+launchctl print exit 0
+[exit 0, 0.02 s]
+
+$ ls -l ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist; plutil -p ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist; head -3 ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+-rw-r--r--@ 1 Jimmie  staff  627 Nov 16 22:16 ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+{
+  "Label" => "com.jimmieprodgers.jetcarp.host"
+  "ProcessType" => "Interactive"
+  "ProgramArguments" => [
+    0 => "~/.local/bin/jetcarp"
+    1 => "host"
+    2 => "serve"
+    3 => "--login"
+  ]
+  "RunAtLoad" => true
+}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+[exit 0, 0.03 s]
+
+#### the host stopped
+$ jetcarp host stop
+stopped
+[exit 0, 0.16 s]
+
+$ jetcarp host status | head -2
+Error: the JETCARP background host is not running
+[exit 0, 0.03 s]
+
+$ pgrep -fl 'jetcarp host serve' || echo 'no host process running'
+no host process running
+[exit 0, 0.03 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host | grep -E '^\s+(state|pid|program) =|job state' ; echo "launchctl print exit ${PIPESTATUS[0]}"
+	state = not running
+	program = ~/.local/bin/jetcarp
+		state = active
+		state = active
+	job state = exited
+launchctl print exit 0
+[exit 0, 0.02 s]
+
+#### login off
+$ jetcarp host login off
+the host no longer starts at login
+[exit 0, 0.03 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host > /dev/null 2>&1; echo "launchctl print exit $?"
+launchctl print exit 113
+[exit 0, 0.02 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host 2>&1 | head -3
+Bad request.
+Could not find service "com.jimmieprodgers.jetcarp.host" in domain for user gui: 502
+[exit 0, 0.02 s]
+
+$ ls -l ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist 2>&1
+ls: ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: No such file or directory
+[exit 1, 0.02 s]
+
+$ jetcarp host status | head -3
+Error: the JETCARP background host is not running
+[exit 0, 0.02 s]
+
+$ pgrep -fl 'jetcarp host serve' || echo 'no host process running'
+no host process running
+[exit 0, 0.03 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host > /dev/null 2>&1; echo "launchctl print exit $? (5 s later)"; pgrep -fl 'jetcarp host serve' || echo 'no host process running'
+launchctl print exit 113 (5 s later)
+no host process running
+[exit 0, 0.04 s]
+

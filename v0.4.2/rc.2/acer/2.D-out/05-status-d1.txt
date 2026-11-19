@@ -1,0 +1,7 @@
+running, pid 53616, up 220.0s, 461 MB, GPU Intel(R) UHD Graphics
+screen 0: JACA war on the hat tiling · profile JACA war on the hat tiling (1 of 1) · generation 628 · 35000 cells of 5.1 px · 30 fps, 15 generations a second · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)

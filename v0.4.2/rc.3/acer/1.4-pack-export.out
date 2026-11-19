@@ -1,0 +1,2 @@
+exported sha256:d8bc9bed5e582726922ae3eabb1e6cf001340f9a54b6633f3d84a136b1a07db0 into C:\Users\jimmi\jetcarp-rc-042c\P14-pack: 28 files, 44795455 bytes
+the version was published first into C:\Users\jimmi\jetcarp-rc-042c\.P14-pack.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to C:\Users\jimmi\jetcarp-rc-042c\.P14-pack.store` does (then `jetcarp pack export --from C:\Users\jimmi\jetcarp-rc-042c\.P14-pack.store` lays it out)

@@ -1,0 +1,9 @@
+# R4 #112 monitor change, the default host, every second; started 05:21:00
+# display before: Resolution: 3456 x 2234 Retina 
+# host.json before: 59b189e79f9728f2; keys: ['busy_percent', 'caption', 'fps', 'gpu', 'lock_awake_minutes', 'lock_screen', 'max_cells', 'max_fps', 'max_memory_mb', 'pacing', 'pause_on_battery', 'saver_rotation', 'screens', 'still_picture', 'tune'] [['monitor', 'place', 'rotation']]
+05:21:00 screen ? monitor None canvas [4112.0, 2658.0] cells 280000 of 5.00 px, profile Penrose waves | pid 43936 | monitors ['Built-in Retina Display'] | fit/tune words: none | held: []  | last log: "GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)" | host.json 59b189e79f9728f2
+05:26:41 screen ? monitor None canvas [3456.0, 2234.0] cells 280000 of 5.00 px, profile Penrose waves | pid 43936 | monitors ['Built-in Retina Display'] | fit/tune words: none | held: []  | last log: "GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)" | host.json 59b189e79f9728f2
+05:26:55 screen ? monitor None canvas [4112.0, 2658.0] cells 280000 of 5.00 px, profile Penrose waves | pid 43936 | monitors ['Built-in Retina Display'] | fit/tune words: none | held: []  | last log: "GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)" | host.json 59b189e79f9728f2
+# display after: Resolution: 3456 x 2234 Retina 
+# host.json after: 59b189e79f9728f2
+# ended 05:28:35

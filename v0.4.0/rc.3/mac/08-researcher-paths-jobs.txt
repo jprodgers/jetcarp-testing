@@ -1,0 +1,63 @@
+$ jetcarp paths   (23:34:44, after the Researcher build)
+settings: /Users/Jimmie/Library/Application Support/jetcarp
+data:     /Users/Jimmie/Documents/jetcarp-data
+output:   /Users/Jimmie/Pictures/JETCARP
+bundled:  /Users/Jimmie/.local/lib/jetcarp/packs
+
+$ jetcarp setup --status | head -12   (cut short by head: the build, job 2, is on the next line; see 10-setup-jobs.txt)
+setup: Researcher on 2026-11-13 04:23 UTC (JETCARP 0.4.0-rc.3)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Documents/jetcarp-data (chosen in setup: paths.json), 832.5 GB free
+  library:  /Users/Jimmie/Documents/jetcarp-data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /Users/Jimmie/.local/lib/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack, imported
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 26 patterns, 8 ant runs, 23 jobs; Quick Start entries: 364 built in, 79 from packs, 1,070 from searches
+setup's jobs:
+  pack import 1: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs (done)
+
+$ jetcarp jobs list (default library)
+    3  hunt     done     2026-11-13T04:23:21Z  hunt 3: imported from pack sha256:a78bbe8d5ee4cb18303e3eca9170b1a868dafbe78d3031179ba5f71ad29102ba (its finds came with the pack; nothing ran here)
+    2  explore  done     2026-11-13T04:23:21Z  Quick Start build (explore 2): 1,070 atlas entries published (1070 new, 0 updated, 0 removed); 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal
+    1  pack_import done     2026-11-13T04:23:20Z  pack import 1: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs
+23 job(s); 0 running
+
+$ jetcarp jobs status 2
+Quick Start build (explore 2): 1,070 atlas entries published (1070 new, 0 updated, 0 removed); 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal
+  status done, 10 min 39 s run over every session, 1,002 confirmation runs, 34,815 candidates tried, 2.50 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                10,509   0.29   1.46   2,106
+  generations               8,258   0.55   2.12   1,727
+  ltl                       3,295   0.33   2.20     361
+  jaca                      3,140   0.54   2.15     860
+  priority                  2,356   0.32   2.10     725
+  rps                       1,235   0.44   2.12     414
+  cyclic                    1,184   0.41   2.08     410
+  hodgepodge                1,150   1.09   2.27     262
+  greenberg_hastings        1,102   0.55   2.62     179
+  wireworld                   224   0.47   1.08      49
+  spectre_glider              208   0.31   1.37      19
+  turmite                     155   0.89   1.53     105
+  layered                     125   0.74   1.71      78
+  forest_fire                  59   0.78   1.12      42
+  hex_wolfram                  54   0.64   1.43      21
+  sandpile                     50   0.67   2.12      23
+  hex_tri                      48   0.61   1.23      26
+  margolus                     48   0.63   1.72      41
+  wolfram                      48   0.71   1.46      20
+  lenia                        45   0.91   2.31      30
+  table                        42   0.27   0.48       6
+  folder: /Users/Jimmie/Documents/jetcarp-data/searches/9039d677-6e95-4cd3-b291-e9dab9fc6117
+
+$ jetcarp jobs status 1
+pack import 1: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs
+  Pack import 1: done, setup: JETCARP starter pack: JETCARP starter pack
+  patterns new: 26
+  patterns merged: 0
+  Quick Start entries: 79
+  ant runs: 8

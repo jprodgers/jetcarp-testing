@@ -1,0 +1,4 @@
+clip 33 of 48
+48 clips in /Users/Jimmie/jetcarp-rc-042c/2.6-clips
+categories: Battles 48
+rating page: /Users/Jimmie/jetcarp-rc-042c/2.6-clips/index.html

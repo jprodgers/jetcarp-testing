@@ -1,0 +1,13 @@
+$ jetcarp host caption on   (01:22:11)
+running, pid 70227, up 212.0s, 140 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 20785 · 170648 cells
+monitors: 0: Monitor #41041
+wallpaper: showing
+exit 0
+
+$ jetcarp host caption off   (01:23:04)
+running, pid 70227, up 265.0s, 140 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 33408 · 170648 cells
+monitors: 0: Monitor #41041
+wallpaper: showing
+exit 0

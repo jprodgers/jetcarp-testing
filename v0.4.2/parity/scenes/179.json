@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Flaming Starbows",
+  "description": "Explosive; growing diamonds and skewed parallelograms sweep the grid, trailing fire and spirals, a bit like Faders crossed with Zhabotinsky spirals. (Charles A. Rockafellor)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "6097294682134593755",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Flaming Starbows",
+      "rule": "B23/S347/C8",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "054925356db48f5c",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

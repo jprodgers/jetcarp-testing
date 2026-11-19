@@ -1,0 +1,18 @@
+replaying on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+replayed 3 of 227 runs
+replayed 192 of 227 runs
+fitted to 227 review(s) of 227 run(s) of explore job(s) 2 by Jimmie Rodgers (48 keep, 98 maybe, 81 drop; jaca runs only)
+227 run(s) lacked measures: 227 replayed now, 0 from the cache (0 differ from their stored measures, 0 failed)
+held-out AUC 0.900 (keep against drop; on the runs fitted 0.940; the built-in score 0.769)
+strongest terms (pull per standard deviation):
+  jaca:sign_sorted         +0.501
+  jaca:sign_trade          -0.432
+  bits                     -0.300
+  same_nb                  -0.244
+  entropy                  +0.223
+  travel                   +0.205
+  jaca:sign_balance        +0.200
+  growth                   +0.198
+  sqrt_activity_early      -0.177
+  jaca:sign_lost           +0.166
+model: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/2.6-model.json

@@ -1,0 +1,111 @@
+# 3.1 A newcomer's first hour (the Mac, rc.3, in Jimmie's own account on a clean slate; Jimmie is the newcomer)
+
+Every moment of confusion, in order, with what was tried.
+
+1. Installing (https://jprodgers.github.io/jetcarp/getting-started/installing.html), read top-down from the release
+   page: Jimmie: "I'm already confused, am I installing from the script on the installation page, or doing something
+   else? As the instructions are for the base version, not rc.3." Then: "I hadn't scrolled down far enough to see the
+   release candidate section. I was just trying to follow from top down."
+   - The page opens with the installers for the latest release; "Release candidates" is far below, and its example
+     names v0.4.0-rc.1, so the reader must work out the command (rc.3's release does carry `jetcarp-installer.sh`).
+   - Suggestion: a line near the top ("Testing a release candidate? See Release candidates below"), and an example
+     that names the version in a way that is clearly to be replaced.
+2. The installer worked as the book says (`curl -LsSf …/v0.4.2-rc.3/jetcarp-installer.sh | sh`): `~/.local/bin/jetcarp`
+   → `~/.local/lib/jetcarp/jetcarp`, on the PATH, `jetcarp 0.4.2-rc.3`. Then: Jimmie: "It doesn't say how to start the
+   app on a Mac, or any system really. If it's a command line command, it should be in there."
+   - Installing ends without a next step; its only "run `jetcarp`" is in the archive section ("run `jetcarp` from the
+     folder"). First run opens with "The first time you open the app…" and never says how. (It's `jetcarp` with no
+     arguments, on every system; on Windows also the Start menu entry Scoop adds.)
+   - Suggestion: end Installing with "Open the app: run `jetcarp`" and a link to First run, and say it again at the top
+     of First run.
+3. Jimmie: "I was hoping for an icon to click on. What would that take?"
+   - JETCARP has no app icon and no launcher for the app on any system (the source has the macOS screen saver bundle,
+     the Linux login entry for the host, and the GNOME extension's symbolic icon only).
+   - What it would take (my answer): an icon (1024 px master → .icns, .ico, PNGs); on macOS a `JETCARP.app` bundle
+     (Info.plist, the program, the icon) made and signed ad hoc on the Mac, as `host saver install` already makes
+     `JETCARP.saver` (`macsaver.rs`): by the installer, Homebrew or the setup window, so no Developer ID or
+     notarisation is needed (a downloadable .dmg would need both); a Start menu entry from the Windows installer
+     (Scoop already adds one); a `jetcarp.desktop` file on Linux. Side benefits on macOS: Spotlight, Launchpad and the
+     Dock show "JETCARP" with its icon instead of a generic program, standard app menus (⌘M), maybe a steadier identity
+     for the login item (3.2's first-login code-signing failure).
+4. The setup window (Desktop art) worked: "Setup done, chose Desktop art, wallpaper is live" (`3.1-checks.txt`: the
+   wallpaper on, start at login, JETCARP's screen saver installed; `setup --status` says "Desktop art on … (JETCARP
+   0.4.2-rc.3)").
+5. Hunting for spaceships (tutorial 3), step 2: "I copied the code directly, but it didn't run." Jimmie copied the whole
+   block, the `$ ` prompt and the printed output included: zsh said "command not found: $", "command not found: hunt",
+   "command not found: status", "bad pattern: [3^3.4^2", "no matches found: (k2-017):". Nothing ran.
+   - The book's blocks mix the command (after a `$ ` prompt) with its output, so copying a block, or using the page's
+     copy button, pastes both. The output also shows a Linux path (`/home/ada/.local/share/jetcarp/…`).
+   - Suggestion: commands in blocks of their own with no `$`, and the output in a separate block (or marked as output so
+     the copy button skips it).
+6. The hunt, typed alone: it ran in Jimmie's library ("hunt job 1 in /Users/Jimmie/Library/Application
+   Support/jetcarp/data/library.sqlite") and gave **exactly the book's numbers**: 5000 soups, 13674 objects (oscillator
+   5824, spaceship 6900, still life 950), 20 distinct, 20 new (5 s, on Metal). The paste again carried the book's output
+   lines after the command, and zsh tried to run each ("command not found: hunt", "bad pattern: [3^3.4^2", …).
+   - Small: the progress lines are wider than the Terminal window, so redrawing them in place leaves pieces behind
+     ("newest: p3 oscillatohunt 1: 192/5,000 soups, …"). Shorter progress lines, or clearing the wrapped line, would fix it.
+7. Jimmie, when I offered the next commands typed out: "If I just copy from you, then I'm not following the page. None
+   of these commands copy and paste."
+   - **Book-wide:** the command blocks are ```text blocks holding a `$ ` prompt, the command, and its output together, so
+     the page's copy button copies all of it and a newcomer can't tell what to type. About 80 such command lines in 12
+     pages at the tag: tutorials/building-quick-start (18), first-wallpaper (11), hunting-spaceships (10), guides/packs
+     (10), searching (6), pattern-library (6), scripting-a-sweep (5), wallpapers (4), life-on-a-new-tiling, website-export,
+     scenes, pictures (3 each).
+   - Suggestion: commands in ```bash blocks of their own, no `$`, one command per block where the copy button matters,
+     and the output in a separate block labelled as output.
+8. The tutorial was stopped there (Jimmie's choice), its finding clear. **The first find in the library:** in the app,
+   Tools → Pattern library…: "The spaceship is there in the Pattern library" (the k2-017 hunt's ship).
+9. MCP with an assistant (tutorials/mcp.md): Jimmie registered JETCARP as the book says (`claude mcp add jetcarp --
+   jetcarp mcp`), started a Claude session, and pasted the tutorial's prompt ("Run Brian's Brain on a 120 by 80 square
+   grid for 200 generations and show me."): "it built an HTML page instead". In that session `/mcp`: "It's not listed
+   there."
+   - `claude mcp get jetcarp`: "Scope: Local config (private to you in this project) … Status: ✔ Connected", the project
+     being /Users/Jimmie (where it was run). Claude Code's default scope is "local", so the book's command registers
+     JETCARP for that one folder; a session started elsewhere (VS Code with a project open, another folder) doesn't get it.
+   - Suggestion: the book's command with `--scope user` (`claude mcp add --scope user jetcarp -- jetcarp mcp`), so it works
+     in every folder, and a line saying to check with `/mcp`.
+10. With JETCARP registered for every folder (`--scope user`; `/mcp` then listed it), the tutorial's own prompt worked:
+    "this time it did use jetcarp, output to pictures/jetcarp": `~/Pictures/JETCARP/brians_brain_gen200.png` (1200 × 800;
+    `verify`: "ok: generation 200 hash c38568895709dcc6").
+    - **A search:** "The hunt ran, it's in the library": the assistant ran hunt 2 (5,000 soups in 4 groups, done) and hunt 3
+      (12 groups, paused at 71,254 of 100,000 soups); the library went from 20 to 111 patterns.
+    - **The app (use_app):** with the app open and AI control on: "I had it display Brian's Brain, and it did so properly."
+11. Uninstalling (guides/uninstalling.md): Jimmie quit the app and ran `jetcarp uninstall`, then `--yes` ("done" for:
+    stop the background host, stop the host starting at login, remove the macOS screen saver, remove the host's lock
+    file, forget the recorded host command). Jimmie: "It didn't uninstall."
+    - It did undo everything set up outside the folders: no host, no login entry, no screen saver, `~/.cache/jetcarp`
+      gone, and the wallpaper and screen saver choices identical to before M-4.
+    - But a command named `uninstall` leaves the program (and keeps the settings and data unless asked), and its last
+      line lists eight ways to remove the program ("the installer again with `--uninstall`, `pipx uninstall jetcarp`, …")
+      rather than the one that applies. The installer's own command is in the guide's step 3, in a table.
+    - Suggestions: say on the first line what it does and doesn't do ("undoes what JETCARP set up; the program stays");
+      detect how JETCARP was installed (the program's own path, e.g. `~/.local/lib/jetcarp`) and print that one command,
+      or offer to run it.
+    - Jimmie, at the guide's step 3: "The uninstall command is for the official release, I haven't run it yet. Will that
+      work?" (the command fetches `releases/latest/…`, i.e. 0.4.1's installer). I read both scripts without running them:
+      they differ only in the version number, and `--uninstall` checks the marker in `~/.local/lib/jetcarp`, removes the
+      link if it made it, deletes the folder and empty folders it made, and exits before downloading anything. So it
+      works for a candidate's install. Suggestion: say so in the guide ("any release's installer removes it").
+12. `jetcarp uninstall --yes --settings --data`: "done: delete the settings folder …" then "FAILED: delete the data folder
+    …/jetcarp/data (1.3 MB): No such file or directory (os error 2)": the data folder is inside the settings folder on
+    macOS, so it was already deleted (3.2's finding, now met by the newcomer, to whom it reads as a failure).
+13. The guide's step 3, copied from its table's first row: `curl -LsSf …/releases/latest/download/jetcarp-installer.sh | sh
+    -s -- --uninstall, or sh jetcarp-installer.sh --uninstall` → "jetcarp-installer: error: unknown option --uninstall,
+    (try --help)". Nothing was removed (the installer stopped).
+    - The table cell holds two alternative commands joined by ", or", and copying the cell takes both (the installer saw
+      `--uninstall,` with the comma). Suggestion: one command per cell, or the alternative on a line of its own outside
+      the table, each in its own copyable block.
+14. The program's own uninstall (`curl -LsSf …/releases/latest/download/jetcarp-installer.sh | sh -s -- --uninstall`):
+    "removed …/.local/bin/jetcarp", "removed …/.local/lib/jetcarp (your settings, data and pictures are kept; see
+    `jetcarp paths`)", "removed …/.local/lib (empty, made by the install)". Small: it also says "run `jetcarp uninstall`
+    first if JETCARP set anything up" though that was done (it prints whenever the program is there), and "see `jetcarp
+    paths`" points at the program it has just removed, about settings and data already deleted.
+15. **Afterwards nothing of JETCARP's is left outside the folders it named** (`3.1-checks.txt.after`): no `jetcarp` on the
+    PATH; the program, settings, data, `~/.cache/jetcarp`, the LaunchAgent and the screen saver gone; the wallpaper and
+    screen saver choices as before M-4; `~/Pictures/JETCARP` kept, as the guide says (the assistant's three pictures).
+    - **Left behind: Claude Code's registration of JETCARP.** `claude mcp list`: "jetcarp: jetcarp mcp - ✘ Failed to connect
+      — ENOENT: Executable not found in $PATH: "jetcarp"". Neither `jetcarp uninstall` nor the guide mentions it.
+      Suggestion: the guide's step 1 or 3: "If you connected an assistant, remove it there too (`claude mcp remove
+      jetcarp`, or Claude Desktop's config)".
+    - Not JETCARP's to remove: macOS's crash report `jetcarp-2026-11-16-083330.ips` (3.2's first login), Claude's MCP log,
+      and Homebrew's logs and cache of 0.4.1.

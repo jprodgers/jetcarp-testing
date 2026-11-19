@@ -1,0 +1,3 @@
+replaying on Apple M2 Max, Metal
+Error: a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 48 runs, 4 keeps and 29 drops
+review more runs: jobs clips makes clips to rate, jobs review records the ratings

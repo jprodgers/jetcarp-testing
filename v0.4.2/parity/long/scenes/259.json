@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA smooth plasma (edge, squares)",
+  "description": "Edge neighbours on squares: smooth plasma-like age gradients between the fronts. Found by a JACA rule search.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 190,
+        "h": 126
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 23,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B13/S234V",
+      "rule": "JACA B13/S234",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Moss",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Autumn"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "222721510dcd03e5",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

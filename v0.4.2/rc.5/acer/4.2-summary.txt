@@ -1,0 +1,53 @@
+rc.5 wave on the Acer, R5's (private) row: the hidden store beside an export (v0.4.2-rc.5.md, row "-", F A M)
+2026-11-17 18:03, rc.5 from the release zip (jetcarp 0.4.2-rc.5). Script t42c_planted_rc5.py (rc.4's t42c_planted.py
+with the folder and labels moved to rc.5, plus c5); outputs 4.2b-symlink*, 4.2c-planted*. Folder ~\jetcarp-rc5\p42: a
+copy of A-6's settings (the publisher key) and library. Symbolic links made with Developer Mode on.
+
+RESULT: pass. R4's private row again, every case as on rc.4, and case c3 (the hidden store beside a command-line
+`pack export --to`) now refused, naming the store, with nothing written where it leads. MCP still refuses it (c4, c5).
+
+(a) A-6's t42b_symlink.py (F9's script on Windows) again, with rc.5 (4.2b-symlink.txt), as on rc.4:
+  - the file symbolic link out\innocent.json -> outside\victim.txt: files_list and world_status save_path through it
+    refused;
+  - the directory symbolic link out\link-sym -> outside: all 11 writing tools refused (world_new path, world_status,
+    world_render and its wallpaper, run_script x2, search_runs csv, media_render, pack export, search_start pile,
+    files_list); written outside through it: 0 (rc.4: 0);
+  - the hard link (information only, as on rc.3 and rc.4): world_status save_path wrote through it (a hard link is the
+    file itself; the fix leaves hard links out).
+
+(b) A link planted at a name JETCARP chooses inside the folder it was given, leading outside (4.2c-planted.txt), as on
+  rc.4. Each refused with "JETCARP may only write inside <folder> (got <folder>\<name>, where a symbolic link leads out
+  of it)": the planted file named, never where it leads.
+  MCP:
+  - media_render, a link at poster.png to a file not there:           refused
+  - media_render --force, a link at poster.png to an existing file:   refused; the file unchanged
+  - media_render frames, a directory link at frames:                  refused; the folder it leads to stays empty
+  - pack export (publish first), a link at pack.json:                 refused
+  - pack export, a directory link at index:                           refused (names index/<sha>.json)
+  Command line:
+  - media render --quickstart life --out ..., link at poster.png:     refused, exit 1
+  - media render ..., directory link at frames:                       refused, exit 1
+  - pack export --to ..., link at pack.json:                          refused, exit 1 (after publishing the library
+                                                                      into the hidden .<name>.store beside it)
+  - pack export --to ..., directory link at index:                    refused, exit 1
+  Controls, as on rc.4 (information only): a frames link to another folder of the output folder is refused, as the rule
+  says; a frames link that stays inside the folder given renders, and media render clears its frames folder first,
+  so the link is replaced with a real folder (201 frames in it, none where the link led).
+
+(c) The hidden store beside an export's folder (out\.<name>.store, a name JETCARP chooses): a directory symbolic link
+  planted there, leading to an existing empty folder outside.
+  - c3, the command line, the row's new case: `jetcarp pack export --to $P\out\lk-store-cli --feed p42s-cli
+    --no-media --no-searches` -> exit 1, "Error: JETCARP may only write inside $P\out (got $P\out\.lk-store-cli.store,
+    where a symbolic link leads out of it)": the store named, never where it leads. Files written where it leads: 0.
+    rc.4: exit 0, and a whole signed store (49 entries: jetcarp-store.json, keys, objects, refs, sigs) written there.
+  - c4, MCP pack export (publish first) to "lk-store": refused, "JETCARP may only write inside $P\out (got
+    $P\out\.lk-store.store, where a symbolic link leads out of it)"; written where it leads: 0. (rc.4's refusal was
+    the MCP folder rule's "the MCP tools may only write inside $P\out or $P\library"; rc.5 now gives the link's own
+    sentence, naming the store, as on the Mac.)
+  - c5 (as the Mac's 4.2-summary.txt names it): MCP pack publish with "to" set to a store folder that is itself a link (out\pub-link ->
+    outside\pub-dir, an existing empty folder): refused, "the MCP tools may only write inside $P\out or $P\library
+    (got $P\out\pub-link)"; written where it leads: 0.
+  Where the links lead ($P\outside\planted): 1 new entry, pub-dir itself, the empty folder the script made for c5
+  after its first snapshot (0 entries in it); 0 changed. The existing target unchanged; the junction targets the
+  script made still empty. jetcarp processes left: none.
+  The suite's own tests of these cases are #[cfg(unix)], so this is their only check on Windows.

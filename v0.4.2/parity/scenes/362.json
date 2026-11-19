@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S34 on [3^6; 3^6; 3^6; 3^4.6; 3^4.6; 3^4.6] #3 (k6-673)",
+  "description": "A 6-uniform tiling from Galebach's catalog (k6-673). Galebach 6-uniform #673 of 673. Symmetry p2. 11 vertices per cell; 18 triangles, 1 hexagon. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k6-673"
+    },
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 136,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S34",
+      "rule": "B2/S34",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e0d564c65facccc6",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

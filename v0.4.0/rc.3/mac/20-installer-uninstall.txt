@@ -1,0 +1,3 @@
+jetcarp-installer: run `jetcarp uninstall` first if JETCARP set anything up (host, login item, screen saver)
+jetcarp-installer: removed /Users/Jimmie/.local/bin/jetcarp
+jetcarp-installer: removed /Users/Jimmie/.local/lib/jetcarp (your settings, data and pictures are kept; see `jetcarp paths`)

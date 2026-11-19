@@ -1,0 +1,4 @@
+   pid 84604(jetcarp): [0x0001dcb40005a47a] 00:03:22 NoDisplaySleepAssertion named: "JETCARP is showing cellular automata"  
+--- off:
+no jetcarp assertion
+   PreventUserIdleDisplaySleep    0

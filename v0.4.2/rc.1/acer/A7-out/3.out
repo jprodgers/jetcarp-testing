@@ -1,0 +1,4 @@
+hunt 6: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+  status paused, 0 s run, 0 settled, 0 died, 0 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 0 soups, 0 objects (), 0 distinct, 0 new
+  note: memory 0.2 GB is over the cap of 0.05 GB

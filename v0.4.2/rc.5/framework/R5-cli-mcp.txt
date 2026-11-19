@@ -1,0 +1,94 @@
+R5 on the Framework, 2026-11-17 07:31:17 AM EST; jetcarp 0.4.2-rc.5
+
+######## #128: host tune's help says only that Fit is held back
+$ $J host tune --help
+Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 0, 0.00 s]
+
+$ $J host help tune
+Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 0, 0.00 s]
+
+$ $J host tune
+Error: Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 1, 0.00 s]
+
+######## #126: book pages over MCP read <id> and L<level>, no &lt;
+$ cd $D && python3 mcall.py $R/R5-126-mcp.jsonl '[["help",{"page":"reference/mcp"}]]' --maxlog 300 | grep -o -E 'L&lt;level>|L<level>|find:&lt;id>|find:<id>' | sort | uniq -c
+      2 find:<id>
+      2 L<level>
+[exit 0, 0.24 s]
+
+$ cd $D && python3 mcall.py $R/R5-126-res.jsonl '[]' --resource jetcarp://docs/reference/mcp --maxlog 300 | head -4
+initialize -> ok
+== resources/read jetcarp://docs/reference/mcp -> 88889 chars
+# MCP tools
+
+[exit 0, 0.23 s]
+
+$ cd $D && python3 - <<'PY'
+import json, mcpc
+m = mcpc.Mcp('$R/R5-126-read.jsonl', maxlog=300); m.init()
+t = m.request('resources/read', {'uri': 'jetcarp://docs/reference/mcp'})['result']['contents'][0]['text']
+print('L<level>:', t.count('L<level>'), ' find:<id>:', t.count('find:<id>'), ' &lt; left:', t.count('&lt;'))
+PY
+L<level>: 2  find:<id>: 2  &lt; left: 0
+[exit 0, 0.02 s]
+
+######## #125: host_control, the warning not yet answered (a fresh settings folder), no host running
+$ cd $D && python3 mcall.py $R/R5-125-mcp.jsonl '[["host_control",{"action":"start"}],["host_control",{"action":"wallpaper"}],["host_control",{"action":"resume"}]]' --maxlog 400
+initialize -> ok
+== tools/call host_control {"action": "start"} -> isError=True
+   host_control: `action` must be one of status, next, previous, pause, resume, rotation, wallpaper, login, open_app, reload, scene, quit (got "start")
+== tools/call host_control {"action": "wallpaper"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+   
+   PHOTOSENSITIVE SEIZURE WARNING
+   
+   JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+   
+   Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+   
+   Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+   
+   If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+   
+   To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+== tools/call host_control {"action": "resume"} -> isError=True
+   the JETCARP background host is not running
+server exit 0
+[exit 0, 0.23 s]
+
+$ $J host resume
+Error: the JETCARP background host is not running
+[exit 1, 0.01 s]
+
+######## #125 again with the warning answered
+$ $J setup --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+[exit 0, 0.00 s]
+
+$ cd $D && python3 mcall.py $R/R5-125b-mcp.jsonl '[["host_control",{"action":"start"}],["host_control",{"action":"wallpaper"}]]' --maxlog 400
+initialize -> ok
+== tools/call host_control {"action": "start"} -> isError=True
+   host_control: `action` must be one of status, next, previous, pause, resume, rotation, wallpaper, login, open_app, reload, scene, quit (got "start")
+== tools/call host_control {"action": "wallpaper"} -> isError=True
+   the JETCARP background host is not running
+server exit 0
+[exit 0, 0.23 s]
+
+######## #124: host login on with the JETCARP_* folders set (the entry goes to this home's XDG folder)
+$ $J host login on
+note: the login item starts the host with the default folders; JETCARP_CONFIG_DIR, JETCARP_DATA_DIR, JETCARP_RUNTIME_DIR, JETCARP_LIBRARY, JETCARP_OUT are not passed on to it
+"$J" host serve --login starts at login
+[exit 0, 0.01 s]
+
+$ ls $XDG_CONFIG_HOME/autostart/
+jetcarp-host.desktop
+[exit 0, 0.00 s]
+
+$ $J host login off
+the host no longer starts at login
+[exit 0, 0.00 s]
+
+(done 2026-11-17 07:31:18 AM EST)

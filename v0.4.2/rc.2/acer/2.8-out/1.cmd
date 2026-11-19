@@ -1,0 +1,1 @@
+﻿search try --tiling square --rule "B47/S13568V/4"

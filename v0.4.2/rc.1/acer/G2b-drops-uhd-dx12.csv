@@ -1,0 +1,8 @@
+"n","id","expected","cpu","gpu","cpu_ok","gpu_ok","gpu_gens","cpu_s","gpu_s","gpu_backend"
+"364","drop:sq40x30-drop0","d6db530111b48b89","d6db530111b48b89","d6db530111b48b89","True","True","300","0.088","2.37","gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)"
+"365","drop:sq40x30-drop1","dcc574fc863e16a9","dcc574fc863e16a9","dcc574fc863e16a9","True","True","300","0.091","2.607","gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)"
+"366","drop:sq40x30-drop7","4c4b5dd7315a8679","4c4b5dd7315a8679","4c4b5dd7315a8679","True","True","300","0.078","2.552","gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)"
+"367","drop:sq40x30-touch-drop1","df679c3d0afad675","df679c3d0afad675","df679c3d0afad675","True","True","300","0.091","2.898","gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)"
+"368","drop:hex30x24-drop2","901e8fcfb76ec930","901e8fcfb76ec930","901e8fcfb76ec930","True","True","300","0.076","2.921","gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)"
+"369","drop:sq140-steps20-drop1","513a9449e9d6ae18","513a9449e9d6ae18","513a9449e9d6ae18","True","True","300","1.689","3.147","gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)"
+"370","drop:sq40x30-saturate","4e560f83d8947893","4e560f83d8947893","4e560f83d8947893","True","True","300","0.081","2.638","gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)"

@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile on Isohedral IH81",
+  "description": "Kaplan's IH81: 3 corners, 2 edge shapes (1 free, 1 straight), 8 orientations per unit cell, 0 shape parameters. Grains dropped on the centre topple outward.",
+  "tiling": {
+    "family": "ih81",
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 4,
+      "palette": "Prism",
+      "seed": {
+        "pile": {
+          "grains": 3000
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "25f327fc93e68398",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/data/library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "28,114"
+    ],
+    [
+      "niches",
+      "13,471"
+    ],
+    [
+      "confirmed elites",
+      "1,261"
+    ],
+    [
+      "tilings tried",
+      "183 of 1,359"
+    ],
+    [
+      "backend",
+      "Apple M2 Max, Metal"
+    ]
+  ],
+  "created": "2026-11-16T00:40:45Z",
+  "deterministic": false,
+  "done": 271502,
+  "elapsed_s": 3607.137753791,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 2,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "long",
+  "line": "explore 2: 271,502 runs (82/s), 28,114 elites in 13,471 niches (1,261 of them confirmed), 183 of 1,359 tilings; Apple M2 Max, Metal",
+  "per_s": 81.97268184875354,
+  "progress": {
+    "backend": "Apple M2 Max, Metal",
+    "build_minutes": null,
+    "capped": 518,
+    "confirmed": 6171,
+    "confirmed_elites": 1261,
+    "cores": 12,
+    "elapsed_s": 3607.137753791,
+    "elites": 28114,
+    "error": null,
+    "families": [
+      {
+        "best": 1.5962646007537842,
+        "elites": 7448,
+        "family": "life_like",
+        "mean": 0.33039961922277483,
+        "runs": 84745
+      },
+      {
+        "best": 2.1055445671081543,
+        "elites": 5485,
+        "family": "generations",
+        "mean": 0.6461475762943947,
+        "runs": 66993
+      },
+      {
+        "best": 2.187561273574829,
+        "elites": 5322,
+        "family": "jaca",
+        "mean": 0.5493194704399214,
+        "runs": 30052
+      },
+      {
+        "best": 2.559577465057373,
+        "elites": 1675,
+        "family": "ltl",
+        "mean": 0.3604444657648319,
+        "runs": 22737
+      },
+      {
+        "best": 2.1742935180664062,
+        "elites": 2700,
+        "family": "priority",
+        "mean": 0.4324645881510176,
+        "runs": 19623
+      },
+      {
+        "best": 2.3756327629089355,
+        "elites": 1215,
+        "family": "rps",
+        "mean": 0.5535154302401979,
+        "runs": 10039
+      },
+      {
+        "best": 2.5186305046081543,
+        "elites": 1025,
+        "family": "hodgepodge",
+        "mean": 1.1575665295871416,
+        "runs": 10029
+      },
+      {
+        "best": 2.6180200576782227,
+        "elites": 602,
+        "family": "greenberg_hastings",
+        "mean": 0.5863966244836419,
+        "runs": 9906
+      },
+      {
+        "best": 2.2371041774749756,
+        "elites": 1166,
+        "family": "cyclic",
+        "mean": 0.5116281434027705,
+        "runs": 9766
+      },
+      {
+        "best": 1.4362746477127075,
+        "elites": 254,
+        "family": "wireworld",
+        "mean": 0.47067673483536504,
+        "runs": 1897
+      },
+      {
+        "best": 1.4452767372131348,
+        "elites": 40,
+        "family": "spectre_glider",
+        "mean": 0.3634683793046541,
+        "runs": 1683
+      },
+      {
+        "best": 1.8619680404663086,
+        "elites": 350,
+        "family": "turmite",
+        "mean": 0.8450374276388631,
+        "runs": 901
+      },
+      {
+        "best": 1.8470648527145386,
+        "elites": 237,
+        "family": "layered",
+        "mean": 0.5772348697570723,
+        "runs": 814
+      },
+      {
+        "best": 2.3182826042175293,
+        "elites": 135,
+        "family": "lenia",
+        "mean": 0.9123355504906598,
+        "runs": 453
+      },
+      {
+        "best": 1.0955321788787842,
+        "elites": 113,
+        "family": "forest_fire",
+        "mean": 0.762543014059328,
+        "runs": 438
+      },
+      {
+        "best": 2.0552279949188232,
+        "elites": 66,
+        "family": "sandpile",
+        "mean": 0.601259672649744,
+        "runs": 373
+      },
+      {
+        "best": 1.602918028831482,
+        "elites": 35,
+        "family": "hex_wolfram",
+        "mean": 0.6428321541510135,
+        "runs": 240
+      },
+      {
+        "best": 1.575170636177063,
+        "elites": 152,
+        "family": "margolus",
+        "mean": 0.5920531999519361,
+        "runs": 224
+      },
+      {
+        "best": 1.5563163757324219,
+        "elites": 39,
+        "family": "wolfram",
+        "mean": 0.7146785985405852,
+        "runs": 205
+      },
+      {
+        "best": 1.8474498987197876,
+        "elites": 45,
+        "family": "hex_tri",
+        "mean": 0.646464606097652,
+        "runs": 192
+      },
+      {
+        "best": 0.4950003921985626,
+        "elites": 10,
+        "family": "table",
+        "mean": 0.3001616288286944,
+        "runs": 192
+      }
+    ],
+    "folder": "/Users/Jimmie/jetcarp-rc-042c/data/searches/9ca7d1d5-b002-4daa-8b1f-ea02b06e9964",
+    "given_up": 0,
+    "gpu_error": null,
+    "gpu_threads": 4,
+    "job": 2,
+    "line": "explore 2: 271,502 runs (82/s), 28,114 elites in 13,471 niches (1,261 of them confirmed), 183 of 1,359 tilings; Apple M2 Max, Metal",
+    "loaded": {
+      "confirmed": 0,
+      "coverage_rows": 0,
+      "elites": 0,
+      "runs_read": 0,
+      "seconds": 0.000067458,
+      "seen": 0,
+      "seen_blobs": 0
+    },
+    "niches": 13471,
+    "note": null,
+    "panics": 0,
+    "per_s": 81.97268184875354,
+    "published": null,
+    "rss_gb": 5.5959320068359375,
+    "screened": 271502,
+    "seen": 278736,
+    "session_s": 3607.137753833,
+    "status": "running",
+    "threads": 6,
+    "tilings": 1359,
+    "tilings_tried": 183
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "gpu": false,
+    "label": "long",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "started_with": {
+      "minutes": 240.0
+    },
+    "uuid": "9ca7d1d5-b002-4daa-8b1f-ea02b06e9964"
+  },
+  "stale": false,
+  "status": "running",
+  "title": "long: every tiling, every family",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T01:40:53Z",
+  "waited_s": null
+}

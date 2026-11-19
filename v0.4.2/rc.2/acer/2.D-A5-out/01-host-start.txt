@@ -1,0 +1,6 @@
+running, pid 56296, up 2.0s, 369 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · starting · wallpaper
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)

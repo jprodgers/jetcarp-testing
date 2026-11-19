@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S34 on [3.4.6.4; 4.6.12] (k2-001)",
+  "description": "A 2-uniform tiling from Galebach's catalog (k2-001). Galebach 2-uniform #1 of 20. Symmetry p6m. 18 vertices per cell; 2 triangles, 6 squares, 3 hexagons, 1 dodecagon. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k2-001"
+    },
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 131,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S34",
+      "rule": "B2/S34",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "5703a4e164e4cbb0",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

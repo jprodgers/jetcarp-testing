@@ -1,0 +1,28 @@
+== world_new {"tiling": "square", "width": 2000, "height": 2000, "cas": ["Life"]} -> isError=False
+   New world created.
+           1
+== world_step {"generations": 500} -> isError=False
+   Ran 500 generation(s) in 0.48s.
+   Generation 500. Status: Running. Hash c7b68f9b42944ba2 (with generation and ages); cells hash 6f84cadd5ca42168 (cell states only: equal when the cells repeat).
+   field 0 [Life (id 1)]: 217859 live
+== world_step {"generations": 501} -> isError=True
+   501 generations on 4000000 cells is too much for one call; run at most 500 at a time
+== world_new {"tiling": "square", "width": 1545, "height": 2589, "cas": ["Life"]} -> isError=True
+   1545 x 2589 on square is 4,000,005 cells, over the limit of 4,000,000 cells (try 1544 x 2588)
+== world_new {"tiling": "square", "cells": 4000000, "cas": ["Life"]} -> isError=False
+   New world created.
+           1
+== world_new {"tiling": "square", "cells": 4000001, "cas": ["Life"]} -> isError=True
+   cells must be 64 to 4000000
+== world_new {"tiling": "trihex", "width": 1200, "height": 1200, "cas": ["Life"]} -> isError=True
+   1200 x 1200 on trihex is 4,320,000 cells (3 in each unit cell), over the limit of 4,000,000 cells (try 1154 x 1154)
+== run_script {"script": "let w = world(#{ tiling: \"square\", size: [1545, 2589] }); print(w.cells());"} -> isError=True
+   error at line 1, column 9: 4000005 cells is over this run's limit of 4000000
+   log:
+   error: line 1, column 9: 4000005 cells is over this run's limit of 4000000
+   
+== run_script {"script": "let w = world(#{ tiling: \"square\", size: [2000, 2000] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.step(20); print(`${w.cells()} cells, hash ${w.hash()}`);", "max_seconds": 60} -> isError=False
+   ok: finished in 0.07 s
+   log:
+   4000000 cells, hash d290f74a4cf32bea
+   

@@ -1,0 +1,22 @@
+﻿15:30:52 pausewatch start
+15:30:53 paused_why: - | paused False | generations ? | power Online, battery 100% | gen 8871
+15:30:55 paused_why: - | paused False | generations moving | power Online, battery 100% | gen 9016
+15:31:36 paused_why: held by the desktop: windows cover it | paused False | generations moving | power Online, battery 100% | gen 11295
+15:31:38 paused_why: - | paused False | generations moving | power Online, battery 100% | gen 11399
+15:32:36 paused_why: - | paused False | generations still | power Online, battery 100% | gen 115
+15:32:39 paused_why: - | paused False | generations moving | power Online, battery 100% | gen 240
+15:33:30 paused_why: - | paused False | generations still | power Online, battery 100% | gen 57
+15:33:33 paused_why: - | paused False | generations moving | power Online, battery 100% | gen 183
+15:34:05 paused_why: - | paused False | generations still | power Online, battery 100% | gen 99
+15:34:07 paused_why: - | paused False | generations moving | power Online, battery 100% | gen 225
+15:34:27 paused_why: held by the desktop: windows cover it | paused False | generations moving | power Online, battery 100% | gen 1279
+15:34:29 paused_why: held by the desktop: windows cover it | paused False | generations still | power Online, battery 100% | gen 1279
+15:35:31 paused_why: held by the desktop: windows cover it | paused False | generations still | power Online, battery 100% | gen 1279
+15:35:46 paused_why: - | paused False | generations moving | power Online, battery 100% | gen 1282
+15:36:32 paused_why: - | paused False | generations moving | power Offline, battery 100% | gen 3844
+15:36:34 paused_why: on battery | paused False | generations moving | power Offline, battery 100% | gen 3876
+15:36:37 paused_why: on battery | paused False | generations still | power Offline, battery 100% | gen 3876
+15:36:47 paused_why: on battery | paused False | generations still | power Offline, battery 99% | gen 3876
+15:37:04 paused_why: - | paused False | generations moving | power Online, battery 99% | gen 3892
+15:37:06 paused_why: - | paused False | generations moving | power Online, battery 100% | gen 4017
+15:37:57 pausewatch end

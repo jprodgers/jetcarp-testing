@@ -1,0 +1,31 @@
+Quick Start rule:B3/S23 (square; own 6.0 px): recommended {'px': 6.0} -> shows 6.0 px
+     32.0 px    10,624 cells  cpu   1.7%  p95   2.8 ms  fps  60.0  CPU  fits
+     24.0 px    18,810 cells  cpu   2.3%  p95   3.6 ms  fps  60.0  GPU  fits
+     16.0 px    42,662 cells  cpu   3.0%  p95   3.9 ms  fps  60.0  GPU  fits
+     12.0 px    75,582 cells  cpu   3.4%  p95   4.0 ms  fps  60.0  GPU  fits
+      8.0 px   170,648 cells  cpu   4.3%  p95   4.9 ms  fps  60.0  GPU  fits
+      6.0 px   303,455 cells  cpu   5.4%  p95   6.9 ms  fps  60.0  GPU  fits
+      4.0 px   682,592 cells  cpu   8.3%  p95   5.7 ms  fps  60.0  GPU  over: processor 8.3% (over 8.0%: the 10% limit, less 20%)
+      3.0 px 1,213,820 cells  cpu  11.9%  p95   6.4 ms  fps  60.0  GPU  over: processor 12% (over 8.0%: the 10% limit, less 20%)
+      2.0 px 2,732,424 cells  cpu  16.9%  p95  15.4 ms  fps  60.0  GPU  over: processor 17% (over 8.0%: the 10% limit, less 20%), frames 15.4 ms (at 60 fps, 16.7 ms)
+Quick Start rule:B36/S23 (square; own 6.0 px): recommended {'px': 4.0} -> shows 4.0 px
+     32.0 px    10,624 cells  cpu   1.8%  p95   2.7 ms  fps  60.0  CPU  fits
+     24.0 px    18,810 cells  cpu   1.7%  p95   3.5 ms  fps  60.0  GPU  fits
+     16.0 px    42,662 cells  cpu   3.4%  p95   4.2 ms  fps  60.0  GPU  fits
+     12.0 px    75,582 cells  cpu   3.9%  p95   4.6 ms  fps  60.0  GPU  fits
+      8.0 px   170,648 cells  cpu   5.0%  p95   5.2 ms  fps  60.0  GPU  fits
+      6.0 px   303,455 cells  cpu   5.5%  p95   6.8 ms  fps  60.0  GPU  fits
+      4.0 px   682,592 cells  cpu   7.6%  p95   5.5 ms  fps  60.0  GPU  fits
+      3.0 px 1,213,820 cells  cpu  13.2%  p95   6.6 ms  fps  60.0  GPU  over: processor 13% (over 8.0%: the 10% limit, less 20%)
+      2.0 px 2,732,424 cells  cpu  18.0%  p95   9.0 ms  fps  60.0  GPU  over: processor 18% (over 8.0%: the 10% limit, less 20%)
+Quick Start rule:B368/S245 (square; own 6.0 px): recommended {'px': 4.0} -> shows 4.0 px
+     32.0 px    10,624 cells  cpu   2.4%  p95   3.4 ms  fps  60.0  CPU  fits
+     24.0 px    18,810 cells  cpu   2.1%  p95   4.2 ms  fps  60.0  GPU  fits
+     16.0 px    42,662 cells  cpu   2.8%  p95   4.0 ms  fps  60.0  GPU  fits
+     12.0 px    75,582 cells  cpu   3.9%  p95   4.5 ms  fps  60.0  GPU  fits
+      8.0 px   170,648 cells  cpu   4.5%  p95   5.2 ms  fps  60.0  GPU  fits
+      6.0 px   303,455 cells  cpu   5.3%  p95   6.8 ms  fps  60.0  GPU  fits
+      4.0 px   682,592 cells  cpu   7.3%  p95   5.5 ms  fps  60.0  GPU  fits
+      3.0 px 1,213,820 cells  cpu  12.3%  p95   6.5 ms  fps  60.0  GPU  over: processor 12% (over 8.0%: the 10% limit, less 20%)
+      2.0 px 2,732,424 cells  cpu  17.9%  p95  12.7 ms  fps  60.0  GPU  over: processor 18% (over 8.0%: the 10% limit, less 20%)
+gpu_timing: submission | GPU share not measured on this adapter (it has no GPU timestamps): the GPU limit isn't applied

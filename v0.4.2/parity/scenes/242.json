@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA bead borders (square, blast 1)",
+  "description": "Blast 1: islands ringed by glowing beads shrink until one sign holds the grid. Found by a JACA rule search.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 190,
+        "h": 126
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 23,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B16/S1378 blast 1",
+      "rule": "JACA B16/S1378 blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "222721510dcd03e5",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,6 @@
+Before rc3's install, at Jimmie's OK (2026-11-13 01:01), the trailing ';' that rc2's -Uninstall dropped
+was put back (Set-ItemProperty -Type ExpandString), so A1 check 2 tests the installer's ';;' fix.
+Value before this edit (no trailing ';'):
+ [18 other entries left out]
+Value after (= 00-path-before.txt, = the value before rc1 and rc2):
+; [18 other entries left out]

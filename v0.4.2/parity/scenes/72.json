@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Greenberg-Hastings",
+  "description": "Excitable medium: resting, excited, refractory.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "8774505327585781787",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Greenberg-Hastings",
+      "rule": "GH 3/1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "random_states"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "ede22cc15ad5278e",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

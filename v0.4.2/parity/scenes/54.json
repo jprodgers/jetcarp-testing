@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Fredkin (von Neumann)",
+  "description": "Fredkin's variant on edge neighbours.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "17102017752692784935",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Fredkin (von Neumann)",
+      "rule": "B13/S024",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "blob": {
+          "radius": 0.08,
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "33b735339c41b8fe",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

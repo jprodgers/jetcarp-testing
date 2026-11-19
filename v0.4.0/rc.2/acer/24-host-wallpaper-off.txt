@@ -1,0 +1,48 @@
+> jetcarp host wallpaper off   (07:56:41)
+running, pid 16792, up 83.0s, 271 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 1886 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1889 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+caption: on, bottom left, 20 pt
+(exit 0)
+
+> jetcarp host status   (07:56:45)
+running, pid 16792, up 87.0s, 277 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 75 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 74 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+caption: on, bottom left, 20 pt
+(exit 0)
+
+== %APPDATA%\jetcarp\host.json
+{
+  "screens": [
+    {
+      "monitor": 0,
+      "rotation": "A classic a day",
+      "place": "window"
+    },
+    {
+      "monitor": 1,
+      "rotation": "Classics, hourly",
+      "place": "window"
+    }
+  ],
+  "fps": 30.0,
+  "gpu": true,
+  "caption": {
+    "show": true,
+    "corner": "BottomLeft",
+    "size": 20.0,
+    "generation": false,
+    "seconds": 0.0
+  },
+  "max_memory_mb": 6144,
+  "max_cells": 64000000,
+  "saver_rotation": null,
+  "lock_screen": "live",
+  "lock_awake_minutes": 30,
+  "pause_on_battery": true,
+  "still_picture": false,
+  "busy_percent": 80
+}

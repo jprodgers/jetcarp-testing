@@ -1,0 +1,13 @@
+[
+ {
+  "op": "step",
+  "gens": 4361
+ },
+ {
+  "op": "update_ca",
+  "id": 1,
+  "change": {
+   "rule": "B23/S23V"
+  }
+ }
+]

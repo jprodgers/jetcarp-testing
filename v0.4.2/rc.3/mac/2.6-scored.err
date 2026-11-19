@@ -1,0 +1,33 @@
+explore search job 4 in /Users/Jimmie/jetcarp-rc-042c/data/library.sqlite
+score: the score model 'Jimmie Rodgers, jaca on explore job 3' (for jaca runs)
+GPU: Apple M2 Max, Metal
+explore 4: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 1,024 runs (110/s), 226 elites in 123 niches (0 of them confirmed), 1 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 2,048 runs (131/s), 475 elites in 256 niches (0 of them confirmed), 2 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 2,048 runs (94/s), 475 elites in 256 niches (0 of them confirmed), 2 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 3,072 runs (111/s), 677 elites in 362 niches (0 of them confirmed), 3 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 4,087 runs (119/s), 917 elites in 485 niches (0 of them confirmed), 4 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 4,087 runs (101/s), 917 elites in 485 niches (0 of them confirmed), 4 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 5,111 runs (109/s), 1,032 elites in 537 niches (0 of them confirmed), 5 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 5,111 runs (97/s), 1,032 elites in 537 niches (0 of them confirmed), 5 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 6,129 runs (104/s), 1,268 elites in 662 niches (0 of them confirmed), 6 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 6,129 runs (94/s), 1,268 elites in 662 niches (0 of them confirmed), 6 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 6,129 runs (86/s), 1,268 elites in 662 niches (0 of them confirmed), 6 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (87/s), 1,348 elites in 694 niches (0 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (80/s), 1,348 elites in 694 niches (0 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (74/s), 1,348 elites in 694 niches (0 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (69/s), 1,348 elites in 694 niches (0 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (64/s), 1,348 elites in 694 niches (0 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (32/s), 1,348 elites in 694 niches (96 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (29/s), 1,348 elites in 694 niches (96 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (27/s), 1,348 elites in 694 niches (96 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 7,153 runs (25/s), 1,348 elites in 694 niches (96 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 8,177 runs (27/s), 1,549 elites in 796 niches (96 of them confirmed), 8 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 9,201 runs (31/s), 1,684 elites in 860 niches (96 of them confirmed), 8 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 9,201 runs (28/s), 1,684 elites in 860 niches (96 of them confirmed), 8 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 11,243 runs (52/s), 2,012 elites in 1,017 niches (96 of them confirmed), 9 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 11,243 runs (48/s), 2,012 elites in 1,017 niches (96 of them confirmed), 9 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 11,243 runs (45/s), 2,012 elites in 1,017 niches (96 of them confirmed), 9 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 12,267 runs (82/s), 2,064 elites in 1,037 niches (77 of them confirmed), 10 of 1,359 tilings; Apple M2 Max, Metal
+explore 4: 12,267 runs (74/s), 2,064 elites in 1,037 niches (77 of them confirmed), 10 of 1,359 tilings; Apple M2 Max, Metal
+explore search 4 paused (at its budget); `jetcarp jobs resume 4` continues it from its archive (not run for run: the search is not deterministic)

@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Frozen Spirals",
+  "description": "Cyclic; Zhabotinsky-style spirals whose corners grow icicles. (Mirek Wójtowicz)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "35785983519375975",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Frozen Spirals",
+      "rule": "B23/S356/C6",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.1
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "73df844b80951010",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

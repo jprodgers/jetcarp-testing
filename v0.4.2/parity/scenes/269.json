@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA halves into worms (3.12.12, blast 1)",
+  "description": "Starts as two halves; blast 1 turns the front into glowing worms that spread. Found by a JACA rule search.",
+  "tiling": {
+    "family": "trunchex",
+    "size": {
+      "rect": {
+        "w": 102,
+        "h": 79
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 31,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B18/S0,3,7,10,11 blast 1",
+      "rule": "JACA B18/S0,3,7,10,11 blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Deep Sea",
+      "seed": {
+        "halves": {
+          "density": 0.2
+        }
+      },
+      "palette_neg": "Thermal"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "477bb8f9151efa61",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,4 @@
+> (Jimmie, new Windows PowerShell window, in Downloads, 01:46)
+> powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 -Uninstall | Tee-Object ...
+jetcarp-installer: run `jetcarp uninstall` first if JETCARP set anything up (host, login, screen saver)
+jetcarp-installer: removed C:\Users\jimmi\AppData\Local\Programs\jetcarp and took it off your PATH (your settings, data and pictures are kept)

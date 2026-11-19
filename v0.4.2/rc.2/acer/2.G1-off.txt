@@ -1,0 +1,42 @@
+﻿JETCARP 0.4.2-rc.2 on windows x86_64 (12 threads)
+
+Folders
+  settings: C:\Users\jimmi\jetcarp-rc-042b\config
+  data:     C:\Users\jimmi\jetcarp-rc-042b\data
+  output:   C:\Users\jimmi\jetcarp-rc-042b\out
+  bundled:  C:\Users\jimmi\jetcarp-rc-042b\bin\packs (1.5 MB)
+  library:  C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: off (JETCARP_GPU=off)
+  setting: C:\Users\jimmi\jetcarp-rc-042b\config\gpu.json (not saved)
+  the app: off, from JETCARP_GPU=off (its own choice: follow)
+  the desktop background: off, from JETCARP_GPU=off (its own choice: follow)
+  display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+      why: the adapter driving the screen (JETCARP_GPU=off)
+      limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+      not used, and not tested: the GPU simulation is off
+  compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+      why: the fastest adapter (JETCARP_GPU=off)
+      limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+      not used, and not tested: the GPU simulation is off
+
+Graphics adapters (* = used for computing)
+    Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+  * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+    Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+    NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+    Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+      Windows' software renderer (WARP), which the GPU simulation never uses
+    Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+Environment
+  JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042b\config
+  JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042b\data
+  JETCARP_GPU=off
+  JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042b\out

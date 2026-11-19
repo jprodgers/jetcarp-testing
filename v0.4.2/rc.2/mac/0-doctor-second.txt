@@ -1,0 +1,37 @@
+JETCARP 0.4.2-rc.2 on macos aarch64 (12 threads)
+
+Folders
+  settings: /Users/Jimmie/jetcarp-rc-042b/config
+  data:     /Users/Jimmie/jetcarp-rc-042b/data
+  output:   /Users/Jimmie/jetcarp-rc-042b/out
+  bundled:  /Users/Jimmie/jetcarp-rc-042b/bin/packs (1.5 MB)
+  library:  /Users/Jimmie/jetcarp-rc-042b/data/library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: auto (automatic)
+  setting: /Users/Jimmie/jetcarp-rc-042b/config/gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: Apple M2 Max, Metal (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers
+      self-test: passed (372 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: Apple M2 Max, Metal (integrated)
+      why: the fastest adapter (automatic)
+      limits: 29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers
+      self-test: passed (372 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+
+Graphics adapters (* = used for computing)
+  * Apple M2 Max (Metal, IntegratedGpu)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+Environment
+  JETCARP_CONFIG_DIR=/Users/Jimmie/jetcarp-rc-042b/config
+  JETCARP_DATA_DIR=/Users/Jimmie/jetcarp-rc-042b/data
+  JETCARP_OUT=/Users/Jimmie/jetcarp-rc-042b/out

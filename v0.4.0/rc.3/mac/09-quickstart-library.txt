@@ -1,0 +1,90 @@
+# Quick Start entries in the Researcher library after the build (23:36, from a copy of library.sqlite + -wal)
+
+## By source (entries, hidden)
+atlas|1070|0
+builtin|364|0
+pack|79|0
+
+## By category and source
+Ants & turmites|atlas|60
+Ants & turmites|builtin|8
+Ants & turmites|pack|12
+Ash & debris|atlas|7
+Battles|atlas|60
+Battles|pack|3
+Classics|builtin|285
+Computing|builtin|7
+Fractals & rows|atlas|136
+Fractals & rows|builtin|24
+Fractals & rows|pack|5
+Frozen at once|atlas|52
+Gliders & ships|atlas|1
+Gliders & ships|pack|21
+Growth|atlas|13
+Growth|pack|4
+Labyrinths|atlas|2
+Labyrinths|pack|3
+Living textures|atlas|36
+Living textures|builtin|1
+Long fades|atlas|3
+Oscillators|atlas|229
+Oscillators|pack|13
+Quick deaths|atlas|74
+Quiet rows|atlas|55
+Quiet rows|pack|1
+Sandpiles|atlas|17
+Sandpiles|builtin|39
+Sandpiles|pack|8
+Spots & stripes|atlas|6
+Static|atlas|25
+Static|pack|1
+Turbulence|atlas|133
+Turbulence|pack|3
+Waves & spirals|atlas|102
+Waves & spirals|pack|4
+Wildfire|atlas|59
+Wildfire|pack|1
+
+## Atlas titles per family (entries, distinct titles, titles)
+Hexagonal elementary|87|3|Hex rule 6 (XOR),Fractal Hexagonal elementary,Quiet Hexagonal elementary
+Generations|74|12|Oscillating Generations,Thrill Grill,SediMental,Circuit Genesis,Turbulent Generations,Fireworks,Spirals,Frozen Spirals,RainZha,Banners,Frozen Generations,Short-
+Life-like|73|19|Iceballs,Oscillating Life-like,Neon Blobs,Living Life-like,Majority,Turbulent Life-like,Oils,Static Life-like,Slow Blob,Castles,Vote,Wickstretcher And The Paras
+Priority|67|4|Oscillating Priority,Turbulent Priority,Frozen Priority,Short-lived Priority
+Cyclic|67|5|Wave Cyclic,Oscillating Cyclic,Cyclic CA,Living Cyclic,Frozen Cyclic
+JACA|66|3|Battle JACA,Frozen JACA,Short-lived JACA
+Greenberg-Hastings|66|5|Oscillating Greenberg-Hastings,Wave Greenberg-Hastings,Turbulent Greenberg-Hastings,Greenberg-Hastings,Short-lived Greenberg-Hastings
+Rock-paper-scissors|63|7|Wave Rock-paper-scissors,Rock-paper-scissors,Labyrinth Rock-paper-scissors,Oscillating Rock-paper-scissors,Ash Rock-paper-scissors,Living Rock-paper-scissors,Fr
+Hodgepodge|62|8|Oscillating Hodgepodge,Turbulent Hodgepodge,Wave Hodgepodge,Static Hodgepodge,Hodgepodge machine,Growing Hodgepodge,Living Hodgepodge,Short-lived Hodgepodge
+Layered|60|2|Fractal Layered,Layered parity
+Agents|60|52|Turmite RRLLLRLLLRRR,Turmite NUNRNNRN,Turmite UNLNLRLR,Turmite LLURUL,Turmite RUNL2L2N,Turmite LUURNN,Turmite R2L2R2LRR2NL,Turmite UR2NLUNR2,Turmite URLURRNU,Tu
+Forest fire|59|1|Forest fire
+Larger than Life|51|5|Oscillating Larger than Life,Living Larger than Life,Turbulent Larger than Life,Frozen Larger than Life,Short-lived Larger than Life
+Margolus block|48|5|Oscillating Margolus block,Living Margolus block,Static Margolus block,Frozen Margolus block,Short-lived Margolus block
+Continuous|45|8|Wave Continuous,Patterned Continuous,Ash Continuous,Growing Continuous,Living Continuous,Fading Continuous,Short-lived Continuous,Orbium (Lenia)
+Elementary|44|44|Rule 124,Rule 190,Rule 61,Rule 111,Rule 58,Rule 73,Rule 97,Rule 93,Rule 14,Rule 85,Rule 22,Rule 114,Rule 59,Rule 113,Rule 198,Rule 9,Rule 197,Rule 1,Rule 176,Ru
+Spectre glider|32|1|Spectre glider (Edmond 2026)
+WireWorld|28|1|WireWorld
+Sandpile|17|1|Abelian sandpile
+Table|1|1|Parity (von Neumann table)
+
+## Most repeated atlas titles
+Battle JACA|60
+Forest fire|59
+Fractal Layered|56
+Fractal Hexagonal elementary|46
+Oscillating Generations|44
+Wave Rock-paper-scissors|43
+Oscillating Greenberg-Hastings|43
+Quiet Hexagonal elementary|38
+Turbulent Hodgepodge|35
+Spectre glider (Edmond 2026)|32
+Wave Cyclic|30
+Turbulent Priority|30
+
+## The four named entries
+atlas|Oscillators|Diamoeba
+atlas|Oscillators|WireWorld
+builtin|Ants & turmites|Langton's ant
+builtin|Classics|Diamoeba
+builtin|Classics|WireWorld
+builtin|Fractals & rows|Rule 30

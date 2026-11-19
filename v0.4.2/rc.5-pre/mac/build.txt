@@ -1,0 +1,10 @@
+   Compiling jetcarp-api v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-api)
+   Compiling jetcarp-mcp v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-mcp)
+   Compiling jetcarp-gpu v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-gpu)
+   Compiling jetcarp-script v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-script)
+   Compiling jetcarp-display v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-display)
+   Compiling jetcarp-host v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-host)
+   Compiling jetcarp-app v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-app)
+   Compiling jetcarp v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp)
+    Finished `release` profile [optimized + debuginfo] target(s) in 40.93s
+exit 0

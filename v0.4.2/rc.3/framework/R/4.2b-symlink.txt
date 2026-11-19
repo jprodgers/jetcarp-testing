@@ -1,0 +1,28 @@
+== world_new {"path": "link-outside/good.json"} -> isError=True
+   the MCP tools may only read inside $W/out or $W/library or /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/bin/jetcarp-0.4.2-rc.3-x86_64-unknown-linux-gnu/packs, not /home/jimmie/Documents/jetcarp-dev
+== files_list {"file": "innocent.json"} -> isError=True
+   $W/out/innocent.json is outside JETCARP's output folder ($W/out) and the catalog's folder ($W/library); files_list only reads those
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== world_status {"save_path": "innocent.json"} -> isError=True
+   the MCP tools may only write inside $W/out or $W/library (got $W/out/innocent.json)
+$ ls -l $W/out/innocent.json; head -c 200 $W/outside/victim.txt
+$W/outside/victim.txt
+precious text outside the output folder
+

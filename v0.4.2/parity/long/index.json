@@ -1,0 +1,162 @@
+[
+  {
+    "n": 0,
+    "id": "life"
+  },
+  {
+    "n": 5,
+    "id": "b2s34-lizard"
+  },
+  {
+    "n": 6,
+    "id": "brians-brain"
+  },
+  {
+    "n": 9,
+    "id": "wireworld"
+  },
+  {
+    "n": 13,
+    "id": "spectre-glider"
+  },
+  {
+    "n": 14,
+    "id": "life-triangle"
+  },
+  {
+    "n": 17,
+    "id": "hat-b2s34"
+  },
+  {
+    "n": 19,
+    "id": "penrose-rhomb-brain"
+  },
+  {
+    "n": 25,
+    "id": "rule:B3/S23"
+  },
+  {
+    "n": 38,
+    "id": "rule:B3/S45678"
+  },
+  {
+    "n": 51,
+    "id": "rule:B345/S4567"
+  },
+  {
+    "n": 64,
+    "id": "rule:B2/S23/C8"
+  },
+  {
+    "n": 87,
+    "id": "rule:Margolus 15,14,13,3,11,5,6,1,7,9,10,2,12,4,8,0"
+  },
+  {
+    "n": 104,
+    "id": "rule:B01356/S012345"
+  },
+  {
+    "n": 117,
+    "id": "rule:B3/S1234"
+  },
+  {
+    "n": 130,
+    "id": "rule:B3457/S4568"
+  },
+  {
+    "n": 143,
+    "id": "rule:B36/S234578"
+  },
+  {
+    "n": 156,
+    "id": "rule:B37/S12"
+  },
+  {
+    "n": 169,
+    "id": "rule:B34578/S237/C4"
+  },
+  {
+    "n": 182,
+    "id": "rule:B245678/S035678/C5"
+  },
+  {
+    "n": 223,
+    "id": "jaca:seeds-war"
+  },
+  {
+    "n": 228,
+    "id": "jaca:trunchex-worms"
+  },
+  {
+    "n": 236,
+    "id": "jaca:triangle-edge-islands"
+  },
+  {
+    "n": 244,
+    "id": "jaca:pyth-rainbow"
+  },
+  {
+    "n": 249,
+    "id": "jaca:trihex-rainbow"
+  },
+  {
+    "n": 254,
+    "id": "jaca:brick-diagonal"
+  },
+  {
+    "n": 259,
+    "id": "jaca:square-plasma"
+  },
+  {
+    "n": 265,
+    "id": "jaca:snubhex-halves-blobs"
+  },
+  {
+    "n": 273,
+    "id": "jaca:trihex-stripes-eaten"
+  },
+  {
+    "n": 282,
+    "id": "jaca:rhombitrihex-bubbles"
+  },
+  {
+    "n": 294,
+    "id": "tiling:lizard"
+  },
+  {
+    "n": 305,
+    "id": "tiling:fourfold"
+  },
+  {
+    "n": 314,
+    "id": "tiling:oct"
+  },
+  {
+    "n": 326,
+    "id": "tiling:trunchex"
+  },
+  {
+    "n": 338,
+    "id": "tiling:ih21"
+  },
+  {
+    "n": 350,
+    "id": "tiling:ih90"
+  },
+  {
+    "n": 295,
+    "id": "sandpile:lizard"
+  },
+  {
+    "n": 331,
+    "id": "sandpile:herring"
+  },
+  {
+    "n": 365,
+    "id": "drop:sq40x30-drop1"
+  },
+  {
+    "n": 368,
+    "id": "drop:hex30x24-drop2"
+  }
+]

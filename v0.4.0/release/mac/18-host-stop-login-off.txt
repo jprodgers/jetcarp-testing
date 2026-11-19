@@ -1,0 +1,52 @@
+# H4 step 3: host stop, host login off, 2026-11-13 09:21:00 EST
+
+$ jetcarp host stop
+stopped
+(exit 0)
+
+$ jetcarp host login off
+the host no longer starts at login
+(exit 0)
+
+$ ls -la ~/Library/LaunchAgents | grep -i jetcarp
+(exit 1)
+
+$ launchctl print gui/$(id -u)/com.jimmieprodgers.jetcarp.host | head -12
+gui/502/com.jimmieprodgers.jetcarp.host = {
+	active count = 0
+	path = /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+	type = LaunchAgent
+	state = not running
+
+	program = /Users/Jimmie/.local/bin/jetcarp
+	arguments = {
+		/Users/Jimmie/.local/bin/jetcarp
+		host
+		serve
+	}
+
+$ launchctl list | grep -i jetcarp
+-	0	com.jimmieprodgers.jetcarp.host
+(exit 0)
+
+$ pgrep -fl jetcarp
+(exit 1)
+
+$ jetcarp host status
+Error: the JETCARP background host is not running
+(exit 1)
+
+$ ls -la ~/Library/Application\ Support/jetcarp
+total 32
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 13 09:20 .
+drwx------+ 48 Jimmie  staff  1536 Nov 13 07:42 ..
+-rw-r--r--@  1 Jimmie  staff  4341 Nov 13 09:12 app.json
+drwxr-xr-x@  7 Jimmie  staff   224 Nov 13 09:19 data
+-rw-r--r--@  1 Jimmie  staff    37 Nov 13 09:19 host-program
+-rw-r--r--@  1 Jimmie  staff   362 Nov 13 07:54 setup.json
+
+$ jetcarp doctor | sed -n "/Desktop/,\$p"
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.

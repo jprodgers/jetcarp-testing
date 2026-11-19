@@ -1,0 +1,82 @@
+{
+ "format": "jetcarp-ratings 1",
+ "job": 2,
+ "search": "6cf3ea8d-abd6-4991-a08a-91b9e04732b1",
+ "round": "clips",
+ "rater": "Test Person",
+ "ratings": [
+  {
+   "run": 21,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794913410818
+  },
+  {
+   "run": 1073,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794913395502
+  },
+  {
+   "run": 1959,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794913415983
+  },
+  {
+   "run": 2152,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794913399469
+  },
+  {
+   "run": 5105,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794913406813
+  },
+  {
+   "run": 7297,
+   "verdict": null,
+   "star": true,
+   "ts": 1794913718665
+  },
+  {
+   "run": 8850,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794913457676
+  },
+  {
+   "run": 8877,
+   "verdict": "keep",
+   "star": false,
+   "ts": 1794913402595
+  },
+  {
+   "run": 9062,
+   "verdict": null,
+   "star": true,
+   "ts": 1794913715125
+  },
+  {
+   "run": 10045,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794913448472
+  },
+  {
+   "run": 13973,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794913430655
+  },
+  {
+   "run": 23676,
+   "verdict": null,
+   "star": true,
+   "ts": 1794913711850
+  }
+ ],
+ "note": "This is a test of Firefox. Reloading kept my settings."
+}

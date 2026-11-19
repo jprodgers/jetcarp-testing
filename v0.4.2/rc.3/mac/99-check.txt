@@ -1,0 +1,163 @@
+== 14:53:08 #99's check. Setup: rc.3 by its installer, default folders
+jetcarp-installer: installed jetcarp 0.4.2-rc.3 in /Users/Jimmie/.local/lib/jetcarp
+jetcarp-installer: linked /Users/Jimmie/.local/bin/jetcarp
+jetcarp-installer: the starter pack is in /Users/Jimmie/.local/lib/jetcarp/packs
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine
+jetcarp 0.4.2-rc.3
+713269f5f5061e2a
+-- (rc.3) host wallpaper on; host start; host login on
+saved; the host is not running
+running, pid 26066, up 0.0s, 91 MB, GPU Apple M2 Max
+"/Users/Jimmie/.local/bin/jetcarp" host serve --login starts at login
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jimmieprodgers.jetcarp.host</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/Jimmie/.local/bin/jetcarp</string>
+        <string>host</string>
+        <string>serve</string>
+        <string>--login</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+</dict>
+</plist>
+26066 /Users/Jimmie/.local/bin/jetcarp host serve
+== 14:54:42 after logout 1
+login: 09:54:01
+host pid 26866 started Mon Nov 16 09:53:59 2026     parent 1: /Users/Jimmie/.local/bin/jetcarp host serve --login
+ state = running; pid = 26866; last exit code = (never exited); state = active; state = active; job state = running; properties = runatload | inferred program | managed LWCR | has LWCR;
+== 14:55:01 step 1: the build (6ea0c89 + #96, #98) in place of rc.3's program
+program now 103e70a373d2c10e (the build: 103e70a373d2c10e); the old host still pid 26866 
+-- jetcarp setup --yes --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+exit 0
+host-program host.json photosensitivity.json 
+-- jetcarp host start
+registered the login item with launchd, for JETCARP 0.4.2-rc.3
+launchd restarted the host as JETCARP 0.4.2-rc.3
+running, pid 27167, up 0.0s, 19 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+-- hosts: 27167 /Users/Jimmie/.local/bin/jetcarp host serve --login;
+ state = running; pid = 27167; last exit code = (never exited); state = active; state = active; job state = running; properties = runatload | inferred program;
+-- plutil -lint: /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: OK
+5:    <!-- Registered with launchd by JETCARP 0.4.2-rc.3 -->
+running, pid 27167, up 3.0s, 157 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 747 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+Jimmie: one "Background Items Added" notification popped up after step 1 (the install and host start).
+== 14:56:57 step 2: after logout 2
+login: 09:56:20
+host pid 28034 started Mon Nov 16 09:56:19 2026     parent 1: /Users/Jimmie/.local/bin/jetcarp host serve --login
+ state = running; pid = 28034; last exit code = (never exited); state = active; state = active; job state = running; properties = runatload | inferred program | managed LWCR | has LWCR;
+jetcarp-2026-11-16-083330.ips
+running, pid 28034, up 38.0s, 210 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 9114 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+== 14:57:13 step 3a: a host started by launchd (at login), then host login on
+   hosts: 1 (28034 /Users/Jimmie/.local/bin/jetcarp host serve --login;)
+"/Users/Jimmie/.local/bin/jetcarp" host serve --login starts at login
+registered with launchd, which restarted the host (pid 28261)
+exit 0
+   hosts: 1 (28261 /Users/Jimmie/.local/bin/jetcarp host serve --login;)
+== 14:57:17 step 3b: no host (host stop), then host login on
+stopped
+   hosts: 0 ()
+"/Users/Jimmie/.local/bin/jetcarp" host serve --login starts at login
+registered with launchd, which started the host (pid 28290)
+exit 0
+   hosts: 1 (28290 /Users/Jimmie/.local/bin/jetcarp host serve --login;)
+== 14:57:22 step 3c: a host started by hand, then host login on
+stopped
+   hosts: 1 (28306 jetcarp host serve;)
+"/Users/Jimmie/.local/bin/jetcarp" host serve --login starts at login
+registered with launchd; the host already running carries on
+exit 0
+   hosts: 1 (28306 jetcarp host serve;)
+== step 5: launchctl's exit codes
+bootout of a job that isn't loaded: exit 3
+print of a missing job: exit 113
+== 14:57:47 step 4: the version comment deleted, everything quit, then the app from Terminal
+stopped
+28010 jetcarp mcp
+0
+/Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: OK
+-- the app's stderr:
+JETCARP: registered the login item with launchd, for JETCARP 0.4.2-rc.3
+-- the app's stdout:
+-- 14:58:25 after the app closed:
+28383 /Users/Jimmie/.local/bin/jetcarp host serve --login
+pid 28383 started Mon Nov 16 09:57:50 2026     parent 1
+    <!-- Registered with launchd by JETCARP 0.4.2-rc.3 -->
+ state = running; pid = 28383; state = active; state = active; job state = running;
+== 14:58:37 step 6: photosensitivity.json moved aside
+stopped
+-- host login on
+Error: JETCARP won't start the background host at login until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+exit 1
+-- host start
+Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+exit 1
+no host started
+-- the answer put back
+Jimmie: "Only the one" "Background Items Added" notification in all: after step 1's registration; none for step 3's three `host login on` or the app's re-registration in step 4.
+== 15:01:09 cleaning up before M-8 (Jimmie: uninstall)
+  done: stop the host starting at login
+  done: remove the host's lock file /Users/Jimmie/.cache/jetcarp/host.lock
+  done: delete the settings folder /Users/Jimmie/Library/Application Support/jetcarp
+jetcarp-installer: run `jetcarp uninstall` first if JETCARP set anything up (host, login item, screen saver)
+jetcarp-installer: removed /Users/Jimmie/.local/bin/jetcarp
+jetcarp-installer: removed /Users/Jimmie/.local/lib/jetcarp (your settings, data and pictures are kept; see `jetcarp paths`)
+jetcarp-installer: removed /Users/Jimmie/.local/lib (empty, made by the install)
+Removed MCP server jetcarp from user config
+File modified: /Users/Jimmie/.claude.json
+Removed MCP server jetcarp from local config
+File modified: /Users/Jimmie/.claude.json [project: /Users/Jimmie]
+-- what's left
+jetcarp not found
+gone: /Users/Jimmie/.local/bin/jetcarp
+gone: /Users/Jimmie/.local/lib/jetcarp
+gone: /Users/Jimmie/Library/Application Support/jetcarp
+gone: /Users/Jimmie/.cache/jetcarp
+gone: /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+gone: /Users/Jimmie/Library/Screen Savers/JETCARP.saver
+no host
+launchctl print exit 0 (113 = gone)
+wallpaper and screen saver choices: as before M-4
+no jetcarp in claude mcp list
+ path = /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist; state = not running; state = active; state = active;
+note: after the build's `jetcarp uninstall --yes` ("done: stop the host starting at login") launchd still had the job loaded (print exit 0, its plist gone), as rc.3's `login off` left it in M-5 and M-7; unloaded by hand:
+launchctl print exit 113 after bootout

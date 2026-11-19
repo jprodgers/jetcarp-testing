@@ -1,0 +1,34 @@
+$ jetcarp host start   (01:35:43; for check 7)
+running, pid 70723, up 0.0s, 90 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 0 · 0 cells
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 0 · 0 cells
+wallpaper: showing
+exit 0
+
+$ jetcarp host status
+running, pid 70723, up 2.0s, 141 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 60 · 303455 cells
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 60 · 409440 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+
+$ jetcarp host wallpaper off   (01:35:53)
+running, pid 70723, up 9.0s, 145 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 278 · 303455 cells
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 278 · 409440 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+exit 0
+
+$ jetcarp host status   (2 s later)
+running, pid 70723, up 12.0s, 167 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 43 · 287015 cells
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 43 · 391527 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+
+$ jetcarp host stop   (01:38:37)
+stopped
+exit 0 after 0 s
+
+$ jetcarp host status
+Error: the JETCARP background host is not running
+exit 1

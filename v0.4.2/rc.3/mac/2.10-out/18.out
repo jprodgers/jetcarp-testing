@@ -1,0 +1,114 @@
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/data/library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "882"
+    ],
+    [
+      "niches",
+      "476"
+    ],
+    [
+      "confirmed elites",
+      "0"
+    ],
+    [
+      "tilings tried",
+      "4 of 1,359"
+    ],
+    [
+      "backend",
+      "Apple M2 Max, Metal"
+    ]
+  ],
+  "created": "2026-11-16T07:21:09Z",
+  "deterministic": false,
+  "done": 4096,
+  "elapsed_s": 39.153634584,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 10,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "running-export",
+  "line": "explore 10: 4,096 runs (105/s), 882 elites in 476 niches (0 of them confirmed), 4 of 1,359 tilings; Apple M2 Max, Metal",
+  "per_s": 104.6135642849846,
+  "progress": {
+    "backend": "Apple M2 Max, Metal",
+    "build_minutes": null,
+    "capped": 0,
+    "confirmed": 0,
+    "confirmed_elites": 0,
+    "cores": 12,
+    "elapsed_s": 39.153634584,
+    "elites": 882,
+    "error": null,
+    "families": [
+      {
+        "best": 0.8417441844940186,
+        "elites": 882,
+        "family": "life_like",
+        "mean": 0.2807152675359248,
+        "runs": 4096
+      }
+    ],
+    "folder": "/Users/Jimmie/jetcarp-rc-042c/data/searches/837be89d-9e74-417b-8e64-6e3ac4e69c0c",
+    "given_up": 0,
+    "gpu_error": null,
+    "gpu_threads": 4,
+    "job": 10,
+    "line": "explore 10: 4,096 runs (105/s), 882 elites in 476 niches (0 of them confirmed), 4 of 1,359 tilings; Apple M2 Max, Metal",
+    "loaded": {
+      "confirmed": 0,
+      "coverage_rows": 0,
+      "elites": 0,
+      "runs_read": 0,
+      "seconds": 0.000058833,
+      "seen": 0,
+      "seen_blobs": 0
+    },
+    "niches": 476,
+    "note": null,
+    "panics": 0,
+    "per_s": 104.6135642849846,
+    "published": null,
+    "rss_gb": 0.500640869140625,
+    "screened": 4096,
+    "seen": 5120,
+    "session_s": 39.153634584,
+    "status": "running",
+    "threads": 6,
+    "tilings": 1359,
+    "tilings_tried": 4
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "families": [
+      "life_like"
+    ],
+    "gpu": false,
+    "label": "running-export",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "started_with": {
+      "minutes": 3.0
+    },
+    "uuid": "837be89d-9e74-417b-8e64-6e3ac4e69c0c"
+  },
+  "stale": false,
+  "status": "running",
+  "title": "running-export: every tiling, life_like",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T07:21:50Z",
+  "waited_s": null
+}

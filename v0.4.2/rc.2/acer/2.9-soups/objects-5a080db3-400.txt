@@ -1,0 +1,35 @@
+﻿scene:      C:\Users\jimmi\jetcarp-rc-042b\phase2\2.9\soup-5a080db3.json
+tiling:     Square (parallelogram) (square): 1048576 cells, 1024x1024 unit cells, 1 tile type(s), storage dense, edges dead
+generation: 400  hash 300630d72b709f24
+rule:       B3/S23 (CA 1, field 0), 96 live cells
+objects:    19 (still lifes 14, oscillators 3, spaceships 1, other 1), 8 symmetries, periods up to 64
+census:     block x 9, beehive x 3, blinker (p2) x 3, boat x 2, glider (c/4) x 1, other (grows) x 1
+
+ count  class       period  cells  key       name
+     9  still life       1      4  a8307012  block
+     3  still life       1      6  8aee82b1  beehive
+     3  oscillator       2      3  9c85980f  blinker (p2)
+     2  still life       1      5  72831a72  boat
+     1  spaceship        4      5  5a080db3  glider (c/4), c/4 diagonal
+     1  other            -     18            other (grows)
+
+#0     boat                         cells    5  centroid (540.3, 496.7)  oo/o.o/.o
+#1     block                        cells    4  centroid (551.0, 500.0)  oo/oo
+#2     beehive                      cells    6  centroid (549.5, 506.0)  .oo/o..o/.oo
+#3     block                        cells    4  centroid (533.0, 511.0)  oo/oo
+#4     block                        cells    4  centroid (551.0, 511.0)  oo/oo
+#5     glider                       cells    5  centroid (560.7, 511.3)  ooo/o/.o
+#6     block                        cells    4  centroid (527.0, 512.0)  oo/oo
+#7     other (grows)                cells   18  centroid (568.2, 516.6)  
+#8     boat                         cells    5  centroid (530.7, 517.7)  oo/o.o/.o
+#9     beehive                      cells    6  centroid (527.0, 520.5)  .oo/o..o/.oo
+#10    beehive                      cells    6  centroid (519.0, 518.5)  .oo/o..o/.oo
+#11    block                        cells    4  centroid (499.0, 521.0)  oo/oo
+#12    block                        cells    4  centroid (499.0, 527.0)  oo/oo
+#13    block                        cells    4  centroid (510.0, 527.0)  oo/oo
+#14    blinker                      cells    3  centroid (522.5, 528.5)  ooo
+#15    block                        cells    4  centroid (499.0, 532.0)  oo/oo
+#16    block                        cells    4  centroid (510.0, 532.0)  oo/oo
+#17    blinker                      cells    3  centroid (483.5, 533.5)  ooo
+#18    blinker                      cells    3  centroid (525.5, 533.5)  ooo
+time:       0.02s on 12 threads

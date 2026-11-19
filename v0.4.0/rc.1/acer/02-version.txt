@@ -1,0 +1,4 @@
+> jetcarp --version
+(new PowerShell process, PATH rebuilt from the registry as a new window would have it)
+jetcarp 0.4.0-rc.1
+(exit code 0, 98 ms)

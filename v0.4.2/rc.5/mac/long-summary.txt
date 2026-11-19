@@ -1,0 +1,4 @@
+1.1 parity: pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; exit 0, 74 s
+1.2 parity: pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; exit 0, 64 s
+1.3 suite: pass: commit c0db1ab; 1065 passed, 0 failed, 41 ignored, in 143 test binaries; exit 0, 10 min 47 s; 0 warning lines
+#131 unit test (debug): pass: test app::menu::tests::cmd_m_minimises_through_appkit_not_egui ... ok; exit 0, 65 s

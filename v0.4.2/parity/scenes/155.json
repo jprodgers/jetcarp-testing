@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "DryLife without Death",
+  "description": "Cells never die, as in Life without death, but growth goes quadratic instead of building ladders.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "13965351082982052795",
+  "cas": [
+    {
+      "id": 1,
+      "name": "DryLife without Death",
+      "rule": "B37/S012345678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "blob": {
+          "radius": 0.15,
+          "density": 0.4
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "21fc07be6b677cfc",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S23V on 4.6.12 truncated trihexagonal",
+  "description": "Dodecagons, hexagons, and squares; three sizes at every corner. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "trunctrihex",
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 119,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S23V",
+      "rule": "B2/S23",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "b50f5358fa678924",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

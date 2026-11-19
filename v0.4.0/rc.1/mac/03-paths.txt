@@ -1,0 +1,6 @@
+$ jetcarp paths
+settings: /Users/Jimmie/Library/Application Support/jetcarp
+data:     /Users/Jimmie/Library/Application Support/jetcarp/data
+output:   /Users/Jimmie/Pictures/JETCARP
+bundled:  (no packs came with the program)
+exit 0

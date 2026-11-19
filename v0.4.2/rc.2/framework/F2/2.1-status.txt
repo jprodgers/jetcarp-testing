@@ -1,0 +1,12 @@
+explore 1: 118,775 runs (169/s), 15,812 elites in 7,503 niches (836 of them confirmed), 65 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status paused, 10 min 0 s run over every session, 3,816 confirmation runs, 123,319 candidates tried, 0.99 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 0 runs on the processor stopped at their time cap (kept with the generations they reached), 719 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                51,950   0.33   1.46   6,207
+  generations              41,425   0.66   2.07   4,653
+  jaca                     19,172   0.56   2.11   3,925
+  cyclic                    6,228   0.50   2.34   1,027
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/searches/b703cfe0-db4c-4ffb-bc62-e7a4d1ebf734
+  `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)

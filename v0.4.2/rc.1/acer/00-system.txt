@@ -1,0 +1,16 @@
+﻿date: 2026-11-14 17:39 -05:00
+os: Microsoft Windows 11 Home 26H2, build 26300.9974
+cpu: 13th Gen Intel(R) Core(TM) i5-13420H, 8 cores, 12 threads
+ram: 15.7 GB
+gpus:
+  NVIDIA GeForce RTX 3050 6GB Laptop GPU, driver 31.0.15.4618
+  Intel(R) UHD Graphics, driver 31.0.101.4146
+screens:
+  \\.\DISPLAY1 primary=True 1920x1080 at (0,0), work area 1920x1032
+power: battery 100%, status 2 (2 = on mains)
+everyday jetcarp: C:\Users\jimmi\scoop\shims\jetcarp.exe -> jetcarp 0.4.1
+jetcarp processes: 0
+JETCARP Run value: False
+SCRNSAVE.EXE: 
+user PATH kind: ExpandString
+cargo: cargo 1.99.1 (5f94df478 2026-08-27)

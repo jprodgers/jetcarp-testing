@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 24112: JACA +B125/S12346 -B1235/S12346 blast 3",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k5-067"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "36348708999835377",
+  "cas": [
+    {
+      "rule": "JACA +B125/S12346 -B1235/S12346 blast 3",
+      "neighborhood": "edge",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "noise",
+            "scale": 0.05,
+            "threshold": 0.43,
+            "octaves": 3
+          },
+          "fill": {
+            "density": 0.7,
+            "states": {
+              "signed": {
+                "negative": 0.5
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

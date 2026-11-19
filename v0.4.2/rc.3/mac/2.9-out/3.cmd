@@ -1,0 +1,1 @@
+library soup 12334684ad3495652c4d2c2786cf41e1 --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/12334684.json 

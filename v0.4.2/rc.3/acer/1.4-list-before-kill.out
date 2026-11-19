@@ -1,0 +1,37 @@
+{
+  "catalog": "C:\\Users\\jimmi\\jetcarp-rc-042c\\data\\library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-16T02:06:53Z",
+      "done": 144022,
+      "here": false,
+      "job": 2,
+      "kind": "explore",
+      "kind_label": "Explore",
+      "label": "long",
+      "line": "explore 2: 144,022 runs (41/s), 19,686 elites in 9,796 niches (1,056 of them confirmed), 112 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+      "stale": false,
+      "status": "running",
+      "title": "long: every tiling, every family",
+      "total": null,
+      "unit": "runs",
+      "updated": "2026-11-16T03:06:59Z"
+    },
+    {
+      "created": "2026-11-16T00:14:13Z",
+      "done": 120000,
+      "here": false,
+      "job": 1,
+      "kind": "hunt",
+      "kind_label": "Hunt",
+      "label": "det",
+      "line": "hunt 1: 20,000/20,000 soups in each of 6 groups, 7534 soups/s, 760,892 objects (ships 51,012, osc 236,468, still 473,412), 1,783 distinct, 1,783 new | newest: still life 19c #916b39 (B3/S23)",
+      "stale": false,
+      "status": "done",
+      "title": "det: B3/S23, B36/S23, B2/S34 on Square, Hexagon, 16x16 soups at 0.5",
+      "total": 120000,
+      "unit": "soups",
+      "updated": "2026-11-16T00:14:30Z"
+    }
+  ]
+}

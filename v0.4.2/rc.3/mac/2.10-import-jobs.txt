@@ -1,0 +1,7 @@
+    6  hunt     done     2026-11-16T07:21:07Z  hunt 6: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+    5  hunt     done     2026-11-16T07:21:07Z  hunt 5: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+    4  hunt     done     2026-11-16T07:21:07Z  hunt 4: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+    3  hunt     done     2026-11-16T07:21:07Z  hunt 3: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+    2  hunt     done     2026-11-16T07:21:07Z  hunt 2: imported from pack rc.3 test, Mac (its finds came with the pack; nothing ran here)
+    1  explore  paused   2026-11-16T07:21:06Z  explore 1: 24,366 runs (0/s), 3,901 elites in 1,963 niches (173 of them confirmed), 18 of 1,359 tilings; not run here yet
+6 job(s); 0 running

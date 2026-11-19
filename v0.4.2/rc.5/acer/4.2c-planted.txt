@@ -1,0 +1,77 @@
+#### (b) planted links, rc.5 (jetcarp 0.4.2-rc.5), 2026-11-17 18:03:01
+planted (symbolic link): $P\out\lk-media\poster.png -> $P\outside\planted\lk-media-poster.png (missing)
+planted (symbolic link): $P\out\lk-media2\poster.png -> $P\outside\planted\victim-poster.png (exists)
+planted (symbolic link): $P\out\lk-frames\frames -> $P\outside\planted\frames (exists)
+planted (symbolic link): $P\out\lk-export\pack.json -> $P\outside\planted\pack.json (missing)
+planted (symbolic link): $P\out\lk-index\index -> $P\outside\planted\index (missing)
+planted (symbolic link): $P\out\.lk-store.store -> $P\outside\planted\store-mcp (exists)
+== MCP media_render {"quickstart": "life", "out": "lk-media"} -> isError=True
+   JETCARP may only write inside $P\out\lk-media (got $P\out\lk-media\poster.png, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP media_render {"quickstart": "life", "out": "lk-media2", "force": true} -> isError=True
+   JETCARP may only write inside $P\out\lk-media2 (got $P\out\lk-media2\poster.png, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP media_render {"quickstart": "life", "out": "lk-frames", "frames": true} -> isError=True
+   JETCARP may only write inside $P\out\lk-frames (got $P\out\lk-frames\frames, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP pack {"export": {"to": "lk-export", "publish": {"feed": "p42", "no_media": true, "no_searches": true}}} -> isError=True
+   JETCARP may only write inside $P\out\lk-export (got $P\out\lk-export\pack.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP pack {"export": {"to": "lk-index", "publish": {"feed": "p42i", "no_media": true, "no_searches": true}}} -> isError=True
+   JETCARP may only write inside $P\out\lk-index (got $P\out\lk-index\index/73e09d9e8c8f6a7cdd42539939edcca1662f221b9f57542f834c3084d542c7b3.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP pack {"export": {"to": "lk-store", "publish": {"feed": "p42s", "no_media": true, "no_searches": true}}} -> isError=True
+   JETCARP may only write inside $P\out (got $P\out\.lk-store.store, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-inside\frames -> $P\out\inside-target\frames (exists)
+== MCP media_render (a frames link to elsewhere in the output folder, so out of the folder given: refused by design) -> isError=True
+   JETCARP may only write inside $P\out\lk-inside (got $P\out\lk-inside\frames, where a symbolic link leads out of it)
+   [frames written where it leads: 0]
+planted (symbolic link): $P\out\lk-inside2\frames -> $P\out\lk-inside2\real-frames (exists)
+== MCP media_render (control, a frames link that stays inside the folder given) -> isError=False
+   {
+  "done": [],
+  "failed": [],
+  "files": {
+    "anim": "$P\\out\\lk-inside2\\anim.webp",
+    "frames": [
+      "$P\\out\\lk-inside2\\frames/0000.png",
+      "$P\\out\\lk-inside2\\frames/0001.png",
+     
+   [frames written where it leads, inside: 0; lk-inside2\frames still a link: False, frames in it: 201]
+planted (symbolic link): $P\out\pub-link -> $P\outside\planted\pub-dir (exists)
+== MCP pack publish into a store folder that is a link (c5) -> isError=True
+   the MCP tools may only write inside $P\out or $P\library (got $P\out\pub-link)
+   [refused: True; names the planted file: True; names where it leads: False; files written where it leads: 0]
+planted (symbolic link): $P\out\lk-media-cli\poster.png -> $P\outside\planted\lk-media-cli-poster.png (missing)
+== $ jetcarp media render --quickstart life --out $P\out\lk-media-cli -> exit 1
+   Error: JETCARP may only write inside $P\out\lk-media-cli (got $P\out\lk-media-cli\poster.png, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-frames-cli\frames -> $P\outside\planted\lk-frames-cli-frames (missing)
+== $ jetcarp media render --quickstart life --out $P\out\lk-frames-cli -> exit 1
+   Error: JETCARP may only write inside $P\out\lk-frames-cli (got $P\out\lk-frames-cli\frames, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-export-cli\pack.json -> $P\outside\planted\lk-export-cli-pack.json (missing)
+== $ jetcarp pack export --to $P\out\lk-export-cli --feed p42-cli --no-media --no-searches -> exit 1
+   hing feed p42-cli (version 1) into $P\out\.lk-export-cli.store
+110 patterns read, 110 new rows
+version sha256:46403cd3d5625769d69659d48600db44b513c357524ab01e4a8b43bfe608eaab written
+Error: JETCARP may only write inside $P\out\lk-export-cli (got $P\out\lk-export-cli\pack.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-index-cli\index -> $P\outside\planted\lk-index-cli-index (missing)
+== $ jetcarp pack export --to $P\out\lk-index-cli --feed p42i-cli --no-media --no-searches -> exit 1
+   42\out\.lk-index-cli.store
+110 patterns read, 110 new rows
+version sha256:f84828671d86b49de18b5d38ac836553366b4173871c70ef36ffec0be9211d6d written
+Error: JETCARP may only write inside $P\out\lk-index-cli (got $P\out\lk-index-cli\index/73e09d9e8c8f6a7cdd42539939edcca1662f221b9f57542f834c3084d542c7b3.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\.lk-store-cli.store -> $P\outside\planted\store-cli (exists)
+== $ jetcarp pack export --to $P\out\lk-store-cli --feed p42s-cli --no-media --no-searches -> exit 1
+   Error: JETCARP may only write inside $P\out (got $P\out\.lk-store-cli.store, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+#### where the links lead ($P\outside\planted): new entries 1 ['$P\\outside\\planted\\pub-dir']; changed 0 []
+the junction targets this script made, still empty: True (0)
+the existing target unchanged: True; the frames folder there empty: True
+(c) the hidden store's link (MCP): files written where it leads: 0 []
+(c) the hidden store's link (command line): files written where it leads: 0 []
+jetcarp processes left: none

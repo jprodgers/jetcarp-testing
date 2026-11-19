@@ -1,0 +1,41 @@
+﻿
+#### 96, first open: May have a seizure disorder, then Quit, 2026-11-17 03:11:23: jetcarp 0.4.2-rc.4, a fresh folder
+folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\s1\config, \data, \out, \library, \run
+settings before: 
+app started: pid 28424
+app ended: exit 0 after 51 s, 03:12:14
+settings after: app.json, gpu-checks.json, photosensitivity.json
+photosensitivity.json: {
+  "version": 1,
+  "answer": "at_risk",
+  "date": "2026-11-17T08:12:04Z",
+  "jetcarp": "0.4.2-rc.4",
+  "via": "app"
+}
+jetcarp processes left: 
+(that folder kept as ~\jetcarp-rc4\s1-first)
+
+#### 96, second open (fresh): May have a seizure disorder, then Quit, 2026-11-17 03:12:51: jetcarp 0.4.2-rc.4, a fresh folder
+folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\s1\config, \data, \out, \library, \run
+settings before: 
+app started: pid 31852
+(Jimmie, of that first open: he chose "may have a seizure disorder", then clicked Continue at my own risk, then closed the window. So it checks Continue, not Quit.)
+app ended: exit 0 after 258 s, 03:17:09
+settings after: app.json
+photosensitivity.json: none
+jetcarp processes left: 
+
+#### 96, third open (the same folder): no seizure disorder, then setup, then the app rows, 2026-11-17 03:17:27: jetcarp 0.4.2-rc.4
+folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\s1\config, \data, \out, \library, \run
+settings before: app.json
+app started: pid 21808
+app ended: exit 0 after 906 s, 03:32:33
+settings after: app.json, gpu-checks.json, photosensitivity.json, setup.json
+photosensitivity.json: {
+  "version": 1,
+  "answer": "no_disorder",
+  "date": "2026-11-17T08:18:30Z",
+  "jetcarp": "0.4.2-rc.4",
+  "via": "app"
+}
+jetcarp processes left: 

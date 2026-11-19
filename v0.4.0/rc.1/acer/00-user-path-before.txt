@@ -1,0 +1,6 @@
+﻿User PATH before install (HKCU\Environment\Path):
+  kind: ExpandString (REG_EXPAND_SZ)
+  entries: 18
+  sha256 of raw (unexpanded) value: (left out)
+  entries with %VAR%: 1  (%PNPM_HOME%\bin)
+  (full list kept out of the repository)

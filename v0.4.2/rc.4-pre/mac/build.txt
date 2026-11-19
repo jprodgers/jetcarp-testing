@@ -1,0 +1,43 @@
+   Compiling half v2.7.1
+   Compiling objc2-core-graphics v0.3.2
+   Compiling jetcarp-core v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-core)
+   Compiling zune-core v0.5.3
+   Compiling fax v0.2.7
+   Compiling jetcarp-mcp v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-mcp)
+   Compiling zune-jpeg v0.5.15
+   Compiling arrow-buffer v60.1.0
+   Compiling naga v30.0.1
+   Compiling objc2-quartz-core v0.3.2
+   Compiling objc2-app-kit v0.3.2
+   Compiling tiff v0.11.3
+   Compiling raw-window-metal v1.1.0
+   Compiling arrow-data v60.1.0
+   Compiling image v0.25.10
+   Compiling arrow-array v60.1.0
+   Compiling muda v0.21.2
+   Compiling rfd v0.17.2
+   Compiling arboard v3.7.0
+   Compiling egui-winit v0.37.0
+   Compiling arrow-cmp v60.1.0
+   Compiling tray-icon v0.26.1
+   Compiling arrow-select v60.1.0
+   Compiling wgpu-naga-bridge v30.0.1
+   Compiling wgpu-hal v30.0.1
+   Compiling arrow-ipc v60.1.0
+   Compiling wgpu-core-deps-apple v30.0.1
+   Compiling wgpu-core v30.0.1
+   Compiling parquet v60.1.0
+   Compiling jetcarp-store v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-store)
+   Compiling wgpu v30.0.1
+   Compiling jetcarp-gpu v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-gpu)
+   Compiling jetcarp-search v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-search)
+   Compiling egui-wgpu v0.37.0
+   Compiling eframe v0.37.0
+   Compiling jetcarp-pack v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-pack)
+   Compiling jetcarp-api v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-api)
+   Compiling jetcarp-script v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-script)
+   Compiling jetcarp-display v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-display)
+   Compiling jetcarp-app v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-app)
+   Compiling jetcarp-host v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp-host)
+   Compiling jetcarp v0.4.2-rc.3 (/Users/Jimmie/jetcarp-rc-042c/src/crates/jetcarp)
+    Finished `release` profile [optimized + debuginfo] target(s) in 1m 20s

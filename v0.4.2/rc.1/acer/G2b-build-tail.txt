@@ -1,0 +1,3 @@
+﻿   Compiling jetcarp-app v0.4.2-rc.1 (C:\Users\jimmi\jetcarp-rc-042\src\crates\jetcarp-app)
+   Compiling ctrlc v3.5.2
+    Finished `release` profile [optimized + debuginfo] target(s) in 5m 32s

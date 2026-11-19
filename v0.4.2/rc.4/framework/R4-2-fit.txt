@@ -1,0 +1,290 @@
+PASS: `host --help` lists no tune; `host tune` refuses "Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size." (exit 1); host_control's tools/list schema offers no tune (nor cpu_limit, gpu_limit, fps, pick), and tune, tune_stop, tune_events and tuning are refused with the same sentence, with or without a host. With rc.3's cards host.json (saved Fit sizes, canvas 2560x1440), every scene shows at its own size, never the saved Fit size:
+  scene                          own px  saved Fit px  shown, 1280x720 (host start)  shown, 2560x1440 (host serve --canvas)
+  profile Life                   3       1             102240 cells of 3 px          409440 cells of 3 px   (Fit: 3686400 of 1 px)
+  Quick Start langtons-ant       4       4             57600 of 4 px                 230400 of 4 px
+  Quick Start rule:ForestFire    2       1             230400 of 2 px                921600 of 2 px         (Fit: 3686400 of 1 px)
+  profile Cyclic spirals         3       1             102240 of 3 px                409440 of 3 px         (rc.3 tuned: 3686400 of 1 px)
+  Quick Start turmite-llrr       4       4             57600 of 4 px                 230400 of 4 px
+  profile Penrose waves          2.4     2.4           280000 of 2.4 px              280000 of 2.6 px       (2.605675 px is its own size at 2560x1440 in rc.3's sweep)
+  profile Hodgepodge             3       1             102240 of 3 px                409440 of 3 px         (Fit: 3686400 of 1 px)
+host.json left unchanged (sha256 the same; the saved sizes are still in it). SKIPPED part: a monitor change starts no fit (needs a desktop).
+Note: host_control doesn't reject an action outside its schema's enum itself: {"action":"start"} answers "the JETCARP background host is not running" with no host, and `unknown action "start"` from a running host.
+
+R4-2 #112 Fit hidden, Framework, 2026-11-16 10:06:59 PM EST
+fresh home $H = homes/fit
+
+#### The command line
+$ $J host --help | grep -i -n -E 'tune|fit' || echo 'no tune or fit in host --help'
+no tune or fit in host --help
+[exit 0, 0.00 s]
+
+$ $J host tune
+Error: Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 1, 0.00 s]
+
+$ $J host tune --json
+{"event":"failed","error":"Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size."}
+Error: Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 1, 0.00 s]
+
+$ $J host help tune
+Fit the desktop background to this computer: run each scene of the wallpaper's rotation at its screen's size and keep, for each, the most cells that stay within the processor and GPU limits at a smooth frame rate (saved). The rules and colours stay as they are. A running host pauses while it runs, then shows the sizes found
+
+Usage: jetcarp host tune [OPTIONS]
+
+Options:
+      --cpu-limit <PERCENT>            JETCARP's processor time, in percent of the whole machine, every core counted (saved; default 10)
+      --gpu-limit <PERCENT>            JETCARP's share of the GPU's time, in percent (saved; default 25)
+      --fps <FPS>                      Frames per second it must keep (saved; default: the monitor's refresh rate, or 60, at most the rate each scene draws at)
+      --screen <SCREEN>                Only this screen (counted from 0). Default: every screen on the desktop
+      --pick <WHICH>                   Which size each scene is left at: recommended (the finest within the limits; the default), finest (the finest shown), own (the scene's own), or a cell size in pixels. Without it, a size chosen before is kept while it is still within the limits
+      --crops <DIR>                    Save each size's picture here as a PNG (they are kept beside the host's settings too)
+      --canvas <CANVAS>                The screen's size in pixels, as WxH, when no host is running to say (default: the size it was tuned for before, else its monitor's)
+      --trial-seconds <TRIAL_SECONDS>  Seconds each size shows for (the last three quarters are measured) [default: 2]
+      --dry-run                        Measure and report, but save nothing
+      --stop                           Stop the sweep a running host is making (the scenes already done stay saved)
+      --json                           Print the host's reply as JSON
+  -h, --help                           Print help
+[exit 0, 0.00 s]
+
+#### MCP: tools/list's host_control, and tune called anyway
+$ python3 $R/R4-scripts/mcall.py $R/R4-2-mcp.jsonl '[["host_control",{"action":"tune"}],["host_control",{"action":"tune","pick":"recommended"}],["host_control",{"action":"tune_stop"}],["host_control",{"action":"tune_events"}],["host_control",{"action":"tuning"}]]' --tool-schema host_control | grep -v -E '^\s+"(description|title)"'
+initialize -> ok
+tools/list -> 21 tools: help, reference, world_new, world_status, world_read, world_edit, world_step, world_render, run_script, library_query, library_curate, search_start, job_status, job_stop, search_runs, media_render, pack, files_list, use_app, host_control, app_display
+== host_control in tools/list:
+{
+  "annotations": {
+    "destructiveHint": false,
+    "openWorldHint": false
+  },
+  "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+      "action": {
+        "enum": [
+          "status",
+          "next",
+          "previous",
+          "pause",
+          "resume",
+          "rotation",
+          "wallpaper",
+          "login",
+          "open_app",
+          "reload",
+          "scene",
+          "quit"
+        ],
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "on": {
+        "type": "boolean"
+      },
+      "screen": {
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "type": "object"
+  },
+  "name": "host_control",
+}
+== tools/call host_control {"action": "tune"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== tools/call host_control {"action": "tune", "pick": "recommended"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== tools/call host_control {"action": "tune_stop"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== tools/call host_control {"action": "tune_events"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== tools/call host_control {"action": "tuning"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+server exit 0
+[exit 0, 0.23 s]
+
+$ grep -c -i 'tune' $R/R4-2-mcp.jsonl; grep -o '"enum": *\[[^]]*\]' $R/R4-2-mcp.jsonl | head -3
+4
+"enum":["overview","world","library","searches","scripts","packs","setup","pages"]
+"enum":["rules","tilings","isohedral","palettes","seeds","commands"]
+[exit 0, 0.00 s]
+
+#### rc.3's cards host.json (a Fit sweep's saved sizes, canvas 2560x1440), with the warning accepted
+$ $J setup --yes --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+[exit 0, 0.00 s]
+
+$ python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); s=d["screens"][0]; t=s["tuning"]; print("screen 0:", s["rotation"], "place", s["place"], "tuning canvas", t["canvas"]); [print("  %-38s own %-9s saved Fit %-9s" % (x["scene"], str(x["design_px"])+" px", str(x["cell_px"])+" px")) for x in t["scenes"]]' $H/config/host.json
+screen 0: A classic a day place wallpaper tuning canvas [2560, 1440]
+  profile Life                           own 3.0 px    saved Fit 1.0 px   
+  Quick Start langtons-ant               own 4.0 px    saved Fit 4.0 px   
+  Quick Start rule:ForestFire 0.01/0.0001 own 2.0 px    saved Fit 1.0 px   
+  profile Cyclic spirals                 own 3.0 px    saved Fit 1.0 px   
+  Quick Start turmite-llrr               own 4.0 px    saved Fit 4.0 px   
+  profile Penrose waves                  own 2.4 px    saved Fit 2.4 px   
+  profile Hodgepodge                     own 3.0 px    saved Fit 1.0 px   
+[exit 0, 0.02 s]
+
+### (a) host start --headless (its canvas: 1280x720)
+$ $J host start --headless
+running, pid 2354567, up 0.0s, 98 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+wallpaper: waiting for the GNOME extension · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.23 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 772 · 57600 cells of 4 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.09 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 48 · 280000 cells of 2.4 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.12 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Hodgepodge (7 of 7) · generation 63 · 102240 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.13 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Life (1 of 7) · generation 63 · 102240 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.13 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 503 · 57600 cells of 4 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.11 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.12 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 64 · 230400 cells of 2 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.16 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 64 · 102240 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.16 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status
+running, pid 2354567, up 19.0s, 285 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 511 · 57600 cells of 4 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+wallpaper: waiting for the GNOME extension · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.14 s]
+
+$ $J host status --json
+{"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":false,"fps":30.0,"gpu":"AMD Radeon 8060S Graphics (RADV STRIX_HALO)","held":[],"held_why":[],"lock_screen":"live","log":["GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":285,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":2354567,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles"],"run_at_login":false,"running":true,"screens":[{"frames":816,"hidden":false,"monitor":null,"place":"wallpaper","simulation":{"adapter":null,"on":"cpu","why":"automatic, and the world is too small to be worth the GPU"},"stage":{"building":false,"canvas":[1280.0,720.0],"caption":["Turmite LLRR","Square grid · 320 × 180 · wraps","A classic a day · 5 of 7 · generation 539"],"cell_px":4.0,"cells":57600,"count":7,"frame_rate":60.0,"generation":539,"grid":[320,180],"label":"Quick Start turmite-llrr","measured_speed":239.9339141845703,"number":5,"paused":false,"rotation":"A classic a day","scale":1.0,"seconds_left":null,"speed":240.0}}],"uptime_s":19.0,"wallpaper":true}
+[exit 0, 0.11 s]
+
+(host_control tune with a host running)
+$ python3 $R/R4-scripts/mcall.py $R/R4-2-mcp-running.jsonl '[["host_control",{"action":"tune"}],["host_control",{"action":"start"}],["host_control",{"action":"status"}]]'
+initialize -> ok
+== tools/call host_control {"action": "tune"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== tools/call host_control {"action": "start"} -> isError=True
+   unknown action "start"
+== tools/call host_control {"action": "status"} -> isError=False
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":false,"fps":30.0,"gpu":"AMD Radeon 8060S Graphics (RADV STRIX_HALO)","held":[],"held_why":[],"lock_screen":"live","log":["GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":285,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":2354567,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles"],"run_at_login":false,"running":true,"screens":[{"frames":831,"hidden":false,"monitor":null,"place":"wallpaper","simulation":{"adapter":null,"on":"cpu","why":"automatic, and the world is too small to be worth the GPU"},"stage":{"building":false,"canvas":[1280.0,720.0],"caption":["Turmite LLRR","Square grid · 320 × 180 · wraps","A classic a day · 5 of 7 · generation 599"],"cell_px":4.0,"cells":57600,"count":7,"frame_rate":60.0,"generation":599,"grid":[320,180],"label":"Quick Start turmite-llrr","measured_speed":239.9339141845703,"number":5,"paused":false,"rotation":"A classic a day","scale":1.0,"seconds_left":null,"speed":240.0}}],"uptime_s":20.0,"wallpaper":true}
+server exit 0
+[exit 0, 0.45 s]
+
+$ $J host stop
+stopped
+[exit 0, 0.24 s]
+
+### (b) host serve --headless --canvas 2560x1440 (the canvas the sizes were saved for), in the background
+$ $J host status | sed -n 2p
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 1204 · 230400 cells of 4 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.12 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.11 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 53 · 280000 cells of 2.6 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.15 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Hodgepodge (7 of 7) · generation 63 · 409440 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.13 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.10 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Life (1 of 7) · generation 63 · 409440 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.13 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 507 · 230400 cells of 4 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.13 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.12 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 63 · 921600 cells of 2 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.13 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.13 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 63 · 409440 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+[exit 0, 0.13 s]
+
+$ $J host next >/dev/null; sleep 2
+[exit 0, 2.14 s]
+
+$ $J host status --json
+{"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":false,"fps":30.0,"gpu":"AMD Radeon 8060S Graphics (RADV STRIX_HALO)","held":[],"held_why":[],"lock_screen":"live","log":["GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":284,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":2354891,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles"],"run_at_login":false,"running":true,"screens":[{"frames":917,"hidden":false,"monitor":null,"place":"wallpaper","simulation":{"adapter":null,"on":"cpu","why":"automatic, and the world is too small to be worth the GPU"},"stage":{"building":false,"canvas":[2560.0,1440.0],"caption":["Turmite LLRR","Square grid · 640 × 360 · wraps","A classic a day · 5 of 7 · generation 502"],"cell_px":4.0,"cells":230400,"count":7,"frame_rate":60.0,"generation":502,"grid":[640,360],"label":"Quick Start turmite-llrr","measured_speed":239.99020385742188,"number":5,"paused":false,"rotation":"A classic a day","scale":1.0,"seconds_left":null,"speed":240.0}}],"uptime_s":21.0,"wallpaper":true}
+[exit 0, 0.10 s]
+
+$ $J host stop
+stopped
+[exit 0, 0.21 s]
+
+$ hosts
+no rc.4 host process running
+[exit 0, 0.01 s]
+
+$ cat $H/serve-2560.log
+jetcarp-host: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.00 s]
+
+#### host.json after: was it rewritten, and are rc.3's saved sizes still in it (for 0.4.3)?
+$ sha256sum -c $H/host.json.sha256 2>&1; python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); t=d["screens"][0].get("tuning"); print("tuning kept:", bool(t), "scenes:", len(t["scenes"]) if t else 0)' $H/config/host.json
+$H/config/host.json: OK
+tuning kept: True scenes: 7
+[exit 0, 0.02 s]
+
+(Not checked here: a monitor change starts no fit; it needs a desktop.)

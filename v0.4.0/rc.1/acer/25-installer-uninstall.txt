@@ -1,0 +1,12 @@
+> powershell -ExecutionPolicy Bypass -c "& ([scriptblock]::Create((irm https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.1/jetcarp-installer.ps1))) -Uninstall"
+(started 00:35:17)
+jetcarp-installer: run `jetcarp uninstall` first if JETCARP set anything up (host, login, screen saver)
+jetcarp-installer: removed C:\Users\jimmi\AppData\Local\Programs\jetcarp and took it off your PATH (your settings, data and pictures are kept)
+(exit 0)
+
+--- in a new PowerShell process, PATH rebuilt from the registry:
+install folder exists: False
+user PATH has the jetcarp folder: False
+Get-Command jetcarp: 
+where.exe: INFO: Could not find files for the given pattern(s).
+leftover jetcarp.old.* folders: 

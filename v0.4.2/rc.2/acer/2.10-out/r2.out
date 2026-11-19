@@ -1,0 +1,7 @@
+﻿explore 10: 2,112 runs (31/s), 418 elites in 227 niches (0 of them confirmed), 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status running, 48 s run over every session, 0 confirmation runs, 3,136 candidates tried, 0.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  loaded 219 elites, 1,024 identities, 15 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 2,112   0.23   0.80     418
+  folder: C:\Users\jimmi\jetcarp-rc-042b\data\searches\994538d5-4fb7-4239-980b-6fa2c0549bf7

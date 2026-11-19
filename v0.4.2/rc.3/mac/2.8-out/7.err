@@ -1,0 +1,2 @@
+Error: 1 rule cannot run, so the job was not started:
+  line 3 of /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.8-rules.txt: B4x/S2: 'x' is not a neighbour count

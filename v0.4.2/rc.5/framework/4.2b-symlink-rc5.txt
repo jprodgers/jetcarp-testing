@@ -1,0 +1,30 @@
+R5-private (a) rc.3's t42b_symlink.py again, on rc.5 (MCP log: 4.2b-symlink-rc5.jsonl)
+$ ln -s $H/outside/victim.txt $H/out/innocent.json; ln -s $H/outside $H/out/link-outside
+== world_new {"path": "link-outside/good.json"} -> isError=True
+   the MCP tools may only read inside $H/out or $H/library or $W5/bin/jetcarp-0.4.2-rc.5-x86_64-unknown-linux-gnu/packs, not $H/out/link-outside/good.json
+== files_list {"file": "innocent.json"} -> isError=True
+   $H/out/innocent.json is outside JETCARP's output folder ($H/out) and the catalog's folder ($H/library); files_list only reads those
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== world_status {"save_path": "innocent.json"} -> isError=True
+   the MCP tools may only write inside $H/out or $H/library (got $H/out/innocent.json)
+$ readlink $H/out/innocent.json; cat $H/outside/victim.txt
+$H/outside/victim.txt
+precious text outside the output folder
+

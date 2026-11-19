@@ -1,0 +1,5 @@
+explore job 3 (search 294b906e-1384-4a76-9ba5-b012745e1747): sealed its newest 25,227 runs first, so the pack carries every run
+publishing feed rc-mac (version 1) into /Users/Jimmie/jetcarp-rc-042c/.M10-pack.store
+134 patterns read, 134 new rows
+search 294b906e-1384-4a76-9ba5-b012745e1747: copying its segments
+version sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d written

@@ -1,0 +1,30 @@
+12:47:13 === watching jetcarp processes in every session; my session is 1
+13:22:56 notes file saved (0 bytes, 13:22:41)
+13:31:27 notes file saved (1518 bytes, 13:31:23)
+13:34:17 jetcarp processes: [39992 jetcarp s2 from ?]
+14:59:37 jetcarp processes: []
+15:05:07 notes file saved (6046 bytes, 15:05:00)
+15:27:59 jetcarp processes: [49728 jetcarp s2 from ?]
+15:28:09 jetcarp processes: [39228 jetcarp s2 from ? | 49728 jetcarp s2 from ?]
+15:28:49 jetcarp processes: [39228 jetcarp s2 from ? | 43356 jetcarp s2 from ? | 46932 jetcarpw s2 from ? | 49728 jetcarp s2 from ?]
+15:29:39 jetcarp processes: [39228 jetcarp s2 from ? | 40420 jetcarp s2 from ? | 41848 jetcarp s2 from ? | 43356 jetcarp s2 from ? | 46932 jetcarpw s2 from ? | 49728 jetcarp s2 from ?]
+15:29:49 jetcarp processes: [37712 jetcarp s2 from ? | 39228 jetcarp s2 from ? | 43356 jetcarp s2 from ? | 43728 jetcarp s2 from ? | 46932 jetcarpw s2 from ? | 49728 jetcarp s2 from ?]
+15:31:00 jetcarp processes: [39228 jetcarp s2 from ? | 43356 jetcarp s2 from ? | 46932 jetcarpw s2 from ? | 49728 jetcarp s2 from ?]
+15:32:00 jetcarp processes: [39228 jetcarp s2 from ? | 49728 jetcarp s2 from ?]
+15:33:20 notes file saved (20388 bytes, 15:33:10)
+15:33:30 jetcarp processes: []
+15:33:50 jetcarp processes: [43320 jetcarpw s3 from ? | 45256 jetcarp s3 from ?]
+15:36:20 jetcarp processes: [43320 jetcarpw s3 from ? | 44688 jetcarp s3 from ? | 45256 jetcarp s3 from ? | 45332 jetcarp s3 from ?]
+15:37:00 jetcarp processes: [43320 jetcarpw s3 from ? | 45256 jetcarp s3 from ?]
+15:37:50 jetcarp processes: []
+15:38:30 notes file saved (24437 bytes, 15:38:29)
+15:46:31 jetcarp processes: [43004 jetcarp s3 from ?]
+15:46:41 jetcarp processes: [34808 jetcarpw s3 from ? | 36276 jetcarp s3 from ?]
+15:49:21 jetcarp processes: [38160 jetcarp s3 from ?]
+15:49:31 jetcarp processes: []
+15:50:42 jetcarp processes: [51740 jetcarp s4 from ?]
+15:52:42 jetcarp processes: [50136 jetcarp s4 from ? | 51740 jetcarp s4 from ? | 52176 jetcarp s4 from ?]
+15:54:12 jetcarp processes: [51740 jetcarp s4 from ?]
+15:55:02 jetcarp processes: []
+15:56:12 notes file saved (33298 bytes, 15:56:04)
+15:57:51 === stopped (A-7 done)

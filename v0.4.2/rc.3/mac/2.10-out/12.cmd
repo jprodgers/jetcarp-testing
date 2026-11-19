@@ -1,0 +1,1 @@
+jobs runs 1 --library /Users/Jimmie/jetcarp-rc-042c/2.10/import/library.sqlite --measures sign_balance\,sign_sorted --limit 5 

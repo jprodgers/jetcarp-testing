@@ -1,0 +1,24 @@
+2026-11-16 12:34 PM EST == build af07766
+jetcarp 0.4.2-rc.3
+2026-11-16 12:34 PM EST == 1.1 parity 371, Radeon
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+2026-11-16 12:35 PM EST == 1.1 parity 371, llvmpipe
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (llvmpipe (LLVM 21.1.8, 256 bits) (llvmpipe), Vulkan)
+2026-11-16 12:37 PM EST == 1.2 parity 40 x 5000, Radeon
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+2026-11-16 12:38 PM EST == 1.2 parity 40 x 5000, llvmpipe
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (llvmpipe (LLVM 21.1.8, 256 bits) (llvmpipe), Vulkan)
+2026-11-16 12:39 PM EST == suite, Radeon
+passed 1059 failed 0 ignored 39
+2026-11-16 12:45 PM EST == suite, llvmpipe
+passed 1059 failed 0 ignored 39
+2026-11-16 12:49 PM EST == done
+2026-11-16 07:55 PM EST == suite again on 29fea86, Radeon
+passed 1059 failed 0 ignored 41
+2026-11-16 08:00 PM EST == suite again on 29fea86, llvmpipe
+passed 1059 failed 0 ignored 41
+2026-11-16 08:04 PM EST == done

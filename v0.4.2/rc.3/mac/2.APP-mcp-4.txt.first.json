@@ -1,0 +1,32 @@
+{
+  "cas": [],
+  "cells": 9600,
+  "cells_hash": "cbf29ce484222325",
+  "done": "no CA is running",
+  "fields": [],
+  "generation": 0,
+  "hash": "a8c7f832281a39c5",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "app",
+    "note": "this is the world shown in the JETCARP app window; the user can change it too",
+    "playing": false,
+    "playing_note": "paused",
+    "scene_name": "",
+    "screensaver": false
+  },
+  "script": null,
+  "status": "Empty: every cell is dead",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Square (parallelogram) (square): 9600 cells, 120x80 unit cells, 1 tile type(s), storage dense, edges wrap",
+    "grid": {
+      "coordinates": "x = column 0..width-1, y = row 0..height-1 from the top; index = y * width + x",
+      "height": 80,
+      "tile_types_per_unit_cell": 1,
+      "width": 120
+    },
+    "id": "square",
+    "name": "Square (parallelogram)"
+  }
+}

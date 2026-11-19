@@ -1,0 +1,29 @@
+# External monitor attached, to the left of the laptop (Jimmie)
+$ jetcarp host status   (01:26:48)
+running, pid 70227, up 489.0s, 147 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 87052 · 170648 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+exit 0
+
+$ jetcarp host wallpaper on --screen 0 --monitor 0   (01:28:02)
+running, pid 70227, up 563.0s, 147 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 104798 · 170648 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+exit 0
+
+$ jetcarp host wallpaper on --screen 1 --monitor 1 --rotation "Classics, hourly"   (01:28:02)
+running, pid 70227, up 563.0s, 147 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 104806 · 170648 cells
+screen 1: Classics, hourly · profile Life (1 of 7) · generation 0 · 0 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+exit 0
+
+$ jetcarp host status   (2 s later)
+running, pid 70227, up 565.0s, 157 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 105298 · 170648 cells
+screen 1: Classics, hourly · profile Life (1 of 7) · generation 44 · 409440 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing

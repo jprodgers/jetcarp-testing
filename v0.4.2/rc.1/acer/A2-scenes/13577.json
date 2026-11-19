@@ -1,0 +1,34 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "explore 1 run 13577: JACA +B124/S4568 -B124/S04568 blast 1",
+  "tiling": {
+    "family": "hex",
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "41778730714587811",
+  "cas": [
+    {
+      "rule": "JACA +B124/S4568 -B124/S04568 blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "clusters",
+            "count": 76,
+            "radius_tiles": 4.29306172989762
+          },
+          "fill": {
+            "density": 0.74,
+            "states": "by_region"
+          }
+        }
+      }
+    }
+  ]
+}

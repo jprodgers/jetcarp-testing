@@ -1,0 +1,12 @@
+running, pid 1655803, up 258.0s, 475 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 432 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper · paused
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+paused: the processor is busy
+last tune: done
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+note: swept 7 scene(s); sizes saved
+note: swept 7 scene(s); sizes saved
+note: swept 7 scene(s); sizes saved

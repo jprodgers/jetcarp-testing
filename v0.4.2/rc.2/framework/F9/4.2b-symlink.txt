@@ -1,0 +1,66 @@
+== world_new {"path": "link-outside/good.json"} -> isError=False
+   Scene loaded.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 4096,
+  "cells_hash": "9de7c0b1
+== files_list {"file": "innocent.json"} -> isError=True
+   $W/outside/victim.txt is outside JETCARP's output folder ($W/out) and the catalog's folder ($W/library); files_list only reads those
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== world_status {"save_path": "innocent.json"} -> isError=False
+   Saved the scene (654 bytes, generation 0, hash 774f6f16e1e118c0) to $W/out/innocent.json.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+  
+$ ls -l $W/out/innocent.json; head -c 200 $W/outside/victim.txt
+$W/outside/victim.txt
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 16,
+        "h": 16
+      }
+    },
+    "boundary": "wrap"
+  },
+  "r

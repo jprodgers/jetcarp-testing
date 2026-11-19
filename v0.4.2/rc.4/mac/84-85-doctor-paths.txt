@@ -1,0 +1,174 @@
+R4 #84 and #85, the Mac, 2026-11-17 03:02:12 AM EST; $J = rc.4's release build (jetcarp 0.4.2-rc.4); test folder $H = homes/doctor
+
+#### #84: JETCARP_GPU=off jetcarp doctor
+$ JETCARP_GPU=off $J doctor
+JETCARP 0.4.2-rc.4 on macos aarch64 (12 threads)
+
+Folders
+  settings: $H/config
+  data:     $H/data
+  output:   $H/out
+  runtime:  $H/run
+  bundled:  ~/jetcarp-rc4/rel/jetcarp-0.4.2-rc.4-aarch64-apple-darwin/packs (1.5 MB)
+  library:  $H/library/library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: off (JETCARP_GPU=off)
+  setting: $H/config/gpu.json (not saved)
+  the app: off, from JETCARP_GPU=off (its own choice: follow)
+  the desktop background: off, from JETCARP_GPU=off (its own choice: follow)
+  display: Apple M2 Max, Metal (integrated)
+      why: the adapter driving the screen (JETCARP_GPU=off)
+      limits: 29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers
+      not used, and not tested: the GPU simulation is off
+  compute: Apple M2 Max, Metal (integrated)
+      why: the fastest adapter (JETCARP_GPU=off)
+      limits: 29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers
+      not used, and not tested: the GPU simulation is off
+
+Graphics adapters (* = used for computing)
+  * Apple M2 Max (Metal, IntegratedGpu)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+Environment
+  JETCARP_CONFIG_DIR=$H/config
+  JETCARP_DATA_DIR=$H/data
+  JETCARP_GPU=off
+  JETCARP_LIBRARY=$H/library
+  JETCARP_OUT=$H/out
+  JETCARP_RUNTIME_DIR=$H/run
+[exit 0, 0.04 s]
+
+$ JETCARP_GPU=off $J doctor | grep -n -i -E 'adapter|metal|M2 Max|gpu|self-test'
+12:GPU: off (JETCARP_GPU=off)
+13:  setting: $H/config/gpu.json (not saved)
+14:  the app: off, from JETCARP_GPU=off (its own choice: follow)
+15:  the desktop background: off, from JETCARP_GPU=off (its own choice: follow)
+16:  display: Apple M2 Max, Metal (integrated)
+17:      why: the adapter driving the screen (JETCARP_GPU=off)
+19:      not used, and not tested: the GPU simulation is off
+20:  compute: Apple M2 Max, Metal (integrated)
+21:      why: the fastest adapter (JETCARP_GPU=off)
+23:      not used, and not tested: the GPU simulation is off
+25:Graphics adapters (* = used for computing)
+26:  * Apple M2 Max (Metal, IntegratedGpu)
+36:  JETCARP_GPU=off
+[exit 0, 0.03 s]
+
+$ JETCARP_GPU=off $J doctor --json | python3 -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps({k: v for k, v in d.items() if "gpu" in k.lower() or "adapter" in k.lower()}, indent=1)[:3000])'
+{
+ "gpu": [
+  {
+   "backend": "Metal",
+   "chosen": true,
+   "driver": "",
+   "kind": "IntegratedGpu",
+   "name": "Apple M2 Max",
+   "problem": null
+  }
+ ],
+ "gpu_policy": {
+  "adapter": null,
+  "choices": [
+   {
+    "adapter": "Apple M2 Max, Metal",
+    "kind": "integrated",
+    "limits": "29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers",
+    "problem": null,
+    "purpose": "display",
+    "self_test": null,
+    "why": "the adapter driving the screen (JETCARP_GPU=off)"
+   },
+   {
+    "adapter": "Apple M2 Max, Metal",
+    "kind": "integrated",
+    "limits": "29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers",
+    "problem": null,
+    "purpose": "compute",
+    "self_test": null,
+    "why": "the fastest adapter (JETCARP_GPU=off)"
+   }
+  ],
+  "mode": "off",
+  "note": null,
+  "programs": [
+   {
+    "choice": "follow",
+    "from": "JETCARP_GPU=off",
+    "mode": "off",
+    "name": "the app"
+   },
+   {
+    "choice": "follow",
+    "from": "JETCARP_GPU=off",
+    "mode": "off",
+    "name": "the desktop background"
+   }
+  ],
+  "setting_file": "$H/config/gpu.json",
+  "source": "env",
+  "summary": "off (JETCARP_GPU=off)"
+ }
+}
+[exit 0, 0.04 s]
+
+#### for comparison: doctor with the GPU setting as it is (automatic)
+$ $J doctor | grep -n -i -E 'adapter|metal|M2 Max|gpu|self-test'
+12:GPU: auto (automatic)
+13:  setting: $H/config/gpu.json (not saved)
+16:  display: Apple M2 Max, Metal (integrated)
+17:      why: the adapter driving the screen (automatic)
+19:      self-test: passed (373 ms): 59 world rules and 33 explore batches matched the CPU
+21:  compute: Apple M2 Max, Metal (integrated)
+22:      why: the fastest adapter (automatic)
+24:      self-test: passed (373 ms): 59 world rules and 33 explore batches matched the CPU
+27:Graphics adapters (* = used for computing)
+28:  * Apple M2 Max (Metal, IntegratedGpu)
+[exit 0, 0.41 s]
+
+$ ls $H/config 2>/dev/null; ls $H/data 2>/dev/null
+gpu-checks.json
+[exit 1, 0.02 s]
+
+#### #85: jetcarp paths, in the test folder
+$ $J paths
+settings: $H/config
+data:     $H/data
+output:   $H/out
+bundled:  ~/jetcarp-rc4/rel/jetcarp-0.4.2-rc.4-aarch64-apple-darwin/packs
+runtime:  $H/run
+[exit 0, 0.02 s]
+
+$ $J paths --json
+{
+  "bundled_packs": "~/jetcarp-rc4/rel/jetcarp-0.4.2-rc.4-aarch64-apple-darwin/packs",
+  "data": "$H/data",
+  "output": "$H/out",
+  "runtime": "$H/run",
+  "settings": "$H/config"
+}
+[exit 0, 0.02 s]
+
+#### #85: jetcarp paths, in the default folders (no JETCARP_* variable)
+$ env -u JETCARP_CONFIG_DIR -u JETCARP_DATA_DIR -u JETCARP_OUT -u JETCARP_LIBRARY -u JETCARP_RUNTIME_DIR $J paths
+settings: ~/Library/Application Support/jetcarp
+data:     ~/Library/Application Support/jetcarp/data
+output:   ~/Pictures/JETCARP
+bundled:  ~/jetcarp-rc4/rel/jetcarp-0.4.2-rc.4-aarch64-apple-darwin/packs
+runtime:  ~/.cache/jetcarp
+[exit 0, 0.02 s]
+
+$ env -u JETCARP_CONFIG_DIR -u JETCARP_DATA_DIR -u JETCARP_OUT -u JETCARP_LIBRARY -u JETCARP_RUNTIME_DIR $J paths --json
+{
+  "bundled_packs": "~/jetcarp-rc4/rel/jetcarp-0.4.2-rc.4-aarch64-apple-darwin/packs",
+  "data": "~/Library/Application Support/jetcarp/data",
+  "output": "~/Pictures/JETCARP",
+  "runtime": "~/.cache/jetcarp",
+  "settings": "~/Library/Application Support/jetcarp"
+}
+[exit 0, 0.02 s]
+

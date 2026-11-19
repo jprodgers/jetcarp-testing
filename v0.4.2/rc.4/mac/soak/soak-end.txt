@@ -1,0 +1,13 @@
+
+$ jetcarp host status   [18:59:47]
+running, pid 71955, up 29153.0s, 53 MB, GPU Apple M2 Max
+screen 0: Classics, hourly · profile Life (1 of 7) · generation 98061 · 303455 cells of 6 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal) · held
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+held: the screen is locked or off (resumes by itself)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+
+$ jetcarp host stop
+stopped
+exit 0

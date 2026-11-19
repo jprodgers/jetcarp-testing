@@ -1,0 +1,144 @@
+#### #47 explore --limit help
+      --limit <LIMIT>                  Stop after this many units in this session (soups per rule and tiling, runs, rules, generations); the job stays resumable. An explore search checks it between steps, so it finishes the step it is in and may run past it
+      --threads <THREADS>              Worker threads (default: all cores; an explore search leaves two free). Results do not depend on this
+      --detach                         Run in a process of its own and return at once (`jetcarp jobs status JOB` follows it)
+
+#### #57 pack export refuses a running search; a refused export leaves no folder
+$ jetcarp search hunt --rules B3/S23 --tilings square --soups 300 --quiet   [11:26:05]
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+hunt job 9 in $W\library\library.sqlite
+exit 0
+$ jetcarp search explore --detach --minutes 3 --label r57   [11:26:08]
+explore 10: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+exit 0
+$ jetcarp jobs list   [11:26:13]
+    5  pile     done     2026-11-16T16:23:33Z  pile 5: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    4  pile     done     2026-11-16T16:23:32Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T16:22:10Z  explore 3: 4,035 runs (69/s), 666 elites in 353 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    2  hunt     paused   2026-11-16T16:22:03Z  hunt 2: 368,834/10,000,000 soups, 5196 soups/s, 2,557,277 objects (ships 201,578, osc 381,045, still 1,974,654), 78 distinct, 78 new | newest: still life 11c #aabb5f (B36/S23)
+    1  hunt     done     2026-11-16T16:22:00Z  hunt 1: 3,000/3,000 soups, 1517 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+10 job(s); 1 running
+exit 0
+$ jetcarp pack export --to $W\cli\p57 --feed r57 --no-media   [11:26:13]
+Error: explore job 10 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+exit 1
+(entries in $W\cli naming p57: ['.p57.store'])
+stopping job 10
+$ jetcarp jobs stop 10   [11:26:14]
+asked explore search 10 to stop at its next checkpoint
+exit 0
+$ jetcarp jobs wait 10 --timeout 60   [11:26:16]
+  `jetcarp jobs resume 10` continues it from its archive (not run for run: the search is not deterministic)
+exit 3
+
+#### #57 b: a search running with nothing stored yet (a fresh explore, exported at once)
+$ jetcarp search explore --detach --minutes 1 --label r57b   [11:26:19]
+explore 11: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+exit 0
+$ jetcarp pack export --to $W\cli\p57b --feed r57b --no-media   [11:26:20]
+Error: explore job 11 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+exit 1
+(entries in $W\cli naming p57b: ['.p57b.store'])
+$ jetcarp jobs stop 11   [11:26:21]
+asked explore search 11 to stop at its next checkpoint
+exit 0
+$ jetcarp jobs wait 11 --timeout 60   [11:27:19]
+explore 11: 2,478 runs (48/s), 1,113 elites in 656 niches (0 of them confirmed), 5 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+exit 3
+
+#### #66 a signed pack, then a tampered copy and an unsigned copy (no search running)
+$ jetcarp jobs list   [11:27:19]
+    4  pile     done     2026-11-16T16:23:32Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T16:22:10Z  explore 3: 4,035 runs (69/s), 666 elites in 353 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    2  hunt     paused   2026-11-16T16:22:03Z  hunt 2: 368,834/10,000,000 soups, 5196 soups/s, 2,557,277 objects (ships 201,578, osc 381,045, still 1,974,654), 78 distinct, 78 new | newest: still life 11c #aabb5f (B36/S23)
+    1  hunt     done     2026-11-16T16:22:00Z  hunt 1: 3,000/3,000 soups, 1517 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+11 job(s); 0 running
+exit 0
+$ jetcarp pack export --to $W\cli\good66 --feed r66 --no-media   [11:27:20]
+search 3fecc305-ff34-4603-a378-acb0087f4b4f: copying its segments
+version sha256:9b5602da3a0c4c856d0cbdaf9a184beac4e5766de519b1b8dfe1c247d79cfd66 written
+exit 0
+(onebyte66: pack.json byte 664 changed, "r66" -> "r67")
+-- pack info good66
+$ jetcarp pack info $W\cli\good66   [11:27:20]
+  patterns             101 rows in 3 parts, 48736 bytes
+  provenance           102 rows in 1 part, 8650 bytes
+  quickstart              1 row in 1 part, 3598 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            239 rows in 1 part, 6434 bytes
+  tilings                 1 row in 1 part, 6568 bytes
+  verifications        139 rows in 1 part, 6720 bytes
+  searches: 3fecc305-ff34-4603-a378-acb0087f4b4f, a00769a0-0512-48c3-8dac-532b4524f8fc, dece10ff-26d7-41bf-a654-f93f0911ab9c, fe5cf10b-0c85-46c5-9013-3e7fdf0a7c56
+exit 0
+-- pack info onebyte66
+$ jetcarp pack info $W\cli\onebyte66   [11:27:20]
+  patterns             101 rows in 3 parts, 48736 bytes
+  provenance           102 rows in 1 part, 8650 bytes
+  quickstart              1 row in 1 part, 3598 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            239 rows in 1 part, 6434 bytes
+  tilings                 1 row in 1 part, 6568 bytes
+  verifications        139 rows in 1 part, 6720 bytes
+  searches: 3fecc305-ff34-4603-a378-acb0087f4b4f, a00769a0-0512-48c3-8dac-532b4524f8fc, dece10ff-26d7-41bf-a654-f93f0911ab9c, fe5cf10b-0c85-46c5-9013-3e7fdf0a7c56
+exit 0
+-- pack info unsigned66
+$ jetcarp pack info $W\cli\unsigned66   [11:27:20]
+  patterns             101 rows in 3 parts, 48736 bytes
+  provenance           102 rows in 1 part, 8650 bytes
+  quickstart              1 row in 1 part, 3598 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            239 rows in 1 part, 6434 bytes
+  tilings                 1 row in 1 part, 6568 bytes
+  verifications        139 rows in 1 part, 6720 bytes
+  searches: 3fecc305-ff34-4603-a378-acb0087f4b4f, a00769a0-0512-48c3-8dac-532b4524f8fc, dece10ff-26d7-41bf-a654-f93f0911ab9c, fe5cf10b-0c85-46c5-9013-3e7fdf0a7c56
+exit 0
+-- pack import onebyte66
+$ jetcarp pack --library $W\cli\imp-onebyte66.sqlite import $W\cli\onebyte66   [11:27:20]
+Error: a signature on this version does not verify: e845ca914e12af99d74b0399e205b6241d42795c348a60f8b2e20cd30ba9c760.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+-- pack import unsigned66
+$ jetcarp pack --library $W\cli\imp-unsigned66.sqlite import $W\cli\unsigned66   [11:27:20]
+Error: this version is not signed by its publisher SHA256:6EXKkU4Sr5nXSwOZ4gW2JB1CeVw0imD4suIM0wupx2A; to import it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+exit 1
+
+#### #67 a malformed rule names its CA and file; a read-only library can be read
+$ jetcarp run $W\cli\bad-rule.json --gens 5   [11:27:20]
+Error: $W\cli\bad-rule.json: CA 1 'Lifeish': rule 'B3/S23/Q9 Frobnicate': Generations need a state count, like B2/S/C3
+exit 1
+$ jetcarp verify $W\cli\bad-rule.json   [11:27:21]
+Error: scene has no recorded hash
+exit 1
+$ jetcarp library --library $W\cli\ro.sqlite list   [11:27:21]
+8aee82b1bc3fbac669053961eff32a5b  beehive                            B3/S23       Square                     p1      6c  seen 580441 score   8.7  new
+72831a72c60f3a6eb387d4b51efb8a6e  boat                               B3/S23       Square                     p1      5c  seen 281773 score   8.3  new
+7fcf0f5457ec631337730e4857233de8  tub                                B3/S23       Square                     p1      4c  seen 61449 score   7.9  new
+a8307012afaf96007050d3d68dc9e55d  block                              B3/S23       Square                     p1      4c  seen 1270627 score   7.7  new
+exit 0
+
+#### #66 again: the head of pack info (the run above kept only its last 8 lines)
+-- pack info good66 (first 6 lines)
+export sha256:9b5602da3a0c4c856d0cbdaf9a184beac4e5766de519b1b8dfe1c247d79cfd66 (feed r66)
+  publisher SHA256:6EXKkU4Sr5nXSwOZ4gW2JB1CeVw0imD4suIM0wupx2A (rc.3 A-6 test publisher), signed by its publisher
+  created 2026-11-16T16:27:19Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2779 bytes
+  patterns             101 rows in 3 parts, 48736 bytes
+  provenance           102 rows in 1 part, 8650 bytes
+(exit code not read here: Select-Object -First stopped the pipe; the run above gives 0)
+-- pack info onebyte66 (first 6 lines)
+export sha256:80203562b4b06e1e8c84b3bb0abb7223e1589ea3fb692cef6ae0c2965947fa7f (feed r67)
+  publisher SHA256:6EXKkU4Sr5nXSwOZ4gW2JB1CeVw0imD4suIM0wupx2A (rc.3 A-6 test publisher), signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (e845ca914e12af99d74b0399e205b6241d42795c348a60f8b2e20cd30ba9c760.sig: signature does not verify (jetcarp-manifest): cryptographic error)
+  created 2026-11-16T16:27:19Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2779 bytes
+  patterns             101 rows in 3 parts, 48736 bytes
+  provenance           102 rows in 1 part, 8650 bytes
+(exit code not read here: Select-Object -First stopped the pipe; the run above gives 0)
+-- pack info unsigned66 (first 6 lines)
+export sha256:9b5602da3a0c4c856d0cbdaf9a184beac4e5766de519b1b8dfe1c247d79cfd66 (feed r66)
+  publisher SHA256:6EXKkU4Sr5nXSwOZ4gW2JB1CeVw0imD4suIM0wupx2A (rc.3 A-6 test publisher), not signed by its publisher
+  created 2026-11-16T16:27:19Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2779 bytes
+  patterns             101 rows in 3 parts, 48736 bytes
+  provenance           102 rows in 1 part, 8650 bytes
+(exit code not read here: Select-Object -First stopped the pipe; the run above gives 0)

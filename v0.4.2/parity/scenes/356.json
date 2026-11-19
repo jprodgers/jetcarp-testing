@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S34 on [3.4^2.6; 3.6.3.6; 4^4] #1 (k3-011)",
+  "description": "A 3-uniform tiling from Galebach's catalog (k3-011). Galebach 3-uniform #11 of 61. Symmetry cmm. 9 vertices per cell; 2 triangles, 6 squares, 1 hexagon. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k3-011"
+    },
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 133,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S34",
+      "rule": "B2/S34",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "c8ef5ebe23e5d664",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

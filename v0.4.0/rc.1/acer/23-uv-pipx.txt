@@ -1,0 +1,16 @@
+> uv --version
+uv : The term 'uv' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:131
+
+> pipx --version
+pipx : The term 'pipx' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:131
+
+> python -m pipx --version
+C:\Users\jimmi\AppData\Local\Programs\Python\Python314\python.exe: No module named pipx
+
+> py -m pipx --version
+C:\Users\jimmi\AppData\Local\Programs\Python\Python314\python.exe: No module named pipx
+

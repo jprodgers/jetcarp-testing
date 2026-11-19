@@ -1,0 +1,9 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.19s
+     Running tests\recovery.rs (target\release\deps\recovery-2419414a165dc7eb.exe)
+
+running 2 tests
+test a_run_that_fails_part_way_leaves_the_world_as_it_was ... ok
+test gpu_and_cpu_generations_mix_around_a_failure ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.55s
+

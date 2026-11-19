@@ -1,0 +1,109 @@
+R4 #122 host start straight after host stop, ten rounds, the Mac, 2026-11-17 03:05:40 AM EST
+test folder $H = homes/cycle122, the warning accepted first; the default host is stopped
+
+$ $J setup --yes --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+[exit 0, 0.03 s]
+
+### round 1
+$ $J host start --headless
+running, pid 36501, up 0.0s, 147 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.22 s]
+### round 2
+$ $J host start --headless
+running, pid 36526, up 0.0s, 145 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.18 s]
+$ $J host stop
+stopped
+[exit 0, 0.18 s]
+### round 3
+$ $J host start --headless
+running, pid 36549, up 0.0s, 145 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.19 s]
+### round 4
+$ $J host start --headless
+running, pid 36576, up 0.0s, 157 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.20 s]
+### round 5
+$ $J host start --headless
+running, pid 36600, up 0.0s, 146 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.23 s]
+### round 6
+$ $J host start --headless
+running, pid 36623, up 0.0s, 146 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.17 s]
+### round 7
+$ $J host start --headless
+running, pid 36646, up 0.0s, 146 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.20 s]
+### round 8
+$ $J host start --headless
+running, pid 36669, up 0.0s, 143 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.18 s]
+$ $J host stop
+stopped
+[exit 0, 0.20 s]
+### round 9
+$ $J host start --headless
+running, pid 36692, up 0.0s, 148 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.18 s]
+### round 10
+$ $J host start --headless
+running, pid 36715, up 0.0s, 147 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+[exit 0, 0.19 s]
+$ $J host stop
+stopped
+[exit 0, 0.22 s]
+
+#### Summary
+round | start exit |  start s | stop exit |  stop s
+    1 |          0 |     0.19 |         0 |    0.22
+    2 |          0 |     0.18 |         0 |    0.18
+    3 |          0 |     0.19 |         0 |    0.19
+    4 |          0 |     0.19 |         0 |    0.20
+    5 |          0 |     0.19 |         0 |    0.23
+    6 |          0 |     0.19 |         0 |    0.17
+    7 |          0 |     0.19 |         0 |    0.20
+    8 |          0 |     0.18 |         0 |    0.20
+    9 |          0 |     0.19 |         0 |    0.18
+   10 |          0 |     0.19 |         0 |    0.22
+rounds with a failure: 0 of 10
+$ hosts
+no host process running
+[exit 0, 0.04 s]
+
+$ $J host status
+Error: the JETCARP background host is not running
+[exit 1, 0.02 s]
+

@@ -1,0 +1,206 @@
+12:02:07 host cpu 59.8% rss 116 MB | app cpu -% | gpu 24% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 135 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:11 host cpu 68.1% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 323 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:14 host cpu 60.8% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 513 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:17 host cpu 79.3% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 704 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:20 host cpu 75.2% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 894 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:23 host cpu 75.1% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 1084 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:26 host cpu 72.5% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 1275 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:30 host cpu 41.0% rss 115 MB | app cpu -% | gpu 48% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 1466 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:02:33 host cpu 0.6% rss 115 MB | app cpu -% | gpu 47% | mem 115 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 1564 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:02:36 host cpu 10.9% rss 115 MB | app cpu -% | gpu 0% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 1720 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:07 host cpu 9.5% rss 115 MB | app cpu -% | gpu 22% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 1892 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:10 host cpu 0.1% rss 115 MB | app cpu -% | gpu 12% | mem 115 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 2032 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:04:13 host cpu 0.6% rss 115 MB | app cpu -% | gpu 6% | mem 115 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 2032 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:04:16 host cpu 51.3% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 2079 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:19 host cpu 68.9% rss 116 MB | app cpu -% | gpu 24% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 2267 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:23 host cpu 68.3% rss 116 MB | app cpu -% | gpu 26% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 2457 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:26 host cpu 51.9% rss 116 MB | app cpu -% | gpu 23% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 2646 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:29 host cpu 50.0% rss 116 MB | app cpu -% | gpu 25% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 2835 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:32 host cpu 39.4% rss 115 MB | app cpu -% | gpu 49% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 3025 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:35 host cpu 57.8% rss 116 MB | app cpu -% | gpu 27% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 3215 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:38 host cpu 68.0% rss 116 MB | app cpu -% | gpu 25% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 3405 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:42 host cpu 64.3% rss 116 MB | app cpu -% | gpu 25% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 3595 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:45 host cpu 67.4% rss 116 MB | app cpu -% | gpu 25% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 3785 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:48 host cpu 71.8% rss 116 MB | app cpu -% | gpu 24% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 3974 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:51 host cpu 55.0% rss 116 MB | app cpu -% | gpu 23% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 4165 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:54 host cpu 71.5% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 4354 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:04:57 host cpu 71.6% rss 116 MB | app cpu -% | gpu 23% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 4544 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:01 host cpu 74.7% rss 116 MB | app cpu -% | gpu 0% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 4733 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:04 host cpu 73.9% rss 116 MB | app cpu -% | gpu 23% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 4924 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:07 host cpu 73.1% rss 116 MB | app cpu -% | gpu 23% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 5115 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:10 host cpu 73.9% rss 116 MB | app cpu -% | gpu 23% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 5306 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:13 host cpu 76.2% rss 117 MB | app cpu -% | gpu 23% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 183 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:17 host cpu 42.4% rss 116 MB | app cpu -% | gpu 40% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 373 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:20 host cpu 0.5% rss 116 MB | app cpu -% | gpu 37% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:23 host cpu 0.1% rss 116 MB | app cpu -% | gpu 11% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:26 host cpu 0.1% rss 116 MB | app cpu -% | gpu 8% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:29 host cpu 0.0% rss 116 MB | app cpu -% | gpu 7% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:33 host cpu 0.0% rss 116 MB | app cpu -% | gpu 7% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:36 host cpu 0.5% rss 116 MB | app cpu -% | gpu 7% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:39 host cpu 0.0% rss 116 MB | app cpu -% | gpu 7% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:42 host cpu 0.4% rss 116 MB | app cpu -% | gpu 8% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:45 host cpu 0.0% rss 116 MB | app cpu -% | gpu 7% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:49 host cpu 0.1% rss 116 MB | app cpu -% | gpu 7% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 441 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:05:52 host cpu 11.1% rss 116 MB | app cpu -% | gpu 0% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 595 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:55 host cpu 10.6% rss 116 MB | app cpu -% | gpu 0% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 784 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:05:58 host cpu 10.3% rss 116 MB | app cpu -% | gpu 0% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 975 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:01 host cpu 13.1% rss 116 MB | app cpu -% | gpu 0% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 1165 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:04 host cpu 6.9% rss 116 MB | app cpu -% | gpu 38% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 1355 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:08 host cpu 1.5% rss 116 MB | app cpu -% | gpu 26% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 1514 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:06:11 host cpu 1.2% rss 116 MB | app cpu -% | gpu 8% | mem 116 MB | paused False why [] held ['covered', 'dark'] held_why ['held by the desktop: windows cover it', 'held by the desktop: the screen is locked or off'] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 1514 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused True hidden False
+12:06:14 host cpu 46.2% rss 117 MB | app cpu -% | gpu 30% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 1668 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:17 host cpu 69.6% rss 117 MB | app cpu -% | gpu 26% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 1859 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:20 host cpu 47.9% rss 117 MB | app cpu -% | gpu 26% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 2048 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:24 host cpu 62.9% rss 117 MB | app cpu -% | gpu 26% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 2237 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:27 host cpu 37.2% rss 116 MB | app cpu -% | gpu 49% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 2426 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:30 host cpu 61.4% rss 117 MB | app cpu -% | gpu 27% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 2616 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:33 host cpu 61.6% rss 117 MB | app cpu -% | gpu 26% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 2805 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:36 host cpu 63.9% rss 117 MB | app cpu -% | gpu 25% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 2995 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:39 host cpu 65.4% rss 117 MB | app cpu -% | gpu 26% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 3185 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:43 host cpu 64.5% rss 117 MB | app cpu -% | gpu 26% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 3375 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:46 host cpu 53.7% rss 117 MB | app cpu -% | gpu 25% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 3564 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:49 host cpu 63.3% rss 117 MB | app cpu -% | gpu 26% | mem 117 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 2/3 'Quick Start rule:B36/S23' gen 3752 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:06:51 == 2.D 12a kill -9 10288
+12:06:52 host cpu ?% rss 0 MB | app cpu -% | gpu 16% | host: not running
+12:06:55 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:06:58 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:07:01 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:07:04 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:07:08 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:07:11 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:07:14 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:07:17 host cpu 51.3% rss 116 MB | app cpu -% | gpu 24% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 80 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:07:20 host cpu 63.8% rss 116 MB | app cpu -% | gpu 22% | mem 116 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 268 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:07:23 host cpu 66.3% rss 115 MB | app cpu -% | gpu 23% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 457 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:07:27 host cpu 58.4% rss 115 MB | app cpu -% | gpu 22% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 648 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:07:30 host cpu 64.7% rss 115 MB | app cpu -% | gpu 23% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 838 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:07:33 host cpu 67.1% rss 115 MB | app cpu -% | gpu 23% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 1030 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:07:35 == 2.D 12b still on, kill -9 11812
+12:07:36 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:07:39 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:07:42 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:07:45 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:07:49 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:07:52 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:07:55 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:07:58 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:08:01 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:08:04 host cpu 60.4% rss 115 MB | app cpu -% | gpu 18% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 37 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:08:07 host cpu 70.1% rss 115 MB | app cpu -% | gpu 24% | mem 115 MB | paused False why [] held [] held_why [] | s0 wallpaper 'Until it settles' 1/3 'Quick Start rule:B3/S23' gen 227 303455c@6.0px fps 60.0 speed 60.0 tuned False sim gpu (None) paused False hidden False
+12:08:10 == 2.D 12c still on, clean host stop
+12:08:11 host cpu ?% rss 0 MB | app cpu -% | gpu 23% | host: not running
+12:08:14 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:08:17 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:08:20 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:08:23 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:08:26 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:08:29 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:08:32 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:08:36 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:08:39 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:08:42 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:08:45 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:08:48 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:08:51 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:08:54 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:08:58 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:09:01 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:09:04 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:09:07 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:09:10 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:09:13 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:09:16 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:09:19 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:09:23 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:09:26 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:09:29 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:09:32 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:09:35 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:09:38 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:09:41 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:09:45 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:09:48 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:09:51 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:09:54 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:09:57 host cpu ?% rss 0 MB | app cpu -% | gpu 62% | host: not running
+12:10:00 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:10:03 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:10:06 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:10:10 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:10:13 host cpu ?% rss 0 MB | app cpu -% | gpu 42% | host: not running
+12:10:16 host cpu ?% rss 0 MB | app cpu -% | gpu 51% | host: not running
+12:10:19 host cpu ?% rss 0 MB | app cpu -% | gpu 49% | host: not running
+12:10:22 host cpu ?% rss 0 MB | app cpu -% | gpu 37% | host: not running
+12:10:25 host cpu ?% rss 0 MB | app cpu -% | gpu 24% | host: not running
+12:10:28 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:10:31 host cpu ?% rss 0 MB | app cpu -% | gpu 23% | host: not running
+12:10:35 host cpu ?% rss 0 MB | app cpu -% | gpu 16% | host: not running
+12:10:38 host cpu ?% rss 0 MB | app cpu -% | gpu 61% | host: not running
+12:10:41 host cpu ?% rss 0 MB | app cpu -% | gpu 40% | host: not running
+12:10:44 host cpu ?% rss 0 MB | app cpu -% | gpu 26% | host: not running
+12:10:47 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:10:50 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:10:53 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:10:57 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:11:00 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:11:03 host cpu ?% rss 0 MB | app cpu -% | gpu 43% | host: not running
+12:11:06 host cpu ?% rss 0 MB | app cpu -% | gpu 20% | host: not running
+12:11:09 host cpu ?% rss 0 MB | app cpu -% | gpu 20% | host: not running
+12:11:12 host cpu ?% rss 0 MB | app cpu -% | gpu 20% | host: not running
+12:11:15 host cpu ?% rss 0 MB | app cpu -% | gpu 21% | host: not running
+12:11:18 host cpu ?% rss 0 MB | app cpu -% | gpu 25% | host: not running
+12:11:22 host cpu ?% rss 0 MB | app cpu -% | gpu 17% | host: not running
+12:11:25 host cpu ?% rss 0 MB | app cpu -% | gpu 16% | host: not running
+12:11:28 host cpu ?% rss 0 MB | app cpu -% | gpu 18% | host: not running
+12:11:31 host cpu ?% rss 0 MB | app cpu -% | gpu 20% | host: not running
+12:11:34 host cpu ?% rss 0 MB | app cpu -% | gpu 20% | host: not running
+12:11:37 host cpu ?% rss 0 MB | app cpu -% | gpu 16% | host: not running
+12:11:40 host cpu ?% rss 0 MB | app cpu -% | gpu 17% | host: not running
+12:11:44 host cpu ?% rss 0 MB | app cpu -% | gpu 17% | host: not running
+12:11:47 host cpu ?% rss 0 MB | app cpu -% | gpu 63% | host: not running
+12:11:50 host cpu ?% rss 0 MB | app cpu -% | gpu 59% | host: not running
+12:11:53 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:11:56 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:11:59 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:12:02 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:12:05 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:12:09 host cpu ?% rss 0 MB | app cpu -% | gpu 11% | host: not running
+12:12:12 host cpu ?% rss 0 MB | app cpu -% | gpu 8% | host: not running
+12:12:15 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:12:18 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:12:21 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:12:24 host cpu ?% rss 0 MB | app cpu -% | gpu 32% | host: not running
+12:12:27 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:12:31 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:12:34 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:12:37 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:12:40 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:12:43 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:12:46 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:12:49 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:12:52 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:12:56 host cpu ?% rss 0 MB | app cpu -% | gpu 5% | host: not running
+12:12:59 host cpu ?% rss 0 MB | app cpu -% | gpu 34% | host: not running
+12:13:02 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:13:05 host cpu ?% rss 0 MB | app cpu -% | gpu 2% | host: not running
+12:13:08 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:13:11 host cpu ?% rss 0 MB | app cpu -% | gpu 60% | host: not running
+12:13:14 host cpu ?% rss 0 MB | app cpu -% | gpu 43% | host: not running
+12:13:18 host cpu ?% rss 0 MB | app cpu -% | gpu 45% | host: not running
+12:13:21 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:13:24 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:13:27 host cpu ?% rss 0 MB | app cpu -% | gpu 8% | host: not running
+12:13:30 host cpu ?% rss 0 MB | app cpu -% | gpu 6% | host: not running
+12:13:33 host cpu ?% rss 0 MB | app cpu -% | gpu 8% | host: not running
+12:13:36 host cpu ?% rss 0 MB | app cpu -% | gpu 36% | host: not running
+12:13:40 host cpu ?% rss 0 MB | app cpu -% | gpu 28% | host: not running
+12:13:43 host cpu ?% rss 0 MB | app cpu -% | gpu 17% | host: not running
+12:13:46 host cpu ?% rss 0 MB | app cpu -% | gpu 0% | host: not running
+12:13:49 host cpu ?% rss 0 MB | app cpu -% | gpu 7% | host: not running
+12:13:52 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:13:55 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:13:58 host cpu ?% rss 0 MB | app cpu -% | gpu 36% | host: not running
+12:14:01 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:14:05 host cpu ?% rss 0 MB | app cpu -% | gpu 4% | host: not running
+12:14:08 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running
+12:14:11 host cpu ?% rss 0 MB | app cpu -% | gpu 3% | host: not running

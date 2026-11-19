@@ -1,0 +1,14 @@
+hunt 7: 9,330/2,000,000 soups, 1220 soups/s, 199,949 objects (ships 17,753, osc 58,090, still 124,106), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)
+  status running, 8 s run, 9276 settled, 25 died, 29 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 9330 soups, 199949 objects (oscillator 58090, spaceship 17753, still life 124106), 42 distinct, 5 new
+  newest finds:
+    ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+    e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23     Square soup 6114  (new to the catalog)
+    4b1e8d6b20cea5dc100f7444731eb9a4  still life 14c #4b1e8d             B3/S23     Square soup 4628  (new to the catalog)
+    77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23     Square soup 4526  (new to the catalog)
+    2f14f53077b021fe1ae019b7c5835852  still life 9c #2f14f5              B3/S23     Square soup 3049  (new to the catalog)
+    f604b33e874ae8109ab13c34f6ed8484  still life 8c #f604b3              B3/S23     Square soup 2650
+    c8f20f137dfae2f393afe921c7c5e670  snake                              B3/S23     Square soup 2540
+    076c1a268e4004b5a0c13876844e8864  still life 9c #076c1a              B3/S23     Square soup 2463
+    1741ff737fd4a9871f808a2bf46d7594  still life 11c #1741ff             B3/S23     Square soup 2048
+    1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23     Square soup 1816

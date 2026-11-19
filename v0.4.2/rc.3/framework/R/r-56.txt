@@ -1,0 +1,29 @@
+#### #56: a 4-minute JACA explore, then clips --sample 48
+explore exit 0
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;print(json.load(open("r56-start.json"))["job"])
+                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 298, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.13/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+   10  explore  paused   2026-11-16T06:09:26Z  explore 10: 31,402 runs (158/s), 4,750 elites in 2,340 niches (322 of them confirmed), 24 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    9  explore  paused   2026-11-16T06:03:52Z  explore 9: 6,531 runs (108/s), 2,358 elites in 1,333 niches (2 of them confirmed), 10 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+clip 48 of 48
+48 clips in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/clips56
+categories: Battles 46, Frozen at once 2
+exit 0
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'list' object has no attribute 'get'

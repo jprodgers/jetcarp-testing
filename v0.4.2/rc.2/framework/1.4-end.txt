@@ -1,0 +1,29 @@
+explore 2: 2,231,745 runs (191/s), 66,824 elites in 29,158 niches (5,261 of them confirmed), 787 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status paused, 4 h 15 min run over every session, 29,232 confirmation runs, 2,262,069 candidates tried, 6.96 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 6,908 runs on the processor stopped at their time cap (kept with the generations they reached), 1,038 runs given up at a stop or the end (not kept)
+  loaded 37,397 elites, 523,538 identities, 25,574 coverage rows in 0.11 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               667,513   0.34   1.70  14,257
+  generations             525,398   0.65   2.15  10,926
+  ltl                     243,195   0.37   2.53   5,448
+  jaca                    240,912   0.51   2.24  14,622
+  priority                156,461   0.40   2.22   7,990
+  hodgepodge               79,322   1.13   2.51   2,819
+  rps                      79,118   0.57   2.49   2,186
+  cyclic                   78,837   0.53   2.42   2,222
+  greenberg_hastings       78,518   0.57   2.65   1,141
+  wireworld                14,956   0.47   1.73     608
+  spectre_glider           13,275   0.38   1.45      59
+  turmite                  12,252   0.83   2.18   1,472
+  layered                  10,527   0.65   1.93     644
+  lenia                     6,685   1.10   2.43     693
+  forest_fire               6,188   0.75   1.16     463
+  sandpile                  4,902   0.67   2.33     268
+  hex_wolfram               2,762   0.64   1.80      49
+  wolfram                   2,758   0.70   1.75      54
+  table                     2,726   0.30   1.74      15
+  hex_tri                   2,720   0.63   1.91      62
+  margolus                  2,720   0.71   2.21     826
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data/searches/7b460dca-febf-44c7-b350-f0e7a224c163
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

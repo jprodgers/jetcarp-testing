@@ -1,0 +1,3 @@
+﻿uhd start 2026-11-14T18:08:17 JETCARP_GPU=UHD WGPU_BACKEND=
+364 scenes: CPU matches 364, GPU matches 364; all 300 generations on the GPU in 327
+uhd end 2026-11-14T18:14:52, 6.6 min

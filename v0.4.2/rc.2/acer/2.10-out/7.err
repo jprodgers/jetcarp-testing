@@ -1,0 +1,6 @@
+sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147: feed rc-acer, by SHA256:oC9mdMytqshtIBqNgKOn9GksxuiFUwsNnxRBGLBaIo4 (RC tester (Acer)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 5cbba190-5548-46c8-bf58-4ed39e19b932: copying its segments and rebuilding its state
+merging sightings
+search 5cbba190-5548-46c8-bf58-4ed39e19b932: 13524 runs, 1994 elites in 1033 niches, rebuilt in 2.6 s

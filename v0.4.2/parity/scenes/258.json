@@ -1,0 +1,39 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA glowing line network (edge, Penrose kites)",
+  "description": "Edge neighbours, blast 1: thin glowing lines that slowly straighten. Found by a JACA rule search.",
+  "tiling": {
+    "family": "penrose-kd",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 23,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B1/S013V blast 1",
+      "rule": "JACA B1/S013 blast 1",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Neon",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Synthwave"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "f717dff81aa4c0f2",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

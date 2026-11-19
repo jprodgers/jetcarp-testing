@@ -1,0 +1,30 @@
+{
+  "backend": "gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; no nosuchgpu adapter was found, so the best one)",
+  "cells": 28000,
+  "dead_boundary": false,
+  "done": false,
+  "done_reason": null,
+  "fields": [
+    {
+      "cas": [
+        "Life"
+      ],
+      "field": 0,
+      "kind": "binary",
+      "lost": 0,
+      "population": 2016,
+      "shared": true
+    }
+  ],
+  "generation": 300,
+  "hash": "d9c87f6d4f91849f",
+  "jetcarp_version": "0.4.2-rc.2",
+  "png": null,
+  "png_size": null,
+  "reseed": [],
+  "scene": "/home/jimmie/Documents/GitHub/jetcarp-rc/parity/scenes/0.json",
+  "seconds": 0.043588946,
+  "status": "Running",
+  "threads": 32,
+  "tiling": "Square (parallelogram) (square): 28000 cells, 200x140 unit cells, 1 tile type(s), storage dense, edges wrap"
+}

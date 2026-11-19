@@ -1,0 +1,10 @@
+﻿Desktop before A3 checks 7-12 (2026-11-12 07:48:25)
+  WallPaper: c:\windows\web\wallpaper\themea\img20.jpg
+  WallpaperStyle: 10  TileWallpaper: 0
+  TranscodedWallpaper sha256: 85ff3bb2371a84655aedf69d9f7c11d697f23b21efc221f7f2443a62edb767ac
+  SCRNSAVE.EXE: (none)
+  ScreenSaveActive: 1  ScreenSaveTimeOut: 60  ScreenSaverIsSecure: 0
+  Run key values: (none of JETCARP) (other programs' entries left out)
+  %LOCALAPPDATA%\JETCARP\JETCARP.scr: False
+  %APPDATA%\jetcarp: app.json, setup.json
+  monitors: \\.\DISPLAY1 1920x1080@(0,0) work 1920x1032

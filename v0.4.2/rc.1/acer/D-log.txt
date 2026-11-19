@@ -1,0 +1,72 @@
+﻿
+20:22:55.276 [1] host start -> exit 0 in 0.74 s
+20:22:55.298     running, pid 49412, up 1.0s, 422 MB, GPU Intel(R) UHD Graphics
+20:22:55.299     screen 0: A classic a day Â· Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) Â· starting Â· window
+20:22:55.299     caption: off
+20:22:55.300     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+20:22:55.508 [2] host wallpaper on -> exit 0 in 0.21 s
+20:22:55.511     running, pid 49412, up 1.0s, 501 MB, GPU Intel(R) UHD Graphics
+20:22:55.512     screen 0: A classic a day Â· Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) Â· generation 5 Â· 230400 cells of 2 px Â· wallpaper
+20:22:55.517     monitors: 0: \\.\DISPLAY1
+20:22:55.539     wallpaper: showing
+20:22:55.556     caption: off
+20:22:55.557     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+20:22:58.756 [3] host status -> exit 0 in 0.19 s
+20:22:58.757     running, pid 49412, up 4.0s, 516 MB, GPU Intel(R) UHD Graphics
+20:22:58.758     screen 0: A classic a day Â· Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) Â· generation 78 Â· 518400 cells of 2 px Â· wallpaper
+20:22:58.760     monitors: 0: \\.\DISPLAY1
+20:22:58.762     wallpaper: showing
+20:22:58.764     caption: off
+20:22:58.765     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+20:22:59.136   process 43260 jetcarpw.exe: "C:\Users\jimmi\jetcarp-rc-042\bin\jetcarpw.exe" 
+20:22:59.138   process 48632 jetcarp.exe: "C:\Users\jimmi\jetcarp-rc-042\bin\jetcarp.exe"
+20:22:59.140   process 49160 jetcarpw.exe: "C:\Users\jimmi\jetcarp-rc-042\bin\jetcarpw.exe" host serve
+20:22:59.141   process 49412 jetcarp.exe: "C:\Users\jimmi\jetcarp-rc-042\bin\jetcarp.exe" host serve
+20:42:57.409 --- D3b: the Fit again from the command line, app closed, default limits
+20:43:04.260 [21] host tune --json --crops D3b-crops -> exit 0 in 6.82 s
+20:43:04.272     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B36/S23","tiling":"square","design_px":3.0,"cell_px":16.0,"chosen":false,"recommended":{"px":16.0},"placed":false,"rungs":[{"size":{"px":16.0},"cells":8040,"cpu_percent":0.85829455,"gpu_percent":90.62388,"p95_ms":5.2525,"fps":29.663342,"on_gpu":false,"fits":false,"over":"GPU 91% (over 20%: the 25% limit, less 20%)","crop":"s0-quick-start-rule-b36-s23-16px.png","own":false}],"gpu_timing":"submission","note":"no size was within the limits; finer sizes were not shown: 16 px was already far over the limits"}}
+20:43:04.274     {"event":"rung","screen":0,"number":3,"of":3,"scene":"Quick Start rule:B368/S245","size":{"px":16.0},"rung":1,"rungs":8}
+20:43:04.274     {"event":"measured","screen":0,"scene":"Quick Start rule:B368/S245","rung":{"size":{"px":16.0},"cells":8040,"cpu_percent":0.7725386,"gpu_percent":90.43046,"p95_ms":4.8555,"fps":29.665749,"on_gpu":false,"fits":false,"over":"GPU 90% (over 20%: the 25% limit, less 20%)","crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}}
+20:43:04.275     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B368/S245","tiling":"square","design_px":3.0,"cell_px":16.0,"chosen":false,"recommended":{"px":16.0},"placed":false,"rungs":[{"size":{"px":16.0},"cells":8040,"cpu_percent":0.7725386,"gpu_percent":90.43046,"p95_ms":4.8555,"fps":29.665749,"on_gpu":false,"fits":false,"over":"GPU 90% (over 20%: the 25% limit, less 20%)","crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}],"gpu_timing":"submission","note":"no size was within the limits; finer sizes were not shown: 16 px was already far over the limits"}}
+20:43:04.275     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+20:46:25.580 --- D4
+20:46:32.390 [31] host tune --cpu-limit 2 --gpu-limit 5 --fps 30 --json --crops D4-crops -> exit 0 in 6.78 s
+20:46:32.399     {"event":"scene","screen":0,"result":{"scene":"Quick Start rule:B368/S245","tiling":"square","design_px":3.0,"cell_px":16.0,"chosen":false,"recommended":{"px":16.0},"placed":false,"rungs":[{"size":{"px":16.0},"cells":8040,"cpu_percent":0.9454061,"gpu_percent":91.04899,"p95_ms":4.5555,"fps":29.703625,"on_gpu":false,"fits":false,"over":"GPU 91% (over 4.0%: the 5.0% limit, less 20%)","crop":"s0-quick-start-rule-b368-s245-16px.png","own":false}],"gpu_timing":"submission","note":"no size was within the limits; finer sizes were not shown: 16 px was already far over the limits"}}
+20:46:32.400     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+20:46:32.550 [32] host scene --save D4-scene.json -> exit 0 in 0.14 s
+20:46:32.551     saved Quick Start rule:B3/S23 (120 x 67 cells, tuned) to D4-scene.json
+20:46:36.085 run --cpu: hash cd1d189a720ceee4 pop 373 (cpu (12 threads)); run --gpu: hash cd1d189a720ceee4 pop 373 (gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)); same: True
+20:46:36.104 D4-scene: ; rule B3/S23; tiling {"boundary":"wrap","family":"square","size":{"rect":{"h":67,"w":120}}}
+20:46:36.890 objects at 1000: census:     blinker (p2) x 30, block x 13, beehive x 4, boat x 4, loaf x 1
+20:47:02.605 [41] host tune --pick own --cpu-limit 10 --gpu-limit 25 --json -> exit 0 in 6.87 s
+20:47:02.616     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+20:47:25.537 [42] host tune --pick 3 --json -> exit 0 in 6.83 s
+20:47:25.550     {"event":"done","saved":"C:\\Users\\jimmi\\jetcarp-rc-042\\config\\host.json","scenes":3,"gpu_timing":"submission"}
+20:47:54.576 [43] host rotation "Classics, hourly" -> exit 0 in 0.23 s
+20:47:54.587     caption: off
+20:47:54.588     last tune: done
+20:47:54.589     note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+20:47:54.590     note: swept 7 scene(s); sizes saved
+20:47:54.591     note: swept 3 scene(s); sizes saved
+20:47:54.591     note: swept 3 scene(s); sizes saved
+20:47:54.592     note: swept 3 scene(s); sizes saved
+20:47:54.593     note: swept 3 scene(s); sizes saved
+21:05:43.154 --- D3.6: overrides set (app on, desktop background off); stepping the wallpaper back to Life
+21:05:48.441 wallpaper now: profile Life, 230400 cells of 3.0 px, gen 124
+21:06:03.128 desktop background OFF (Life 3 px): host CPU 8.0% of 12 threads, host UHD 3D 7.1%, 30 gens/s
+21:07:12.537 settings: app.json gpu "follow", host.json gpu "follow"
+21:07:12.714 wallpaper: profile Life, 230400 cells of 3.0 px
+21:07:26.808 desktop background FOLLOW (Life 3 px): host CPU 1.6% of 12 threads, host UHD 3D 8.7%, 30 gens/s
+21:07:27.769 doctor: GPU: auto (automatic)
+21:07:27.770 doctor: the app: auto, from automatic (its own choice: follow)
+21:07:27.771 doctor: the desktop background: auto, from automatic (its own choice: follow)
+21:07:45.358 --- D5
+21:07:45.687 [71] host stop -> exit 0 in 0.30 s
+21:07:45.697     stopped
+21:07:49.834 [72] host status -> exit 1 in 0.12 s
+21:07:49.835     Error: the JETCARP background host is not running
+21:07:50.022   still running: 13272 "C:\Users\jimmi\jetcarp-rc-042\bin\jetcarpw.exe" 
+21:07:50.025   still running: 44568 "C:\Users\jimmi\jetcarp-rc-042\bin\jetcarp.exe"
+21:07:50.030 WallPaper now: 'C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper' style 10 tile 0 (before: TranscodedWallpaper, 10, 0)
+21:07:50.034 BackgroundType now: 0 (before: 0); history0: c:\windows\web\wallpaper\themea\img20.jpg
+21:07:50.092 TranscodedWallpaper: now 249170 bytes, 11/12/2026 7:51:50 AM; same as before: True

@@ -1,0 +1,21 @@
+libmutter-Message: 09:10:01.367: Running GNOME Shell (using mutter 51.1) as a Wayland display server
+libmutter-Message: 09:10:01.402: Added device '/dev/dri/renderD128' (amdgpu) using no mode setting.
+libmutter-Message: 09:10:01.403: Created gbm renderer for '/dev/dri/renderD128'
+libmutter-Message: 09:10:01.403: GPU /dev/dri/renderD128 selected as primary
+** Message: 09:10:01.404: Obtained a high priority EGL context
+libmutter-Message: 09:10:01.414: Added virtual monitor Meta-0
+
+(gnome-shell:3524131): atspi-WARNING **: 09:10:01.419: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.Spawn.ExecFailed: Failed to execute program org.a11y.Bus: Permission denied
+libmutter-Message: 09:10:01.419: Using Wayland display name 'jt-f3'
+GNOME Shell-Message: 09:10:01.603: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.
+GNOME Shell-Message: 09:10:01.653: Registering session with GDM
+GNOME Shell-Message: 09:10:01.816: Will monitor session 5
+GNOME Shell-Message: 09:10:01.928: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+GNOME Shell-Message: 09:10:02.036: Failed to register AuthenticationAgent
+** Message: 09:10:02.157: Failed to start camera monitor
+GNOME Shell-Message: 09:10:03.143: GNOME Shell started at Tue Nov 17 2026 09:10:01 GMT-0500 (Eastern Standard Time)
+GNOME Shell-Message: 09:10:03.146: Registering display with GDM
+
+(gnome-shell:3524131): libmutter-CRITICAL **: 09:10:19.667: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+** Message: 17:10:32.611: Shutting down GNOME Shell
+libmutter-Message: 17:10:32.685: Removed virtual monitor Meta-0

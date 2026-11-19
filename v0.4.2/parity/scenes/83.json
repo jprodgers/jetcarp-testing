@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Hex3 rule 90 (NW xor NE)",
+  "description": "Three parents on flat-top hexagons; NW xor NE gives Pascal's triangle mod 2.",
+  "tiling": {
+    "family": "hex_flat",
+    "size": {
+      "rect": {
+        "w": 80,
+        "h": 40
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "15222699402981918143",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Hex3 rule 90 (NW xor NE)",
+      "rule": "HexT 90",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "top_center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e4a45c757300a4fc",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

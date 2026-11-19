@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Plow World",
+  "description": "Explosive; cells never die, and some patterns become wickstretchers.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "6608611404860284637",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Plow World",
+      "rule": "B378/S012345678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "blob": {
+          "radius": 0.15,
+          "density": 0.4
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "b5b1e3dd20064ad0",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

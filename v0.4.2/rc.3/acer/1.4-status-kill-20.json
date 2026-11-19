@@ -1,0 +1,251 @@
+{
+  "catalog": "C:\\Users\\jimmi\\jetcarp-rc-042c\\data\\library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "19,686"
+    ],
+    [
+      "niches",
+      "9,796"
+    ],
+    [
+      "confirmed elites",
+      "1,056"
+    ],
+    [
+      "tilings tried",
+      "112 of 1,359"
+    ],
+    [
+      "backend",
+      "NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan"
+    ]
+  ],
+  "created": "2026-11-16T02:06:53Z",
+  "deterministic": false,
+  "done": 144022,
+  "elapsed_s": 3602.2571737,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 2,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "long",
+  "line": "explore 2: 144,022 runs (41/s), 19,686 elites in 9,796 niches (1,056 of them confirmed), 112 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+  "per_s": 40.81808305933561,
+  "progress": {
+    "backend": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+    "build_minutes": null,
+    "capped": 624,
+    "confirmed": 4485,
+    "confirmed_elites": 1056,
+    "cores": 12,
+    "elapsed_s": 3602.2571737,
+    "elites": 19686,
+    "error": null,
+    "families": [
+      {
+        "best": 1.4307836294174194,
+        "elites": 5318,
+        "family": "life_like",
+        "mean": 0.322748546792166,
+        "runs": 43004
+      },
+      {
+        "best": 2.1018316745758057,
+        "elites": 3858,
+        "family": "generations",
+        "mean": 0.6349590033468858,
+        "runs": 33807
+      },
+      {
+        "best": 2.321932792663574,
+        "elites": 1057,
+        "family": "ltl",
+        "mean": 0.30264587434293966,
+        "runs": 16671
+      },
+      {
+        "best": 2.002991199493408,
+        "elites": 3400,
+        "family": "jaca",
+        "mean": 0.5317825701563413,
+        "runs": 15169
+      },
+      {
+        "best": 2.243900775909424,
+        "elites": 1779,
+        "family": "priority",
+        "mean": 0.42543724697871194,
+        "runs": 10108
+      },
+      {
+        "best": 2.447368860244751,
+        "elites": 698,
+        "family": "hodgepodge",
+        "mean": 1.176778976839658,
+        "runs": 5018
+      },
+      {
+        "best": 2.604987144470215,
+        "elites": 407,
+        "family": "greenberg_hastings",
+        "mean": 0.6129663664045356,
+        "runs": 5015
+      },
+      {
+        "best": 2.438833713531494,
+        "elites": 910,
+        "family": "rps",
+        "mean": 0.5565729071594608,
+        "runs": 5004
+      },
+      {
+        "best": 2.2604377269744873,
+        "elites": 951,
+        "family": "cyclic",
+        "mean": 0.5041775784103706,
+        "runs": 4986
+      },
+      {
+        "best": 1.142098069190979,
+        "elites": 145,
+        "family": "wireworld",
+        "mean": 0.4755229625674286,
+        "runs": 928
+      },
+      {
+        "best": 1.3726445436477661,
+        "elites": 28,
+        "family": "spectre_glider",
+        "mean": 0.28534195885915203,
+        "runs": 856
+      },
+      {
+        "best": 1.8318657875061035,
+        "elites": 320,
+        "family": "turmite",
+        "mean": 0.8422409639516963,
+        "runs": 790
+      },
+      {
+        "best": 2.013564109802246,
+        "elites": 245,
+        "family": "layered",
+        "mean": 0.6164949855131722,
+        "runs": 698
+      },
+      {
+        "best": 1.0712816715240479,
+        "elites": 124,
+        "family": "forest_fire",
+        "mean": 0.7835659472470357,
+        "runs": 394
+      },
+      {
+        "best": 2.3005542755126953,
+        "elites": 152,
+        "family": "lenia",
+        "mean": 1.0723818306900195,
+        "runs": 387
+      },
+      {
+        "best": 2.1940503120422363,
+        "elites": 68,
+        "family": "sandpile",
+        "mean": 0.7049141226466312,
+        "runs": 301
+      },
+      {
+        "best": 1.711294412612915,
+        "elites": 32,
+        "family": "hex_wolfram",
+        "mean": 0.6491727342696062,
+        "runs": 196
+      },
+      {
+        "best": 1.6203941106796265,
+        "elites": 40,
+        "family": "hex_tri",
+        "mean": 0.6401727804908054,
+        "runs": 192
+      },
+      {
+        "best": 0.4925709664821625,
+        "elites": 11,
+        "family": "table",
+        "mean": 0.29042600250492495,
+        "runs": 192
+      },
+      {
+        "best": 1.4430416822433472,
+        "elites": 109,
+        "family": "margolus",
+        "mean": 0.5788189772113114,
+        "runs": 157
+      },
+      {
+        "best": 1.6354074478149414,
+        "elites": 34,
+        "family": "wolfram",
+        "mean": 0.7203746330018012,
+        "runs": 149
+      }
+    ],
+    "folder": "C:\\Users\\jimmi\\jetcarp-rc-042c\\data\\searches\\db00e0e0-6959-4398-b766-bc9a0703d55e",
+    "given_up": 0,
+    "gpu_error": null,
+    "gpu_threads": 4,
+    "job": 2,
+    "line": "explore 2: 144,022 runs (41/s), 19,686 elites in 9,796 niches (1,056 of them confirmed), 112 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+    "loaded": {
+      "confirmed": 0,
+      "coverage_rows": 0,
+      "elites": 0,
+      "runs_read": 0,
+      "seconds": 0.0011936,
+      "seen": 0,
+      "seen_blobs": 0
+    },
+    "niches": 9796,
+    "note": null,
+    "panics": 0,
+    "per_s": 40.81808305933561,
+    "published": null,
+    "rss_gb": 1.1395339965820312,
+    "screened": 144022,
+    "seen": 149561,
+    "session_s": 3602.2571738,
+    "status": "running",
+    "threads": 6,
+    "tilings": 1359,
+    "tilings_tried": 112
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "gpu": false,
+    "label": "long",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "started_with": {
+      "minutes": 240.0
+    },
+    "uuid": "db00e0e0-6959-4398-b766-bc9a0703d55e"
+  },
+  "stale": true,
+  "status": "running",
+  "title": "long: every tiling, every family",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T03:06:59Z",
+  "waited_s": null
+}

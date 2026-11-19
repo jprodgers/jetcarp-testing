@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA rainbow over stripes (3.3.3.4.4)",
+  "description": "Rainbow fronts over striped still territories on the elongated triangular tiling. Found by a JACA rule search.",
+  "tiling": {
+    "family": "elongtri",
+    "size": {
+      "rect": {
+        "w": 148,
+        "h": 54
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 27,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B2346/S0,2,3,4,5,6,10,12",
+      "rule": "JACA B2346/S0,2,3,4,5,6,10,12",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Moss",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Autumn"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "26569124fa80716f",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

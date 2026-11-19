@@ -1,0 +1,6 @@
+﻿12334684: in the census at generations 50
+5a080db3: in the census at generations 400, 600, 800, 1200, 1600, 2000
+1376072e: in the census at generations 800, 1200
+77364004: in the census at generations 2000, 2500
+6dd55e69: in the census at generations 1200, 1600
+484e9fe1: in the census at generations 50

@@ -1,0 +1,2 @@
+explore search 2 is still running after 2 s
+  explore 2: 270,944 runs (0/s), 28,091 elites in 13,458 niches (1,186 of them confirmed), 183 of 1,359 tilings; Apple M2 Max, Metal

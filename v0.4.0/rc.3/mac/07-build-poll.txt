@@ -1,0 +1,408 @@
+=== 23:24:35
+ 6089  6084 398.5 827152    06:54 jetcarp
+ 6128  6089  24.7 126976    04:05 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 1.2 of 10 min, 5,241 runs (1/s), 1,803 elites in 1,032 niches, 6 confirmed, 10 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 min 11 s run over every session, 18 confirmation runs, 6,402 candidates tried, 0.79 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 14 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:24:45
+ 6089  6084  10.7 764256    07:04 jetcarp
+ 6128  6089  21.5 126976    04:15 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 1.4 of 10 min, 5,241 runs (1/s), 1,803 elites in 1,032 niches, 6 confirmed, 10 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 min 22 s run over every session, 18 confirmation runs, 6,402 candidates tried, 0.79 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 14 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:24:55
+ 6089  6084 234.0 833408    07:14 jetcarp
+ 6128  6089  22.2 126992    04:25 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 1.5 of 10 min, 6,265 runs (0/s), 2,023 elites in 1,126 niches, 6 confirmed, 11 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 min 31 s run over every session, 18 confirmation runs, 7,474 candidates tried, 0.73 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 14 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:25:05
+ 6089  6084 357.3 908352    07:24 jetcarp
+ 6128  6089  38.0 127024    04:35 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 1.7 of 10 min, 7,312 runs (0/s), 2,220 elites in 1,224 niches, 6 confirmed, 13 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 min 42 s run over every session, 18 confirmation runs, 7,810 candidates tried, 0.79 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 15 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:25:15
+ 6089  6084 363.7 908896    07:34 jetcarp
+ 6128  6089  26.8 127024    04:45 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 1.9 of 10 min, 7,332 runs (1/s), 2,240 elites in 1,241 niches, 6 confirmed, 14 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 min 52 s run over every session, 18 confirmation runs, 7,810 candidates tried, 0.79 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:25:25
+ 6089  6084 430.4 920112    07:44 jetcarp
+ 6128  6089  27.2 127024    04:55 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 2 of 10 min, 7,332 runs (1/s), 2,240 elites in 1,241 niches, 6 confirmed, 14 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 min 3 s run over every session, 18 confirmation runs, 7,810 candidates tried, 0.79 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:25:35
+ 6089  6084  86.3 1017456    07:54 jetcarp
+ 6128  6089  32.7 127024    05:05 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 2.2 of 10 min, 7,332 runs (1/s), 2,240 elites in 1,241 niches, 6 confirmed, 14 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 min 11 s run over every session, 18 confirmation runs, 7,810 candidates tried, 0.79 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:25:45
+ 6089  6084 564.7 1391424    08:05 jetcarp
+ 6128  6089  25.0 127024    05:16 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 2.4 of 10 min, 7,380 runs (0/s), 2,259 elites in 1,249 niches, 102 confirmed, 14 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 min 22 s run over every session, 306 confirmation runs, 8,903 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:25:56
+ 6089  6084 919.2 2044560    08:15 jetcarp
+ 6128  6089  19.8 127024    05:26 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 2.5 of 10 min, 8,404 runs (74/s), 2,782 elites in 1,561 niches, 102 confirmed, 14 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 min 32 s run over every session, 306 confirmation runs, 9,927 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:26:06
+ 6089  6084 914.3 2417456    08:25 jetcarp
+ 6128  6089  18.8 127024    05:36 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 2.7 of 10 min, 8,404 runs (43/s), 2,782 elites in 1,561 niches, 102 confirmed, 14 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 min 42 s run over every session, 306 confirmation runs, 9,927 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 18 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:26:16
+ 6089  6084 456.5 2346672    08:35 jetcarp
+ 6128  6089  24.7 127024    05:46 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 2.9 of 10 min, 9,428 runs (59/s), 2,959 elites in 1,661 niches, 91 confirmed, 15 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 min 53 s run over every session, 306 confirmation runs, 10,951 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 19 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:26:26
+ 6089  6084 714.3 2446768    08:45 jetcarp
+ 6128  6089  23.1 127024    05:56 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 3.1 of 10 min, 10,452 runs (68/s), 3,117 elites in 1,741 niches, 86 confirmed, 16 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 min 3 s run over every session, 306 confirmation runs, 11,468 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 19 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:26:36
+ 6089  6084 470.1 2449760    08:55 jetcarp
+ 6128  6089  23.6 127024    06:06 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 3.2 of 10 min, 10,452 runs (56/s), 3,117 elites in 1,741 niches, 86 confirmed, 16 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 min 14 s run over every session, 306 confirmation runs, 11,468 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 19 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:26:46
+ 6089  6084 915.5 2237120    09:05 jetcarp
+ 6128  6089  19.6 127024    06:16 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 3.4 of 10 min, 10,969 runs (56/s), 3,141 elites in 1,758 niches, 86 confirmed, 17 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 min 22 s run over every session, 306 confirmation runs, 12,492 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 20 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:26:56
+ 6089  6084 896.8 2259440    09:15 jetcarp
+ 6128  6089  19.0 127040    06:26 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 3.5 of 10 min, 10,969 runs (49/s), 3,141 elites in 1,758 niches, 86 confirmed, 17 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 min 32 s run over every session, 306 confirmation runs, 12,492 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 20 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:27:06
+ 6089  6084 908.5 2256000    09:25 jetcarp
+ 6128  6089  19.4 127024    06:36 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 3.7 of 10 min, 11,993 runs (55/s), 3,256 elites in 1,810 niches, 79 confirmed, 18 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 min 43 s run over every session, 306 confirmation runs, 13,516 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 20 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:27:16
+ 6089  6084 523.7 2383616    09:35 jetcarp
+ 6128  6089  23.6 127024    06:46 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 3.9 of 10 min, 13,017 runs (59/s), 3,335 elites in 1,845 niches, 75 confirmed, 19 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 min 53 s run over every session, 306 confirmation runs, 14,540 candidates tried, 1.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 20 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:27:27
+ 6089  6084 1039.3 2415200    09:46 jetcarp
+ 6128  6089  15.1 127024    06:57 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 4 of 10 min, 14,041 runs (66/s), 3,614 elites in 1,986 niches, 82 confirmed, 19 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 4 min 2 s run over every session, 327 confirmation runs, 14,660 candidates tried, 2.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 21 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:27:37
+ 6089  6084  86.3 2336880    09:56 jetcarp
+ 6128  6089  33.3 127024    07:07 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 4.2 of 10 min, 14,065 runs (2/s), 3,633 elites in 1,996 niches, 82 confirmed, 20 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 4 min 13 s run over every session, 327 confirmation runs, 14,660 candidates tried, 2.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 28 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:27:47
+ 6089  6084  87.0 2284208    10:06 jetcarp
+ 6128  6089  35.8 127024    07:17 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 4.4 of 10 min, 14,065 runs (1/s), 3,633 elites in 1,996 niches, 82 confirmed, 20 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 4 min 23 s run over every session, 327 confirmation runs, 14,660 candidates tried, 2.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 28 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:27:57
+ 6089  6084  94.8 2284240    10:16 jetcarp
+ 6128  6089  35.6 127040    07:27 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 4.6 of 10 min, 14,065 runs (1/s), 3,633 elites in 1,996 niches, 82 confirmed, 20 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 4 min 34 s run over every session, 327 confirmation runs, 14,660 candidates tried, 2.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 28 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:28:07
+ 6089  6084 624.7 2349600    10:26 jetcarp
+ 6128  6089  23.6 125840    07:37 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 4.7 of 10 min, 14,065 runs (0/s), 3,633 elites in 1,996 niches, 106 confirmed, 20 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 4 min 43 s run over every session, 399 confirmation runs, 15,732 candidates tried, 2.18 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 28 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:28:17
+ 6089  6084 840.3 2351456    10:36 jetcarp
+ 6128  6089  18.9 127040    07:47 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 4.9 of 10 min, 16,128 runs (163/s), 4,479 elites in 2,502 niches, 106 confirmed, 22 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 4 min 54 s run over every session, 399 confirmation runs, 17,828 candidates tried, 2.24 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 31 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:28:27
+ 6089  6084 1004.0 2360560    10:46 jetcarp
+ 6128  6089  15.6 127184    07:57 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 5.1 of 10 min, 17,200 runs (136/s), 4,625 elites in 2,571 niches, 105 confirmed, 24 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 5 min 3 s run over every session, 399 confirmation runs, 17,828 candidates tried, 2.24 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 33 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:28:37
+ 6089  6084 649.3 2364032    10:56 jetcarp
+ 6128  6089  22.3 127184    08:07 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 5.2 of 10 min, 18,272 runs (103/s), 5,132 elites in 2,875 niches, 105 confirmed, 26 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 5 min 13 s run over every session, 399 confirmation runs, 19,951 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 33 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:28:47
+ 6089  6084 843.6 2364816    11:06 jetcarp
+ 6128  6089  21.7 127184    08:17 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 5.4 of 10 min, 19,296 runs (101/s), 5,483 elites in 3,081 niches, 105 confirmed, 27 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 5 min 24 s run over every session, 399 confirmation runs, 20,975 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 33 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:28:58
+ 6089  6084 554.2 2377040    11:17 jetcarp
+ 6128  6089  24.6 127184    08:28 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 5.6 of 10 min, 20,320 runs (100/s), 5,613 elites in 3,139 niches, 105 confirmed, 28 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 5 min 34 s run over every session, 399 confirmation runs, 21,530 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 33 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:29:08
+ 6089  6084 919.9 2376944    11:27 jetcarp
+ 6128  6089  17.9 127184    08:38 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 5.7 of 10 min, 20,875 runs (88/s), 5,680 elites in 3,173 niches, 105 confirmed, 28 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 5 min 45 s run over every session, 399 confirmation runs, 21,818 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 34 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:29:18
+ 6089  6084 461.5 2384480    11:37 jetcarp
+ 6128  6089  24.0 127184    08:48 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 5.9 of 10 min, 20,875 runs (71/s), 5,680 elites in 3,173 niches, 105 confirmed, 28 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 5 min 55 s run over every session, 399 confirmation runs, 21,818 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 34 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:29:28
+ 6089  6084 666.8 2305488    11:47 jetcarp
+ 6128  6089  24.0 127184    08:58 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 6.1 of 10 min, 20,875 runs (59/s), 5,680 elites in 3,173 niches, 105 confirmed, 28 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 6 min 5 s run over every session, 399 confirmation runs, 21,818 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 34 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:29:38
+ 6089  6084 789.1 2372560    11:57 jetcarp
+ 6128  6089  22.2 127232    09:08 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 6.2 of 10 min, 20,875 runs (52/s), 5,680 elites in 3,173 niches, 201 confirmed, 28 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 6 min 14 s run over every session, 687 confirmation runs, 22,842 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 35 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:29:48
+ 6089  6084 459.1 2512896    12:07 jetcarp
+ 6128  6089  25.1 127232    09:18 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 6.4 of 10 min, 21,899 runs (58/s), 5,821 elites in 3,238 niches, 188 confirmed, 29 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 6 min 24 s run over every session, 687 confirmation runs, 23,866 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 35 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:29:58
+ 6089  6084 462.3 2315328    12:17 jetcarp
+ 6128  6089  26.7 127232    09:28 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 6.6 of 10 min, 21,899 runs (51/s), 5,821 elites in 3,238 niches, 188 confirmed, 29 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 6 min 35 s run over every session, 687 confirmation runs, 23,866 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 35 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:30:08
+ 6089  6084 121.4 2466704    12:27 jetcarp
+ 6128  6089  30.2 127232    09:38 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 6.7 of 10 min, 21,899 runs (46/s), 5,821 elites in 3,238 niches, 197 confirmed, 29 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 6 min 45 s run over every session, 714 confirmation runs, 23,866 candidates tried, 2.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 36 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:30:18
+ 6089  6084 177.0 2526640    12:37 jetcarp
+ 6128  6089  25.3 127232    09:48 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 6.9 of 10 min, 22,923 runs (0/s), 6,032 elites in 3,343 niches, 197 confirmed, 29 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 6 min 55 s run over every session, 714 confirmation runs, 24,439 candidates tried, 2.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 37 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:30:28
+ 6089  6084 1035.2 2410128    12:48 jetcarp
+ 6128  6089  11.9 126032    09:59 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 7.1 of 10 min, 23,461 runs (33/s), 6,071 elites in 3,363 niches, 185 confirmed, 31 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 7 min 4 s run over every session, 714 confirmation runs, 25,511 candidates tried, 2.31 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 38 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:30:39
+ 6089  6084 103.4 2457248    12:58 jetcarp
+ 6128  6089  35.7 127232    10:09 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 7.2 of 10 min, 23,479 runs (1/s), 6,079 elites in 3,367 niches, 185 confirmed, 32 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 7 min 15 s run over every session, 714 confirmation runs, 25,511 candidates tried, 2.31 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 44 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:30:49
+ 6089  6084 775.2 2445680    13:08 jetcarp
+ 6128  6089  22.1 127232    10:19 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 7.4 of 10 min, 24,503 runs (0/s), 6,165 elites in 3,407 niches, 179 confirmed, 33 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 7 min 26 s run over every session, 714 confirmation runs, 26,583 candidates tried, 2.37 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 44 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:30:59
+ 6089  6084 101.1 2610992    13:18 jetcarp
+ 6128  6089  35.1 127232    10:29 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 7.6 of 10 min, 25,618 runs (8/s), 6,563 elites in 3,648 niches, 179 confirmed, 34 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 7 min 36 s run over every session, 714 confirmation runs, 27,655 candidates tried, 2.33 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 46 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:31:09
+ 6089  6084 1042.4 2567632    13:28 jetcarp
+ 6128  6089  14.3 127232    10:39 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 7.8 of 10 min, 26,642 runs (73/s), 6,804 elites in 3,759 niches, 179 confirmed, 35 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 7 min 46 s run over every session, 714 confirmation runs, 28,727 candidates tried, 2.45 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 46 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:31:19
+ 6089  6084 101.5 2630416    13:38 jetcarp
+ 6128  6089  34.3 127264    10:49 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 7.9 of 10 min, 26,656 runs (1/s), 6,808 elites in 3,762 niches, 179 confirmed, 36 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 7 min 56 s run over every session, 714 confirmation runs, 28,727 candidates tried, 2.45 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 49 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:31:29
+ 6089  6084 941.9 2633440    13:48 jetcarp
+ 6128  6089  18.3 127264    10:59 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 8.1 of 10 min, 27,680 runs (0/s), 6,919 elites in 3,804 niches, 175 confirmed, 37 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 8 min 6 s run over every session, 714 confirmation runs, 29,063 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 49 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:31:39
+ 6089  6084  93.4 2575824    13:58 jetcarp
+ 6128  6089  33.6 127264    11:09 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 8.3 of 10 min, 27,703 runs (1/s), 6,927 elites in 3,807 niches, 175 confirmed, 38 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 8 min 16 s run over every session, 714 confirmation runs, 29,063 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 52 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:31:49
+ 6089  6084 553.1 2574736    14:09 jetcarp
+ 6128  6089  20.6 127280    11:20 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 8.4 of 10 min, 27,703 runs (1/s), 6,927 elites in 3,807 niches, 271 confirmed, 38 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 8 min 27 s run over every session, 1,002 confirmation runs, 29,063 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 52 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:32:00
+ 6089  6084 463.7 2634112    14:19 jetcarp
+ 6128  6089  21.1 127280    11:30 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 8.6 of 10 min, 27,751 runs (5/s), 6,956 elites in 3,823 niches, 271 confirmed, 38 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 8 min 37 s run over every session, 1,002 confirmation runs, 30,135 candidates tried, 2.46 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 54 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:32:10
+ 6089  6084 459.5 2632288    14:29 jetcarp
+ 6128  6089  23.6 127280    11:40 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 8.8 of 10 min, 28,797 runs (3/s), 7,149 elites in 3,920 niches, 271 confirmed, 39 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 8 min 47 s run over every session, 1,002 confirmation runs, 31,207 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 54 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:32:20
+ 6089  6084 1020.3 2568448    14:39 jetcarp
+ 6128  6089  16.7 127280    11:50 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 8.9 of 10 min, 29,821 runs (64/s), 7,243 elites in 3,962 niches, 269 confirmed, 40 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 8 min 57 s run over every session, 1,002 confirmation runs, 32,279 candidates tried, 2.45 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 54 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:32:30
+ 6089  6084 842.1 2635568    14:49 jetcarp
+ 6128  6089  17.3 127280    12:00 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 9.1 of 10 min, 30,861 runs (86/s), 7,317 elites in 3,990 niches, 256 confirmed, 42 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 min 7 s run over every session, 1,002 confirmation runs, 32,279 candidates tried, 2.45 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 58 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:32:40
+ 6089  6084  94.0 2646272    14:59 jetcarp
+ 6128  6089  34.0 127280    12:10 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 9.3 of 10 min, 30,875 runs (1/s), 7,323 elites in 3,991 niches, 255 confirmed, 43 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 min 17 s run over every session, 1,002 confirmation runs, 33,001 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 60 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:32:50
+ 6089  6084  90.1 2644224    15:09 jetcarp
+ 6128  6089  33.2 127280    12:20 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 9.5 of 10 min, 30,875 runs (1/s), 7,323 elites in 3,991 niches, 255 confirmed, 43 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 min 28 s run over every session, 1,002 confirmation runs, 33,001 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 60 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:33:00
+ 6089  6084 702.3 2643184    15:19 jetcarp
+ 6128  6089  23.9 127312    12:30 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 9.6 of 10 min, 31,549 runs (27/s), 7,347 elites in 3,997 niches, 251 confirmed, 44 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 min 36 s run over every session, 1,002 confirmation runs, 34,073 candidates tried, 2.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 60 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:33:10
+ 6089  6084 1010.3 2584416    15:30 jetcarp
+ 6128  6089  15.8 127312    12:41 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 9.8 of 10 min, 32,621 runs (73/s), 7,444 elites in 4,043 niches, 239 confirmed, 45 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 min 47 s run over every session, 1,002 confirmation runs, 34,073 candidates tried, 2.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:33:21
+ 6089  6084  97.4 2623296    15:40 jetcarp
+ 6128  6089  33.6 127312    12:51 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 10 of 10 min, 32,641 runs (2/s), 7,445 elites in 4,044 niches, 239 confirmed, 45 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 min 57 s run over every session, 1,002 confirmation runs, 34,815 candidates tried, 2.46 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:33:31
+ 6089  6084 1036.2 2663680    15:50 jetcarp
+ 6128  6089  13.2 126112    13:01 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 10 of 10 min, 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal; publishing its atlas into the Quick Start
+  status running, 10 min 1 s run over every session, 1,002 confirmation runs, 34,815 candidates tried, 2.50 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:33:41
+ 6089  6084 1043.1 2812752    16:00 jetcarp
+ 6128  6089   0.2 126112    13:11 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 10 of 10 min, 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal; publishing its atlas into the Quick Start
+  status running, 10 min 1 s run over every session, 1,002 confirmation runs, 34,815 candidates tried, 2.50 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:33:51
+ 6089  6084 1043.2 2832560    16:10 jetcarp
+ 6128  6089   0.0 126112    13:21 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 10 of 10 min, 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal; publishing its atlas into the Quick Start
+  status running, 10 min 1 s run over every session, 1,002 confirmation runs, 34,815 candidates tried, 2.50 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:34:01
+ 6089  6084 293.1 2669552    16:20 jetcarp
+ 6128  6089   0.0 126112    13:31 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 10 of 10 min, 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal; publishing its atlas into the Quick Start
+  status running, 10 min 1 s run over every session, 1,002 confirmation runs, 34,815 candidates tried, 2.50 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== 23:34:11
+ 6089  6084  96.6 2527680    16:30 jetcarp
+ 6128  6089   0.2 126112    13:41 /Users/Jimmie/.local/bin/jetcarp host serve
+Quick Start build (explore 2): 1,070 atlas entries published (1070 new, 0 updated, 0 removed); 33,335 runs (53/s), 7,504 elites in 4,069 niches, 233 confirmed, 46 of 1,359 tilings; Apple M2 Max, Metal
+  status done, 10 min 39 s run over every session, 1,002 confirmation runs, 34,815 candidates tried, 2.50 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 61 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+=== not running any more 23:34:11
+=== poller ended 23:34:11

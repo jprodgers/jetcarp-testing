@@ -1,0 +1,23 @@
+host_stop_returns_once_the_host_has_gone alone, 10 runs a GPU, src 41f7f2f Windows: a refused host serve --saver says so on the command line, not in a message box (#120)
+RTX run 1: ok in 3.0 s 
+RTX run 2: ok in 2.4 s 
+RTX run 3: ok in 3.0 s 
+RTX run 4: ok in 2.4 s 
+RTX run 5: ok in 3.5 s 
+RTX run 6: ok in 3.2 s 
+RTX run 7: ok in 2.8 s 
+RTX run 8: ok in 2.7 s 
+RTX run 9: ok in 3.2 s 
+RTX run 10: ok in 3.2 s 
+RTX : 10 of 10 passed
+UHD run 1: ok in 2.8 s 
+UHD run 2: ok in 2.4 s 
+UHD run 3: ok in 3.2 s 
+UHD run 4: ok in 3.3 s 
+UHD run 5: ok in 3.2 s 
+UHD run 6: ok in 2.8 s 
+UHD run 7: ok in 3.5 s 
+UHD run 8: ok in 2.9 s 
+UHD run 9: ok in 2.7 s 
+UHD run 10: ok in 2.4 s 
+UHD : 10 of 10 passed

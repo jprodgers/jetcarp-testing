@@ -1,0 +1,32 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "explore 1 run 19160: B367/S125678",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "31155525533858116",
+  "cas": [
+    {
+      "rule": "B367/S125678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "disc",
+            "radius": 0.43
+          },
+          "fill": {
+            "density": 0.18
+          }
+        }
+      }
+    }
+  ]
+}

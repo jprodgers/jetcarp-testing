@@ -1,0 +1,10 @@
+$ jetcarp --version
+jetcarp 0.4.2-rc.1
+exit 0
+
+$ jetcarp paths
+settings: /Users/Jimmie/jetcarp-rc-042/config
+data:     /Users/Jimmie/jetcarp-rc-042/data
+output:   /Users/Jimmie/jetcarp-rc-042/out
+bundled:  /Users/Jimmie/jetcarp-rc-042/bin/packs
+exit 0

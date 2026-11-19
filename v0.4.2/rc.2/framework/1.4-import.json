@@ -1,0 +1,64 @@
+sha256:a5ec764981d067cd119d3d053c028177a797039e4870a72ab202d6814d0f0285: feed rc2-long, by SHA256:mCxhc7nMNIQun2eeS2jgR/QgRBd9bLH7wZ924OsXGLc (rc.2 test publisher), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 7b460dca-febf-44c7-b350-f0e7a224c163: copying its segments and rebuilding its state
+merging sightings
+{
+  "dry_run": false,
+  "feed": "rc2-long",
+  "manifest": "sha256:a5ec764981d067cd119d3d053c028177a797039e4870a72ab202d6814d0f0285",
+  "notes": [
+    "search 7b460dca-febf-44c7-b350-f0e7a224c163: 2260977 runs, 66824 elites in 29158 niches, rebuilt in 5.2 s"
+  ],
+  "publisher": "SHA256:mCxhc7nMNIQun2eeS2jgR/QgRBd9bLH7wZ924OsXGLc",
+  "publisher_name": "rc.2 test publisher",
+  "report": {
+    "aliases": 0,
+    "ants": 0,
+    "bytes_checked": 176170198,
+    "dry_run": false,
+    "feed": "rc2-long",
+    "flagged": 0,
+    "manifest": "sha256:a5ec764981d067cd119d3d053c028177a797039e4870a72ab202d6814d0f0285",
+    "media": 0,
+    "notes": [
+      "search 7b460dca-febf-44c7-b350-f0e7a224c163: 2260977 runs, 66824 elites in 29158 niches, rebuilt in 5.2 s"
+    ],
+    "objects_checked": 14,
+    "patterns_added": 1454,
+    "patterns_merged": 0,
+    "publisher": "SHA256:mCxhc7nMNIQun2eeS2jgR/QgRBd9bLH7wZ924OsXGLc",
+    "publisher_name": "rc.2 test publisher",
+    "quickstart": 0,
+    "ratings": 0,
+    "rebuilt": [
+      {
+        "confirmed": 29232,
+        "elites": 66824,
+        "niches": 29158,
+        "runs": 2260977,
+        "screened": 2231745,
+        "seconds": 5.2,
+        "seen": 2260977
+      }
+    ],
+    "retracted": 0,
+    "sample": {
+      "checked": 1454,
+      "failures": [],
+      "mode": "sample",
+      "n": 1454,
+      "passed": 1454,
+      "seconds": 0.1,
+      "seed": "a5ec764981d067cd",
+      "skipped": 0
+    },
+    "searches": [
+      "7b460dca-febf-44c7-b350-f0e7a224c163"
+    ],
+    "sightings": 1783,
+    "signed": "publisher",
+    "superseded": 0
+  },
+  "signed": "publisher"
+}

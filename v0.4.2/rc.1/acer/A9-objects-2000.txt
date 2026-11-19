@@ -1,0 +1,104 @@
+﻿scene:      A9-soup.json
+tiling:     Square (parallelogram) (square): 1048576 cells, 1024x1024 unit cells, 1 tile type(s), storage dense, edges dead
+generation: 2000  hash cd2e2907c6518391
+rule:       B3/S23 (CA 1, field 0), 683 live cells
+objects:    81 (still lifes 38, oscillators 11, spaceships 14, other 18), 8 symmetries, periods up to 64
+census:     block x 17, glider (c/4) x 13, blinker (p2) x 11, other (unsettled) x 11, beehive x 10, loaf x 5, other (grows) x 5, boat x 3, other (dies) x 2, MWSS (c/2) x 1, eater 1 x 1, long boat x 1, ship x 1
+
+ count  class       period  cells  key       name
+    17  still life       1      4  a8307012  block
+    13  spaceship        4      5  5a080db3  glider (c/4), c/4 diagonal
+    11  oscillator       2      3  9c85980f  blinker (p2)
+    11  other            -      3            other (unsettled)
+    10  still life       1      6  8aee82b1  beehive
+     5  still life       1      7  0c224d06  loaf
+     5  other            -     15            other (grows)
+     3  still life       1      5  72831a72  boat
+     2  other            -      9            other (dies)
+     1  spaceship        4     15  77364004  MWSS (c/2), c/2 orthogonal
+     1  still life       1      7  dfd22d6a  eater 1
+     1  still life       1      7  207be297  long boat
+     1  still life       1      6  7cddc9ca  ship
+
+#0     glider                       cells    5  centroid (119.3, 72.1)  ooo/o/.o
+#1     glider                       cells    5  centroid (931.3, 102.3)  ooo/o/.o
+#2     glider                       cells    5  centroid (643.9, 298.3)  ooo/o/.o
+#3     glider                       cells    5  centroid (686.7, 347.1)  ooo/o/.o
+#4     MWSS                         cells   15  centroid (499.9, 351.2)  ooooo/o....o/o/.o...o/...o
+#5     glider                       cells    5  centroid (408.3, 381.1)  ooo/o/.o
+#6     glider                       cells    5  centroid (533.1, 425.3)  ooo/o/.o
+#7     other (grows)                cells   15  centroid (507.6, 433.0)  
+#8     other (unsettled)            cells    3  centroid (510.8, 441.2)  
+#9     blinker                      cells    3  centroid (552.5, 440.5)  ooo
+#10    glider                       cells    5  centroid (501.3, 446.3)  ooo/o/.o
+#11    other (unsettled)            cells    6  centroid (552.0, 449.5)  
+#12    loaf                         cells    7  centroid (515.8, 454.2)  .oo/o..o/o.o/.o
+#13    other (unsettled)            cells   22  centroid (550.2, 455.5)  
+#14    other (unsettled)            cells   49  centroid (498.7, 457.6)  
+#15    beehive                      cells    6  centroid (523.0, 454.5)  .oo/o..o/.oo
+#16    block                        cells    4  centroid (540.0, 455.0)  oo/oo
+#17    glider                       cells    5  centroid (630.9, 458.3)  ooo/o/.o
+#18    block                        cells    4  centroid (524.0, 462.0)  oo/oo
+#19    block                        cells    4  centroid (524.0, 465.0)  oo/oo
+#20    other (grows)                cells   16  centroid (535.8, 463.6)  
+#21    block                        cells    4  centroid (545.0, 463.0)  oo/oo
+#22    block                        cells    4  centroid (501.0, 467.0)  oo/oo
+#23    other (grows)                cells   13  centroid (506.0, 469.3)  
+#24    other (unsettled)            cells   34  centroid (559.7, 471.4)  
+#25    beehive                      cells    6  centroid (476.0, 468.5)  .oo/o..o/.oo
+#26    other (grows)                cells    7  centroid (572.6, 471.9)  
+#27    beehive                      cells    6  centroid (538.5, 473.0)  .oo/o..o/.oo
+#28    other (unsettled)            cells    6  centroid (568.3, 473.0)  
+#29    other (dies)                 cells    9  centroid (545.2, 473.4)  
+#30    beehive                      cells    6  centroid (482.0, 475.5)  .oo/o..o/.oo
+#31    beehive                      cells    6  centroid (534.0, 477.5)  .oo/o..o/.oo
+#32    beehive                      cells    6  centroid (538.5, 482.0)  .oo/o..o/.oo
+#33    other (unsettled)            cells   20  centroid (552.6, 483.4)  
+#34    other (dies)                 cells    9  centroid (492.2, 485.7)  
+#35    other (unsettled)            cells   41  centroid (503.6, 490.5)  
+#36    beehive                      cells    6  centroid (468.0, 487.5)  .oo/o..o/.oo
+#37    boat                         cells    5  centroid (483.7, 487.7)  oo/o.o/.o
+#38    block                        cells    4  centroid (527.0, 489.0)  oo/oo
+#39    blinker                      cells    3  centroid (559.5, 490.5)  ooo
+#40    long boat                    cells    7  centroid (577.2, 490.8)  oo/o.o/.o.o/..o
+#41    other (unsettled)            cells   12  centroid (492.6, 492.8)  
+#42    block                        cells    4  centroid (549.0, 492.0)  oo/oo
+#43    eater 1                      cells    7  centroid (467.9, 495.1)  oo/o.o/..o/..oo
+#44    glider                       cells    5  centroid (461.1, 499.3)  ooo/o/.o
+#45    loaf                         cells    7  centroid (554.8, 499.8)  .oo/o..o/o.o/.o
+#46    beehive                      cells    6  centroid (516.0, 501.5)  .oo/o..o/.oo
+#47    blinker                      cells    3  centroid (548.5, 500.5)  ooo
+#48    block                        cells    4  centroid (511.0, 503.0)  oo/oo
+#49    block                        cells    4  centroid (506.0, 505.0)  oo/oo
+#50    block                        cells    4  centroid (541.0, 505.0)  oo/oo
+#51    block                        cells    4  centroid (528.0, 506.0)  oo/oo
+#52    block                        cells    4  centroid (551.0, 506.0)  oo/oo
+#53    boat                         cells    5  centroid (461.3, 507.3)  oo/o.o/.o
+#54    blinker                      cells    3  centroid (468.5, 512.5)  ooo
+#55    blinker                      cells    3  centroid (471.5, 515.5)  ooo
+#56    loaf                         cells    7  centroid (519.2, 512.8)  .oo/o..o/o.o/.o
+#57    loaf                         cells    7  centroid (526.8, 514.2)  .oo/o..o/o.o/.o
+#58    other (grows)                cells   47  centroid (488.1, 524.9)  
+#59    loaf                         cells    7  centroid (500.2, 516.2)  .oo/o..o/o.o/.o
+#60    beehive                      cells    6  centroid (505.5, 516.0)  .oo/o..o/.oo
+#61    other (unsettled)            cells   39  centroid (477.0, 523.0)  
+#62    block                        cells    4  centroid (545.0, 517.0)  oo/oo
+#63    other (unsettled)            cells   24  centroid (464.2, 521.2)  
+#64    block                        cells    4  centroid (516.0, 518.0)  oo/oo
+#65    boat                         cells    5  centroid (535.3, 518.7)  oo/o.o/.o
+#66    blinker                      cells    3  centroid (508.5, 527.5)  ooo
+#67    beehive                      cells    6  centroid (510.0, 532.5)  .oo/o..o/.oo
+#68    blinker                      cells    3  centroid (530.5, 537.5)  ooo
+#69    blinker                      cells    3  centroid (527.5, 540.5)  ooo
+#70    blinker                      cells    3  centroid (533.5, 540.5)  ooo
+#71    blinker                      cells    3  centroid (530.5, 543.5)  ooo
+#72    block                        cells    4  centroid (541.0, 538.0)  oo/oo
+#73    blinker                      cells    3  centroid (487.5, 539.5)  ooo
+#74    block                        cells    4  centroid (526.0, 559.0)  oo/oo
+#75    block                        cells    4  centroid (522.0, 567.0)  oo/oo
+#76    ship                         cells    6  centroid (531.5, 577.5)  oo/o.o/.oo
+#77    glider                       cells    5  centroid (651.3, 581.7)  ooo/o/.o
+#78    glider                       cells    5  centroid (696.3, 726.7)  ooo/o/.o
+#79    glider                       cells    5  centroid (763.7, 773.9)  ooo/o/.o
+#80    glider                       cells    5  centroid (144.3, 927.3)  ooo/o/.o
+time:       0.38s on 12 threads

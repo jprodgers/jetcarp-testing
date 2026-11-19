@@ -1,0 +1,83 @@
+#### R5 #127: progress lines in a 60-column window, wt with ps, rc.5, 2026-11-17 18:00:19; COLUMNS unset; each row prefixed with its number
+(the shell, powershell.exe, runs under WindowsTerminal.exe)
+#### during the explore (15 s in), 18:00:39
+(buffer 60 columns; window 60 x 50; cursor row 24; output mode 0x7)
+000|$ jetcarp --version
+001|jetcarp 0.4.2-rc.5
+002|$ jetcarp pack import packs\jetcarp-starter
+003|sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c18
+004|6bb59707a29: feed jetcarp-starter, by SHA256:0J4+ipNwh5xrxnE
+005|AhZzMqa2apSMLHd/KtJbgFGAQCW0 (Jimmie Rodgers), checking ever
+006|y object
+007|reading verifications, sightings, provenance and annotations
+008|checking ids and storing patterns
+009|merging sightings
+010|imported sha256:722f77500b8ae070897b8e14b413836d6bd11f88e667
+011|4fb9d9c186bb59707a29 (feed jetcarp-starter, SHA256:0J4+ipNwh
+012|5xrxnEAhZzMqa2apSMLHd/KtJbgFGAQCW0 Jimmie Rodgers, signed by
+013| its publisher)
+014|  49 objects checked (1515304 bytes)
+015|  patterns: 26 added, 0 merged, 0 flagged needs_reverify
+016|  sightings 27, ratings 0, ants 8, Quick Start 79, media 0,
+017|searches 0, retracted 0
+018|  verified again (sample): 26 of 26 passed, 0 skipped, 0 fai
+019|led
+020|$ jetcarp search explore --minutes 0.5
+021|explore search job 22 in ~\jetcarp-rc5\n127-wt-
+022|ps\library\library.sqlite
+023|GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+024|explore 22: 64 runs (5/s), 61 elites in 41 niches (0 of th…
+
+#### at the end, 18:00:58
+(buffer 60 columns; window 60 x 50; cursor row 49; output mode 0x7)
+000|checking ids and storing patterns
+001|merging sightings
+002|imported sha256:722f77500b8ae070897b8e14b413836d6bd11f88e667
+003|4fb9d9c186bb59707a29 (feed jetcarp-starter, SHA256:0J4+ipNwh
+004|5xrxnEAhZzMqa2apSMLHd/KtJbgFGAQCW0 Jimmie Rodgers, signed by
+005| its publisher)
+006|  49 objects checked (1515304 bytes)
+007|  patterns: 26 added, 0 merged, 0 flagged needs_reverify
+008|  sightings 27, ratings 0, ants 8, Quick Start 79, media 0,
+009|searches 0, retracted 0
+010|  verified again (sample): 26 of 26 passed, 0 skipped, 0 fai
+011|led
+012|$ jetcarp search explore --minutes 0.5
+013|explore search job 22 in ~\jetcarp-rc5\n127-wt-
+014|ps\library\library.sqlite
+015|GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+016|explore 22: 111 runs (4/s), 94 elites in 63 niches (0 of t…
+017|explore 22: 111 runs (4/s), 94 elites in 63 niches (0 of the
+018|m confirmed), 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6G
+019|B Laptop GPU (NVIDIA), Vulkan
+020|  status paused, 28 s run over every session, 0 confirmation
+021| runs, 1,136 candidates tried, 0.23 GB of memory
+022|  threads: 6 for runs on the processor and 4 for the GPU's b
+023|atches, of 12 cores (2 left free)
+024|  this session: 16 runs on the processor stopped at their ti
+025|me cap (kept with the generations they reached), 1,025 runs
+026|given up at a stop or the end (not kept)
+027|  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (
+028|no other runs read)
+029|  family                     runs   mean   best  elites
+030|  life_like                    26   0.31   0.76      24
+031|  generations                  16   0.59   1.40      15
+032|  turmite                      12   0.71   1.51       7
+033|  lenia                        10   0.35   1.44       6
+034|  layered                       9   0.35   1.36       8
+035|  sandpile                      9   0.41   0.81       5
+036|  forest_fire                   7   0.65   0.96       7
+037|  jaca                          5   0.17   0.53       5
+038|  priority                      5   0.20   0.45       5
+039|  cyclic                        3   0.43   0.71       3
+040|  greenberg_hastings            3   0.74   1.93       3
+041|  hodgepodge                    3   0.13   0.15       3
+042|  rps                           3   0.29   0.47       3
+043|  folder: ~\jetcarp-rc5\n127-wt-ps\library\sear
+044|ches\dcb2c40e-30c7-47c3-be3d-a5b845876112
+045|explore search 22 paused (at its budget); `jetcarp jobs resu
+046|me 22` continues it from its archive (not run for run: the s
+047|earch is not deterministic)
+048|done-104
+049|
+

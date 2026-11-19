@@ -1,0 +1,1 @@
+﻿search hunt --rules B3/S23,B36/S23,B2/S34 --tilings square,hex --soups 30 --label groups

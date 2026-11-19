@@ -1,0 +1,155 @@
+started CLI explore, pid 20806  [08:22:49]
+== MCP search_start hunt (server thread) -> isError=False
+{
+  "folder": null,
+  "job": 13,
+  "kind": "hunt",
+  "line": "hunt 13: 0/20,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "background",
+  "note": "The job runs in the background: job_status {\"job\": 13, \"wait_s\": 300} waits for it, job_stop {\"job\": 13} stops it, search_start {\"resume\": 13} carries it on.",
+  "started": true,
+  "status": "running"
+}
+$ jetcarp jobs list   [08:23:02]
+   13  hunt     running  2026-11-16T13:22:57Z  hunt 13: 5,404/20,000,000 soups in each of 2 groups, 2810 soups/s, 151,471 objects (ships 13,176, osc 38,716, still 99,579), 68 distinct, 0 new | newest: still life 14c #4b1e8d (B3/S23)
+   12  explore  running  2026-11-16T13:22:50Z  explore 12: 1,024 runs (111/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; Apple M2 Max, Metal
+   11  hunt     paused   2026-11-16T13:19:11Z  hunt 11: 264,722/2,000,000 soups, 2189 soups/s, 5,714,448 objects (ships 506,116, osc 1,654,023, still 3,554,309), 111 distinct, 43 new | newest: still life 8c #93cf2e (B3/S23)
+   10  explore  paused   2026-11-16T12:47:51Z  explore 10: 5,223 runs (89/s), 1,866 elites in 1,048 niches (20 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+    9  explore  paused   2026-11-16T12:47:39Z  explore 9: 1,038 runs (109/s), 411 elites in 250 niches (0 of them confirmed), 2 of 1,359 tilings; Apple M2 Max, Metal
+    8  hunt     done     2026-11-16T12:47:37Z  hunt 8: 300/300 soups, 1082 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    7  hunt     paused   2026-11-16T12:46:49Z  hunt 7: 7,985/50,000,000 soups, 1555 soups/s, 168,922 objects (ships 15,036, osc 49,045, still 104,841), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+    6  explore  paused   2026-11-16T12:46:17Z  explore 6: 5,120 runs (169/s), 671 elites in 315 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+    5  hunt     paused   2026-11-16T12:46:15Z  hunt 5: 55,654/50,000,000 soups, 1651 soups/s, 1,198,533 objects (ships 106,109, osc 347,562, still 744,862), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+    4  pile     done     2026-11-16T12:46:10Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T12:45:05Z  explore 3: 7,856 runs (133/s), 1,024 elites in 505 niches (56 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+    2  hunt     paused   2026-11-16T12:44:58Z  hunt 2: 615,594/10,000,000 soups, 8917 soups/s, 4,266,810 objects (ships 336,061, osc 636,017, still 3,294,732), 91 distinct, 91 new | newest: still life 19c #66a817 (B36/S23)
+    1  hunt     done     2026-11-16T12:44:56Z  hunt 1: 3,000/3,000 soups, 2070 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+13 job(s); 2 running
+
+exit 0
+== MCP job_status {status: running} -> isError=False
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/m6/library/library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-16T13:22:57Z",
+      "job": 13,
+      "kind": "hunt",
+      "label": "f9-5.2-mcp",
+      "line": "hunt 13: 5,404/20,000,000 soups in each of 2 groups, 2810 soups/s, 151,471 objects (ships 13,176, osc 38,716, still 99,579), 68 distinct, 0 new | newest: still life 14c #4b1e8d (B3/S23)",
+      "status": "running",
+      "updated": "2026-11-16T13:23:01Z"
+    },
+    {
+      "created": "2026-11-16T13:22:50Z",
+      "job": 12,
+      "kind": "explore",
+      "label": "f9-5.2-cli",
+      "line": "explore 12: 1,024 runs (111/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; Apple M2 Max, Metal",
+      "status": "running",
+      "updated": "2026-11-16T13:23:01Z"
+    }
+  ]
+}
+(the CLI explore is job 12, the MCP hunt job 13)
+== MCP job_stop 12 (the CLI's explore) -> isError=False
+{
+  "job": 12,
+  "kind": "explore",
+  "note": "It stops at its next checkpoint and stays resumable with search_start {\"resume\": 12}.",
+  "status": "running",
+  "stopping": true
+}
+$ jetcarp jobs stop 13   [08:23:12]
+asked hunt 13 to stop at its next checkpoint
+
+exit 0
+CLI explore process exited 0 1.9 s after MCP's job_stop
+== MCP job_status 13 wait_s 60 (after the CLI's jobs stop) -> isError=False
+hunt 13: 21,282/20,000,000 soups in each of 2 groups, 2670 soups/s, 603,690 objects (ships 52,127, osc 154,194, still 397,369), 91 distinct, 0 new | newest: still life 14c #427971 (B3/S23)
+  status paused, 16 s run, 42068 settled, 325 died, 170 exploded, 1 unsettled, GPU Apple M2 Max, Metal
+  B36/S23 on Square: 21282 soups, 146489 objects (oscillator 21757, spaceship 11612, still life 113120), 40 distinct, 0 new
+  B3/S23 on Square: 21282 soups, 457201 objects (oscillator 132437, spaceship 40515, still life 284249), 51 distinct, 0 new
+  newest finds:
+    427971ca7cb3f235917c1c44c03c2b92  still life 14c #427971             B3/S23     Square soup 21229
+    f604b33e874ae8109ab13c34f6ed8484  stil
+$ jetcarp jobs list   [08:23:14]
+   13  hunt     paused   2026-11-16T13:22:57Z  hunt 13: 21,282/20,000,000 soups in each of 2 groups, 2670 soups/s, 603,690 objects (ships 52,127, osc 154,194, still 397,369), 91 distinct, 0 new | newest: still life 14c #427971 (B3/S23)
+   12  explore  paused   2026-11-16T13:22:50Z  explore 12: 3,072 runs (135/s), 785 elites in 437 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+   11  hunt     paused   2026-11-16T13:19:11Z  hunt 11: 264,722/2,000,000 soups, 2189 soups/s, 5,714,448 objects (ships 506,116, osc 1,654,023, still 3,554,309), 111 distinct, 43 new | newest: still life 8c #93cf2e (B3/S23)
+   10  explore  paused   2026-11-16T12:47:51Z  explore 10: 5,223 runs (89/s), 1,866 elites in 1,048 niches (20 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+    9  explore  paused   2026-11-16T12:47:39Z  explore 9: 1,038 runs (109/s), 411 elites in 250 niches (0 of them confirmed), 2 of 1,359 tilings; Apple M2 Max, Metal
+    8  hunt     done     2026-11-16T12:47:37Z  hunt 8: 300/300 soups, 1082 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    7  hunt     paused   2026-11-16T12:46:49Z  hunt 7: 7,985/50,000,000 soups, 1555 soups/s, 168,922 objects (ships 15,036, osc 49,045, still 104,841), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+    6  explore  paused   2026-11-16T12:46:17Z  explore 6: 5,120 runs (169/s), 671 elites in 315 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+    5  hunt     paused   2026-11-16T12:46:15Z  hunt 5: 55,654/50,000,000 soups, 1651 soups/s, 1,198,533 objects (ships 106,109, osc 347,562, still 744,862), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+    4  pile     done     2026-11-16T12:46:10Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T12:45:05Z  explore 3: 7,856 runs (133/s), 1,024 elites in 505 niches (56 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+    2  hunt     paused   2026-11-16T12:44:58Z  hunt 2: 615,594/10,000,000 soups, 8917 soups/s, 4,266,810 objects (ships 336,061, osc 636,017, still 3,294,732), 91 distinct, 91 new | newest: still life 19c #66a817 (B36/S23)
+    1  hunt     done     2026-11-16T12:44:56Z  hunt 1: 3,000/3,000 soups, 2070 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+13 job(s); 0 running
+
+exit 0
+== MCP job_status listing -> {
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/m6/library/library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-16T13:22:57Z",
+      "job": 13,
+      "kind": "hunt",
+      "label": "f9-5.2-mcp",
+      "line": "hunt 13: 21,282/20,000,000 soups in each of 2 groups, 2670 soups/s, 603,690 objects (ships 52,127, osc 154,194, still 397,369), 91 distinct, 0 new | newest: still life 14c #427971 (B3/S23)",
+      "status": "paused",
+      "updated": "2026-11-16T13:23:13Z"
+    },
+    {
+      "created": "2026-11-16T13:22:50Z",
+      "job": 12,
+      "kind": "explore",
+      "label": "f9-5.2-cli",
+      "line": "explore 12: 3,072 runs (135/s), 785 elites in 437 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal",
+      "status": "paused",
+      "updated": "2026-11-16T13:23:14Z"
+    },
+    {
+      "created": "2026-11-16T13:19:11Z",
+      "job": 11,
+      "kind": "hunt",
+      "label": "m6-hidden",
+      "line": "hunt 11: 264,722/2,000,000 soups, 2189 soups/s, 5,714,448 objects (ships 506,116, osc 1,654,023, still 3,554,309), 111 distinct, 43 new | newest: still life 8c #93cf2e (B3/S23)",
+      "status": "paused",
+      "updated": "2026-11-16T13:21:12Z"
+    }
+  ]
+}
+== the CLI explore's own output (last lines):
+explore 12: 1,024 runs (111/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; Apple M2 Max, Metal
+explore 12: 2,048 runs (131/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+explore 12: 2,048 runs (94/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+explore 12: 3,072 runs (135/s), 785 elites in 437 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+  status paused, 23 s run over every session, 0 confirmation runs, 3,072 candidates tried, 0.42 GB of memory
+  threads: 5 for runs on the processor and 3 for the GPU's batches, of 12 cores (4 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 1,674   0.36   1.25     404
+  generations               1,398   0.78   1.85     381
+  folder: /Users/Jimmie/jetcarp-rc-042c/m6/library/searches/ce46e0d0-d396-43a3-835a-bdd1ad0c488c
+explore search 12 paused (as asked); `jetcarp jobs resume 12` continues it from its archive (not run for run: the search is not deterministic)
+
+$ jetcarp jobs list   [08:23:15]
+   13  hunt     paused   2026-11-16T13:22:57Z  hunt 13: 21,282/20,000,000 soups in each of 2 groups, 2670 soups/s, 603,690 objects (ships 52,127, osc 154,194, still 397,369), 91 distinct, 0 new | newest: still life 14c #427971 (B3/S23)
+   12  explore  paused   2026-11-16T13:22:50Z  explore 12: 3,072 runs (135/s), 785 elites in 437 niches (0 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+   11  hunt     paused   2026-11-16T13:19:11Z  hunt 11: 264,722/2,000,000 soups, 2189 soups/s, 5,714,448 objects (ships 506,116, osc 1,654,023, still 3,554,309), 111 distinct, 43 new | newest: still life 8c #93cf2e (B3/S23)
+   10  explore  paused   2026-11-16T12:47:51Z  explore 10: 5,223 runs (89/s), 1,866 elites in 1,048 niches (20 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+    9  explore  paused   2026-11-16T12:47:39Z  explore 9: 1,038 runs (109/s), 411 elites in 250 niches (0 of them confirmed), 2 of 1,359 tilings; Apple M2 Max, Metal
+    8  hunt     done     2026-11-16T12:47:37Z  hunt 8: 300/300 soups, 1082 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    7  hunt     paused   2026-11-16T12:46:49Z  hunt 7: 7,985/50,000,000 soups, 1555 soups/s, 168,922 objects (ships 15,036, osc 49,045, still 104,841), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+    6  explore  paused   2026-11-16T12:46:17Z  explore 6: 5,120 runs (169/s), 671 elites in 315 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+    5  hunt     paused   2026-11-16T12:46:15Z  hunt 5: 55,654/50,000,000 soups, 1651 soups/s, 1,198,533 objects (ships 106,109, osc 347,562, still 744,862), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+    4  pile     done     2026-11-16T12:46:10Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T12:45:05Z  explore 3: 7,856 runs (133/s), 1,024 elites in 505 niches (56 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+    2  hunt     paused   2026-11-16T12:44:58Z  hunt 2: 615,594/10,000,000 soups, 8917 soups/s, 4,266,810 objects (ships 336,061, osc 636,017, still 3,294,732), 91 distinct, 91 new | newest: still life 19c #66a817 (B36/S23)
+    1  hunt     done     2026-11-16T12:44:56Z  hunt 1: 3,000/3,000 soups, 2070 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+13 job(s); 0 running
+
+exit 0

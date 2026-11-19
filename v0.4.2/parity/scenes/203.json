@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Bugsmovie",
+  "description": "Chaotic; range 10. MCell calls it Bugs. (David Griffeath)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 360,
+        "h": 240
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "8414654602749535685",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Bugsmovie",
+      "rule": "R10,C2,S122-211,B123-170",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.4
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "c5d57a12cfd65f18",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

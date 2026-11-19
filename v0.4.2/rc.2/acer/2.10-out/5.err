@@ -1,0 +1,5 @@
+explore job 3 (search 5cbba190-5548-46c8-bf58-4ed39e19b932): sealed its newest 13,524 runs first, so the pack carries every run
+publishing feed rc-acer (version 1) into C:\Users\jimmi\jetcarp-rc-042b\phase2\.A10-pack.store
+113 patterns read, 113 new rows
+search 5cbba190-5548-46c8-bf58-4ed39e19b932: copying its segments
+version sha256:c2408726b9cbf467f11980dd656081c629b73c2062d226ad08b4f204f626e147 written

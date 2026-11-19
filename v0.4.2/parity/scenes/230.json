@@ -1,0 +1,39 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA glowing bands (Penrose kites)",
+  "description": "Blast 1 on Penrose kites and darts: smooth bands of each sign separated by glowing no-man's-land. Found by a JACA rule search.",
+  "tiling": {
+    "family": "penrose-kd",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 27,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B1235/S0,3,6,7,10 blast 1",
+      "rule": "JACA B1235/S0,3,6,7,10 blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "58dafdccfd48052d",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

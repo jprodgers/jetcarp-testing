@@ -1,0 +1,293 @@
+#### R4 #96: the photosensitive seizure warning, with a fresh settings folder, 2026-11-16 22:06:53
+(folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\f96\config, \data, \out, \library, \run)
+desktop before: JETCARP Run values: []; SCRNSAVE.EXE: []; ScreenSaveActive 1; the wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24, style 10; JETCARP.scr in %LOCALAPPDATA%\JETCARP: False; jetcarp processes: []
+$ jetcarp setup --status
+setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+  settings: ~\jetcarp-rc4\f96\config
+  data:     ~\jetcarp-rc4\f96\data (from JETCARP_DATA_DIR), 1.9 TB free
+  library:  ~\jetcarp-rc4\f96\library\library.sqlite
+  output:   ~\jetcarp-rc4\f96\out
+  bundled:  ~\jetcarp-rc-042c\bin\packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+(exit 0, 8.4 s)
+
+## Refused before the answer
+$ jetcarp host start
+Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host start --headless
+Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host wallpaper on
+Error: JETCARP won't show the desktop background until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host login on
+Error: JETCARP won't start the background host at login until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host saver install
+Error: JETCARP won't install the screen saver until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host start --saver
+error: unexpected argument '--saver' found
+
+Usage: jetcarp.exe host start [OPTIONS]
+
+For more information, try '--help'.
+(exit 2, 0.1 s)
+(the plan names `host start --saver`; host start has no --saver, so also what a screen saver runs:)
+$ jetcarp host serve --saver --seconds 1
+jetcarp-host: JETCARP won't run the screen saver until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host status
+Error: the JETCARP background host is not running
+(exit 1, 0.1 s)
+
+## MCP host_control, no answer and no host (96-mcp-refuse.txt)
+  [refuse] folder ~\jetcarp-rc4\f96; server {'name': 'jetcarp', 'title': 'JETCARP cellular automata', 'version': '0.4.2-rc.4'}
+  tools/list: 21 tools; host_control's properties: ['action', 'name', 'on', 'screen']
+  host_control's action: {"description": "Default status. wallpaper: every screen on the desktop background (GNOME: with the extension) or in a window; login: start at login or not; open_app opens the app; reload rereads host.json; scene: a screen's scene.", "enum": ["status", "next", "previous", "pause", "resume", "rotation", "wallpaper", "login", "open_app", "reload", "scene", "quit"], "type": "string"}
+  'tune' in host_control's schema: False; 'pick' or 'fps' properties: False, False
+  'fit' or 'tune' in its description: False
+  description: Controls the JETCARP background host, which runs live scenes as wallpapers or windows without the app. Returns its status (each screen's scene, cell size and caption, and recent problems). Fails if it is not running (`jetcarp host start` starts it). Refuses scenes until the user accepts the seizure warning.
+  == host_control {"action": "status"} -> isError=True
+     the JETCARP background host is not running
+  == host_control {"action": "resume"} -> isError=True
+     JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing
+  == host_control {"action": "next"} -> isError=True
+     JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing
+  == host_control {"action": "previous"} -> isError=True
+     JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing
+  == host_control {"action": "rotation", "name": "A classic a day"} -> isError=True
+     JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing
+  == host_control {"action": "wallpaper", "on": true} -> isError=True
+     JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing
+  == host_control {"action": "login", "on": true} -> isError=True
+     JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing
+  == host_control {"action": "pause"} -> isError=True
+     the JETCARP background host is not running
+  == host_control {"action": "tune", "dry_run": true} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  == host_control {"action": "tune_stop"} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  == host_control {"action": "tune_events"} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  == host_control {"action": "tuning"} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+desktop after the refusals: JETCARP Run values: []; SCRNSAVE.EXE: []; ScreenSaveActive 1; the wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24, style 10; JETCARP.scr in %LOCALAPPDATA%\JETCARP: False; jetcarp processes: []
+desktop unchanged: True
+photosensitivity.json before the answer: False
+
+## The answer
+$ jetcarp setup --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+(exit 0, 0.1 s)
+photosensitivity.json:
+{
+  "version": 1,
+  "answer": "no_disorder",
+  "date": "2026-11-17T03:07:03Z",
+  "jetcarp": "0.4.2-rc.4",
+  "via": "setup"
+}
+
+$ jetcarp setup --status
+setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+  settings: ~\jetcarp-rc4\f96\config
+  data:     ~\jetcarp-rc4\f96\data (from JETCARP_DATA_DIR), 1.9 TB free
+  library:  ~\jetcarp-rc4\f96\library\library.sqlite
+  output:   ~\jetcarp-rc4\f96\out
+  bundled:  ~\jetcarp-rc-042c\bin\packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+(exit 0, 0.7 s)
+
+## After the answer (headless: the desktop untouched)
+$ jetcarp host start --headless
+running, pid 28212, up 1.0s, 324 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.3 s)
+$ jetcarp host status
+running, pid 28212, up 4.0s, 311 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 734 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.1 s)
+
+## MCP host_control with the answer and a headless host (96-mcp-accepted.txt)
+  [accepted] folder ~\jetcarp-rc4\f96; server {'name': 'jetcarp', 'title': 'JETCARP cellular automata', 'version': '0.4.2-rc.4'}
+  tools/list: 21 tools; host_control's properties: ['action', 'name', 'on', 'screen']
+  host_control's action: {"description": "Default status. wallpaper: every screen on the desktop background (GNOME: with the extension) or in a window; login: start at login or not; open_app opens the app; reload rereads host.json; scene: a screen's scene.", "enum": ["status", "next", "previous", "pause", "resume", "rotation", "wallpaper", "login", "open_app", "reload", "scene", "quit"], "type": "string"}
+  'tune' in host_control's schema: False; 'pick' or 'fps' properties: False, False
+  'fit' or 'tune' in its description: False
+  description: Controls the JETCARP background host, which runs live scenes as wallpapers or windows without the app. Returns its status (each screen's scene, cell size and caption, and recent problems). Fails if it is not running (`jetcarp host start` starts it). Refuses scenes until the user accepts the seizure warning.
+  == host_control {"action": "status"} -> isError=False
+     {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":311,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+  == host_control {"action": "resume"} -> isError=False
+     {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":311,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+  == host_control {"action": "next"} -> isError=False
+     {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":311,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+  == host_control {"action": "previous"} -> isError=False
+     {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":323,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+  == host_control {"action": "rotation", "name": "A classic a day"} -> isError=False
+     {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":381,"monitor_hz":[],"monitors":[],"pacing":"every_generation","paused":false,"paused_why":[],"pid":28212,"rotations":["Wolfram series","A class
+  == host_control {"action": "tune", "dry_run": true} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  == host_control {"action": "tune_stop"} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  == host_control {"action": "tune_events"} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  == host_control {"action": "tuning"} -> isError=True
+     Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+$ jetcarp host status
+running, pid 28212, up 5.0s, 320 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 52 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.5 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.6 s)
+desktop at the end: JETCARP Run values: []; SCRNSAVE.EXE: []; ScreenSaveActive 1; the wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24, style 10; JETCARP.scr in %LOCALAPPDATA%\JETCARP: False; jetcarp processes: []
+desktop unchanged: True

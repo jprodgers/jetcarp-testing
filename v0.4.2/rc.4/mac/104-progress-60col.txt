@@ -1,0 +1,197 @@
+R4 #104 progress lines in a 60-column terminal, the Mac, 2026-11-17 03:13:09 AM EST
+test folder $H = homes/progress; rc.3's build: jetcarp 0.4.2-rc.3
+
+$ du -sh $H/pack-m10; $J pack info $H/pack-m10 | head -8
+2.5M	$H/pack-m10
+export sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d (feed rc-mac)
+  rc.3 test, Mac
+  publisher SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY (RC tester (Mac)), signed by its publisher
+  created 2026-11-16T07:21:05Z, licence CC0-1.0
+  annotations           23 rows in 1 part, 2651 bytes
+  patterns             134 rows in 5 parts, 69202 bytes
+  provenance           134 rows in 1 part, 9758 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+[exit 0, 0.03 s]
+
+#### (a) rc.4: a 30-second hunt in 60 columns (B3/S23 on square and hex, CPU, 4 threads)
+$ python3 $R/R4-scripts/pty60.py $R/104-hunt-rc4.typescript 60 40 -- bash -c 'stty size; $J search hunt --rules B3/S23 --tilings square,hex --soups 2000000 --minutes 0.5 --cpu --threads 4 --label h104'
+[exit 0, 30.22 s]
+
+$ python3 $R/R4-scripts/term60.py $R/104-hunt-rc4.typescript 60 | head -50
+progress redraws (text a carriage return goes back over): 24, widest 59 columns, wider than 59 (one short of the width): 0
+   a redraw (59 columns): 'hunt 1: 28,812/2,000,000 soups in each of 2 groups, 2008 s…'
+   a redraw (59 columns): 'hunt 1: 31,424/2,000,000 soups in each of 2 groups, 2188 s…'
+   a redraw (59 columns): 'hunt 1: 31,424/2,000,000 soups in each of 2 groups, 2093 s…'
+lines left standing: 19 (wider ones simply wrap; they are never redrawn)
+escape sequences used: ['K(2)']
+the terminal at the end (48 lines, 60 columns):
+   1 |40 60
+   2 |hunt job 1 in $H/libra
+   3 |ry/library.sqlite
+   4 |hunt 1: 31,424/2,000,000 soups in each of 2 groups, 2093 s…
+   5 |hunt 1: 31,424/2,000,000 soups in each of 2 groups, 2093 sou
+   6 |ps/s, 768,131 objects (ships 59,999, osc 197,730, still 510,
+   7 |402), 1,588 distinct, 1,588 new | newest: still life 19c #75
+   8 |d263 (B3/S23)
+   9 |  status paused, 30 s run, 61889 settled, 876 died, 83 explo
+  10 |ded, 0 unsettled
+  11 |  B3/S23 on Square: 31424 soups, 677462 objects (oscillator
+  12 |196915, spaceship 59999, still life 420548), 58 distinct, 58
+  13 | new
+  14 |  B3/S23 on Hexagon: 31424 soups, 90669 objects (oscillator
+  15 |815, still life 89854), 1530 distinct, 1530 new
+  16 |  newest finds:
+  17 |    75d263b4e1a0cacbf77f5e47f40ce3dd  still life 19c #75d263
+  18 |             B3/S23     Hexagon soup 31418  (new to the cata
+  19 |log)
+  20 |    f02b489273604c4984a2996a3df81009  still life 16c #f02b48
+  21 |             B3/S23     Hexagon soup 31388  (new to the cata
+  22 |log)
+  23 |    f19a00c1615bdbe6cab4a49c6007541f  still life 16c #f19a00
+  24 |             B3/S23     Hexagon soup 31374  (new to the cata
+  25 |log)
+  26 |    545c7ef57f2ffb63af993e3dccbe5d9d  still life 18c #545c7e
+  27 |             B3/S23     Hexagon soup 31323  (new to the cata
+  28 |log)
+  29 |    135fe5644653dd50be0365703ffd0710  still life 17c #135fe5
+  30 |             B3/S23     Hexagon soup 31323  (new to the cata
+  31 |log)
+  32 |    bbcc793fb6dfcc32022335aa4bbfa7e1  still life 15c #bbcc79
+  33 |             B3/S23     Hexagon soup 31266  (new to the cata
+  34 |log)
+  35 |    5a97cf8f1c20e77914eca96b4c86e544  still life 27c #5a97cf
+  36 |             B3/S23     Hexagon soup 31192  (new to the cata
+  37 |log)
+  38 |    5850b0f4dc4f350ac58e1f2cc6584736  still life 28c #5850b0
+  39 |             B3/S23     Hexagon soup 31182  (new to the cata
+  40 |log)
+  41 |    cf9127a989edbb8c21be011de981989e  still life 16c #cf9127
+  42 |             B3/S23     Hexagon soup 31180  (new to the cata
+  43 |log)
+[exit 0, 0.04 s]
+
+#### (b) rc.4: a 1-minute explore in 60 columns (JACA, CPU, 4 threads)
+$ python3 $R/R4-scripts/pty60.py $R/104-explore-rc4.typescript 60 40 -- bash -c 'stty size; $J search explore --families jaca --minutes 1 --cpu --threads 4 --label p104'
+[exit 0, 61.47 s]
+
+$ python3 $R/R4-scripts/term60.py $R/104-explore-rc4.typescript 60 | head -50
+progress redraws (text a carriage return goes back over): 81, widest 59 columns, wider than 59 (one short of the width): 0
+   a redraw (59 columns): 'explore 2: 127 runs (2/s), 73 elites in 44 niches (0 of th…'
+   a redraw (59 columns): 'explore 2: 127 runs (2/s), 73 elites in 44 niches (0 of th…'
+   a redraw (59 columns): 'explore 2: 127 runs (2/s), 73 elites in 44 niches (0 of th…'
+lines left standing: 12 (wider ones simply wrap; they are never redrawn)
+escape sequences used: ['K(2)']
+the terminal at the end (22 lines, 60 columns):
+   1 |40 60
+   2 |explore search job 2 in ~/jetcarp-rc4/homes/prog
+   3 |ress/library/library.sqlite
+   4 |explore 2: 127 runs (2/s), 73 elites in 44 niches (0 of th…
+   5 |explore 2: 127 runs (2/s), 73 elites in 44 niches (0 of them
+   6 | confirmed), 4 of 1,359 tilings; cpu only
+   7 |  status paused, 58 s run over every session, 0 confirmation
+   8 | runs, 140 candidates tried, 0.06 GB of memory
+   9 |  threads: 4 for runs on the processor, of 12 cores (8 left
+  10 |free)
+  11 |  this session: 0 runs on the processor stopped at their tim
+  12 |e cap (kept with the generations they reached), 4 runs given
+  13 | up at a stop or the end (not kept)
+  14 |  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (
+  15 |no other runs read)
+  16 |  family                     runs   mean   best  elites
+  17 |  jaca                        127   0.35   1.64      73
+  18 |  folder: $H/library/s
+  19 |earches/6bb806a1-e993-4b32-b521-cf10484ec09a
+  20 |explore search 2 paused (at its budget); `jetcarp jobs resum
+  21 |e 2` continues it from its archive (not run for run: the sea
+  22 |rch is not deterministic)
+[exit 0, 0.04 s]
+
+#### (c) rc.4: pack import in 60 columns
+$ python3 $R/R4-scripts/pty60.py $R/104-import-rc4.typescript 60 40 -- bash -c 'stty size; $J pack import --allow-unsigned $H/pack-m10'
+[exit 0, 1.54 s]
+
+$ python3 $R/R4-scripts/term60.py $R/104-import-rc4.typescript 60
+progress redraws (text a carriage return goes back over): 0, widest 0 columns, wider than 59 (one short of the width): 0
+lines left standing: 12 (wider ones simply wrap; they are never redrawn)
+escape sequences used: []
+the terminal at the end (21 lines, 60 columns):
+   1 |40 60
+   2 |sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4
+   3 |fd77acf112d: feed rc-mac, by SHA256:h3TwxQOPru+J9oO61x3PHfwt
+   4 |dkXAjRd8//apVOc7jCY (RC tester (Mac)), checking every object
+   5 |reading verifications, sightings, provenance and annotations
+   6 |checking ids and storing patterns
+   7 |search 294b906e-1384-4a76-9ba5-b012745e1747: copying its seg
+   8 |ments and rebuilding its state
+   9 |merging sightings
+  10 |imported sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb7
+  11 |0fdd44bf4fd77acf112d (feed rc-mac, SHA256:h3TwxQOPru+J9oO61x
+  12 |3PHfwtdkXAjRd8//apVOc7jCY RC tester (Mac), signed by its pub
+  13 |lisher)
+  14 |  12 objects checked (2347305 bytes)
+  15 |  patterns: 47 added, 87 merged, 0 flagged needs_reverify
+  16 |  sightings 248, ratings 0, ants 0, Quick Start 0, media 0,
+  17 |searches 1, retracted 0
+  18 |  verified again (sample): 47 of 47 passed, 0 skipped, 0 fai
+  19 |led
+  20 |search 294b906e-1384-4a76-9ba5-b012745e1747: 25227 runs, 390
+  21 |1 elites in 1963 niches, rebuilt in 1.4 s
+[exit 0, 0.04 s]
+
+#### (d) control: rc.3's build, the same hunt in 60 columns (its own library file)
+$ python3 $R/R4-scripts/pty60.py $R/104-hunt-rc3-control.typescript 60 40 -- bash -c 'stty size; ~/jetcarp-rc-042c/bin/jetcarp search hunt --library $H/rc3-control.sqlite --rules B3/S23 --tilings square,hex --soups 2000000 --minutes 0.5 --cpu --threads 4 --label h104'
+[exit 0, 30.31 s]
+
+$ python3 $R/R4-scripts/term60.py $R/104-hunt-rc3-control.typescript 60 | head -50
+progress redraws (text a carriage return goes back over): 24, widest 193 columns, wider than 59 (one short of the width): 24
+   redraw too wide (89): 'hunt 1: 0/2,000,000 soups in each of 2 groups, 0 soups/s, 0 objects (), 0 distinct, 0 new'
+   redraw too wide (171): 'hunt 1: 64/2,000,000 soups in each of 2 groups, 705 soups/s, 2,005 objects (ships 191, osc 545, still 1,269), 48 distinct, 48 new | newest: still life 10c #dc6d5a (B3/S23)'
+   redraw too wide (158): 'hunt 1: 128/2,000,000 soups in each of 2 groups, 1377 soups/s, 3,428 objects (ships 306, osc 925, still 2,197), 65 distinct, 65 new | newest: eater 1 (B3/S23)'
+   redraw too wide (176): 'hunt 1: 384/2,000,000 soups in each of 2 groups, 510 soups/s, 9,724 objects (ships 807, osc 2,582, still 6,335), 115 distinct, 115 new | newest: still life 17c #92287d (B3/S23)'
+   redraw too wide (183): 'hunt 1: 1,408/2,000,000 soups in each of 2 groups, 1840 soups/s, 33,724 objects (ships 2,662, osc 8,762, still 22,300), 231 distinct, 231 new | newest: still life 21c #84cb66 (B3/S23)'
+   a redraw (193 columns): 'hunt 1: 28,222/2,000,000 soups in each of 2 groups, 1974 soups/s, 688,918 objects (ships 53,818, osc 176,950, still 458,150), 1,492 distinct, 1,492 new | newest: still life 21c #c0aff8 (B3/S23)'
+   a redraw (193 columns): 'hunt 1: 30,922/2,000,000 soups in each of 2 groups, 2161 soups/s, 755,709 objects (ships 59,056, osc 194,463, still 502,190), 1,568 distinct, 1,568 new | newest: still life 10c #10aa95 (B3/S23)'
+   a redraw (193 columns): 'hunt 1: 30,922/2,000,000 soups in each of 2 groups, 2055 soups/s, 755,709 objects (ships 59,056, osc 194,463, still 502,190), 1,568 distinct, 1,568 new | newest: still life 10c #10aa95 (B3/S23)'
+lines left standing: 19 (wider ones simply wrap; they are never redrawn)
+escape sequences used: ['K(2)']
+the terminal at the end (118 lines, 60 columns):
+   1 |40 60
+   2 |hunt job 1 in $H/rc3-c
+   3 |ontrol.sqlite
+   4 |hunt 1: 0/2,000,000 soups in each of 2 groups, 0 soups/s, 0
+   5 |hunt 1: 64/2,000,000 soups in each of 2 groups, 705 soups/s,
+   6 | 2,005 objects (ships 191, osc 545, still 1,269), 48 distinc
+   7 |hunt 1: 128/2,000,000 soups in each of 2 groups, 1377 soups/
+   8 |s, 3,428 objects (ships 306, osc 925, still 2,197), 65 disti
+   9 |hunt 1: 384/2,000,000 soups in each of 2 groups, 510 soups/s
+  10 |, 9,724 objects (ships 807, osc 2,582, still 6,335), 115 dis
+  11 |hunt 1: 1,408/2,000,000 soups in each of 2 groups, 1840 soup
+  12 |s/s, 33,724 objects (ships 2,662, osc 8,762, still 22,300),
+  13 |231 distinct, 231 new | newest: still life 21c #84cb66 (B3/S
+  14 |hunt 1: 1,995/2,000,000 soups in each of 2 groups, 1009 soup
+  15 |s/s, 47,574 objects (ships 3,758, osc 12,212, still 31,604),
+  16 | 286 distinct, 286 new | newest: still life 14c #fb0e08 (B3/
+  17 |hunt 1: 4,321/2,000,000 soups in each of 2 groups, 2166 soup
+  18 |s/s, 102,628 objects (ships 8,013, osc 26,344, still 68,271)
+  19 |, 451 distinct, 451 new | newest: still life 20c #cb89fb (B3
+  20 |hunt 1: 5,043/2,000,000 soups in each of 2 groups, 1395 soup
+  21 |s/s, 119,796 objects (ships 9,421, osc 30,757, still 79,618)
+  22 |, 497 distinct, 497 new | newest: still life 24c #61fe86 (B3
+  23 |hunt 1: 7,922/2,000,000 soups in each of 2 groups, 2180 soup
+  24 |s/s, 190,410 objects (ships 14,925, osc 48,860, still 126,62
+  25 |5), 647 distinct, 647 new | newest: still life 16c #8d0068 (
+  26 |hunt 1: 8,584/2,000,000 soups in each of 2 groups, 1681 soup
+  27 |s/s, 207,128 objects (ships 16,153, osc 53,175, still 137,80
+  28 |0), 684 distinct, 684 new | newest: still life 15c #5c2730 (
+  29 |hunt 1: 11,232/2,000,000 soups in each of 2 groups, 2192 sou
+  30 |ps/s, 272,276 objects (ships 21,326, osc 69,940, still 181,0
+  31 |10), 828 distinct, 828 new | newest: still life 17c #2584dc
+  32 |hunt 1: 11,900/2,000,000 soups in each of 2 groups, 1785 sou
+  33 |ps/s, 289,083 objects (ships 22,650, osc 74,231, still 192,2
+  34 |02), 850 distinct, 850 new | newest: still life 17c #4663c3
+  35 |hunt 1: 14,572/2,000,000 soups in each of 2 groups, 2180 sou
+  36 |ps/s, 354,354 objects (ships 27,668, osc 90,873, still 235,8
+  37 |13), 959 distinct, 959 new | newest: p3 oscillator 26c #6dd8
+  38 |hunt 1: 15,215/2,000,000 soups in each of 2 groups, 1880 sou
+[exit 0, 0.04 s]
+

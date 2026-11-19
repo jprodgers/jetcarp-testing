@@ -1,0 +1,111 @@
+﻿
+09:26:57.530 search hunt --soups 3000 --detach --label wait-done -> exit 0 in 0.19 s
+09:26:57.559     hunt job 5 started (detached) in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+09:26:57.560     hunt 5: 0/3,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+09:26:57.567 job: 5
+09:27:00.799 jobs wait 5 -> exit 0 in 3.23 s
+09:27:00.800     hunt 5 is done
+09:27:00.800       hunt 5: 3,000/3,000 soups, 1320 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+09:27:01.913 search hunt --soups 2000000 --max-rss-gb 0.05 --label capped -> exit 0 in 1.11 s
+09:27:01.937     hunt 6: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+09:27:01.938       status paused, 0 s run, 0 settled, 0 died, 0 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+09:27:01.939       B3/S23 on Square: 0 soups, 0 objects (), 0 distinct, 0 new
+09:27:01.940       note: memory 0.1 GB is over the cap of 0.05 GB
+09:27:01.940     GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+09:27:01.941     hunt job 6 in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+09:27:01.942     hunt 6 paused (memory 0.1 GB is over the cap of 0.05 GB); `jetcarp jobs resume 6` resumes it exactly
+09:27:01.943 job: 6
+09:27:02.183 jobs status 6 -> exit 0 in 0.24 s
+09:27:02.184     hunt 6: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+09:27:02.185       status paused, 0 s run, 0 settled, 0 died, 0 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+09:27:02.186       B3/S23 on Square: 0 soups, 0 objects (), 0 distinct, 0 new
+09:27:02.187       note: memory 0.1 GB is over the cap of 0.05 GB
+09:27:02.188       `jetcarp jobs resume 6` resumes it exactly
+09:27:02.362 jobs wait 6 --timeout 5 -> exit 3 in 0.17 s
+09:27:02.363     hunt 6 is paused
+09:27:02.364       hunt 6: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+09:27:02.365       note: memory 0.1 GB is over the cap of 0.05 GB
+09:27:02.366       `jetcarp jobs resume 6` resumes it exactly
+09:27:02.579 search hunt --soups 2000000 --detach --label to-kill -> exit 0 in 0.21 s
+09:27:02.580     hunt job 7 started (detached) in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+09:27:02.582     hunt 7: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+09:27:02.583 job: 7
+09:27:13.473   process 48232 (parent 52976) jetcarpw.exe: "C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarpw.exe" jobs resume 7 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet
+09:27:13.483   process 56856 (parent 48232) jetcarp.exe: "C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarp.exe" jobs resume 7 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet
+09:27:13.634 killing 56856 with Stop-Process -Force
+09:27:57.498   (killed 43.9 s before wait returned)
+09:27:57.499 jobs wait 7 --timeout 120 -> exit 6 in 43.83 s
+09:27:57.500     hunt 7 is still marked running, but no process runs it
+09:27:57.501       hunt 7: 9,330/2,000,000 soups, 1220 soups/s, 199,949 objects (ships 17,753, osc 58,090, still 124,106), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)
+09:27:57.502       `jetcarp jobs resume 7` resumes it exactly
+09:27:57.674 jobs wait 7 --timeout 2 -> exit 6 in 0.17 s
+09:27:57.675     hunt 7 is still marked running, but no process runs it
+09:27:57.676       hunt 7: 9,330/2,000,000 soups, 1220 soups/s, 199,949 objects (ships 17,753, osc 58,090, still 124,106), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)
+09:27:57.684       `jetcarp jobs resume 7` resumes it exactly
+09:27:57.875 jobs status 7 -> exit 0 in 0.19 s
+09:27:57.876       B3/S23 on Square: 9330 soups, 199949 objects (oscillator 58090, spaceship 17753, still life 124106), 42 distinct, 5 new
+09:27:57.877       newest finds:
+09:27:57.877         ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+09:27:57.878         e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23     Square soup 6114  (new to the catalog)
+09:27:57.879         4b1e8d6b20cea5dc100f7444731eb9a4  still life 14c #4b1e8d             B3/S23     Square soup 4628  (new to the catalog)
+09:27:57.880         77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23     Square soup 4526  (new to the catalog)
+09:27:57.880         2f14f53077b021fe1ae019b7c5835852  still life 9c #2f14f5              B3/S23     Square soup 3049  (new to the catalog)
+09:27:57.881         f604b33e874ae8109ab13c34f6ed8484  still life 8c #f604b3              B3/S23     Square soup 2650
+09:27:57.882         c8f20f137dfae2f393afe921c7c5e670  snake                              B3/S23     Square soup 2540
+09:27:57.882         076c1a268e4004b5a0c13876844e8864  still life 9c #076c1a              B3/S23     Square soup 2463
+09:27:57.883         1741ff737fd4a9871f808a2bf46d7594  still life 11c #1741ff             B3/S23     Square soup 2048
+09:27:57.884         1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23     Square soup 1816
+09:29:00.921 jobs resume 7 --minutes 1 -> exit 0 in 62.92 s
+09:29:00.923     hunt job 7 in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+09:29:00.925     hunt 7: 12,179/2,000,000 soups, 716 soups/s, 261,264 objects (ships 23,202, osc 75,695, still 162,367), 45 distinct, 8 new | newest: still life 8c #48e626 (B3/S23)
+09:29:00.926     hunt 7: 20,786/2,000,000 soups, 1100 soups/s, 446,673 objects (ships 39,626, osc 129,365, still 277,682), 50 distinct, 13 new | newest: still life 12c #bf73c4 (B3/S23)
+09:29:00.927     hunt 7: 29,259/2,000,000 soups, 1201 soups/s, 630,512 objects (ships 55,901, osc 183,037, still 391,574), 56 distinct, 19 new | newest: still life 11c #81d405 (B3/S23)
+09:29:00.927     hunt 7: 37,520/2,000,000 soups, 1237 soups/s, 807,315 objects (ships 71,520, osc 234,228, still 501,567), 61 distinct, 24 new | newest: pentadecathlon (B3/S23)
+09:29:00.928     hunt 7: 45,284/2,000,000 soups, 1271 soups/s, 975,089 objects (ships 86,315, osc 282,671, still 606,103), 66 distinct, 29 new | newest: still life 10c #f0e883 (B3/S23)
+09:29:00.929     hunt 7: 53,861/2,000,000 soups, 1292 soups/s, 1,158,019 objects (ships 102,460, osc 335,807, still 719,752), 67 distinct, 30 new | newest: still life 14c #bb0067 (B3/S23)
+09:29:00.929     hunt 7: 62,575/2,000,000 soups, 1303 soups/s, 1,345,694 objects (ships 119,045, osc 390,210, still 836,439), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+09:29:00.930     hunt 7: 70,378/2,000,000 soups, 1292 soups/s, 1,515,767 objects (ships 134,093, osc 438,861, still 942,813), 70 distinct, 33 new | newest: still life 16c #e06b19 (B3/S23)
+09:29:00.931     hunt 7: 77,131/2,000,000 soups, 1280 soups/s, 1,662,049 objects (ships 147,043, osc 481,375, still 1,033,631), 72 distinct, 35 new | newest: still life 13c #60ea74 (B3/S23)
+09:29:00.931     hunt 7: 84,141/2,000,000 soups, 1259 soups/s, 1,812,106 objects (ships 160,461, osc 524,244, still 1,127,401), 74 distinct, 37 new | newest: still life 14c #5a79a9 (B3/S23)
+09:29:00.932     hunt 7 paused (at its budget); `jetcarp jobs resume 7` resumes it exactly
+09:29:01.148 jobs status 7 (after resume) -> exit 0 in 0.21 s
+09:29:01.149       newest finds:
+09:29:01.149         5a79a9468a09e6300df6557d262a4432  still life 14c #5a79a9             B3/S23     Square soup 83575  (new to the catalog)
+09:29:01.150         de0c2aea84331dde841c563372137cf0  still life 15c #de0c2a             B3/S23     Square soup 80116  (new to the catalog)
+09:29:01.151         60ea744a112888b6145ebf7acd12d6c9  still life 13c #60ea74             B3/S23     Square soup 76061  (new to the catalog)
+09:29:01.151         166c059919129bde1e6c2d5cb7c104ea  still life 14c #166c05             B3/S23     Square soup 71009  (new to the catalog)
+09:29:01.152         e06b195ad0debb8efb8ebd8b5b47f983  still life 16c #e06b19             B3/S23     Square soup 68613  (new to the catalog)
+09:29:01.153         cc999376f643a3c81b515653bb133ba6  still life 10c #cc9993             B3/S23     Square soup 66602  (new to the catalog)
+09:29:01.154         931257315c5760eaff17656138b3245d  still life 12c #931257             B3/S23     Square soup 54702  (new to the catalog)
+09:29:01.154         bb006764a2f8ff4c75be8afd65585202  still life 14c #bb0067             B3/S23     Square soup 47075  (new to the catalog)
+09:29:01.155         f0e883251888a774e1e8d53e0fdb61d6  still life 10c #f0e883             B3/S23     Square soup 44484  (new to the catalog)
+09:29:01.155         c42cde186d92d5fcfa9f966e93c05a1f  still life 10c #c42cde             B3/S23     Square soup 41269  (new to the catalog)
+09:29:01.156       `jetcarp jobs resume 7` resumes it exactly
+09:29:01.868 JETCARP_GPU=off search hunt --gpu --soups 500 --label no-gpu -> exit 0 in 0.71 s
+09:29:01.869         8cae5af4a207f512f4f1575edff69583  still life 9c #8cae5a              B3/S23     Square soup 424
+09:29:01.870         fcc17ecdc8daad5462ed2dac092962ab  still life 8c #fcc17e              B3/S23     Square soup 276
+09:29:01.871         6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23     Square soup 244
+09:29:01.871         e9e58d494a7bc815b2c30eed2e18c6f0  still life 14c #e9e58d             B3/S23     Square soup 201
+09:29:01.872         9b99f0405fe4ce5c883d06241171fac6  still life 8c #9b99f0              B3/S23     Square soup 172
+09:29:01.873         9d035c1014869bfb702f6afbcabfcb17  aircraft carrier                   B3/S23     Square soup 159
+09:29:01.874         726d9f101c90abbb38b52ed691ef31f3  still life 11c #726d9f             B3/S23     Square soup 142
+09:29:01.874         b20cf1816c080db0f735b9f82659f870  mango                              B3/S23     Square soup 133
+09:29:01.875         dfd22d6aa16676a219b75a6394a9c037  eater 1                            B3/S23     Square soup 123
+09:29:01.876         299d09888b99cae4935e015f36b49976  beacon                             B3/S23     Square soup 61
+09:29:01.877     the GPU was asked for, but JETCARP_GPU=off: running on the processor
+09:29:01.877     hunt job 8 in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+09:29:02.041 jobs status 8 -> exit 0 in 0.16 s
+09:29:02.043       B3/S23 on Square: 500 soups, 11099 objects (oscillator 3244, spaceship 1004, still life 6851), 24 distinct, 0 new
+09:29:02.044       newest finds:
+09:29:02.044         8cae5af4a207f512f4f1575edff69583  still life 9c #8cae5a              B3/S23     Square soup 424
+09:29:02.045         fcc17ecdc8daad5462ed2dac092962ab  still life 8c #fcc17e              B3/S23     Square soup 276
+09:29:02.046         6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23     Square soup 244
+09:29:02.047         e9e58d494a7bc815b2c30eed2e18c6f0  still life 14c #e9e58d             B3/S23     Square soup 201
+09:29:02.048         9b99f0405fe4ce5c883d06241171fac6  still life 8c #9b99f0              B3/S23     Square soup 172
+09:29:02.050         9d035c1014869bfb702f6afbcabfcb17  aircraft carrier                   B3/S23     Square soup 159
+09:29:02.051         726d9f101c90abbb38b52ed691ef31f3  still life 11c #726d9f             B3/S23     Square soup 142
+09:29:02.052         b20cf1816c080db0f735b9f82659f870  mango                              B3/S23     Square soup 133
+09:29:02.052         dfd22d6aa16676a219b75a6394a9c037  eater 1                            B3/S23     Square soup 123
+09:29:02.053         299d09888b99cae4935e015f36b49976  beacon                             B3/S23     Square soup 61
+09:29:02.054 jobs: wait-done 5, capped 6, to-kill 7, no-gpu 8
+09:29:02.054 done

@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile on [3^6; 3^3.4^2; 3^3.4^2; 3.4.6.4] (k4-100)",
+  "description": "A 4-uniform tiling from Galebach's catalog (k4-100). Galebach 4-uniform #100 of 151. Symmetry p6m. 30 vertices per cell; 32 triangles, 12 squares, 1 hexagon. Grains dropped on the centre topple outward.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k4-100"
+    },
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 4,
+      "palette": "Tide",
+      "seed": {
+        "pile": {
+          "grains": 3000
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e661506f2f7849d8",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

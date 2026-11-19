@@ -1,0 +1,101 @@
+A-7: JETCARP 0.4.2-rc.5 in a new Windows account (the Acer)
+===========================================================
+
+HOW TO USE THIS FILE
+- Do every numbered step, in order, exactly as written. Nothing is meant to be skipped.
+- An indented block is commands only. Select the whole block, copy it (Ctrl+C), click in the
+  PowerShell window, paste it (right-click, or Ctrl+V), and then PRESS ENTER. Pressing Enter runs
+  the block's last line; without it, the last line just sits at the prompt.
+- "Copy the output" means: select all the text in the PowerShell window, copy it, paste it at the
+  end of your notes file, and save the notes (Ctrl+S).
+- Your notes file is  C:\Users\Public\jetcarp-a7-notes.txt  (Claude reads it from your account).
+  Write down anything that confuses you, even if it works out.
+
+Part A: done.
+Part B: done (the upgrade in B3 didn't happen: jetcarp.exe was in use. Part C redoes it).
+
+Part C: the upgrade from 0.4.1, again
+-------------------------------------
+Ada's settings, hunt and ratings from Part B are still there, so 0.4.1 starts with them.
+
+C1. Install 0.4.1 again, and turn on its desktop background.
+  1. Close every PowerShell window (click the X at its top right).
+  2. Click Start, type  PowerShell , and press Enter.
+  3. Paste this block, then press Enter. It takes a minute; wait until the prompt comes back:
+
+cd ~
+scoop bucket add jetcarp https://github.com/jprodgers/scoop-jetcarp
+scoop install jetcarp
+jetcarp --version
+jetcarp host start
+jetcarp host wallpaper on
+jetcarp host login on
+jetcarp host status
+
+  4. Copy the output into your notes. (Expected: "jetcarp 0.4.1" in it, and at the end the host
+     running with "wallpaper: showing". If the bucket line says it already exists, that's fine.)
+  5. Press Windows key + D. Write in your notes what the desktop shows: Windows' own picture, a
+     JETCARP scene that is still, or a JETCARP scene that moves. Press Windows key + D again.
+
+C2. Put rc.5's programs in place of 0.4.1's.
+  1. Click in the PowerShell window. Paste this block, then press Enter:
+
+jetcarp host stop
+Get-CimInstance Win32_Process -Filter "Name like 'jetcarp%'" | Format-List ProcessId, CommandLine
+Get-Process jetcarp* -ErrorAction SilentlyContinue | Stop-Process -Force
+cd ~\Downloads
+Copy-Item rc5\jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc\* (scoop prefix jetcarp) -Recurse -Force
+jetcarp --version
+
+  2. Copy the output into your notes. (Expected last line: jetcarp 0.4.2-rc.5. The second line
+     lists any JETCARP program still running after the host stopped; the third stops it.)
+
+C3. Sign out and in, and meet rc.5.
+  1. Sign out: click Start, click  Ada Test  at the bottom left of the Start menu, click  Sign out .
+  2. Sign in: on the sign-in screen click  Ada Test , type the password, press Enter.
+  3. Look at the desktop. Write in your notes what you see: Windows' own picture, a JETCARP scene
+     that is still, or a JETCARP scene that moves.
+  4. Click Start, type  PowerShell , and press Enter. Paste this block, then press Enter:
+
+jetcarp --version
+jetcarp host status
+
+  5. Copy the output into your notes.
+  6. Paste this, then press Enter:
+
+jetcarp
+
+  7. The app opens. If it shows the "Photosensitive seizure warning", click
+     I don't have epilepsy or a seizure disorder .
+     Write in your notes what the app showed first, and what it shows next.
+  8. Press Windows key + D. Write in your notes what the desktop shows now (still, or moving).
+     Press Windows key + D again.
+  9. Close the app: click the X at the top right of the JETCARP window.
+ 10. Click in the PowerShell window. Paste this block, then press Enter:
+
+jetcarp host status
+jetcarp jobs list
+jetcarp jobs status 2
+jetcarp library list --class spaceship
+Get-CimInstance Win32_Process -Filter "Name like 'jetcarp%'" | Format-List ProcessId, CommandLine
+
+ 11. Copy the output into your notes. (Expected: the same two jobs as in Part B, rc.5's host
+     running, and the app no longer in the list.)
+
+C4. Remove it all.
+  1. In the same PowerShell window, paste this block, then press Enter:
+
+jetcarp uninstall --yes --settings --data
+scoop uninstall jetcarp
+scoop bucket rm jetcarp
+Get-CimInstance Win32_Process -Filter "Name like 'jetcarp%'" | Format-List ProcessId, CommandLine
+
+  2. Copy the output into your notes.
+  3. Press Windows key + D. Write in your notes what the desktop shows (Windows' own picture?).
+     Press Windows key + D again.
+
+The end
+-------
+  1. Save your notes (Ctrl+S).
+  2. Click Start, click  Ada Test , click  Switch user , and sign in to your own account.
+  3. Tell Claude you're done. Don't remove Ada's account yet: Claude reads the notes first.

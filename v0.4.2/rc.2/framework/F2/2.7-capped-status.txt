@@ -1,0 +1,5 @@
+hunt 5: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+  status paused, 0 s run, 0 settled, 0 died, 0 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  B3/S23 on Square: 0 soups, 0 objects (), 0 distinct, 0 new
+  note: memory 0.1 GB is over the cap of 0.05 GB
+  `jetcarp jobs resume 5` resumes it exactly

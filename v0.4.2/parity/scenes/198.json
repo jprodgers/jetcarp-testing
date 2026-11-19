@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Majority (LtL)",
+  "description": "Stable; each cell takes the majority of the 9x9 block around it. (David Griffeath)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 240,
+        "h": 160
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "5881491617857817857",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Majority (LtL)",
+      "rule": "R4,C2,S40-80,B41-80",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "4dcf0b084c8a0094",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

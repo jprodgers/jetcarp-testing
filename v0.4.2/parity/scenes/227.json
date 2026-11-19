@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA streaky war (3.6.3.6)",
+  "description": "On the trihexagonal tiling the territories take a streaky, direction-dependent texture. Found by a JACA rule search.",
+  "tiling": {
+    "family": "trihex",
+    "size": {
+      "rect": {
+        "w": 102,
+        "h": 79
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 28,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B246/S234",
+      "rule": "JACA B246/S234",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Deep Sea",
+      "seed": {
+        "signed": {
+          "density": 0.1,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Thermal"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "13d930cec9c43539",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

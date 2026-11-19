@@ -1,0 +1,90 @@
+﻿
+19:30:54.293 jobs status 3 --json: folder = ''; spec.uuid = 668eb340-e9e8-45b2-8eea-bcfe9df3be76
+19:30:54.454 [1] pack key --name "RC tester (Acer)" -> exit 0 in 0.12 s
+19:30:54.461     made publisher key SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8
+19:30:54.462       ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFU+497xawLRPF7fL+w4vO330aWx/s9UO5LWLlQ+Lkvu jetcarp publisher
+19:30:54.463       file C:\Users\jimmi\jetcarp-rc-042\config\pack\publisher_ed25519
+19:30:54.463       named RC tester (Acer)
+19:30:54.481 config after pack key: pack 1; gpu-checks.json 1123; pack\publisher.json 64; pack\publisher_ed25519 411; pack\publisher_ed25519.pub 99
+19:30:54.486 everyday settings folder unchanged: True
+19:30:54.945 [2] pack export --to A10-pack --feed rc-acer --title "rc test, Acer" --search 668eb340-e9e8-45b2-8eea-bcfe9df3be76 --no-media -> exit 0 in 0.46 s
+19:30:54.947     exported sha256:56afab514a94b9da95f3ff10e48552df766b67474902cf43a113d151b566f6f5 into C:\Users\jimmi\jetcarp-rc-042\A10-pack: 27 files, 252875 bytes
+19:30:54.947     the version was published first into C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store` does (then `jetcarp pack export --from C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store` lays it out)
+19:30:54.948     publishing feed rc-acer (version 1) into C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store
+19:30:54.949     120 patterns read, 120 new rows
+19:30:54.949     search 668eb340-e9e8-45b2-8eea-bcfe9df3be76: copying its segments
+19:30:54.950     version sha256:56afab514a94b9da95f3ff10e48552df766b67474902cf43a113d151b566f6f5 written
+19:30:55.184 [3] pack check A10-pack -> exit 0 in 0.23 s
+19:30:55.185     checked sha256:56afab514a94b9da95f3ff10e48552df766b67474902cf43a113d151b566f6f5 (feed rc-acer, SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 RC tester (Acer), signed by its publisher)
+19:30:55.186       11 objects checked (102574 bytes)
+19:30:55.187     sha256:56afab514a94b9da95f3ff10e48552df766b67474902cf43a113d151b566f6f5: feed rc-acer, by SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 (RC tester (Acer)), checking every object
+19:30:55.187     reading verifications, sightings, provenance and annotations
+19:30:55.188     checking ids and patterns (a check stores nothing)
+19:30:55.188     checking sightings, ants, Quick Start entries, media and ratings
+19:30:57.492 [4] pack import A10-pack --library "C:\Users\jimmi\jetcarp-rc-042\import\library.sqlite" -> exit 0 in 2.30 s
+19:30:57.494     imported sha256:56afab514a94b9da95f3ff10e48552df766b67474902cf43a113d151b566f6f5 (feed rc-acer, SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 RC tester (Acer), signed by its publisher)
+19:30:57.495       11 objects checked (102574 bytes)
+19:30:57.495       patterns: 120 added, 0 merged, 0 flagged needs_reverify
+19:30:57.496       sightings 209, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+19:30:57.497       verified again (sample): 120 of 120 passed, 0 skipped, 0 failed
+19:30:57.497     sha256:56afab514a94b9da95f3ff10e48552df766b67474902cf43a113d151b566f6f5: feed rc-acer, by SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 (RC tester (Acer)), checking every object
+19:30:57.498     reading verifications, sightings, provenance and annotations
+19:30:57.499     checking ids and storing patterns
+19:30:57.499     search 668eb340-e9e8-45b2-8eea-bcfe9df3be76: copying its segments and rebuilding its state
+19:30:57.500     merging sightings
+19:30:57.501     search 668eb340-e9e8-45b2-8eea-bcfe9df3be76: 0 runs, 0 elites in 0 niches, rebuilt in 1.9 s
+19:30:57.678 [5] jobs list --library "C:\Users\jimmi\jetcarp-rc-042\import\library.sqlite" -> exit 0 in 0.18 s
+19:30:57.679     5  hunt     done     2026-11-15T00:30:57Z  hunt 5: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:30:57.680         4  hunt     done     2026-11-15T00:30:57Z  hunt 4: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:30:57.681         3  hunt     done     2026-11-15T00:30:57Z  hunt 3: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:30:57.681         2  hunt     done     2026-11-15T00:30:57Z  hunt 2: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:30:57.682         1  explore  paused   2026-11-15T00:30:55Z  explore 1: 0 runs (0/s), 0 elites in 0 niches, 0 confirmed, 0 of 1,359 tilings; cpu only
+19:30:57.683     5 job(s); 0 running
+19:30:57.849 [6] jobs runs --library "C:\Users\jimmi\jetcarp-rc-042\import\library.sqlite" --measures sign_balance,sign_sorted --limit 5 -> exit 0 in 0.16 s
+19:30:57.851     id  score  fate    family             sign_balance sign_sorted
+19:30:57.851     0 run(s) of explore job 1
+19:31:50.063 --- moved the first pack aside (A10-pack-unsealed, its store, import-unsealed); sealing job 3
+19:31:50.425 [7] jobs seal 3 -> exit 0 in 0.34 s
+19:31:50.434     sealed 14672 run(s) of explore job 3 into runs/part-000001.parquet in C:\Users\jimmi\jetcarp-rc-042\data\searches\668eb340-e9e8-45b2-8eea-bcfe9df3be76 (0.2 s)
+19:31:50.451 search folder now: manifest.json 190979; search.sqlite 7118848; runs\part-000001.parquet 1295925
+19:31:50.887 [8] pack export --to A10-pack --feed rc-acer --title "rc test, Acer" --search 668eb340-e9e8-45b2-8eea-bcfe9df3be76 --no-media -> exit 0 in 0.43 s
+19:31:50.889     exported sha256:07b03d907a448c944b89a4a995844c4e4575ae4c3de749f108ab0a1f2cbd021d into C:\Users\jimmi\jetcarp-rc-042\A10-pack: 28 files, 1549199 bytes
+19:31:50.889     the version was published first into C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store` does (then `jetcarp pack export --from C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store` lays it out)
+19:31:50.890     publishing feed rc-acer (version 1) into C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store
+19:31:50.891     120 patterns read, 120 new rows
+19:31:50.892     search 668eb340-e9e8-45b2-8eea-bcfe9df3be76: copying its segments
+19:31:50.893     version sha256:07b03d907a448c944b89a4a995844c4e4575ae4c3de749f108ab0a1f2cbd021d written
+19:31:51.120 [9] pack check A10-pack -> exit 0 in 0.22 s
+19:31:51.121     checked sha256:07b03d907a448c944b89a4a995844c4e4575ae4c3de749f108ab0a1f2cbd021d (feed rc-acer, SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 RC tester (Acer), signed by its publisher)
+19:31:51.122       12 objects checked (1398499 bytes)
+19:31:51.123     sha256:07b03d907a448c944b89a4a995844c4e4575ae4c3de749f108ab0a1f2cbd021d: feed rc-acer, by SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 (RC tester (Acer)), checking every object
+19:31:51.124     reading verifications, sightings, provenance and annotations
+19:31:51.124     checking ids and patterns (a check stores nothing)
+19:31:51.125     checking sightings, ants, Quick Start entries, media and ratings
+19:31:53.451 [10] pack import A10-pack --library "C:\Users\jimmi\jetcarp-rc-042\import\library.sqlite" -> exit 0 in 2.32 s
+19:31:53.452     imported sha256:07b03d907a448c944b89a4a995844c4e4575ae4c3de749f108ab0a1f2cbd021d (feed rc-acer, SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 RC tester (Acer), signed by its publisher)
+19:31:53.453       12 objects checked (1398499 bytes)
+19:31:53.453       patterns: 120 added, 0 merged, 0 flagged needs_reverify
+19:31:53.454       sightings 209, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+19:31:53.455       verified again (sample): 120 of 120 passed, 0 skipped, 0 failed
+19:31:53.456     sha256:07b03d907a448c944b89a4a995844c4e4575ae4c3de749f108ab0a1f2cbd021d: feed rc-acer, by SHA256:F1dD/mOg51iiC1+we8XeUDg9LMLEE4n19z9Li3pOqN8 (RC tester (Acer)), checking every object
+19:31:53.469     reading verifications, sightings, provenance and annotations
+19:31:53.470     checking ids and storing patterns
+19:31:53.470     search 668eb340-e9e8-45b2-8eea-bcfe9df3be76: copying its segments and rebuilding its state
+19:31:53.471     merging sightings
+19:31:53.471     search 668eb340-e9e8-45b2-8eea-bcfe9df3be76: 14672 runs, 2528 elites in 1321 niches, rebuilt in 1.9 s
+19:31:53.652 [11] jobs list --library "C:\Users\jimmi\jetcarp-rc-042\import\library.sqlite" -> exit 0 in 0.18 s
+19:31:53.653     5  hunt     done     2026-11-15T00:31:53Z  hunt 5: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:31:53.654         4  hunt     done     2026-11-15T00:31:53Z  hunt 4: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:31:53.655         3  hunt     done     2026-11-15T00:31:53Z  hunt 3: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:31:53.656         2  hunt     done     2026-11-15T00:31:53Z  hunt 2: imported from pack rc test, Acer (its finds came with the pack; nothing ran here)
+19:31:53.657         1  explore  paused   2026-11-15T00:31:51Z  explore 1: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 80 confirmed, 13 of 1,359 tilings; cpu only
+19:31:53.658     5 job(s); 0 running
+19:31:53.834 [12] jobs runs --library "C:\Users\jimmi\jetcarp-rc-042\import\library.sqlite" --measures sign_balance,sign_sorted --limit 5 -> exit 0 in 0.17 s
+19:31:53.834     id  score  fate    family             sign_balance sign_sorted
+19:31:53.836          4868   1.94  cycle   jaca               0.0495 1
+19:31:53.837          8160   1.93  cycle   jaca               0.0222 1
+19:31:53.838         10702   1.93  cycle   jaca               0.0156 1
+19:31:53.839          4151   1.92  cycle   jaca               0.0659 1
+19:31:53.839          8387   1.92  cycle   jaca               0.0134 1
+19:31:53.840     5 run(s) of explore job 1

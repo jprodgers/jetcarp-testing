@@ -1,0 +1,67 @@
+﻿scene:      D4-scene.json
+tiling:     Square (parallelogram) (square): 8040 cells, 120x67 unit cells, 1 tile type(s), storage dense, edges wrap
+generation: 1921  hash f8d3bc141e491409
+rule:       B3/S23 (CA 1, field 0), 193 live cells
+objects:    52 (still lifes 22, oscillators 30, spaceships 0, other 0), 8 symmetries, periods up to 64
+census:     blinker (p2) x 30, block x 13, beehive x 4, boat x 4, loaf x 1
+
+ count  class       period  cells  key       name
+    30  oscillator       2      3  9c85980f  blinker (p2)
+    13  still life       1      4  a8307012  block
+     4  still life       1      6  8aee82b1  beehive
+     4  still life       1      5  72831a72  boat
+     1  still life       1      7  0c224d06  loaf
+
+#0     block                        cells    4  centroid (8.0, 1.0)  oo/oo
+#1     blinker                      cells    3  centroid (113.5, 1.5)  ooo
+#2     blinker                      cells    3  centroid (110.5, 4.5)  ooo
+#3     blinker                      cells    3  centroid (116.5, 4.5)  ooo
+#4     blinker                      cells    3  centroid (113.5, 7.5)  ooo
+#5     loaf                         cells    7  centroid (63.8, 2.8)  .oo/o..o/o.o/.o
+#6     boat                         cells    5  centroid (95.3, 9.7)  oo/o.o/.o
+#7     blinker                      cells    3  centroid (7.5, 10.5)  ooo
+#8     blinker                      cells    3  centroid (4.5, 13.5)  ooo
+#9     beehive                      cells    6  centroid (104.5, 11.0)  .oo/o..o/.oo
+#10    blinker                      cells    3  centroid (30.5, 14.5)  ooo
+#11    blinker                      cells    3  centroid (34.5, 14.5)  ooo
+#12    blinker                      cells    3  centroid (80.5, 18.5)  ooo
+#13    blinker                      cells    3  centroid (58.5, 21.5)  ooo
+#14    blinker                      cells    3  centroid (61.5, 24.5)  ooo
+#15    blinker                      cells    3  centroid (58.5, 27.5)  ooo
+#16    block                        cells    4  centroid (71.0, 21.0)  oo/oo
+#17    blinker                      cells    3  centroid (25.5, 25.5)  ooo
+#18    block                        cells    4  centroid (49.0, 25.0)  oo/oo
+#19    beehive                      cells    6  centroid (111.0, 25.5)  .oo/o..o/.oo
+#20    blinker                      cells    3  centroid (5.5, 26.5)  ooo
+#21    blinker                      cells    3  centroid (39.5, 26.5)  ooo
+#22    blinker                      cells    3  centroid (36.5, 29.5)  ooo
+#23    blinker                      cells    3  centroid (42.5, 29.5)  ooo
+#24    blinker                      cells    3  centroid (39.5, 32.5)  ooo
+#25    blinker                      cells    3  centroid (66.5, 30.5)  ooo
+#26    block                        cells    4  centroid (71.0, 30.0)  oo/oo
+#27    block                        cells    4  centroid (4.0, 33.0)  oo/oo
+#28    blinker                      cells    3  centroid (15.5, 32.5)  ooo
+#29    blinker                      cells    3  centroid (12.5, 35.5)  ooo
+#30    blinker                      cells    3  centroid (18.5, 35.5)  ooo
+#31    blinker                      cells    3  centroid (15.5, 38.5)  ooo
+#32    beehive                      cells    6  centroid (95.5, 35.0)  .oo/o..o/.oo
+#33    block                        cells    4  centroid (79.0, 38.0)  oo/oo
+#34    blinker                      cells    3  centroid (81.5, 41.5)  ooo
+#35    boat                         cells    5  centroid (74.3, 39.7)  oo/o.o/.o
+#36    blinker                      cells    3  centroid (56.5, 42.5)  ooo
+#37    blinker                      cells    3  centroid (53.5, 45.5)  ooo
+#38    block                        cells    4  centroid (43.0, 44.0)  oo/oo
+#39    block                        cells    4  centroid (111.0, 44.0)  oo/oo
+#40    blinker                      cells    3  centroid (9.5, 45.5)  ooo
+#41    blinker                      cells    3  centroid (63.5, 46.5)  ooo
+#42    blinker                      cells    3  centroid (72.5, 45.5)  ooo
+#43    blinker                      cells    3  centroid (21.5, 47.5)  ooo
+#44    boat                         cells    5  centroid (11.7, 52.7)  oo/o.o/.o
+#45    beehive                      cells    6  centroid (30.5, 55.0)  .oo/o..o/.oo
+#46    block                        cells    4  centroid (92.0, 54.0)  oo/oo
+#47    boat                         cells    5  centroid (102.3, 56.3)  oo/o.o/.o
+#48    block                        cells    4  centroid (21.0, 59.0)  oo/oo
+#49    block                        cells    4  centroid (96.0, 59.0)  oo/oo
+#50    block                        cells    4  centroid (69.0, 62.0)  oo/oo
+#51    block                        cells    4  centroid (60.0, 63.0)  oo/oo
+time:       0.00s on 12 threads

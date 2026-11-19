@@ -1,0 +1,46 @@
+{
+  "jetcarp_version": "0.4.2-rc.3",
+  "format": 1,
+  "name": "Empty world",
+  "description": "Add a CA from the panel on the left.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 256,
+        "h": 256
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 1,
+  "cas": [],
+  "commands": [
+    {
+      "op": "add_ca",
+      "ca": {
+        "rule": "B3/S23",
+        "enabled": true,
+        "steps_per_gen": 1
+      }
+    },
+    {
+      "op": "jump",
+      "gens": 1048576
+    }
+  ],
+  "view": {
+    "center": [
+      128.0,
+      128.0
+    ],
+    "speed": 15.0,
+    "zoom": 3.985078125
+  },
+  "record": {
+    "generation": 1048576,
+    "hash": "768be531a000e512",
+    "jetcarp_version": "0.4.2-rc.3",
+    "dead_boundary": false
+  }
+}

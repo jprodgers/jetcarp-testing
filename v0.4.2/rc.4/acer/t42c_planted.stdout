@@ -1,0 +1,205 @@
+﻿== (a) A-6's t42b_symlink.py with rc.4
+file symlink made: $W\out\innocent.json -> $W\outside\victim.txt
+hard link made: $W\out\innocent-hard.json = $W\outside\victim-hard.txt
+== world_new {"path": "link-outside/good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or ~\jetcarp-rc-042c\bin\packs, not $W\out\link-outside\good.json
+== world_new {"path": "link-outside\\good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or ~\jetcarp-rc-042c\bin\packs, not $W\out\link-outside\good.json
+== files_list {"file": "innocent.json"} -> isError=True
+   $W\out\innocent.json is outside JETCARP's output folder ($W\out) and the catalog's folder ($W\library); files_list only reads those
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== world_status {"save_path": "innocent.json"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\innocent.json)
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== files_list {"file": "innocent-hard.json"} -> isError=False
+   $W\out\innocent-hard.json (47 bytes, inside $W\out):
+precious text outside, reached by a hard link
+
+
+== world_status {"save_path": "innocent-hard.json"} -> isError=False
+   Saved the scene (654 bytes, generation 0, hash 774f6f16e1e118c0) to $W\out\innocent-hard.json.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "E
+directory symlink made: $W\out\link-sym -> $W\outside
+== [dir symlink] world_new {"path": "link-sym/good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or ~\jetcarp-rc-042c\bin\packs, not $W\out\link-sym\good.json
+== [dir symlink] world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== [dir symlink] world_status {"save_path": "link-sym/scene.json"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\scene.json)
+== [dir symlink] world_render {"max_side": 64, "save_path": "link-sym\\pic.png"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\pic.png)
+== [dir symlink] world_render {"wallpaper": {"size": "320x200", "out": "link-sym/wall.png"}} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\wall.png)
+== [dir symlink] run_script {"script": "let w = world(#{ tiling: \"square\", size: [16, 16] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_png(\"link-sym/s.png\", #{ size: [32, 32] }); print(\"wrote\");", "max_seconds -> isError=True
+   error at line 1, column 100: scripts may only write inside $W\out (got $W\out\link-sym\s.png); use out_dir("label") for a new output folder
+log:
+error: line 1, column 100: scripts may only write inside $W\out (got C:
+== [dir symlink] run_script {"script": "write_text(\"link-sym/t.txt\", \"x\"); print(\"wrote\");", "max_seconds": 20} -> isError=True
+   error at line 1, column 1: scripts may only write inside $W\out (got $W\out\link-sym\t.txt); use out_dir("label") for a new output folder
+log:
+error: line 1, column 1: scripts may only write inside $W\out (got C:\Use
+== [dir symlink] search_runs {"job": 3, "csv": "link-sym/runs.csv", "limit": 5} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\runs.csv)
+== [dir symlink] media_render {"quickstart": "life", "gens": 5, "out": "link-sym/media"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\media)
+== [dir symlink] pack {"export": {"to": "link-sym/export", "publish": {"feed": "f9-sym", "no_media": true, "no_searches": true}}} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\export)
+== [dir symlink] search_start {"pile": {"tiling": "square", "grains": 500, "out": "link-sym/piles"}, "wait_s": 30} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\piles)
+== [dir symlink] files_list {"path": "link-sym"} -> isError=True
+   $W\out\link-sym is outside JETCARP's output folder ($W\out) and the catalog's folder ($W\library); files_list only reads those
+#### written in $W\outside through the directory symlink: 0
+$ the file link and its target afterwards
+\\?\$W\outside\victim.txt
+precious text outside the output folder
+
+$ the hard link's outside file afterwards (654 bytes)
+{
+  "jetcarp_version": "0.4.2-rc.4",
+  "format": 1,
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 16,
+        "h": 16
+      }
+    },
+    "boundary": "wrap"
+  },
+  "r
+#### (b) planted links, rc.4 (jetcarp 0.4.2-rc.4), 2026-11-16 22:34:42
+planted (symbolic link): $P\out\lk-media\poster.png -> $P\outside\planted\lk-media-poster.png (missing)
+planted (symbolic link): $P\out\lk-media2\poster.png -> $P\outside\planted\victim-poster.png (exists)
+planted (symbolic link): $P\out\lk-frames\frames -> $P\outside\planted\frames (exists)
+planted (symbolic link): $P\out\lk-export\pack.json -> $P\outside\planted\pack.json (missing)
+planted (symbolic link): $P\out\lk-index\index -> $P\outside\planted\index (missing)
+planted (symbolic link): $P\out\.lk-store.store -> $P\outside\planted\store-mcp (exists)
+== MCP media_render {"quickstart": "life", "out": "lk-media"} -> isError=True
+   JETCARP may only write inside $P\out\lk-media (got $P\out\lk-media\poster.png, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP media_render {"quickstart": "life", "out": "lk-media2", "force": true} -> isError=True
+   JETCARP may only write inside $P\out\lk-media2 (got $P\out\lk-media2\poster.png, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP media_render {"quickstart": "life", "out": "lk-frames", "frames": true} -> isError=True
+   JETCARP may only write inside $P\out\lk-frames (got $P\out\lk-frames\frames, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP pack {"export": {"to": "lk-export", "publish": {"feed": "p42", "no_media": true, "no_searches": true}}} -> isError=True
+   JETCARP may only write inside $P\out\lk-export (got $P\out\lk-export\pack.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP pack {"export": {"to": "lk-index", "publish": {"feed": "p42i", "no_media": true, "no_searches": true}}} -> isError=True
+   JETCARP may only write inside $P\out\lk-index (got $P\out\lk-index\index/73e09d9e8c8f6a7cdd42539939edcca1662f221b9f57542f834c3084d542c7b3.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+== MCP pack {"export": {"to": "lk-store", "publish": {"feed": "p42s", "no_media": true, "no_searches": true}}} -> isError=True
+   the MCP tools may only write inside $P\out or $P\library (got $P\out\.lk-store.store)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-inside\frames -> $P\out\inside-target\frames (exists)
+== MCP media_render (a frames link to elsewhere in the output folder, so out of the folder given: refused by design) -> isError=True
+   JETCARP may only write inside $P\out\lk-inside (got $P\out\lk-inside\frames, where a symbolic link leads out of it)
+   [frames written where it leads: 0]
+planted (symbolic link): $P\out\lk-inside2\frames -> $P\out\lk-inside2\real-frames (exists)
+== MCP media_render (control, a frames link that stays inside the folder given) -> isError=False
+   {
+  "done": [],
+  "failed": [],
+  "files": {
+    "anim": "$P\\out\\lk-inside2\\anim.webp",
+    "frames": [
+      "$P\\out\\lk-inside2\\frames/0000.png",
+      "$P\\out\\lk-inside2\\frames/0001.png",
+     
+   [frames written where it leads, inside: 0; lk-inside2\frames still a link: False, frames in it: 201]
+planted (symbolic link): $P\out\lk-media-cli\poster.png -> $P\outside\planted\lk-media-cli-poster.png (missing)
+== $ jetcarp media render --quickstart life --out $P\out\lk-media-cli -> exit 1
+   Error: JETCARP may only write inside $P\out\lk-media-cli (got $P\out\lk-media-cli\poster.png, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-frames-cli\frames -> $P\outside\planted\lk-frames-cli-frames (missing)
+== $ jetcarp media render --quickstart life --out $P\out\lk-frames-cli -> exit 1
+   Error: JETCARP may only write inside $P\out\lk-frames-cli (got $P\out\lk-frames-cli\frames, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-export-cli\pack.json -> $P\outside\planted\lk-export-cli-pack.json (missing)
+== $ jetcarp pack export --to $P\out\lk-export-cli --feed p42-cli --no-media --no-searches -> exit 1
+   hing feed p42-cli (version 1) into $P\out\.lk-export-cli.store
+110 patterns read, 110 new rows
+version sha256:2feca7829c7d6effb8aeed03805795add1c546f6a68f11e3b4cf6cc4c6f98141 written
+Error: JETCARP may only write inside $P\out\lk-export-cli (got $P\out\lk-export-cli\pack.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\lk-index-cli\index -> $P\outside\planted\lk-index-cli-index (missing)
+== $ jetcarp pack export --to $P\out\lk-index-cli --feed p42i-cli --no-media --no-searches -> exit 1
+   42\out\.lk-index-cli.store
+110 patterns read, 110 new rows
+version sha256:b97fa55d113e2283973eb426263bebfbd0333f1531fdc44dc12240bcc007e31c written
+Error: JETCARP may only write inside $P\out\lk-index-cli (got $P\out\lk-index-cli\index/73e09d9e8c8f6a7cdd42539939edcca1662f221b9f57542f834c3084d542c7b3.json, where a symbolic link leads out of it)
+   [refused: True; names the planted file: True; names where it leads: False]
+planted (symbolic link): $P\out\.lk-store-cli.store -> $P\outside\planted\store-cli (exists)
+== $ jetcarp pack export --to $P\out\lk-store-cli --feed p42s-cli --no-media --no-searches -> exit 0
+   p pack publish --to $P\out\.lk-store-cli.store` does (then `jetcarp pack export --from $P\out\.lk-store-cli.store` lays it out)
+publishing feed p42s-cli (version 1) into $P\out\.lk-store-cli.store
+110 patterns read, 110 new rows
+version sha256:e373ada0b72ec519b918d40193f31c72a5b7eee0a3e66bd59dd3cecf75592436 written
+   [refused: False; names the planted file: True; names where it leads: False]
+#### where the links lead ($P\outside\planted): new entries 49 ['$P\\outside\\planted\\store-cli\\jetcarp-store.json', '$P\\outside\\planted\\store-cli\\keys', '$P\\outside\\planted\\store-cli\\keys\\e845ca914e12af99d74b0399e205b6241d42795c348a60f8b2e20cd30ba9c760.json', '$P\\outside\\planted\\store-cli\\objects', '$P\\outside\\planted\\store-cli\\objects\\sha256', '$P\\outside\\planted\\store-cli\\objects\\sha256\\0d', '$P\\outside\\planted\\store-cli\\objects\\sha256\\0d\\0d70f0e9050d7b0ed35bd97f1d03f0acc2f513232ea3362c2803d99990eac956.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\0e', '$P\\outside\\planted\\store-cli\\objects\\sha256\\0e\\0ed1f884b6c0a87f6e80ec095e2aa74dff4f597066102874d83f0ca28dd5733c.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\15', '$P\\outside\\planted\\store-cli\\objects\\sha256\\15\\15506fea0eb5383d01509ba386cdc365e9001290f99f44b73d9ba4197c7da3ff.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\16', '$P\\outside\\planted\\store-cli\\objects\\sha256\\16\\16e715957be0e29aed027b18e8c35f9a86926661bbe09c58fb75b2925225162e.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\20', '$P\\outside\\planted\\store-cli\\objects\\sha256\\20\\2015317a02b2f382ec6cfeeeb240a159ceea74212ff3a77a4e853f819ad416ab.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\27', '$P\\outside\\planted\\store-cli\\objects\\sha256\\27\\278ef872501bce1a54322b478c450c3f094d2aece0597f695c8575992d6d1d05.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\43', '$P\\outside\\planted\\store-cli\\objects\\sha256\\43\\4340a07c942ac6fab575ed2d2b691cf508fdf1ca6f2fcc939eb9fe5f53221374.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\62', '$P\\outside\\planted\\store-cli\\objects\\sha256\\62\\6226348ebae30a0ff8eeeeff5510c39448eedff656bee7c0fcc226ad1d8c5ea1.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\73', '$P\\outside\\planted\\store-cli\\objects\\sha256\\73\\73af7d3f7f39dcb4421cb8f3fea2eba2f05c82affea407272d20aeb824aaf4ca.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\73\\73e09d9e8c8f6a7cdd42539939edcca1662f221b9f57542f834c3084d542c7b3.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\7a', '$P\\outside\\planted\\store-cli\\objects\\sha256\\7a\\7a739596477a681ae4ed4f6058fe8a6c42736644b0bf408fc762859c1bd441a1.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\8b', '$P\\outside\\planted\\store-cli\\objects\\sha256\\8b\\8b820f40b2216f2cb79b15de04965f0bfe7a8e6de2f7053d9815bf230bff0caf.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\a5', '$P\\outside\\planted\\store-cli\\objects\\sha256\\a5\\a5f6fc46e7bb1f8b217dc64db2690bf9d8b2258f8176588f7abb17904c2f53ea.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\c0', '$P\\outside\\planted\\store-cli\\objects\\sha256\\c0\\c0b69fca19c644e269936425ea7b7989ef0d0bb70c8c28d6b6d7f0083b1a0c2e.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\cc', '$P\\outside\\planted\\store-cli\\objects\\sha256\\cc\\cc21a276b70a76e6060030059b6a7d1ef87f529d13f8e59acd52d89e322c544a.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\e1', '$P\\outside\\planted\\store-cli\\objects\\sha256\\e1\\e1b5ef1341fc045aeedb1283e6d453c5d622ffb609a9efec5f85dda3a2b82195.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\e3', '$P\\outside\\planted\\store-cli\\objects\\sha256\\e3\\e373ada0b72ec519b918d40193f31c72a5b7eee0a3e66bd59dd3cecf75592436.json', '$P\\outside\\planted\\store-cli\\objects\\sha256\\e5', '$P\\outside\\planted\\store-cli\\objects\\sha256\\e5\\e52690ebd0d442dcc97a2ca5596ee7cb8511b225ce9fc1b93dc4772375a84c92.parquet', '$P\\outside\\planted\\store-cli\\objects\\sha256\\fe', '$P\\outside\\planted\\store-cli\\objects\\sha256\\fe\\fee50d119df321734590786d3a3f2e38b8a26458c60d3a8197041068180a15fa.json', '$P\\outside\\planted\\store-cli\\refs', '$P\\outside\\planted\\store-cli\\refs\\p42s-cli.json', '$P\\outside\\planted\\store-cli\\sigs', '$P\\outside\\planted\\store-cli\\sigs\\sha256', '$P\\outside\\planted\\store-cli\\sigs\\sha256\\e3', '$P\\outside\\planted\\store-cli\\sigs\\sha256\\e3\\e373ada0b72ec519b918d40193f31c72a5b7eee0a3e66bd59dd3cecf75592436', '$P\\outside\\planted\\store-cli\\sigs\\sha256\\e3\\e373ada0b72ec519b918d40193f31c72a5b7eee0a3e66bd59dd3cecf75592436\\e845ca914e12af99d74b0399e205b6241d42795c348a60f8b2e20cd30ba9c760.sig']; changed 0 []
+the junction targets this script made, still empty: True (0)
+the existing target unchanged: True; the frames folder there empty: True
+(c) the hidden store's link (MCP): files written where it leads: 0 []
+(c) the hidden store's link (command line): files written where it leads: 23 ['jetcarp-store.json', 'keys\\e845ca914e12af99d74b0399e205b6241d42795c348a60f8b2e20cd30ba9c760.json', 'objects\\sha256\\0d\\0d70f0e9050d7b0ed35bd97f1d03f0acc2f513232ea3362c2803d99990eac956.json', 'objects\\sha256\\0e\\0ed1f884b6c0a87f6e80ec095e2aa74dff4f597066102874d83f0ca28dd5733c.parquet', 'objects\\sha256\\15\\15506fea0eb5383d01509ba386cdc365e9001290f99f44b73d9ba4197c7da3ff.parquet', 'objects\\sha256\\16\\16e715957be0e29aed027b18e8c35f9a86926661bbe09c58fb75b2925225162e.json'] ...
+jetcarp processes left: none

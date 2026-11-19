@@ -1,0 +1,3 @@
+explore search 10 is paused
+  explore 10: 5,120 runs (121/s), 1,070 elites in 563 niches (0 of them confirmed), 5 of 1,359 tilings; Apple M2 Max, Metal
+  `jetcarp jobs resume 10` continues it from its archive (not run for run: the search is not deterministic)

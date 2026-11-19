@@ -1,0 +1,80 @@
+R4 #87 (covered) and #89 (Keep awake), the Mac, 2026-11-17 03:31:31 AM EST; test folder $H = homes/app87
+app: $J --control  [03:31:31]
+app pid 43389, window frame [328, 130, 1400, 932, 1]
+world_new -> isError=False: New world created.
+app_display playing speed 30 -> isError=False
+   t(s)  phase      answer(s)  generation  gens/s  frame (x y w h on-screen)  app-CPU(% of a core)
+    0.0  in view          0.01           0       -    [328, 130, 1400, 932, 1]       -
+    2.0  in view          0.01          60    29.9    [328, 130, 1400, 932, 1]      47
+    4.0  in view          0.01         120    29.9    [328, 130, 1400, 932, 1]      44
+    6.0  in view          0.01         180    29.9    [328, 130, 1400, 932, 1]      47
+    8.0  in view          0.01         240    30.0    [328, 130, 1400, 932, 1]      43
+   10.0  in view          0.01         300    30.0    [328, 130, 1400, 932, 1]      49
+   12.0  in view          0.01         360    29.9    [328, 130, 1400, 932, 1]      44
+   14.0  in view          0.01         420    30.0    [328, 130, 1400, 932, 1]      46
+   16.0  in view          0.01         481    30.4    [328, 130, 1400, 932, 1]      46
+   18.0  in view          0.01         541    30.0    [328, 130, 1400, 932, 1]      42
+  -- cover 288 90 1480 1012 60 at 20.0 s: covering 288,90 1480x1012 for 60.0 s
+   20.3  covered          0.01         608    29.8    [328, 130, 1400, 932, 1]      43
+   22.3  covered          0.01         668    29.9    [328, 130, 1400, 932, 1]       5
+   24.3  covered          0.01         728    30.0    [328, 130, 1400, 932, 1]       5
+   26.3  covered          0.01         788    29.9    [328, 130, 1400, 932, 1]       4
+   28.3  covered          0.01         848    29.9    [328, 130, 1400, 932, 1]       4
+   30.3  covered          0.01         908    30.0    [328, 130, 1400, 932, 1]       4
+   32.3  covered          0.01         969    30.5    [328, 130, 1400, 932, 1]       4
+   34.3  covered          0.01        1029    29.9    [328, 130, 1400, 932, 1]       4
+   36.3  covered          0.01        1089    29.9    [328, 130, 1400, 932, 1]       4
+   38.3  covered          0.01        1149    29.9    [328, 130, 1400, 932, 1]       4
+   40.3  covered          0.01        1209    30.0    [328, 130, 1400, 932, 1]       4
+   42.3  covered          0.00        1269    30.0    [328, 130, 1400, 932, 1]       4
+   44.3  covered          0.00        1329    29.9    [328, 130, 1400, 932, 1]       4
+   46.3  covered          0.01        1389    30.0    [328, 130, 1400, 932, 1]       4
+   48.3  covered          0.01        1449    30.0    [328, 130, 1400, 932, 1]       4
+   50.3  covered          0.01        1509    29.9    [328, 130, 1400, 932, 1]       4
+   52.3  covered          0.00        1569    30.0    [328, 130, 1400, 932, 1]       4
+   54.3  covered          0.01        1629    29.9    [328, 130, 1400, 932, 1]       4
+   56.3  covered          0.01        1689    30.0    [328, 130, 1400, 932, 1]       4
+   58.3  covered          0.01        1750    30.4    [328, 130, 1400, 932, 1]       4
+   60.4  covered          0.01        1810    29.9    [328, 130, 1400, 932, 1]       4
+   62.4  covered          0.01        1870    30.0    [328, 130, 1400, 932, 1]       4
+   64.4  covered          0.01        1930    29.9    [328, 130, 1400, 932, 1]       4
+   66.4  covered          0.01        1990    29.9    [328, 130, 1400, 932, 1]       4
+   68.4  covered          0.00        2050    29.9    [328, 130, 1400, 932, 1]       4
+   70.4  covered          0.00        2110    30.0    [328, 130, 1400, 932, 1]       4
+   72.4  covered          0.01        2170    29.9    [328, 130, 1400, 932, 1]       4
+   74.4  covered          0.01        2230    29.9    [328, 130, 1400, 932, 1]       4
+   76.4  covered          0.01        2291    30.4    [328, 130, 1400, 932, 1]       4
+   78.4  covered          0.00        2351    30.0    [328, 130, 1400, 932, 1]       3
+   80.4  covered          0.01        2411    29.9    [328, 130, 1400, 932, 1]       4
+   82.4  covered          0.01        2471    30.0    [328, 130, 1400, 932, 1]       4
+  -- the cover window gone at 84.4 s (exit 0)
+   84.4  in view again    0.01        2532    30.3    [328, 130, 1400, 932, 1]      25
+   86.4  in view again    0.01        2592    30.0    [328, 130, 1400, 932, 1]      46
+   88.4  in view again    0.01        2652    30.0    [328, 130, 1400, 932, 1]      43
+   90.4  in view again    0.01        2712    30.0    [328, 130, 1400, 932, 1]      48
+   92.4  in view again    0.01        2772    30.0    [328, 130, 1400, 932, 1]      42
+   94.4  in view again    0.01        2832    29.9    [328, 130, 1400, 932, 1]      43
+   96.4  in view again    0.01        2892    30.0    [328, 130, 1400, 932, 1]      49
+   98.4  in view again    0.01        2952    30.0    [328, 130, 1400, 932, 1]      46
+
+in view: 10 polls, 0 errors, 30.1 gens/s, slowest answer 0.01 s, longest gap between answers 2.0 s, app CPU median 46% of a core (range 42 to 49)
+covered: 32 polls, 0 errors, 30.0 gens/s, slowest answer 0.01 s, longest gap between answers 2.1 s, app CPU median 4% of a core (range 3 to 43)
+in view again: 8 polls, 0 errors, 30.0 gens/s, slowest answer 0.01 s, longest gap between answers 2.0 s, app CPU median 46% of a core (range 25 to 49)
+
+#89 Keep awake, through app_display (the View menu's setting)
+  before: JETCARP's assertions: none
+  app_display state: keep_awake true
+  app_display keep_awake true -> isError=False
+  on, 4 s later: JETCARP's assertions: ['pid 43389(jetcarp): [0x00030daa00058700] 00:00:04 NoDisplaySleepAssertion named: "JETCARP is showing cellular automata"']
+    summary line: PreventUserIdleDisplaySleep    1
+    summary line: PreventUserIdleSystemSleep     1
+  app_display keep_awake false -> isError=False
+  off, 4 s later: JETCARP's assertions: none
+  app_display state: keep_awake true
+#89: pass
+the app closed (exit -15)
+
+(Afterwards: the two "app_display state: keep_awake true" lines above are this script misreading the reply. The
+state's keep_awake is an object, {"backend", "error", "held", "on"}, and the script's pattern caught the screensaver
+settings' own "keep_awake": true further down. `89b-state.txt` (t89b_state.py) reads the object: on false, then on
+true, held true, backend iokit, with pmset's NoDisplaySleepAssertion; then on false and no assertion; twice.)

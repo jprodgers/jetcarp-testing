@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA shrinking island (squares, blast 1)",
+  "description": "+B23/S3 against -B25/S1247 with blast 1: glowing islands shrink and vanish. Found by a JACA rule search.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 190,
+        "h": 126
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 27,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B23/S3 -B25/S1247 blast 1",
+      "rule": "JACA +B23/S3 -B25/S1247 blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Deep Sea",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Thermal"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "67515c2dfc8a3995",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

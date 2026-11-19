@@ -1,0 +1,295 @@
+﻿== app_display {}  ->  isError=True  (0.0 s)  [11:36:45]
+   app_display is only available in the JETCARP app: start the app with AI control on (or `jetcarp --control`), then use `jetcarp mcp --app` or call use_app with attach=true
+== use_app {"attach": true}  ->  isError=False  (0.0 s)  [11:36:45]
+   Attached to the JETCARP app: the tools now act on the world the user is watching.
+{
+  "cas": [],
+  "cells": 9600,
+  "cells_hash": "cbf29ce484222325",
+  "done": "no CA is running",
+  "fields": [],
+  "generation": 0,
+  "hash": "a8c7f832281a39c5",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "app",
+    "note": "this is the world shown in the JETCARP app window; the user can change it too",
+    "playing": false,
+    "playing_note": "paused",
+    "scene_name": "",
+    "screensaver": false
+  },
+  "script": 
+== app_display {}  ->  isError=False  (0.3 s)  [11:36:45]
+   {
+  "arrangement": "span",
+  "canvas_px": [
+    1000.0,
+    800.0
+  ],
+  "cell_px": 8.0,
+  "fullscreen": false,
+  "fullscreen_monitor": null,
+  "gpu": "auto",
+  "gpu_choice": "follow",
+  "hide_preview": false,
+  "keep_awake": {
+    "backend": null,
+    "error": null,
+    "held": false,
+    "on": false
+  },
+  "max_speed": false,
+  "menu_autohide": false,
+  "mode": "window",
+  "monitors": [
+    {
+      "current": true,
+      "index": 0,
+      "name": "\\\\.\\DISPLAY1",
+      "position_px": [
+        0,
+        0
+      ],
+      "refresh_hz": 144.0,
+      "scale": 1.0,
+      "size_px": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "outputs": [],
+  "outputs_open": 0,
+  "panes_hidden": false,
+
+== world_new {"tiling": "square", "width": 128, "height": 96, "cas": ["Life"]}  ->  isError=False  (0.3 s)  [11:36:45]
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 12288,
+  "cells_hash": "e7fb8bb4a61465ff",
+  "done": "no: something can still change",
+  "fields": [
+    {
+      "ca_ids": [
+        1
+      ],
+      "field": 0,
+      "kind": "binary",
+      "max_state": 1,
+      "population": 3810,
+      "shared": true
+    }
+  ],
+  "generation": 0,
+  "hash": "df81be800470ddea",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers
+== world_step {"generations": 50}  ->  isError=False  (0.0 s)  [11:36:45]
+   Ran 50 generation(s) in 0.02s.
+Generation 50. Status: Running. Hash b6aec745e5d9314d (with generation and ages); cells hash 5d4cc2d84f772952 (cell states only: equal when the cells repeat).
+field 0 [Life (id 1)]: 1397 live
+== world_status {}  ->  isError=False  (0.0 s)  [11:36:45]
+   {
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 12288,
+  "cells_hash": "5d4cc2d84f772952",
+  "done": "no: something can still change",
+  "fields": [
+    {
+      "ca_ids": [
+        1
+      ],
+      "field": 0,
+      "kind": "binary",
+      "max_state": 1,
+      "population": 1397,
+      "shared": true
+    }
+  ],
+  "generation": 50,
+  "hash": "b6aec745e5d9314d",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell sta
+== app_display {"playing": true, "speed": 30}  ->  isError=False  (0.3 s)  [11:36:46]
+   {
+  "arrangement": "span",
+  "canvas_px": [
+    1062.46875,
+    850.0
+  ],
+  "cell_px": 8.0,
+  "fullscreen": false,
+  "fullscreen_monitor": null,
+  "gpu": "auto",
+  "gpu_choice": "follow",
+  "hide_preview": false,
+  "keep_awake": {
+    "backend": null,
+    "error": null,
+    "held": false,
+    "on": false
+  },
+  "max_speed": false,
+  "menu_autohide": false,
+  "mode": "window",
+  "monitors": [
+    {
+      "current": true,
+      "index": 0,
+      "name": "\\\\.\\DISPLAY1",
+      "position_px": [
+        0,
+        0
+      ],
+      "refresh_hz": 144.0,
+      "scale": 1.0,
+      "size_px": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "outputs": [],
+  "outputs_open": 0,
+  "panes_hidden": fal
+== world_status {}  ->  isError=False  (0.0 s)  [11:36:50]
+   {
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 12288,
+  "cells_hash": "5c6a0a715ec57c8f",
+  "done": "no: something can still change",
+  "fields": [
+    {
+      "ca_ids": [
+        1
+      ],
+      "field": 0,
+      "kind": "binary",
+      "max_state": 1,
+      "population": 648,
+      "shared": true
+    }
+  ],
+  "generation": 179,
+  "hash": "0a74065804d87c09",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell sta
+== app_display {"playing": false}  ->  isError=False  (0.0 s)  [11:36:50]
+   {
+  "arrangement": "span",
+  "canvas_px": [
+    1062.46875,
+    850.0
+  ],
+  "cell_px": 8.0,
+  "fullscreen": false,
+  "fullscreen_monitor": null,
+  "gpu": "auto",
+  "gpu_choice": "follow",
+  "hide_preview": false,
+  "keep_awake": {
+    "backend": null,
+    "error": null,
+    "held": false,
+    "on": false
+  },
+  "max_speed": false,
+  "menu_autohide": false,
+  "mode": "window",
+  "monitors": [
+    {
+      "current": true,
+      "index": 0,
+      "name": "\\\\.\\DISPLAY1",
+      "position_px": [
+        0,
+        0
+      ],
+      "refresh_hz": 144.0,
+      "scale": 1.0,
+      "size_px": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "outputs": [],
+  "outputs_open": 0,
+  "panes_hidden": fal
+== world_render {"max_side": 256, "save_path": "a6/app-world.png"}  ->  isError=False  (0.0 s)  [11:36:50]
+   256 x 192 px picture of generation 179 (Square (parallelogram), 12288 cells; hash 0a74065804d87c09). Saved to $W\out\a6\app-world.png.
+[content types: ['text', 'image']]
+== use_app {"attach": false}  ->  isError=False  (0.0 s)  [11:36:50]
+   Using this server's private world.
+{
+  "cas": [],
+  "cells": 4096,
+  "cells_hash": "cbf29ce484222325",
+  "done": "no CA is running",
+  "fields": [],
+  "generation": 0,
+  "hash": "a8c7f832281a39c5",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "headless",
+    "note": "a private world inside this MCP server; the JETCARP app is not affected"
+  },
+  "script": null,
+  "status": "Empty: every cell is dead",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Square (parallelogram) (square): 4096 cells
+== world_status {}  ->  isError=False  (0.0 s)  [11:36:50]
+   {
+  "cas": [],
+  "cells": 4096,
+  "cells_hash": "cbf29ce484222325",
+  "done": "no CA is running",
+  "fields": [],
+  "generation": 0,
+  "hash": "a8c7f832281a39c5",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "headless",
+    "note": "a private world inside this MCP server; the JETCARP app is not affected"
+  },
+  "script": null,
+  "status": "Empty: every cell is dead",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Square (parallelogram) (square): 4096 cells, 64x64 unit cells, 1 tile type(s),

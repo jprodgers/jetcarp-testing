@@ -1,0 +1,4 @@
+made publisher key SHA256:uZnkiMS8GBgFD+hmv3FqlqGEOji+so517QRvfEmOecM
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFiYK4GiuAMF0ie2cdEWvb27F6p6kDqNdDqHFws5TMYV jetcarp publisher
+  file /Users/Jimmie/jetcarp-rc-042b/config/pack/publisher_ed25519
+  named rc.2 test publisher

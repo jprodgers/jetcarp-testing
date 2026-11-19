@@ -1,0 +1,8 @@
+build: commit af07766; exit 0 in 81 s, 0 warning lines; jetcarp 0.4.2-rc.3; sha256 eaec0ac4944ea674…
+setup: exit 0 ; config: photosensitivity.json 
+doctor: exit 0; self-test: passed (187 ms): 59 world rules and 33 explore batches matched the CPU; GPU: auto (automatic)
+1.1 parity: pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; exit 0, 74 s
+1.2 parity: pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; exit 0, 63 s
+1.3 suite: pass: commit af07766; 1058 passed, 0 failed, 39 ignored, in 143 test binaries; exit 0, 10 min
+1.5 soak start: 18:03:32 UTC, 8 h, a sample every 5 min (96); host pid 44732
+1.5 soak: pass (automatic): 97 samples over 8.0 h; alive 97/97, pid 44732; screen 0 moved in 96 of 96 intervals (1 items seen); footprint 211.0 MB (first hour) -> 211.0 MB (last hour), max 233.0, -0.06 MB/h; status memory 209 -> 210 MB (-0.11 MB/h); RSS 111-113 MB; CPU (top) median 64.5%; whole GPU median 13%; held in 0 samples

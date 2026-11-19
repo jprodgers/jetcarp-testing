@@ -1,0 +1,27 @@
+Scene saved from the app at gen 41 (File > Save scene) to Desktop\hat_scene.json; copy: 07-hat_scene.json
+
+> jetcarp verify hat_scene.json
+ok: generation 41 hash 331637905fbdc519
+(exit 0)
+
+> jetcarp run --help (first lines)
+Load a scene, run it, and report generation, hash, and populations
+
+Usage: jetcarp.exe run [OPTIONS] <SCENE>
+
+Arguments:
+  <SCENE>  
+
+Options:
+      --gens <GENS>              Generations to run after replaying the scene's own commands [default: 0]
+      --json                     Print the result as JSON instead of text (commands that report a result)
+      --png <PNG>                Write a PNG of the final state (scene, version, and hash are embedded as text chunks)
+      --scale <SCALE>            Pixels per world unit (tile edges are about 1 unit). Default: fit into --max-side
+      --max-side <MAX_SIDE>      [default: 1600]
+      --save <SAVE>              Save the resulting scene (with its generation and hash recorded)
+      --threads <THREADS>        Worker threads (default: all cores). The hash must not depend on this
+      --expect <EXPECT>          Fail unless the final hash equals this
+      --gpu                      Step the --gens generations on the GPU where the rules allow it (results are identical)
+      --reseed <RESEED>          Install automatic reseed policies before running: one policy or a list, as JSON (the book's "Reseeding" guide), e.g. '{"mode":{"kind":"blobs"},"when":{"kind":"settled"},"cooldown":200}'
+      --reseed-now <RESEED_NOW>  Reseed once before running, with a mode as JSON, e.g. '{"kind":"rain","drops":40}'
+  -h, --help                     Print help

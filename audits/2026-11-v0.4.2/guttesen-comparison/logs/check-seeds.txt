@@ -1,0 +1,23 @@
+--- G, the large glider
+  42 cells; first return to a translate of itself: 40 generations, moved by (0, 10) in his coordinates
+  cells over one period: 28 to 58
+  holds for 10 periods: True
+  engine test: GUTT_FAMILY=trihex GUTT_W=151 GUTT_H=51 GUTT_FILE=work/expected-G.txt cargo test --release --test guttesen_run_expected -- --nocapture
+--- B1, the bouncer
+  96 cells; first exact repeat of the start: generation 116; repeats at every multiple up to 464: True
+  engine test: GUTT_FAMILY=trihex GUTT_W=62 GUTT_H=51 GUTT_FILE=work/expected-B1.txt cargo test --release --test guttesen_run_expected -- --nocapture
+--- the glider gun
+  generation    0: 428 cells, his y from  -216 to   210
+  generation  276: 432 cells, his y from  -285 to   279
+  generation  552: 436 cells, his y from  -354 to   348
+  generation  828: 440 cells, his y from  -423 to   417
+  generation 1104: 444 cells, his y from  -492 to   486
+  generation 1380: 448 cells, his y from  -561 to   555
+  generation 1656: 452 cells, his y from  -630 to   624
+  generation 1932: 456 cells, his y from  -699 to   693
+  generation 2208: 460 cells, his y from  -768 to   762
+  generation 2484: 464 cells, his y from  -837 to   831
+  the gun itself (his y from -60 to 60) repeats every 276 generations from generation 276 on: True
+  newest glider at generation 2484: 4 cells; alone, (period, dx, dy) = (4, 0, 1)
+  gliders in the outgoing stream at generations 0, 276, ..., 2484: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  engine test: GUTT_FAMILY=trihex GUTT_W=1018 GUTT_H=95 GUTT_FILE=work/expected-gun.txt cargo test --release --test guttesen_run_expected -- --nocapture

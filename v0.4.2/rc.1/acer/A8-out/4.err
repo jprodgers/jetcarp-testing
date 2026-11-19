@@ -1,0 +1,2 @@
+Error: 1 rule cannot run, so the job was not started:
+  line 3 of A8-rules.txt: B4x/S2: 'x' is not a neighbour count

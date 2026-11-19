@@ -1,0 +1,11 @@
+$ jetcarp host saver install   (00:06:30)
+written to /Users/Jimmie/Library/Screen Savers/JETCARP.saver; choose JETCARP in System Settings, Wallpaper, Screen Saver… (opening). Install again after changing its rotation
+exit 0
+
+$ jetcarp host saver status
+JETCARP's screen saver is at /Users/Jimmie/Library/Screen Savers/JETCARP.saver, showing "A classic a day". Choose it in System Settings, Wallpaper, Screen Saver….
+
+total 0
+drwx------+  3 Jimmie  staff    96 Nov 13 00:06 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+drwxr-xr-x@  3 Jimmie  staff    96 Nov 13 00:06 JETCARP.saver

@@ -1,0 +1,29 @@
+$ jetcarp setup --status   (23:20:56, after Desktop art)
+setup: Desktop art on 2026-11-13 04:20 UTC (JETCARP 0.4.0-rc.3)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data, 832.6 GB free
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /Users/Jimmie/.local/lib/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 64 patterns, 0 ant runs, 2 jobs; Quick Start entries: 364 built in
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+
+$ jetcarp host status
+running, pid 6128, up 27.0s, 119 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 729 · 303455 cells · wallpaper
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+
+$ jetcarp jobs list
+    2  hunt     done     2026-11-12T06:12:10Z  hunt 2: 10,000/10,000 soups, 2161 soups/s, 213,586 objects (ships 18,987, osc 62,009, still 132,590), 64 distinct, 64 new | newest: p2 oscillator 16c #fc4453 (B3/S23)
+    1  pile     done     2026-11-12T06:09:24Z  pile 1: 0 grains on , step 0/0 (0 grains), 0.000e0 topplings, 0.0 s
+2 job(s); 0 running

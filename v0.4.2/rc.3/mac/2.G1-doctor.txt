@@ -1,0 +1,58 @@
+== auto (gpu-checks.json removed first): exit 0, 0.2 s
+GPU: auto (automatic)
+  display: Apple M2 Max, Metal (integrated)
+      why: the adapter driving the screen (automatic)
+      self-test: passed (202 ms): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: Apple M2 Max, Metal (integrated)
+      why: the fastest adapter (automatic)
+      self-test: passed (202 ms): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+== JETCARP_GPU=M2 (gpu-checks.json removed first): exit 0, 0.2 s
+GPU: auto, the adapter named M2 (JETCARP_GPU=M2)
+  display: Apple M2 Max, Metal (integrated)
+      why: named M2, as asked (JETCARP_GPU=M2)
+      self-test: passed (167 ms): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: Apple M2 Max, Metal (integrated)
+      why: named M2, as asked (JETCARP_GPU=M2)
+      self-test: passed (167 ms): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+== JETCARP_GPU=Apple + WGPU_BACKEND=metal (gpu-checks.json removed first): exit 0, 0.2 s
+GPU: auto, the adapter named Apple WGPU_BACKEND=metal (JETCARP_GPU=Apple WGPU_BACKEND=metal)
+  display: Apple M2 Max, Metal (integrated)
+      why: the adapter driving the screen (JETCARP_GPU=Apple WGPU_BACKEND=metal); no Apple WGPU_BACKEND=metal adapter was found, so the best one
+      self-test: passed (160 ms): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: Apple M2 Max, Metal (integrated)
+      why: the fastest adapter (JETCARP_GPU=Apple WGPU_BACKEND=metal); no Apple WGPU_BACKEND=metal adapter was found, so the best one
+      self-test: passed (160 ms): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+== JETCARP_GPU=off (gpu-checks.json removed first): exit 0, 0.2 s
+GPU: off (JETCARP_GPU=off)
+  display: Apple M2 Max, Metal (integrated)
+      why: the adapter driving the screen (JETCARP_GPU=off)
+      not used, and not tested: the GPU simulation is off
+  compute: Apple M2 Max, Metal (integrated)
+      why: the fastest adapter (JETCARP_GPU=off)
+      not used, and not tested: the GPU simulation is off
+== auto again, with the cache
+exit 0, 0.0 s
+      self-test: passed (167 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      self-test: passed (167 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+== JETCARP_GPU=Apple + WGPU_BACKEND=metal, rerun (zsh hadn't split the two variables above), gpu-checks.json removed first
+exit 0
+GPU: auto, the adapter named Apple (JETCARP_GPU=Apple)
+  display: Apple M2 Max, Metal (integrated)
+      why: named Apple, as asked (JETCARP_GPU=Apple)
+      self-test: passed (195 ms): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: Apple M2 Max, Metal (integrated)
+      why: named Apple, as asked (JETCARP_GPU=Apple)
+      self-test: passed (195 ms): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+  WGPU_BACKEND=metal
+== finding: JETCARP_GPU=off says 'not used, and not tested' but writes gpu-checks.json
+      not used, and not tested: the GPU simulation is off
+      not used, and not tested: the GPU simulation is off
+gpu-checks.json after the off doctor: {"AppleM2Max|Metal|0000:0000||0.4.2-rc.3|9bad7813c3a55612.2":{"passed":true,"note":"59worldrulesand33explorebatchesmatchedtheCPU","millis":165}}

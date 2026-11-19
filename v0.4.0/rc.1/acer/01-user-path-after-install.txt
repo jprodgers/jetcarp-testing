@@ -1,0 +1,13 @@
+﻿User PATH after install (HKCU\Environment\Path):
+  kind: String (REG_SZ)   <-- was ExpandString (REG_EXPAND_SZ) before install
+  entries: 19 (18 before + C:\Users\jimmi\AppData\Local\Programs\jetcarp at the end)
+  sha256 of raw value: (left out)
+  %PNPM_HOME%\bin is now the literal C:\Users\jimmi\AppData\Local\pnpm\bin
+
+Cause (jetcarp-installer.ps1, lines 75 and 172): [Environment]::GetEnvironmentVariable('Path','User')
+returns the value with %VAR% already expanded, and [Environment]::SetEnvironmentVariable('Path', ..., 'User')
+writes it back as REG_SZ. So installing rewrites every %VAR% entry in the user PATH as a literal path and
+changes the value's type. Remove-FromUserPath (line 77-80) does the same on -Uninstall.
+Fix idea: read with (Get-Item HKCU:\Environment).GetValue('Path', $null, 'DoNotExpandEnvironmentNames'),
+write with Set-ItemProperty -Type ExpandString (or RegistryKey.SetValue(..., ExpandString)),
+then broadcast WM_SETTINGCHANGE (or set a dummy variable via [Environment]::SetEnvironmentVariable to trigger it).

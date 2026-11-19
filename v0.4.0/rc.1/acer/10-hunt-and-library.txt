@@ -1,0 +1,87 @@
+> jetcarp jobs list
+    2  hunt     done     2026-11-12T04:49:13Z  hunt 2: 10,000/10,000 soups, 1352 soups/s, 213,586 objects (ships 18,987, osc 62,009, still 132,590), 64 distinct, 64 new | newest: p2 oscillator 16c #fc4453 (B3/S23)
+    1  pile     done     2026-11-12T04:46:56Z  pile 1: 1000000 grains on square, step 20/20 (1000000 grains), 1.158e10 topplings, 8.2 s
+2 job(s); 0 running
+
+> jetcarp jobs status 2
+hunt 2: 10,000/10,000 soups, 1352 soups/s, 213,586 objects (ships 18,987, osc 62,009, still 132,590), 64 distinct, 64 new | newest: p2 oscillator 16c #fc4453 (B3/S23)
+  status done, 7 s run, 9942 settled, 27 died, 31 exploded, 0 unsettled
+  B3/S23 on Square: 10000 soups, 213586 objects (oscillator 62009, spaceship 18987, still life 132590), 64 distinct, 64 new
+  newest finds:
+    fc44535078f613d7c7dd83f41d50d74e  p2 oscillator 16c #fc4453          B3/S23     Square soup 9513  (new to the catalog)
+    d95ba00268bda1003001f3af0aefcd13  p2 oscillator 12c #d95ba0          B3/S23     Square soup 9493  (new to the catalog)
+    fec01cfd3784adfbf87e477180dfe099  p3 oscillator 62c #fec01c          B3/S23     Square soup 9059  (new to the catalog)
+    9aff2b9e2fe67e41842a92e3a5edfc82  p2 oscillator 14c #9aff2b          B3/S23     Square soup 8701  (new to the catalog)
+    0082ead540c1e29af5fe0250d2e0867a  p2 oscillator 18c #0082ea          B3/S23     Square soup 8634  (new to the catalog)
+    f6c1da299a701e8b8753806143fe00f2  still life 14c #f6c1da             B3/S23     Square soup 8633  (new to the catalog)
+    ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+    161b19fa34467ea50f156b7ce128a411  still life 10c #161b19             B3/S23     Square soup 7664  (new to the catalog)
+    25575c0df6aaa781141563b8042235d0  p2 oscillator 12c #25575c          B3/S23     Square soup 7511  (new to the catalog)
+    26b82cdd33b2c7eb0513a66360f199d7  p2 oscillator 14c #26b82c          B3/S23     Square soup 6385  (new to the catalog)
+
+> jetcarp library list
+catalog: C:\Users\jimmi\AppData\Local\jetcarp\library.sqlite (64 shown of 64 matching)
+1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 2     score  77.1  new  c/2 orthogonal
+5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 18956 score  74.6  new  c/4 diagonal
+77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23       Square                     p4     11c  seen 5     score  73.9  new  c/2 orthogonal
+6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23       Square                     p4      9c  seen 24    score  71.8  new  c/2 orthogonal
+fff40ba576c0c267d4b49ab86c73d80a  p6 oscillator 60c #fff40b          B3/S23       Square                     p6     60c  seen 1     score  55.7  new
+c1b99e3a700c52b28934fd9108e34044  p3 oscillator 52c #c1b99e          B3/S23       Square                     p3     52c  seen 1     score  47.7  new
+fec01cfd3784adfbf87e477180dfe099  p3 oscillator 62c #fec01c          B3/S23       Square                     p3     62c  seen 1     score  47.7  new
+0082ead540c1e29af5fe0250d2e0867a  p2 oscillator 18c #0082ea          B3/S23       Square                     p2     18c  seen 1     score  40.3  new
+3421d32d25a30a8a35826b0479758bfa  p2 oscillator 16c #3421d3          B3/S23       Square                     p2     16c  seen 1     score  40.0  new
+fc44535078f613d7c7dd83f41d50d74e  p2 oscillator 16c #fc4453          B3/S23       Square                     p2     16c  seen 1     score  40.0  new
+26b82cdd33b2c7eb0513a66360f199d7  p2 oscillator 14c #26b82c          B3/S23       Square                     p2     14c  seen 1     score  39.8  new
+9731a489ea075ce168e00b74b4acad6e  p2 oscillator 14c #9731a4          B3/S23       Square                     p2     14c  seen 1     score  39.8  new
+9aff2b9e2fe67e41842a92e3a5edfc82  p2 oscillator 14c #9aff2b          B3/S23       Square                     p2     14c  seen 1     score  39.8  new
+25575c0df6aaa781141563b8042235d0  p2 oscillator 12c #25575c          B3/S23       Square                     p2     12c  seen 1     score  39.5  new
+d95ba00268bda1003001f3af0aefcd13  p2 oscillator 12c #d95ba0          B3/S23       Square                     p2     12c  seen 1     score  39.5  new
+35ecac85f789d9a62b4f5f55d3bc375c  p2 oscillator 10c #35ecac          B3/S23       Square                     p2     10c  seen 1     score  39.3  new
+89f83c7cd1ea592b03144f9e6bc96eea  p2 oscillator 10c #89f83c          B3/S23       Square                     p2     10c  seen 1     score  39.3  new
+bcb0ec164e192874660ae598dcdeb295  p2 oscillator 10c #bcb0ec          B3/S23       Square                     p2     10c  seen 1     score  39.3  new
+38420292236ab0f1a79cab0061c7b531  pulsar                             B3/S23       Square                     p3     48c  seen 20    score  35.5  new
+e591ea712fafa99573d6cdedeb53875f  p2 oscillator 12c #e591ea          B3/S23       Square                     p2     12c  seen 2     score  32.0  new
+72a2429a66ac7bd694653fb2ae1f20e0  p2 oscillator 17c #72a242          B3/S23       Square                     p2     17c  seen 4     score  30.1  new
+e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23       Square                     p1     15c  seen 1     score  27.5  new
+4b1e8d6b20cea5dc100f7444731eb9a4  still life 14c #4b1e8d             B3/S23       Square                     p1     14c  seen 1     score  27.0  new
+f6c1da299a701e8b8753806143fe00f2  still life 14c #f6c1da             B3/S23       Square                     p1     14c  seen 1     score  27.0  new
+34d0870b7b039600a6bf00a23b8e70da  still life 13c #34d087             B3/S23       Square                     p1     13c  seen 1     score  26.5  new
+e31c484335ec6c5dcfa94bc9fe027480  still life 13c #e31c48             B3/S23       Square                     p1     13c  seen 1     score  26.5  new
+ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23       Square                     p1     13c  seen 1     score  26.5  new
+299d09888b99cae4935e015f36b49976  beacon                             B3/S23       Square                     p2      8c  seen 160   score  25.8  new
+726d9f101c90abbb38b52ed691ef31f3  still life 11c #726d9f             B3/S23       Square                     p1     11c  seen 1     score  25.5  new
+5b7cf8446ec16c81a9bca7374c8eb907  toad                               B3/S23       Square                     p2      6c  seen 456   score  25.3  new
+07357a31321fcd89ce5e2ee733b9e879  still life 10c #07357a             B3/S23       Square                     p1     10c  seen 1     score  25.0  new
+161b19fa34467ea50f156b7ce128a411  still life 10c #161b19             B3/S23       Square                     p1     10c  seen 1     score  25.0  new
+62160d641ca90a5b7f2a462d04e9280c  still life 10c #62160d             B3/S23       Square                     p1     10c  seen 1     score  25.0  new
+c7251200febb7d0f0e7965699745fd36  still life 10c #c72512             B3/S23       Square                     p1     10c  seen 1     score  25.0  new
+076c1a268e4004b5a0c13876844e8864  still life 9c #076c1a              B3/S23       Square                     p1      9c  seen 1     score  24.5  new
+2f14f53077b021fe1ae019b7c5835852  still life 9c #2f14f5              B3/S23       Square                     p1      9c  seen 1     score  24.5  new
+9c85980ffc554466a1073383568acae9  blinker                            B3/S23       Square                     p2      3c  seen 61353 score  24.3  new
+f604b33e874ae8109ab13c34f6ed8484  still life 8c #f604b3              B3/S23       Square                     p1      8c  seen 1     score  24.0  new
+b1ce71f1ab83785f6d147f445f56acb2  still life 14c #b1ce71             B3/S23       Square                     p1     14c  seen 2     score  19.5  new
+266db0f937d6d921d494acf736e88791  still life 12c #266db0             B3/S23       Square                     p1     12c  seen 2     score  18.5  new
+e9e58d494a7bc815b2c30eed2e18c6f0  still life 14c #e9e58d             B3/S23       Square                     p1     14c  seen 3     score  17.8  new
+0ce0c6d26fe4517a1d597b905389c39b  still life 16c #0ce0c6             B3/S23       Square                     p1     16c  seen 6     score  17.2  new
+1741ff737fd4a9871f808a2bf46d7594  still life 11c #1741ff             B3/S23       Square                     p1     11c  seen 3     score  16.3  new
+b32698505127c4a3301ad2bda8c287b6  still life 14c #b32698             B3/S23       Square                     p1     14c  seen 11    score  15.4  new
+96b76be993a89daec4208a814ed05c13  still life 9c #96b76b              B3/S23       Square                     p1      9c  seen 3     score  15.3  new
+e213607ba80479d6fa2ba28d6661337c  still life 14c #e21360             B3/S23       Square                     p1     14c  seen 130   score  13.9  new
+8cae5af4a207f512f4f1575edff69583  still life 9c #8cae5a              B3/S23       Square                     p1      9c  seen 8     score  13.3  new
+fcc17ecdc8daad5462ed2dac092962ab  still life 8c #fcc17e              B3/S23       Square                     p1      8c  seen 8     score  12.8  new
+d92fdd35dba47d4e489219c209e0957b  still life 12c #d92fdd             B3/S23       Square                     p1     12c  seen 276   score  12.6  new
+9b99f0405fe4ce5c883d06241171fac6  still life 8c #9b99f0              B3/S23       Square                     p1      8c  seen 10    score  12.5  new
+c8f20f137dfae2f393afe921c7c5e670  snake                              B3/S23       Square                     p1      6c  seen 5     score  12.5  new
+206b07b7500d36ca8dd72be030708a99  long barge                         B3/S23       Square                     p1      8c  seen 20    score  11.8  new
+9d035c1014869bfb702f6afbcabfcb17  aircraft carrier                   B3/S23       Square                     p1      6c  seen 12    score  11.3  new
+b20cf1816c080db0f735b9f82659f870  mango                              B3/S23       Square                     p1      8c  seen 49    score  11.3  new
+dfd22d6aa16676a219b75a6394a9c037  eater 1                            B3/S23       Square                     p1      7c  seen 42    score  10.8  new
+f26b69358e36047bb657eca5ebefed8c  pond                               B3/S23       Square                     p1      8c  seen 1981  score  10.3  new
+207be2976052e4e47a57511b44e43845  long boat                          B3/S23       Square                     p1      7c  seen 601   score  10.0  new
+e26450555beaf414bf5d9cbc2bb928cb  barge                              B3/S23       Square                     p1      6c  seen 164   score   9.8  new
+0c224d06d84c8eb6c770d96cd0c626c6  loaf                               B3/S23       Square                     p1      7c  seen 10174 score   9.5  new
+7cddc9ca90cadeda488c86950779aace  ship                               B3/S23       Square                     p1      6c  seen 6565  score   9.1  new
+8aee82b1bc3fbac669053961eff32a5b  beehive                            B3/S23       Square                     p1      6c  seen 34590 score   8.9  new
+72831a72c60f3a6eb387d4b51efb8a6e  boat                               B3/S23       Square                     p1      5c  seen 9576  score   8.6  new
+7fcf0f5457ec631337730e4857233de8  tub                                B3/S23       Square                     p1      4c  seen 2027  score   8.3  new
+a8307012afaf96007050d3d68dc9e55d  block                              B3/S23       Square                     p1      4c  seen 66308 score   7.9  new

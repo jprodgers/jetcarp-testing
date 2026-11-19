@@ -1,0 +1,111 @@
+PASS: ten rounds of `host start --headless; host stop` in one home with no pause: 10 of 10 starts and 10 of 10 stops exit 0, ten different host pids; start 0.21-0.23 s, stop 0.21-0.23 s; no host left running.
+
+R4-10 #122 host start straight after host stop, ten rounds, Framework, 2026-11-16 10:18:57 PM EST
+fresh home $H = homes/cycle122, the warning accepted first
+
+$ $J setup --yes --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+[exit 0, 0.00 s]
+
+### round 1
+$ $J host start --headless
+running, pid 2359621, up 0.0s, 98 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 24 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.21 s]
+$ $J host stop
+stopped
+[exit 0, 0.23 s]
+### round 2
+$ $J host start --headless
+running, pid 2359667, up 0.0s, 93 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 24 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.21 s]
+$ $J host stop
+stopped
+[exit 0, 0.23 s]
+### round 3
+$ $J host start --headless
+running, pid 2359703, up 0.0s, 92 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.22 s]
+$ $J host stop
+stopped
+[exit 0, 0.21 s]
+### round 4
+$ $J host start --headless
+running, pid 2359741, up 0.0s, 93 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 24 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.22 s]
+$ $J host stop
+stopped
+[exit 0, 0.23 s]
+### round 5
+$ $J host start --headless
+running, pid 2359777, up 0.0s, 93 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.22 s]
+$ $J host stop
+stopped
+[exit 0, 0.21 s]
+### round 6
+$ $J host start --headless
+running, pid 2359816, up 0.0s, 93 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.23 s]
+$ $J host stop
+stopped
+[exit 0, 0.21 s]
+### round 7
+$ $J host start --headless
+running, pid 2359852, up 0.0s, 92 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.22 s]
+$ $J host stop
+stopped
+[exit 0, 0.21 s]
+### round 8
+$ $J host start --headless
+running, pid 2359888, up 0.0s, 93 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.23 s]
+$ $J host stop
+stopped
+[exit 0, 0.21 s]
+### round 9
+$ $J host start --headless
+running, pid 2359924, up 0.0s, 93 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.23 s]
+$ $J host stop
+stopped
+[exit 0, 0.22 s]
+### round 10
+$ $J host start --headless
+running, pid 2359976, up 0.0s, 92 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+[exit 0, 0.22 s]
+$ $J host stop
+stopped
+[exit 0, 0.21 s]
+
+#### Summary
+round | start exit |  start s | stop exit |  stop s
+    1 |          0 |     0.21 |         0 |    0.23
+    2 |          0 |     0.21 |         0 |    0.23
+    3 |          0 |     0.22 |         0 |    0.21
+    4 |          0 |     0.22 |         0 |    0.23
+    5 |          0 |     0.22 |         0 |    0.21
+    6 |          0 |     0.23 |         0 |    0.21
+    7 |          0 |     0.22 |         0 |    0.21
+    8 |          0 |     0.23 |         0 |    0.21
+    9 |          0 |     0.23 |         0 |    0.22
+   10 |          0 |     0.22 |         0 |    0.21
+rounds with a failure: 0 of 10
+$ hosts
+no rc.4 host process running
+[exit 0, 0.01 s]
+
+$ $J host status
+Error: the JETCARP background host is not running
+[exit 1, 0.00 s]
+

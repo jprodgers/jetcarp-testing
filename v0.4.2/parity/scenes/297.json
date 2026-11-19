@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B35/S234 on Brick",
+  "description": "A hexagon with straight angles at two corners. Same neighbor graph as the hexagon grid. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "brick",
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 102,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B35/S234",
+      "rule": "B35/S234",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "659c83fbfe1bd70c",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,2 @@
+['background-logo@fedorahosted.org', 'jetcarp@jimmieprodgers.com']
+'file:///home/jimmie/.local/share/backgrounds/own-picture.png'

@@ -1,0 +1,17 @@
+# Wallpaper store Idle choices just before saver remove (00:14:20)
+  14 file:///Users/Jimmie/Library/Screen%20Savers/JETCARP.saver
+
+$ jetcarp host saver remove   (00:14:20)
+removed
+put back the screen saver macOS had chosen before JETCARP was installed; System Settings, if it is open, may keep listing JETCARP until you quit and reopen it
+exit 0
+
+$ jetcarp host saver status
+JETCARP's screen saver is not installed.
+
+total 0
+drwx------+  2 Jimmie  staff    64 Nov 13 00:14 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+
+# Wallpaper store Idle choices after saver remove (00:14:22)
+  14 file:///System/Library/ExtensionKit/Extensions/Flurry.appex

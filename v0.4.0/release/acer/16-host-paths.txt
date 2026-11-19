@@ -1,0 +1,34 @@
+Recorded 2026-11-13 10:23:08 -05:00
+
+> reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v JETCARP
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+    JETCARP    REG_SZ    "C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarpw.exe" host serve --login
+
+
+> Get-Content $env:APPDATA\jetcarp\host-program
+C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarpw.exe
+host
+serve
+
+> settings folder
+  app.json         4339 10:11:22
+  host-program       66 10:22:51
+  setup.json        339 10:02:52
+
+> host.json
+(none)
+
+> processes
+  pid 26768 jetcarpw.exe parent 33396 ()
+    exe: C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarpw.exe
+    cmd: "C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarpw.exe" host serve
+  pid 16988 jetcarp.exe parent 26768 (jetcarpw.exe)
+    exe: C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarp.exe
+    cmd: "C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarp.exe" host serve
+
+> jetcarp host status
+running, pid 16988, up 17.0s, 249 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 3564 · 57600 cells · window
+monitors: 0: \\.\DISPLAY1
+caption: off

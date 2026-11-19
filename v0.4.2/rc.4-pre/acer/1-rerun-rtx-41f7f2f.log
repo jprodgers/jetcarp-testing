@@ -1,0 +1,3 @@
+2026-11-16 18:49:38 === cargo test --release --workspace --no-fail-fast, JETCARP_GPU=RTX, src 41f7f2f Windows: a refused host serve --saver says so on the command line, not in a message box (#120); jetcarp 0.4.2-rc.3; watcher holds a box 10 s then closes it; timeout 10800 s
+2026-11-16 19:04:27 RESULT 1-rtx-41f7f2f : FAIL:1042 passed, 1 failed, 41 ignored in 137 test binaries; exit 101, 15 min; message boxes closed by the watcher: 0; failed: host_stop_returns_once_the_host_has_gone
+2026-11-16 19:04:27 jetcarp processes at the end: 

@@ -1,0 +1,27 @@
+{
+  "Intel(R) UHD Graphics | Dx12 | 8086:a7a8 | 31.0.101.4146 | 0.4.2-rc.2 | da850ace5caab7bf.2": {
+    "passed": true,
+    "note": "59 world rules and 33 explore batches matched the CPU",
+    "millis": 2880
+  },
+  "Intel(R) UHD Graphics | Gl | 8086:0000 | 4.6.0 - Build 31.0.101.4146 | 0.4.2-rc.2 | da850ace5caab7bf.2": {
+    "passed": true,
+    "note": "59 world rules and 33 explore batches matched the CPU",
+    "millis": 654
+  },
+  "Intel(R) UHD Graphics | Vulkan | 8086:a7a8 | Intel Corporation Intel driver | 0.4.2-rc.2 | da850ace5caab7bf.2": {
+    "passed": true,
+    "note": "59 world rules and 33 explore batches matched the CPU",
+    "millis": 380
+  },
+  "NVIDIA GeForce RTX 3050 6GB Laptop GPU | Dx12 | 10de:25ac | 31.0.15.4618 | 0.4.2-rc.2 | da850ace5caab7bf.2": {
+    "passed": true,
+    "note": "59 world rules and 33 explore batches matched the CPU",
+    "millis": 2976
+  },
+  "NVIDIA GeForce RTX 3050 6GB Laptop GPU | Vulkan | 10de:25ac | NVIDIA 546.18 | 0.4.2-rc.2 | da850ace5caab7bf.2": {
+    "passed": true,
+    "note": "59 world rules and 33 explore batches matched the CPU",
+    "millis": 598
+  }
+}

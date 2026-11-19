@@ -1,0 +1,48 @@
+﻿# 2026-11-12 04:45, Acer, jetcarp c5a58fc. Same folders as 02.
+# host start was run from .NET Process with stdin, stdout and stderr on pipes (as | tee or a
+# CI step would), and a watcher (PowerShell holding a handle on each process) recorded the exit
+# codes.
+
+> jetcarp.exe host start   (4:45:03 AM)
+process exited after 2761 ms, code 0
+output ended with it: True        <- the pipes closed when host start ended (the rc1 hang is gone)
+--- stdout
+running, pid 2852, up 3.0s, 202 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · starting · window
+caption: off
+--- stderr
+(empty)
+
+--- 4:45:15 AM host status
+running, pid 2852, up 12.0s, 241 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 289 · 102240 cells · window
+monitors: 0: \\.\DISPLAY1
+caption: off
+exit 0
+
+ProcessId ParentProcessId CommandLine
+    16056           18420 "...\target\release\jetcarpw.exe" host serve
+     2852           16056 "...\target\release\jetcarp.exe" host serve
+   Id ProcessName MainWindowTitle          WS MB
+ 2852 jetcarp     JETCARP: A classic a day   242
+16056 jetcarpw                                 4
+
+--- 4:45:44 AM host status
+running, pid 2852, up 41.0s, 243 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 1032 · 102240 cells · window
+monitors: 0: \\.\DISPLAY1
+caption: off
+exit 0
+
+--- 4:45:44 AM host stop
+stopped
+exit 0
+--- 4:45:50 AM jetcarp processes left: 0
+
+--- watcher
+04:45:44.641 jetcarp 2852 ended, exit code 0 (0x00000000)
+04:45:44.643 jetcarpw 16056 ended, exit code 0 (0x00000000)
+
+Result: this host lives (window "JETCARP: A classic a day" and the tray icon), and stops
+cleanly: exit code 0, no 0xC0000005 at exit. Only the laptop panel was attached (no AOC).
+Note: with a window the host used the NVIDIA RTX 3050; headless (02) it used the Intel UHD.

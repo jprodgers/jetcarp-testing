@@ -1,0 +1,27 @@
+=== Kagome (3.6.3.6): the small glider g
+maps from his lattice to JETCARP's that carry neighbours to neighbours: 12 | symmetries of JETCARP's tiling found the same way: 12
+map used: turn by 0 degrees | U = ((0, 1), (1, 0)) | per tile -> (di, dj, k): [(0, 0, 0), (0, 0, 2), (1, 0, 1)]
+his animation GlidersAndPuffers/glider_Kagome.gif: picture (444, 44), 100 frames, 224 remainders tried, corners on grey 1.000, centres off grey 1.000, 218 whole tiles in view
+  frames that are not the next generation of the frame before: none
+  his glider, frame 0: 4 cells; in the reference on his lattice (period, dx, dy) = (4, 0, 1)
+  in JETCARP's coordinates: 0,2,2 1,2,0 1,2,2 1,3,0
+  stepped on JETCARP's own neighbour lists: (period, di, dj) = (4, 1, 0)
+JETCARP's published pattern (glider-guttesen-kagome.json): 5 cells; (period, di, dj) = (4, 1, 0)
+SAME OBJECT, cell for cell, over every phase and every symmetry of the tiling: True
+  JETCARP's pattern is: his frame 1, turn by 0 degrees; or his frame 3, reflection, then turn by 0 degrees
+  cells per generation over one period: his [4, 5, 4, 5] | JETCARP's [5, 4, 5, 4]
+  the glider his gun sends out (seed received from the author) is the same object: True
+=== Snub square (3.3.4.3.4): the period-8 glider
+maps from his lattice to JETCARP's that carry neighbours to neighbours: 8 | symmetries of JETCARP's tiling found the same way: 8
+map used: turn by 345 degrees | U = ((0, 1), (1, 0)) | per tile -> (di, dj, k): [(0, 0, 1), (1, 1, 0), (0, 0, 5), (0, 0, 4), (1, 0, 2), (1, 1, 3)]
+his animation GlidersAndPuffers/glider_SkewSquare.gif: picture (417, 165), 100 frames, 241 remainders tried, corners on grey 1.000, centres off grey 1.000, 1597 whole tiles in view
+  frames that are not the next generation of the frame before: none
+  his glider, frame 0: 8 cells; in the reference on his lattice (period, dx, dy) = (8, 0, 2)
+  in JETCARP's coordinates: 5,14,5 5,15,3 5,15,5 6,14,5 6,15,4 6,15,5 6,16,3 7,16,0
+  stepped on JETCARP's own neighbour lists: (period, di, dj) = (8, 2, 0)
+JETCARP's published pattern (glider-guttesen-snubsq.json): 12 cells; (period, di, dj) = (8, 0, -2)
+SAME OBJECT, cell for cell, over every phase and every symmetry of the tiling: True
+  JETCARP's pattern is: his frame 1, reflection, then turn by 270 degrees
+  cells per generation over one period: his [8, 12, 10, 15, 9, 13, 9, 10] | JETCARP's [12, 10, 15, 9, 13, 9, 10, 8]
+
+RESULT kagome_same=True snubsq_same=True

@@ -1,0 +1,25 @@
+﻿$ jetcarp script $W\odd\tiny.rhai
+error: line 1, column 111: $W\ro-out-cli\tiny.png: Access is denied. (os error 5)
+time:   0.00s
+Error: $W\odd\tiny.rhai: line 1, column 111: $W\ro-out-cli\tiny.png: Access is denied. (os error 5)
+exit 1
+$ jetcarp script --example hexw-all
+error: line 9, column 1: cannot create $W\ro-out-cli\2026-11-16_11-28-47_HexW: Access is denied. (os error 5)
+time:   0.00s
+Error: hexw-all.rhai: line 9, column 1: cannot create $W\ro-out-cli\2026-11-16_11-28-47_HexW: Access is denied. (os error 5)
+exit 1
+$ jetcarp pile --grains 1000
+Error: $W\ro-out-cli\piles: Access is denied. (os error 5)
+exit 1
+$ jetcarp wallpaper $W\odd\good.json --size 320x200
+Error: could not create folder $W\ro-out-cli\wallpapers: Access is denied. (os error 5)
+exit 1
+$ jetcarp wallpaper life --size 320x200
+Error: could not create folder $W\ro-out-cli\wallpapers: Access is denied. (os error 5)
+exit 1
+$ jetcarp media render --scene $W\odd\good.json --gens 5
+Error: could not create folder $W\ro-out-cli\media\good: Access is denied. (os error 5)
+exit 1
+$ jetcarp run $W\odd\good.json --gens 5 --png $W\ro-out-cli\x.png
+Error: $W\ro-out-cli\x.png: Access is denied. (os error 5)
+exit 1

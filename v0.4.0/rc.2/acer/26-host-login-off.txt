@@ -1,0 +1,15 @@
+> jetcarp host login off   (08:08:46)
+the host no longer starts at login
+(exit 0)
+> jetcarp host stop   (08:08:59)
+stopped
+(exit 0)
+
+> jetcarp host status   (08:09:01)
+Error: the JETCARP background host is not running
+(exit 1)
+
+== HKCU\Control Panel\Desktop WallPaper
+    WallPaper    REG_SZ    C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper
+== processes
+INFO: No tasks are running which match the specified criteria.

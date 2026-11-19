@@ -1,0 +1,516 @@
+== 1. help {"topic": "nope"}
+   isError=True
+   `topic` is overview, world, library, searches, scripts, packs, setup, or pages, not nope
+== 2. help {"topic": 5}
+   isError=True
+   help: `topic` must be text (got 5)
+== 3. help {"page": "nope/nothing"}
+   isError=True
+   no book page 'nope/nothing'. help {"topic": "pages"} lists them.
+== 4. help {"schema": "nope/nothing"}
+   isError=True
+   no settings schema 'nope/nothing': world_read/cell, world_edit/cells, world_edit/paste, world_edit/reseed, world_render/wallpaper, library_curate/changes, library_curate/quickstart, library_curate/compounds, search_start/hunt, search_start/search, search_start/ants, search_start/census, search_start/mover, search_start/pile, search_start/collide, search_start/evolve, search_start/explore, search_start/budget, search_
+== 5. help {"bogus": 1}
+   isError=True
+   help has no argument `bogus`. Its arguments: page, schema, topic
+== 6. reference {"what": "nope"}
+   isError=True
+   `what` is rules, tilings, isohedral, palettes, seeds, or commands, not nope
+== 7. reference {"what": "tilings", "limit": "abc"}
+   isError=True
+   reference: `limit` must be a whole number (got "abc")
+== 8. reference {"family": 7}
+   isError=True
+   reference: `family` must be text (got 7)
+== 9. world_new {"tiling": "nope"}
+   isError=True
+   unknown tiling 'nope'. Tiling ids: lizard, hex, brick, square, quad, triangle, glide, fourfold, cairo, spectre, hat, penrose-kd, penrose-rhomb, hex_flat, oct, trihex, elongtri, snubsq, snubhex, rhombitrihex, trunchex, trunctrihex, periodic, herring, pyth. See reference {"what": "tilings"}.
+== 10. world_new {"width": "abc", "height": 10}
+   isError=True
+   world_new: `width` must be a whole number (got "abc")
+== 11. world_new {"cas": ["NotARule"]}
+   isError=True
+   CA 1: 'NotARule' is not a rule. Try B3/S23, B2/S/C3, W30, Ant RL, WireWorld, or Sandpile.
+== 12. world_new {"width": -5, "height": 10}
+   isError=True
+   width and height must be 8 to 4096, got -5 x 10
+== 13. world_new {"width": 0, "height": 0}
+   isError=True
+   width and height must be 8 to 4096, got 0 x 0
+== 14. world_new {"cells": 99999999}
+   isError=True
+   cells must be 64 to 4000000
+== 15. world_new {"path": "missing.json"}
+   isError=True
+   could not read missing.json: No such file or directory (os error 2)
+== 16. world_new {"scene": "not json"}
+   isError=True
+   scene JSON: expected ident at line 1 column 2
+== 17. world_new {"scene": {"format": 1}}
+   isError=True
+   scene JSON: missing field `tiling`
+== 18. world_new {"pattern": "nope"}
+   isError=True
+   no pattern 'nope' in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite
+== 19. world_new {"quickstart": "nope"}
+   isError=True
+   no Quick Start entry 'nope'
+   quickstart.list lists the entries
+== 20. world_new {"cas": 5}
+   isError=True
+   cas must be a list, got 5
+== 21. world_new {"boundary": "sideways"}
+   isError=True
+   boundary must be wrap, dead, or live, got 'sideways'
+== 22. world_new {"rng_seed": "seven"}
+   isError=True
+   world_new: invalid value: string "seven", expected a non-negative integer, as a number or a string of decimal digits
+== 23. world_new {"tiling": "spectre", "level": 99}
+   isError=True
+   level must be 1 to 7
+== 24. world_new {"tiling": "square", "width": 32, "height": 32, "cas": ["Life"]}
+   isError=False
+   New world created.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf881246efa1379",
+     "done": "no: something can still change",
+     "fields": [
+       {
+         "ca_ids": [
+           1
+         ],
+      
+== 25. world_status {"scene": "yes"}
+   isError=True
+   world_status: `scene` must be true or false (got "yes")
+== 26. world_status {"save_path": 5}
+   isError=True
+   world_status: `save_path` must be text (got 5)
+== 27. world_status {"save_path": ""}
+   isError=True
+   the path is empty
+== 28. world_read {"format": "nope"}
+   isError=True
+   world_read: format must be picture, list or objects, got nope
+== 29. world_read {"ca": 99}
+   isError=True
+   no CA 99. CAs: id 1 'Life' (B3/S23)
+== 30. world_read {"ca": "nobody"}
+   isError=True
+   no CA "nobody". CAs: id 1 'Life' (B3/S23)
+== 31. world_read {"x": "a"}
+   isError=True
+   world_read: `x` must be a whole number (got "a")
+== 32. world_read {"cell": {"x": 1}}
+   isError=True
+   give x and y, or index
+== 33. world_read {"cell": {"x": 1000, "y": 1000}}
+   isError=False
+   {
+     "center": [
+       8.5,
+       8.5
+     ],
+     "corners": 4,
+     "edge_neighbors_clockwise": [
+       {
+         "index": 232,
+         "x": 8,
+         "y": 7
+       },
+       {
+         "index": 265,
+         "x": 9,
+         "y": 8
+       },
+       {
+         "index": 296,
+         "x": 8,
+         "y": 9
+       },
+       {
+         "index": 263,
+         "x": 7,
+         "y": 8
+       }
+     ],
+     "index": 264,
+     "tile_type": 0,
+     "touch_neighbors_clockwise": [
+       {
+         "index": 23
+== 34. world_read {"x": 0, "y": 0, "width": 100000}
+   isError=False
+   CA 'Life' (id 1, B3/S23), field 0, generation 0.
+   Grid 32 x 32. Non-empty cells in the whole field: 330; bounding box x 0..31, y 0..31 (32 x 32) (spans a wrapped edge or the whole grid).
+   Region x 0..31, y 0..31. '.' = empty, 'O' = live. Row 0 is the top.
+   x tens  0         1         2         3 
+   x units 01234567890123456789012345678901
+   y=0     .......O......O....OO.OOO..O....
+   y=1     .O.......O....O...O...O.O...O...
+   y=
+== 35. world_read {"format": "objects", "max_period": 99999}
+   isError=False
+   Generation 0, CA 1 (B3/S23): 330 live cells. other (spans the grid) x 1
+       0  other (spans the grid)        330 cells  x 0..31, y 0..31  (spans the grid)
+   
+== 36. world_edit {}
+   isError=True
+   world_edit: give one of `cells` (draw), `paste` (a library pattern), `reseed`, or `commands`
+== 37. world_edit {"cells": {"pattern": 5}}
+   isError=True
+   world_edit: `cells.pattern` must be text (got 5) (the settings: jetcarp://schema/world_edit/cells)
+== 38. world_edit {"paste": {}}
+   isError=True
+   world_edit paste: missing field `id` (the settings: jetcarp://schema/world_edit/paste)
+== 39. world_edit {"paste": {"id": "nope"}}
+   isError=True
+   no pattern 'nope' in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite
+== 40. world_edit {"commands": [{"op": "nope"}]}
+   isError=True
+   1. not applied: could not read command {"op":"nope"}: unknown variant `nope`, expected one of `set_tiling`, `set_rng_state`, `reset`, `add_ca`, `remove_ca`, `update_ca`, `seed`, `clear`, `set_cells`, `step`, `jump`, `add_table`, `set_script`, `script_goto`, `reseed`, `set_reseed`, `set_palette`, `sandpile`, `paste_pattern`. reference {"what": "commands"} shows the command shapes.
+   Stopped; later commands were not appl
+== 41. world_edit {"commands": "not json"}
+   isError=True
+   world_edit: `commands` must be a list (got "not json")
+== 42. world_edit {"cells": {"rle": "this is not rle !!"}}
+   isError=True
+   RLE character 't' is not understood
+== 43. world_edit {"cells": {"cells": [[1]]}}
+   isError=True
+   each cell must be [x, y] or [x, y, state], got [1]
+== 44. world_edit {"cells": {"cells": [[1000, 1000]]}}
+   isError=False
+   Set 1 cell(s) in CA 'Life' (id 1). Field population now 330. Generation 0.
+== 45. world_edit {"reseed": {"mode": "nope"}}
+   isError=True
+   `mode` is random, rain, blobs, or an object such as {"kind": "rain", "drops": 30}, not nope
+== 46. world_edit {"cells": {"pattern": "O", "x": 0, "y": 0}, "paste": {"id": "glider"}}
+   isError=True
+   world_edit: give one of `cells`, `paste`, `reseed`, `commands`, not `cells` and `paste`
+== 47. world_step {"generations": -1}
+   isError=True
+   generations must be at least 1
+== 48. world_step {"generations": "lots"}
+   isError=True
+   world_step: `generations` must be a whole number (got "lots")
+== 49. world_step {"generations": 2000000}
+   isError=True
+   at most 1000000 generations per call
+== 50. world_step {"generations": 1000000000000.0}
+   isError=True
+   at most 1000000 generations per call
+== 51. world_step {"generations": 1.5}
+   isError=True
+   world_step: `generations` must be a whole number (got 1.5)
+== 52. world_render {"max_side": 10}
+   isError=True
+   max_side must be 64 to 2048
+== 53. world_render {"max_side": "big"}
+   isError=True
+   world_render: `max_side` must be a whole number (got "big")
+== 54. world_render {"wallpaper": {"size": "huge"}}
+   isError=True
+   size 'huge': expected WIDTHxHEIGHT such as 3840x2160
+== 55. world_render {"wallpaper": "4K"}
+   isError=True
+   world_render: `wallpaper` must be an object (got "4K") (the settings: jetcarp://schema/world_render/wallpaper)
+== 56. run_script {}
+   isError=True
+   run_script: give the script text in `script`
+== 57. run_script {"script": 5}
+   isError=True
+   run_script: `script` must be text (got 5)
+== 58. run_script {"script": "let x = ;"}
+   isError=True
+   error at line 1, column 9: Unexpected ';'
+   log:
+   error: line 1, column 9: Unexpected ';'
+   
+== 59. run_script {"script": "loop { }", "max_seconds": 2}
+   isError=True
+   stopped at the time limit after 2.0 s (line 1, column 6: stopped: time limit of 2 s reached)
+   log:
+   error: line 1, column 6: stopped: time limit of 2 s reached
+   
+== 60. run_script {"script": "print(1);", "max_seconds": 10000}
+   isError=False
+   ok: finished in 0.00 s
+   log:
+   1
+   
+== 61. run_script {"script": "print(1);", "params": "not a map"}
+   isError=True
+   run_script: `params` must be an object (got "not a map")
+== 62. run_script {"script": "let w = world(#{ tiling: \"square\", size: [5000, 5000] });"}
+   isError=True
+   error at line 1, column 9: 25000000 cells is over this run's limit of 4000000
+   log:
+   error: line 1, column 9: 25000000 cells is over this run's limit of 4000000
+   
+== 63. library_query {"kind": "nope"}
+   isError=True
+   library_query: `kind` is pattern, ant, quickstart, or summary, not nope
+== 64. library_query {"id": "nonexistent"}
+   isError=True
+   no pattern 'nonexistent' in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite
+== 65. library_query {"limit": "x"}
+   isError=True
+   library_query: `limit` must be a whole number (got "x")
+== 66. library_query {"class": "nope"}
+   isError=True
+   unknown class 'nope' (still_life, oscillator, spaceship, puffer, gun, mover)
+== 67. library_query {"order": "nope"}
+   isError=True
+   unknown order 'nope' (score, seen, rare, newest, updated, cells, period, rating, id)
+== 68. library_query {"limit": 100000}
+   isError=False
+   {
+     "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite",
+     "matching": 107,
+     "patterns": [
+       {
+         "cells": 25,
+         "class": "spaceship",
+         "displacement": [
+           8,
+           8
+         ],
+         "id": "aab843d7ff96817d170d6725fb23e37c",
+         "label": "c/6 diagonal spaceship 25c #aab843",
+         "name": null,
+         "period": 48,
+         "range": "B36/S23 to B36/S238 (2 B/S r
+== 69. library_curate {}
+   isError=True
+   library_curate: give `id` with changes, hidden or remove; or `quickstart` to add an entry; or `compounds`
+== 70. library_curate {"id": "nope", "changes": {"rating": 4}}
+   isError=True
+   no pattern 'nope' in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite
+== 71. library_curate {"id": "aab843d7ff96817d170d6725fb23e37c", "changes": {"rating": 9}}
+   isError=True
+   rating is 1 to 5 (0 clears it)
+== 72. library_curate {"id": "aab843d7ff96817d170d6725fb23e37c", "changes": {"state": "nope"}}
+   isError=True
+   unknown state 'nope' (new, reviewed, promoted, rejected)
+== 73. library_curate {"id": "aab843d7ff96817d170d6725fb23e37c"}
+   isError=True
+   library_curate: with `id`, give `changes`, `hidden` (Quick Start entries) or `remove`
+== 74. library_curate {"id": "aab843d7ff96817d170d6725fb23e37c", "changes": "rating 4"}
+   isError=True
+   library_curate: `changes` must be an object (got "rating 4") (the settings: jetcarp://schema/library_curate/changes)
+== 75. library_curate {"quickstart": {"pattern": "nope"}}
+   isError=True
+   no pattern 'nope' in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite
+== 76. search_start {}
+   isError=True
+   search_start: give a strategy (hunt, search, ants, census, mover, pile, collide, evolve, explore) with its settings, or `resume` with a job id
+== 77. search_start {"hunt": {"rules": ["NotARule"]}}
+   isError=True
+   1 rule cannot run, so the job was not started:
+     rule 1 of `rules`: NotARule: 'NotARule' is not a rule. Try B3/S23, B2/S/C3, W30, Ant RL, WireWorld, or Sandpile.
+== 78. search_start {"hunt": 5}
+   isError=True
+   search_start: `hunt` must be an object (got 5) (the settings: jetcarp://schema/search_start/hunt)
+== 79. search_start {"hunt": {"soups": "many"}}
+   isError=True
+   search_start: `hunt.soups` must be a whole number (got "many") (the settings: jetcarp://schema/search_start/hunt)
+== 80. search_start {"hunt": {"soups": 10}, "ants": {}}
+   isError=True
+   search_start: give one of `hunt`, `search`, `ants`, `census`, `mover`, `pile`, `collide`, `evolve`, `explore`, not `hunt` and `ants`
+== 81. search_start {"resume": 999}
+   isError=True
+   no job 999
+== 82. search_start {"hunt": {"soups": 10}, "threads": -1}
+   isError=True
+   search_start: `threads` must be at least 0 (got -1)
+== 83. search_start {"hunt": {"bogus_setting": 1}}
+   isError=True
+   search_start hunt: unknown field `bogus_setting`, expected one of `rules`, `rules_file`, `tilings`, `nb`, `soups`, `size`, `density`, `shape`, `seed`, `gens`, `max_period`, `pop_cap`, `margin`, `store`, `max_rss_gb` (the settings: jetcarp://schema/search_start/hunt)
+== 84. search_start {"explore": {"tilings": "nope"}, "budget": {"minutes": 0.1}}
+   isError=True
+   no tiling 'nope' in the search's list (ids: square, hex, trihex, spectre, ih28, k2-001, ...)
+== 85. search_start {"hunt": {"soups": 10}, "budget": {"minutes": "soon"}}
+   isError=True
+   search_start: `budget.minutes` must be a number (got "soon") (the settings: jetcarp://schema/search_start/budget)
+== 86. search_start {"resume": 1}
+   isError=False
+   {
+     "folder": null,
+     "job": 1,
+     "kind": "hunt",
+     "line": "hunt 1: 3,000/3,000 soups, 2892 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)",
+     "mode": "none",
+     "note": "Job 1 is already done, so there is nothing to carry on: job_status {\"job\": 1, \"finds\": 10} shows its finds, and {\"job\": 1, \"report\": true} reports what it searche
+== 87. search_start {"pile": {"grains": "lots"}}
+   isError=True
+   'lots' is not a grain count (try 1000000, 1e7, or 2^30)
+== 88. job_status {"job": 999}
+   isError=True
+   no job 999
+== 89. job_status {"job": "abc"}
+   isError=True
+   job_status: `job` must be a whole number (got "abc")
+== 90. job_status {"job": 1, "wait_s": 9999}
+   isError=False
+   hunt 1: 3,000/3,000 soups, 2892 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+     status done, 1 s run, 2977 settled, 11 died, 12 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+     B3/S23 on Square: 3000 soups, 63354 objects (oscillator 18509, spaceship 5665, still life 39180), 37 distinct, 37 new
+     newe
+== 91. job_status {"status": "nope"}
+   isError=True
+   `status` is running, paused, done, failed, or stale, not nope
+== 92. job_stop {}
+   isError=True
+   job_stop: missing field `job`
+== 93. job_stop {"job": "abc"}
+   isError=True
+   job_stop: `job` must be a whole number (got "abc")
+== 94. job_stop {"job": 999}
+   isError=True
+   no job 999
+== 95. job_stop {"job": 1}
+   isError=False
+   {
+     "job": 1,
+     "kind": "hunt",
+     "note": "It was not running (done).",
+     "status": "done",
+     "stopping": false
+   }
+== 96. job_stop {"job": null}
+   isError=True
+   job_stop: `job` must be a whole number (got null)
+== 97. search_runs {"job": 999}
+   isError=True
+   no job 999
+== 98. search_runs {"job": 1}
+   isError=True
+   job 1 is a hunt job, not explore
+== 99. search_runs {"try": {}}
+   isError=True
+   search_runs try: missing field `tiling` (the settings: jetcarp://schema/search_runs/try)
+== 100. search_runs {"try": {"tiling": "hex", "rule": "NotARule"}}
+   isError=True
+   'NotARule' is not a rule. Try B3/S23, B2/S/C3, W30, Ant RL, WireWorld, or Sandpile.
+== 101. search_runs {"job": 3, "sheet": {"ids": "a"}}
+   isError=True
+   search_runs: `sheet.ids` must be a list (got "a") (the settings: jetcarp://schema/search_runs/sheet)
+== 102. search_runs {"job": 3, "scene": {}}
+   isError=True
+   search_runs scene: missing field `run` (the settings: jetcarp://schema/search_runs/scene)
+== 103. search_runs {"job": 3, "scene": {"run": 99999999}}
+   isError=True
+   no run 99999999 in job 3
+== 104. search_runs {"job": 3, "review": {"run": 1, "verdict": "great"}}
+   isError=True
+   a verdict is keep, maybe, or drop, not 'great'
+== 105. search_runs {"job": 3, "order": "nope"}
+   isError=True
+   order is score, newest, or id, not nope
+== 106. media_render {}
+   isError=True
+   media: give pattern, quickstart, ant, or missing: true
+== 107. media_render {"pattern": "nope"}
+   isError=True
+   {
+     "done": [],
+     "failed": [
+       {
+         "error": "no pattern 'nope' in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite",
+         "id": "nope",
+         "kind": "pattern"
+       }
+     ],
+     "skipped": 0,
+     "written": 0
+   }
+== 108. media_render {"format": "mp4", "pattern": "aab843d7ff96817d170d6725fb23e37c"}
+   isError=True
+   unknown media format 'mp4' (auto, gif, webp)
+== 109. media_render {"scene": "not json"}
+   isError=True
+   scene JSON: expected ident at line 1 column 2
+== 110. media_render {"quickstart": "nope"}
+   isError=True
+   no Quick Start entry 'nope': neither a built-in one (`jetcarp quickstart` lists their ids and numbers) nor one of the library's (`jetcarp library quickstart`)
+== 111. pack {}
+   isError=True
+   pack: give one of `info`, `check`, `import`, `publish`, `export`, or `site`, holding its options
+== 112. pack {"info": {}}
+   isError=True
+   pack info: missing field `path` (the settings: jetcarp://schema/pack/info)
+== 113. pack {"info": {"path": "nope"}}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/nope does not exist
+== 114. pack {"publish": {"to": "f9/x"}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== 115. pack {"publish": {"feed": "bad feed!", "to": "f9/x"}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== 116. pack {"check": {"path": 5}}
+   isError=True
+   pack: `check.path` must be text (got 5) (the settings: jetcarp://schema/pack/check)
+== 117. pack {"info": "f9/store"}
+   isError=True
+   pack: `info` must be an object (got "f9/store") (the settings: jetcarp://schema/pack/info)
+== 118. pack {"info": {"path": "f9/store"}, "check": {"path": "f9/store"}}
+   isError=True
+   pack: give one of `info`, `check`, `import`, `publish`, `export`, `site`, not `info` and `check`
+== 119. pack {"import": {"path": "f9/store", "verify": "maybe"}}
+   isError=True
+   verify 'maybe': sample, full or none
+== 120. files_list {"root": "nope"}
+   isError=True
+   `root` is out or catalog, not nope
+== 121. files_list {"path": "nope"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/nope does not exist
+== 122. files_list {"file": "nope.json"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/nope.json does not exist
+== 123. files_list {"file": "library.sqlite", "root": "catalog"}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite is not a text file files_list shows (json, csv, txt, md, rhai, log, html)
+== 124. files_list {"limit": -3}
+   isError=True
+   files_list: `limit` must be at least 0 (got -3)
+== protocol: unknown tool
+   >> {"jsonrpc": "2.0", "id": 9001, "method": "tools/call", "params": {"name": "nope", "arguments": {}}}
+   << {"error": {"code": -32602, "message": "Unknown tool: nope"}, "id": 9001, "jsonrpc": "2.0"}
+== protocol: arguments a list
+   >> {"jsonrpc": "2.0", "id": 9002, "method": "tools/call", "params": {"name": "help", "arguments": [1, 2]}}
+   << {"error": {"code": -32602, "message": "arguments must be an object"}, "id": 9002, "jsonrpc": "2.0"}
+== protocol: arguments a string
+   >> {"jsonrpc": "2.0", "id": 9003, "method": "tools/call", "params": {"name": "help", "arguments": "topic=overview"}}
+   << {"error": {"code": -32602, "message": "arguments must be an object"}, "id": 9003, "jsonrpc": "2.0"}
+== protocol: no params
+   >> {"jsonrpc": "2.0", "id": 9004, "method": "tools/call"}
+   << {"error": {"code": -32602, "message": "tools/call needs params.name"}, "id": 9004, "jsonrpc": "2.0"}
+== protocol: unknown method
+   >> {"jsonrpc": "2.0", "id": 9005, "method": "tools/frobnicate", "params": {}}
+   << {"error": {"code": -32601, "message": "Method not found: tools/frobnicate"}, "id": 9005, "jsonrpc": "2.0"}
+== protocol: not JSON
+   >> {this is not json
+   << {"error": {"code": -32700, "message": "parse error: key must be a string at line 1 column 2"}, "id": null, "jsonrpc": "2.0"}
+== protocol: after the bad line, still alive?
+   >> {"jsonrpc": "2.0", "id": 9006, "method": "tools/call", "params": {"name": "world_status", "arguments": {}}}
+   << {"id": 9006, "jsonrpc": "2.0", "result": {"content": [{"text": "{\n  \"cas\": [\n    {\n      \"affects_others\": true,\n      \"enabled\": true,\n      \"field\": 0,\n      \"id\": 1,\n      \"name\": \"Life\",\n      \"neighborhood\": \"touch\",\n      \"palette\": \"Ember\",\n      \"rule\": \"B3/S23\",\n      \"steps_per_gen\": 1\n    }\n  ],\n  \"cells\": 1024,\n  \"cells_hash\": \"ccf881246efa1379\",\n  \"done\
+== protocol: resource that does not exist
+   >> {"jsonrpc": "2.0", "id": 9007, "method": "resources/read", "params": {"uri": "jetcarp://nope"}}
+   << {"error": {"code": -32002, "message": "no resource kind 'nope': docs, reference, schema, job, pattern, quickstart"}, "id": 9007, "jsonrpc": "2.0"}

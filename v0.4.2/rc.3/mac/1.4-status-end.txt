@@ -1,0 +1,29 @@
+explore 2: 1,142,553 runs (109/s), 52,560 elites in 23,474 niches (3,327 of them confirmed), 556 of 1,359 tilings; Apple M2 Max, Metal
+  status paused, 3 h 59 min run over every session, 17,664 confirmation runs, 1,160,242 candidates tried, 8.57 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 1,725 runs on the processor stopped at their time cap (kept with the generations they reached), 7 runs given up at a stop or the end (not kept)
+  loaded 28,091 elites, 276,893 identities, 16,184 coverage rows in 0.08 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               349,814   0.33   1.69  12,090
+  generations             275,044   0.64   2.13   9,248
+  jaca                    125,287   0.53   2.28  11,481
+  ltl                     114,679   0.37   2.56   3,892
+  priority                 81,335   0.42   2.23   5,824
+  rps                      41,500   0.56   2.43   1,851
+  greenberg_hastings       41,232   0.57   2.67     985
+  hodgepodge               41,223   1.12   2.52   2,202
+  cyclic                   40,997   0.52   2.34   1,858
+  wireworld                 7,786   0.47   1.73     484
+  spectre_glider            6,917   0.38   1.45      51
+  turmite                   3,902   0.85   2.11     824
+  layered                   3,208   0.62   1.98     450
+  lenia                     1,952   1.00   2.38     350
+  forest_fire               1,847   0.75   1.10     256
+  sandpile                  1,549   0.62   2.26     138
+  table                       865   0.30   0.50      12
+  hex_tri                     864   0.63   1.85      59
+  margolus                    859   0.65   1.93     411
+  wolfram                     851   0.69   1.66      49
+  hex_wolfram                 842   0.64   1.63      45
+  folder: /Users/Jimmie/jetcarp-rc-042c/data/searches/9ca7d1d5-b002-4daa-8b1f-ea02b06e9964
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

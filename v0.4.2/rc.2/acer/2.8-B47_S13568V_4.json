@@ -1,0 +1,25 @@
+{
+  "cas": [
+    {
+      "enabled": true,
+      "neighborhood": "edge",
+      "rule": "B47/S13568/C4",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      },
+      "steps_per_gen": 1
+    }
+  ],
+  "format": 1,
+  "jetcarp_version": "0.4.2-rc.2",
+  "rng_state": 1,
+  "tiling": {
+    "boundary": "wrap",
+    "family": "square",
+    "size": {
+      "cells": 16000
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA red blobs vs noise (Penrose rhombs)",
+  "description": "B36/S23456: still red and purple blobs of one sign against the other's cyan noise. Found by a JACA rule search.",
+  "tiling": {
+    "family": "penrose-rhomb",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 28,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B36/S23456",
+      "rule": "JACA B36/S23456",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Aurora",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Lava"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "669c630e87bd5c68",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

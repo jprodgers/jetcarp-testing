@@ -1,0 +1,16 @@
+explore search job 13 in C:\Users\jimmi\jetcarp-rc-042c\a6\library\library.sqlite
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 1,024 runs (136/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 1,024 runs (74/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 1,024 runs (50/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 2,048 runs (77/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 13: 2,048 runs (77/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status paused, 27 s run over every session, 0 confirmation runs, 2,048 candidates tried, 0.34 GB of memory
+  threads: 5 for runs on the processor and 3 for the GPU's batches, of 12 cores (4 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 1,129   0.34   1.25     315
+  generations                 919   0.76   1.76     290
+  folder: C:\Users\jimmi\jetcarp-rc-042c\a6\library\searches\54d6d379-e903-4cd6-9eac-e083e6b543e0
+explore search 13 paused (as asked); `jetcarp jobs resume 13` continues it from its archive (not run for run: the search is not deterministic)

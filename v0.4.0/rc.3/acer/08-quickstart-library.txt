@@ -1,0 +1,63 @@
+Read-only queries of C:\Users\jimmi\AppData\Local\jetcarp\library.sqlite after rc3's build (01:20-01:30)
+
+rows by source (source, rows, hidden, featured):
+   ('atlas', 1779, 0, 0)
+   ('builtin', 364, 1, 71)
+   ('pack', 79, 0, 0)
+
+atlas by created:
+   ('2026-11-13T06:17:04Z', 156)
+   ('2026-11-12T12:21:38Z', 100)
+   ('2026-11-13T06:17:11Z', 61)
+   ('2026-11-13T06:17:12Z', 50)
+   ('2026-11-13T06:17:05Z', 46)
+   ('2026-11-13T06:17:03Z', 45)
+   ('2026-11-12T12:22:28Z', 43)
+   ('2026-11-12T12:21:42Z', 42)
+
+atlas by updated:
+   ('2026-11-13T06:18:07Z', 900)
+   ('2026-11-12T12:22:51Z', 879)
+
+rc2's build (created 2026-11-12): 879 entries, 89 distinct titles; most repeated:
+     60  Battle JACA
+     50  Wave Rock-paper-scissors
+     48  Agents
+     47  Turbulent Priority
+     44  Oscillating Generations
+     43  Fractal Elementary
+     39  Wave Cyclic
+     39  Oscillating Greenberg-Hastings
+     38  Turbulent Larger than Life
+     36  Spectre glider (Edmond 2026)
+     30  WireWorld
+     26  Turbulent Hodgepodge
+   exactly 'Fractal Elementary': 43
+   exactly 'Agents': 48
+   sample 'Rule'/'Ant' titles: ['Rule 18', 'Rule 73', 'Rule 45', 'Rule 22', 'Rule 30']
+
+rc3's build (created 2026-11-13): 900 entries, 151 distinct titles; most repeated:
+     60  Battle JACA
+     43  Fractal Hexagonal elementary
+     41  Oscillating Greenberg-Hastings
+     40  Turbulent Hodgepodge
+     40  Quiet Hexagonal elementary
+     37  Turbulent Life-like
+     35  Turbulent Larger than Life
+     35  Oscillating Priority
+     32  Frozen Cyclic
+     31  Turbulent Generations
+     28  Wave Rock-paper-scissors
+     27  Forest fire
+   exactly 'Fractal Elementary': 0
+   exactly 'Agents': 11
+   sample 'Rule'/'Ant' titles: ['Rule 129', 'Rule 225', 'Rule 107', 'Rule 154', 'Rule 167', 'Turmite RLULNU', 'Rule 126', 'Rule 103']
+
+built-ins: Sandpiles 39 | named: [('Rule 30 meets Life and ants', 'Fractals & rows', 0), ("Langton's ant", 'Ants & turmites', 0), ('WireWorld clocks', 'Classics', 0), ('WireWorld adder: 2 + 3', 'Computing', 0), ("Langton's ant", 'Ants & turmites', 0), ('Rule 30', 'Fractals & rows', 0), ('WireWorld', 'Classics', 0), ('Diamoeba', 'Classics', 0)]
+Sandpiles by source: [('atlas', 11), ('builtin', 39), ('pack', 8)]
+
+Opened in A2 step 5 (quickstart_usage, UTC): 2026-11-13T06:26:34Z  pack  4.8.8: c/2 orthogonal p16 ship (14-28 cells, B2/S34)
+
+The app showed 1,321 entries (Packs 79, Atlas 879, Built-in 363) from start until A2 step 5 (01:05-01:26),
+including after the build was done (01:18), after Later and after Help > Setup; after opening the card above
+and coming back: 2,221 entries (Packs 79, Atlas 1,779, Built-in 363), Sandpiles 58.

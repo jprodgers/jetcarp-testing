@@ -1,0 +1,48 @@
+#### #102, 2026-11-17 04:02:51: claude mcp add --scope user, rc.4 named by its full path (jetcarp on the PATH is Scoop's 0.4.1); 2.1.322 (Claude Code)
+before, from ~ : claude mcp list | grep jetcarp: []
+$ claude mcp add --scope user jetcarp -- ~\jetcarp-rc-042c\bin\jetcarp.exe mcp   (run in ~/jetcarp-rc4/s1/cwd)
+Added stdio MCP server jetcarp with command: ~\jetcarp-rc-042c\bin\jetcarp.exe mcp to user config
+File modified: ~\.claude.json
+(exit 0)
+$ cd ~/jetcarp-rc4/p42/cwd; claude mcp list | grep jetcarp
+jetcarp: ~\jetcarp-rc-042c\bin\jetcarp.exe mcp - ✔ Connected
+$ claude mcp get jetcarp
+jetcarp:
+  Scope: User config (available in all your projects)
+  Status: ✔ Connected
+  Type: stdio
+  Command: ~\jetcarp-rc-042c\bin\jetcarp.exe
+  Args: mcp
+  Environment:
+
+To remove this server, run: claude mcp remove jetcarp -s user
+$ cd ~/OneDrive/Documents; claude mcp list | grep jetcarp
+jetcarp: ~\jetcarp-rc-042c\bin\jetcarp.exe mcp - ✔ Connected
+$ claude mcp get jetcarp
+jetcarp:
+  Scope: User config (available in all your projects)
+  Status: ✔ Connected
+  Type: stdio
+  Command: ~\jetcarp-rc-042c\bin\jetcarp.exe
+  Args: mcp
+  Environment:
+
+To remove this server, run: claude mcp remove jetcarp -s user
+$ cd ~/jetcarp-rc-042c; claude mcp list | grep jetcarp
+jetcarp: ~\jetcarp-rc-042c\bin\jetcarp.exe mcp - ✔ Connected
+$ claude mcp get jetcarp
+jetcarp:
+  Scope: User config (available in all your projects)
+  Status: ✔ Connected
+  Type: stdio
+  Command: ~\jetcarp-rc-042c\bin\jetcarp.exe
+  Args: mcp
+  Environment:
+
+To remove this server, run: claude mcp remove jetcarp -s user
+
+$ claude mcp remove jetcarp -s user   (04:14:03)
+Removed MCP server jetcarp from user config
+File modified: ~\.claude.json
+(exit 0)
+after, from ~ : claude mcp list | grep jetcarp: []

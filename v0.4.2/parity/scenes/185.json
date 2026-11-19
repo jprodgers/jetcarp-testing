@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Meteor Guns",
+  "description": "Expanding; most larger patterns become a slowly growing fireball that fires off gliders (the meteors). Still lifes and oscillators are easy to find. (Charles A. Rockafellor)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "16011472469609679481",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Meteor Guns",
+      "rule": "B3/S01245678/C8",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "05a4d1be8150c97c",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

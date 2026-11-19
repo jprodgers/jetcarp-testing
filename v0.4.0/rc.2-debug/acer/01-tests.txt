@@ -1,0 +1,17 @@
+# 2026-11-12T04:41:50.0799432-05:00  jetcarp c5a58fc
+# cargo test --release --features jetcarp/windows-launcher -p jetcarp --test host -- host_start runs_scenes --nocapture
+   Compiling jetcarp v0.4.0-rc.1 (C:\Users\jimmi\AppData\Local\Temp\jetcarp-debug\crates\jetcarp)
+    Finished `release` profile [optimized + debuginfo] target(s) in 2.94s
+     Running tests\host.rs (target\release\deps\host-1a7e11086b6dfb59.exe)
+
+running 3 tests
+test host_start_can_be_captured_and_returns ... ok
+test a_host_started_at_login_leaves_window_screens_unseen ... ok
+test runs_scenes_and_answers_its_link ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 6 filtered out; finished in 7.31s
+
+exit: 0
+
+# Repeated 10 more times right after (the same test binary, host-1a7e11086b6dfb59.exe, run
+# directly with the same filter): 10 of 10 passed, 3 passed / 0 failed each, 3.0 to 6.1 s.

@@ -1,0 +1,234 @@
+# R4 #96, fresh settings folder ~/jetcarp-rc4/w96 (jetcarp 0.4.2-rc.4): before the answer
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp setup --status   [22:14:58]
+  setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+    settings: ~/jetcarp-rc4/w96/config
+    data:     ~/jetcarp-rc4/w96/data (from JETCARP_DATA_DIR), 806.8 GB free
+    library:  ~/jetcarp-rc4/w96/data/library.sqlite
+    output:   ~/jetcarp-rc4/w96/out
+    bundled:  ~/.local/lib/jetcarp/packs
+  packs that came with JETCARP:
+    JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+  GPU: Apple M2 Max (a Quick Start build runs on it)
+  library: 0 patterns, 0 ant runs, 0 jobs
+  profiles:
+    desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+    explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+    researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+    everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+    blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+  exit 0
+$ ~/.local/lib/jetcarp/jetcarp host start   [22:14:58]
+  Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+  
+  If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+  
+  To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  exit 1
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host wallpaper on   [22:14:58]
+  Error: JETCARP won't show the desktop background until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+  
+  If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+  
+  To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  exit 1
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host login on   [22:14:58]
+  Error: JETCARP won't start the background host at login until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+  
+  If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+  
+  To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  exit 1
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host saver install   [22:14:58]
+  Error: JETCARP won't install the screen saver until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+  
+  If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+  
+  To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  exit 1
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host start --saver   [22:14:58]
+  error: unexpected argument '--saver' found
+  
+  Usage: jetcarp host start [OPTIONS]
+  
+  For more information, try '--help'.
+  exit 2
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host serve --saver --seconds 3   [22:14:58]
+  jetcarp-host: JETCARP won't run the screen saver until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+  
+  If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+  
+  To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  exit 1
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ MCP host_control (jetcarp mcp), wallpaper on, login on, status
+  # server jetcarp 0.4.2-rc.4
+  > host_control {"action": "wallpaper", "on": true}
+  isError True: JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+  
+  If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+  
+  To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  > host_control {"action": "login", "on": true}
+  isError True: JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+  
+  PHOTOSENSITIVE SEIZURE WARNING
+  
+  JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+  
+  Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+  
+  Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+  
+  If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+  
+  To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  > host_control {"action": "status"}
+  isError True: the JETCARP background host is not running
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+  config folder: gpu-checks.json 
+
+# the answer
+$ ~/.local/lib/jetcarp/jetcarp setup --seizure-warning no-disorder   [22:14:59]
+  saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+  exit 0
+$ cat ~/jetcarp-rc4/w96/config/photosensitivity.json   [22:14:59]
+  {
+    "version": 1,
+    "answer": "no_disorder",
+    "date": "2026-11-17T03:14:59Z",
+    "jetcarp": "0.4.2-rc.4",
+    "via": "setup"
+  }
+  exit 0
+
+# after the answer: each again
+$ ~/.local/lib/jetcarp/jetcarp host wallpaper on   [22:14:59]
+  saved; the host is not running
+  exit 0
+  [state: default host pid 74565 ; test-folder hosts 1 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host start   [22:14:59]
+  running, pid 75402, up 0.0s, 18 MB, GPU Apple M2 Max
+  screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+  wallpaper: showing
+  caption: off
+  pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+  note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+  exit 0
+  [state: default host pid 74565 ; test-folder hosts 2 in all; plist md5 d372fb73; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host status   [22:15:02]
+  running, pid 75402, up 3.0s, 155 MB, GPU Apple M2 Max
+  screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 742 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+  monitors: 0: Built-in Retina Display
+  wallpaper: showing
+  caption: off
+  pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+  note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+  exit 0
+$ ~/.local/lib/jetcarp/jetcarp host login on   [22:15:02]
+  "~/.local/lib/jetcarp/jetcarp" host serve --login starts at login
+  registered with launchd; the host already running carries on
+  exit 0
+  [state: default host pid ; test-folder hosts 2 in all; plist md5 25db4e9b; screen savers: ]
+$ ~/.local/lib/jetcarp/jetcarp host saver install   [22:15:05]
+  written to ~/Library/Screen Savers/JETCARP.saver; choose JETCARP in System Settings, Wallpaper, Screen Saver… (opening; if it was open already, quit and reopen it to see JETCARP). Install again after changing its rotation
+  exit 0
+  [state: default host pid ; test-folder hosts 2 in all; plist md5 25db4e9b; screen savers: JETCARP.saver ]
+$ ~/.local/lib/jetcarp/jetcarp host start --saver   [22:15:06]
+  error: unexpected argument '--saver' found
+  
+  Usage: jetcarp host start [OPTIONS]
+  
+  For more information, try '--help'.
+  exit 2
+$ ~/.local/lib/jetcarp/jetcarp host serve --saver --seconds 3   [22:15:06]
+  jetcarp-host: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+  exit 0
+  [state: default host pid ; test-folder hosts 2 in all; plist md5 25db4e9b; screen savers: JETCARP.saver ]
+$ MCP host_control (jetcarp mcp), wallpaper on, login on
+  # server jetcarp 0.4.2-rc.4
+  > host_control {"action": "wallpaper", "on": true}
+  isError False: {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Apple M2 Max","held":["covered"],"held_why":["windows cover the desktop"],"lock_screen":"live","log":["GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":174,"monitor_hz":[120.0],"monitors":["Built-in Retina Display"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":75402,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles"],"run_at_login":true,"running":true,"screens":[{"frames":380,"hidden":false,"monitor":null,"place":"wallpaper","simulation":{"adapter":null,"on":"cpu","why":"automatic, and the world is too small to be worth the GPU"},"stage":{"building":false,"canvas":[4112.0,2658.0],"caption":["Turmite LLRR","Square grid · 514 × 332 · wraps","A classic a day · 5 of 7 · generation 1,454"],"cell_px":8.0,"cells":170648,"count":7,"frame_rate":60.0,"generation":1454,"grid":[514,332],"label":"Quick Start turmite-llrr","number":5,"paused":true,"rotation":"A classic a day","scale":2.0,"seconds_left":null,"speed":240.0}}],"uptime_s":10.0,"wallpaper":true}
+  > host_control {"action": "login", "on": true}
+  isError False: {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Apple M2 Max","held":["covered"],"held_why":["windows cover the desktop"],"lock_screen":"live","log":["GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":174,"monitor_hz":[120.0],"monitors":["Built-in Retina Display"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":75402,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles"],"run_at_login":true,"running":true,"screens":[{"frames":381,"hidden":false,"monitor":null,"place":"wallpaper","simulation":{"adapter":null,"on":"cpu","why":"automatic, and the world is too small to be worth the GPU"},"stage":{"building":false,"canvas":[4112.0,2658.0],"caption":["Turmite LLRR","Square grid · 514 × 332 · wraps","A classic a day · 5 of 7 · generation 1,454"],"cell_px":8.0,"cells":170648,"count":7,"frame_rate":60.0,"generation":1454,"grid":[514,332],"label":"Quick Start turmite-llrr","number":5,"paused":true,"rotation":"A classic a day","scale":2.0,"seconds_left":null,"speed":240.0}}],"uptime_s":11.0,"wallpaper":true}
+  [state: default host pid ; test-folder hosts 2 in all; plist md5 5a3174da; screen savers: JETCARP.saver ]
+
+# undone: the saver removed, the test host stopped; the default host and login item as before
+$ ~/.local/lib/jetcarp/jetcarp host saver remove   [22:15:09]
+  removed
+  System Settings, if it is open, may keep listing JETCARP until you quit and reopen it
+  exit 0
+$ ~/.local/lib/jetcarp/jetcarp host stop   [22:15:09]
+  stopped
+  exit 0
+  [state: default host pid ; test-folder hosts 1 in all; plist md5 5a3174da; screen savers: ]
+  	program = ~/.local/lib/jetcarp/jetcarp
+  	pid = 75435
+  	job state = running
+
+# the default login item put back as a tester has it (the jetcarp link, from the default folders)
+$ jetcarp host login on   [22:16:05]
+"~/.local/bin/jetcarp" host serve --login starts at login
+registered with launchd, which restarted the host (pid 75667)
+exit 0
+75667     1 Mon Nov 16 22:16:06 2026     ~/.local/bin/jetcarp host serve --login
+    <!-- Registered with launchd by JETCARP 0.4.2-rc.4 -->
+        <string>~/.local/bin/jetcarp</string>
+	program = ~/.local/bin/jetcarp
+	pid = 75667
+	job state = running
+running, pid 75667, up 3.0s, 200 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 741 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU

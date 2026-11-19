@@ -1,0 +1,10 @@
+explore search 2 keeps the budget it was started with: 2 h 59 min left of its 4 h 0 min of running (give this run a budget of its own to change that)
+explore search job 2 resumed (detached) in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/data/library.sqlite
+explore 2: 518,371 runs (167/s), 36,619 elites in 17,067 niches (2,024 of them confirmed), 247 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore search 2 is still running after 2 s
+  explore 2: 518,371 runs (0/s), 36,619 elites in 17,067 niches (2,024 of them confirmed), 247 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+#50: jobs wait straight after resume --detach: exit 5 (expect 5, still running)
+explore search 2 is paused
+  explore 2: 2,111,460 runs (178/s), 66,570 elites in 29,146 niches (4,943 of them confirmed), 776 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+wait exit 3

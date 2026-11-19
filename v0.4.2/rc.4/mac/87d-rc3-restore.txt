@@ -1,0 +1,118 @@
+R4 #87 run 4, rc.3's app (jetcarp 0.4.2-rc.3), after the restore (Jimmie: mouse over at +10 s, title bar click at +20 s, ⌘Tab away and back at +30 s), the Mac, 2026-11-17 04:39:04 AM EST; test folder $H = homes/app87
+app: $J --control  [04:39:04]
+app pid 45038, window frame [328, 130, 1400, 932, 1]
+world_new -> isError=False: New world created.
+app_display playing speed 30 -> isError=False
+   t(s)  phase      answer(s)  generation  gens/s  frame (x y w h on-screen)  app-CPU(% of a core)
+    0.0  in view          0.00           0       -    [328, 130, 1400, 932, 1]       -
+    2.0  in view          0.01          60    29.8    [328, 130, 1400, 932, 1]      52
+    4.0  in view          0.01         120    30.0    [328, 130, 1400, 932, 1]      48
+    6.0  in view          0.01         180    29.9    [328, 130, 1400, 932, 1]      52
+    8.0  in view          0.01         240    30.0    [328, 130, 1400, 932, 1]      54
+   10.0  in view          0.01         301    30.4    [328, 130, 1400, 932, 1]      54
+   12.0  in view          0.01         361    30.0    [328, 130, 1400, 932, 1]      54
+  -- before: ('87d-before-1.png', '3121ad83936ede55') and ('87d-before-2.png', '0a1221d190a5c4fb'): CHANGED: drawing
+   14.5  in view          0.00         436    30.0    [328, 130, 1400, 932, 1]      42
+   16.5  in view          0.01         496    29.9    [328, 130, 1400, 932, 1]      51
+   18.5  in view          0.01         556    29.9    [328, 130, 1400, 932, 1]      53
+   20.5  in view          0.01         616    30.0    [328, 130, 1400, 932, 1]      54
+   22.5  in view          0.01         676    30.0    [328, 130, 1400, 932, 1]      54
+   24.5  in view          0.01         736    30.0    [328, 130, 1400, 932, 1]      51
+   26.6  in view          0.01         796    29.9    [328, 130, 1400, 932, 1]      54
+   28.6  in view          0.01         856    30.0    [328, 130, 1400, 932, 1]      54
+   30.6  in view          0.02         916    29.9    [328, 130, 1400, 932, 1]      54
+   32.6  in view          0.01         976    30.0    [328, 130, 1400, 932, 1]      54
+   34.6  in view          0.01        1036    30.0    [328, 130, 1400, 932, 1]      53
+   36.6  in view          0.01        1097    30.4    [328, 130, 1400, 932, 1]      54
+   38.6  in view          0.01        1157    30.0    [328, 130, 1400, 932, 1]      54
+   40.6  in view          0.01        1217    30.0    [328, 130, 1400, 932, 1]      53
+   42.6  in view          0.01        1277    30.0    [328, 130, 1400, 932, 1]      51
+   44.6  in view          0.01        1337    30.0    [328, 130, 1400, 932, 1]      52
+   49.6  in view          3.00        None       -    [328, 130, 1400, 932, 1]      12
+   52.7  in view          3.01        None       -    [328, 130, 1400, 932, 1]       0
+   55.8  in view          3.01        None       -    [328, 130, 1400, 932, 1]       0
+   58.8  in view          3.01        None       -    [328, 130, 1400, 932, 1]       0
+   61.9  in view          3.01        None       -    [328, 130, 1400, 932, 1]       1
+   62.2  in view          0.20        1388       -    [328, 130, 1400, 932, 1]      17
+   64.0  in view          0.01        1442    29.8    [328, 130, 1400, 932, 1]      26
+   66.0  in view          0.01        1502    30.0    [328, 130, 1400, 932, 1]      52
+   68.0  in view          0.01        1562    29.9    [328, 130, 1400, 932, 1]      54
+   70.1  in view          0.01        1622    30.0    [328, 130, 1400, 932, 1]      50
+   72.1  in view          0.01        1682    29.9    [328, 130, 1400, 932, 1]      54
+   74.1  in view          0.01        1742    30.0    [328, 130, 1400, 932, 1]      50
+   76.1  in view          0.01        1803    30.4    [328, 130, 1400, 932, 1]      53
+   78.1  in view          0.01        1863    29.9    [328, 130, 1400, 932, 1]      43
+   80.1  in view          0.01        1923    30.0    [328, 130, 1400, 932, 1]      37
+   82.1  in view          0.01        1983    30.0    [328, 130, 1400, 932, 1]      53
+   84.1  in view          0.01        2043    29.9    [328, 130, 1400, 932, 1]      54
+   86.1  in view          0.01        2103    30.0    [328, 130, 1400, 932, 1]      55
+   88.1  in view          0.01        2163    29.9    [328, 130, 1400, 932, 1]      52
+   90.1  in view          0.01        2223    30.0    [328, 130, 1400, 932, 1]      54
+   92.1  in view          0.01        2283    30.0    [328, 130, 1400, 932, 1]      53
+   94.1  in view          0.01        2344    30.3    [328, 130, 1400, 932, 1]      51
+   96.1  in view          0.01        2404    30.0    [328, 130, 1400, 932, 1]      51
+   98.1  in view          0.02        2464    29.8    [328, 130, 1400, 932, 1]      54
+  -- minimised (off screen) by 103.1 s
+  103.1  minimised        3.01        None       -    [328, 130, 1400, 932, 0]      13
+  106.2  minimised        3.00        None       -    [328, 130, 1400, 932, 0]       0
+  109.3  minimised        3.00        None       -    [328, 130, 1400, 932, 0]       0
+  112.4  minimised        3.00        None       -    [328, 130, 1400, 932, 0]       0
+  115.4  minimised        3.00        None       -    [328, 130, 1400, 932, 0]       0
+  118.5  minimised        3.01        None       -    [328, 130, 1400, 932, 0]       0
+  121.6  minimised        3.01        None       -    [328, 130, 1400, 932, 0]       2
+  -- back on screen by 124.7 s
+  124.7  in view again    3.01        None       -    [491, 348, 1140, 763, 1]       3
+  -- + 0.0 s after the restore: 87d-after-01.png 159fefc368c11ebc: first
+  125.1  in view again    0.11        2522       -    [328, 130, 1400, 932, 1]      16
+  -- + 0.4 s after the restore: 87d-after-02.png 57b916598bd5f4b0: CHANGED: drawing
+  127.0  in view again    0.01        2579    30.0    [328, 130, 1400, 932, 1]      42
+  -- + 2.3 s after the restore: 87d-after-03.png eca86926def9be3b: CHANGED: drawing
+  129.0  in view again    0.01        2639    29.9     [145, 40, 1400, 932, 1]      39
+  -- + 4.3 s after the restore: 87d-after-04.png 2ccc19250548b880: CHANGED: drawing
+  131.0  in view again    0.01        2699    30.0     [145, 40, 1400, 932, 1]      44
+  -- + 6.3 s after the restore: 87d-after-05.png 256bdc32e5f2bad8: CHANGED: drawing
+  133.0  in view again    0.01        2759    30.0     [145, 40, 1400, 932, 1]      43
+  -- + 8.3 s after the restore: 87d-after-06.png d02e9f17470e11fd: CHANGED: drawing
+  135.0  in view again    0.01        2820    30.4     [145, 40, 1400, 932, 1]      43
+  -- +10.3 s after the restore: 87d-after-07.png c09a33f2700b6aae: CHANGED: drawing
+  137.0  in view again    0.01        2880    30.0     [145, 40, 1400, 932, 1]      42
+  -- +12.3 s after the restore: 87d-after-08.png eac6dc2d057d577c: CHANGED: drawing
+  139.0  in view again    0.01        2940    29.9     [145, 40, 1400, 932, 1]      43
+  -- +14.3 s after the restore: 87d-after-09.png 7119621f7f78f0d2: CHANGED: drawing
+  141.0  in view again    0.01        3000    30.0     [145, 40, 1400, 932, 1]      34
+  -- +16.3 s after the restore: 87d-after-10.png fb76cd6dc684b966: CHANGED: drawing
+  143.0  in view again    0.01        3060    30.0     [145, 40, 1400, 932, 1]      29
+  -- +18.3 s after the restore: 87d-after-11.png 8f624c8faa48cba9: CHANGED: drawing
+  145.0  in view again    0.00        3120    30.1     [145, 40, 1400, 932, 1]      44
+  -- +20.3 s after the restore: 87d-after-12.png 2ccdf114aefa2f7a: CHANGED: drawing
+  147.0  in view again    0.01        3180    29.9     [145, 40, 1400, 932, 1]      22
+  -- +22.3 s after the restore: 87d-after-13.png c04a7c4d7de1beb7: CHANGED: drawing
+  149.0  in view again    0.01        3240    29.8     [145, 40, 1400, 932, 1]      25
+  -- +24.3 s after the restore: 87d-after-14.png ff6738b0dd09cd30: CHANGED: drawing
+  151.0  in view again    0.01        3300    30.0     [145, 40, 1400, 932, 1]      32
+  -- +26.3 s after the restore: 87d-after-15.png 00a39da407916b4e: CHANGED: drawing
+  153.0  in view again    0.01        3360    30.0     [145, 40, 1400, 932, 1]      35
+  -- +28.3 s after the restore: 87d-after-16.png 6db644c902a2a6ef: CHANGED: drawing
+  155.0  in view again    0.01        3420    30.0     [145, 40, 1400, 932, 1]      42
+  -- +30.3 s after the restore: 87d-after-17.png 17fa5ebf3ff8c898: CHANGED: drawing
+  157.0  in view again    0.01        3480    30.0     [145, 40, 1400, 932, 1]      44
+  -- +32.3 s after the restore: 87d-after-18.png d032ba204bf13816: CHANGED: drawing
+  159.1  in view again    0.01        3541    30.4     [145, 40, 1400, 932, 1]      36
+  -- +34.3 s after the restore: 87d-after-19.png 5960db1445c509ec: CHANGED: drawing
+  161.1  in view again    0.01        3601    30.0     [145, 40, 1400, 932, 1]      39
+  -- +36.3 s after the restore: 87d-after-20.png b0d6c1353ad1cc90: CHANGED: drawing
+  163.1  in view again    0.01        3661    29.9     [145, 40, 1400, 932, 1]      30
+  -- +38.3 s after the restore: 87d-after-21.png 4a4ab9ad8bc984f5: CHANGED: drawing
+  165.1  in view again    0.01        3721    30.0     [145, 40, 1400, 932, 1]      37
+  -- +40.3 s after the restore: 87d-after-22.png 39119aeff09c26c7: CHANGED: drawing
+  167.1  in view again    0.01        3781    30.0     [145, 40, 1400, 932, 1]      34
+  -- +42.3 s after the restore: 87d-after-23.png b8dc904291452be2: CHANGED: drawing
+  169.1  in view again    0.01        3841    29.9     [145, 40, 1400, 932, 1]      28
+  -- +44.4 s after the restore: 87d-after-24.png be7599fc1e5ac78a: CHANGED: drawing
+  171.1  in view again    0.01        3901    30.0     [145, 40, 1400, 932, 1]      35
+  -- +46.4 s after the restore: 87d-after-25.png 9f82db9e247fe2aa: CHANGED: drawing
+
+in view: 47 polls over 98 s, 0 errors, 25.1 gens/s, slowest answer 3.01 s, longest gap 5.0 s, app CPU median 53% of a core (range 0 to 55)
+minimised: 7 polls over 18 s, 0 errors, - gens/s, slowest answer 3.01 s, longest gap 3.1 s, app CPU median 0% of a core (range 0 to 13)
+in view again: 25 polls over 46 s, 0 errors, 30.0 gens/s, slowest answer 3.01 s, longest gap 2.1 s, app CPU median 36% of a core (range 3 to 44)
+the app closed (exit -15)

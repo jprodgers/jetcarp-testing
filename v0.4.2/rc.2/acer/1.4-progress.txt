@@ -1,0 +1,11 @@
+# Reconstructed on 2026-11-15 from the copy this session had printed: the original file in the test
+# folder was deleted by mistake (a helper named Rd ran PowerShell's rd alias, Remove-Item). See notes.md.
+# Only the first 3 and last 4 lines of the first hour survive (60 probes: none at 0/s, median 36/s).
+05:40:44 +0 min [run] ws 35 MB | explore 2: 0 runs, running, elites 0, niches 0, confirmed elites 0
+05:41:44 +1 min [run] ws 410 MB | explore 2: 3,120 runs (58/s), 1,251 elites in 729 niches (0 of them confirmed), 4 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+05:42:45 +2 min [run] ws 445 MB | explore 2: 4,835 runs (35/s), 1,871 elites in 1,088 niches (0 of them confirmed), 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+...
+06:38:08 +57 min [run] ws 712 MB | explore 2: 117,154 runs (36/s), 17,727 elites in 9,033 niches (838 of them confirmed), 93 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+06:39:09 +58 min [run] ws 700 MB | explore 2: 119,840 runs (31/s), 17,967 elites in 9,142 niches (845 of them confirmed), 95 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+06:40:09 +59 min [run] ws 897 MB | explore 2: 122,032 runs (31/s), 18,084 elites in 9,188 niches (834 of them confirmed), 98 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+06:41:55 +61 min [resumed] ws 34 MB | explore 2: 125,104 runs (39/s), 18,473 elites in 9,362 niches (893 of them confirmed), 99 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan

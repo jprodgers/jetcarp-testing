@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "HPP gas (Margolus)",
+  "description": "Lattice gas: particles cross their block diagonally; head-on pairs scatter.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 160,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "745654299332188625",
+  "cas": [
+    {
+      "id": 1,
+      "name": "HPP gas (Margolus)",
+      "rule": "Margolus 0,8,4,12,2,10,9,14,1,6,5,13,3,11,7,15",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "blob": {
+          "radius": 0.3,
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "41f19ceffe764c6a",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

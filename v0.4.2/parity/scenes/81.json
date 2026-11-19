@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Hex rule 6 (XOR)",
+  "description": "Two parents, binary: left XOR right. Pascal's triangle mod 2.",
+  "tiling": {
+    "family": "hex",
+    "size": {
+      "rect": {
+        "w": 161,
+        "h": 81
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "575984098635612361",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Hex rule 6 (XOR)",
+      "rule": "HexW 6",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "top_center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "066aef441bc86196",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

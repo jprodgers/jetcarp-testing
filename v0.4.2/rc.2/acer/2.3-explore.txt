@@ -1,0 +1,60 @@
+explore 2: 359 runs (0/s), 142 elites in 78 niches (13 of them confirmed), 5 of 1,359 tilings; cpu only
+  status paused, 4 min 57 s run over every session, 45 confirmation runs, 445 candidates tried, 0.07 GB of memory
+  threads: 10 for runs on the processor, of 12 cores (2 left free)
+  this session: 12 runs on the processor stopped at their time cap (kept with the generations they reached), 10 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                        359   0.45   1.54     142
+  folder: C:\Users\jimmi\jetcarp-rc-042b\data\searches\52a720fc-7f9e-4de7-980f-063aafac3f1d
+
+---- stderr (progress lines)
+explore search job 2 in C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite
+explore 2: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; cpu only
+explore 2: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; cpu only
+explore 2: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; cpu only
+explore 2: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; cpu only
+explore 2: 80 runs (3/s), 42 elites in 25 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+explore 2: 80 runs (2/s), 42 elites in 25 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+explore 2: 80 runs (2/s), 42 elites in 25 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+explore 2: 160 runs (4/s), 61 elites in 35 niches (0 of them confirmed), 2 of 1,359 tilings; cpu only
+explore 2: 160 runs (3/s), 61 elites in 35 niches (0 of them confirmed), 2 of 1,359 tilings; cpu only
+explore 2: 238 runs (4/s), 120 elites in 71 niches (0 of them confirmed), 3 of 1,359 tilings; cpu only
+explore 2: 238 runs (4/s), 120 elites in 71 niches (0 of them confirmed), 3 of 1,359 tilings; cpu only
+explore 2: 238 runs (3/s), 120 elites in 71 niches (0 of them confirmed), 3 of 1,359 tilings; cpu only
+explore 2: 238 runs (3/s), 120 elites in 71 niches (0 of them confirmed), 3 of 1,359 tilings; cpu only
+explore 2: 318 runs (4/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (4/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (3/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (3/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (3/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (3/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (3/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (3/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (2/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (1/s), 138 elites in 78 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (0/s), 138 elites in 78 niches (15 of them confirmed), 4 of 1,359 tilings; cpu only
+explore 2: 318 runs (0/s), 138 elites in 78 niches (15 of them confirmed), 4 of 1,359 tilings; cpu only
+explore search 2 paused (as asked); `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

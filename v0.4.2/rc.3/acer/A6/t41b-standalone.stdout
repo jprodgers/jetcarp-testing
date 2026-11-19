@@ -1,0 +1,69 @@
+﻿#### the app: pid 26652, minimised: True  [11:44:56]
+== search_start {"hunt": {"rules": ["B3/S23"], "soups": 2000000}, "detach": true, "threads": 8, "label": "a6-hidden"}  ->  isError=False  (0.7 s)  [11:44:57]
+   {
+  "folder": null,
+  "job": 12,
+  "kind": "hunt",
+  "line": "hunt 12: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "detached",
+  "note": "The job runs in a process of its own: job_status {\"job\": 12, \"wait_s\": 300} waits for it, job_stop {\"job\": 12} stops it, search_start {\"resume\": 12} carries it on.",
+  "started": true,
+  "status": "running"
+}
+(the standalone server closed  [11:44:57])
+$ jetcarp jobs status 12   [11:45:12]
+hunt 12: 20,077/2,000,000 soups, 1502 soups/s, 431,816 objects (ships 38,318, osc 125,039, still 268,459), 50 distinct, 0 new | newest: still life 12c #bf73c4 (B3/S23)
+  status running, 13 s run, 19968 settled, 52 died, 57 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 20077 soups, 431816 objects (oscillator 125039, spaceship 38318, still life 268459), 50 distinct, 0 new
+  newest finds:
+    bf73c46c186561ca3b75a3884d0b5ab5  still life 12c #bf73c4             B3/S23     Square soup 17973
+    9b8506f0c92bc91d9df0492db64b6124  still life 12c #9b8506             B3/S23     Square soup 16764
+    917e6f33202346c9512b19aa8faa32b3  still life 10c #917e6f             B3/S23     Square soup 14630
+    8df8d769457729de0b6d5ee6f12a08d5  still life 7c #8df8d7              B3/S23     Square soup 13732
+    f241c8e566137cde275909e216cce670  still li
+
+exit 0
+$ jetcarp jobs status 12   [11:45:28]
+hunt 12: 41,731/2,000,000 soups, 1478 soups/s, 898,290 objects (ships 79,533, osc 260,621, still 558,136), 65 distinct, 4 new | newest: still life 10c #c42cde (B3/S23)
+  status running, 28 s run, 41505 settled, 117 died, 109 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 41731 soups, 898290 objects (oscillator 260621, spaceship 79533, still life 558136), 65 distinct, 4 new
+  newest finds:
+    c42cde186d92d5fcfa9f966e93c05a1f  still life 10c #c42cde             B3/S23     Square soup 41269  (new to the catalog)
+    4f7c81953d2e778ea32af97e37ead0b5  still life 14c #4f7c81             B3/S23     Square soup 40613  (new to the catalog)
+    5f6193f3faea899e52fd9fe8ee5da7dc  still life 16c #5f6193             B3/S23     Square soup 39470  (new to the catalog)
+    df2c7aae64caa553123cf51c0ba3bdf1  still life 18c #df2c7a             B3/S23 
+
+exit 0
+$ jetcarp jobs status 12   [11:45:43]
+hunt 12: 63,909/2,000,000 soups, 1467 soups/s, 1,375,684 objects (ships 121,701, osc 398,845, still 855,138), 68 distinct, 7 new | newest: still life 12c #931257 (B3/S23)
+  status running, 44 s run, 63550 settled, 182 died, 177 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 63909 soups, 1375684 objects (oscillator 398845, spaceship 121701, still life 855138), 68 distinct, 7 new
+  newest finds:
+    931257315c5760eaff17656138b3245d  still life 12c #931257             B3/S23     Square soup 54702  (new to the catalog)
+    bb006764a2f8ff4c75be8afd65585202  still life 14c #bb0067             B3/S23     Square soup 47075  (new to the catalog)
+    f0e883251888a774e1e8d53e0fdb61d6  still life 10c #f0e883             B3/S23     Square soup 44484  (new to the catalog)
+    c42cde186d92d5fcfa9f966e93c05a1f  still life 10c #c42cde             B3
+
+exit 0
+$ jetcarp jobs status 12   [11:45:58]
+hunt 12: 85,185/2,000,000 soups, 1456 soups/s, 1,835,327 objects (ships 162,550, osc 530,892, still 1,141,885), 74 distinct, 13 new | newest: still life 14c #5a79a9 (B3/S23)
+  status running, 58 s run, 84709 settled, 234 died, 242 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 85185 soups, 1835327 objects (oscillator 530892, spaceship 162550, still life 1141885), 74 distinct, 13 new
+  newest finds:
+    5a79a9468a09e6300df6557d262a4432  still life 14c #5a79a9             B3/S23     Square soup 83575  (new to the catalog)
+    de0c2aea84331dde841c563372137cf0  still life 15c #de0c2a             B3/S23     Square soup 80116  (new to the catalog)
+    60ea744a112888b6145ebf7acd12d6c9  still life 13c #60ea74             B3/S23     Square soup 76061  (new to the catalog)
+    166c059919129bde1e6c2d5cb7c104ea  still life 14c #166c05          
+
+exit 0
+(the app still minimised: True)
+$ jetcarp jobs stop 12   [11:45:58]
+asked hunt 12 to stop at its next checkpoint
+
+exit 0
+$ jetcarp jobs wait 12 --timeout 60   [11:45:59]
+hunt 12 is paused
+  hunt 12: 86,061/2,000,000 soups, 1396 soups/s, 1,855,464 objects (ships 164,331, osc 536,750, still 1,154,383), 74 distinct, 13 new | newest: still life 14c #5a79a9 (B3/S23)
+  `jetcarp jobs resume 12` resumes it exactly
+
+exit 3

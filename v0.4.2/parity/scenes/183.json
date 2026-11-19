@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Lines",
+  "description": "Stable; rapidly sorts itself into straight lines and separate areas of orthogonal hatching. Best from a 20%-dense disc of radius 40 or more. (Anders Starmark)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "9581848439322710443",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Lines",
+      "rule": "B458/S012345/C3",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "blob": {
+          "radius": 0.8,
+          "density": 0.2
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "150e97e5e855a7cb",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,30 @@
+Recorded: 2026-11-13 09:51:24 -05:00
+Machine: Nitro ANV15-51
+OS: Microsoft Windows 11 Home, version 10.0.26300, build 26300.9974 (26H2)
+CPU: 13th Gen Intel(R) Core(TM) i5-13420H, 8 cores, 12 threads
+Memory: 15.7 GB
+Shell: Windows PowerShell 5.1.26100.9818; running as administrator: False
+
+Graphics adapters:
+  NVIDIA GeForce RTX 3050 6GB Laptop GPU, driver 31.0.15.4618, status OK
+  Intel(R) UHD Graphics, driver 31.0.101.4146, status OK
+
+Monitors attached:
+  \\.\DISPLAY1 primary=True 1920x1080 at (0,0), work area 1920x1032 (taskbar 48 px)
+  (internal panel only; the AOC Q3277 is not attached)
+Display scaling: AppliedDPI 96 (96 = 100%)
+
+Power: mains (BatteryStatus 2), battery 100%
+
+Before install (S1):
+  jetcarp on PATH: no (Get-Command jetcarp -All finds nothing, PATH rebuilt from the registry);
+    %LOCALAPPDATA%\Programs\jetcarp: absent
+  Scoop: not installed (no scoop command, no %USERPROFILE%\scoop, $env:SCOOP unset)
+  git: C:\Program Files\Git\cmd\git.exe (git version 2.52.0.windows.1, on the machine PATH)
+  User PATH: ExpandString, 18 entries, %PNPM_HOME%\bin unexpanded, no trailing ';' (as rc3 left it;
+    Jimmie: leave it). Saved in 00-path-before.txt and 00-path-type-before.txt.
+  Wallpaper value: C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper; style 10
+  Screen saver (SCRNSAVE.EXE): none set; ScreenSaveActive 1; timeout 60
+  Run key JETCARP: absent; jetcarp processes: 0
+  Defender: allowed threat IDs: 0; detection history: rc2's two only (Commando.B!ml and .C!ml,
+    2026-11-12 06:51); signatures 1.463.281.0 (2026-11-13 02:41); real-time protection on

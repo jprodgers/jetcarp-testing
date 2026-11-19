@@ -1,0 +1,14 @@
+2026-11-16 10:00 PM EST == rc.4 release build: jetcarp 0.4.2-rc.4, sha256 d805fada8cc612f7…
+2026-11-16 10:00 PM EST == 1.1 parity 371 x 300, radeon
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+2026-11-16 10:02 PM EST == 1.1 parity 371 x 300, llvmpipe
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (llvmpipe (LLVM 21.1.8, 256 bits) (llvmpipe), Vulkan)
+2026-11-16 10:03 PM EST == 1.2 parity 40 x 5000, radeon
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan)
+2026-11-16 10:04 PM EST == 1.2 parity 40 x 5000, llvmpipe
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (llvmpipe (LLVM 21.1.8, 256 bits) (llvmpipe), Vulkan)
+2026-11-16 10:06 PM EST == parity done

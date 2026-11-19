@@ -1,0 +1,82 @@
+
+#### #47 explore --limit help
+      --limit <LIMIT>                  Stop after this many units in this session (soups per rule and tiling, runs, rules, generations); the job stays resumable. An explore search checks it between steps, so it finishes the step it is in and may run past it
+      --threads <THREADS>              Worker threads (default: all cores; an explore search leaves two free). Results do not depend on this
+      --detach                         Run in a process of its own and return at once (`jetcarp jobs status JOB` follows it)
+
+#### #57 pack export refuses a running search; a refused export leaves no folder
+hunt exit 0
+explore 9: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+    9  explore  running  2026-11-16T12:47:39Z  explore 9: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; Apple M2 Max, Metal
+    8  hunt     done     2026-11-16T12:47:37Z  hunt 8: 300/300 soups, 1082 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    7  hunt     paused   2026-11-16T12:46:49Z  hunt 7: 7,985/50,000,000 soups, 1555 soups/s, 168,922 objects (ships 15,036, osc 49,045, still 104,841), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+    6  explore  paused   2026-11-16T12:46:17Z  explore 6: 5,120 runs (169/s), 671 elites in 315 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+    5  hunt     paused   2026-11-16T12:46:15Z  hunt 5: 55,654/50,000,000 soups, 1651 soups/s, 1,198,533 objects (ships 106,109, osc 347,562, still 744,862), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+made a publisher key, SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0
+Error: explore job 9 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+export exit 1
+no p57 folder: ok
+.p57.store
+stopping job 9
+asked explore search 9 to stop at its next checkpoint
+wait exit 3
+
+#### #57 b: a search paused, nothing stored yet (a fresh explore stopped at once)
+explore 10: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+Error: explore job 10 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+export while running exit 1
+no p57b folder: ok
+asked explore search 10 to stop at its next checkpoint
+
+#### #66 a signed pack, then a tampered copy and an unsigned copy
+the version was published first into /Users/Jimmie/jetcarp-rc-042c/m6/cli/.good.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /Users/Jimmie/jetcarp-rc-042c/m6/cli/.good.store` does (then `jetcarp pack export --from /Users/Jimmie/jetcarp-rc-042c/m6/cli/.good.store` lays it out)
+export exit 0
+-- pack info good
+export sha256:d0a4153abf1f5c09e4903a491fd9005c0419f6bf460bf5f1004b45b04e46d0af (feed r66)
+  publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0, signed by its publisher
+  created 2026-11-16T12:48:51Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2806 bytes
+  patterns             116 rows in 3 parts, 49829 bytes
+  provenance           116 rows in 1 part, 9189 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            260 rows in 1 part, 6853 bytes
+exit 0
+-- pack info onebyte
+export sha256:d9c9a6736618f8c0043d935b7804127ba35576eb21023354e13a3b2f67ea24b1 (feed r67)
+  publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0, signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (b0424353c5b21655d9a7cd48aa1d7ba41e733b822873b321390c1c9f07fe340d.sig: signature does not verify (jetcarp-manifest): cryptographic error)
+  created 2026-11-16T12:48:51Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2806 bytes
+  patterns             116 rows in 3 parts, 49829 bytes
+  provenance           116 rows in 1 part, 9189 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            260 rows in 1 part, 6853 bytes
+exit 0
+-- pack info unsigned
+export sha256:d0a4153abf1f5c09e4903a491fd9005c0419f6bf460bf5f1004b45b04e46d0af (feed r66)
+  publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0, not signed by its publisher
+  created 2026-11-16T12:48:51Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2806 bytes
+  patterns             116 rows in 3 parts, 49829 bytes
+  provenance           116 rows in 1 part, 9189 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            260 rows in 1 part, 6853 bytes
+exit 0
+-- pack import onebyte
+Error: a signature on this version does not verify: b0424353c5b21655d9a7cd48aa1d7ba41e733b822873b321390c1c9f07fe340d.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 0
+-- pack import unsigned
+Error: this version is not signed by its publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0; to import it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+exit 0
+
+#### #67 a malformed rule names its CA and file; a read-only library can be read
+Error: bad-rule.json: CA 1 'Lifeish': rule 'B3/S23/Q9 Frobnicate': Generations need a state count, like B2/S/C3
+exit 1
+Error: scene has no recorded hash
+exit 1
+catalog: ro.sqlite (116 shown of 116 matching)
+aab843d7ff96817d170d6725fb23e37c  c/6 diagonal spaceship 25c #aab843 B36/S23      Square                     p48    25c  seen 112   score  92.4  new  c/6 diagonal
+5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 462134 score  74.4  new  c/4 diagonal
+1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 38    score  72.0  new  c/2 orthogonal
+exit 0

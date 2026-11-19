@@ -1,0 +1,167 @@
+started CLI explore, pid 1123923  [12:58:07]
+== MCP search_start hunt (server thread) -> isError=False
+{
+  "folder": null,
+  "job": 11,
+  "kind": "hunt",
+  "line": "hunt 11: 0/20,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "background",
+  "note": "The job runs in the background: job_status {\"job\": 11, \"wait_s\": 300} waits for it, job_stop {\"job\": 11} stops it, search_start {\"resume\": 11} carries it on.",
+  "started": true,
+  "status": "running"
+}
+$ jetcarp jobs list   [12:58:20]
+   11  hunt     running  2026-11-15T17:58:15Z  hunt 11: 6,962/20,000,000 soups in each of 2 groups, 3890 soups/s, 194,429 objects (ships 16,963, osc 49,685, still 127,781), 71 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+   10  explore  running  2026-11-15T17:58:08Z  explore 10: 2,048 runs (181/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    9  hunt     done     2026-11-15T17:56:45Z  hunt 9: 10/10 soups, 30 soups/s, 341 objects (ships 29, osc 104, still 208), 11 distinct, 0 new | newest: tub (B3/S23)
+    8  pile     done     2026-11-15T17:55:20Z  pile 8: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    7  pile     done     2026-11-15T17:55:19Z  pile 7: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    6  hunt     running  2026-11-15T17:54:04Z  hunt 6: 7,708/50,000,000 soups, 2585 soups/s, 163,045 objects (ships 14,565, osc 47,344, still 101,136), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+    5  explore  paused   2026-11-15T17:53:18Z  explore 5: 7,168 runs (222/s), 811 elites in 376 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    4  hunt     paused   2026-11-15T17:53:17Z  hunt 4: 84,100/50,000,000 soups, 2808 soups/s, 1,811,286 objects (ships 160,381, osc 524,048, still 1,126,857), 74 distinct, 37 new | newest: still life 14c #5a79a9 (B3/S23)
+    3  explore  paused   2026-11-15T17:50:45Z  explore 3: 4,902 runs (79/s), 768 elites in 398 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    2  hunt     stale    2026-11-15T17:50:40Z  hunt 2: 803,838/10,000,000 soups, 11695 soups/s, 5,570,552 objects (ships 439,121, osc 830,467, still 4,300,964), 100 distinct, 100 new | newest: still life 13c #01469a (B36/S23)
+    1  hunt     done     2026-11-15T17:50:38Z  hunt 1: 3,000/3,000 soups, 1835 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+11 job(s); 3 running
+
+exit 0
+== MCP job_status {status: running} -> isError=False
+{
+  "catalog": "$W/library/library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-15T17:58:15Z",
+      "job": 11,
+      "kind": "hunt",
+      "label": "f9-5.2-mcp",
+      "line": "hunt 11: 6,962/20,000,000 soups in each of 2 groups, 3890 soups/s, 194,429 objects (ships 16,963, osc 49,685, still 127,781), 71 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)",
+      "status": "running",
+      "updated": "2026-11-15T17:58:19Z"
+    },
+    {
+      "created": "2026-11-15T17:58:08Z",
+      "job": 10,
+      "kind": "explore",
+      "label": "f9-5.2-cli",
+      "line": "explore 10: 2,048 runs (181/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+      "status": "running",
+      "updated": "2026-11-15T17:58:19Z"
+    },
+    {
+      "created": "2026-11-15T17:54:04Z",
+      "job": 6,
+      "kind": "hunt",
+      "label": "f9-in-server",
+      "line": "hunt 6: 7,708/50,000,000 soups, 2585 soups/s, 163,045 objects (ships 14,565, osc 47,344, still 101,136), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)",
+      "status": "running",
+      "updated": "2026-11-15T17:54:07Z"
+    },
+    {
+      "created": "2026-11-15T17:50:40Z",
+      "job": 2,
+      "kind": "hunt",
+      "label": "f9-stop-me",
+      "line": "hunt 2: 803,838/10,000,000 soups, 11695 soups/s, 5,570,552 objects (ships 439,121, osc 830,467, still 4,300,964), 100 distinct, 100 new | newest: still life 13c #01469a (B36/S23)",
+      "status": "running",
+      "updated": "2026-11-15T17:51:49Z"
+    }
+  ]
+}
+(the CLI explore is job 10, the MCP hunt job 11)
+== MCP job_stop 10 (the CLI's explore) -> isError=False
+{
+  "job": 10,
+  "kind": "explore",
+  "note": "It stops at its next checkpoint and stays resumable with search_start {\"resume\": 10}.",
+  "status": "running",
+  "stopping": true
+}
+$ jetcarp jobs stop 11   [12:58:30]
+asked hunt 11 to stop at its next checkpoint
+
+exit 0
+CLI explore process exited 0 1.8 s after MCP's job_stop
+== MCP job_status 11 wait_s 60 (after the CLI's jobs stop) -> isError=False
+hunt 11: 31,662/20,000,000 soups in each of 2 groups, 3889 soups/s, 901,115 objects (ships 77,711, osc 230,808, still 592,596), 105 distinct, 0 new | newest: still life 9c #a638b5 (B36/S23)
+  status paused, 16 s run, 62600 settled, 485 died, 238 exploded, 1 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  B36/S23 on Square: 31662 soups, 218688 objects (oscillator 32456, spaceship 17292, still life 168940), 47 distinct, 0 new
+  B3/S23 on Square: 31662 soups, 682427 objects (oscillator 198352, spaceship 60419, still life 423656), 58 distinct, 0 new
+  newest finds:
+    a638b59e71623e2383c4698cb1520575  still life 9c #a638b5              B36/S23    Square soup 30986
+  
+$ jetcarp jobs list   [12:58:32]
+   11  hunt     paused   2026-11-15T17:58:15Z  hunt 11: 31,662/20,000,000 soups in each of 2 groups, 3889 soups/s, 901,115 objects (ships 77,711, osc 230,808, still 592,596), 105 distinct, 0 new | newest: still life 9c #a638b5 (B36/S23)
+   10  explore  paused   2026-11-15T17:58:08Z  explore 10: 4,096 runs (170/s), 935 elites in 504 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    9  hunt     done     2026-11-15T17:56:45Z  hunt 9: 10/10 soups, 30 soups/s, 341 objects (ships 29, osc 104, still 208), 11 distinct, 0 new | newest: tub (B3/S23)
+    8  pile     done     2026-11-15T17:55:20Z  pile 8: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    7  pile     done     2026-11-15T17:55:19Z  pile 7: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    6  hunt     running  2026-11-15T17:54:04Z  hunt 6: 7,708/50,000,000 soups, 2585 soups/s, 163,045 objects (ships 14,565, osc 47,344, still 101,136), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+    5  explore  paused   2026-11-15T17:53:18Z  explore 5: 7,168 runs (222/s), 811 elites in 376 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    4  hunt     paused   2026-11-15T17:53:17Z  hunt 4: 84,100/50,000,000 soups, 2808 soups/s, 1,811,286 objects (ships 160,381, osc 524,048, still 1,126,857), 74 distinct, 37 new | newest: still life 14c #5a79a9 (B3/S23)
+    3  explore  paused   2026-11-15T17:50:45Z  explore 3: 4,902 runs (79/s), 768 elites in 398 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    2  hunt     stale    2026-11-15T17:50:40Z  hunt 2: 803,838/10,000,000 soups, 11695 soups/s, 5,570,552 objects (ships 439,121, osc 830,467, still 4,300,964), 100 distinct, 100 new | newest: still life 13c #01469a (B36/S23)
+    1  hunt     done     2026-11-15T17:50:38Z  hunt 1: 3,000/3,000 soups, 1835 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+11 job(s); 1 running
+
+exit 0
+== MCP job_status listing -> {
+  "catalog": "$W/library/library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-15T17:58:15Z",
+      "job": 11,
+      "kind": "hunt",
+      "label": "f9-5.2-mcp",
+      "line": "hunt 11: 31,662/20,000,000 soups in each of 2 groups, 3889 soups/s, 901,115 objects (ships 77,711, osc 230,808, still 592,596), 105 distinct, 0 new | newest: still life 9c #a638b5 (B36/S23)",
+      "status": "paused",
+      "updated": "2026-11-15T17:58:32Z"
+    },
+    {
+      "created": "2026-11-15T17:58:08Z",
+      "job": 10,
+      "kind": "explore",
+      "label": "f9-5.2-cli",
+      "line": "explore 10: 4,096 runs (170/s), 935 elites in 504 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+      "status": "paused",
+      "updated": "2026-11-15T17:58:32Z"
+    },
+    {
+      "created": "2026-11-15T17:56:45Z",
+      "job": 9,
+      "kind": "hunt",
+      "label": null,
+      "line": "hunt 9: 10/10 soups, 30 soups/s, 341 objects (ships 29, osc 104, still 208), 11 distinct, 0 new | newest: tub (B3/S23)",
+      "status": "done",
+      "updated": "2026-11-15T17:56:45Z"
+    }
+  ]
+}
+== the CLI explore's own output (last lines):
+explore 10: 1,024 runs (97/s), 305 elites in 167 niches (0 of them confirmed), 1 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 2,048 runs (118/s), 605 elites in 339 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 3,072 runs (135/s), 785 elites in 437 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 10: 4,096 runs (170/s), 935 elites in 504 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status paused, 24 s run over every session, 0 confirmation runs, 4,096 candidates tried, 0.35 GB of memory
+  threads: 5 for runs on the processor and 3 for the GPU's batches, of 32 cores (24 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 2,255   0.37   1.25     484
+  generations               1,841   0.79   1.89     451
+  folder: $W/library/searches/ee583750-aa89-4940-9b4d-bff2a3f22ae7
+explore search 10 paused (as asked); `jetcarp jobs resume 10` continues it from its archive (not run for run: the search is not deterministic)
+
+$ jetcarp jobs list   [12:58:33]
+   11  hunt     paused   2026-11-15T17:58:15Z  hunt 11: 31,662/20,000,000 soups in each of 2 groups, 3889 soups/s, 901,115 objects (ships 77,711, osc 230,808, still 592,596), 105 distinct, 0 new | newest: still life 9c #a638b5 (B36/S23)
+   10  explore  paused   2026-11-15T17:58:08Z  explore 10: 4,096 runs (170/s), 935 elites in 504 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    9  hunt     done     2026-11-15T17:56:45Z  hunt 9: 10/10 soups, 30 soups/s, 341 objects (ships 29, osc 104, still 208), 11 distinct, 0 new | newest: tub (B3/S23)
+    8  pile     done     2026-11-15T17:55:20Z  pile 8: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    7  pile     done     2026-11-15T17:55:19Z  pile 7: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    6  hunt     running  2026-11-15T17:54:04Z  hunt 6: 7,708/50,000,000 soups, 2585 soups/s, 163,045 objects (ships 14,565, osc 47,344, still 101,136), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+    5  explore  paused   2026-11-15T17:53:18Z  explore 5: 7,168 runs (222/s), 811 elites in 376 niches (0 of them confirmed), 1 of 1 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    4  hunt     paused   2026-11-15T17:53:17Z  hunt 4: 84,100/50,000,000 soups, 2808 soups/s, 1,811,286 objects (ships 160,381, osc 524,048, still 1,126,857), 74 distinct, 37 new | newest: still life 14c #5a79a9 (B3/S23)
+    3  explore  paused   2026-11-15T17:50:45Z  explore 3: 4,902 runs (79/s), 768 elites in 398 niches (0 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    2  hunt     stale    2026-11-15T17:50:40Z  hunt 2: 803,838/10,000,000 soups, 11695 soups/s, 5,570,552 objects (ships 439,121, osc 830,467, still 4,300,964), 100 distinct, 100 new | newest: still life 13c #01469a (B36/S23)
+    1  hunt     done     2026-11-15T17:50:38Z  hunt 1: 3,000/3,000 soups, 1835 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+11 job(s); 1 running
+
+exit 0

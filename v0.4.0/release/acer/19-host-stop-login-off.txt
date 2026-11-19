@@ -1,0 +1,43 @@
+Recorded 2026-11-13 10:34:14 -05:00 (run by Claude through the shim)
+
+> jetcarp host stop
+stopped
+(exit 0)
+host jetcarp.exe 16988 exit code 0 (0x00000000)
+launcher jetcarpw.exe 26768 exit code 0
+
+> jetcarp host login off
+the host no longer starts at login
+(exit 0)
+
+> reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v JETCARP
+
+
+ERROR: The system was unable to find the specified registry key or value.
+
+> jetcarp host status
+Error: the JETCARP background host is not running
+(exit 1)
+
+jetcarp processes left: 0
+
+%APPDATA%\jetcarp:
+  app.json         4339 10:11:22
+  host-program       66 10:31:05
+  setup.json        339 10:02:52
+
+%LOCALAPPDATA%\jetcarp:
+  library.sqlite-jobs               1 10:02:52
+  searches                          1 01:06:56
+  host.lock                         0 10:22:51
+  library.sqlite             12402688 10:14:16
+  library.sqlite-shm            32768 10:22:53
+  library.sqlite-wal                0 10:14:16
+
+WER reports since 10:15 for jetcarp:
+  none
+
+> Get-Content $env:APPDATA\jetcarp\host-program (after saver install rewrote it at 10:31:05)
+C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarpw.exe
+host
+serve

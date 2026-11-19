@@ -1,0 +1,39 @@
+30 runs: 30 match to 6 decimals
+backends of the replays: ['cpu (12 threads)']
+runs whose stored cells differ from the replay's: 30
+  run 28765 (jaca JACA +B123/S0123 -B1234/S0123 blast 1 on catalog:k5-271): stored 16000, replay 15876
+  run 50916 (jaca JACA +B12/S234 -B12/S1234 blast 2 on triangle): stored 16000, replay 15936
+  run 28947 (jaca JACA B123/S012 blast 2 on catalog:k5-271): stored 16000, replay 15876
+  run 2315 (jaca JACA +B123/S0123 -B1234/S0123 on hex): stored 16000, replay 16048
+  run 56038 (jaca JACA +B124/S4567 -B124/S45678 blast 1 on hex): stored 16000, replay 16048
+  run 51262 (jaca JACA B12/S123 blast 3 on triangle): stored 16000, replay 15936
+  run 40803 (jaca JACA +B124/S4567 -B124/S45678 blast 1 on hex): stored 16000, replay 16048
+  run 12976 (jaca JACA B124/S4567 blast 1 on hex): stored 16000, replay 16048
+  run 41240 (jaca JACA +B123/S3456 -B123/S03456 blast 1 on hex): stored 16000, replay 16048
+  run 13038 (jaca JACA +B124/S4568 -B124/S04568 blast 1 on hex): stored 16000, replay 16048
+  run 40804 (jaca JACA +B123/S345 -B123/S3456 blast 1 on hex): stored 16000, replay 16048
+  run 28895 (jaca JACA +B12/S234 -B12/S1234 blast 3 on catalog:k5-271): stored 16000, replay 15876
+  run 51649 (jaca JACA B125/S023 blast 3 on triangle): stored 16000, replay 15936
+  run 41744 (jaca JACA B15/S0123 blast 2 on penrose-rhomb): stored 16000, replay 35000
+  run 43482 (jaca JACA +B125/S123456 -B1235/S12346 blast 3 on square): stored 16000, replay 15876
+  run 12883 (jaca JACA +B1246/S4568 -B124/S4568 blast 1 on hex): stored 16000, replay 16048
+  run 24899 (jaca JACA +B2/S123 -B29/S123 on catalog:k6-260): stored 16000, replay 15759
+  run 44190 (jaca JACA +B1345/S02345 -B135/S0234 blast 2 on square): stored 16000, replay 15876
+  run 56959 (jaca JACA +B124/S4567 -B124/S45678 blast 1 on cairo): stored 16000, replay 15876
+  run 55144 (jaca JACA +B12/S123 -B12/S1234 on hex): stored 16000, replay 16048
+  run 12470 (life_like B367/S125678 on square): stored 16000, replay 15876
+  run 40758 (life_like B0146/S2 on hex): stored 16000, replay 16048
+  run 38621 (life_like B0124/S029 on catalog:k6-262): stored 16000, replay 16200
+  run 46247 (life_like B01468/S2,13 on hex): stored 16000, replay 16048
+  run 58870 (life_like B012458/S2,10 on square): stored 16000, replay 15876
+  run 58119 (life_like B014/S on catalog:k3-016): stored 16000, replay 15732
+  run 38514 (life_like B01234/S3,12 on catalog:k6-262): stored 16000, replay 16200
+  run 36059 (life_like B01247/S02 on catalog:k4-012): stored 16000, replay 16128
+  run 57819 (life_like B0,1,4,10/S on catalog:k3-016): stored 16000, replay 15732
+  run 53402 (life_like B014/S on catalog:k4-052): stored 16000, replay 15696
+5 of 5 scenes: the same hash on --cpu, --gpu and no flag
+  run 28765 (jaca, 1024 gens): cpu d6844bf981476804 gpu d6844bf981476804 default d6844bf981476804 | --gpu -> gpu (Apple M2 Max, Metal); no flag -> cpu (12 threads)
+  run 50916 (jaca, 1024 gens): cpu bf138bcf9d684b7a gpu bf138bcf9d684b7a default bf138bcf9d684b7a | --gpu -> gpu (Apple M2 Max, Metal); no flag -> cpu (12 threads)
+  run 28947 (jaca, 1024 gens): cpu 50203b220b8c925a gpu 50203b220b8c925a default 50203b220b8c925a | --gpu -> gpu (Apple M2 Max, Metal); no flag -> cpu (12 threads)
+  run 12470 (life_like, 1024 gens): cpu b0f52c8e767e90fc gpu b0f52c8e767e90fc default b0f52c8e767e90fc | --gpu -> gpu (Apple M2 Max, Metal); no flag -> gpu (Apple M2 Max, Metal)
+  run 40758 (life_like, 1024 gens): cpu 3fc9326e1f2d330e gpu 3fc9326e1f2d330e default 3fc9326e1f2d330e | --gpu -> gpu (Apple M2 Max, Metal); no flag -> cpu (12 threads)

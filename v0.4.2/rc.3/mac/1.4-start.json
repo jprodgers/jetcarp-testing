@@ -1,0 +1,19 @@
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/data/library.sqlite",
+  "created": true,
+  "files": [],
+  "job": 2,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "long",
+  "line": "explore 2: 0 runs, paused, elites 0, niches 0, confirmed elites 0",
+  "mode": "detached",
+  "progress": {
+    "job": 2,
+    "status": "paused"
+  },
+  "result": null,
+  "seconds": 1.5162351250000001,
+  "status": "running",
+  "stopped": null
+}

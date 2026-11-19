@@ -1,0 +1,33 @@
+== leftovers (08:28:42)
+--- C:\Users\jimmi\AppData\Local/Programs/jetcarp
+(does not exist)
+--- C:\Users\jimmi\AppData\Roaming/jetcarp
+d          0 2026-11-12 08:27  .
+f       4426 2026-11-12 07:47  ./app.json
+d          0 2026-11-12 07:51  ./desktop-pictures
+f        579 2026-11-12 08:03  ./host.json
+f        343 2026-11-12 07:05  ./setup.json
+--- C:\Users\jimmi\AppData\Local/jetcarp
+d          0 2026-11-12 08:08  .
+f          0 2026-11-11 23:58  ./host.lock
+f    6057984 2026-11-12 07:22  ./library.sqlite
+d          0 2026-11-12 08:18  ./library.sqlite-jobs
+f      32768 2026-11-12 08:24  ./library.sqlite-shm
+f    5520832 2026-11-12 08:18  ./library.sqlite-wal
+d          0 2026-11-12 07:05  ./searches
+d          0 2026-11-12 07:22  ./searches/62d6b6af-a0e6-4d82-9d10-636d377f96a9
+--- C:\Users\jimmi/OneDrive/Pictures/JETCARP
+d          0 2026-11-11 23:46  .
+d          0 2026-11-12 07:47  ./piles
+d          0 2026-11-11 23:47  ./piles/2026-11-11_23-46-56_square-1000000
+d          0 2026-11-11 23:55  ./piles/2026-11-11_23-55-49_square-1000000
+d          0 2026-11-12 07:35  ./piles/2026-11-12_07-35-13_square-1000000
+d          0 2026-11-12 07:42  ./piles/2026-11-12_07-42-35_square-1000000
+d          0 2026-11-12 07:47  ./piles/2026-11-12_07-47-03_square-1000000
+--- C:\Users\jimmi/Pictures/JETCARP
+(does not exist)
+--- C:\Users\jimmi\AppData\Roaming/jetcarp-rc1-settings
+d          0 2026-11-12 00:34  .
+f       4214 2026-11-11 23:56  ./app.json
+d          0 2026-11-12 00:08  ./desktop-pictures
+f        580 2026-11-12 00:27  ./host.json

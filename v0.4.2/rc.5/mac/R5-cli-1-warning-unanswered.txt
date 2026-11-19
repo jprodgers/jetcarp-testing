@@ -1,0 +1,122 @@
+R5 on the Mac, #128 and #124, 2026-11-17 03:02:41 PM EST; jetcarp 0.4.2-rc.5; test folder $H = homes/r5cli
+
+######## #128: host tune's help says only that Fit is held back
+$ $J host tune --help
+Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 0, 0.02 s]
+
+$ $J host help tune
+Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 0, 0.02 s]
+
+$ $J host tune
+Error: Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+[exit 1, 0.02 s]
+
+######## #124: host login on with the JETCARP_* folders set
+$ env | grep '^JETCARP_' | sort
+JETCARP_CONFIG_DIR=$H/config
+JETCARP_DATA_DIR=$H/data
+JETCARP_LIBRARY=$H/library
+JETCARP_OUT=$H/out
+JETCARP_RUNTIME_DIR=$H/run
+[exit 0, 0.02 s]
+
+before: no login item, no host
+$ job; hosts; ls $HOME/Library/LaunchAgents | grep -i jetcarp || echo 'no JETCARP plist'
+launchctl print gui/502/com.jimmieprodgers.jetcarp.host: exit 113
+no host process running
+no JETCARP plist
+[exit 0, 0.04 s]
+
+$ $J host login on
+Error: JETCARP won't start the background host at login until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.02 s]
+
+$ job; hosts
+launchctl print gui/502/com.jimmieprodgers.jetcarp.host: exit 113
+no host process running
+[exit 0, 0.05 s]
+
+$ plutil -p ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: (The file “com.jimmieprodgers.jetcarp.host.plist” couldn’t be opened because there is no such file.)
+[exit 1, 0.02 s]
+
+the host launchd started, seen with the default folders (dflt), and this test folder's (none):
+$ dflt $J host status
+Error: the JETCARP background host is not running
+[exit 1, 0.03 s]
+
+$ $J host status
+Error: the JETCARP background host is not running
+[exit 1, 0.02 s]
+
+cleanup: the default host stopped first, then login off
+$ dflt $J host stop
+Error: the JETCARP background host is not running
+[exit 1, 0.02 s]
+
+$ $J host login off
+the host no longer starts at login
+[exit 0, 0.03 s]
+
+$ job; hosts; ls ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist 2>&1
+launchctl print gui/502/com.jimmieprodgers.jetcarp.host: exit 113
+no host process running
+ls: ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: No such file or directory
+[exit 1, 0.05 s]
+
+######## #124, control: host login on with no JETCARP_* variable (the default folders): no note expected
+$ dflt $J host login on
+Error: JETCARP won't start the background host at login until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.03 s]
+
+$ job; hosts
+launchctl print gui/502/com.jimmieprodgers.jetcarp.host: exit 113
+no host process running
+[exit 0, 0.05 s]
+
+$ dflt $J host stop
+Error: the JETCARP background host is not running
+[exit 1, 0.02 s]
+
+$ dflt $J host login off
+the host no longer starts at login
+[exit 0, 0.03 s]
+
+$ job; hosts; ls ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist 2>&1
+launchctl print gui/502/com.jimmieprodgers.jetcarp.host: exit 113
+no host process running
+ls: ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: No such file or directory
+[exit 1, 0.05 s]
+
+what launchd's default host left in the default settings folder (#134 runs next, and deletes it):
+$ ls -A "$HOME/Library/Application Support/jetcarp" 2>&1
+ls: ~/Library/Application Support/jetcarp: No such file or directory
+[exit 1, 0.02 s]
+
+(done 2026-11-17 03:02:54 PM EST)

@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 29459: JACA B123/S012 blast 2",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k5-271"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "67926100351295593",
+  "cas": [
+    {
+      "rule": "JACA B123/S012 blast 2",
+      "neighborhood": "edge",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "blobs",
+            "count": 4,
+            "min_radius": 0.05,
+            "max_radius": 0.18,
+            "wobble": 0.09,
+            "min_gap": 0.06
+          },
+          "fill": {
+            "density": 0.38,
+            "states": "by_region"
+          }
+        }
+      }
+    }
+  ]
+}

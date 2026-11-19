@@ -1,0 +1,698 @@
+initialize: {"name": "jetcarp", "title": "JETCARP cellular automata", "version": "0.4.2-rc.3"} protocol 2025-06-18
+== help {}
+   isError=False
+   JETCARP: a cellular-automaton (CA) research tool.
+   
+   Concepts
+   - A world = a tiling (a grid of cells: squares, hexagons, triangles, Archimedean and k-uniform tilings, or the aperiodic Spectre, hat and Penrose tilings) + one or more CAs (rules) running on it.
+   - Each CA works on a field (one value per cell). Binary rules (Life-like) share one field by default; multi-state rules (Brian's Brain, WireWorld) and sandpiles get their own.
+   - Every change is a command recorded in the world's scene, so a run can be saved (world_status {"save_path": "glider.json"}) and replayed exactly. The state hash identi
+   ...
+== help {"topic": "searches"}
+   isError=False
+   Long searches run in the background as library jobs: search_start returns the job id at once (or, with wait_s, when the job ends or the wait runs out).
+   
+   Strategies (search_start takes one, as a key holding its settings)
+   - hunt: small random soups on an unbounded plane (B/S and Generations rules, any
+   ...
+== help {"schema": "search_start/hunt"}
+   isError=False
+   {
+     "$id": "jetcarp://schema/search_start/hunt",
+     "$schema": "https://json-schema.org/draft/2020-12/schema",
+     "additionalProperties": false,
+     "description": "Small random soups on an unbounded plane, each run until it settles. Every object is classed, and new patterns are verified and stored; B/S
+   ...
+== help {"page": "guides/searching"}
+   isError=False
+   # Searching for patterns
+   
+   JETCARP's searches look for spaceships, oscillators, still lifes, ant highways, interesting
+   rules and beautiful runs, and keep what they find in your [pattern library](pattern-library.md).
+   There are nine ways of searching, all started with `jetcarp search <strategy>`, and e
+   ...
+== reference {}
+   isError=False
+   Named rules (use the name or the notation as `rule`):
+   (Too many to describe each; pass `family` for one-line descriptions.)
+   
+   Life-like: Life (B3/S23); HighLife (B36/S23); Seeds (B2/S); Day & Night (B3678/S34678); Replicator (B1357/S1357); Fredkin (B1357/S02468); Life without Death (B3/S012345678); 34 Life (B34/S34); Diamoeba (B35678/S5678); 2x2 (B36/S125); Morley (B368/S245); Anneal (B4678/S35678); Maze (B3/S12345); Coral (B3/S45678); Gnarl (B1/S1); Long Life (B345/S5); Stains (B3678/S235678); Coagulations (B378/S235678); Walled Cities (B45678/S2345); Vote (B5678/S45678); Flock (B3/S12); Servi
+   ...
+== reference {"what": "tilings", "search": "k2-", "limit": 5}
+   isError=False
+   20 tilings match "k2-" (first 5 shown; search for something narrower):
+   - k2-001 | [3.4.6.4; 4.6.12] | k-uniform (k=2)
+   - k2-002 | [3.4.3.12; 3.12^2] | k-uniform (k=2)
+   - k2-003 | [3^3.4^2; 4^4] #1 | k-uniform (k=2)
+   - k2-004 | [3^3.4^2; 4^4] #2 | k-uniform (k=2)
+   - k2-005 | [3.4^2.6; 3.4.6.4] | k-uniform (k=2)
+   
+== reference {"what": "palettes"}
+   isError=False
+   Ember      background #1d2029 stage #101217 stops #ffd27a #ff8a3c #d6336c #6a2c91 #2b2d6e
+   Tide       background #1d2029 stage #101217 stops #e8fff7 #58e0c2 #1f9fc9 #2a5bb8 #2b2470
+   Prism      background #1d2029 stage #101217 stops #ff4d4d #ffb02e #e8e337 #3ddc6d #2fb6ff #8a5cff #ff4dc4
+   Ink        bac
+   ...
+== world_new {"tiling": "square", "width": 64, "height": 64, "boundary": "wrap", "cas": [{"rule": "Life", "seed": "empty"}], "name": "f9-glider"}
+   isError=False
+   New world created.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 4096,
+     "cells_hash": "b93a0c83ce3b6325",
+     "done": "empty",
+     "fields": [
+       {
+         "ca_ids": [
+           1
+         ],
+         "field": 0,
+         "kind": "binary",
+         "max_state": 1,
+         "population": 0,
+         "shared": true
+       }
+     ],
+     "generation": 0,
+     "hash": "71f88c3037cdafbc",
+     "hash_note": "`hash` covers the genera
+   ...
+== world_edit {"cells": {"pattern": ".O.\n..O\nOOO", "x": 10, "y": 10}}
+   isError=False
+   Set 5 cell(s) in CA 'Life' (id 1). Pattern box: x 10..12, y 10..12. Field population now 5. Generation 0.
+== world_step {"generations": 8}
+   isError=False
+   Ran 8 generation(s) in 0.00s.
+   Generation 8. Status: Running. Hash 8927224015388ea0 (with generation and ages); cells hash 9ded5b9a9b6e53d4 (cell states only: equal when the cells repeat).
+   field 0 [Life (id 1)]: 5 live
+== world_read {}
+   isError=False
+   CA 'Life' (id 1, B3/S23), field 0, generation 8.
+   Grid 64 x 64. Non-empty cells in the whole field: 5; bounding box x 12..14, y 12..14 (3 x 3).
+   Region x 11..15, y 11..15. '.' = empty, 'O' = live. Row 0 is the top.
+   x units 12345
+   y=11    .....
+   y=12    ..O..
+   y=13    ...O.
+   y=14    .OOO.
+   y=15    .....
+   
+== world_read {"format": "objects"}
+   isError=False
+   Generation 8, CA 1 (B3/S23): 5 live cells. glider (c/4) x 1
+       0  glider (c/4)                    5 cells  x 12..14, y 12..14
+   
+== world_render {"max_side": 256, "save_path": "f9/glider.png"}
+   isError=False
+   256 x 256 px picture of generation 8 (Square (parallelogram), 4096 cells; hash 8927224015388ea0). Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/glider.png.
+   [content types: ['text', 'image']]
+== world_status {"save_path": "f9/glider-scene.json"}
+   isError=False
+   Saved the scene (1006 bytes, generation 8, hash 8927224015388ea0) to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/glider-scene.json.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 4096,
+     "cells_hash": "9ded5b9a9b6e53d4",
+     "done": "no: something can still change",
+     "fields": [
+       {
+         "ca_ids": [
+           1
+         ],
+         "field": 0,
+         "kind": "binary",
+         "max_st
+   ...
+== world_status {"scene": true}
+   isError=False
+   {
+     "jetcarp_version": "0.4.2-rc.3",
+     "format": 1,
+     "name": "f9-glider",
+     "tiling": {
+       "family": "square",
+       "size": {
+         "rect": {
+           "w": 64,
+           "h": 64
+         }
+       },
+       "boundary": "wrap"
+     },
+     "rng_state": 1,
+     "cas": [
+       {
+         "id": 1,
+         "name": "Life",
+         "rule": "B3/S23",
+         "neighborhood": "touch",
+         "enabled": true,
+         "affects_others": true,
+    
+   ...
+== world_new {"tiling": "hex", "width": 60, "height": 60, "cas": ["B24/S35"]}
+   isError=False
+   New world created.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "B24/S35",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B24/S35",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 3600,
+     "cells_hash": "98fb3b17f7adcb78",
+     "done": "no: something can still change",
+     "fields": [
+       {
+         "ca_ids": [
+           1
+         ],
+         "field": 0,
+         "kind": "binary",
+         "max_state": 1,
+         "population": 1143,
+         "shared": true
+       }
+     ],
+     "generation": 0,
+     "hash": "05222955a91df3b8",
+     "hash_
+   ...
+== world_step {"generations": 200, "stop_when_settled": true}
+   isError=False
+   Ran 200 generation(s) in 0.02s.
+   Generation 200. Status: Running. Hash 1819b144fea66b7c (with generation and ages); cells hash f8ba6ce20776b4a7 (cell states only: equal when the cells repeat).
+   field 0 [B24/S35 (id 1)]: 808 live
+== run_script {"script": "let w = world(#{ tiling: \"hex\", size: [60, 40], boundary: \"wrap\", rng_seed: 7 }); w.add_ca(\"B2/S34\", #{ seed: \"random:0.35\" }); w.step(50); print(`pop ${w.population()} hash ${w.hash()}`);", "max_seconds": 30}
+   isError=False
+   ok: finished in 0.01 s
+   log:
+   pop 237 hash d71959f2ce8444b9
+   
+== run_script {"script": "print(\"hello from f9\");", "check_only": true}
+   isError=False
+   ok: no syntax errors
+== search_start {"hunt": {"rules": ["B3/S23"], "soups": 3000}, "threads": 16, "wait_s": 180, "label": "f9-hunt"}
+   isError=False
+   Hunt job 1 started (background).
+   hunt 1: 3,000/3,000 soups, 2892 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+     status done, 1 s run, 2977 settled, 11 died, 12 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+     B3/S23 on Square: 3000 soups, 63354 objects (oscillator 18509, spaceship 5665, still life 39180), 37 distinct, 37 new
+     newest finds:
+       f604b33e874ae8109ab13c34f6ed8484  still life 8c #f604b3              B3/S23     Square soup 2650  (new to the catalog)
+       c8f20f137dfae2f393afe921c7c5e670  snake                              B3/S23     Square soup 2540  (new to the catalog)
+       076c1a268e4004b5a0c13876844e8864  still life 9c #076c1a              B3/S23     Square soup 2463  (new to the catalog)
+       1741ff737fd4a9871f808a2bf46d7594  still life 11c #1741ff        
+   ...
+== job_status {}
+   isError=False
+   {
+     "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite",
+     "jobs": [
+       {
+         "created": "2026-11-16T06:02:14Z",
+         "job": 1,
+         "kind": "hunt",
+         "label": "f9-hunt",
+         "line": "hunt 1: 3,000/3,000 soups, 2892 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)",
+         "status": "done",
+         "updated": "2026-11-16T06:02:15Z"
+       }
+     ]
+   }
+== job_status {"job": 1, "finds": 5}
+   isError=False
+   hunt 1: 3,000/3,000 soups, 2892 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+     status done, 1 s run, 2977 settled, 11 died, 12 exploded, 0 unsettled, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+     B3/S23 on Square: 3000 soups, 63354 objects (oscillator 18509, spaceship 5665, still life 39180), 37 distinct, 37 new
+     newest finds:
+       f604b33e874ae8109ab13c34f6ed8484  still life 8c #f604b3              B3/S23     Square soup 2650  (new to the catalog)
+       c8f20f137dfae2f393afe921c7c5e670  snake    
+   ...
+== job_status {"job": 1, "report": true}
+   isError=False
+   # Hunt 1: f9-hunt: B3/S23 on Square, 16x16 soups at 0.5
+   
+   Catalog `/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite`; 1 job(s), 1 s of searching in all; JETCARP 0.4.2-rc.3.
+   
+   ## Jobs
+   
+   | Job | Kind | Label | Status | Done | Time | Started | Updated |
+   | --- | --- | --- | --- | --- | --- | --- | --- |
+   | 1 | hunt | f9-hunt | done | 3,000/3,000 soups | 1 s | 2026-11-16T06:02:14Z | 2026-11-16T06:02:15Z |
+   
+   ## What was searched
+   
+   - **Hunt 1**: f9-hunt: B3/S23 on Square, 16x16 soup
+   ...
+== search_start {"hunt": {"rules": ["B36/S23"], "soups": 10000000}, "threads": 8, "label": "f9-stop-me"}
+   isError=False
+   {
+     "folder": null,
+     "job": 2,
+     "kind": "hunt",
+     "line": "hunt 2: 0/10,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+     "mode": "background",
+     "note": "The job runs in the background: job_status {\"job\": 2, \"wait_s\": 300} waits for it, job_stop {\"job\": 2} stops it, search_start {\"resume\": 2} carries it on.",
+     "started": true,
+     "status": "running"
+   }
+== job_stop {"job": null}
+   isError=True
+   job_stop: `job` must be a whole number (got null)
+== job_status {"job": null, "wait_s": 60}
+   isError=False
+   {
+     "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite",
+     "jobs": [
+       {
+         "created": "2026-11-16T06:02:15Z",
+         "job": 2,
+         "kind": "hunt",
+         "label": "f9-stop-me",
+         "line": "hunt 2: 63,929/10,000,000 soups, 13640 soups/s, 443,389 objects (ships 34,929, osc 66,101, still 342,359), 51 distinct, 51 new | newest: still life 14c #e9e58d (B36/S23)",
+         "status": "running",
+         "updated": "2026-11-16T06:02:20Z"
+       },
+       {
+         "created": "2026-11-16T06:02:14Z",
+         "job": 1,
+         "kind": "hunt",
+         "label": "f9-hunt",
+         "li
+   ...
+== library_query {"limit": 5}
+   isError=False
+   {
+     "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite",
+     "matching": 59,
+     "patterns": [
+       {
+         "cells": 25,
+         "class": "spaceship",
+         "displacement": [
+           8,
+           8
+         ],
+         "id": "aab843d7ff96817d170d6725fb23e37c",
+         "label": "c/6 diagonal spaceship 25c #aab843",
+         "name": null,
+         "period": 48,
+         "range": "B36/S23 to B36/S238 (2 B/S rules)",
+         "rating": null,
+         "rule": "B36/S23",
+         "rules": [
+           "B36/S23"
+         ],
+         "score": 94.1,
+         "seen": 9,
+         "speed": "c/6 diagonal",
+         "state"
+   ...
+   (pattern id used below: aab843d7ff96817d170d6725fb23e37c)
+== library_query {"kind": "summary"}
+   isError=False
+   catalog:        /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite
+   schema version: 3
+   patterns 59, rules 2, pattern rules 88, sightings 88 (506743 copies), jobs 2, Quick Start 364, ratings 0, media 0, ants 0
+   
+== library_query {"id": "aab843d7ff96817d170d6725fb23e37c"}
+   isError=False
+   c/6 diagonal spaceship 25c #aab843 (aab843d7ff96817d170d6725fb23e37c)
+   verified in: B36/S23
+   works in: B36/S23 to B36/S238 (2 B/S rules)
+   sightings: B36/S23 x9 (job 2)
+   moves per period by paste orientation: 0: (8, 8), 1: (-8, -8), 2: (-8, 8), 3: (-8, -8), 4: (-8, 8), 5: (8, -8), 6: (8, 8), 7: (8, -8)
+   phase 0:
+   OOO......
+   .........
+   .........
+   .........
+   ..OO.....
+   ...OO....
+   O.OO.....
+   OOO......
+   .O.....O.
+   ......OOO
+   .....OO.O
+   ....OO...
+   .....OO..
+   
+   {
+     "format": 2,
+     "id": "aab843d7ff96817d170d6725fb23e37c",
+   
+   ...
+== library_curate {"id": "aab843d7ff96817d170d6725fb23e37c", "changes": {"rating": 4, "append_notes": "F9 test: rated through MCP", "add_tags": ["f9"]}}
+   isError=False
+   {
+     "cells": 25,
+     "class": "spaceship",
+     "displacement": [
+       8,
+       8
+     ],
+     "id": "aab843d7ff96817d170d6725fb23e37c",
+     "label": "c/6 diagonal spaceship 25c #aab843",
+     "name": null,
+     "period": 48,
+     "range": "B36/S23 to B36/S238 (2 B/S rules)",
+     "rating": 4,
+     "rule": "B36/S23",
+     "rules": [
+       "B36/S23"
+     ],
+     "score": 94.1,
+     "seen": 9,
+     "speed": "c/6 diagonal",
+     "state": "new",
+     "tags": [
+       "f9"
+     ],
+     "tiling": "Square"
+   }
+== library_query {"tag": "f9"}
+   isError=False
+   {
+     "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/library.sqlite",
+     "matching": 1,
+     "patterns": [
+       {
+         "cells": 25,
+         "class": "spaceship",
+         "displacement": [
+           8,
+           8
+         ],
+         "id": "aab843d7ff96817d170d6725fb23e37c",
+         "label": "c/6 diagonal spaceship 25c #aab843",
+         "name": null,
+         "period": 48,
+         "range": "B36/S23 to B36/S238 (2 B/S rules)",
+         "rating": 4,
+         "rule": "B36/S23",
+         "rules": [
+           "B36/S23"
+         ],
+         "score": 94.1,
+         "seen": 9,
+         "speed": "c/6 diagonal",
+         "state": "n
+   ...
+== media_render {"pattern": "aab843d7ff96817d170d6725fb23e37c", "poster": true}
+   isError=False
+   {
+     "done": [
+       {
+         "files": {
+           "anim": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/media/ba/ba1fb76f33e291c8c8cd5385ce5cfab73fa8f041d1fd41edcf24d148dac9acf6.gif",
+           "frames": [
+             "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/media/7d/7d3fc88fea49a404c2230dfc93c2d57028b2289273e2233a70011cf17269167a.png",
+             "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/media/44/44f87c2ae51034eb933a45e05ee17ec52f554c43d82ed9faf22eda9a0a5b0d14.png",
+             "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/media/20/20d7
+   ...
+== media_render {"quickstart": "life", "gens": 30, "out": "f9/media-life"}
+   isError=False
+   {
+     "done": [],
+     "failed": [],
+     "files": {
+       "anim": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/media-life/anim.webp",
+       "frames": [
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/media-life/frames/0000.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/media-life/frames/0001.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/media-life/frames/0002.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/media-life/frames/0003.png",
+         "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f
+   ...
+== search_start {"explore": {"tilings": "square,hex", "families": "life_like"}, "budget": {"minutes": 1}, "threads": 16, "gpu": true, "label": "f9-explore", "wait_s": 150}
+   isError=False
+   Explore job 3 started (detached).
+   explore 3: 13,337 runs (223/s), 1,510 elites in 715 niches (81 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+     status paused, 1 min 0 s run over every session, 309 confirmation runs, 13,646 candidates tried, 0.44 GB of memory
+     threads: 10 for runs on the processor and 6 for the GPU's batches, of 32 cores (16 left free)
+     loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+     family                     runs   mean   best  elites
+     life_like                13,337   0.36   1.39   1,510
+     folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library/searches/40007814-7eda-498e-8788-a62ae16628f0
+     search_start {"resume": 3} continues it from its archive (not run for run: the search is not deterministic)
+   
+   {"done":13337,"elapsed_s":59.9,"eta_s":null,"folder":"/home/jimmie/Documents
+   ...
+== job_status {"job": 3, "wait_s": 120}
+   isError=False
+   explore 3: 13,337 runs (223/s), 1,510 elites in 715 niches (81 of them confirmed), 2 of 2 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+     status paused, 1 min 0 s run over every session, 309 confirmation runs, 13,646 candidates tried, 0.44 GB of memory
+     threads: 10 for runs on the processor and 6 for the GPU's batches, of 32 cores (16 left free)
+     loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+     family                     runs   mean   best  
+   ...
+== search_runs {"job": 3, "limit": 5}
+   isError=False
+   {
+     "job": 3,
+     "runs": [
+       {
+         "activity": 0.0023097051307559013,
+         "category": "Labyrinths",
+         "cells": 16000,
+         "density": 0.39833855628967285,
+         "family": "life_like",
+         "fate": "cycle",
+         "gens": 1024,
+         "id": 7202,
+         "movers": 0,
+         "nb": "touch",
+         "origin": "mutate",
+         "parent": null,
+         "period": 34,
+         "rule": "B3678/S345678",
+         "score": 1.39,
+         "seed": "Sym order 2, disc r0.37, 76% density",
+         "seed_kind": "mutated",
+         "settle": 990,
+         "smooth": 0.8275461792945862,
+         "stage": 1,
+         "tiling": "hex"
+       },
+       {
+         "activity": 0.0025497437454760075,
+         "category": "Labyrinths",
+         "cells": 16000,
+         "density": 0.4020724594593048,
+         "family": "life_like",
+         "fate": "cycle",
+         "gens": 1024,
+         "id": 6862,
+         "movers": 0,
+         "nb": "touch",
+         "origin": "mutate",
+      
+   ...
+   (run ids used below: [])
+== search_runs {"job": 3, "sheet": {"ids": [1, 2, 3], "png": "f9/sheet.png", "px": 120}}
+   isError=False
+   3 runs of explore job 3 (776 x 158 px); saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/sheet.png
+   [content types: ['text', 'image']]
+== search_runs {"job": 3, "scene": {"run": 1, "save": "f9/run-scene.json"}}
+   isError=False
+   Saved to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/run-scene.json.
+   {
+     "cas": [
+       {
+         "enabled": true,
+         "neighborhood": "edge",
+         "rule": "B12/S1",
+         "seed": {
+           "pattern": {
+             "fill": {
+               "density": 0.29
+             },
+             "shape": {
+               "kind": "all"
+             }
+           }
+         },
+         "steps_per_gen": 1
+       }
+     ],
+     "forma
+   ...
+== search_runs {"try": {"tiling": "hex", "rule": "B2/S34", "cells": 4000, "gens": 200, "png": "f9/try.png"}}
+   isError=False
+   {
+     "activity": 0.03588743507862091,
+     "category": "Oscillators",
+     "density": 0.018830763176083565,
+     "entropy": 0.13261641561985016,
+     "family": "life_like",
+     "fate": "cycle",
+     "mover_speed": 0.0,
+     "movers": 0,
+     "period": 8,
+     "score": 0.512,
+     "settle": 192,
+     "smooth": 0.128060981631279
+   }
+   [content types: ['text', 'image']]
+== search_runs {"job": 3, "review": {"run": 1, "verdict": "maybe", "note": "F9 test review"}}
+   isError=False
+   recorded maybe for run 1 of explore job 3
+== pack {"publish": {"feed": "f9-test", "to": "f9/store", "title": "F9 test store", "no_media": true}}
+   isError=True
+   pack: there is no publisher key yet (/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/config/pack/publisher_ed25519 is missing). Publishing signs the pack with the user's own key, which these tools never make: ask the user to run `jetcarp pack key` at a command line (with --name, --orcid or --github to be named in packs), then try again.
+== pack {"info": {"path": "f9/store"}}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/store does not exist
+== pack {"check": {"path": "f9/store"}}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/store does not exist
+== pack {"export": {"from": "f9/store", "to": "f9/export"}}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/store is neither a pack store (jetcarp-store.json) nor an export (pack.json)
+== pack {"site": {"to": "f9/site", "render": false}}
+   isError=False
+   {
+     "ants": 0,
+     "deleted": [],
+     "dir": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/site",
+     "media_failed": [],
+     "patterns": 0,
+     "quickstart": 0,
+     "rendered": 0,
+     "unchanged": 0,
+     "written": [
+       "manifest.json",
+       "index.html"
+     ]
+   }
+== pack {"import": {"path": "f9/export", "verify": "sample", "sample": 50}}
+   isError=True
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/export does not exist
+== files_list {}
+   isError=False
+   {
+     "entries": 1,
+     "folder": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out",
+     "newest_first": [
+       {
+         "entries": 7,
+         "kind": "dir",
+         "modified": "2026-11-16T06:03:21Z",
+         "name": "f9"
+       }
+     ],
+     "root": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out",
+     "shown": 1
+   }
+== files_list {"path": "f9"}
+   isError=False
+   {
+     "entries": 7,
+     "folder": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9",
+     "newest_first": [
+       {
+         "bytes": 540,
+         "kind": "file",
+         "modified": "2026-11-16T06:03:21Z",
+         "name": "run-scene.json"
+       },
+       {
+         "bytes": 41758,
+         "kind": "file",
+         "modified": "2026-11-16T06:03:21Z",
+         "name": "sheet.png"
+       },
+       {
+         "entries": 2,
+         "has": [
+           "manifest.json",
+           "index.html"
+         ],
+         "kind": "dir",
+         "modified": "2026-11-16T06:03:21Z",
+         "name": "site"
+       },
+       {
+         "bytes": 3758,
+         "kind": "file",
+   ...
+== files_list {"root": "catalog"}
+   isError=False
+   {
+     "entries": 6,
+     "folder": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/library",
+     "newest_first": [
+       {
+         "bytes": 4177712,
+         "kind": "file",
+         "modified": "2026-11-16T06:03:21Z",
+         "name": "library.sqlite-wal"
+       },
+       {
+         "bytes": 32768,
+         "kind": "file",
+         "modified": "2026-11-16T06:03:16Z",
+         "name": "library.sqlite-shm"
+       },
+       {
+         "bytes": 1171456,
+         "kind": "file",
+         "modified": "2026-11-16T06:03:13Z",
+         "name": "library.sqlite"
+       },
+       {
+         "entries": 2,
+         "kind": "dir",
+         "modified": "2026-11-16T06:02:21
+   ...
+== files_list {"file": "f9/glider-scene.json"}
+   isError=False
+   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out/f9/glider-scene.json (1006 bytes, inside /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/out):
+   {
+     "jetcarp_version": "0.4.2-rc.3",
+     "format": 1,
+     "name": "f9-glider",
+     "tiling": {
+       "family": "square",
+       "size": {
+         "rect": {
+     
+   ...
+== resources/list: 116 resources; first: ['jetcarp://reference/rules', 'jetcarp://reference/tilings', 'jetcarp://reference/palettes', 'jetcarp://reference/script-api', 'jetcarp://schema/scene.json']
+== resources/read jetcarp://schema/search_start/hunt: {"id": 53, "jsonrpc": "2.0", "result": {"contents": [{"mimeType": "application/schema+json", "text": "{\n  \"$id\": \"jetcarp://schema/search_start/hunt\",\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"additionalProperties\": false,\n  \"description\": \"Small random soups o
+== skipped: host_control, app_display, use_app (they touch the desktop or need the app; later sittings)
+server exit 0; stderr lines: 2: jetcarp mcp: the client has gone; stopping job 2 at its next checkpoint | jetcarp mcp: job 2 is paused

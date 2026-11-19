@@ -1,0 +1,39 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA rainbow blobs (Penrose kites)",
+  "description": "The same rule on kites and darts: vivid rainbow blobs. Found by a JACA rule search.",
+  "tiling": {
+    "family": "penrose-kd",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 22,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B267/S1,3,4,6,7,8,9,10",
+      "rule": "JACA B267/S1,3,4,6,7,8,9,10",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "bc3bc42c15717b70",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

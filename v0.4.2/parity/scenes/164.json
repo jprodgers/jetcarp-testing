@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Electrified Maze",
+  "description": "Maze with birth on 4 and 5 instead of 3.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "7827211425911250063",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Electrified Maze",
+      "rule": "B45/S12345",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "blob": {
+          "radius": 0.15,
+          "density": 0.4
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "3a0253ecf1281dee",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

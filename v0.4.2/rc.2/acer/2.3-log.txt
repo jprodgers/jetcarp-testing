@@ -1,0 +1,12 @@
+﻿
+08:44:17.403 start: search explore --cpu --families jaca --minutes 10 --label cpu-jaca
+08:49:17.438 explore still running: True
+08:49:17.721 jobs stop 2 -> exit 0: asked explore search 2 to stop at its next checkpoint
+08:49:19.454 jobs wait 2 --timeout 60 -> exit 3 after 2.01 s from the stop: explore search 2 is paused
+  explore 2: 359 runs (0/s), 142 elites in 78 niches (13 of them confirmed), 5 of 1,359 tilings; cpu only
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+08:49:19.455 explore process had exited when wait returned: True
+08:53:19.640 jobs resume 2 --minutes 4 -> exit 0
+08:53:19.644 first explore process: exit code 0
+08:53:19.797 jobs status 2 -> exit 0
+08:53:19.941 done

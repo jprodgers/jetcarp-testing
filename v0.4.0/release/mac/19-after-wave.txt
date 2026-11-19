@@ -1,0 +1,88 @@
+# H5. Clean up, 2026-11-13 09:24:52 EST
+
+Jimmie: keep the Homebrew copy as the everyday JETCARP; move rc3's moved-aside settings to the Trash; turn Homebrew's developer mode off.
+
+$ trash ~/Library/Application\ Support/jetcarp-rc3-settings   (run at about 09:23; exit 0)
+ls: /Users/Jimmie/Library/Application Support/jetcarp-rc3-settings: No such file or directory
+
+$ brew developer off
+(exit 0)
+$ brew developer state
+Developer mode is disabled.
+`brew update` will update to the latest stable tag.
+
+$ brew --version
+Homebrew 7.0.13
+
+$ brew list --versions jetcarp; brew tap
+jetcarp 0.4.0
+jprodgers/jetcarp
+
+$ which -a jetcarp; jetcarp --version
+/opt/homebrew/bin/jetcarp
+jetcarp 0.4.0
+
+$ jetcarp paths
+settings: /Users/Jimmie/Library/Application Support/jetcarp
+data:     /Users/Jimmie/Library/Application Support/jetcarp/data
+output:   /Users/Jimmie/Pictures/JETCARP
+bundled:  /opt/homebrew/Cellar/jetcarp/0.4.0/share/jetcarp/packs
+
+$ jetcarp setup --status | head -12
+setup: Explorer on 2026-11-13 12:54 UTC (JETCARP 0.4.0)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data, 832.2 GB free
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /opt/homebrew/Cellar/jetcarp/0.4.0/share/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack, imported
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 90 patterns, 8 ant runs, 25 jobs; Quick Start entries: 364 built in, 79 from packs, 713 from searches
+setup's jobs:
+  pack import 3: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs (done)
+
+$ jetcarp doctor | sed -n "/Desktop/,\$p"
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+$ ls -la ~/Library/Application\ Support/jetcarp ~/Library/Application\ Support/jetcarp/data
+/Users/Jimmie/Library/Application Support/jetcarp:
+total 32
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 13 09:20 .
+drwx------+ 47 Jimmie  staff  1504 Nov 13 09:23 ..
+-rw-r--r--@  1 Jimmie  staff  4341 Nov 13 09:12 app.json
+drwxr-xr-x@  5 Jimmie  staff   160 Nov 13 09:24 data
+-rw-r--r--@  1 Jimmie  staff    37 Nov 13 09:19 host-program
+-rw-r--r--@  1 Jimmie  staff   362 Nov 13 07:54 setup.json
+
+/Users/Jimmie/Library/Application Support/jetcarp/data:
+total 12344
+drwxr-xr-x@ 5 Jimmie  staff      160 Nov 13 09:24 .
+drwxr-xr-x@ 6 Jimmie  staff      192 Nov 13 09:20 ..
+-rw-r--r--@ 1 Jimmie  staff  5570560 Nov 13 09:17 library.sqlite
+drwxr-xr-x@ 2 Jimmie  staff       64 Nov 13 07:57 library.sqlite-jobs
+drwxr-xr-x@ 3 Jimmie  staff       96 Nov 13 07:54 searches
+
+$ ls ~/Library/LaunchAgents | grep -i jetcarp; ls ~/Library/Screen\ Savers
+(none)
+
+$ ls -la ~/Pictures/JETCARP
+total 40
+drwxr-xr-x@ 6 Jimmie  staff   192 Nov 13 00:35 .
+drwx------+ 7 Jimmie  staff   224 Nov 12 01:09 ..
+-rw-r--r--@ 1 Jimmie  staff  6148 Nov 12 01:10 .DS_Store
+-rw-r--r--@ 1 Jimmie  staff  7004 Nov 13 00:31 brians_brain_120x80_gen200.png
+-rw-r--r--@ 1 Jimmie  staff  1136 Nov 13 00:35 jaca_rainbow_fronts_before_brians_brain.json
+drwxr-xr-x@ 4 Jimmie  staff   128 Nov 12 01:10 piles
+
+$ ls -d ~/.local/bin/jetcarp ~/.local/lib/jetcarp ~/Documents/jetcarp-data
+ls: /Users/Jimmie/.local/bin/jetcarp: No such file or directory
+ls: /Users/Jimmie/.local/lib/jetcarp: No such file or directory
+ls: /Users/Jimmie/Documents/jetcarp-data: No such file or directory
+
+## Screen saver choices now
+Idle modules: {'Flurry.appex': 14}
+file mtime: 2026-11-13 09:20:51

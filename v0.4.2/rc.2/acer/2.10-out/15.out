@@ -1,0 +1,103 @@
+{
+  "catalog": "C:\\Users\\jimmi\\jetcarp-rc-042b\\data\\library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "0"
+    ],
+    [
+      "niches",
+      "0"
+    ],
+    [
+      "confirmed elites",
+      "0"
+    ],
+    [
+      "tilings tried",
+      "0 of 1,359"
+    ],
+    [
+      "backend",
+      "NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan"
+    ]
+  ],
+  "created": "2026-11-15T14:34:27Z",
+  "deterministic": false,
+  "done": 0,
+  "elapsed_s": 8.4164554,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 10,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "running-export",
+  "line": "explore 10: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+  "per_s": 0.0,
+  "progress": {
+    "backend": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+    "build_minutes": null,
+    "capped": 0,
+    "confirmed": 0,
+    "confirmed_elites": 0,
+    "cores": 12,
+    "elapsed_s": 8.4164554,
+    "elites": 0,
+    "error": null,
+    "families": [],
+    "folder": "C:\\Users\\jimmi\\jetcarp-rc-042b\\data\\searches\\994538d5-4fb7-4239-980b-6fa2c0549bf7",
+    "given_up": 0,
+    "gpu_error": null,
+    "gpu_threads": 4,
+    "job": 10,
+    "line": "explore 10: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan",
+    "loaded": {
+      "confirmed": 0,
+      "coverage_rows": 0,
+      "elites": 0,
+      "runs_read": 0,
+      "seconds": 0.0002005,
+      "seen": 0,
+      "seen_blobs": 0
+    },
+    "niches": 0,
+    "note": null,
+    "panics": 0,
+    "per_s": 0.0,
+    "published": null,
+    "rss_gb": 0.15726089477539062,
+    "screened": 0,
+    "seen": 1024,
+    "session_s": 8.4164554,
+    "status": "running",
+    "threads": 6,
+    "tilings": 1359,
+    "tilings_tried": 0
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "families": [
+      "life_like"
+    ],
+    "gpu": false,
+    "label": "running-export",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "uuid": "994538d5-4fb7-4239-980b-6fa2c0549bf7"
+  },
+  "stale": false,
+  "status": "running",
+  "title": "running-export: every tiling, life_like",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-15T14:34:42Z",
+  "waited_s": null
+}

@@ -1,0 +1,136 @@
+== search_start hunt detach=true -> isError=False
+{
+  "folder": null,
+  "job": 5,
+  "kind": "hunt",
+  "line": "hunt 5: 0/50,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "detached",
+  "note": "The job runs in a process of its own: job_status {\"job\": 5, \"wait_s\": 300} waits for it, job_stop {\"job\": 5} stops it, search_start {\"resume\": 5} carries it on.",
+  "started": true,
+  "status": "running"
+}
+== search_start explore (no detach given) -> isError=False
+{
+  "folder": null,
+  "job": 6,
+  "kind": "explore",
+  "line": "explore 6: 0 runs, paused, elites 0, niches 0, confirmed elites 0",
+  "mode": "detached",
+  "note": "The job runs in a process of its own: job_status {\"job\": 6, \"wait_s\": 300} waits for it, job_stop {\"job\": 6} stops it, search_start {\"resume\": 6} carries it on.",
+  "started": true,
+  "status": "running"
+}
+== job_status 5 (inside the session) -> hunt 5: 5,267/50,000,000 soups, 1200 soups/s, 110,887 objects (ships 9,929, osc 32,277, still 68,681), 40 distinct, 3 new | newest: still life 14c #4b1e8d (B3/S23)
+  status running, 4 s run, 5231 settled, 16 died, 20 exploded, 0 unsettled, GPU Apple M2 Max, Metal
+  B3/S23 on Square: 5267 soups, 110887 objects (oscillator 32277, spaceship 9929, still life 68681), 40 distinct, 3 new
+  newest finds:
+    4b1e8d6b20cea5dc100f7444731eb9a4  still life 14c #4b1e8d             B3/S23     Square soup 4628  (new to the catalog)
+    77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S
+== MCP server closed at 07:46:20: exit 0, stderr: []
+$ jetcarp jobs list
+    6  explore  running  2026-11-16T12:46:17Z  explore 6: 1,024 runs (196/s), 195 elites in 109 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+    5  hunt     running  2026-11-16T12:46:15Z  hunt 5: 14,711/50,000,000 soups, 1536 soups/s, 315,622 objects (ships 27,952, osc 91,374, still 196,296), 48 distinct, 11 new | newest: still life 10c #917e6f (B3/S23)
+    4  pile     done     2026-11-16T12:46:10Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T12:45:05Z  explore 3: 7,856 runs (133/s), 1,024 elites in 505 niches (56 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+    2  hunt     paused   2026-11-16T12:44:58Z  hunt 2: 615,594/10,000,000 soups, 8917 soups/s, 4,266,810 objects (ships 336,061, osc 636,017, still 3,294,732), 91 distinct, 91 new | newest: still life 19c #66a817 (B36/S23)
+    1  hunt     done     2026-11-16T12:44:56Z  hunt 1: 3,000/3,000 soups, 2070 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+6 job(s); 2 running
+
+exit 0
+$ jetcarp jobs status 5
+hunt 5: 14,711/50,000,000 soups, 1536 soups/s, 315,622 objects (ships 27,952, osc 91,374, still 196,296), 48 distinct, 11 new | newest: still life 10c #917e6f (B3/S23)
+  status running, 10 s run, 14629 settled, 40 died, 42 exploded, 0 unsettled, GPU Apple M2 Max, Metal
+  B3/S23 on Square: 14711 soups, 315622 objects (oscillator 91374, spaceship 27952, still life 196296), 48 distinct, 11 new
+  newest finds:
+    917e6f33202346c9512b19aa8faa32b3  still life 10c #917e6f             B3/S23     Square soup 14630  (new to the catalog)
+    8df8d769457729de0b6d5ee6f12a08d5  still life 7c #8df8d7              B3/S23     Square soup 13732  (new to the catalog)
+    f241c8e566137cde275909e216cce670  still life 9c #f241c8              B3/S23     Square soup 12649  (new to the catalog)
+    48e6263a40eea259bcb22518b44d0c95  still life 8c #48e626              B3/S23     Square soup 12137  (new to the catalog)
+    fcd376611d86dc6548400951630b5532  still life 10c #fcd376             B3/S23     Square soup 10823  (new to the catalog)
+    5cd81b290a7ad4bd0d827385a78bcd1a  still life 14c #5cd81b             B3/S23     Square soup 10234  (new to the catalog)
+    ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+    e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23     Square soup 6114  (new to the catalog)
+    4b1e8d6b20cea5dc100f7444731eb9a4  still life 14c #4b1e8d             B3/S23     Square soup 4628  (new to the catalog)
+    77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23     Square soup 4526  (new to the catalog)
+
+exit 0
+$ jetcarp jobs status 6
+explore 6: 1,024 runs (196/s), 195 elites in 109 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+  status running, 5 s run over every session, 0 confirmation runs, 1,024 candidates tried, 0.04 GB of memory
+  threads: 10 for runs on the processor and 6 for the GPU's batches, of 12 cores (0 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 1,024   0.35   0.84     195
+  folder: /Users/Jimmie/jetcarp-rc-042c/m6/library/searches/6d54c466-8a96-4276-b0c5-90d14dfe762c
+
+exit 0
+$ pgrep -af 'jetcarp jobs resume'
+19799
+19800
+== 25 s after the MCP server exited:
+$ jetcarp jobs status 5
+hunt 5: 54,162/50,000,000 soups, 1795 soups/s, 1,164,876 objects (ships 103,090, osc 337,768, still 724,018), 67 distinct, 30 new | newest: still life 14c #bb0067 (B3/S23)
+  status running, 30 s run, 53864 settled, 152 died, 146 exploded, 0 unsettled, GPU Apple M2 Max, Metal
+  B3/S23 on Square: 54162 soups, 1164876 objects (oscillator 337768, spaceship 103090, still life 724018), 67 distinct, 30 new
+  newest finds:
+    bb006764a2f8ff4c75be8afd65585202  still life 14c #bb0067             B3/S23     Square soup 47075  (new to the catalog)
+    f0e883251888a774e1e8d53e0fdb61d6  still life 10c #f0e883             B3/S23     Square soup 44484  (new to the catalog)
+    c42cde186d92d5fcfa9f966e93c05a1f  still life 10c #c42cde             B3/S23     Square soup 41269  (new to the catalog)
+    4f7c81953d2e778ea32af97e37ead0b5  still life 14c #4f7c81             B3/S23     Square soup 40613  (new to the catalog)
+    5f6193f3faea899e52fd9fe8ee5da7dc  still life 16c #5f6193             B3/S23     Square soup 39470  (new to the catalog)
+    df2c7aae64caa553123cf51c0ba3bdf1  still life 18c #df2c7a             B3/S23     Square soup 37937  (new to the catalog)
+    a8f11bfaf062e47e360f6c8c34c24415  pentadecathlon                     B3/S23     Square soup 36145  (new to the catalog)
+    ab09295b27c57617405b2a722b6723cf  still life 17c #ab0929             B3/S23     Square soup 34981  (new to the catalog)
+    f1c064096c49439ca328aefff21d1c46  still life 14c #f1c064             B3/S23     Square soup 33811  (new to the catalog)
+    77295bafb818cde0d99492c03bcd31b4  still life 14c #77295b             B3/S23     Square soup 29368  (new to the catalog)
+
+exit 0
+$ jetcarp jobs status 6
+explore 6: 4,096 runs (153/s), 576 elites in 274 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+  status running, 27 s run over every session, 0 confirmation runs, 5,120 candidates tried, 0.60 GB of memory
+  threads: 10 for runs on the processor and 6 for the GPU's batches, of 12 cores (0 left free)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                 4,096   0.36   1.15     576
+  folder: /Users/Jimmie/jetcarp-rc-042c/m6/library/searches/6d54c466-8a96-4276-b0c5-90d14dfe762c
+
+exit 0
+== new MCP session: job_stop 5 -> isError=False
+{
+  "job": 5,
+  "kind": "hunt",
+  "note": "It stops at its next checkpoint and stays resumable with search_start {\"resume\": 5}.",
+  "status": "running",
+  "stopping": true
+}
+== job_status 5 wait_s 60 -> isError=False
+hunt 5: 55,654/50,000,000 soups, 1651 soups/s, 1,198,533 objects (ships 106,109, osc 347,562, still 744,862), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+  status paused, 34 s run, 55341 settled, 159 died, 154 exploded, 0 unsettled, GPU Apple M2 Max, Metal
+  B3/S23 on Square: 55654 soups, 1198533 objects (oscillator 347562, spaceship 106109, still life 744862), 68 distinct, 31 new
+  newest finds:
+    931257315c5760eaff17656138b3245d  still life 12c #931257             B3/S23     Square soup 54702  (new to the catalog)
+    bb006764a2f8ff4c75be8afd65585202  still life 14c #bb0067             B3/S23     Square soup 47075  (new to the catalog)
+    f0e883251888a774e1e8d53e0fdb61d6  still life 10c #f0e883             B3/S23     Square soup 44484  (new to the catalog)
+    c42cde
+$ jetcarp jobs stop 6
+asked explore search 6 to stop at its next checkpoint
+
+exit 0
+$ jetcarp jobs wait 6 --timeout 90
+explore search 6 is paused
+  explore 6: 5,120 runs (169/s), 671 elites in 315 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+  `jetcarp jobs resume 6` continues it from its archive (not run for run: the search is not deterministic)
+
+exit 3
+$ jetcarp jobs list
+    6  explore  paused   2026-11-16T12:46:17Z  explore 6: 5,120 runs (169/s), 671 elites in 315 niches (0 of them confirmed), 1 of 1 tilings; Apple M2 Max, Metal
+    5  hunt     paused   2026-11-16T12:46:15Z  hunt 5: 55,654/50,000,000 soups, 1651 soups/s, 1,198,533 objects (ships 106,109, osc 347,562, still 744,862), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+    4  pile     done     2026-11-16T12:46:10Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    3  explore  paused   2026-11-16T12:45:05Z  explore 3: 7,856 runs (133/s), 1,024 elites in 505 niches (56 of them confirmed), 2 of 2 tilings; Apple M2 Max, Metal
+    2  hunt     paused   2026-11-16T12:44:58Z  hunt 2: 615,594/10,000,000 soups, 8917 soups/s, 4,266,810 objects (ships 336,061, osc 636,017, still 3,294,732), 91 distinct, 91 new | newest: still life 19c #66a817 (B36/S23)
+    1  hunt     done     2026-11-16T12:44:56Z  hunt 1: 3,000/3,000 soups, 2070 soups/s, 63,354 objects (ships 5,665, osc 18,509, still 39,180), 37 distinct, 37 new | newest: still life 8c #f604b3 (B3/S23)
+6 job(s); 0 running
+
+exit 0
+$ pgrep -af 'jetcarp jobs resume'
+

@@ -1,0 +1,3 @@
+﻿rtx-vulkan start 2026-11-14T17:43:48 JETCARP_GPU=RTX WGPU_BACKEND=
+364 scenes: CPU matches 364, GPU matches 364; all 300 generations on the GPU in 327
+rtx-vulkan end 2026-11-14T17:51:06, 7.3 min

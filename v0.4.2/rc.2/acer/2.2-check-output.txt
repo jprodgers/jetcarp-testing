@@ -1,0 +1,18 @@
+﻿30 runs: 30 match to 6 decimals
+runs whose cells differ from the replay's: 30
+
+  run family    gens cells cpu              gpu              default          same
+  --- ------    ---- ----- ---              ---              -------          ----
+28757 jaca      1024 16000 d6844bf981476804 d6844bf981476804 d6844bf981476804 True
+29459 jaca      1024 16000 50203b220b8c925a 50203b220b8c925a 50203b220b8c925a True
+ 2313 jaca      1024 16000 42896127555a1603 42896127555a1603 42896127555a1603 True
+12556 life_like 1024 16000 b0f52c8e767e90fc b0f52c8e767e90fc b0f52c8e767e90fc True
+33531 life_like 1024 16000 bc6daad3401b6f86 bc6daad3401b6f86 bc6daad3401b6f86 True
+
+
+
+run 28757: --gpu -> gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan); no flag -> cpu (12 threads)
+run 29459: --gpu -> gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan); no flag -> cpu (12 threads)
+run 2313: --gpu -> gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan); no flag -> cpu (12 threads)
+run 12556: --gpu -> gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan); no flag -> gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+run 33531: --gpu -> gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan); no flag -> gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)

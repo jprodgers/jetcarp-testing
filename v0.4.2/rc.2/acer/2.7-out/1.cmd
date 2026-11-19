@@ -1,0 +1,1 @@
+﻿search hunt --soups 3000 --detach --label wait-done

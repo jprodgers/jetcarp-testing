@@ -1,0 +1,2 @@
+exported sha256:56afab514a94b9da95f3ff10e48552df766b67474902cf43a113d151b566f6f5 into C:\Users\jimmi\jetcarp-rc-042\A10-pack: 27 files, 252875 bytes
+the version was published first into C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store` does (then `jetcarp pack export --from C:\Users\jimmi\jetcarp-rc-042\.A10-pack.store` lays it out)

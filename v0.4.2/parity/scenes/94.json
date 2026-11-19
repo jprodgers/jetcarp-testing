@@ -1,0 +1,33 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Spectre glider (Edmond 2026)",
+  "description": "Four-state rule with a glider on the Spectre (arXiv:2609.22579).",
+  "tiling": {
+    "family": "spectre",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "5105171662099416095",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Spectre glider (Edmond 2026)",
+      "rule": "SpectreGlider",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "glider_pair"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "2452eada3a1747f2",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

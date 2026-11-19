@@ -1,0 +1,79 @@
+start: host.json gpu=follow | gpu.json={"gpu":"auto"}
+== 11:37:12 host.json gpu=follow | gpu.json={"gpu":"auto"}
+screen 0: Until it settles · Quick Start rule:B36/S23 (2 of 3) · generation 4398 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+GPU: auto (the setting in gpu.json)
+  the app: auto, from the setting in gpu.json (its own choice: follow)
+  the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+host cpu: 56.3 57.7 63.8% | gpu 24%
+== 11:38:13 host.json gpu=off | gpu.json={"gpu":"auto"}
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 2142 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: CPU: GPU simulation off, from the desktop background's own setting
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: GPU: Apple M2 Max, Metal; GPU simulation off (the desktop background's own setting)
+GPU: auto (the setting in gpu.json)
+  the app: auto, from the setting in gpu.json (its own choice: follow)
+  the desktop background: off, from the desktop background's own setting (its own choice: off)
+host cpu: 190.9 209.6 195.2% | gpu 16%
+== 11:38:32 host.json gpu=on | gpu.json={"gpu":"auto"}
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3315 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: GPU: Apple M2 Max, Metal; GPU simulation on (the desktop background's own setting)
+GPU: auto (the setting in gpu.json)
+  the app: auto, from the setting in gpu.json (its own choice: follow)
+  the desktop background: on, from the desktop background's own setting (its own choice: on)
+host cpu: 48.3 57.5 74.6% | gpu 37%
+== 11:38:42 host.json gpu=follow | gpu.json={"gpu":"auto"}
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 3874 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+GPU: auto (the setting in gpu.json)
+  the app: auto, from the setting in gpu.json (its own choice: follow)
+  the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+host cpu: 48.6 65.2 72.3% | gpu 22%
+== 11:38:55 host.json gpu=follow | gpu.json={"gpu":"auto"}
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 4680 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+GPU: auto (the setting in gpu.json)
+  the app: auto, from the setting in gpu.json (its own choice: follow)
+  the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+host cpu: 72.7 70.9 57.1% | gpu 23%
+== 11:39:05 host.json gpu=follow | gpu.json={"gpu":"auto"}
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5238 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: swept 3 scene(s); sizes saved
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+GPU: auto (the setting in gpu.json)
+  the app: auto, from the setting in gpu.json (its own choice: follow)
+  the desktop background: auto, from the setting in gpu.json (its own choice: follow)
+host cpu: 62.6 69.1 65.0% | gpu 23%

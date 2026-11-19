@@ -1,0 +1,40 @@
+Leftovers after uninstall --yes and the installer's -Uninstall (2026-11-13 01:46:34)
+
+C:\Users\jimmi\AppData\Local\Programs\jetcarp : absent
+
+C:\Users\jimmi\AppData\Local\Programs : present (9 items; not JETCARP's: it existed before the install)
+
+C:\Users\jimmi\AppData\Roaming\jetcarp :
+  \app.json  4,338 bytes  2026-11-13 01:38
+  \host.json  574 bytes  2026-11-13 01:36
+  \setup.json  307 bytes  2026-11-13 01:06
+
+C:\Users\jimmi\AppData\Local\jetcarp :
+  \searches\  (2 items)
+  \library.sqlite  10,588,160 bytes  2026-11-13 01:44
+  \library.sqlite-shm  32,768 bytes  2026-11-13 01:04
+  \library.sqlite-wal  0 bytes  2026-11-13 01:44
+  \searches\0cc7d8c2-965c-4b84-8538-9f73a859da7a\  (2 items)
+  \searches\62d6b6af-a0e6-4d82-9d10-636d377f96a9\  (2 items)
+
+(C:\Users\jimmi\AppData\Local\JETCARP, also checked, is the same folder: Windows paths ignore case.)
+
+C:\Users\jimmi\OneDrive\Pictures\JETCARP :
+  \piles\  (5 items)
+  \piles\2026-11-11_23-46-56_square-1000000\  (6 items)
+  \piles\2026-11-11_23-55-49_square-1000000\  (6 items)
+  \piles\2026-11-12_07-35-13_square-1000000\  (6 items)
+  \piles\2026-11-12_07-42-35_square-1000000\  (6 items)
+  \piles\2026-11-12_07-47-03_square-1000000\  (6 items)
+
+C:\Users\jimmi\Pictures\JETCARP : absent
+
+jetcarp processes: 0
+Run key JETCARP: absent
+Screen saver: none set; ScreenSaveActive 1; timeout 60
+Wallpaper: C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper; style 10; TranscodedWallpaper sha256 85ff3bb2371a84655aedf69d9f7c11d697f23b21efc221f7f2443a62edb767ac
+
+User PATH: ExpandString; has %PNPM_HOME%\bin: True; JETCARP entry: False; empty entries: 0
+  equals the value before install: False; equals it without its trailing ';': True
+A new shell (PATH rebuilt from the registry): jetcarp not found
+Installer file kept for the record: C:\Users\jimmi\Downloads\jetcarp-installer.ps1 (present)

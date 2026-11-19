@@ -1,0 +1,29 @@
+explore 2: 564,350 runs (18/s), 40,020 elites in 18,608 niches (1,953 of them confirmed), 344 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status paused, 3 h 59 min run over every session, 10,257 confirmation runs, 574,660 candidates tried, 1.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 1,757 runs on the processor stopped at their time cap (kept with the generations they reached), 6 runs given up at a stop or the end (not kept)
+  loaded 19,439 elites, 146,132 identities, 8,681 coverage rows in 0.06 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like               170,884   0.33   1.64   9,856
+  generations             134,228   0.63   2.15   7,210
+  jaca                     60,662   0.51   2.18   8,329
+  ltl                      58,829   0.35   2.41   2,728
+  priority                 39,744   0.42   2.24   3,872
+  cyclic                   20,180   0.51   2.38   1,578
+  hodgepodge               20,014   1.11   2.51   1,579
+  rps                      20,012   0.56   2.47   1,469
+  greenberg_hastings       19,747   0.58   2.68     730
+  wireworld                 3,679   0.47   1.76     365
+  spectre_glider            3,405   0.33   1.45      47
+  turmite                   2,989   0.82   1.83     686
+  layered                   2,563   0.64   2.01     399
+  lenia                     1,548   1.07   2.41     330
+  forest_fire               1,460   0.76   1.12     244
+  sandpile                  1,135   0.68   2.32     121
+  table                       674   0.29   0.49      12
+  hex_tri                     672   0.64   1.89      53
+  margolus                    644   0.66   2.18     325
+  hex_wolfram                 642   0.63   2.02      44
+  wolfram                     639   0.73   1.66      43
+  folder: C:\Users\jimmi\jetcarp-rc-042c\data\searches\db00e0e0-6959-4398-b766-bc9a0703d55e
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

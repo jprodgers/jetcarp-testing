@@ -1,0 +1,1 @@
+pack import /Users/Jimmie/jetcarp-rc-042c/2.10/framework/F10-pack --library /Users/Jimmie/jetcarp-rc-042c/2.10/framework/library.sqlite 

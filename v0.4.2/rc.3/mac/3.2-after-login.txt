@@ -1,0 +1,40 @@
+== 13:33:49 after the logout and login
+login (console owner changed): 08:33:30
+jetcarp 0.4.2-rc.3
+Error: the JETCARP background host is not running
+-- library info (rc.3)
+catalog:        /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite
+schema version: 3
+patterns 94, rules 25, pattern rules 119, sightings 159 (356069 copies), jobs 26, Quick Start 1156, ratings 1, media 0, ants 8
+-- setup --status
+setup: Desktop art on 2026-11-16 13:31 UTC (JETCARP 0.4.1)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data, 810.5 GB free
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /opt/homebrew/share/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack, imported
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 94 patterns, 8 ant runs, 26 jobs; Quick Start entries: 364 built in, 79 from packs, 713 from searches
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+-- launchd's record after the login:
+ state = not running; LWCR = {; last exit reason = OS_REASON_CODESIGNING; state = active; state = active; job state = spawn failed; properties = runatload | inferred program | needs LWCR update | managed LWCR | has LWCR;
+== 13:34:43 test 1: launchctl kickstart, the agent unchanged
+ state = running; LWCR = {; pid = 22464; last exit reason = OS_REASON_CODESIGNING; state = active; state = active; job state = running; properties = runatload | inferred program | managed LWCR | has LWCR;
+22464 /opt/homebrew/bin/jetcarp host serve --login
+== 13:34:46 test 2: host login off, host login on (rc.3), then kickstart
+the host no longer starts at login
+"/opt/homebrew/bin/jetcarp" host serve --login starts at login
+ state = running; LWCR = {; pid = 22464; last exit reason = OS_REASON_CODESIGNING; state = active; state = active; job state = running; properties = runatload | inferred program | managed LWCR | has LWCR;
+ state = running; LWCR = {; pid = 22464; last exit reason = OS_REASON_CODESIGNING; state = active; state = active; job state = running; properties = runatload | inferred program | managed LWCR | has LWCR;
+22464 /opt/homebrew/bin/jetcarp host serve --login
+running, pid 22464, up 8.0s, 116 MB, GPU Apple M2 Max
+screen 0: Classics, hourly · Quick Start langtons-ant (2 of 7) · generation 1869 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+== 13:36:37 after the second logout and login
+login (console owner changed): 08:36:13
+host pid 23136 started Mon Nov 16 08:36:12 2026    : /opt/homebrew/bin/jetcarp host serve --login
+ state = running; runs = 1; last exit code = (never exited); state = active; state = active; jetsamproperties category = daemon; job state = running; properties = runatload | inferred program | managed LWCR | has LWCR;
+running, pid 23136, up 26.0s, 113 MB, GPU Apple M2 Max
+screen 0: Classics, hourly · Quick Start langtons-ant (2 of 7) · generation 6071 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU

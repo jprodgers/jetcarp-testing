@@ -1,0 +1,4 @@
+hunt 6 is paused
+  hunt 6: 576/2,000,000 soups, 479 soups/s, 12,721 objects (ships 1,146, osc 3,688, still 7,887), 25 distinct, 0 new | newest: still life 10c #07357a (B3/S23)
+  note: memory 0.1 GB is over the cap of 0.05 GB
+  `jetcarp jobs resume 6` resumes it exactly

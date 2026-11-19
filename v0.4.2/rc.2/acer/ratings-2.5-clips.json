@@ -1,0 +1,298 @@
+{
+ "format": "jetcarp-ratings 1",
+ "job": 3,
+ "search": "5cbba190-5548-46c8-bf58-4ed39e19b932",
+ "round": "2.5-clips",
+ "rater": "Jimmie Rodgers",
+ "ratings": [
+  {
+   "run": 76,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751677346
+  },
+  {
+   "run": 507,
+   "verdict": "keep",
+   "star": true,
+   "ts": 1794751863955
+  },
+  {
+   "run": 652,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751682516
+  },
+  {
+   "run": 808,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751687702
+  },
+  {
+   "run": 915,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751692589
+  },
+  {
+   "run": 926,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751700437
+  },
+  {
+   "run": 959,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794751698631
+  },
+  {
+   "run": 1010,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751702443
+  },
+  {
+   "run": 1176,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751704805
+  },
+  {
+   "run": 1680,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751706525
+  },
+  {
+   "run": 1786,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751708579
+  },
+  {
+   "run": 1917,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751709589
+  },
+  {
+   "run": 2321,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794751713371
+  },
+  {
+   "run": 2483,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751714666
+  },
+  {
+   "run": 2485,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751717761
+  },
+  {
+   "run": 2577,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751719847
+  },
+  {
+   "run": 2601,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751724847
+  },
+  {
+   "run": 2792,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751725959
+  },
+  {
+   "run": 2810,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751727106
+  },
+  {
+   "run": 2910,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751728381
+  },
+  {
+   "run": 3206,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794751730727
+  },
+  {
+   "run": 3273,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751731985
+  },
+  {
+   "run": 3518,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751732903
+  },
+  {
+   "run": 4080,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751734476
+  },
+  {
+   "run": 4091,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751739910
+  },
+  {
+   "run": 4369,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751741838
+  },
+  {
+   "run": 4436,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751742749
+  },
+  {
+   "run": 4518,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794751743744
+  },
+  {
+   "run": 4770,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751749338
+  },
+  {
+   "run": 5615,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751750218
+  },
+  {
+   "run": 6048,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751751184
+  },
+  {
+   "run": 6306,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751752419
+  },
+  {
+   "run": 7730,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751755035
+  },
+  {
+   "run": 8160,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751756223
+  },
+  {
+   "run": 8452,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751766864
+  },
+  {
+   "run": 8984,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751768045
+  },
+  {
+   "run": 9591,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751775645
+  },
+  {
+   "run": 9620,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794751770498
+  },
+  {
+   "run": 9670,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751777248
+  },
+  {
+   "run": 10084,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751778214
+  },
+  {
+   "run": 10311,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751817967
+  },
+  {
+   "run": 10549,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751819195
+  },
+  {
+   "run": 10884,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751820235
+  },
+  {
+   "run": 11385,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751821161
+  },
+  {
+   "run": 12626,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751786509
+  },
+  {
+   "run": 13232,
+   "verdict": "keep",
+   "star": true,
+   "ts": 1794751870221
+  },
+  {
+   "run": 13382,
+   "verdict": "maybe",
+   "star": false,
+   "ts": 1794751783698
+  },
+  {
+   "run": 13438,
+   "verdict": "drop",
+   "star": false,
+   "ts": 1794751785189
+  }
+ ],
+ "note": "Way too many die almost immediately, or just turn into static."
+}

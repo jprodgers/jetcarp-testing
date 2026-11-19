@@ -1,0 +1,62 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Rule 30 meets Life and ants",
+  "description": "Rule 30 grows from one cell, Life rewrites what it leaves behind, and three ants take 100 steps per generation. All three share one binary field, so they interact.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 240,
+        "h": 160
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 30,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Rule 30",
+      "rule": "W30",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "top_center"
+    },
+    {
+      "id": 2,
+      "name": "Life",
+      "rule": "B3/S23",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": "empty"
+    },
+    {
+      "id": 3,
+      "name": "Langton's ant",
+      "rule": "Ant RL",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 100,
+      "palette": "Ember",
+      "seed": {
+        "ants": {
+          "count": 3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "d59242ab6ef0f83f",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

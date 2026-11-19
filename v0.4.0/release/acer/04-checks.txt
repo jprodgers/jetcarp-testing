@@ -1,0 +1,71 @@
+Recorded: 2026-11-13 09:57:06 -05:00 (PATH rebuilt from the registry)
+
+> (Get-Command jetcarp -All).Source
+C:\Users\jimmi\scoop\shims\jetcarp.exe
+
+> jetcarp --version
+jetcarp 0.4.0
+
+> Get-Content ~\scoop\shims\jetcarp.shim
+path = "C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarp.exe"
+
+> shims folder
+  jetcarp.exe 136192
+  jetcarp.shim 64
+  scoop 343
+  scoop.cmd 560
+  scoop.ps1 235
+
+> apps\jetcarp
+  0.4.0  Directory    
+  current  ReadOnly, Directory, ReparsePoint  Junction  C:\Users\jimmi\scoop\apps\jetcarp\0.4.0
+
+> apps\jetcarp\0.4.0
+  packs  1
+  COPYING  951
+  jetcarp.exe  79183872
+  jetcarpw.exe  243712
+  LICENSE-MIT  1102
+  README.md  3889
+  scoop-install.json  61
+  scoop-manifest.json  1670
+  THIRD_PARTY_LICENSES.html  385565
+  THIRD_PARTY_NOTICES.md  8790
+  UNLICENSE  1235
+
+> jetcarp paths
+settings: C:\Users\jimmi\AppData\Roaming\jetcarp
+data:     C:\Users\jimmi\AppData\Local\jetcarp
+output:   C:\Users\jimmi\OneDrive\Pictures\JETCARP
+bundled:  C:\Users\jimmi\scoop\apps\jetcarp\0.4.0\packs
+
+> scoop info jetcarp
+
+
+Name        : jetcarp
+Description : Cellular automata on almost any tiling of the plane: an app, a command line, scripting and an MCP server.
+Version     : 0.4.0
+Source      : jetcarp
+Website     : https://jprodgers.github.io/jetcarp
+License     : Unlicense|MIT
+Updated at  : 11/13/2026 5:02:11 AM
+Updated by  : Jimmie Rodgers
+Installed   : 0.4.0
+Binaries    : jetcarp.exe
+Shortcuts   : JETCARP
+Notes       : Start JETCARP from the Start menu, or with `jetcarp` in a terminal.
+              Before `scoop uninstall jetcarp`, run `jetcarp uninstall` to undo what JETCARP set up outside its folders (the background host, the login entry, the screen saver).
+
+
+
+
+> scoop status
+Scoop is up to date.
+Everything is ok!
+
+> Start menu shortcut
+  C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\JETCARP.lnk
+    target: C:\Users\jimmi\scoop\apps\jetcarp\current\jetcarpw.exe
+    args: ''
+    workdir: C:\Users\jimmi\scoop\apps\jetcarp\current
+    icon: ,0

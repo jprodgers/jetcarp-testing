@@ -1,0 +1,37 @@
+﻿What remains after jetcarp uninstall --yes and the installer's -Uninstall (00:35:47):
+
+> dir C:\Users\jimmi\AppData\Roaming\jetcarp
+  exists: 2 files, 0 MB
+    <dir> desktop-pictures  (0 files)
+          app.json  (4214 bytes)
+          host.json  (580 bytes)
+
+> dir C:\Users\jimmi\AppData\Local\jetcarp
+  exists: 2 files, 1.02 MB
+    <dir> library.sqlite-jobs  (0 files)
+          host.lock  (0 bytes)
+          library.sqlite  (1073152 bytes)
+
+> dir C:\Users\jimmi\Pictures\JETCARP
+  (does not exist)
+
+> dir C:\Users\jimmi\OneDrive\Pictures\JETCARP
+  exists: 50 files, 1.07 MB
+    <dir> piles  (50 files)
+
+Elsewhere:
+  %LOCALAPPDATA%\Programs\jetcarp: False; %LOCALAPPDATA%\Programs\share: False
+  %LOCALAPPDATA%\JETCARP\JETCARP.scr: False (same folder as the data folder; Windows is case-insensitive)
+  Run\JETCARP: False
+  Wallpaper: c:\windows\web\wallpaper\themea\img20.jpg, style 10 (before: same, style 10)
+  TranscodedWallpaper sha256 85ff3bb2371a84655aedf69d9f7c11d697f23b21efc221f7f2443a62edb767ac (before: 85ff3bb2371a84655aedf69d9f7c11d697f23b21efc221f7f2443a62edb767ac)
+  Screen saver: SCRNSAVE.EXE='', ScreenSaveActive=1, ScreenSaveTimeOut=60 (before: '', 1, 60)
+  Files Jimmie saved while testing: C:\Users\jimmi\OneDrive\Desktop\hat_scene.json, C:\Users\jimmi\OneDrive\Desktop\jetcarp.png
+  WER crash report: 1 folder(s) in C:\ProgramData\Microsoft\Windows\WER\ReportArchive
+
+User PATH now: kind String, 18 entries, has %PNPM_HOME%: False
+  identical to before install: False
+  identical once %PNPM_HOME% is expanded: False
+
+PATH difference in detail: entry 6 is now 'C:\Users\jimmi\AppData\Local\pnpm\bin' instead of '%PNPM_HOME%\bin',
+and the original's trailing ';' is gone (Remove-FromUserPath drops empty entries). Otherwise identical, same order.

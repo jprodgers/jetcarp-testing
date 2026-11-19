@@ -1,0 +1,72 @@
+# Reconstructed on 2026-11-15 from the copy this session had printed: the original file in the test
+# folder was deleted by mistake (a helper named Rd ran PowerShell's rd alias, Remove-Item). See notes.md.
+# The original 1.3-tests-rtx.txt (cargo test, JETCARP_GPU=RTX) is lost; these are the parts printed before.
+# 1) lines matching error/FAILED/panicked (with line numbers in the original):
+292: test host_cmd::tests::status_says_where_each_screen_is_the_caption_and_why_it_is_paused ... ok
+494: test status_before_setup ... ok
+516: test status_inspect_and_apply ... ok
+519: test status_names_ltl_neighbourhoods_and_hexagonal_rules ... ok
+544: test app::reseed_ui::tests::status_lines ... ok
+556: test app::shell::tests::the_status_bar_says_paused_while_paused ... ok
+1279: test winsaver::tests::the_status_says_what_is_selected ... ok
+1346: test just_after_a_skip_the_status_is_the_new_items ... ok
+1437: error: test failed, to rerun pass `-p jetcarp-gpu --test recovery`
+1440:   process didn't exit successfully: `C:\Users\jimmi\jetcarp-rc-042b\src\target\release\deps\recovery-928cbd32b19c98cb.exe` (exit code: 0xc0000005, STATUS_ACCESS_VIOLATION)
+1465: test core::tests::status_says_why_it_is_paused ... ok
+2115: error: 1 target failed:
+--- tail
+
+   Doc-tests jetcarp_search
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_store
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: 1 target failed:
+    `-p jetcarp-gpu --test recovery`
+--- running diff
+rtx 134 uhd 134
+# 2) the crash in context, and the same binary under JETCARP_GPU=UHD:
+test sandpile_repeats_and_scripts ... ok
+test sandpile_scenes ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 59.02s
+
+     Running tests\pile.rs (target\release\deps\pile-8495233a88939ce1.exe)
+
+running 2 tests
+test a_gpu_step_stopped_part_way_carries_on ... ok
+test gpu_piles_equal_cpu_piles ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.68s
+
+     Running tests\recovery.rs (target\release\deps\recovery-928cbd32b19c98cb.exe)
+
+running 2 tests
+error: test failed, to rerun pass `-p jetcarp-gpu --test recovery`
+
+Caused by:
+  process didn't exit successfully: `C:\Users\jimmi\jetcarp-rc-042b\src\target\release\deps\recovery-928cbd32b19c98cb.exe` (exit code: 0xc0000005, STATUS_ACCESS_VIOLATION)
+note: test exited abnormally; to see the full output pass --no-capture to the harness.
+     Running tests\select.rs (target\release\deps\select-3123a110d7db991e.exe)
+--- uhd recovery
+     Running tests\recovery.rs (target\release\deps\recovery-928cbd32b19c98cb.exe)
+
+running 2 tests
+test gpu_and_cpu_generations_mix_around_a_failure ... ok
+test a_run_that_fails_part_way_leaves_the_world_as_it_was ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.19s
+
+     Running tests\select.rs (target\release\deps\select-3123a110d7db991e.exe)
+
+running 4 tests
+test a_display_always_gets_an_adapter_to_draw_with ... ok
+test a_missing_adapter_falls_back_with_a_note ... ok
+test the_compute_choice_passes_the_self_test ... ok

@@ -1,0 +1,4 @@
+GPU: Apple M2 Max, Metal
+hunt job 1 in /Users/Jimmie/jetcarp-rc-042b/data/library.sqlite
+hunt 1: 7,632/20,000 soups in each of 6 groups, 7151 soups/s, 290,928 objects (ships 19,330, osc 90,358, still 181,240), 935 distinct, 935 new | newest: still life 16c #adb1e4 (B3/S23)
+hunt 1: 18,851/20,000 soups in each of 6 groups, 9758 soups/s, 717,182 objects (ships 48,086, osc 222,885, still 446,211), 1,720 distinct, 1,720 new | newest: p4 oscillator 17c #7a1776 (B36/S23)

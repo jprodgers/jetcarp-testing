@@ -1,0 +1,11 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.21s
+     Running tests\families.rs (target\release\deps\families-e5cc37b82ea4a0fc.exe)
+
+running 3 tests
+test sandpile_edges_drops_and_patches ... GPU tests on NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+ok
+test sandpile_repeats_and_scripts ... ok
+test sandpile_scenes ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 13 filtered out; finished in 12.69s
+

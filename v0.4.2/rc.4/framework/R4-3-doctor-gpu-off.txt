@@ -1,0 +1,158 @@
+PASS: `JETCARP_GPU=off $J doctor` says, for the display and compute adapters, "not used, and not tested: the GPU simulation is off"; no self-test line, and no gpu-checks.json written in the fresh settings folder (the same home's doctor with the GPU on runs the self-test, 164 ms).
+
+R4-3 #84 doctor with the GPU off, Framework, 2026-11-16 10:08:11 PM EST
+fresh home $H = homes/doctor
+
+$ JETCARP_GPU=off $J doctor
+JETCARP 0.4.2-rc.4 on linux x86_64 (32 threads)
+
+Folders
+  settings: $H/config
+  data:     $H/data
+  output:   $H/out
+  runtime:  $H/run
+  bundled:  $W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs (1.5 MB)
+  library:  $H/library/library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: off (JETCARP_GPU=off)
+  setting: $H/config/gpu.json (not saved)
+  the app: off, from JETCARP_GPU=off (its own choice: follow)
+  the desktop background: off, from JETCARP_GPU=off (its own choice: follow)
+  display: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the adapter driving the screen (JETCARP_GPU=off)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      not used, and not tested: the GPU simulation is off
+  compute: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the fastest adapter (JETCARP_GPU=off)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      not used, and not tested: the GPU simulation is off
+
+Graphics adapters (* = used for computing)
+  * AMD Radeon 8060S Graphics (RADV STRIX_HALO) (Vulkan, IntegratedGpu, radv Mesa 26.2.5 (git-ddaf85e353))
+    llvmpipe (LLVM 21.1.8, 256 bits) (Vulkan, Cpu, llvmpipe Mesa 26.2.5 (git-ddaf85e353) (LLVM 21.1.8))
+      software adapter: the GPU simulation uses it only with JETCARP_GPU=software
+    AMD Radeon 8060S Graphics (radeonsi, strix_halo, ACO, DRM 3.64, 7.3.3-300.fc45.x86_64) (Gl, Other, 4.6 (Core Profile) Mesa 26.2.5 (git-ddaf85e353))
+      neither discrete nor integrated (the system says other): the GPU simulation uses it only when JETCARP_GPU names it
+
+Desktop
+  background host: not running
+  starts at login: no
+  GNOME Shell was not found in this session.
+
+Environment
+  JETCARP_CONFIG_DIR=$H/config
+  JETCARP_DATA_DIR=$H/data
+  JETCARP_GPU=off
+  JETCARP_LIBRARY=$H/library
+  JETCARP_OUT=$H/out
+  JETCARP_RUNTIME_DIR=$H/run
+[exit 0, 0.07 s]
+
+$ ls -A $H/config; cat $H/config/gpu-checks.json 2>/dev/null || echo 'no gpu-checks.json written'
+no gpu-checks.json written
+[exit 0, 0.00 s]
+
+$ JETCARP_GPU=off $J doctor --json | python3 -m json.tool | head -80
+{
+    "arch": "x86_64",
+    "desktop": {
+        "gnome_extension": "GNOME Shell was not found in this session.",
+        "host_running": false,
+        "screen_saver": null,
+        "starts_at_login": false
+    },
+    "environment": [
+        [
+            "JETCARP_CONFIG_DIR",
+            "$H/config"
+        ],
+        [
+            "JETCARP_DATA_DIR",
+            "$H/data"
+        ],
+        [
+            "JETCARP_GPU",
+            "off"
+        ],
+        [
+            "JETCARP_LIBRARY",
+            "$H/library"
+        ],
+        [
+            "JETCARP_OUT",
+            "$H/out"
+        ],
+        [
+            "JETCARP_RUNTIME_DIR",
+            "$H/run"
+        ]
+    ],
+    "folders": {
+        "bundled_packs": "$W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs",
+        "bundled_packs_bytes": 1530976,
+        "bundled_packs_searched": [
+            "$W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs"
+        ],
+        "data": "$H/data",
+        "data_chosen_missing": false,
+        "data_size_bytes": 0,
+        "library": "$H/library/library.sqlite",
+        "library_exists": false,
+        "output": "$H/out",
+        "runtime": "$H/run",
+        "settings": "$H/config"
+    },
+    "gpu": [
+        {
+            "backend": "Vulkan",
+            "chosen": true,
+            "driver": "radv Mesa 26.2.5 (git-ddaf85e353)",
+            "kind": "IntegratedGpu",
+            "name": "AMD Radeon 8060S Graphics (RADV STRIX_HALO)",
+            "problem": null
+        },
+        {
+            "backend": "Vulkan",
+            "chosen": false,
+            "driver": "llvmpipe Mesa 26.2.5 (git-ddaf85e353) (LLVM 21.1.8)",
+            "kind": "Cpu",
+            "name": "llvmpipe (LLVM 21.1.8, 256 bits)",
+            "problem": "software adapter: the GPU simulation uses it only with JETCARP_GPU=software"
+        },
+        {
+            "backend": "Gl",
+            "chosen": false,
+            "driver": "4.6 (Core Profile) Mesa 26.2.5 (git-ddaf85e353)",
+            "kind": "Other",
+            "name": "AMD Radeon 8060S Graphics (radeonsi, strix_halo, ACO, DRM 3.64, 7.3.3-300.fc45.x86_64)",
+            "problem": "neither discrete nor integrated (the system says other): the GPU simulation uses it only when JETCARP_GPU names it"
+        }
+    ],
+    "gpu_policy": {
+        "adapter": null,
+        "choices": [
+            {
+                "adapter": "AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+[exit 0, 0.07 s]
+
+#### For comparison: the same fresh home's doctor with the GPU left on (its GPU section only)
+$ $J doctor | sed -n '/^GPU/,/^Graphics/p'
+GPU: auto (automatic)
+  setting: $H/config/gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (164 ms): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the fastest adapter (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (164 ms): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+
+Graphics adapters (* = used for computing)
+[exit 0, 0.24 s]
+

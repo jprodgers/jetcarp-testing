@@ -1,0 +1,56 @@
+# H3 step 6: after quitting, 2026-11-13 09:17:30 EST
+
+$ cat 08-app-terminal.txt
+$ jetcarp   (H3 step 3, first run after moving rc3's settings; started 07:43:01)
+exit 0 at 09:17:16
+
+$ pgrep -fl jetcarp
+(exit 1)
+
+$ ls -la ~/Library/Application\ Support/jetcarp ~/Library/Application\ Support/jetcarp/data
+/Users/Jimmie/Library/Application Support/jetcarp:
+total 24
+drwxr-xr-x@  5 Jimmie  staff   160 Nov 13 09:12 .
+drwx------+ 48 Jimmie  staff  1536 Nov 13 07:42 ..
+-rw-r--r--@  1 Jimmie  staff  4341 Nov 13 09:12 app.json
+drwxr-xr-x@  7 Jimmie  staff   224 Nov 13 07:54 data
+-rw-r--r--@  1 Jimmie  staff   362 Nov 13 07:54 setup.json
+
+/Users/Jimmie/Library/Application Support/jetcarp/data:
+total 12408
+drwxr-xr-x@ 7 Jimmie  staff      224 Nov 13 07:54 .
+drwxr-xr-x@ 5 Jimmie  staff      160 Nov 13 09:12 ..
+-rw-r--r--@ 1 Jimmie  staff  5570560 Nov 13 09:17 library.sqlite
+drwxr-xr-x@ 2 Jimmie  staff       64 Nov 13 07:57 library.sqlite-jobs
+-rw-r--r--@ 1 Jimmie  staff    32768 Nov 13 07:43 library.sqlite-shm
+-rw-r--r--@ 1 Jimmie  staff        0 Nov 13 09:17 library.sqlite-wal
+drwxr-xr-x@ 3 Jimmie  staff       96 Nov 13 07:54 searches
+
+$ grep -rn "Cellar\|/opt/homebrew" ~/Library/Application\ Support/jetcarp/*.json
+(exit 1)
+
+$ cat setup.json
+{
+  "version": 1,
+  "profile": "explorer",
+  "date": "2026-11-13T12:54:49Z",
+  "jetcarp": "0.4.0",
+  "data_dir": "/Users/Jimmie/Library/Application Support/jetcarp/data",
+  "library": "/Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite",
+  "quickstart_minutes": 2.0,
+  "packs": [
+    "JETCARP starter pack"
+  ],
+  "jobs": [
+    3,
+    4
+  ]
+}
+
+
+$ cat host.json
+cat: /Users/Jimmie/Library/Application Support/jetcarp/host.json: No such file or directory
+
+
+$ ls ~/Library/Application\ Support/jetcarp/paths.json
+ls: /Users/Jimmie/Library/Application Support/jetcarp/paths.json: No such file or directory

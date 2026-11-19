@@ -1,0 +1,3 @@
+$ jetcarp verify 07-scene.json
+ok: generation 25 hash 98ed8ecdae3d246c
+exit 0

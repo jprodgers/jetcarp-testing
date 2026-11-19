@@ -1,0 +1,40 @@
+﻿# Step 3: the host's crash. 2026-11-12, Acer, jetcarp c5a58fc.
+
+On the Acer's real GPUs nothing crashed: steps 1, 2, 4 and 5 all kept their host, and the
+Application log had no jetcarp entry from 04:30 to 04:48.
+
+It crashes on the software renderer, WARP ("Microsoft Basic Render Driver"), which is what
+GitHub's Windows runners have. The host can't be told to use WARP, so the throwaway clone got a
+debug switch (07-debug-switch.diff: JETCARP_DEBUG_FALLBACK sets force_fallback_adapter in
+SharedGpu::headless). With it, jetcarp host start --headless printed "running ... GPU Microsoft
+Basic Render Driver" and the host was gone within seconds. Event Viewer, Application log:
+
+  Source:  Application Error (1000), then Windows Error Reporting (1001, APPCRASH)
+  Faulting application:  jetcarp.exe 0.4.0.0, time stamp 0x6af58b9e
+  Faulting module:       d3d10warp.dll 10.0.26100.9818, time stamp 0xb4f3aa66
+                         (C:\WINDOWS\SYSTEM32\d3d10warp.dll)
+  Exception code:        0xc0000005
+  Fault offset:          0x00000000003aabfd
+
+Every WARP crash today, the same module, code and offset each time:
+
+  time      pid    how it was started (all on WARP)
+  04:49:34  8792   jetcarp host start --headless (through jetcarpw.exe)
+  04:50:46  12032  jetcarp.exe host serve --headless                      (direct)
+  04:50:50  17068  jetcarp.exe host serve --headless --canvas 160x120     (direct)
+  04:50:55  15320  jetcarpw.exe host serve --headless
+  04:50:59  7004   jetcarpw.exe host serve --headless --canvas 160x120
+  04:51:47  2264   jetcarp.exe host serve --headless --canvas 160x120, JETCARP_HOST_NO_PAUSE_RULES=1
+  04:53:41  1804   the step 1 test, in 06-tests-on-warp.txt (the same failure as CI)
+
+The host's own exit code, read from a handle held on it: -1073741819 (0xC0000005). Its stderr
+was empty. WER kept a report (no dump) in
+C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_jetcarp.exe_fb8cc645..._82ed4989_*.
+No debugger (cdb/WinDbg) is installed on the Acer, so there is no symbolized stack.
+
+What decides it (08-warp-matrix.txt): the rotation, through GPU stepping. On WARP:
+  "A classic a day" (the default, profile Life): crashes about 2 to 5 s after start, however
+      started (host start, jetcarpw, direct), at 1280x720 or 160x120, pause rules on or off.
+  "Wolfram series" (what every direct host test on CI uses): lives (20 s, then stops with exit
+      code 0).
+  "A classic a day" with "gpu": false in host.json: lives (15 s; generation 230 at 8 s; exit 0).

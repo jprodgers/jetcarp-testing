@@ -1,0 +1,8 @@
+clip 22 of 144
+clip 53 of 144
+clip 84 of 144
+clip 115 of 144
+clip 139 of 144
+144 clips in /Users/Jimmie/jetcarp-rc-042c/2.6b-clips
+categories: Battles 144
+rating page: /Users/Jimmie/jetcarp-rc-042c/2.6b-clips/index.html

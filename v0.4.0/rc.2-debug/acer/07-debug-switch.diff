@@ -1,0 +1,20 @@
+﻿diff --git a/crates/jetcarp-host/src/core.rs b/crates/jetcarp-host/src/core.rs
+index b2b91e4..64d7c74 100644
+--- a/crates/jetcarp-host/src/core.rs
++++ b/crates/jetcarp-host/src/core.rs
+@@ -53,9 +53,12 @@ impl SharedGpu {
+     pub fn headless() -> Option<SharedGpu> {
+         let instance =
+             wgpu::Instance::new(wgpu::InstanceDescriptor::new_without_display_handle_from_env());
+-        let adapter =
+-            pollster::block_on(instance.request_adapter(&wgpu::RequestAdapterOptions::default()))
+-                .ok()?;
++        // DEBUG (Acer, not for commit): JETCARP_DEBUG_FALLBACK picks the software adapter, as CI has.
++        let opts = wgpu::RequestAdapterOptions {
++            force_fallback_adapter: std::env::var_os("JETCARP_DEBUG_FALLBACK").is_some(),
++            ..Default::default()
++        };
++        let adapter = pollster::block_on(instance.request_adapter(&opts)).ok()?;
+         let (device, queue) =
+             pollster::block_on(adapter.request_device(&device_descriptor(&adapter))).ok()?;
+         Some(SharedGpu {

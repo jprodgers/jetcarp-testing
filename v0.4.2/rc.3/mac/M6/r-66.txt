@@ -1,0 +1,45 @@
+#### jobs first (none may be running)
+   10  explore  paused   2026-11-16T12:47:51Z  explore 10: 5,223 runs (89/s), 1,866 elites in 1,048 niches (20 of them confirmed), 7 of 1,359 tilings; Apple M2 Max, Metal
+    9  explore  paused   2026-11-16T12:47:39Z  explore 9: 1,038 runs (109/s), 411 elites in 250 niches (0 of them confirmed), 2 of 1,359 tilings; Apple M2 Max, Metal
+    8  hunt     done     2026-11-16T12:47:37Z  hunt 8: 300/300 soups, 1082 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    7  hunt     paused   2026-11-16T12:46:49Z  hunt 7: 7,985/50,000,000 soups, 1555 soups/s, 168,922 objects (ships 15,036, osc 49,045, still 104,841), 41 distinct, 0 new | newest: still life 15c #e6a4b2 (B3/S23)
+#### #66 a signed pack, then a tampered copy and an unsigned copy
+export exit 0
+exported sha256:e57bf00ef2b219780818bbd3a1e6d66ddb5b5b99b2529ad5e244958b737a950b into /Users/Jimmie/jetcarp-rc-042c/m6/cli/good66: 32 files, 1619172 bytes
+the version was published first into /Users/Jimmie/jetcarp-rc-042c/m6/cli/.good66.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /Users/Jimmie/jetcarp-rc-042c/m6/cli/.good66.store` does (then `jetcarp pack export --from /Users/Jimmie/jetcarp-rc-042c/m6/cli/.good66.store` lays it out)
+-- pack info good66
+export sha256:e57bf00ef2b219780818bbd3a1e6d66ddb5b5b99b2529ad5e244958b737a950b (feed r66)
+  publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0, signed by its publisher
+  created 2026-11-16T12:48:52Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2806 bytes
+  patterns             116 rows in 3 parts, 49829 bytes
+  provenance           116 rows in 1 part, 9189 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            260 rows in 1 part, 6853 bytes
+exit 0
+-- pack info onebyte66
+export sha256:e1ad7faa2047aa4aee0339695692b0220111594d7181eec42f816613139e146b (feed r67)
+  publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0, signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (b0424353c5b21655d9a7cd48aa1d7ba41e733b822873b321390c1c9f07fe340d.sig: signature does not verify (jetcarp-manifest): cryptographic error)
+  created 2026-11-16T12:48:52Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2806 bytes
+  patterns             116 rows in 3 parts, 49829 bytes
+  provenance           116 rows in 1 part, 9189 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            260 rows in 1 part, 6853 bytes
+exit 0
+-- pack info unsigned66
+export sha256:e57bf00ef2b219780818bbd3a1e6d66ddb5b5b99b2529ad5e244958b737a950b (feed r66)
+  publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0, not signed by its publisher
+  created 2026-11-16T12:48:52Z, licence CC0-1.0
+  annotations           26 rows in 1 part, 2806 bytes
+  patterns             116 rows in 3 parts, 49829 bytes
+  provenance           116 rows in 1 part, 9189 bytes
+  rules                  2 rows in 1 part, 1828 bytes
+  sightings            260 rows in 1 part, 6853 bytes
+exit 0
+-- pack import onebyte66
+Error: a signature on this version does not verify: b0424353c5b21655d9a7cd48aa1d7ba41e733b822873b321390c1c9f07fe340d.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+-- pack import unsigned66
+Error: this version is not signed by its publisher SHA256:sEJDU8WyFlXZp81Iqh17pB5zO4Ioc7MhOQwcnwf+NA0; to import it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+exit 1

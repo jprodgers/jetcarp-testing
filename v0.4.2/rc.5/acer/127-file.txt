@@ -1,0 +1,76 @@
+#### R5 #127: output sent to a file, rc.5 (jetcarp 0.4.2-rc.5), 2026-11-17 18:01:55
+### cmd: jetcarp pack import packs\jetcarp-starter > file 2>&1
+740 bytes, 9 lines; ESC bytes: 0; carriage returns without a line feed: 0; ellipses: 0; progress lines (explore N: ...): 0
+  |sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29: feed jetcarp-starter, by SHA256:0J4+ipNwh5xrxnEAhZzMqa2apSMLHd/KtJbgFGAQCW0 (Jimmie Rodgers), checking every object
+  |reading verifications, sightings, provenance and annotations
+  |checking ids and storing patterns
+  |merging sightings
+  |imported sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (feed jetcarp-starter, SHA256:0J4+ipNwh5xrxnEAhZzMqa2apSMLHd/KtJbgFGAQCW0 Jimmie Rodgers, signed by its publisher)
+  |  49 objects checked (1515304 bytes)
+  |  patterns: 26 added, 0 merged, 0 flagged needs_reverify
+  |  sightings 27, ratings 0, ants 8, Quick Start 79, media 0, searches 0, retracted 0
+  |  verified again (sample): 26 of 26 passed, 0 skipped, 0 failed
+  |
+### cmd: jetcarp search explore --minutes 0.25 > file 2>&1
+2365 bytes, 27 lines; ESC bytes: 0; carriage returns without a line feed: 0; ellipses: 0; progress lines (explore N: ...): 5
+  |explore search job 22 in ~\jetcarp-rc5\n127-file\library\library.sqlite
+  |GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 22: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 22: 64 runs (10/s), 61 elites in 41 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 22: 64 runs (5/s), 61 elites in 41 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 22: 94 runs (5/s), 86 elites in 56 niches (0 of them confirmed), 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 22: 94 runs (5/s), 86 elites in 56 niches (0 of them confirmed), 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |  status paused, 18 s run over every session, 0 confirmation runs, 1,136 candidates tried, 0.23 GB of memory
+  |  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  |  this session: 5 runs on the processor stopped at their time cap (kept with the generations they reached), 1,031 runs given up at a stop or the end (not kept)
+  |  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  |  family                     runs   mean   best  elites
+  |  life_like                    26   0.31   0.76      24
+  |  generations                  16   0.59   1.40      15
+  |  layered                       8   0.36   1.36       7
+  |  forest_fire                   7   0.65   0.96       7
+  |  lenia                         7   0.29   1.51       4
+  |  turmite                       6   0.75   1.36       6
+  |  jaca                          5   0.17   0.53       5
+  |  priority                      5   0.20   0.45       5
+  |  cyclic                        3   0.43   0.71       3
+  |  greenberg_hastings            3   0.74   1.93       3
+  |  hodgepodge                    3   0.13   0.15       3
+  |  rps                           3   0.29   0.47       3
+  |  sandpile                      2   0.63   0.64       1
+  |  folder: ~\jetcarp-rc5\n127-file\library\searches\cd445742-5313-4574-ba8d-523f7723fc56
+  |explore search 22 paused (at its budget); `jetcarp jobs resume 22` continues it from its archive (not run for run: the search is not deterministic)
+  |
+### PowerShell: Start-Process jetcarp search explore --minutes 0.25, stdout to a file
+1477 bytes, 20 lines; ESC bytes: 0; carriage returns without a line feed: 0; ellipses: 0; progress lines (explore N: ...): 1
+  |explore 23: 91 runs (5/s), 84 elites in 54 niches (0 of them confirmed), 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |  status paused, 20 s run over every session, 0 confirmation runs, 1,129 candidates tried, 0.16 GB of memory
+  |  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  |  this session: 5 runs on the processor stopped at their time cap (kept with the generations they reached), 1,023 runs given up at a stop or the end (not kept)
+  |  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  |  family                     runs   mean   best  elites
+  |  life_like                    26   0.33   0.76      23
+  |  generations                  16   0.61   1.40      15
+  |  layered                       7   0.26   0.78       7
+  |  lenia                         6   0.33   1.51       4
+  |  turmite                       6   0.75   1.36       6
+  |  forest_fire                   5   0.56   0.96       5
+  |  jaca                          5   0.17   0.53       5
+  |  priority                      5   0.20   0.45       5
+  |  cyclic                        3   0.43   0.71       3
+  |  greenberg_hastings            3   0.74   1.93       3
+  |  hodgepodge                    3   0.13   0.15       3
+  |  rps                           3   0.29   0.47       3
+  |  sandpile                      3   0.56   0.63       2
+  |  folder: ~\jetcarp-rc5\n127-file\library\searches\5a0e8f95-38bb-41ea-9813-ed1523d5e8c6
+  |
+### PowerShell: the same, stderr to a file
+891 bytes, 7 lines; ESC bytes: 0; carriage returns without a line feed: 0; ellipses: 0; progress lines (explore N: ...): 4
+  |explore search job 23 in ~\jetcarp-rc5\n127-file\library\library.sqlite
+  |GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 23: 64 runs (30/s), 60 elites in 40 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 23: 64 runs (8/s), 60 elites in 40 niches (0 of them confirmed), 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 23: 91 runs (6/s), 84 elites in 54 niches (0 of them confirmed), 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore 23: 91 runs (5/s), 84 elites in 54 niches (0 of them confirmed), 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  |explore search 23 paused (at its budget); `jetcarp jobs resume 23` continues it from its archive (not run for run: the search is not deterministic)
+  |

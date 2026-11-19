@@ -1,0 +1,481 @@
+PASS for (a), (b) and (c), each refused with nothing written where the link leads (every outside file's sha256 unchanged); one surprise in an extra case, (c3), for the main session to judge.
+(a) rc.3's t42b_symlink.py on rc.4 (4.2b-symlink-rc4.txt): reading through $H/out/link-outside refused; files_list of innocent.json (a link to $H/outside/victim.txt) refused; world_status save_path innocent.json refused; victim.txt unchanged.
+(b) a link at an animation's poster.png: CLI `media render --scene life32.json --out $H/out/anim-cli` refused, exit 1: "JETCARP may only write inside $H/out/anim-cli (got $H/out/anim-cli/poster.png, where a symbolic link leads out of it)", nothing else written in the folder; MCP media_render {scene, out: anim-mcp} refused with the same sentence (with and without poster: true). Extra (b3): a frames folder link leading out, refused, the outside folder still empty. Control (b4): a poster.png link that stays inside is followed (render succeeds).
+(c) a link at a pack export's pack.json: CLI `pack export --to $H/out/exp-cli` refused, exit 1, the same sentence for exp-cli/pack.json (after publishing version 1 into the hidden store .exp-cli.store beside it, which stays, as for any export); MCP pack {export: {to: exp-mcp, publish}} refused with the same sentence. Both outside pack.json files unchanged.
+SURPRISE (c3), CLI only: a link planted at the hidden store beside an export ($H/out/.exp-store.store -> $H/outside/store-dir) is followed: `pack export --to $H/out/exp-store --feed t42b-store --no-media` exits 0 and writes a whole signed store (jetcarp-store.json, keys/, objects/sha256/..., refs/t42b-store.json, sigs/) into $H/outside/store-dir. Through MCP the same plant is refused ("the MCP tools may only write inside $H/out or $H/library (got $H/out/.exp-store-mcp.store)", c4), as is a publish into a store folder that is such a link (c5). The hidden store's name is one JETCARP chooses itself, beside (not inside) the folder the user gave, so the CLI's check of files named inside a folder doesn't cover it; whether that matters is the main session's call. No existing file was overwritten in this run.
+
+R4-11 (private) files JETCARP names itself inside a checked folder, Framework, 2026-11-16 10:20:50 PM EST
+fresh home $H = homes/t42b; $H/outside is outside the output folder ($H/out) and the library's ($H/library)
+
+$ cd $H/outside && find . -type f -print0 | sort -z | xargs -0 sha256sum | tee $H/outside-before.sha256; ls -la $H/outside
+2dd11b7141e65417f245c0c13351d74837d6fc5e39ff349178e7d2bcd7b35471  ./pack-victim-cli.json
+f294422a8d845cc1aa74340257519f52300adab665b5a2643adb4f40b293cc74  ./pack-victim-mcp.json
+dcbb587425c1c206ff908d4c75e5109f5701a348d30bfac15f07f3235859257e  ./poster-victim-cli.png
+c5dd6f66008cca53a3bcc1339bbaefb8dfd57cc0da44905db78254c675aaada3  ./poster-victim-mcp.png
+total 16
+drwxr-xr-x. 1 jimmie jimmie 202 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 116 Nov 16 22:20 ..
+drwxr-xr-x. 1 jimmie jimmie   0 Nov 16 22:20 frames-dir
+-rw-r--r--. 1 jimmie jimmie  51 Nov 16 22:20 pack-victim-cli.json
+-rw-r--r--. 1 jimmie jimmie  51 Nov 16 22:20 pack-victim-mcp.json
+-rw-r--r--. 1 jimmie jimmie  48 Nov 16 22:20 poster-victim-cli.png
+-rw-r--r--. 1 jimmie jimmie  48 Nov 16 22:20 poster-victim-mcp.png
+drwxr-xr-x. 1 jimmie jimmie   0 Nov 16 22:20 store-dir
+[exit 0, 0.00 s]
+
+######## (a) rc.3's t42b_symlink.py, on rc.4
+$ python3 $R/R4-scripts/t42b_symlink_rc4.py
+R4-11 (a) rc.3's t42b_symlink.py again, on rc.4 (MCP log: 4.2b-symlink-rc4.jsonl)
+$ ln -s $H/outside/victim.txt $H/out/innocent.json; ln -s $H/outside $H/out/link-outside
+== world_new {"path": "link-outside/good.json"} -> isError=True
+   the MCP tools may only read inside $H/out or $H/library or $W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs, not $H/out/link-outside/good.json
+== files_list {"file": "innocent.json"} -> isError=True
+   $H/out/innocent.json is outside JETCARP's output folder ($H/out) and the catalog's folder ($H/library); files_list only reads those
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== world_status {"save_path": "innocent.json"} -> isError=True
+   the MCP tools may only write inside $H/out or $H/library (got $H/out/innocent.json)
+$ readlink $H/out/innocent.json; cat $H/outside/victim.txt
+$H/outside/victim.txt
+precious text outside the output folder
+
+[exit 0, 0.23 s]
+
+######## (b) a link planted at an animation's poster.png
+### (b1) CLI: media render --scene --out, poster.png planted
+$ ls -la $H/out/anim-cli
+total 4
+drwxr-xr-x. 1 jimmie jimmie 20 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 88 Nov 16 22:20 ..
+lrwxrwxrwx. 1 jimmie jimmie 90 Nov 16 22:20 poster.png -> $H/outside/poster-victim-cli.png
+[exit 0, 0.00 s]
+
+$ $J media render --scene $H/out/life32.json --out $H/out/anim-cli --gens 20
+Error: JETCARP may only write inside $H/out/anim-cli (got $H/out/anim-cli/poster.png, where a symbolic link leads out of it)
+[exit 1, 0.05 s]
+
+$ ls -la $H/out/anim-cli; cat $H/outside/poster-victim-cli.png
+total 4
+drwxr-xr-x. 1 jimmie jimmie 20 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 88 Nov 16 22:20 ..
+lrwxrwxrwx. 1 jimmie jimmie 90 Nov 16 22:20 poster.png -> $H/outside/poster-victim-cli.png
+precious poster outside the output folder (CLI)
+[exit 0, 0.00 s]
+
+### (b2) MCP: media_render {scene, out}, poster.png planted
+$ python3 $R/R4-scripts/mcall.py $R/t42b-poster-mcp-rc4.jsonl '[["media_render",{"scene":{"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]},"out":"anim-mcp","gens":20}],["media_render",{"scene":{"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]},"out":"anim-mcp","gens":20,"poster":true}]]'
+initialize -> ok
+== tools/call media_render {"scene": {"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "out": "anim-mcp", "gens": 20} -> isError=True
+   JETCARP may only write inside $H/out/anim-mcp (got $H/out/anim-mcp/poster.png, where a symbolic link leads out of it)
+== tools/call media_render {"scene": {"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "out": "anim-mcp", "gens": 20, "poster": true} -> isError=True
+   JETCARP may only write inside $H/out/anim-mcp (got $H/out/anim-mcp/poster.png, where a symbolic link leads out of it)
+server exit 0
+[exit 0, 0.30 s]
+
+$ ls -la $H/out/anim-mcp; cat $H/outside/poster-victim-mcp.png
+total 4
+drwxr-xr-x. 1 jimmie jimmie  20 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 104 Nov 16 22:20 ..
+lrwxrwxrwx. 1 jimmie jimmie  90 Nov 16 22:20 poster.png -> $H/outside/poster-victim-mcp.png
+precious poster outside the output folder (MCP)
+[exit 0, 0.00 s]
+
+### (b3) CLI: the frames folder planted (a folder on the way)
+$ $J media render --scene $H/out/life32.json --out $H/out/anim-frames --gens 20
+Error: JETCARP may only write inside $H/out/anim-frames (got $H/out/anim-frames/frames, where a symbolic link leads out of it)
+[exit 1, 0.04 s]
+
+$ ls -la $H/out/anim-frames; ls -A $H/outside/frames-dir | wc -l
+total 4
+drwxr-xr-x. 1 jimmie jimmie  12 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 126 Nov 16 22:20 ..
+lrwxrwxrwx. 1 jimmie jimmie  79 Nov 16 22:20 frames -> $H/outside/frames-dir
+0
+[exit 0, 0.00 s]
+
+### (b4) control: a poster.png link that stays inside the folder is followed
+$ $J media render --scene $H/out/life32.json --out $H/out/anim-inside --gens 20 | tail -3
+webp   $H/out/anim-inside/anim.webp
+poster $H/out/anim-inside/poster.png
+thumb  $H/out/anim-inside/thumb.png
+[exit 0, 0.04 s]
+
+$ ls -la $H/out/anim-inside; file $H/out/anim-inside/real-poster.png
+total 36
+drwxr-xr-x. 1 jimmie jimmie    98 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   148 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 22144 Nov 16 22:20 anim.webp
+drwxr-xr-x. 1 jimmie jimmie   336 Nov 16 22:20 frames
+-rw-r--r--. 1 jimmie jimmie  1617 Nov 16 22:20 poster.png
+-rw-r--r--. 1 jimmie jimmie     4 Nov 16 22:20 real-poster.png
+-rw-r--r--. 1 jimmie jimmie   659 Nov 16 22:20 thumb.png
+$H/out/anim-inside/real-poster.png: ASCII text
+[exit 0, 0.01 s]
+
+######## (c) a link planted at a pack export's pack.json
+$ $J search hunt --rules B3/S23 --tilings square --soups 300 --cpu --quiet | head -1
+hunt job 1 in $H/library/library.sqlite
+hunt 1: 300/300 soups, 2460 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 23 new | newest: still life 8c #fcc17e (B3/S23)
+[exit 0, 0.22 s]
+
+### (c1) CLI: pack export --to $H/out/exp-cli, pack.json planted
+$ ls -la $H/out/exp-cli
+total 4
+drwxr-xr-x. 1 jimmie jimmie  18 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 162 Nov 16 22:20 ..
+lrwxrwxrwx. 1 jimmie jimmie  89 Nov 16 22:20 pack.json -> $H/outside/pack-victim-cli.json
+[exit 0, 0.00 s]
+
+$ $J pack export --to $H/out/exp-cli --feed t42b-cli --no-media
+publishing feed t42b-cli (version 1) into $H/out/.exp-cli.store
+23 patterns read, 23 new rows
+version sha256:8efc0c1478aa6561ef8eb3f6c17466443b351e34ee29324b8ad2563fd274b0d7 written
+Error: JETCARP may only write inside $H/out/exp-cli (got $H/out/exp-cli/pack.json, where a symbolic link leads out of it)
+[exit 1, 0.05 s]
+
+$ ls -la $H/out/exp-cli; ls -a $H/out; cat $H/outside/pack-victim-cli.json
+total 4
+drwxr-xr-x. 1 jimmie jimmie  18 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 190 Nov 16 22:20 ..
+lrwxrwxrwx. 1 jimmie jimmie  89 Nov 16 22:20 pack.json -> $H/outside/pack-victim-cli.json
+.
+..
+anim-cli
+anim-frames
+anim-inside
+anim-mcp
+exp-cli
+.exp-cli.store
+innocent.json
+life32.json
+link-outside
+{"precious": "pack.json outside the export (CLI)"}
+[exit 0, 0.00 s]
+
+### (c2) MCP: pack {export: {to: exp-mcp, publish: {...}}}, pack.json planted
+$ python3 $R/R4-scripts/mcall.py $R/t42b-packjson-mcp-rc4.jsonl '[["pack",{"export":{"to":"exp-mcp","publish":{"feed":"t42b-mcp","no_media":true}}}]]'
+initialize -> ok
+== tools/call pack {"export": {"to": "exp-mcp", "publish": {"feed": "t42b-mcp", "no_media": true}}} -> isError=True
+   JETCARP may only write inside $H/out/exp-mcp (got $H/out/exp-mcp/pack.json, where a symbolic link leads out of it)
+server exit 0
+[exit 0, 0.28 s]
+
+$ ls -la $H/out/exp-mcp; cat $H/outside/pack-victim-mcp.json
+total 4
+drwxr-xr-x. 1 jimmie jimmie  18 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 232 Nov 16 22:20 ..
+lrwxrwxrwx. 1 jimmie jimmie  89 Nov 16 22:20 pack.json -> $H/outside/pack-victim-mcp.json
+{"precious": "pack.json outside the export (MCP)"}
+[exit 0, 0.00 s]
+
+### (c3) CLI: the hidden store beside the export planted ($H/out/.exp-store.store -> $H/outside/store-dir)
+$ $J pack export --to $H/out/exp-store --feed t42b-store --no-media
+publishing feed t42b-store (version 1) into $H/out/.exp-store.store
+23 patterns read, 23 new rows
+version sha256:074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9 written
+exported sha256:074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9 into $H/out/exp-store: 24 files, 69148 bytes
+the version was published first into $H/out/.exp-store.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to $H/out/.exp-store.store` does (then `jetcarp pack export --from $H/out/.exp-store.store` lays it out)
+[exit 0, 0.05 s]
+
+$ ls -la $H/out | grep -E 'exp-store'; ls -A $H/outside/store-dir | wc -l
+drwxr-xr-x. 1 jimmie jimmie 130 Nov 16 22:20 exp-store
+lrwxrwxrwx. 1 jimmie jimmie  78 Nov 16 22:20 .exp-store.store -> $H/outside/store-dir
+5
+[exit 0, 0.00 s]
+
+######## Afterwards: every file outside, against its hash before
+$ cd $H/outside && sha256sum -c $H/outside-before.sha256; find $H/outside -newer $H/outside-before.sha256 | sed 's#^#changed since: #'; ls -laR $H/outside
+./pack-victim-cli.json: OK
+./pack-victim-mcp.json: OK
+./poster-victim-cli.png: OK
+./poster-victim-mcp.png: OK
+changed since: $H/outside
+changed since: $H/outside/store-dir
+changed since: $H/outside/store-dir/jetcarp-store.json
+changed since: $H/outside/store-dir/objects
+changed since: $H/outside/store-dir/objects/sha256
+changed since: $H/outside/store-dir/objects/sha256/7b
+changed since: $H/outside/store-dir/objects/sha256/7b/7bf95d65bc65f61a386f82aa450c9a3d16ae4aa0ee5836e0be42e135a41268e5.parquet
+changed since: $H/outside/store-dir/objects/sha256/fd
+changed since: $H/outside/store-dir/objects/sha256/fd/fd4ed0f55a56a9fbc6f4c6b2271af49642fa4b0436fdfc8bfa942801c04e6497.parquet
+changed since: $H/outside/store-dir/objects/sha256/6c
+changed since: $H/outside/store-dir/objects/sha256/6c/6c84bd5dbb8de89b7be23a42a15db7daa2bf0466e63d32411e35e83da531024c.parquet
+changed since: $H/outside/store-dir/objects/sha256/0e
+changed since: $H/outside/store-dir/objects/sha256/0e/0ed1f884b6c0a87f6e80ec095e2aa74dff4f597066102874d83f0ca28dd5733c.parquet
+changed since: $H/outside/store-dir/objects/sha256/a5
+changed since: $H/outside/store-dir/objects/sha256/a5/a5f6fc46e7bb1f8b217dc64db2690bf9d8b2258f8176588f7abb17904c2f53ea.json
+changed since: $H/outside/store-dir/objects/sha256/d7
+changed since: $H/outside/store-dir/objects/sha256/d7/d7762c49a76aec213b0295962bcf546c45356ba7981883b549e4e0c609215196.parquet
+changed since: $H/outside/store-dir/objects/sha256/dd
+changed since: $H/outside/store-dir/objects/sha256/dd/dddfcaa8f5f797d4a1973202278c588c1b4467d9bdf1ee6c8704052ea7e79ad9.json
+changed since: $H/outside/store-dir/objects/sha256/a2
+changed since: $H/outside/store-dir/objects/sha256/a2/a28da135bf8420e089eeeb6acb58f1ca11d27ee11976b83d342a2bd13d4f3b21.json
+changed since: $H/outside/store-dir/objects/sha256/ff
+changed since: $H/outside/store-dir/objects/sha256/ff/ff6eaa74969502bab362ab5a4c8783260f06748de36d6de2a4c427bffb5669ff.parquet
+changed since: $H/outside/store-dir/objects/sha256/50
+changed since: $H/outside/store-dir/objects/sha256/50/50cdfab12873509bd910408e2bf71ea47fefe4d01c22160bd284d947796bbfbf.json
+changed since: $H/outside/store-dir/objects/sha256/e0
+changed since: $H/outside/store-dir/objects/sha256/e0/e0e5d087bc0fa53805fa0ea5ff217a75217ad2f8b45cf439818d367a25b7d327.parquet
+changed since: $H/outside/store-dir/objects/sha256/6b
+changed since: $H/outside/store-dir/objects/sha256/6b/6bd75f28d244c4db3a9963422f3f4cbf22c5aada63b67598f6809b8ba81941aa.json
+changed since: $H/outside/store-dir/objects/sha256/c7
+changed since: $H/outside/store-dir/objects/sha256/c7/c7617ed61c5209f8834fbdbc205a1ee50257d52eb0653e904590cd72cabb8af4.parquet
+changed since: $H/outside/store-dir/objects/sha256/e8
+changed since: $H/outside/store-dir/objects/sha256/e8/e89dcbf2a0fd476fa55a10c82c1621eec21245ae4edd8a6fc853837d35462efa.json
+changed since: $H/outside/store-dir/objects/sha256/cf
+changed since: $H/outside/store-dir/objects/sha256/cf/cf36023d0e759a2b5e76ad86f97d8e789bf34c548a7ec426d2390b42af4dca0a.parquet
+changed since: $H/outside/store-dir/objects/sha256/6e
+changed since: $H/outside/store-dir/objects/sha256/6e/6eb8c8dbfb995abb4f137ecbc8b013a59c14fec6afef5829d3fa9c4ea90584a1.json
+changed since: $H/outside/store-dir/objects/sha256/07
+changed since: $H/outside/store-dir/objects/sha256/07/074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9.json
+changed since: $H/outside/store-dir/keys
+changed since: $H/outside/store-dir/keys/70157bfacc08b19c79fb169e9c3483b8299da333092d5905f71c574fd916adf8.json
+changed since: $H/outside/store-dir/sigs
+changed since: $H/outside/store-dir/sigs/sha256
+changed since: $H/outside/store-dir/sigs/sha256/07
+changed since: $H/outside/store-dir/sigs/sha256/07/074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9
+changed since: $H/outside/store-dir/sigs/sha256/07/074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9/70157bfacc08b19c79fb169e9c3483b8299da333092d5905f71c574fd916adf8.sig
+changed since: $H/outside/store-dir/refs
+changed since: $H/outside/store-dir/refs/t42b-store.json
+changed since: $H/outside/victim.txt
+$H/outside:
+total 20
+drwxr-xr-x. 1 jimmie jimmie 222 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 116 Nov 16 22:20 ..
+drwxr-xr-x. 1 jimmie jimmie   0 Nov 16 22:20 frames-dir
+-rw-r--r--. 1 jimmie jimmie  51 Nov 16 22:20 pack-victim-cli.json
+-rw-r--r--. 1 jimmie jimmie  51 Nov 16 22:20 pack-victim-mcp.json
+-rw-r--r--. 1 jimmie jimmie  48 Nov 16 22:20 poster-victim-cli.png
+-rw-r--r--. 1 jimmie jimmie  48 Nov 16 22:20 poster-victim-mcp.png
+drwxr-xr-x. 1 jimmie jimmie  74 Nov 16 22:20 store-dir
+-rw-r--r--. 1 jimmie jimmie  40 Nov 16 22:20 victim.txt
+
+$H/outside/frames-dir:
+total 0
+drwxr-xr-x. 1 jimmie jimmie   0 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 222 Nov 16 22:20 ..
+
+$H/outside/store-dir:
+total 4
+drwxr-xr-x. 1 jimmie jimmie  74 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 222 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie  42 Nov 16 22:20 jetcarp-store.json
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 keys
+drwxr-xr-x. 1 jimmie jimmie  12 Nov 16 22:20 objects
+drwxr-xr-x. 1 jimmie jimmie  30 Nov 16 22:20 refs
+drwxr-xr-x. 1 jimmie jimmie  12 Nov 16 22:20 sigs
+
+$H/outside/store-dir/keys:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  74 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 619 Nov 16 22:20 70157bfacc08b19c79fb169e9c3483b8299da333092d5905f71c574fd916adf8.json
+
+$H/outside/store-dir/objects:
+total 0
+drwxr-xr-x. 1 jimmie jimmie 12 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 74 Nov 16 22:20 ..
+drwxr-xr-x. 1 jimmie jimmie 68 Nov 16 22:20 sha256
+
+$H/outside/store-dir/objects/sha256:
+total 0
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  12 Nov 16 22:20 ..
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 07
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 0e
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 50
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 6b
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 6c
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 6e
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 7b
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 a2
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 a5
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 c7
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 cf
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 d7
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 dd
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 e0
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 e8
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 fd
+drwxr-xr-x. 1 jimmie jimmie 144 Nov 16 22:20 ff
+
+$H/outside/store-dir/objects/sha256/07:
+total 4
+drwxr-xr-x. 1 jimmie jimmie  138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 1580 Nov 16 22:20 074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9.json
+
+$H/outside/store-dir/objects/sha256/0e:
+total 8
+drwxr-xr-x. 1 jimmie jimmie  144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 6568 Nov 16 22:20 0ed1f884b6c0a87f6e80ec095e2aa74dff4f597066102874d83f0ca28dd5733c.parquet
+
+$H/outside/store-dir/objects/sha256/50:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 333 Nov 16 22:20 50cdfab12873509bd910408e2bf71ea47fefe4d01c22160bd284d947796bbfbf.json
+
+$H/outside/store-dir/objects/sha256/6b:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 325 Nov 16 22:20 6bd75f28d244c4db3a9963422f3f4cbf22c5aada63b67598f6809b8ba81941aa.json
+
+$H/outside/store-dir/objects/sha256/6c:
+total 16
+drwxr-xr-x. 1 jimmie jimmie   144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie    68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 12732 Nov 16 22:20 6c84bd5dbb8de89b7be23a42a15db7daa2bf0466e63d32411e35e83da531024c.parquet
+
+$H/outside/store-dir/objects/sha256/6e:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 345 Nov 16 22:20 6eb8c8dbfb995abb4f137ecbc8b013a59c14fec6afef5829d3fa9c4ea90584a1.json
+
+$H/outside/store-dir/objects/sha256/7b:
+total 12
+drwxr-xr-x. 1 jimmie jimmie   144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie    68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 11727 Nov 16 22:20 7bf95d65bc65f61a386f82aa450c9a3d16ae4aa0ee5836e0be42e135a41268e5.parquet
+
+$H/outside/store-dir/objects/sha256/a2:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 889 Nov 16 22:20 a28da135bf8420e089eeeb6acb58f1ca11d27ee11976b83d342a2bd13d4f3b21.json
+
+$H/outside/store-dir/objects/sha256/a5:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 346 Nov 16 22:20 a5f6fc46e7bb1f8b217dc64db2690bf9d8b2258f8176588f7abb17904c2f53ea.json
+
+$H/outside/store-dir/objects/sha256/c7:
+total 8
+drwxr-xr-x. 1 jimmie jimmie  144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 5245 Nov 16 22:20 c7617ed61c5209f8834fbdbc205a1ee50257d52eb0653e904590cd72cabb8af4.parquet
+
+$H/outside/store-dir/objects/sha256/cf:
+total 4
+drwxr-xr-x. 1 jimmie jimmie  144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 2464 Nov 16 22:20 cf36023d0e759a2b5e76ad86f97d8e789bf34c548a7ec426d2390b42af4dca0a.parquet
+
+$H/outside/store-dir/objects/sha256/d7:
+total 4
+drwxr-xr-x. 1 jimmie jimmie  144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 1804 Nov 16 22:20 d7762c49a76aec213b0295962bcf546c45356ba7981883b549e4e0c609215196.parquet
+
+$H/outside/store-dir/objects/sha256/dd:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 264 Nov 16 22:20 dddfcaa8f5f797d4a1973202278c588c1b4467d9bdf1ee6c8704052ea7e79ad9.json
+
+$H/outside/store-dir/objects/sha256/e0:
+total 4
+drwxr-xr-x. 1 jimmie jimmie  144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 3237 Nov 16 22:20 e0e5d087bc0fa53805fa0ea5ff217a75217ad2f8b45cf439818d367a25b7d327.parquet
+
+$H/outside/store-dir/objects/sha256/e8:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 138 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  68 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 343 Nov 16 22:20 e89dcbf2a0fd476fa55a10c82c1621eec21245ae4edd8a6fc853837d35462efa.json
+
+$H/outside/store-dir/objects/sha256/fd:
+total 12
+drwxr-xr-x. 1 jimmie jimmie   144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie    68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 11920 Nov 16 22:20 fd4ed0f55a56a9fbc6f4c6b2271af49642fa4b0436fdfc8bfa942801c04e6497.parquet
+
+$H/outside/store-dir/objects/sha256/ff:
+total 8
+drwxr-xr-x. 1 jimmie jimmie  144 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   68 Nov 16 22:20 ..
+-rw-r--r--. 2 jimmie jimmie 4631 Nov 16 22:20 ff6eaa74969502bab362ab5a4c8783260f06748de36d6de2a4c427bffb5669ff.parquet
+
+$H/outside/store-dir/refs:
+total 4
+drwxr-xr-x. 1 jimmie jimmie  30 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  74 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 578 Nov 16 22:20 t42b-store.json
+
+$H/outside/store-dir/sigs:
+total 0
+drwxr-xr-x. 1 jimmie jimmie 12 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 74 Nov 16 22:20 ..
+drwxr-xr-x. 1 jimmie jimmie  4 Nov 16 22:20 sha256
+
+$H/outside/store-dir/sigs/sha256:
+total 0
+drwxr-xr-x. 1 jimmie jimmie   4 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie  12 Nov 16 22:20 ..
+drwxr-xr-x. 1 jimmie jimmie 128 Nov 16 22:20 07
+
+$H/outside/store-dir/sigs/sha256/07:
+total 0
+drwxr-xr-x. 1 jimmie jimmie 128 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie   4 Nov 16 22:20 ..
+drwxr-xr-x. 1 jimmie jimmie 136 Nov 16 22:20 074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9
+
+$H/outside/store-dir/sigs/sha256/07/074f00e18ecb4692c83f967daa9d31c7d78d021bd882dd657c7583c2449ef9a9:
+total 4
+drwxr-xr-x. 1 jimmie jimmie 136 Nov 16 22:20 .
+drwxr-xr-x. 1 jimmie jimmie 128 Nov 16 22:20 ..
+-rw-r--r--. 1 jimmie jimmie 310 Nov 16 22:20 70157bfacc08b19c79fb169e9c3483b8299da333092d5905f71c574fd916adf8.sig
+[exit 0, 0.00 s]
+
+
+### (c4) MCP: the hidden store beside the export planted ($H/out/.exp-store-mcp.store -> $H/outside/store-dir-mcp)
+$ ls -la $H/out | grep exp-store-mcp; ls -A $H/outside/store-dir-mcp | wc -l
+lrwxrwxrwx. 1 jimmie jimmie  82 Nov 16 22:21 .exp-store-mcp.store -> $H/outside/store-dir-mcp
+0
+[exit 0, 0.00 s]
+
+$ python3 $R/R4-scripts/mcall.py $R/t42b-hiddenstore-mcp-rc4.jsonl '[["pack",{"export":{"to":"exp-store-mcp","publish":{"feed":"t42b-store-mcp","no_media":true}}}]]'
+initialize -> ok
+== tools/call pack {"export": {"to": "exp-store-mcp", "publish": {"feed": "t42b-store-mcp", "no_media": true}}} -> isError=True
+   the MCP tools may only write inside $H/out or $H/library (got $H/out/.exp-store-mcp.store)
+server exit 0
+[exit 0, 0.23 s]
+
+$ ls -la $H/out | grep exp-store-mcp; ls -A $H/outside/store-dir-mcp | wc -l; ls -A $H/outside/store-dir-mcp
+lrwxrwxrwx. 1 jimmie jimmie  82 Nov 16 22:21 .exp-store-mcp.store -> $H/outside/store-dir-mcp
+0
+[exit 0, 0.01 s]
+
+### (c5) MCP: pack publish into a store folder that is itself such a link ($H/out/pub-link -> $H/outside/pub-dir)
+$ python3 $R/R4-scripts/mcall.py $R/t42b-publish-mcp-rc4.jsonl '[["pack",{"publish":{"feed":"t42b-pub","to":"pub-link","no_media":true}}]]'
+initialize -> ok
+== tools/call pack {"publish": {"feed": "t42b-pub", "to": "pub-link", "no_media": true}} -> isError=True
+   the MCP tools may only write inside $H/out or $H/library (got $H/out/pub-link)
+server exit 0
+[exit 0, 0.23 s]
+
+$ ls -A $H/outside/pub-dir | wc -l
+0
+[exit 0, 0.00 s]
+

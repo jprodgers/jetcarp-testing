@@ -1,0 +1,31 @@
+03:31:46 start: server jetcarp 0.4.2-rc.3; every 5.0 s for 300.0 s
+03:32:09 gen 1000 rate -/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 252 MB
+03:32:09 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:32:15 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 252 MB
+03:32:20 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:32:25 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:32:30 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 277 MB
+03:32:35 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:32:40 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:32:45 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:32:50 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:32:55 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:00 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:05 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:10 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:15 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:20 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:25 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:30 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:35 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:40 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:45 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:50 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:33:55 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:34:07 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:34:07 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 253 MB
+03:34:12 parse error: JSONDecodeError('Expecting value: line 1 column 1 (char 0)'): {'id': 36, 'jsonrpc': '2.0', 'result': {'content': [{'text': "the JETCARP app closed the connection (to use this server's private world instead, call use_app with attach=false)", 'type': 'text'}], 'isError': True, 'resultType': 'complete'}}
+03:34:17 parse error: JSONDecodeError('Expecting value: line 1 column 1 (char 0)'): {'id': 37, 'jsonrpc': '2.0', 'result': {'content': [{'text': "the JETCARP app is not accepting AI control. Open the JETCARP app, switch on AI control (Tools, AI control..., Allow AI control), then try again. (to use this server's private world instead, call use_app with attach=false)", 'type': 'text
+03:34:22 parse error: JSONDecodeError('Expecting value: line 1 column 1 (char 0)'): {'id': 38, 'jsonrpc': '2.0', 'result': {'content': [{'text': "the JETCARP app is not accepting AI control. Open the JETCARP app, switch on AI control (Tools, AI control..., Allow AI control), then try again. (to use this server's private world instead, call use_app with attach=false)", 'type': 'text
+03:34:27 parse error: JSONDecodeError('Expecting value: line 1 column 1 (char 0)'): {'id': 39, 'jsonrpc': '2.0', 'result': {'content': [{'text': "the JETCARP app is not accepting AI control. Open the JETCARP app, switch on AI control (Tools, AI control..., Allow AI control), then try again. (to use this server's private world instead, call use_app with attach=false)", 'type': 'text
+03:34:32 end; mcp exit 0; stderr: jetcarp mcp: connected to the JETCARP app on port 47811

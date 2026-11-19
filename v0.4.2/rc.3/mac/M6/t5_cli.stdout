@@ -1,0 +1,45 @@
+scene:      good.json
+tiling:     Square (parallelogram) (square): 4096 cells, 64x64 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    cpu (12 threads)
+generation: 100
+hash:       9ac1641970c05012
+status:     Running
+done:       no
+field 0:    shared binary, 371 live: Life [B3/S23]
+saved:      good-saved.json
+time:       0.02s on 12 threads
+scene:      max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (Apple M2 Max, Metal)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       2.95s on 12 threads
+[exit 0, wall 4.0 s, max RSS 3.36 GB]
+scene:      max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    cpu (12 threads)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       20.91s on 12 threads
+[exit 0, wall 22.0 s, max RSS 1.92 GB]
+Error: reading tiny.rhai
+
+Caused by:
+    No such file or directory (os error 2)
+error: line 9, column 1: cannot create /Users/Jimmie/jetcarp-rc-042c/m6/ro-out/2026-11-16_07-47-37_HexW: Permission denied (os error 13)
+time:   0.00s
+Error: hexw-all.rhai: line 9, column 1: cannot create /Users/Jimmie/jetcarp-rc-042c/m6/ro-out/2026-11-16_07-47-37_HexW: Permission denied (os error 13)
+Error: /Users/Jimmie/jetcarp-rc-042c/m6/ro-out/piles: Permission denied (os error 13)
+Error: 'good.json' is neither a scene file nor a Quick Start entry (see `jetcarp quickstart` and `jetcarp library quickstart`)
+Error: could not create folder /Users/Jimmie/jetcarp-rc-042c/m6/ro-out/wallpapers: Permission denied (os error 13)
+Error: No such file or directory (os error 2)
+Error: reading good.json
+
+Caused by:
+    No such file or directory (os error 2)

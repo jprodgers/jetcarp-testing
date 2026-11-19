@@ -1,0 +1,145 @@
+--- 07:55:37 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 562 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 562 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:38 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 606 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 606 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:40 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 652 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 652 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:42 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 704 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 704 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:43 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 750 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 750 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:45 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 804 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 804 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:46 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 849 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 849 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:48 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 893 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 893 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:50 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 959 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 961 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:52 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1025 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1028 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:55:54 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:55:57 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:55:59 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:00 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:02 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:04 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:06 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:08 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:10 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:11 power: 1
+screen 0: A classic a day · profile Life (1 of 7) · generation 1048 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1) · paused
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1051 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5) · paused
+paused: on battery
+--- 07:56:13 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1059 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1062 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:15 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1106 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1108 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:17 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1150 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1153 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:18 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1195 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1197 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:20 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1249 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1251 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:22 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1303 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1306 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:23 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1347 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1350 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:25 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1393 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1395 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:26 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1437 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1440 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:28 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1491 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1493 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:29 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1535 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1538 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:31 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1588 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1591 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:33 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1633 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1635 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:34 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1686 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1689 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:36 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1732 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1734 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:37 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1776 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1779 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:39 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1821 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1823 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:40 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1864 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1867 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+--- 07:56:42 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 1907 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1910 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+--- 07:56:44 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 53 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 51 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+--- 07:56:45 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 99 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 98 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+--- 07:56:47 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 145 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 143 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+--- 07:56:48 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 189 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 188 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+--- 07:56:50 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 235 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 233 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)
+--- 07:56:51 power: 2
+screen 0: A classic a day · profile Life (1 of 7) · generation 280 · 230400 cells · window on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 279 · 409440 cells · window on monitor 1 (\\.\DISPLAY5)

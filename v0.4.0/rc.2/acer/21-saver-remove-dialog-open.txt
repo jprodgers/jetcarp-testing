@@ -1,0 +1,25 @@
+﻿(Jimmie ran: jetcarp host saver install -> 21-saver-install-raw.txt; the Screen Saver Settings dialog open, its preview running from JETCARP.scr)
+
+> jetcarp host saver remove   (07:53:41, dialog open)
+Error: C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr is in use, most likely by the preview in Screen Saver Settings. Close that dialog, then run `jetcarp host saver remove` again. Nothing was changed.
+(exit 1)
+
+> jetcarp host saver status
+JETCARP is the selected screen saver.
+(exit 0)
+SCRNSAVE.EXE: C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr
+.scr present: True
+
+(Jimmie closed the dialog with Cancel)
+> jetcarp host saver remove   (07:54:54)
+removed
+(exit 0)
+
+> jetcarp host saver status
+JETCARP's screen saver is not installed.
+(exit 0)
+SCRNSAVE.EXE: (none)
+ScreenSaveActive: 1  TimeOut: 60
+.scr present: False
+JETCARP folder: library.sqlite-jobs, searches, host.lock, library.sqlite, library.sqlite-shm, library.sqlite-wal
+saver processes: none (the four ids first listed were this check's own shells, whose command line held the search text; no jetcarp process running)

@@ -1,0 +1,68 @@
+# Reconstructed on 2026-11-15 from the copy this session had printed: the original file in the test
+# folder was deleted by mistake (a helper named Rd ran PowerShell's rd alias, Remove-Item). See notes.md.
+# The per-minute probe lines ('jetcarp jobs status 2 --json -> exit 0 ... (1.4b-probe)') were filtered out of the printed copy.
+2026-11-15 06:46:08 === Phase 1 follow-up starts; processes: 50092<-34160 jetcarpw.exe resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet | 53624<-50092 jetcarp.exe resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet
+2026-11-15 07:42:36 1.4b rates: 57 probes after the resume: 0 at 0/s, median 36/s; peak working set after the resume 1223 MB
+2026-11-15 07:42:36 processes before the second kill: 50092<-34160 jetcarpw.exe resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet | 53624<-50092 jetcarp.exe resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet
+2026-11-15 07:42:36 killing 53624: "C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarp.exe" jobs resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet
+2026-11-15 07:42:38 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-kill-2)
+2026-11-15 07:42:39 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-kill-2-text)
+2026-11-15 07:42:39 +2 s processes: 
+2026-11-15 07:42:51 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-kill-15)
+2026-11-15 07:42:52 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-kill-15-text)
+2026-11-15 07:42:52 +15 s processes: 
+2026-11-15 07:43:07 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-kill-30)
+2026-11-15 07:43:07 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-kill-30-text)
+2026-11-15 07:43:07 +30 s processes: 
+2026-11-15 07:43:21 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-kill-45)
+2026-11-15 07:43:22 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-kill-45-text)
+2026-11-15 07:43:22 +45 s processes: 
+2026-11-15 07:43:36 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-kill-60)
+2026-11-15 07:43:37 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-kill-60-text)
+2026-11-15 07:43:37 +60 s processes: 
+2026-11-15 07:44:07 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-kill-90)
+2026-11-15 07:44:07 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-kill-90-text)
+2026-11-15 07:44:07 +90 s processes: 
+2026-11-15 07:44:36 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-kill-120)
+2026-11-15 07:44:37 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-kill-120-text)
+2026-11-15 07:44:37 +120 s processes: 
+2026-11-15 07:44:37 1.4b after kill +2 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:44:37 1.4b after kill +15 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:44:37 1.4b after kill +30 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:44:37 1.4b after kill +45 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:44:37 1.4b after kill +60 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:44:37 1.4b after kill +90 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:44:37 1.4b after kill +120 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:44:37 jetcarp jobs wait 2 --timeout 60 -> exit 6 in 0.2 s (1.4b-wait-after-kill)
+2026-11-15 07:45:40 jetcarp jobs resume 2 --minutes 1 -> exit 0 in 63.1 s (1.4b-resume-final)
+2026-11-15 07:45:40 jetcarp jobs wait 2 --timeout 60 -> exit 3 in 0.2 s (1.4b-wait-end)
+2026-11-15 07:45:41 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4b-status-final)
+2026-11-15 07:45:41 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4b-status-final-text)
+2026-11-15 07:45:44 jetcarp jobs runs 2 --limit 0 --format csv --out "C:\Users\jimmi\jetcarp-rc-042b\logs\1.4b-src-runs-stage1.csv" -> exit 0 in 3.1 s (1.4b-src-runs1)
+2026-11-15 07:45:45 jetcarp jobs runs 2 --stage 2 --limit 0 --format csv --out "C:\Users\jimmi\jetcarp-rc-042b\logs\1.4b-src-runs-stage2.csv" -> exit 0 in 1.1 s (1.4b-src-runs2)
+2026-11-15 07:45:46 1.4b final: status paused, resume-final exit 0, wait exit 3; screened 254912 + confirmed 6480 = 261392; csv stage 1 254912, stage 2 6480; elapsed 120 min; 0.44 GB
+2026-11-15 07:45:49 jetcarp pack export --to "C:\Users\jimmi\jetcarp-rc-042b\P14b-pack" --feed rc2-long --no-media -> exit 0 in 3.3 s (1.4b-pack-export)
+2026-11-15 07:45:50 jetcarp pack check "C:\Users\jimmi\jetcarp-rc-042b\P14b-pack" -> exit 0 in 0.3 s (1.4b-pack-check)
+2026-11-15 07:45:54 jetcarp pack import "C:\Users\jimmi\jetcarp-rc-042b\P14b-pack" --library "C:\Users\jimmi\jetcarp-rc-042b\import14b\library.sqlite" -> exit 0 in 3.8 s (1.4b-pack-import)
+2026-11-15 07:45:54 jetcarp jobs list --library "C:\Users\jimmi\jetcarp-rc-042b\import14b\library.sqlite" --json -> exit 0 in 0.2 s (1.4b-import-list)
+2026-11-15 07:45:54 1.4b imported explore job: 1
+2026-11-15 07:45:56 jetcarp jobs runs 1 --library "C:\Users\jimmi\jetcarp-rc-042b\import14b\library.sqlite" --limit 0 --format csv --out "C:\Users\jimmi\jetcarp-rc-042b\logs\1.4b-import-runs-stage1.csv" -> exit 0 in 2.2 s (1.4b-import-runs1)
+2026-11-15 07:45:56 jetcarp jobs runs 1 --library "C:\Users\jimmi\jetcarp-rc-042b\import14b\library.sqlite" --stage 2 --limit 0 --format csv --out "C:\Users\jimmi\jetcarp-rc-042b\logs\1.4b-import-runs-stage2.csv" -> exit 0 in 0.3 s (1.4b-import-runs2)
+2026-11-15 07:45:58 jetcarp jobs status 1 --library "C:\Users\jimmi\jetcarp-rc-042b\import14b\library.sqlite" --json -> exit 0 in 0.2 s (1.4b-import-status)
+2026-11-15 07:46:10 RESULT 1.4b end and pack : pass: job ended 'paused' after 120 min; source runs 261392 (screened 254912 + confirmed 6480; csv 254912 + 6480); memory at end 0.44 GB; 57 probes after the resume: 0 at 0/s, median 36/s; pack 19.7 MB, export exit 0 ('explore job 2 (search e1d375fb-aa49-42bc-9995-4f4b40e87a40): sealed its newest 261,392 runs first, so the pack carries every run'), check 0, import 0; imported runs 261392 (csv 254912 + 6480, same rows: True)
+2026-11-15 07:46:10 RESULT 1.4b status after the second kill : +2 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory' / +15 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory' / +30 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory' / +45 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory' / +60 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory' / +90 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory' / +120 s: json status running, stale False, resumable True; text 'status running, 1 h 59 min run over every session, 6,480 confirmation runs, 263,202 candidates tried, 1.19 GB of memory'
+2026-11-15 07:46:10 === recovery reruns
+2026-11-15 07:46:21 1.3-recovery-rtx-par-1 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:31 1.3-recovery-rtx-par-2 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:40 1.3-recovery-rtx-par-3 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:50 1.3-recovery-rtx-par-4 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:59 1.3-recovery-rtx-par-5 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:47:09 1.3-recovery-rtx-serial-1 exit 0x00000000; ok: a_run_that_fails_part_way_leaves_the_world_as_it_was,gpu_and_cpu_generations_mix_around_a_failure
+2026-11-15 07:47:21 1.3-recovery-rtx-serial-2 exit 0x00000000; ok: a_run_that_fails_part_way_leaves_the_world_as_it_was,gpu_and_cpu_generations_mix_around_a_failure
+2026-11-15 07:47:34 1.3-recovery-rtx-serial-3 exit 0x00000000; ok: a_run_that_fails_part_way_leaves_the_world_as_it_was,gpu_and_cpu_generations_mix_around_a_failure
+2026-11-15 07:57:34 1.3-recovery-uhd-par-1 exit TIMEOUT; ok: 
+2026-11-15 07:57:44 1.3-recovery-uhd-par-2 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:57:53 1.3-recovery-uhd-par-3 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:57:53 RESULT 1.3 recovery reruns : RTX --nocapture: 0 of 5 crashed (0x00000000 0x00000000 0x00000000 0x00000000 0x00000000); RTX --nocapture --test-threads=1: 0 of 3 crashed (0x00000000 0x00000000 0x00000000); UHD --nocapture:  of 3 crashed (TIMEOUT 0x00000000 0x00000000)
+2026-11-15 07:57:53 jetcarp processes at end: 
+2026-11-15 07:57:53 === Phase 1 follow-up ends

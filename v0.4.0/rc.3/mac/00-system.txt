@@ -1,0 +1,28 @@
+Recorded: 2026-11-12 23:03 -0500
+Machine: MacBook Pro (Mac14,6), Apple M2 Max (12 CPU cores: 8 P + 4 E; 38-core GPU, Metal 4), 64 GB
+OS: macOS 27.0.1, build 26A434, arm64
+Shell: /bin/zsh, zsh 5.9
+
+Monitors attached:
+  Color LCD (built-in Liquid Retina XDR), 3456x2234 Retina, main
+  (internal panel only; the AOC is not attached yet)
+
+Power: AC attached, battery 80%, not charging
+
+Before install (state left by rc1; the Mac skipped rc2):
+  jetcarp on PATH: no (rc1 uninstalled); ~/.local/bin holds only the claude link; ~/.local/lib: empty folder (rc1 leftover)
+  ~/Library/Application Support/jetcarp: rc1's app.json, host.json (both screens "wallpaper"), empty desktop-pictures/,
+    and the library data/library.sqlite (1,064,960 bytes, sha256 8a00e2e2...667464, no -wal/-shm; journal_mode wal)
+    plus an empty data/library.sqlite-jobs/. No setup.json (rc1 had no wizard).
+    Library rows: quickstart 364, patterns 64, sightings 64, jobs 3, engine_pins 39, ratings 1, quickstart_usage 4.
+  ~/.cache/jetcarp/host.lock: 0 bytes (rc1 leftover); ~/Library/Caches/jetcarp: absent
+  ~/Pictures/JETCARP/piles: rc1's large sandpile
+  ~/Library/Screen Savers: empty; ~/Library/LaunchAgents: other programs' agents (3), another-project
+  Desktop picture: ~/Pictures/own-picture.png (sha256 40dfaec9...79ffd6, same as rc1)
+    on every Space and display, except one Space (SPACE-1-UUID) still pointing at the old CART still (not rc1's or rc3's)
+  Screen saver: idleTime 0 (never); the selection (Idle) on every display and Space still points at
+    ~/Library/Screen Savers/JETCARP.saver, deleted in rc1 (rc1's dangling-selection finding). See 00-wallpaper-choices-before.txt.
+  uv, pipx: not installed; gh, brew: /opt/homebrew/bin; python3: 3.14 (python.org framework)
+  Claude Desktop: /Applications/Claude.app 5.1231.2 installed (config has one other MCP server, another)
+
+Leftovers from an earlier development build (CART), not from rc1: ~/Library/Application Support/cart/. Left alone.

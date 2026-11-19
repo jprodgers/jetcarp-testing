@@ -1,0 +1,39 @@
+> jetcarp uninstall   (01:45:09)
+Would undo (run again with --yes):
+  remove the host's lock file C:\Users\jimmi\AppData\Local\jetcarp\host.lock
+  remove the empty folder of job locks C:\Users\jimmi\AppData\Local\jetcarp\library.sqlite-jobs
+  forget the recorded host command
+
+Kept the data folder C:\Users\jimmi\AppData\Local\jetcarp (39.1 MB); add --data to delete it.
+Kept the settings folder C:\Users\jimmi\AppData\Roaming\jetcarp; add --settings to delete it.
+Your pictures and exports in C:\Users\jimmi\OneDrive\Pictures\JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `-Uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+(exit 0, 0.2 s)
+
+> jetcarp doctor   (01:45:09)
+JETCARP 0.4.0-rc.3 on windows x86_64 (12 threads)
+
+Folders
+  settings: C:\Users\jimmi\AppData\Roaming\jetcarp
+  data:     C:\Users\jimmi\AppData\Local\jetcarp
+  output:   C:\Users\jimmi\OneDrive\Pictures\JETCARP
+  bundled:  C:\Users\jimmi\AppData\Local\Programs\jetcarp\packs (1.5 MB)
+  library:  C:\Users\jimmi\AppData\Local\jetcarp\library.sqlite (10.6 MB)
+  data in use: 39.1 MB
+
+Graphics adapters (* = used by the GPU simulation)
+    Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+  * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+    Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+    NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+    Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+      software adapter: the GPU simulation does not use it
+    Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+(exit 0, 0.7 s)
+

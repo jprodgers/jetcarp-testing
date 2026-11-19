@@ -1,0 +1,124 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "Brian's Brain on Penrose rhombs",
+  "description": "Thick and thin rhombs touch seven to eleven others at their corners. Brian's Brain (fire with exactly two firing neighbours, then rest) keeps waves of activity running across the aperiodic tiling.",
+  "tiling": {
+    "family": "penrose-rhomb",
+    "size": {
+      "level": 4
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 2,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Brian's Brain",
+      "rule": "B2/S/C3",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.2
+        }
+      }
+    }
+  ],
+  "commands": [
+    {
+      "op": "step",
+      "gens": 377
+    },
+    {
+      "op": "update_ca",
+      "id": 1,
+      "change": {
+        "palette": "Aurora"
+      }
+    },
+    {
+      "op": "step",
+      "gens": 340
+    },
+    {
+      "op": "set_reseed",
+      "policies": [
+        {
+          "mode": {
+            "kind": "blobs",
+            "count": 2,
+            "min_radius": 0.06,
+            "max_radius": 0.16,
+            "live": 0.35
+          },
+          "when": {
+            "kind": "settled",
+            "activity": 0.002,
+            "for_gens": 60,
+            "cycle": 12,
+            "latest": 4000
+          },
+          "cooldown": 150,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "op": "step",
+      "gens": 145
+    },
+    {
+      "op": "set_reseed",
+      "policies": [
+        {
+          "mode": {
+            "kind": "blobs",
+            "count": 2,
+            "min_radius": 0.06,
+            "max_radius": 0.16,
+            "live": 0.35
+          },
+          "when": {
+            "kind": "every",
+            "gens": 100
+          },
+          "cooldown": 150,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "op": "step",
+      "gens": 733
+    },
+    {
+      "op": "update_ca",
+      "id": 1,
+      "change": {
+        "rule": "B23/S/C3"
+      }
+    },
+    {
+      "op": "step",
+      "gens": 21
+    }
+  ],
+  "view": {
+    "center": [
+      -3.552713678800501e-15,
+      0.0
+    ],
+    "speed": 15.0,
+    "zoom": 14.475920819828177
+  },
+  "record": {
+    "generation": 1616,
+    "hash": "472d01a0e80d2c12",
+    "jetcarp_version": "0.4.2-rc.2",
+    "dead_boundary": true
+  }
+}

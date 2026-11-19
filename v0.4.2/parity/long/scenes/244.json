@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA rainbow fronts (Pythagorean)",
+  "description": "The rainbow-front rule (B2/S12467) on the Pythagorean tiling. Found by a JACA rule search.",
+  "tiling": {
+    "family": "pyth",
+    "size": {
+      "rect": {
+        "w": 134,
+        "h": 89
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 25,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B2/S12467",
+      "rule": "JACA B2/S12467",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Phosphor",
+      "seed": {
+        "signed": {
+          "density": 0.1,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "6f4f7446f820f68a",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

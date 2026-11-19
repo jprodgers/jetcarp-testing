@@ -1,0 +1,95 @@
+11:34:49 == 2.1 GPU explore, no --gpu, 10 min
+11:44:51 exit 0
+lines with 0/s: 12
+progress lines: 103
+lines with "of them confirmed": 102
+explore 1: 118,775 runs (169/s), 15,812 elites in 7,503 niches (836 of them confirmed), 65 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status paused, 10 min 0 s run over every session, 3,816 confirmation runs, 123,319 candidates tried, 0.99 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+11:44:51 == 2.2 GPU runs replay on the CPU
+replays: 29/30 match to 6 decimals
+hashes: 5/5 CPU = --gpu
+11:45:06 == 2.3 CPU-only explore: stop, wait, resume at once (#16)
+11:45:06 job 2
+asked explore search 2 to stop at its next checkpoint
+explore search 2 is paused
+  explore 2: 1,155 runs (2/s), 274 elites in 141 niches (41 of them confirmed), 5 of 1,359 tilings; cpu only
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+11:50:08 jobs wait exit 3 after 1.69 s
+11:54:08 resume exit 0 (explore search job 2 in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/library.sqlite)
+explore 2: 2,341 runs (3/s), 544 elites in 292 niches (61 of them confirmed), 9 of 1,359 tilings; cpu only
+  status paused, 9 min 0 s run over every session, 240 confirmation runs, 2,640 candidates tried, 0.23 GB of memory
+  threads: 30 for runs on the processor, of 32 cores (2 left free)
+  this session: 58 runs on the processor stopped at their time cap (kept with the generations they reached), 8 runs given up at a stop or the end (not kept)
+11:54:08 == 2.4 smart JACA search from job 2 (#25)
+12:00:09 job 3
+parents: 500 JACA runs of explore job 2 (its best ones: it has no reviews with the verdicts asked for); 461 with both signs holding to the end
+  parents: 500 JACA runs of explore job 2 (its best ones: it has no reviews with the verdicts asked for); 461 with both signs holding to the end
+runs 38828; origins: random 28.7%, mutate 17.9%, balance 13.9%, transplant 12.3%, seed 9.2%, cover 9.0%, transplant-scaled 8.9%
+sign_balance filled on 38828 of 38828
+12:00:09 == 2.5 clips (#29) on the new search, and on a copy of the everyday library (#33)
+12:00:14 clips written: 48
+    15342   2.13  cycle   jaca               ih38             JACA B1/S012 blast 2  [maybe]
+      461   1.78  running jaca               catalog:k6-354   JACA B1/S23  [drop]
+     3101   1.69  running jaca               triangle         JACA B1/S23 blast 1  [keep]
+    12900   1.68  cycle   jaca               snubhex          JACA +B124/S123 -B12/S1237 blast 2  [maybe]
+     3401   1.65  running jaca               catalog:k6-113   JACA B12/S012 blast 2  [keep]
+    14858   1.64  cycle   jaca               ih33             JACA +B2/S1235 -B2/S0125 blast 3  [drop]
+     9882   1.63  running jaca               catalog:k3-047   JACA +B23/S012 -B16/S012  [drop]
+    12734   1.63  cycle   jaca               catalog:k2-002   JACA B1234/S blast 2  [maybe]
+12:00:19 clips from the copy's job 2: 48
+12:00:19 == 2.6 refit, rescore, scored search on the copy (#30, #36)
+12:00:32 refit exit 0
+held-out AUC 0.900 (keep against drop; on the runs fitted 0.940; the built-in score 0.769)
+12:00:33 rescore exit 0
+explore 2: 93,243 runs (13/s), 5,753 elites in 2,564 niches (0 of them confirmed), 1,007 of 1,359 tilings; cpu only
+  score: the score model 'Jimmie Rodgers, jaca on explore job 2' (for jaca runs)
+12:03:34 scored job 3
+score: the score model 'Jimmie Rodgers, jaca on explore job 2' (for jaca runs)
+  score: the score model 'Jimmie Rodgers, jaca on explore job 2' (for jaca runs)
+  File "<string>", line 1
+    import csv,sys; r=list(csv.DictReader(open(sys.argv[1]))); print(f"csv rows {len(r)}; sign_ columns: {sum(k.startswith(\"sign_\") for k in r[0])}")
+                                                                                                                            ^
+SyntaxError: unexpected character after line continuation character
+12:03:34 == 2.7 jobs wait, caps, kill, GPU off (#31, #32)
+12:03:36 wait-done job 4: exit 0 (expect 0)
+12:03:36 capped job 5: exit 3 (expect 3); /home/jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.2/framework/F2/2.7-capped-status.txt:  note: memory 0.1 GB is over the cap of 0.05 GB
+12:04:22 kill -9 the detached hunt (job 6, pid 1109940)
+12:04:27 jobs wait printed 7 lines in its wait (#32: only changed lines)
+12:05:07 after the kill: exit 6 (expect 6) in 40.2 s
+12:05:07 again: exit 6 (expect 6, at once)
+12:06:08 resume exit 0
+12:06:08 GPU off hunt exit 0: the GPU was asked for, but JETCARP_GPU=off: running on the processor
+12:06:08 == 2.8 rules, names, progress
+        "neighborhood": "edge",
+        "neighborhood": "edge",
+Error: a V goes at the end of the rule or right after its B or S counts: B47/S2V
+12:06:10 bad rules file exit 1:   line 3 of /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/2.8-rules.txt: B4x/S2: 'x' is not a neighbour count
+30/30 soups in each of 6 groups
+12:06:11 == 2.9 library soup and the scripts
+catalog: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/library.sqlite (5 shown of 6 matching)
+12334684ad3495652c4d2c2786cf41e1  c orthogonal spaceship 4c #123346  B2/S34       Square                     p1      4c  seen 1     score  75.5  new  c orthogonal
+5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 519805 score  74.4  new  c/4 diagonal
+1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 39    score  72.0  new  c/2 orthogonal
+77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23       Square                     p4     11c  seen 233   score  71.1  new  c/2 orthogonal
+6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23       Square                     p4      9c  seen 735   score  70.6  new  c/2 orthogonal
+12:06:11 ship 12334684ad3495652c4d2c2786cf41e1
+12:06:12 gens 400: 0 lines with 123346
+12:06:13 gens 800: 0 lines with 123346
+12:06:13 gens 1600: 0 lines with 123346
+12:06:15 gens 2500: 0 lines with 123346
+12:06:15 --best 3 wrote 1 scenes
+12:06:17 jaca-territories exit 0
+12:06:17 == 2.10 an export that takes a running search (the rest is F10)
+12:07:03 export of running job 9: exit 1 (expect 1): Error: explore job 9 is running, and its newest 6,144 runs are not sealed yet, so the pack would leave them out
+12:07:03 the --to folder left behind: yes
+12:07:03 == 2.12 the everyday library copy (0.4.1's counts were read beforehand)
+catalog:        /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data-copy-041/library.sqlite
+schema version: 3
+patterns 0, rules 0, pattern rules 0, sightings 0 (0 copies), jobs 2, Quick Start 1194, ratings 227, media 0, ants 0
+    2  explore  paused   2026-11-14T10:39:20Z  explore 2: 93,243 runs (13/s), 5,740 elites in 2,557 niches, 0 confirmed, 1,007 of 1,359 tilings; cpu only
+    1  explore  done     2026-11-14T00:13:27Z  Quick Start build (explore 1): 830 atlas entries published (830 new, 0 updated, 0 removed); 7,557 runs (87/s), 2,789 elites in 1,623 niches, 50 confirmed, 15 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+2 job(s); 0 running
+12:07:04 0.4.1 on the copy rc.2 opened: exit 0 (patterns 0, rules 0, pattern rules 0, sightings 0 (0 copies), jobs 2, Quick Start 1194, ratings 227, media 0, ants 0)
+12:07:04 == processes left: 1
+12:07:04 == done

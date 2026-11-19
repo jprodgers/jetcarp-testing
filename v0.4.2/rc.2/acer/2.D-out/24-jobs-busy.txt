@@ -1,0 +1,2 @@
+   11  hunt     paused   2026-11-15T20:27:52Z  hunt 11: 144,131/100,000,000 soups, 1199 soups/s, 3,101,063 objects (ships 274,779, osc 896,947, still 1,929,337), 87 distinct, 13 new | newest: still life 13c #66e25d (B3/S23)
+1 job(s); 0 running

@@ -1,0 +1,45 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA collapsing loops (blast 3)",
+  "description": "Blast 3 on a 3-uniform tiling with edge neighbours: wide glowing loops that shrink and collapse. Found by a JACA rule search.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k3-011"
+    },
+    "size": {
+      "rect": {
+        "w": 96,
+        "h": 28
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 30,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B13/S234V -B13/S2345V blast 3",
+      "rule": "JACA +B13/S234 -B13/S2345 blast 3",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Neon",
+      "seed": {
+        "signed": {
+          "density": 0.45,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Synthwave"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "d4c723883ad1ef45",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

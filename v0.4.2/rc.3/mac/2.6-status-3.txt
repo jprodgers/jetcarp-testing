@@ -1,0 +1,10 @@
+explore 3: 24,366 runs (57/s), 3,901 elites in 1,963 niches (173 of them confirmed), 18 of 1,359 tilings; Apple M2 Max, Metal
+  status paused, 5 min 59 s run over every session, 861 confirmation runs, 25,437 candidates tried, 2.46 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  parents: 500 JACA runs of explore job 2 (its best ones: it has no reviews with the verdicts asked for); 379 with both signs holding to the end
+  score: the score model 'Jimmie Rodgers, jaca on explore job 3' (for jaca runs)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                     24,366   0.55   2.11   3,901
+  folder: /Users/Jimmie/jetcarp-rc-042c/data/searches/294b906e-1384-4a76-9ba5-b012745e1747
+  `jetcarp jobs resume 3` continues it from its archive (not run for run: the search is not deterministic)

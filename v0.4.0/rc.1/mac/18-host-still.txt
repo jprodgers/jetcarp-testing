@@ -1,0 +1,20 @@
+$ jetcarp host still on   (01:31:48)
+running, pid 70227, up 788.0s, 162 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 149392 · 170648 cells
+screen 1: Classics, hourly · profile Life (1 of 7) · generation 5555 · 409440 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+exit 0
+
+$ jetcarp host stop   (01:31:48)
+stopped
+exit 0 after 0 s
+
+$ jetcarp host status
+Error: the JETCARP background host is not running
+exit 1
+
+$ jetcarp host still off   (01:34:26, host not running)
+saved; the host is not running
+put the desktop's own picture back
+exit 0

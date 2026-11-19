@@ -1,0 +1,10 @@
+explore 3: 4,096 runs (0/s), 1,046 elites in 555 niches (0 of them confirmed), 3 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+  status paused, 2 min 59 s run over every session, 0 confirmation runs, 5,120 candidates tried, 0.44 GB of memory
+  threads: 20 for runs on the processor and 10 for the GPU's batches, of 32 cores (2 left free)
+  this session: 0 runs on the processor stopped at their time cap (kept with the generations they reached), 1,024 runs given up at a stop or the end (not kept)
+  score: the score model 'Jimmie Rodgers, jaca on explore job 2' (for jaca runs)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                      4,096   0.39   2.82   1,046
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data-copy/searches/b9fdd0f5-1e5d-4cf2-a024-7c9ba79d5379
+  `jetcarp jobs resume 3` continues it from its archive (not run for run: the search is not deterministic)

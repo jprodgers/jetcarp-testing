@@ -1,0 +1,56 @@
+file symlink NOT made (OSError: [WinError 1314] A required privilege is not held by the client: '$W\\outside\\victim.txt' -> '$W\\out\\innocent.json'); case (2) skipped
+hard link made: $W\out\innocent-hard.json = $W\outside\victim-hard.txt
+== world_new {"path": "link-outside/good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or C:\Users\jimmi\jetcarp-rc-042c\bin\packs, not $W\out\link-outside\good.json
+== world_new {"path": "link-outside\\good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or C:\Users\jimmi\jetcarp-rc-042c\bin\packs, not $W\out\link-outside\good.json
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== files_list {"file": "innocent-hard.json"} -> isError=False
+   $W\out\innocent-hard.json (47 bytes, inside $W\out):
+precious text outside, reached by a hard link
+
+
+== world_status {"save_path": "innocent-hard.json"} -> isError=False
+   Saved the scene (654 bytes, generation 0, hash 774f6f16e1e118c0) to $W\out\innocent-hard.json.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette":
+$ the hard link's outside file afterwards (654 bytes)
+{
+  "jetcarp_version": "0.4.2-rc.3",
+  "format": 1,
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 16,
+        "h": 16
+      }
+    },
+    "boundary": "wrap"
+  },
+  "r

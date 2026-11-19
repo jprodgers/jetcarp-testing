@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 33531: B3/S01257",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k6-166"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "42489594752991229",
+  "cas": [
+    {
+      "rule": "B3/S01257",
+      "neighborhood": "touch",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "clusters",
+            "count": 45,
+            "radius_tiles": 1.6207329046436323
+          },
+          "fill": {
+            "density": 0.64
+          }
+        }
+      }
+    }
+  ]
+}

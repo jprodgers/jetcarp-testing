@@ -1,0 +1,25 @@
+Recorded: 2026-11-12 00:43:50 -0500
+Machine: MacBook Pro (Mac14,6), Apple M2 Max (38-core GPU, Metal 4), 64 GB
+OS: macOS 27.0.1, build 26A434, arm64
+Shell: /bin/zsh, zsh 5.9
+
+Monitors attached:
+  Color LCD (built-in Liquid Retina XDR), 3456x2234 native, "looks like" 2056x1329 @ 120 Hz, main
+  (internal panel only; external monitor not attached yet)
+
+Power: AC attached, battery 80%, not charging
+
+Before install:
+  jetcarp on PATH: no; ~/.local/bin is already on PATH (holds only the claude link); ~/.local/lib: absent
+  ~/Library/Application Support/jetcarp, ~/.cache/jetcarp, ~/Library/Caches/jetcarp, ~/Pictures/JETCARP: absent
+  ~/Library/Screen Savers: empty
+  uv: not installed; pipx: not installed; gh: /opt/homebrew/bin/gh; python3: 3.14 (python.org framework); brew: /opt/homebrew/bin/brew
+  Desktop picture: ~/Pictures/own-picture.png (sha256 40dfaec9...79ffd6) on the
+    default Space and display; one other Space points at
+    ~/Library/Application Support/cart/desktop-pictures/still-1794302967475.png, a file that no longer exists
+  Screen saver: idleTime 0 (never starts); wallpaper store Index.plist copied outside the repository for M5
+  Login items: another program; LaunchAgents: other programs' agents (3), another-project
+
+Leftovers from an earlier development build (CART, before the JETCARP name), not from rc1:
+  ~/Library/Application Support/cart/ (app.json, host.json, host-program -> ~/Documents/GitHub/CART/target/release/cart-host,
+  empty desktop-pictures/). Left alone.

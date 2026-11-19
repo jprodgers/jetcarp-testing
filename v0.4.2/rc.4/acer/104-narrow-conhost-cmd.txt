@@ -1,0 +1,96 @@
+#### R4 #104: progress lines in a 60-column console (conhost), rc.4, 2026-11-16 22:25:54; COLUMNS unset; each row prefixed with its number
+#### during the explore (25 s in), 22:26:22
+(buffer 60 columns; window 60 x 50; cursor row 38; output mode 0x3)
+000|$ jetcarp --version
+001|jetcarp 0.4.2-rc.4
+002|$ jetcarp pack import packs\jetcarp-starter
+003|sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c18
+004|6bb59707a29: feed jetcarp-starter, by SHA256:0J4+ipNwh5xrxnE
+005|AhZzMqa2apSMLHd/KtJbgFGAQCW0 (Jimmie Rodgers), checking ever
+006|y object
+007|reading verifications, sightings, provenance and annotations
+008|
+009|checking ids and storing patterns
+010|merging sightings
+011|imported sha256:722f77500b8ae070897b8e14b413836d6bd11f88e667
+012|4fb9d9c186bb59707a29 (feed jetcarp-starter, SHA256:0J4+ipNwh
+013|5xrxnEAhZzMqa2apSMLHd/KtJbgFGAQCW0 Jimmie Rodgers, signed by
+014| its publisher)
+015|  49 objects checked (1515304 bytes)
+016|  patterns: 26 added, 0 merged, 0 flagged needs_reverify
+017|  sightings 27, ratings 0, ants 8, Quick Start 79, media 0,
+018|searches 0, retracted 0
+019|  verified again (sample): 26 of 26 passed, 0 skipped, 0 fai
+020|led
+021|$ jetcarp search explore --minutes 1
+022|explore search job 22 in ~\jetcarp-rc4\n104\lib
+023|rary\library.sqlite
+024|GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+025|
+026|←[2Kexplore 22: 0 runs (0/s), 0 elites in 0 niches (0 of the
+027|←[2Kexplore 22: 64 runs (30/s), 61 elites in 41 niches (0 of
+028|←[2Kexplore 22: 64 runs (15/s), 61 elites in 41 niches (0 of
+029|←[2Kexplore 22: 64 runs (10/s), 61 elites in 41 niches (0 of
+030|←[2Kexplore 22: 64 runs (8/s), 61 elites in 41 niches (0 of
+031|←[2Kexplore 22: 64 runs (6/s), 61 elites in 41 niches (0 of
+032|←[2Kexplore 22: 64 runs (5/s), 61 elites in 41 niches (0 of
+033|←[2Kexplore 22: 64 runs (4/s), 61 elites in 41 niches (0 of
+034|←[2Kexplore 22: 64 runs (4/s), 61 elites in 41 niches (0 of
+035|←[2Kexplore 22: 64 runs (3/s), 61 elites in 41 niches (0 of
+036|←[2Kexplore 22: 64 runs (3/s), 61 elites in 41 niches (0 of
+037|←[2Kexplore 22: 64 runs (3/s), 61 elites in 41 niches (0 of
+038|th…
+
+#### at the end, 22:27:00
+(buffer 60 columns; window 60 x 50; cursor row 49; output mode 0x7)
+000|←[2Kexplore 22: 1,136 runs (33/s), 446 elites in 256 niches
+001|←[2Kexplore 22: 1,136 runs (31/s), 446 elites in 256 niches
+002|←[2Kexplore 22: 2,159 runs (55/s), 894 elites in 511 niches
+003|←[2Kexplore 22: 2,159 runs (53/s), 894 elites in 511 niches
+004|←[2Kexplore 22: 2,159 runs (50/s), 894 elites in 511 niches
+005|←[2Kexplore 22: 2,159 runs (48/s), 894 elites in 511 niches
+006|←[2Kexplore 22: 2,159 runs (46/s), 894 elites in 511 niches
+007|←[2Kexplore 22: 2,159 runs (44/s), 894 elites in 511 niches
+008|←[2Kexplore 22: 2,159 runs (42/s), 894 elites in 511 niches
+009|←[2Kexplore 22: 2,159 runs (41/s), 894 elites in 511 niches
+010|←[2Kexplore 22: 3,149 runs (57/s), 1,340 elites in 776 niche
+011|←[2Kexplore 22: 3,197 runs (56/s), 1,367 elites in 794 niche
+012|←[2Kexplore 22: 3,397 runs (58/s), 1,516 elites in 896 niche
+013|←[2Kexplore 22: 3,397 runs (58/s), 1,516 elites in 896 niche
+014|s …
+015|explore 22: 3,397 runs (58/s), 1,516 elites in 896 niches (0
+016| of them confirmed), 6 of 1,359 tilings; NVIDIA GeForce RTX
+017|3050 6GB Laptop GPU (NVIDIA), Vulkan
+018|  status paused, 58 s run over every session, 0 confirmation
+019| runs, 3,398 candidates tried, 0.37 GB of memory
+020|  threads: 6 for runs on the processor and 4 for the GPU's b
+021|atches, of 12 cores (2 left free)
+022|  this session: 27 runs on the processor stopped at their ti
+023|me cap (kept with the generations they reached), 0 runs give
+024|n up at a stop or the end (not kept)
+025|  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (
+026|no other runs read)
+027|  family                     runs   mean   best  elites
+028|  life_like                 1,143   0.33   1.04     402
+029|  generations                 911   0.59   1.83     340
+030|  jaca                        357   0.39   1.50     211
+031|  priority                    283   0.27   1.31     147
+032|  cyclic                      148   0.39   1.52     110
+033|  rps                         139   0.45   2.28     109
+034|  hodgepodge                  136   0.86   2.24      71
+035|  greenberg_hastings          129   0.73   2.37      50
+036|  wireworld                    32   0.48   0.60      11
+037|  turmite                      24   0.72   1.51      14
+038|  spectre_glider               23   0.50   1.34       5
+039|  layered                      20   0.47   1.44      14
+040|  lenia                        19   0.54   1.70      12
+041|  sandpile                     18   0.52   1.53       5
+042|  forest_fire                  15   0.73   1.04      15
+043|  folder: ~\jetcarp-rc4\n104\library\searches\4
+044|a6dbdca-baa1-41a6-9661-c156c59d2371
+045|explore search 22 paused (at its budget); `jetcarp jobs resu
+046|me 22` continues it from its archive (not run for run: the s
+047|earch is not deterministic)
+048|done-104
+049|
+

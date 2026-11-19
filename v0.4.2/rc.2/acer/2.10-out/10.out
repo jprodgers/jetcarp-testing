@@ -1,0 +1,7 @@
+explore 1: 13,236 runs (0/s), 1,994 elites in 1,033 niches (67 of them confirmed), 12 of 1,359 tilings; not run here yet
+  status paused, 0 s run over every session, 288 confirmation runs, 13,524 candidates tried, 0.00 GB of memory
+  family                     runs   mean   best  elites
+  jaca                     13,236   0.46   2.17   1,994
+  folder: C:\Users\jimmi\jetcarp-rc-042b\phase2\import10\searches\5cbba190-5548-46c8-bf58-4ed39e19b932
+  note: its working database was rebuilt from its sealed runs
+  `jetcarp jobs resume 1` continues it from its archive (not run for run: the search is not deterministic)

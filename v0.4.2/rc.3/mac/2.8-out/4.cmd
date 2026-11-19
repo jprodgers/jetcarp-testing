@@ -1,0 +1,1 @@
+search try --tiling square --rule B47/S13568V/4 --json --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.8-B47_S13568V_4.json 

@@ -1,0 +1,276 @@
+$ jetcarp run $W\odd\truncated.json --gens 10
+Error: scene JSON: EOF while parsing a value at line 23 column 27
+exit 1
+$ jetcarp verify $W\odd\truncated.json
+Error: scene JSON: EOF while parsing a value at line 23 column 27
+exit 1
+$ jetcarp run $W\odd\unknown-rule.json --gens 10
+Error: $W\odd\unknown-rule.json: CA 1 'Life': rule 'B3/S23/Q9 Frobnicate': Generations need a state count, like B2/S/C3
+exit 1
+$ jetcarp verify $W\odd\unknown-rule.json
+Error: scene has no recorded hash
+exit 1
+$ jetcarp run $W\odd\unknown-rule-name.json --gens 10
+Error: $W\odd\unknown-rule-name.json: CA 1 'Life': 'Frobnicator' is not a rule. Try B3/S23, B2/S/C3, W30, Ant RL, WireWorld, or Sandpile.
+exit 1
+$ jetcarp verify $W\odd\unknown-rule-name.json
+Error: scene has no recorded hash
+exit 1
+$ jetcarp run $W\odd\future-format.json --gens 10
+Error: $W\odd\future-format.json: scene format 2 is newer than this JETCARP supports (1)
+exit 1
+$ jetcarp verify $W\odd\future-format.json
+Error: $W\odd\future-format.json: scene format 2 is newer than this JETCARP supports (1)
+exit 1
+$ jetcarp run $W\odd\future-format-huge.json --gens 10
+Error: scene JSON: invalid value: integer `99999999999`, expected u32 at line 3 column 22
+exit 1
+$ jetcarp verify $W\odd\future-format-huge.json
+Error: scene JSON: invalid value: integer `99999999999`, expected u32 at line 3 column 22
+exit 1
+$ jetcarp run $W\odd\empty.json --gens 10
+Error: scene JSON: EOF while parsing a value at line 1 column 0
+exit 1
+$ jetcarp verify $W\odd\empty.json
+Error: scene JSON: EOF while parsing a value at line 1 column 0
+exit 1
+$ jetcarp pack info $W\packs\good
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\good
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and patterns (a check stores nothing)
+checking sightings, ants, Quick Start entries, media and ratings
+checked sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), signed by its publisher)
+  12 objects checked (7853786 bytes)
+exit 0
+$ jetcarp pack --library $W\import-lib\good.sqlite import $W\packs\good
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: copying its segments and rebuilding its state
+merging sightings
+imported sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), signed by its publisher)
+  12 objects checked (7853786 bytes)
+  patterns: 341 added, 0 merged, 0 flagged needs_reverify
+  sightings 441, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 341 of 341 passed, 0 skipped, 0 failed
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: 99177 runs, 15668 elites in 7905 niches, rebuilt in 2.5 s
+exit 0
+$ jetcarp pack info $W\packs\truncated
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\truncated
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack --library $W\import-lib\truncated.sqlite import $W\packs\truncated
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack info $W\packs\truncated-manifest
+Error: manifest: not JSON: EOF while parsing a string at line 1 column 300
+exit 1
+$ jetcarp pack check $W\packs\truncated-manifest
+Error: manifest: not JSON: EOF while parsing a string at line 1 column 300
+exit 1
+$ jetcarp pack --library $W\import-lib\truncated-manifest.sqlite import $W\packs\truncated-manifest
+Error: manifest: not JSON: EOF while parsing a string at line 1 column 300
+exit 1
+$ jetcarp pack info $W\packs\onebyte
+export sha256:e28b03a09a10f6d2706076f164a30c7c9fca79235b3d8fa79eb20bcf809c5c29 (feed rc-framework)
+  rc.3 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error)
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\onebyte
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+$ jetcarp pack --library $W\import-lib\onebyte.sqlite import $W\packs\onebyte
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+$ jetcarp pack info $W\packs\onebyte-part
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\onebyte-part
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: part sha256:d718f867e9850f271a627ab2a6ade0bf4e53687a3c3aa34e0212a3365fb51b8c (tables/rules/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack --library $W\import-lib\onebyte-part.sqlite import $W\packs\onebyte-part
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: part sha256:d718f867e9850f271a627ab2a6ade0bf4e53687a3c3aa34e0212a3365fb51b8c (tables/rules/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack info $W\packs\unsigned
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), not signed by its publisher
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\unsigned
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE; to check it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+exit 1
+$ jetcarp pack --library $W\import-lib\unsigned.sqlite import $W\packs\unsigned
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE; to import it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+exit 1
+$ jetcarp pack info $W\packs\other-signer
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig is signed by SHA256:5E4vGUIKHQMH0T71WYbNGv0PXews/G/FkqLuaupvNGQ)
+  created 2026-11-15T16:31:46Z, licence CC0-1.0
+  annotations           20 rows in 1 part, 2544 bytes
+  patterns             341 rows in 5 parts, 84319 bytes
+  provenance           341 rows in 1 part, 17365 bytes
+  rules                  3 rows in 1 part, 1854 bytes
+  sightings            441 rows in 1 part, 10658 bytes
+  tilings                2 rows in 1 part, 6801 bytes
+  verifications        441 rows in 1 part, 12296 bytes
+  searches: 39fd769d-bfa3-492f-bcb3-1ffd617e203e
+exit 0
+$ jetcarp pack check $W\packs\other-signer
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig is signed by SHA256:5E4vGUIKHQMH0T71WYbNGv0PXews/G/FkqLuaupvNGQ
+exit 1
+$ jetcarp pack --library $W\import-lib\other-signer.sqlite import $W\packs\other-signer
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig is signed by SHA256:5E4vGUIKHQMH0T71WYbNGv0PXews/G/FkqLuaupvNGQ
+exit 1
+$ jetcarp pack --library $W\import-lib\unsigned-allowed.sqlite import $W\packs\unsigned --allow-unsigned
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: copying its segments and rebuilding its state
+merging sightings
+imported sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), not signed)
+  12 objects checked (7853786 bytes)
+  patterns: 341 added, 0 merged, 0 flagged needs_reverify
+  sightings 441, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 341 of 341 passed, 0 skipped, 0 failed
+exit 0
+$ JETCARP_GPU=RTX jetcarp run $W\limits\over-16001x16000.json --gens 1 --gpu
+Error: $W\limits\over-16001x16000.json: grid is larger than 256 million cells
+exit 1
+$ JETCARP_GPU=RTX jetcarp run $W\limits\over-37x6918919.json --gens 1 --gpu
+Error: $W\limits\over-37x6918919.json: grid is larger than 256 million cells
+exit 1
+$ JETCARP_GPU=RTX jetcarp run $W\limits\over-cells-256000001.json --gens 1 --gpu
+scene:      $W\limits\over-cells-256000001.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+generation: 1
+hash:       cdc31664a185bca3
+status:     Running
+done:       no
+field 0:    shared binary, 87830165 live: Life [B3/S23]
+time:       4.82s on 12 threads
+exit 0
+$ JETCARP_GPU=RTX jetcarp run $W\limits\max-16000x16000.json --gens 20 --gpu
+scene:      $W\limits\max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       5.14s on 12 threads
+exit 0   [wall 6.3 s, peak working set 2.82 GB, peak private 5.89 GB]
+$ JETCARP_GPU=UHD jetcarp run $W\limits\max-16000x16000.json --gens 20 --gpu
+scene:      $W\limits\max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       11.37s on 12 threads
+exit 0   [wall 12.7 s, peak working set 5.14 GB, peak private 5.87 GB]
+$ jetcarp run $W\limits\max-16000x16000.json --gens 20 --cpu --threads 12
+scene:      $W\limits\max-16000x16000.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    cpu (12 threads)
+generation: 20
+hash:       cc44c111d4811d0e
+status:     Running
+done:       no
+field 0:    shared binary, 44395091 live: Life [B3/S23]
+time:       40.02s on 12 threads
+exit 0   [wall 41.0 s, peak working set 1.92 GB, peak private 1.92 GB]
+$ jetcarp script $W\odd\tiny.rhai
+error: line 1, column 111: $W\ro-out-cli\tiny.png: Access is denied. (os error 5)
+time:   0.00s
+Error: $W\odd\tiny.rhai: line 1, column 111: $W\ro-out-cli\tiny.png: Access is denied. (os error 5)
+exit 1
+$ jetcarp script --example hexw-all
+error: line 9, column 1: cannot create $W\ro-out-cli\2026-11-16_11-25-58_HexW: Access is denied. (os error 5)
+time:   0.01s
+Error: hexw-all.rhai: line 9, column 1: cannot create $W\ro-out-cli\2026-11-16_11-25-58_HexW: Access is denied. (os error 5)
+exit 1
+$ jetcarp pile --grains 1000
+Error: $W\ro-out-cli\piles: Access is denied. (os error 5)
+exit 1
+$ jetcarp wallpaper $W\odd\good.json --size 320x200
+Error: could not create folder $W\ro-out-cli\wallpapers: Access is denied. (os error 5)
+exit 1
+$ jetcarp wallpaper life --size 320x200
+Error: could not create folder $W\ro-out-cli\wallpapers: Access is denied. (os error 5)
+exit 1
+$ jetcarp media render --scene $W\odd\good.json --gens 5
+Error: could not create folder $W\ro-out-cli\media\good: Access is denied. (os error 5)
+exit 1
+$ jetcarp run $W\odd\good.json --gens 5 --png $W\ro-out-cli\x.png
+Error: $W\ro-out-cli\x.png: Access is denied. (os error 5)
+exit 1
+Traceback (most recent call last):
+  File "C:\Users\jimmi\OneDrive\Documents\GitHub\jetcarp-rc\results\v0.4.2-rc.3\acer\A6\t5_cli.py", line 125, in <module>
+    out.write(f"(left in the folder: {os.listdir(RO)})\n")
+                                      ~~~~~~~~~~^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\jimmi\\jetcarp-rc-042c\\a6\\ro-out-cli'

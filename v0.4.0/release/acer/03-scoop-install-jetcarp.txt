@@ -1,0 +1,26 @@
+Started 2026-11-13 09:56:46 -05:00 (run by Claude in this session, Windows PowerShell 5.1, not as administrator)
+
+> scoop bucket add jetcarp https://github.com/jprodgers/scoop-jetcarp
+Checking repo... 
+OK.
+The jetcarp bucket was added successfully.
+(exit 0, 1.1 s)
+
+> scoop install jetcarp
+Installing 'jetcarp' (0.4.0) [64bit] from 'jetcarp' bucket
+Downloading https://github.com/jprodgers/jetcarp/releases/download/v0.4.0/jetcarp-0.4.0-x86_64-pc-windows-msvc.zip (26.1 MB)...
+Checking hash of jetcarp-0.4.0-x86_64-pc-windows-msvc.zip... 
+OK.
+Extracting jetcarp-0.4.0-x86_64-pc-windows-msvc.zip... 
+Done.
+Linking ~\scoop\apps\jetcarp\current => ~\scoop\apps\jetcarp\0.4.0
+Creating shim for 'jetcarp'.
+Creating shortcut for JETCARP (jetcarpw.exe)
+'jetcarp' (0.4.0) was installed successfully!
+Notes
+-----
+Start JETCARP from the Start menu, or with `jetcarp` in a terminal.
+Before `scoop uninstall jetcarp`, run `jetcarp uninstall` to undo what JETCARP set up outside its folders (the
+background host, the login entry, the screen saver).
+-----
+(exit 0, total 8.2 s)

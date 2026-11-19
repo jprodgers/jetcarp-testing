@@ -1,0 +1,227 @@
+#### R4 #122: host start --headless; host stop; host start --headless, ten times in a row, 2026-11-16 22:07:46
+(folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\h122\config, \data, \out, \library, \run)
+$ jetcarp setup --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+(exit 0, 0.1 s)
+
+## round 1
+$ jetcarp host start --headless
+running, pid 22356, up 1.0s, 306 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.2 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.3 s)
+$ jetcarp host start --headless
+running, pid 23424, up 0.0s, 306 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.6 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.6 s)
+
+## round 2
+$ jetcarp host start --headless
+running, pid 28212, up 1.0s, 331 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 75 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.0 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.3 s)
+$ jetcarp host start --headless
+running, pid 26292, up 0.0s, 324 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.7 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.5 s)
+
+## round 3
+$ jetcarp host start --headless
+running, pid 23780, up 0.0s, 306 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.7 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+$ jetcarp host start --headless
+running, pid 24112, up 0.0s, 324 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.0 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.3 s)
+
+## round 4
+$ jetcarp host start --headless
+running, pid 30680, up 1.0s, 239 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.1 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.3 s)
+$ jetcarp host start --headless
+running, pid 27352, up 0.0s, 324 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.6 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+
+## round 5
+$ jetcarp host start --headless
+running, pid 31012, up 1.0s, 306 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.6 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.6 s)
+$ jetcarp host start --headless
+running, pid 29932, up 1.0s, 260 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.2 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+
+## round 6
+$ jetcarp host start --headless
+running, pid 31136, up 0.0s, 324 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.6 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+$ jetcarp host start --headless
+running, pid 31732, up 0.0s, 260 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.7 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.6 s)
+
+## round 7
+$ jetcarp host start --headless
+running, pid 28764, up 0.0s, 306 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.6 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.3 s)
+$ jetcarp host start --headless
+running, pid 24020, up 0.0s, 242 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.7 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.3 s)
+
+## round 8
+$ jetcarp host start --headless
+running, pid 23576, up 0.0s, 260 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.6 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+$ jetcarp host start --headless
+running, pid 26900, up 0.0s, 331 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.9 s)
+$ jetcarp host stop
+stopped
+(exit 0, 1.2 s)
+
+## round 9
+$ jetcarp host start --headless
+running, pid 29316, up 0.0s, 331 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.9 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+$ jetcarp host start --headless
+running, pid 12192, up 0.0s, 324 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.7 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.7 s)
+
+## round 10
+$ jetcarp host start --headless
+running, pid 29512, up 1.0s, 306 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 1.2 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+$ jetcarp host start --headless
+running, pid 25236, up 0.0s, 324 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.6 s)
+$ jetcarp host stop
+stopped
+(exit 0, 0.2 s)
+
+RESULT #122: both starts worked in 10 of 10 rounds; jetcarp processes at the end: []

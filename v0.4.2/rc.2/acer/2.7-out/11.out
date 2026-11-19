@@ -1,0 +1,15 @@
+hunt 7: 86,857/2,000,000 soups, 1290 soups/s, 1,872,460 objects (ships 165,852, osc 541,588, still 1,165,020), 74 distinct, 37 new | newest: still life 14c #5a79a9 (B3/S23)
+  status paused, 68 s run, 86372 settled, 237 died, 248 exploded, 0 unsettled, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  B3/S23 on Square: 86857 soups, 1872460 objects (oscillator 541588, spaceship 165852, still life 1165020), 74 distinct, 37 new
+  newest finds:
+    5a79a9468a09e6300df6557d262a4432  still life 14c #5a79a9             B3/S23     Square soup 83575  (new to the catalog)
+    de0c2aea84331dde841c563372137cf0  still life 15c #de0c2a             B3/S23     Square soup 80116  (new to the catalog)
+    60ea744a112888b6145ebf7acd12d6c9  still life 13c #60ea74             B3/S23     Square soup 76061  (new to the catalog)
+    166c059919129bde1e6c2d5cb7c104ea  still life 14c #166c05             B3/S23     Square soup 71009  (new to the catalog)
+    e06b195ad0debb8efb8ebd8b5b47f983  still life 16c #e06b19             B3/S23     Square soup 68613  (new to the catalog)
+    cc999376f643a3c81b515653bb133ba6  still life 10c #cc9993             B3/S23     Square soup 66602  (new to the catalog)
+    931257315c5760eaff17656138b3245d  still life 12c #931257             B3/S23     Square soup 54702  (new to the catalog)
+    bb006764a2f8ff4c75be8afd65585202  still life 14c #bb0067             B3/S23     Square soup 47075  (new to the catalog)
+    f0e883251888a774e1e8d53e0fdb61d6  still life 10c #f0e883             B3/S23     Square soup 44484  (new to the catalog)
+    c42cde186d92d5fcfa9f966e93c05a1f  still life 10c #c42cde             B3/S23     Square soup 41269  (new to the catalog)
+  `jetcarp jobs resume 7` resumes it exactly

@@ -1,0 +1,137 @@
+# Reconstructed on 2026-11-15 from the copy this session had printed: the original file in the test
+# folder was deleted by mistake (a helper named Rd ran PowerShell's rd alias, Remove-Item). See notes.md.
+2026-11-15 04:01:38 === Phase 1 starts on ACER; test folder C:\Users\jimmi\jetcarp-rc-042b
+2026-11-15 04:01:38 power: battery 100%, status 2 (2 = mains)
+2026-11-15 04:01:38 jetcarp processes at start: 0
+2026-11-15 04:01:38 desktop state at start: (wallpaper, screen saver and Run values recorded locally)
+2026-11-15 04:01:38 === 0. unpack
+2026-11-15 04:01:40 zip sha256 aa024bbac5e9f549bce9e6b6898d0e3a08e5ac7715722a75eb181042a9d15a14; SHA256SUMS says aa024bbac5e9f549bce9e6b6898d0e3a08e5ac7715722a75eb181042a9d15a14
+2026-11-15 04:01:45 version: jetcarp 0.4.2-rc.2
+2026-11-15 04:01:56 jetcarp doctor -> exit 0 in 11.0 s (0-doctor-first)
+2026-11-15 04:01:57 jetcarp doctor -> exit 0 in 0.9 s (0-doctor-second)
+2026-11-15 04:01:57 doctor first 11.0 s, second 0.9 s; gpu-checks.json written: True
+2026-11-15 04:01:57 where.exe jetcarp: C:\Users\jimmi\scoop\shims\jetcarp.exe
+2026-11-15 04:01:57 parity copied: 371 scenes, long 40 scenes
+2026-11-15 04:01:57 RESULT 0 unpack : pass: sha256 aa024bba…, jetcarp 0.4.2-rc.2; doctor 11 s then 1 s
+2026-11-15 04:02:15 1.6 job: 1
+[... 04:01:57-04:02:15: the 1.6 hunt and status lines were not printed before the loss; RESULT 1.6 is in summary.txt ...]
+2026-11-15 04:02:15 === 1.1-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 300 gens)
+2026-11-15 04:09:39 1.1-rtx-vulkan adapters used: 335x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-15 04:09:39 RESULT 1.1-rtx-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 7.4 min
+2026-11-15 04:09:39 === 1.1-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 300 gens)
+2026-11-15 04:27:08 1.1-rtx-dx12 adapters used: 335x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12)
+2026-11-15 04:27:08 RESULT 1.1-rtx-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 17.5 min
+2026-11-15 04:27:08 === 1.1-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 300 gens)
+2026-11-15 04:33:57 1.1-uhd-vulkan adapters used: 335x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-15 04:33:57 RESULT 1.1-uhd-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 6.8 min
+2026-11-15 04:33:57 === 1.1-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 300 gens)
+2026-11-15 04:52:41 1.1-uhd-dx12 adapters used: 335x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-15 04:52:41 RESULT 1.1-uhd-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; 0 MISMATCH lines; 18.7 min
+2026-11-15 04:52:41 === 1.2-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 5000 gens)
+2026-11-15 04:54:57 1.2-rtx-vulkan adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-15 04:54:57 RESULT 1.2-rtx-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.3 min
+2026-11-15 04:54:57 === 1.2-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 5000 gens)
+2026-11-15 04:58:16 1.2-rtx-dx12 adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12)
+2026-11-15 04:58:16 RESULT 1.2-rtx-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.3 min
+2026-11-15 04:58:16 === 1.2-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 5000 gens)
+2026-11-15 05:00:42 1.2-uhd-vulkan adapters used: 40x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-15 05:00:42 RESULT 1.2-uhd-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.4 min
+2026-11-15 05:00:42 === 1.2-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 5000 gens)
+2026-11-15 05:04:28 1.2-uhd-dx12 adapters used: 40x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-15 05:04:28 RESULT 1.2-uhd-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.8 min
+2026-11-15 05:04:28 === 1.3
+2026-11-15 05:04:31 git clone -q --depth 1 -b v0.4.2-rc.2 https://github.com/jprodgers/jetcarp.git "C:\Users\jimmi\jetcarp-rc-042b\src" -> exit 0 in 0.0 min
+2026-11-15 05:04:31 src at: 2d4b84c On-screen sweep test: a sweep may stop after any size that does not fit
+2026-11-15 05:27:27 cargo test --release --workspace --no-fail-fast -> exit 101 in 22.9 min
+2026-11-15 05:27:27 1.3 RTX ignored: app::reseed_ui::tests::preset_survey, app::shots::ai_control_window_on_the_quick_start, app::shots::shots_desktop_pane_cards, app::shots::shots_desktop_show_just_this_scene, app::shots::shots_new_tiling, app::shots::shots_quick_start_atlas, app::shots::shots_tour, app::shots::shots_wallpaper, keepawake::tests::take_and_release, offscreen::tests::offscreen_ants_stop_resume, offscreen::tests::offscreen_ants_window, offscreen::tests::offscreen_catalog_tools_window, offscreen::tests::offscreen_dashboard_explore, offscreen::tests::offscreen_dashboard_window, offscreen::tests::offscreen_hashlife_window, offscreen::tests::offscreen_sandpile_stop_resume, offscreen::tests::offscreen_sandpile_window, offscreen::tests::offscreen_start_screen, offscreen::tests::offscreen_start_screen_starter_pack, setup_ui::tests::offscreen_setup_wizard, size_classes_exact_vs_float_level6, spectre_exact_equals_float_level6, gun_hashes, hunt_one_soup, hunt_throughput, big_world_reseed_timing, spectre_window_equals_level_8_cell_for_cell, profiles::tests::profile_survey, world_larger_than_one_dispatch_dimension, write_golden_packs, explore::job::tests::cpu_cost_by_family, gpu_prefix_speed, hunt_profile
+2026-11-15 05:27:27 RESULT 1.3-rtx : FAIL: 986 passed, 0 failed, 33 ignored in 133 test binaries; exit 101, 23 min
+2026-11-15 05:40:41 cargo test --release --workspace --no-fail-fast -> exit 0 in 13.2 min
+2026-11-15 05:40:41 1.3 UHD ignored: app::reseed_ui::tests::preset_survey, app::shots::ai_control_window_on_the_quick_start, app::shots::shots_desktop_pane_cards, app::shots::shots_desktop_show_just_this_scene, app::shots::shots_new_tiling, app::shots::shots_quick_start_atlas, app::shots::shots_tour, app::shots::shots_wallpaper, keepawake::tests::take_and_release, offscreen::tests::offscreen_ants_stop_resume, offscreen::tests::offscreen_ants_window, offscreen::tests::offscreen_catalog_tools_window, offscreen::tests::offscreen_dashboard_explore, offscreen::tests::offscreen_dashboard_window, offscreen::tests::offscreen_hashlife_window, offscreen::tests::offscreen_sandpile_stop_resume, offscreen::tests::offscreen_sandpile_window, offscreen::tests::offscreen_start_screen, offscreen::tests::offscreen_start_screen_starter_pack, setup_ui::tests::offscreen_setup_wizard, size_classes_exact_vs_float_level6, spectre_exact_equals_float_level6, gun_hashes, hunt_one_soup, hunt_throughput, big_world_reseed_timing, spectre_window_equals_level_8_cell_for_cell, profiles::tests::profile_survey, world_larger_than_one_dispatch_dimension, write_golden_packs, explore::job::tests::cpu_cost_by_family, gpu_prefix_speed, hunt_profile
+2026-11-15 05:40:41 RESULT 1.3-uhd : pass: 988 passed, 0 failed, 33 ignored in 134 test binaries; exit 0, 13 min
+2026-11-15 05:40:41 desktop state after 1.3 unchanged: True
+2026-11-15 05:40:41 === 1.4
+2026-11-15 05:40:44 jetcarp search explore --minutes 120 --label long --detach -> exit 0 in 2.3 s (1.4-start)
+2026-11-15 05:40:44 1.4 job: 2
+2026-11-15 05:40:44 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 05:41:44 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:42:45 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:43:45 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:44:46 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:45:46 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:46:47 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:47:47 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:48:47 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:49:48 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:50:48 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:51:49 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:52:49 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:53:49 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:54:50 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:55:50 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:56:51 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:57:51 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 05:58:53 jetcarp jobs status 2 --json -> exit 0 in 1.7 s (1.4-probe)
+2026-11-15 05:59:53 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:00:54 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:01:54 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:02:55 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:03:55 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:04:55 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:05:56 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:06:56 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:07:57 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:08:57 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:09:57 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:10:58 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:11:58 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:12:59 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:13:59 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:14:59 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:15:59 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:17:00 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:18:00 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:19:01 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:20:01 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:21:01 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:22:02 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:23:02 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:24:03 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:25:03 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:26:03 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:27:04 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:28:04 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:29:05 jetcarp jobs status 2 --json -> exit 0 in 0.4 s (1.4-probe)
+2026-11-15 06:30:05 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:31:05 jetcarp jobs status 2 --json -> exit 0 in 0.4 s (1.4-probe)
+2026-11-15 06:32:06 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:33:06 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:34:07 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:35:07 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:36:07 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:37:08 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:38:08 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:39:09 jetcarp jobs status 2 --json -> exit 0 in 0.3 s (1.4-probe)
+2026-11-15 06:40:09 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:41:09 killing 30456: "C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarp.exe" jobs resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet --minutes 120
+2026-11-15 06:41:55 jetcarp jobs wait 2 --timeout 180 -> exit 6 in 45.4 s (1.4-wait-after-kill)
+2026-11-15 06:41:55 1.4 wait after kill: exit 6, 45.4 s after the kill
+2026-11-15 06:41:55 jetcarp jobs status 2 -> exit 0 in 0.2 s (1.4-status-after-kill)
+2026-11-15 06:41:55 jetcarp jobs resume 2 --detach -> exit 0 in 0.2 s (1.4-resume)
+2026-11-15 06:41:55 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-probe)
+2026-11-15 06:41:55 jetcarp jobs wait 2 --timeout 60 -> exit 6 in 0.2 s (1.4-wait)
+2026-11-15 06:41:56 jetcarp jobs status 2 --json -> exit 0 in 0.2 s (1.4-status-final)
+2026-11-15 06:41:56 jetcarp jobs status 2 -> exit 0 in 0.1 s (1.4-status-final-text)
+2026-11-15 06:41:57 jetcarp jobs runs 2 --limit 0 --format csv --out "C:\Users\jimmi\jetcarp-rc-042b\logs\1.4-src-runs.csv" -> exit 0 in 1.5 s (1.4-src-runs)
+2026-11-15 06:41:58 1.4 source: screened 125104 + confirmed 4110 = 129214; jobs runs csv rows 121984; end exit 6; 0.81 GB; peak working set 1557 MB; rate in 60 probes: 0 at 0/s, median 36/s
+2026-11-15 06:41:58 jetcarp pack key --name "rc.2 test publisher" -> exit 0 in 0.4 s (1.4-pack-key)
+2026-11-15 06:41:59 jetcarp pack export --to "C:\Users\jimmi\jetcarp-rc-042b\P14-pack" --feed rc2-long --no-media -> exit 1 in 0.5 s (1.4-pack-export)
+2026-11-15 06:41:59 jetcarp pack check "C:\Users\jimmi\jetcarp-rc-042b\P14-pack" -> exit 1 in 0.3 s (1.4-pack-check)
+2026-11-15 06:41:59 jetcarp pack import "C:\Users\jimmi\jetcarp-rc-042b\P14-pack" --library "C:\Users\jimmi\jetcarp-rc-042b\import14\library.sqlite" -> exit 1 in 0.2 s (1.4-pack-import)
+2026-11-15 06:42:00 jetcarp jobs list --library "C:\Users\jimmi\jetcarp-rc-042b\import14\library.sqlite" --json -> exit 0 in 0.2 s (1.4-import-list)
+2026-11-15 06:42:00 1.4 imported explore job: 
+2026-11-15 06:42:00 jetcarp jobs runs  --library "C:\Users\jimmi\jetcarp-rc-042b\import14\library.sqlite" --limit 0 --format csv --out "C:\Users\jimmi\jetcarp-rc-042b\logs\1.4-import-runs.csv" -> exit 1 in 0.1 s (1.4-import-runs)
+2026-11-15 06:42:00 jetcarp jobs status  --library "C:\Users\jimmi\jetcarp-rc-042b\import14\library.sqlite" --json -> exit 0 in 0.1 s (1.4-import-status)
+2026-11-15 06:42:00 RESULT 1.4 long search : FAIL: runs 129214 (jobs runs 121984); killed at ~60 min, wait exit 6, resumable False, resumed to the end (exit 6); rate in 60 probes: 0 at 0/s, median 36/s; memory at end 0.81 GB (peak working set 1557 MB); pack 0.0 MB, export exit 1 ('Error: explore job 2 is running, and its newest 125,869 runs are not sealed yet, so the pack would leave them out'), check 1, import 1; imported runs 0 (jobs runs 0)
+2026-11-15 06:42:00 desktop state at end unchanged: True
+2026-11-15 06:42:00 jetcarp processes at end: 50092 "C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarpw.exe" jobs resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet | 53624 "C:\Users\jimmi\jetcarp-rc-042b\bin\jetcarp.exe" jobs resume 2 --library C:\Users\jimmi\jetcarp-rc-042b\data\library.sqlite --quiet
+2026-11-15 06:42:00 === Phase 1 ends

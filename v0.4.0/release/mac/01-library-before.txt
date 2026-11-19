@@ -1,0 +1,26 @@
+# Library before install: read-only queries of a copy of ~/Library/Application Support/jetcarp/data/library.sqlite (WAL 0 bytes), 2026-11-13 07:35 EST
+
+## quickstart by source (source, rows, hidden, featured)
+builtin|364|1|71
+
+## quickstart by category (what the menu groups by; atlas only)
+
+## patterns, ants, jobs
+patterns|64
+ants|0
+jobs|3
+ratings|1
+
+## jobs
+id uuid kind spec status progress checkpoint owner heartbeat engine_version created updated finished 
+(id|kind|status|created|finished)
+0|manual|running|2026-11-12T05:52:02Z|
+1|pile|done|2026-11-12T06:09:24Z|2026-11-12T06:09:28Z
+2|hunt|done|2026-11-12T06:12:10Z|2026-11-12T06:12:14Z
+
+## meta
+builtin_version|0.4.0-rc.3+ge0bbfa32a780+b6cc22c423d7b
+created|2026-11-12T05:52:02Z
+created_by|0.4.0-rc.1
+library_uuid|40c40962-6992-455b-9553-d3f8d2d9409c
+schema|3

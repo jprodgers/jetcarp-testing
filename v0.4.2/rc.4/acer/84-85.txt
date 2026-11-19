@@ -1,0 +1,115 @@
+#### R4 #84 (doctor with the GPU off) and #85 (paths names the runtime folder), 2026-11-16 22:07:44
+(folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _LIBRARY, _RUNTIME_DIR = ~\jetcarp-rc4\f96\config, \data, \out, \library, \run)
+(JETCARP_GPU=off)
+$ jetcarp doctor
+JETCARP 0.4.2-rc.4 on windows x86_64 (12 threads)
+
+Folders
+  settings: ~\jetcarp-rc4\f96\config
+  data:     ~\jetcarp-rc4\f96\data
+  output:   ~\jetcarp-rc4\f96\out
+  runtime:  ~\jetcarp-rc4\f96\run
+  bundled:  ~\jetcarp-rc-042c\bin\packs (1.5 MB)
+  library:  ~\jetcarp-rc4\f96\library\library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: off (JETCARP_GPU=off)
+  setting: ~\jetcarp-rc4\f96\config\gpu.json (not saved)
+  the app: off, from JETCARP_GPU=off (its own choice: follow)
+  the desktop background: off, from JETCARP_GPU=off (its own choice: follow)
+  display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+      why: the adapter driving the screen (JETCARP_GPU=off)
+      limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+      not used, and not tested: the GPU simulation is off
+  compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+      why: the fastest adapter (JETCARP_GPU=off)
+      limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+      not used, and not tested: the GPU simulation is off
+
+Graphics adapters (* = used for computing)
+    Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+  * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+    Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+    NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+    Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+      Windows' software renderer (WARP), which the GPU simulation never uses
+    Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+Environment
+  JETCARP_CONFIG_DIR=~\jetcarp-rc4\f96\config
+  JETCARP_DATA_DIR=~\jetcarp-rc4\f96\data
+  JETCARP_GPU=off
+  JETCARP_LIBRARY=~\jetcarp-rc4\f96\library
+  JETCARP_OUT=~\jetcarp-rc4\f96\out
+  JETCARP_RUNTIME_DIR=~\jetcarp-rc4\f96\run
+(exit 0, 0.8 s)
+(JETCARP_GPU unset, for comparison)
+$ jetcarp doctor
+JETCARP 0.4.2-rc.4 on windows x86_64 (12 threads)
+
+Folders
+  settings: ~\jetcarp-rc4\f96\config
+  data:     ~\jetcarp-rc4\f96\data
+  output:   ~\jetcarp-rc4\f96\out
+  runtime:  ~\jetcarp-rc4\f96\run
+  bundled:  ~\jetcarp-rc-042c\bin\packs (1.5 MB)
+  library:  ~\jetcarp-rc4\f96\library\library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: auto (automatic)
+  setting: ~\jetcarp-rc4\f96\config\gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+      self-test: passed (492 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+      why: the fastest adapter (automatic)
+      limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+      self-test: passed (235 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+
+Graphics adapters (* = used for computing)
+    Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+  * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+    Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+    NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+    Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+      Windows' software renderer (WARP), which the GPU simulation never uses
+    Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+Environment
+  JETCARP_CONFIG_DIR=~\jetcarp-rc4\f96\config
+  JETCARP_DATA_DIR=~\jetcarp-rc4\f96\data
+  JETCARP_LIBRARY=~\jetcarp-rc4\f96\library
+  JETCARP_OUT=~\jetcarp-rc4\f96\out
+  JETCARP_RUNTIME_DIR=~\jetcarp-rc4\f96\run
+(exit 0, 0.8 s)
+$ jetcarp paths
+settings: ~\jetcarp-rc4\f96\config
+data:     ~\jetcarp-rc4\f96\data
+output:   ~\jetcarp-rc4\f96\out
+bundled:  ~\jetcarp-rc-042c\bin\packs
+runtime:  ~\jetcarp-rc4\f96\run
+(exit 0, 0.1 s)
+$ jetcarp paths --json
+{
+  "bundled_packs": "~\\jetcarp-rc-042c\\bin\\packs",
+  "data": "~\\jetcarp-rc4\\f96\\data",
+  "output": "~\\jetcarp-rc4\\f96\\out",
+  "runtime": "~\\jetcarp-rc4\\f96\\run",
+  "settings": "~\\jetcarp-rc4\\f96\\config"
+}
+(exit 0, 0.1 s)

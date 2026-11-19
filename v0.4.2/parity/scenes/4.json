@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile identity on Cairo pentagons",
+  "description": "The identity element of the sandpile group: the one configuration that, added to any stable recurrent pile and toppled, changes nothing. Computed as stab(2δ − stab(2δ)). Use the Identity button on any tiling with dead edges.",
+  "tiling": {
+    "family": "cairo",
+    "size": {
+      "cells": 8000
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "empty"
+    }
+  ],
+  "commands": [
+    {
+      "op": "sandpile",
+      "id": 1,
+      "action": "identity"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "de587125f0398449",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

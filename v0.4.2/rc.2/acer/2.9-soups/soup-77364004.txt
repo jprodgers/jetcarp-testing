@@ -1,0 +1,3 @@
+﻿MWSS (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 7
+  soup 4526 (rng state 17520777392164346969): 1 copy, 38 ships; settled at generation 8551; scene: C:\Users\jimmi\jetcarp-rc-042b\phase2\2.9\soup-77364004.json
+  note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 8551, and land there

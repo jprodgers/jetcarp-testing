@@ -1,0 +1,11 @@
+﻿Desktop before A3 (23:57:24):
+  HKCU\Control Panel\Desktop\WallPaper = c:\windows\web\wallpaper\themea\img20.jpg
+  WallpaperStyle = 10; TileWallpaper = 0
+  TranscodedWallpaper sha256 = 85ff3bb2371a84655aedf69d9f7c11d697f23b21efc221f7f2443a62edb767ac, 249170 bytes, 11/10/2026 05:33:49
+  Explorer\Wallpapers BackgroundType = 0  (0 picture, 1 solid colour, 2 slideshow)
+  Background colour = 0 0 0
+  Theme = C:\Users\jimmi\AppData\Local\Microsoft\Windows\Themes\Custom.theme
+  Screen saver: SCRNSAVE.EXE = '', ScreenSaveActive = 1, ScreenSaveTimeOut = 60, ScreenSaverIsSecure = 0
+  Run key entries: (none of JETCARP) (other programs' entries left out)
+  Startup folder: 
+  Scheduled tasks named *jetcarp*: 

@@ -1,0 +1,515 @@
+I can't start the program, I get the following error:
+PS C:\WINDOWS\system32> cd ~\Downloads
+PS C:\Users\Ada Test\Downloads>        Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.5/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+PS C:\Users\Ada Test\Downloads> powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1
+jetcarp-installer: getting JETCARP 0.4.2-rc.5 for x86_64-pc-windows-msvc from https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.5
+jetcarp-installer: checked jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc.zip against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.5 in C:\Users\Ada Test\AppData\Local\Programs\jetcarp
+jetcarp-installer: the starter pack is in C:\Users\Ada Test\AppData\Local\Programs\jetcarp\packs
+jetcarp-installer: added C:\Users\Ada Test\AppData\Local\Programs\jetcarp to your user PATH; open a new terminal to use `jetcarp`
+jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees
+PS C:\Users\Ada Test\Downloads> jetcarp
+jetcarp : The term 'jetcarp' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ jetcarp
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (jetcarp:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Restarted the terminal window, and it's now showing the proper version and started when run.
+
+Went through the tutorials, tested hunting, things were in the library. Works as expected.
+
+Uninstalling I typed the command instead of copy/pasting it, and I got the following error:
+PS C:\WINDOWS\system32> jetcarp uninstall --yes --data --settings
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Uninstall didn't work again:
+
+PS C:\WINDOWS\system32> jetcarp uninstall
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Would undo (run again with --yes):
+  remove the empty folder of job locks C:\Users\Ada Test\AppData\Local\jetcarp\library.sqlite-jobs
+
+Kept the data folder C:\Users\Ada Test\AppData\Local\jetcarp (6.7 MB); add --data to delete it.
+Kept the settings folder C:\Users\Ada Test\AppData\Roaming\jetcarp; add --settings to delete it.
+Your pictures and exports in C:\Users\Ada Test\Pictures\JETCARP are never deleted.
+
+Then, to remove the program itself (in C:\Users\Ada Test\AppData\Local\Programs\jetcarp, installed with JETCARP's installer), run these in PowerShell:
+
+    Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+    powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 -Uninstall
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+PS C:\WINDOWS\system32> jetcarp uninstall --yes --data --settings
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Undoing:
+  done: remove the empty folder of job locks C:\Users\Ada Test\AppData\Local\jetcarp\library.sqlite-jobs
+  done: delete the settings folder C:\Users\Ada Test\AppData\Roaming\jetcarp
+  done: delete the data folder C:\Users\Ada Test\AppData\Local\jetcarp (6.7 MB)
+
+Your pictures and exports in C:\Users\Ada Test\Pictures\JETCARP are never deleted.
+
+To remove the program itself (in C:\Users\Ada Test\AppData\Local\Programs\jetcarp, installed with JETCARP's installer), run these in PowerShell:
+
+    Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+    powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 -Uninstall
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+PS C:\WINDOWS\system32> jetcarp --version
+jetcarp 0.4.2-rc.5
+PS C:\WINDOWS\system32> jetcarp uninstall --yes --settings --data
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Nothing to undo: JETCARP has not set anything up outside its folders.
+
+Your pictures and exports in C:\Users\Ada Test\Pictures\JETCARP are never deleted.
+
+To remove the program itself (in C:\Users\Ada Test\AppData\Local\Programs\jetcarp, installed with JETCARP's installer), run these in PowerShell:
+
+    Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+    powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 -Uninstall
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+PS C:\WINDOWS\system32> Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+Invoke-WebRequest : Access to the path 'C:\WINDOWS\system32\jetcarp-installer.ps1' is denied.
+At line:1 char:1
++ Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/lates ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Invoke-WebRequest], UnauthorizedAccessException
+    + FullyQualifiedErrorId : System.UnauthorizedAccessException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+
+A6, this is what I got:
+PS C:\WINDOWS\system32> cd ~\Downloads
+PS C:\Users\Ada Test\Downloads>        powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 -Uninstall
+jetcarp-installer: no JETCARP installed by this installer in C:\Users\Ada Test\AppData\Local\Programs\jetcarp
+PS C:\Users\Ada Test\Downloads>        Test-Path "$env:APPDATA\jetcarp", "$env:LOCALAPPDATA\jetcarp", "$env:LOCALAPPDATA\Programs\jetcarp"
+False
+False
+False
+PS C:\Users\Ada Test\Downloads>        Get-ItemProperty HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+
+
+Part B
+B1:
+PS C:\WINDOWS\system32> cd ~
+PS C:\Users\Ada Test>        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+PS C:\Users\Ada Test>        irm get.scoop.sh | iex
+Initializing...
+Downloading...
+Creating shim...
+Adding ~\scoop\shims to your path.
+Scoop was installed successfully!
+Type 'scoop help' for instructions.
+PS C:\Users\Ada Test> scoop install git
+Installing '7zip' (26.06) [64bit] from 'main' bucket
+7z2606-x64.msi (1.9 MB) [=====================================================================================] 100%
+Checking hash of 7z2606-x64.msi... OK.
+Extracting 7z2606-x64.msi... Done.
+Linking ~\scoop\apps\7zip\current => ~\scoop\apps\7zip\26.06
+Creating shim for '7z'.
+Creating shim for '7zG'.
+Making C:\Users\Ada Test\scoop\shims\7zg.exe a GUI binary.
+Creating shim for '7zFM'.
+Making C:\Users\Ada Test\scoop\shims\7zfm.exe a GUI binary.
+Creating shortcut for 7-Zip\7-Zip File Manager (7zFM.exe)
+Creating shortcut for 7-Zip\7-Zip Help (7-zip.chm)
+Persisting Codecs
+Persisting Formats
+Running post_install script... Done.
+'7zip' (26.06) was installed successfully!
+Notes
+-----
+To register the context menu entry, please execute the following command:
+reg import "C:\Users\Ada Test\scoop\apps\7zip\current\install-context.reg"
+
+If an error occurs while attempting to delete files during uninstallation, run the following command and then retry:
+Stop-Process -Name 'explorer'
+-----
+Installing 'git' (2.56.1) [64bit] from 'main' bucket
+PortableGit-2.56.1-64-bit.7z.exe (57.3 MB) [==================================================================] 100%
+Checking hash of PortableGit-2.56.1-64-bit.7z.exe... OK.
+Extracting PortableGit-2.56.1-64-bit.7z.exe... Done.
+Running pre_install script... Done.
+Linking ~\scoop\apps\git\current => ~\scoop\apps\git\2.56.1
+Creating shim for 'sh'.
+Creating shim for 'git'.
+Creating shim for 'gitk'.
+Making C:\Users\Ada Test\scoop\shims\gitk.exe a GUI binary.
+Creating shim for 'git-gui'.
+Making C:\Users\Ada Test\scoop\shims\git-gui.exe a GUI binary.
+Creating shim for 'scalar'.
+Creating shim for 'git-bash'.
+Making C:\Users\Ada Test\scoop\shims\git-bash.exe a GUI binary.
+Creating shim for 'gpg'.
+Creating shim for 'gpg-agent'.
+Creating shim for 'gpgconf'.
+Creating shim for 'gpg-connect-agent'.
+Creating shim for 'pinentry'.
+Making C:\Users\Ada Test\scoop\shims\pinentry.exe a GUI binary.
+Creating shortcut for Git\Git Bash (git-bash.exe)
+Creating shortcut for Git\Git CMD (git-cmd.exe)
+Creating shortcut for Git\Git GUI (git-gui.exe)
+Setting user environment variable: GIT_INSTALL_ROOT = C:\Users\Ada Test\scoop\apps\git\current
+Running post_install script... Done.
+'git' (2.56.1) was installed successfully!
+Notes
+-----
+To register file associations, please execute the following command:
+reg import "C:\Users\Ada Test\scoop\apps\git\current\install-associations.reg"
+
+To register the context menu entry, please execute the following command:
+reg import "C:\Users\Ada Test\scoop\apps\git\current\install-context.reg"
+
+To set Git Credential Manager Core for portable Git, please execute the following command:
+git config --system credential.helper manager
+-----
+PS C:\Users\Ada Test>        scoop bucket add jetcarp https://github.com/jprodgers/scoop-jetcarp
+Checking repo... OK.
+The jetcarp bucket was added successfully.
+PS C:\Users\Ada Test>        scoop install jetcarp
+Installing 'jetcarp' (0.4.1) [64bit] from 'jetcarp' bucket
+jetcarp-0.4.1-x86_64-pc-windows-msvc.zip (26.1 MB) [==========================================================] 100%
+Checking hash of jetcarp-0.4.1-x86_64-pc-windows-msvc.zip... OK.
+Extracting jetcarp-0.4.1-x86_64-pc-windows-msvc.zip... Done.
+Linking ~\scoop\apps\jetcarp\current => ~\scoop\apps\jetcarp\0.4.1
+Creating shim for 'jetcarp'.
+Creating shortcut for JETCARP (jetcarpw.exe)
+'jetcarp' (0.4.1) was installed successfully!
+Notes
+-----
+Start JETCARP from the Start menu, or with `jetcarp` in a terminal.
+Before `scoop uninstall jetcarp`, run `jetcarp uninstall` to undo what JETCARP set up outside its folders (the
+background host, the login entry, the screen saver).
+-----
+PS C:\Users\Ada Test>        jetcarp --version
+
+It didn't give the last line.
+
+PS C:\Users\Ada Test> jetcarp host status
+running, pid 43356, up 47.0s, 328 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 1380 · 280000 cells · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+PS C:\Users\Ada Test>        jetcarp search hunt --soups 20000
+hunt job 1 in C:\Users\Ada Test\AppData\Local\jetcarp\library.sqlite
+hunt 1: 96/20,000 soups, 414 soups/s, 2,312 objects (ships 239, osc 718, still 1,355), 15 distinct, 15 new | newest: beahunt 1: 192/20,000 soups, 798 soups/s, 4,428 objects (ships 424, osc 1,331, still 2,673), 20 distinct, 20 new | newest: hunt 1: 576/20,000 soups, 402 soups/s, 12,721 objects (ships 1,146, osc 3,688, still 7,887), 25 distinct, 25 new | neweshunt 1: 1,817/20,000 soups, 1255 soups/s, 38,259 objects (ships 3,438, osc 11,096, still 23,725), 33 distinct, 33 new | hunt 1: 2,780/20,000 soups, 692 soups/s, 58,675 objects (ships 5,231, osc 17,060, still 36,384), 37 distinct, 37 new | nhunt 1: 5,901/20,000 soups, 1462 soups/s, 123,487 objects (ships 11,052, osc 35,869, still 76,566), 40 distinct, 40 new hunt 1: 7,022/20,000 soups, 911 soups/s, 148,047 objects (ships 13,279, osc 43,049, still 91,719), 41 distinct, 41 new |hunt 1: 10,669/20,000 soups, 1381 soups/s, 228,185 objects (ships 20,240, osc 66,247, still 141,698), 43 distinct, 43 nehunt 1: 11,580/20,000 soups, 1113 soups/s, 247,584 objects (ships 22,009, osc 71,861, still 153,714), 44 distinct, 44 nehunt 1: 14,559/20,000 soups, 1397 soups/s, 311,938 objects (ships 27,629, osc 90,392, still 193,917), 47 distinct, 47 nehunt 1: 15,574/20,000 soups, 1118 soups/s, 333,350 objects (ships 29,522, osc 96,607, still 207,221), 48 distinct, 48 nehunt 1: 18,909/20,000 soups, 1354 soups/s, 406,083 objects (ships 35,944, osc 117,524, still 252,615), 50 distinct, 50 nhunt 1: 19,772/20,000 soups, 1343 soups/s, 425,125 objects (ships 37,699, osc 123,054, still 264,372), 50 distinct, 50 nhunt 1: 20,000/20,000 soups, 1358 soups/s, 430,384 objects (ships 38,188, osc 124,582, still 267,614), 50 distinct, 50 new | newest: still life 12c #bf73c4 (B3/S23)
+hunt 1: 20,000/20,000 soups, 1358 soups/s, 430,384 objects (ships 38,188, osc 124,582, still 267,614), 50 distinct, 50 new | newest: still life 12c #bf73c4 (B3/S23)
+  status done, 15 s run, 19892 settled, 52 died, 56 exploded, 0 unsettled
+  B3/S23 on Square: 20000 soups, 430384 objects (oscillator 124582, spaceship 38188, still life 267614), 50 distinct, 50 new
+  newest finds:
+    bf73c46c186561ca3b75a3884d0b5ab5  still life 12c #bf73c4             B3/S23     Square soup 17973  (new to the catalog)
+    9b8506f0c92bc91d9df0492db64b6124  still life 12c #9b8506             B3/S23     Square soup 16764  (new to the catalog)
+    917e6f33202346c9512b19aa8faa32b3  still life 10c #917e6f             B3/S23     Square soup 14630  (new to the catalog)
+    8df8d769457729de0b6d5ee6f12a08d5  still life 7c #8df8d7              B3/S23     Square soup 13732  (new to the catalog)
+    f241c8e566137cde275909e216cce670  still life 9c #f241c8              B3/S23     Square soup 12649  (new to the catalog)
+    48e6263a40eea259bcb22518b44d0c95  still life 8c #48e626              B3/S23     Square soup 12137  (new to the catalog)
+    fcd376611d86dc6548400951630b5532  still life 10c #fcd376             B3/S23     Square soup 10823  (new to the catalog)
+    5cd81b290a7ad4bd0d827385a78bcd1a  still life 14c #5cd81b             B3/S23     Square soup 10234  (new to the catalog)
+    ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+    e6a4b27599ff11da9d2eee273bbd6cda  still life 15c #e6a4b2             B3/S23     Square soup 6114  (new to the catalog)
+PS C:\Users\Ada Test>        jetcarp search explore --minutes 1 --label first-look
+explore search job 2 in C:\Users\Ada Test\AppData\Local\jetcarp\library.sqlite
+explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+  status paused, 58 s run over every session, 9 confirmation runs, 356 candidates tried, 0.08 GB of memory
+  threads: 10 for runs on the processor, of 12 cores (2 left free)
+  this session: 6 runs on the processor stopped at their time cap (kept with the generations they reached), 9 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  wolfram                      80   0.68   1.57      32
+  life_like                    15   0.32   0.92      14
+  layered                      12   0.52   1.44      11
+  turmite                       9   0.67   1.41       7
+  generations                   6   0.60   1.21       6
+  jaca                          6   0.70   1.26       6
+  cyclic                        5   0.34   0.59       5
+  lenia                         5   0.53   2.23       4
+  greenberg_hastings            4   0.09   0.11       3
+  rps                           4   0.54   0.87       4
+  priority                      3   0.13   0.20       3
+  spectre_glider                3   0.46   0.46       1
+  forest_fire                   1   0.90   0.90       1
+  wireworld                     1   0.53   0.53       1
+  folder: C:\Users\Ada Test\AppData\Local\jetcarp\searches\067a1eca-e876-4779-a07a-2e023ee2d805
+explore search 2 paused (at its budget); `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+PS C:\Users\Ada Test>        jetcarp jobs runs 2 --limit 3
+       35   2.23  running lenia              catalog:k5-259   Lenia R=16,T=5,b=1,m=0.39534300930798716,s=0.054342054559553356,gn=2
+       84   1.57  froze   wolfram            square           W14
+      142   1.51  froze   wolfram            square           W230
+3 run(s) of explore job 2
+PS C:\Users\Ada Test>        jetcarp jobs runs 2 --limit 3 | ForEach-Object { jetcarp jobs review 2 ($_.Trim() -split '\s+')[0] keep }
+recorded 1 review(s); job 2 has keep 1
+recorded 1 review(s); job 2 has keep 2
+recorded 1 review(s); job 2 has keep 3
+recorded 1 review(s); job 2 has keep 4
+PS C:\Users\Ada Test>        jetcarp jobs list
+    2  explore  paused   2026-11-17T20:29:50Z  explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+    1  hunt     done     2026-11-17T20:29:33Z  hunt 1: 20,000/20,000 soups, 1358 soups/s, 430,384 objects (ships 38,188, osc 124,582, still 267,614), 50 distinct, 50 new | newest: still life 12c #bf73c4 (B3/S23)
+2 job(s); 0 running
+PS C:\Users\Ada Test>        jetcarp jobs status 2
+explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+  status paused, 58 s run over every session, 9 confirmation runs, 356 candidates tried, 0.08 GB of memory
+  threads: 10 for runs on the processor, of 12 cores (2 left free)
+  this session: 6 runs on the processor stopped at their time cap (kept with the generations they reached), 9 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  wolfram                      80   0.68   1.57      32
+  life_like                    15   0.32   0.92      14
+  layered                      12   0.52   1.44      11
+  turmite                       9   0.67   1.41       7
+  generations                   6   0.60   1.21       6
+  jaca                          6   0.70   1.26       6
+  cyclic                        5   0.34   0.59       5
+  lenia                         5   0.53   2.23       4
+  greenberg_hastings            4   0.09   0.11       3
+  rps                           4   0.54   0.87       4
+  priority                      3   0.13   0.20       3
+  spectre_glider                3   0.46   0.46       1
+  forest_fire                   1   0.90   0.90       1
+  wireworld                     1   0.53   0.53       1
+  folder: C:\Users\Ada Test\AppData\Local\jetcarp\searches\067a1eca-e876-4779-a07a-2e023ee2d805
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+PS C:\Users\Ada Test>        jetcarp library list --class spaceship
+
+B3
+PS C:\Users\Ada Test> jetcarp host stop
+stopped
+PS C:\Users\Ada Test>        cd ~\Downloads
+PS C:\Users\Ada Test\Downloads>        Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.5/jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc.zip -OutFile rc5.zip
+PS C:\Users\Ada Test\Downloads>        Expand-Archive rc5.zip -DestinationPath rc5 -Force
+PS C:\Users\Ada Test\Downloads>        Copy-Item rc5\jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc\* (scoop prefix jetcarp) -Recurse -Force
+Copy-Item : The process cannot access the file 'C:\Users\Ada Test\scoop\apps\jetcarp\current\jetcarp.exe' because it
+is being used by another process.
+At line:1 char:8
++        Copy-Item rc5\jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc\* (sco ...
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], IOException
+    + FullyQualifiedErrorId : System.IO.IOException,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\Ada Test\Downloads>        jetcarp --version
+
+No last line
+
+Logged out and back in again, jetcarp started up with Brian's Brain on the desktop.
+
+PS C:\WINDOWS\system32> jetcarp host status
+running, pid 45256, up 118.0s, 294 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 3506 · 280000 cells · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+
+No seizure warning.
+
+PS C:\WINDOWS\system32> jetcarp host status
+running, pid 45256, up 198.0s, 294 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 5909 · 280000 cells · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+PS C:\WINDOWS\system32>        jetcarp jobs list
+    2  explore  paused   2026-11-17T20:29:50Z  explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+    1  hunt     done     2026-11-17T20:29:33Z  hunt 1: 20,000/20,000 soups, 1358 soups/s, 430,384 objects (ships 38,188, osc 124,582, still 267,614), 50 distinct, 50 new | newest: still life 12c #bf73c4 (B3/S23)
+2 job(s); 0 running
+PS C:\WINDOWS\system32>        jetcarp jobs status 2
+explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+  status paused, 58 s run over every session, 9 confirmation runs, 356 candidates tried, 0.08 GB of memory
+  threads: 10 for runs on the processor, of 12 cores (2 left free)
+  this session: 6 runs on the processor stopped at their time cap (kept with the generations they reached), 9 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  wolfram                      80   0.68   1.57      32
+  life_like                    15   0.32   0.92      14
+  layered                      12   0.52   1.44      11
+  turmite                       9   0.67   1.41       7
+  generations                   6   0.60   1.21       6
+  jaca                          6   0.70   1.26       6
+  cyclic                        5   0.34   0.59       5
+  lenia                         5   0.53   2.23       4
+  greenberg_hastings            4   0.09   0.11       3
+  rps                           4   0.54   0.87       4
+  priority                      3   0.13   0.20       3
+  spectre_glider                3   0.46   0.46       1
+  forest_fire                   1   0.90   0.90       1
+  wireworld                     1   0.53   0.53       1
+  folder: C:\Users\Ada Test\AppData\Local\jetcarp\searches\067a1eca-e876-4779-a07a-2e023ee2d805
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+PS C:\WINDOWS\system32>        jetcarp library list --class spaceship
+
+B4
+PS C:\WINDOWS\system32> jetcarp uninstall --yes
+Undoing:
+  done: stop the background host
+  done: stop the host starting at login
+  done: remove the host's lock file C:\Users\Ada Test\AppData\Local\jetcarp\host.lock
+  done: forget the recorded host command
+
+Kept the data folder C:\Users\Ada Test\AppData\Local\jetcarp (1.2 MB); add --data to delete it.
+Kept the settings folder C:\Users\Ada Test\AppData\Roaming\jetcarp; add --settings to delete it.
+Your pictures and exports in C:\Users\Ada Test\Pictures\JETCARP are never deleted.
+
+To remove the program itself, use what installed it: the installer again with `-Uninstall`, `pipx uninstall jetcarp`, `uv tool uninstall jetcarp`, `pip uninstall jetcarp`, `brew uninstall jetcarp`, `scoop uninstall jetcarp`, `cargo uninstall jetcarp`, or delete its folder.
+PS C:\WINDOWS\system32>        scoop uninstall jetcarp
+Uninstalling 'jetcarp' (0.4.1).
+Removing shim 'jetcarp.shim'.
+Removing shim 'jetcarp.exe'.
+Removing shortcut ~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\JETCARP.lnk
+Unlinking ~\scoop\apps\jetcarp\current
+'jetcarp' was uninstalled.
+PS C:\WINDOWS\system32>        scoop bucket rm jetcarp
+
+Desktop is back.
+
+Part C:
+C1
+PS C:\WINDOWS\system32> cd ~
+PS C:\Users\Ada Test> scoop bucket add jetcarp https://github.com/jprodgers/scoop-jetcarp
+WARN  The 'jetcarp' bucket already exists. To add this bucket again, first remove it by running 'scoop bucket rm jetcarp'.
+PS C:\Users\Ada Test> scoop install jetcarp
+Installing 'jetcarp' (0.4.1) [64bit] from 'jetcarp' bucket
+Loading jetcarp-0.4.1-x86_64-pc-windows-msvc.zip from cache
+Checking hash of jetcarp-0.4.1-x86_64-pc-windows-msvc.zip... OK.
+Extracting jetcarp-0.4.1-x86_64-pc-windows-msvc.zip... Done.
+Linking ~\scoop\apps\jetcarp\current => ~\scoop\apps\jetcarp\0.4.1
+Creating shim for 'jetcarp'.
+Creating shortcut for JETCARP (jetcarpw.exe)
+'jetcarp' (0.4.1) was installed successfully!
+Notes
+-----
+Start JETCARP from the Start menu, or with `jetcarp` in a terminal.
+Before `scoop uninstall jetcarp`, run `jetcarp uninstall` to undo what JETCARP set up outside its folders (the
+background host, the login entry, the screen saver).
+-----
+PS C:\Users\Ada Test> jetcarp --version
+jetcarp 0.4.1
+PS C:\Users\Ada Test> jetcarp host start
+running, pid 36276, up 1.0s, 203 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · wallpaper
+wallpaper: showing
+caption: off
+PS C:\Users\Ada Test> jetcarp host wallpaper on
+running, pid 36276, up 1.0s, 358 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+PS C:\Users\Ada Test> jetcarp host login on
+"C:\Users\Ada Test\scoop\apps\jetcarp\current\jetcarpw.exe" host serve --login starts at login
+PS C:\Users\Ada Test> jetcarp host status
+running, pid 36276, up 1.0s, 288 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 1 · 280000 cells · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+
+Running Brian's Brain.
+
+C2
+PS C:\Users\Ada Test> jetcarp host stop
+stopped
+PS C:\Users\Ada Test> Get-CimInstance Win32_Process -Filter "Name like 'jetcarp%'" | Format-List ProcessId, CommandLine
+PS C:\Users\Ada Test> Get-Process jetcarp* -ErrorAction SilentlyContinue | Stop-Process -Force
+PS C:\Users\Ada Test> cd ~\Downloads
+PS C:\Users\Ada Test\Downloads> Copy-Item rc5\jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc\* (scoop prefix jetcarp) -Recurse -Force
+PS C:\Users\Ada Test\Downloads> jetcarp --version
+jetcarp 0.4.2-rc.5
+
+C3
+Signed out and in again, it's showing Brian's Brain on the desktop.
+PS C:\WINDOWS\system32> jetcarp --version
+jetcarp 0.4.2-rc.5
+PS C:\WINDOWS\system32> jetcarp host status
+running, pid 51740, up 87.0s, 418 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 0 · 280000 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan · held
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+waiting: the photosensitive seizure warning has not been accepted (open the JETCARP app, or run `jetcarp setup`, to read and answer it); the scenes start once it has been
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+
+It showed the seizure warning. No setup screen though. Desktop is still moving.
+PS C:\WINDOWS\system32> jetcarp host status
+running, pid 51740, up 210.0s, 492 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 2454 · 280000 cells of 3 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+note: the photosensitive seizure warning has been accepted; the scenes run
+PS C:\WINDOWS\system32> jetcarp jobs list
+    2  explore  paused   2026-11-17T20:29:50Z  explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+    1  hunt     done     2026-11-17T20:29:33Z  hunt 1: 20,000/20,000 soups, 1358 soups/s, 430,384 objects (ships 38,188, osc 124,582, still 267,614), 50 distinct, 50 new | newest: still life 12c #bf73c4 (B3/S23)
+2 job(s); 0 running
+PS C:\WINDOWS\system32> jetcarp jobs status 2
+explore 2: 154 runs (3/s), 98 elites in 63 niches, 3 confirmed, 4 of 1,359 tilings; cpu only
+  status paused, 58 s run over every session, 9 confirmation runs, 356 candidates tried, 0.08 GB of memory
+  threads: 10 for runs on the processor, of 12 cores (2 left free)
+  this session: 6 runs on the processor stopped at their time cap (kept with the generations they reached), 9 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  wolfram                      80   0.68   1.57      32
+  life_like                    15   0.32   0.92      14
+  layered                      12   0.52   1.44      11
+  turmite                       9   0.67   1.41       7
+  generations                   6   0.60   1.21       6
+  jaca                          6   0.70   1.26       6
+  cyclic                        5   0.34   0.59       5
+  lenia                         5   0.53   2.23       4
+  greenberg_hastings            4   0.09   0.11       3
+  rps                           4   0.54   0.87       4
+  priority                      3   0.13   0.20       3
+  spectre_glider                3   0.46   0.46       1
+  forest_fire                   1   0.90   0.90       1
+  wireworld                     1   0.53   0.53       1
+  folder: C:\Users\Ada Test\AppData\Local\jetcarp\searches\067a1eca-e876-4779-a07a-2e023ee2d805
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)
+PS C:\WINDOWS\system32> jetcarp library list --class spaceship
+catalog: C:\Users\Ada Test\AppData\Local\jetcarp\library.sqlite (4 shown of 4 matching)
+1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 4     score  74.6  new  c/2 orthogonal
+5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 38120 score  74.5  new  c/4 diagonal
+77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23       Square                     p4     11c  seen 13    score  72.6  new  c/2 orthogonal
+6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23       Square                     p4      9c  seen 51    score  71.4  new  c/2 orthogonal
+PS C:\WINDOWS\system32> Get-CimInstance Win32_Process -Filter "Name like 'jetcarp%'" | Format-List ProcessId, CommandLine
+
+
+ProcessId   : 51740
+CommandLine : "C:\Users\Ada Test\scoop\apps\jetcarp\current\jetcarp.exe" host serve --login
+
+C4
+PS C:\WINDOWS\system32> jetcarp uninstall --yes --settings --data
+This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+
+Undoing:
+  done: stop the background host
+  done: stop the host starting at login
+  done: remove the host's lock file C:\Users\Ada Test\AppData\Local\jetcarp\host.lock
+  done: delete the settings folder C:\Users\Ada Test\AppData\Roaming\jetcarp
+  done: delete the data folder C:\Users\Ada Test\AppData\Local\jetcarp (1.3 MB)
+
+Your pictures and exports in C:\Users\Ada Test\Pictures\JETCARP are never deleted.
+
+To remove the program itself (in C:\Users\Ada Test\scoop\apps\jetcarp\0.4.1, installed with Scoop), run this:
+
+    scoop uninstall jetcarp
+
+If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+PS C:\WINDOWS\system32> scoop uninstall jetcarp
+Uninstalling 'jetcarp' (0.4.1).
+Removing shim 'jetcarp.shim'.
+Removing shim 'jetcarp.exe'.
+Removing shortcut ~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\JETCARP.lnk
+Unlinking ~\scoop\apps\jetcarp\current
+'jetcarp' was uninstalled.
+PS C:\WINDOWS\system32> scoop bucket rm jetcarp
+The jetcarp bucket was removed successfully.
+PS C:\WINDOWS\system32> Get-CimInstance Win32_Process -Filter "Name like 'jetcarp%'" | Format-List ProcessId, CommandLine
+
+Back to the static desktop.

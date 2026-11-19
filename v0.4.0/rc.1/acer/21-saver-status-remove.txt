@@ -1,0 +1,29 @@
+> jetcarp host saver status   (00:16:56)
+JETCARP is the selected screen saver.
+(exit 0)
+  [SCRNSAVE.EXE = 'C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr'; ScreenSaveActive = 1; ScreenSaveTimeOut = 60]
+  [Screen Saver Settings dialog open (rundll32 desk.cpl,InstallScreenSaver), with its preview JETCARP.scr /p and jetcarp.exe host scr /p running]
+
+> jetcarp host saver remove   (00:16:56)
+Error: C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr: Access is denied. (os error 5)
+(exit 1)
+  [SCRNSAVE.EXE = ''  <- cleared; .scr still there; the preview processes still running]
+
+> jetcarp host saver status   (00:16:58)
+JETCARP's screen saver is at C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr, but another one is selected.
+(exit 0)   <- none is selected (SCRNSAVE.EXE is empty)
+
+--- Jimmie closed the dialog with Cancel ---
+
+  [SCRNSAVE.EXE = ''; ScreenSaveActive = 1; ScreenSaveTimeOut = 60]
+  [.scr exists: True; saver processes: ]
+
+> jetcarp host saver remove   (00:17:46)
+removed
+(exit 0)
+  [SCRNSAVE.EXE = ''; ScreenSaveActive = 1; ScreenSaveTimeOut = 60]
+  [.scr exists: False; saver processes: ]
+
+> jetcarp host saver status   (00:17:47)
+JETCARP's screen saver is not installed.
+(exit 0)

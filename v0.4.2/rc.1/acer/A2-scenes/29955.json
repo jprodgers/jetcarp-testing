@@ -1,0 +1,33 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "explore 1 run 29955: B3,5,11/S3456",
+  "tiling": {
+    "family": "oct",
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 6889150344578462,
+  "cas": [
+    {
+      "rule": "B3,5,11/S3456",
+      "neighborhood": "touch",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "voronoi",
+            "sites": 36,
+            "keep": 0.81
+          },
+          "fill": {
+            "density": 0.58
+          }
+        }
+      }
+    }
+  ]
+}

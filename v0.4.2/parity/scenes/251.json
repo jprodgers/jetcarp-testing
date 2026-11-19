@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA rainbow fronts (3.3.3.3.6)",
+  "description": "Rainbow fronts on the snub hexagonal tiling. Found by a JACA rule search.",
+  "tiling": {
+    "family": "snubhex",
+    "size": {
+      "rect": {
+        "w": 59,
+        "h": 45
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 31,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B2,6,15/S1,2,3,4,13,15,18",
+      "rule": "JACA B2,6,15/S1,2,3,4,13,15,18",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Deep Sea",
+      "seed": {
+        "signed": {
+          "density": 0.45,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Thermal"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "b44fae07c6d7e43d",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

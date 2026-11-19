@@ -1,0 +1,30 @@
+# Charger unplugged (Jimmie: both desktops paused seconds later)
+$ pmset -g batt   (01:31:07)
+Now drawing from 'Battery Power'
+ -InternalBattery-0 (id=36175971)	80%; discharging; (no estimate) present: true
+
+$ jetcarp host status
+running, pid 70227, up 748.0s, 160 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 144233 · 170648 cells · paused
+screen 1: Classics, hourly · profile Life (1 of 7) · generation 4910 · 409440 cells · paused
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+
+$ jetcarp host status   (3 s later)
+running, pid 70227, up 751.0s, 160 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 144233 · 170648 cells · paused
+screen 1: Classics, hourly · profile Life (1 of 7) · generation 4910 · 409440 cells · paused
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing
+
+# Charger plugged back in (Jimmie: both started again)
+$ pmset -g batt   (01:31:40)
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=36175971)	80%; AC attached; not charging present: true
+
+$ jetcarp host status
+running, pid 70227, up 781.0s, 162 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 147683 · 170648 cells
+screen 1: Classics, hourly · profile Life (1 of 7) · generation 5342 · 409440 cells
+monitors: 0: Monitor #41041, 1: Monitor #12919
+wallpaper: showing

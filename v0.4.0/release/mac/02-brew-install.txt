@@ -1,0 +1,20 @@
+# H2. brew install jprodgers/jetcarp/jetcarp, 2026-11-13 07:36:16 EST
+
+$ time brew install jprodgers/jetcarp/jetcarp
+==> Auto-updating Homebrew...
+Adjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with
+`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Tapping jprodgers/jetcarp
+Cloning into '/opt/homebrew/Library/Taps/jprodgers/homebrew-jetcarp'...
+Tapped 1 formula (14 files, 9.8KB).
+==> Trusted formula jprodgers/jetcarp/jetcarp
+==> Fetching downloads for: jetcarp
+✔︎ Formula jetcarp (0.4.0)
+==> Installing jetcarp from jprodgers/jetcarp
+/opt/homebrew/Cellar/jetcarp/0.4.0: 73 files, 74.1MB, built in 1 second
+==> Caveats
+==> jetcarp
+Before `brew uninstall jetcarp`, run `jetcarp uninstall` to undo what JETCARP set up
+outside its folders (the background host, login item and screen saver).
+HOMEBREW_NO_COLOR=1 HOMEBREW_NO_EMOJI=1 brew install jprodgers/jetcarp/jetcar  2.74s user 1.27s system 49% cpu 8.080 total
+(exit 0)

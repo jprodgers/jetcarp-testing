@@ -1,0 +1,30 @@
+﻿scene:      A9-soup.json
+tiling:     Square (parallelogram) (square): 1048576 cells, 1024x1024 unit cells, 1 tile type(s), storage dense, edges dead
+generation: 400  hash 6e9773f4a5fffc97
+rule:       B3/S23 (CA 1, field 0), 219 live cells
+objects:    14 (still lifes 4, oscillators 0, spaceships 2, other 8), 8 symmetries, periods up to 64
+census:     other (unsettled) x 5, block x 3, glider (c/4) x 2, other (grows) x 2, other (dies) x 1, ship x 1
+
+ count  class       period  cells  key       name
+     5  other            -     73            other (unsettled)
+     3  still life       1      4  a8307012  block
+     2  spaceship        4      5  5a080db3  glider (c/4), c/4 diagonal
+     2  other            -      9            other (grows)
+     1  other            -     10            other (dies)
+     1  still life       1      6  7cddc9ca  ship
+
+#0     glider                       cells    5  centroid (519.3, 472.1)  ooo/o/.o
+#1     other (dies)                 cells   10  centroid (557.0, 486.5)  
+#2     other (unsettled)            cells   73  centroid (513.6, 490.5)  
+#3     other (unsettled)            cells   28  centroid (535.0, 496.4)  
+#4     other (grows)                cells    9  centroid (525.1, 494.7)  
+#5     ship                         cells    6  centroid (564.5, 497.5)  oo/o.o/.oo
+#6     block                        cells    4  centroid (523.0, 500.0)  oo/oo
+#7     block                        cells    4  centroid (546.0, 503.0)  oo/oo
+#8     other (unsettled)            cells   16  centroid (512.6, 506.6)  
+#9     other (unsettled)            cells   18  centroid (522.0, 505.1)  
+#10    other (grows)                cells   12  centroid (504.9, 507.5)  
+#11    other (unsettled)            cells   25  centroid (551.3, 510.2)  
+#12    block                        cells    4  centroid (504.0, 523.0)  oo/oo
+#13    glider                       cells    5  centroid (544.3, 527.3)  ooo/o/.o
+time:       0.20s on 12 threads

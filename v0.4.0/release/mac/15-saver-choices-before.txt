@@ -1,0 +1,32 @@
+# Screen saver (Idle) choices in the wallpaper store before saver install, 09:19:35
+/AllSpacesAndDisplays/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/AllSpacesAndDisplays/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/SystemDefault/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/SystemDefault/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces//Default/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces//Default/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces//Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces//Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-3-UUID/Default/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-3-UUID/Default/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-3-UUID/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-3-UUID/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-1-UUID/Default/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-1-UUID/Default/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-1-UUID/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-1-UUID/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-2-UUID/Default/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-2-UUID/Default/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-2-UUID/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-2-UUID/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-4-UUID/Default/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-4-UUID/Default/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Spaces/SPACE-4-UUID/Displays/DISPLAY-2-UUID/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Spaces/SPACE-4-UUID/Displays/DISPLAY-2-UUID/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Displays/DISPLAY-1-UUID/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+/Displays/DISPLAY-2-UUID/Idle/Content/Choices[0]/Provider = com.apple.wallpaper.choice.screen-saver
+/Displays/DISPLAY-2-UUID/Idle/Content/Choices[0]/Configuration/module/relative = file:///System/Library/ExtensionKit/Extensions/Flurry.appex
+
+Idle modules: {'Flurry.appex': 14}
+file mtime: 2026-11-13 09:11:34

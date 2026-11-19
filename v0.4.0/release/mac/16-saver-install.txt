@@ -1,0 +1,65 @@
+# H4 step 2: host saver install, 2026-11-13 09:19:45 EST
+
+$ jetcarp host saver install
+written to /Users/Jimmie/Library/Screen Savers/JETCARP.saver; choose JETCARP in System Settings, Wallpaper, Screen Saver… (opening; if it was open already, quit and reopen it to see JETCARP). Install again after changing its rotation
+(exit 0)
+
+$ ls -laR ~/Library/Screen\ Savers | head -40
+total 0
+drwx------+  3 Jimmie  staff    96 Nov 13 09:19 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+drwxr-xr-x@  3 Jimmie  staff    96 Nov 13 09:19 JETCARP.saver
+
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver:
+total 0
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 13 09:19 .
+drwx------+ 3 Jimmie  staff   96 Nov 13 09:19 ..
+drwxr-xr-x@ 6 Jimmie  staff  192 Nov 13 09:19 Contents
+
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents:
+total 8
+drwxr-xr-x@ 6 Jimmie  staff  192 Nov 13 09:19 .
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 13 09:19 ..
+-rw-r--r--@ 1 Jimmie  staff  793 Nov 13 09:19 Info.plist
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 13 09:19 MacOS
+drwxr-xr-x@ 5 Jimmie  staff  160 Nov 13 09:19 Resources
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 13 09:19 _CodeSignature
+
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/MacOS:
+total 24384
+drwxr-xr-x@ 3 Jimmie  staff        96 Nov 13 09:19 .
+drwxr-xr-x@ 6 Jimmie  staff       192 Nov 13 09:19 ..
+-r--r--r--@ 1 Jimmie  staff  12481952 Nov 13 09:19 JETCARP
+
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/Resources:
+total 32
+drwxr-xr-x@ 5 Jimmie  staff   160 Nov 13 09:19 .
+drwxr-xr-x@ 6 Jimmie  staff   192 Nov 13 09:19 ..
+-rw-r--r--@ 1 Jimmie  staff  5987 Nov 13 09:19 jetcarp-saver.json
+-rw-r--r--@ 1 Jimmie  staff   242 Nov 13 09:19 thumbnail.png
+-rw-r--r--@ 1 Jimmie  staff   370 Nov 13 09:19 thumbnail@2x.png
+
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/_CodeSignature:
+total 8
+drwxr-xr-x@ 3 Jimmie  staff    96 Nov 13 09:19 .
+drwxr-xr-x@ 6 Jimmie  staff   192 Nov 13 09:19 ..
+-rw-r--r--@ 1 Jimmie  staff  2928 Nov 13 09:19 CodeResources
+
+$ grep -rl "Cellar\|/opt/homebrew" ~/Library/Screen\ Savers
+(exit 1)
+
+$ ls -la ~/Library/Application\ Support/jetcarp
+total 64
+drwxr-xr-x@  7 Jimmie  staff    224 Nov 13 09:19 .
+drwx------+ 48 Jimmie  staff   1536 Nov 13 07:42 ..
+-rw-r--r--@  1 Jimmie  staff   4341 Nov 13 09:12 app.json
+drwxr-xr-x@  7 Jimmie  staff    224 Nov 13 09:19 data
+-rw-r--r--@  1 Jimmie  staff     37 Nov 13 09:19 host-program
+-rw-r--r--@  1 Jimmie  staff  13703 Nov 13 09:19 screen-saver-before.plist
+-rw-r--r--@  1 Jimmie  staff    362 Nov 13 07:54 setup.json
+
+$ jetcarp doctor | sed -n "/Desktop/,\$p"
+Desktop
+  background host: running
+  starts at login: yes
+  JETCARP's screen saver is at /Users/Jimmie/Library/Screen Savers/JETCARP.saver, showing "A classic a day". Choose it in System Settings, Wallpaper, Screen Saver….

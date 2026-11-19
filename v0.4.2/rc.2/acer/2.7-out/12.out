@@ -1,0 +1,14 @@
+hunt 8: 500/500 soups, 1072 soups/s, 11,099 objects (ships 1,004, osc 3,244, still 6,851), 24 distinct, 0 new | newest: still life 9c #8cae5a (B3/S23)
+  status done, 0 s run, 498 settled, 0 died, 2 exploded, 0 unsettled
+  B3/S23 on Square: 500 soups, 11099 objects (oscillator 3244, spaceship 1004, still life 6851), 24 distinct, 0 new
+  newest finds:
+    8cae5af4a207f512f4f1575edff69583  still life 9c #8cae5a              B3/S23     Square soup 424
+    fcc17ecdc8daad5462ed2dac092962ab  still life 8c #fcc17e              B3/S23     Square soup 276
+    6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23     Square soup 244
+    e9e58d494a7bc815b2c30eed2e18c6f0  still life 14c #e9e58d             B3/S23     Square soup 201
+    9b99f0405fe4ce5c883d06241171fac6  still life 8c #9b99f0              B3/S23     Square soup 172
+    9d035c1014869bfb702f6afbcabfcb17  aircraft carrier                   B3/S23     Square soup 159
+    726d9f101c90abbb38b52ed691ef31f3  still life 11c #726d9f             B3/S23     Square soup 142
+    b20cf1816c080db0f735b9f82659f870  mango                              B3/S23     Square soup 133
+    dfd22d6aa16676a219b75a6394a9c037  eater 1                            B3/S23     Square soup 123
+    299d09888b99cae4935e015f36b49976  beacon                             B3/S23     Square soup 61

@@ -1,0 +1,22 @@
+Recorded 2026-11-13 10:14:31 -05:00 after Jimmie closed the app with the window's X
+
+Exit watcher (handles held on the app and its launcher):
+  watching 30284 jetcarp, 29972 jetcarpw from 10:14:06
+  30284 jetcarp exited 10:14:16, exit code 0 (0x00000000), ran 784 s, CPU 1,530 s
+  29972 jetcarpw exited 10:14:16, exit code 0 (0x00000000), ran 784 s, CPU 0 s
+
+jetcarp processes left: 0
+
+%LOCALAPPDATA%\jetcarp:
+  library.sqlite-jobs               1 2026-11-13 10:02:52
+  searches                          1 2026-11-13 01:06:56
+  library.sqlite             12402688 2026-11-13 10:14:16
+  library.sqlite-shm            32768 2026-11-13 10:01:12
+  library.sqlite-wal                0 2026-11-13 10:14:16
+
+%APPDATA%\jetcarp:
+  app.json                       4339 2026-11-13 10:11:22
+  setup.json                      339 2026-11-13 10:02:52
+
+WER reports since 10:00 for jetcarp:
+  none

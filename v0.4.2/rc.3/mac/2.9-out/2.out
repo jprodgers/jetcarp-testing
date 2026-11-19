@@ -1,0 +1,547 @@
+[
+  {
+    "format": 2,
+    "id": "12334684ad3495652c4d2c2786cf41e1",
+    "rule": "B2/S34",
+    "rules": [
+      "B2/S34"
+    ],
+    "range": {
+      "bits": 9,
+      "birth_min": 4,
+      "birth_max": 500,
+      "survive_min": 0,
+      "survive_max": 505,
+      "states_min": 2,
+      "states_max": 2,
+      "min_rule": "B2/S",
+      "max_rule": "B245678/S0345678"
+    },
+    "neighborhood": "touch",
+    "steps_per_gen": 1,
+    "tiling": {
+      "family": "square",
+      "boundary": "dead"
+    },
+    "tiling_name": "Square",
+    "tile_types": 1,
+    "class": "spaceship",
+    "period": 1,
+    "displacement": [
+      0,
+      1
+    ],
+    "displacement_xy": [
+      0.0,
+      1.0
+    ],
+    "speed": "c orthogonal",
+    "cells": 4,
+    "min_cells": 4,
+    "max_cells": 4,
+    "bbox": [
+      0,
+      0,
+      3,
+      1
+    ],
+    "canonical": "o..o/.oo",
+    "phases": [
+      "0,0,0,1 3,0,0,1 1,1,0,1 2,1,0,1"
+    ],
+    "verified": {
+      "periods": 16,
+      "generations": 16,
+      "field": "dead-edged frame 16x24 unit cells",
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:18:48Z"
+    },
+    "seen": 1,
+    "provenance": {
+      "source": "hunt",
+      "tiling": {
+        "family": "square",
+        "size": {
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        "boundary": "dead"
+      },
+      "rng_state": "11904322950028659571",
+      "soup": 16,
+      "density": 0.5,
+      "generation": 55,
+      "shape": "rect",
+      "seed": 1,
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:18:48Z"
+    },
+    "discovered_by": "search",
+    "score": 75.5,
+    "state": "new",
+    "created": "2026-11-16T07:18:48Z",
+    "updated": "2026-11-16T07:18:48Z",
+    "geometry_pin": "0145310ebd49abfe89eb01c42ecaf459",
+    "engine_version": "0.4.2-rc.3",
+    "semantics": "1"
+  },
+  {
+    "format": 2,
+    "id": "5a080db389c0cab3caf884d2596a1e70",
+    "name": "glider",
+    "rule": "B3/S23",
+    "rules": [
+      "B3/S23",
+      "B36/S23"
+    ],
+    "range": {
+      "bits": 9,
+      "birth_min": 8,
+      "birth_max": 456,
+      "survive_min": 12,
+      "survive_max": 493,
+      "states_min": 2,
+      "states_max": 2,
+      "min_rule": "B3/S23",
+      "max_rule": "B3678/S0235678"
+    },
+    "neighborhood": "touch",
+    "steps_per_gen": 1,
+    "tiling": {
+      "family": "square",
+      "boundary": "dead"
+    },
+    "tiling_name": "Square",
+    "tile_types": 1,
+    "class": "spaceship",
+    "period": 4,
+    "displacement": [
+      -1,
+      -1
+    ],
+    "displacement_xy": [
+      -1.0,
+      -1.0
+    ],
+    "speed": "c/4 diagonal",
+    "cells": 5,
+    "min_cells": 5,
+    "max_cells": 5,
+    "bbox": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "canonical": "ooo/o/.o",
+    "phases": [
+      "0,0,0,1 1,0,0,1 2,0,0,1 0,1,0,1 1,2,0,1",
+      "1,-1,0,1 0,0,0,1 1,0,0,1 0,1,0,1 2,1,0,1",
+      "0,-1,0,1 1,-1,0,1 0,0,0,1 2,0,0,1 0,1,0,1",
+      "0,-1,0,1 1,-1,0,1 -1,0,0,1 0,0,0,1 1,1,0,1"
+    ],
+    "verified": {
+      "periods": 16,
+      "generations": 64,
+      "field": "dead-edged frame 32x32 unit cells",
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:31Z"
+    },
+    "seen": 333804,
+    "provenance": {
+      "source": "hunt",
+      "tiling": {
+        "family": "square",
+        "size": {
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        "boundary": "dead"
+      },
+      "rng_state": "10451216379200822465",
+      "soup": 0,
+      "density": 0.5,
+      "generation": 562,
+      "shape": "rect",
+      "seed": 1,
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:31Z"
+    },
+    "discovered_by": "search",
+    "score": 74.4,
+    "state": "new",
+    "created": "2026-11-16T07:17:31Z",
+    "updated": "2026-11-16T07:18:48Z",
+    "geometry_pin": "0145310ebd49abfe89eb01c42ecaf459",
+    "engine_version": "0.4.2-rc.3",
+    "semantics": "1"
+  },
+  {
+    "format": 2,
+    "id": "1376072ec0c084fc67a9b92d361379f3",
+    "name": "HWSS",
+    "rule": "B3/S23",
+    "rules": [
+      "B3/S23"
+    ],
+    "range": {
+      "bits": 9,
+      "birth_min": 8,
+      "birth_max": 344,
+      "survive_min": 12,
+      "survive_max": 12,
+      "states_min": 2,
+      "states_max": 2,
+      "min_rule": "B3/S23",
+      "max_rule": "B3468/S23"
+    },
+    "neighborhood": "touch",
+    "steps_per_gen": 1,
+    "tiling": {
+      "family": "square",
+      "boundary": "dead"
+    },
+    "tiling_name": "Square",
+    "tile_types": 1,
+    "class": "spaceship",
+    "period": 4,
+    "displacement": [
+      -2,
+      0
+    ],
+    "displacement_xy": [
+      -2.0,
+      0.0
+    ],
+    "speed": "c/2 orthogonal",
+    "cells": 13,
+    "min_cells": 13,
+    "max_cells": 18,
+    "bbox": [
+      0,
+      0,
+      6,
+      4
+    ],
+    "canonical": "oooooo/o.....o/o/.o....o/...oo",
+    "phases": [
+      "0,0,0,1 1,0,0,1 2,0,0,1 3,0,0,1 4,0,0,1 5,0,0,1 0,1,0,1 6,1,0,1 0,2,0,1 1,3,0,1 6,3,0,1 3,4,0,1 4,4,0,1",
+      "1,-1,0,1 2,-1,0,1 3,-1,0,1 4,-1,0,1 0,0,0,1 1,0,0,1 2,0,0,1 3,0,0,1 4,0,0,1 5,0,0,1 -1,1,0,1 0,1,0,1 2,1,0,1 3,1,0,1 4,1,0,1 5,1,0,1 0,2,0,1 1,2,0,1",
+      "2,-2,0,1 3,-2,0,1 0,-1,0,1 5,-1,0,1 -1,0,0,1 -1,1,0,1 5,1,0,1 -1,2,0,1 0,2,0,1 1,2,0,1 2,2,0,1 3,2,0,1 4,2,0,1",
+      "-1,0,0,1 0,0,0,1 -2,1,0,1 -1,1,0,1 1,1,0,1 2,1,0,1 3,1,0,1 4,1,0,1 -1,2,0,1 0,2,0,1 1,2,0,1 2,2,0,1 3,2,0,1 4,2,0,1 0,3,0,1 1,3,0,1 2,3,0,1 3,3,0,1"
+    ],
+    "verified": {
+      "periods": 16,
+      "generations": 64,
+      "field": "dead-edged frame 48x16 unit cells",
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:32Z"
+    },
+    "seen": 26,
+    "provenance": {
+      "source": "hunt",
+      "tiling": {
+        "family": "square",
+        "size": {
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        "boundary": "dead"
+      },
+      "rng_state": "10821182215654122305",
+      "soup": 1816,
+      "density": 0.5,
+      "generation": 2030,
+      "shape": "rect",
+      "seed": 1,
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:31Z"
+    },
+    "discovered_by": "search",
+    "score": 72.3,
+    "state": "new",
+    "created": "2026-11-16T07:17:32Z",
+    "updated": "2026-11-16T07:17:32Z",
+    "geometry_pin": "0145310ebd49abfe89eb01c42ecaf459",
+    "engine_version": "0.4.2-rc.3",
+    "semantics": "1"
+  },
+  {
+    "format": 2,
+    "id": "77364004b6d2c23cba74126b8aeb6ca3",
+    "name": "MWSS",
+    "rule": "B3/S23",
+    "rules": [
+      "B3/S23"
+    ],
+    "range": {
+      "bits": 9,
+      "birth_min": 8,
+      "birth_max": 344,
+      "survive_min": 12,
+      "survive_max": 268,
+      "states_min": 2,
+      "states_max": 2,
+      "min_rule": "B3/S23",
+      "max_rule": "B3468/S238"
+    },
+    "neighborhood": "touch",
+    "steps_per_gen": 1,
+    "tiling": {
+      "family": "square",
+      "boundary": "dead"
+    },
+    "tiling_name": "Square",
+    "tile_types": 1,
+    "class": "spaceship",
+    "period": 4,
+    "displacement": [
+      -2,
+      0
+    ],
+    "displacement_xy": [
+      -2.0,
+      0.0
+    ],
+    "speed": "c/2 orthogonal",
+    "cells": 11,
+    "min_cells": 11,
+    "max_cells": 15,
+    "bbox": [
+      0,
+      0,
+      5,
+      4
+    ],
+    "canonical": "ooooo/o....o/o/.o...o/...o",
+    "phases": [
+      "0,0,0,1 1,0,0,1 2,0,0,1 3,0,0,1 4,0,0,1 0,1,0,1 5,1,0,1 0,2,0,1 1,3,0,1 5,3,0,1 3,4,0,1",
+      "1,-1,0,1 2,-1,0,1 3,-1,0,1 0,0,0,1 1,0,0,1 2,0,0,1 3,0,0,1 4,0,0,1 -1,1,0,1 0,1,0,1 2,1,0,1 3,1,0,1 4,1,0,1 0,2,0,1 1,2,0,1",
+      "2,-2,0,1 0,-1,0,1 4,-1,0,1 -1,0,0,1 -1,1,0,1 4,1,0,1 -1,2,0,1 0,2,0,1 1,2,0,1 2,2,0,1 3,2,0,1",
+      "-1,0,0,1 0,0,0,1 -2,1,0,1 -1,1,0,1 1,1,0,1 2,1,0,1 3,1,0,1 -1,2,0,1 0,2,0,1 1,2,0,1 2,2,0,1 3,2,0,1 0,3,0,1 1,3,0,1 2,3,0,1"
+    ],
+    "verified": {
+      "periods": 16,
+      "generations": 64,
+      "field": "dead-edged frame 48x16 unit cells",
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:38Z"
+    },
+    "seen": 145,
+    "provenance": {
+      "source": "hunt",
+      "tiling": {
+        "family": "square",
+        "size": {
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        "boundary": "dead"
+      },
+      "rng_state": "17520777392164346969",
+      "soup": 4526,
+      "density": 0.5,
+      "generation": 8551,
+      "shape": "rect",
+      "seed": 1,
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:35Z"
+    },
+    "discovered_by": "search",
+    "score": 71.2,
+    "state": "new",
+    "created": "2026-11-16T07:17:36Z",
+    "updated": "2026-11-16T07:17:36Z",
+    "geometry_pin": "0145310ebd49abfe89eb01c42ecaf459",
+    "engine_version": "0.4.2-rc.3",
+    "semantics": "1"
+  },
+  {
+    "format": 2,
+    "id": "6dd55e69689ba784aff448b7dbbc9328",
+    "name": "LWSS",
+    "rule": "B3/S23",
+    "rules": [
+      "B3/S23"
+    ],
+    "range": {
+      "bits": 9,
+      "birth_min": 8,
+      "birth_max": 344,
+      "survive_min": 12,
+      "survive_max": 396,
+      "states_min": 2,
+      "states_max": 2,
+      "min_rule": "B3/S23",
+      "max_rule": "B3468/S2378"
+    },
+    "neighborhood": "touch",
+    "steps_per_gen": 1,
+    "tiling": {
+      "family": "square",
+      "boundary": "dead"
+    },
+    "tiling_name": "Square",
+    "tile_types": 1,
+    "class": "spaceship",
+    "period": 4,
+    "displacement": [
+      -2,
+      0
+    ],
+    "displacement_xy": [
+      -2.0,
+      0.0
+    ],
+    "speed": "c/2 orthogonal",
+    "cells": 9,
+    "min_cells": 9,
+    "max_cells": 12,
+    "bbox": [
+      0,
+      0,
+      4,
+      3
+    ],
+    "canonical": "oooo/o...o/o/.o..o",
+    "phases": [
+      "0,0,0,1 1,0,0,1 2,0,0,1 3,0,0,1 0,1,0,1 4,1,0,1 0,2,0,1 1,3,0,1 4,3,0,1",
+      "1,-1,0,1 2,-1,0,1 0,0,0,1 1,0,0,1 2,0,0,1 3,0,0,1 -1,1,0,1 0,1,0,1 2,1,0,1 3,1,0,1 0,2,0,1 1,2,0,1",
+      "0,-1,0,1 3,-1,0,1 -1,0,0,1 -1,1,0,1 3,1,0,1 -1,2,0,1 0,2,0,1 1,2,0,1 2,2,0,1",
+      "-1,0,0,1 0,0,0,1 -2,1,0,1 -1,1,0,1 1,1,0,1 2,1,0,1 -1,2,0,1 0,2,0,1 1,2,0,1 2,2,0,1 0,3,0,1 1,3,0,1"
+    ],
+    "verified": {
+      "periods": 16,
+      "generations": 64,
+      "field": "dead-edged frame 48x16 unit cells",
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:32Z"
+    },
+    "seen": 474,
+    "provenance": {
+      "source": "hunt",
+      "tiling": {
+        "family": "square",
+        "size": {
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        "boundary": "dead"
+      },
+      "rng_state": "7706952169838672439",
+      "soup": 244,
+      "density": 0.5,
+      "generation": 2114,
+      "shape": "rect",
+      "seed": 1,
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:17:31Z"
+    },
+    "discovered_by": "search",
+    "score": 70.6,
+    "state": "new",
+    "created": "2026-11-16T07:17:31Z",
+    "updated": "2026-11-16T07:17:31Z",
+    "geometry_pin": "0145310ebd49abfe89eb01c42ecaf459",
+    "engine_version": "0.4.2-rc.3",
+    "semantics": "1"
+  },
+  {
+    "format": 2,
+    "id": "484e9fe106c96e1fef5e85032d347cfe",
+    "rule": "B2/S34",
+    "rules": [
+      "B2/S34"
+    ],
+    "range": {
+      "bits": 9,
+      "birth_min": 4,
+      "birth_max": 500,
+      "survive_min": 0,
+      "survive_max": 508,
+      "states_min": 2,
+      "states_max": 2,
+      "min_rule": "B2/S",
+      "max_rule": "B245678/S2345678"
+    },
+    "neighborhood": "touch",
+    "steps_per_gen": 1,
+    "tiling": {
+      "family": "square",
+      "boundary": "dead"
+    },
+    "tiling_name": "Square",
+    "tile_types": 1,
+    "class": "spaceship",
+    "period": 1,
+    "displacement": [
+      0,
+      1
+    ],
+    "displacement_xy": [
+      0.0,
+      1.0
+    ],
+    "speed": "c orthogonal",
+    "cells": 4,
+    "min_cells": 4,
+    "max_cells": 4,
+    "bbox": [
+      0,
+      0,
+      3,
+      2
+    ],
+    "canonical": "o..o//.oo",
+    "phases": [
+      "0,0,0,1 3,0,0,1 1,2,0,1 2,2,0,1"
+    ],
+    "verified": {
+      "periods": 16,
+      "generations": 16,
+      "field": "dead-edged frame 16x32 unit cells",
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:18:48Z"
+    },
+    "seen": 2,
+    "provenance": {
+      "source": "hunt",
+      "tiling": {
+        "family": "square",
+        "size": {
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        "boundary": "dead"
+      },
+      "rng_state": "15965508135439572103",
+      "soup": 13,
+      "density": 0.5,
+      "generation": 54,
+      "shape": "rect",
+      "seed": 1,
+      "jetcarp_version": "0.4.2-rc.3",
+      "date": "2026-11-16T07:18:48Z"
+    },
+    "discovered_by": "search",
+    "score": 68.0,
+    "state": "new",
+    "created": "2026-11-16T07:18:48Z",
+    "updated": "2026-11-16T07:18:48Z",
+    "geometry_pin": "0145310ebd49abfe89eb01c42ecaf459",
+    "engine_version": "0.4.2-rc.3",
+    "semantics": "1"
+  }
+]

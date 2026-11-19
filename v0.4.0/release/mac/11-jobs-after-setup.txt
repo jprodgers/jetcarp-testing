@@ -1,0 +1,42 @@
+# H3 step 4: the jobs after setup, from the terminal, 2026-11-13 08:03:48 EST
+
+$ jetcarp jobs list
+   25  hunt     done     2026-11-13T12:54:50Z  hunt 25: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   24  hunt     done     2026-11-13T12:54:50Z  hunt 24: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   23  hunt     done     2026-11-13T12:54:50Z  hunt 23: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   22  hunt     done     2026-11-13T12:54:50Z  hunt 22: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   21  hunt     done     2026-11-13T12:54:50Z  hunt 21: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   20  hunt     done     2026-11-13T12:54:50Z  hunt 20: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   19  search   done     2026-11-13T12:54:50Z  search 19: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   18  hunt     done     2026-11-13T12:54:50Z  hunt 18: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   17  hunt     done     2026-11-13T12:54:50Z  hunt 17: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   16  search   done     2026-11-13T12:54:50Z  search 16: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   15  hunt     done     2026-11-13T12:54:50Z  hunt 15: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   14  hunt     done     2026-11-13T12:54:50Z  hunt 14: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   13  hunt     done     2026-11-13T12:54:50Z  hunt 13: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   12  hunt     done     2026-11-13T12:54:50Z  hunt 12: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   11  hunt     done     2026-11-13T12:54:50Z  hunt 11: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+   10  hunt     done     2026-11-13T12:54:50Z  hunt 10: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+    9  hunt     done     2026-11-13T12:54:50Z  hunt 9: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+    8  hunt     done     2026-11-13T12:54:50Z  hunt 8: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+    7  hunt     done     2026-11-13T12:54:50Z  hunt 7: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+    6  hunt     done     2026-11-13T12:54:50Z  hunt 6: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+    5  hunt     done     2026-11-13T12:54:50Z  hunt 5: imported from pack sha256:722f77500b8ae070897b8e14b413836d6bd11f88e6674fb9d9c186bb59707a29 (its finds came with the pack; nothing ran here)
+    4  explore  done     2026-11-13T12:54:49Z  Quick Start build (explore 4): 713 atlas entries published (713 new, 0 updated, 0 removed); 8,365 runs (53/s), 2,690 elites in 1,519 niches, 79 confirmed, 17 of 1,359 tilings; Apple M2 Max, Metal
+    3  pack_import done     2026-11-13T12:54:47Z  pack import 3: JETCARP starter pack imported: 26 patterns new, 0 merged, 79 Quick Start entries, 8 ant runs
+    2  hunt     done     2026-11-12T06:12:10Z  hunt 2: 10,000/10,000 soups, 2161 soups/s, 213,586 objects (ships 18,987, osc 62,009, still 132,590), 64 distinct, 64 new | newest: p2 oscillator 16c #fc4453 (B3/S23)
+    1  pile     done     2026-11-12T06:09:24Z  pile 1: 0 grains on , step 0/0 (0 grains), 0.000e0 topplings, 0.0 s
+25 job(s); 0 running
+
+$ jetcarp jobs status 25
+hunt 0: 0 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+  status , 0 s run, 0 settled, 0 died, 0 exploded, 0 unsettled
+
+$ ls -la ~/Pictures/JETCARP
+total 40
+drwxr-xr-x@ 6 Jimmie  staff   192 Nov 13 00:35 .
+drwx------+ 7 Jimmie  staff   224 Nov 12 01:09 ..
+-rw-r--r--@ 1 Jimmie  staff  6148 Nov 12 01:10 .DS_Store
+-rw-r--r--@ 1 Jimmie  staff  7004 Nov 13 00:31 brians_brain_120x80_gen200.png
+-rw-r--r--@ 1 Jimmie  staff  1136 Nov 13 00:35 jaca_rainbow_fronts_before_brians_brain.json
+drwxr-xr-x@ 4 Jimmie  staff   128 Nov 12 01:10 piles

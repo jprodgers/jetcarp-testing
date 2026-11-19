@@ -1,0 +1,3 @@
+c orthogonal spaceship 4c #123346 (B2/S34 on Square): 16x16 rect soups at density 0.5, hunt job 8
+  the best 1 of 30 soups run again:
+  soup 16 (rng state 11904322950028659571): 1 copy, 1 ship; exploded at generation 55; scene: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/2.9-best.json

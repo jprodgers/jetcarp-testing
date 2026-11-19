@@ -1,0 +1,115 @@
+#### 0. The upgrade from rc.3 to rc.4, 2026-11-16 22:06:34
+rc.3 as installed: jetcarp 0.4.2-rc.3; jetcarp.exe sha256 24630a46ecee1e87...; 70 files in bin
+jetcarp processes before: []
+desktop before: JETCARP Run values: []; SCRNSAVE.EXE: []; ScreenSaveActive 1; the wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24, style 10; JETCARP.scr in %LOCALAPPDATA%\JETCARP: False; jetcarp processes: []
+rc.4's zip unpacked to ~\jetcarp-rc-042c\rc4-dl\unz\jetcarp-0.4.2-rc.4-x86_64-pc-windows-msvc; each of its files copied over rc.3's at the same place in ~\jetcarp-rc-042c\bin (Copy-Item -Force)
+rc.4's 70 files in place; differing from the zip: 0 ; in bin but not in rc.4's zip: 0 
+jetcarp.exe sha256 now 1e9dda182366b4a8...
+
+#### rc.4 on rc.3's settings and library (Phase 1's test folders)
+(folders: JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _RUNTIME_DIR = ~\jetcarp-rc-042c\config, \data, \out, \runtime; as rc.3's Phase 1)
+$ jetcarp --version
+jetcarp 0.4.2-rc.4
+(exit 0, 2.3 s)
+$ jetcarp paths
+settings: ~\jetcarp-rc-042c\config
+data:     ~\jetcarp-rc-042c\data
+output:   ~\jetcarp-rc-042c\out
+bundled:  ~\jetcarp-rc-042c\bin\packs
+runtime:  ~\jetcarp-rc-042c\runtime
+(exit 0, 0.1 s)
+$ jetcarp setup --status
+setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+  settings: ~\jetcarp-rc-042c\config
+  data:     ~\jetcarp-rc-042c\data (from JETCARP_DATA_DIR), 1.9 TB free
+  library:  ~\jetcarp-rc-042c\data\library.sqlite
+  output:   ~\jetcarp-rc-042c\out
+  bundled:  ~\jetcarp-rc-042c\bin\packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (a Quick Start build runs on it)
+library: 1,454 patterns, 0 ant runs, 2 jobs; Quick Start entries: 364 built in
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+(exit 0, 9.9 s)
+$ jetcarp doctor
+JETCARP 0.4.2-rc.4 on windows x86_64 (12 threads)
+
+Folders
+  settings: ~\jetcarp-rc-042c\config
+  data:     ~\jetcarp-rc-042c\data
+  output:   ~\jetcarp-rc-042c\out
+  runtime:  ~\jetcarp-rc-042c\runtime
+  bundled:  ~\jetcarp-rc-042c\bin\packs (1.5 MB)
+  library:  ~\jetcarp-rc-042c\data\library.sqlite (3.8 MB)
+  data in use: 282.9 MB
+
+GPU: auto (automatic)
+  setting: ~\jetcarp-rc-042c\config\gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+      self-test: passed (491 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+      why: the fastest adapter (automatic)
+      limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+      self-test: passed (570 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+
+Graphics adapters (* = used for computing)
+    Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+  * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+    Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+    NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+    Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+      Windows' software renderer (WARP), which the GPU simulation never uses
+    Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+Environment
+  JETCARP_CONFIG_DIR=~\jetcarp-rc-042c\config
+  JETCARP_DATA_DIR=~\jetcarp-rc-042c\data
+  JETCARP_OUT=~\jetcarp-rc-042c\out
+  JETCARP_RUNTIME_DIR=~\jetcarp-rc-042c\runtime
+(exit 0, 0.9 s)
+$ jetcarp jobs list
+    2  explore  paused   2026-11-16T02:06:53Z  explore 2: 564,350 runs (18/s), 40,020 elites in 18,608 niches (1,953 of them confirmed), 344 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+    1  hunt     done     2026-11-16T00:14:13Z  hunt 1: 20,000/20,000 soups in each of 6 groups, 7534 soups/s, 760,892 objects (ships 51,012, osc 236,468, still 473,412), 1,783 distinct, 1,783 new | newest: still life 19c #916b39 (B3/S23)
+2 job(s); 0 running
+(exit 0, 0.2 s)
+$ jetcarp library list   (exit 0; 1455 lines; the first 4:)
+  catalog: ~\jetcarp-rc-042c\data\library.sqlite (1454 shown of 1454 matching)
+  aab843d7ff96817d170d6725fb23e37c  c/6 diagonal spaceship 25c #aab843 B36/S23      Square                     p48    25c  seen 2     score  98.0  new  c/6 diagonal
+  1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 2     score  77.1  new  c/2 orthogonal
+  5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 48304 score  74.5  new  c/4 diagonal
+$ jetcarp host start
+Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host status
+Error: the JETCARP background host is not running
+(exit 1, 0.1 s)
+desktop after: JETCARP Run values: []; SCRNSAVE.EXE: []; ScreenSaveActive 1; the wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24, style 10; JETCARP.scr in %LOCALAPPDATA%\JETCARP: False; jetcarp processes: []
+desktop unchanged: True

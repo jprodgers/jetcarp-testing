@@ -1,0 +1,115 @@
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/data/library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "393"
+    ],
+    [
+      "niches",
+      "215"
+    ],
+    [
+      "confirmed elites",
+      "21"
+    ],
+    [
+      "tilings tried",
+      "15 of 1,359"
+    ],
+    [
+      "backend",
+      "cpu only"
+    ]
+  ],
+  "created": "2026-11-16T06:30:10Z",
+  "deterministic": false,
+  "done": 1278,
+  "elapsed_s": 537.365018875,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 2,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "cpu-jaca",
+  "line": "explore 2: 1,278 runs (2/s), 393 elites in 215 niches (21 of them confirmed), 15 of 1,359 tilings; cpu only",
+  "per_s": 2.338876736759416,
+  "progress": {
+    "backend": "cpu only",
+    "build_minutes": null,
+    "capped": 7,
+    "confirmed": 90,
+    "confirmed_elites": 21,
+    "cores": 12,
+    "elapsed_s": 537.365018875,
+    "elites": 393,
+    "error": null,
+    "families": [
+      {
+        "best": 1.631515383720398,
+        "elites": 393,
+        "family": "jaca",
+        "mean": 0.5308517520119187,
+        "runs": 1278
+      }
+    ],
+    "folder": "/Users/Jimmie/jetcarp-rc-042c/data/searches/e3ac9ab9-d2ec-4b33-8fab-6bce34744961",
+    "given_up": 10,
+    "gpu_error": null,
+    "gpu_threads": 0,
+    "job": 2,
+    "line": "explore 2: 1,278 runs (2/s), 393 elites in 215 niches (21 of them confirmed), 15 of 1,359 tilings; cpu only",
+    "loaded": {
+      "confirmed": 19,
+      "coverage_rows": 116,
+      "elites": 239,
+      "runs_read": 239,
+      "seconds": 0.000599291,
+      "seen": 724,
+      "seen_blobs": 8
+    },
+    "niches": 215,
+    "note": null,
+    "panics": 0,
+    "per_s": 2.338876736759416,
+    "published": null,
+    "rss_gb": 0.173675537109375,
+    "screened": 1278,
+    "seen": 1412,
+    "session_s": 238.802210625,
+    "status": "paused",
+    "threads": 10,
+    "tilings": 1359,
+    "tilings_tried": 15
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "cpu": true,
+    "families": [
+      "jaca"
+    ],
+    "gpu": false,
+    "label": "cpu-jaca",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "started_with": {
+      "minutes": 10.0
+    },
+    "uuid": "e3ac9ab9-d2ec-4b33-8fab-6bce34744961"
+  },
+  "stale": false,
+  "status": "paused",
+  "title": "cpu-jaca: every tiling, jaca",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T06:39:10Z",
+  "waited_s": null
+}

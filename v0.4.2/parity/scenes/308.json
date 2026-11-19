@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S23V on Spectre",
+  "description": "A single tile that never repeats. All 14 edges share one half-turn-symmetric shape. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "spectre",
+    "size": {
+      "level": 4
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 108,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S23V",
+      "rule": "B2/S23",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "6bb85efef42db994",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "B2/S34 on Penrose rhombs (P3)",
+  "description": "Thick and thin rhombs, edge to edge. Thick outnumber thin by φ to 1. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "penrose-rhomb",
+    "size": {
+      "level": 4
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 111,
+  "cas": [
+    {
+      "id": 1,
+      "name": "B2/S34",
+      "rule": "B2/S34",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "94453104d0d83266",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

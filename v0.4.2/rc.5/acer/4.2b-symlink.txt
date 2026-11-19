@@ -1,0 +1,128 @@
+file symlink made: $W\out\innocent.json -> $W\outside\victim.txt
+hard link made: $W\out\innocent-hard.json = $W\outside\victim-hard.txt
+== world_new {"path": "link-outside/good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or ~\jetcarp-rc-042c\bin\packs, not $W\out\link-outside\good.json
+== world_new {"path": "link-outside\\good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or ~\jetcarp-rc-042c\bin\packs, not $W\out\link-outside\good.json
+== files_list {"file": "innocent.json"} -> isError=True
+   $W\out\innocent.json is outside JETCARP's output folder ($W\out) and the catalog's folder ($W\library); files_list only reads those
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== world_status {"save_path": "innocent.json"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\innocent.json)
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== files_list {"file": "innocent-hard.json"} -> isError=False
+   $W\out\innocent-hard.json (47 bytes, inside $W\out):
+precious text outside, reached by a hard link
+
+
+== world_status {"save_path": "innocent-hard.json"} -> isError=False
+   Saved the scene (654 bytes, generation 0, hash 774f6f16e1e118c0) to $W\out\innocent-hard.json.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "E
+directory symlink made: $W\out\link-sym -> $W\outside
+== [dir symlink] world_new {"path": "link-sym/good.json"} -> isError=True
+   the MCP tools may only read inside $W\out or $W\library or ~\jetcarp-rc-042c\bin\packs, not $W\out\link-sym\good.json
+== [dir symlink] world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== [dir symlink] world_status {"save_path": "link-sym/scene.json"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\scene.json)
+== [dir symlink] world_render {"max_side": 64, "save_path": "link-sym\\pic.png"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\pic.png)
+== [dir symlink] world_render {"wallpaper": {"size": "320x200", "out": "link-sym/wall.png"}} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\wall.png)
+== [dir symlink] run_script {"script": "let w = world(#{ tiling: \"square\", size: [16, 16] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_png(\"link-sym/s.png\", #{ size: [32, 32] }); print(\"wrote\");", "max_seconds -> isError=True
+   error at line 1, column 100: scripts may only write inside $W\out (got $W\out\link-sym\s.png); use out_dir("label") for a new output folder
+log:
+error: line 1, column 100: scripts may only write inside $W\out (got C:
+== [dir symlink] run_script {"script": "write_text(\"link-sym/t.txt\", \"x\"); print(\"wrote\");", "max_seconds": 20} -> isError=True
+   error at line 1, column 1: scripts may only write inside $W\out (got $W\out\link-sym\t.txt); use out_dir("label") for a new output folder
+log:
+error: line 1, column 1: scripts may only write inside $W\out (got C:\Use
+== [dir symlink] search_runs {"job": 3, "csv": "link-sym/runs.csv", "limit": 5} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\runs.csv)
+== [dir symlink] media_render {"quickstart": "life", "gens": 5, "out": "link-sym/media"} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\media)
+== [dir symlink] pack {"export": {"to": "link-sym/export", "publish": {"feed": "f9-sym", "no_media": true, "no_searches": true}}} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\export)
+== [dir symlink] search_start {"pile": {"tiling": "square", "grains": 500, "out": "link-sym/piles"}, "wait_s": 30} -> isError=True
+   the MCP tools may only write inside $W\out or $W\library (got $W\out\link-sym\piles)
+== [dir symlink] files_list {"path": "link-sym"} -> isError=True
+   $W\out\link-sym is outside JETCARP's output folder ($W\out) and the catalog's folder ($W\library); files_list only reads those
+#### written in $W\outside through the directory symlink: 0
+$ the file link and its target afterwards
+\\?\$W\outside\victim.txt
+precious text outside the output folder
+
+$ the hard link's outside file afterwards (654 bytes)
+{
+  "jetcarp_version": "0.4.2-rc.5",
+  "format": 1,
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 16,
+        "h": 16
+      }
+    },
+    "boundary": "wrap"
+  },
+  "r

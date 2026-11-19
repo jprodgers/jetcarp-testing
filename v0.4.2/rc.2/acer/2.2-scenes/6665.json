@@ -1,0 +1,34 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 6665: B0,1,3,5,6,11/S012345",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k5-089"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "66990559679761686",
+  "cas": [
+    {
+      "rule": "B0,1,3,5,6,11/S012345",
+      "neighborhood": "touch",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "all"
+          },
+          "fill": {
+            "density": 0.5
+          }
+        }
+      }
+    }
+  ]
+}

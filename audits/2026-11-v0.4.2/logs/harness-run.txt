@@ -1,0 +1,368 @@
+warning: unused dependency `jetcarp-core`
+  --> Cargo.toml:17:1
+   |
+17 | jetcarp-core = { path = "../../../../jetcarp/crates/jetcarp-core" }
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `cargo::unused_dependencies` is set to `warn` by default
+help: consider removing the dependency on `jetcarp-core`
+help: to still use for development builds, move to `dev-dependencies`
+warning: unused dependency `sha2`
+  --> Cargo.toml:20:1
+   |
+20 | sha2 = "0.10"
+   | ^^^^^^^^^^^^^
+   |
+help: consider removing the dependency on `sha2`
+help: to still use for development builds, move to `dev-dependencies`
+warning: `jetcarp-audit-harness` (manifest) generated 2 warnings
+     Running unittests src/lib.rs 
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/finding_171_b0_mixed_degree.rs 
+
+running 3 tests
+test b0_emulation_matches_brute_force_on_4_8_8 ... B03/S23 on 4.8.8: 29 generations match the true rule
+B0123478/S01234678 on 4.8.8: 29 generations match the true rule
+
+thread 'b0_emulation_matches_brute_force_on_4_8_8' (23290) panicked at tests/finding_171_b0_mixed_degree.rs:162:13:
+assertion `left == right` failed: B0/S8 on 4.8.8: generation 3: 71 of 288 cells differ from the true rule
+  left: 71
+ right: 0
+FAILED
+test b0_emulation_on_aperiodic_patches_interior ... penrose-rhomb  level 3 B0123478/S01234678     degrees [4, 5, 6, 7, 8, 9, 10, 11]: Some((3, 216, 500))
+penrose-rhomb  level 3 B03/S23                degrees [4, 5, 6, 7, 8, 9, 10, 11]: None
+hat            level 3 B0/S6                  degrees [2, 3, 4, 5, 6, 7]: Some((3, 174, 500))
+spectre        level 3 B03/S238               degrees [2, 3, 4, 5, 6, 7]: Some((3, 53, 559))
+ok
+test b0_emulation_on_uniform_and_mixed_degree_tori ... family         nb     rule                   degrees        result
+square         touch  B014/S2                [8]            matches truth for 40 generations
+square         touch  B0123478/S01234678     [8]            matches truth for 40 generations
+hex            touch  B0/S6                  [6]            matches truth for 40 generations
+cairo          touch  B02/S347               [7]            matches truth for 40 generations
+oct            touch  B03/S23                [4, 8]         matches truth for 40 generations
+trihex         touch  B02/S13                [6, 12]        matches truth for 40 generations
+oct            touch  B0123478/S01234678     [4, 8]         matches truth for 40 generations
+oct            touch  B0/S8                  [4, 8]         DIVERGES at generation 3: 76 of 288 cells wrong under the best decoding
+oct            touch  B0/S4                  [4, 8]         DIVERGES at generation 3: 74 of 288 cells wrong under the best decoding
+oct            touch  B03/S238               [4, 8]         DIVERGES at generation 3: 147 of 288 cells wrong under the best decoding
+oct            edge   B0/S8V                 [4, 8]         DIVERGES at generation 3: 76 of 288 cells wrong under the best decoding
+trihex         edge   B0/S6V                 [3, 6]         DIVERGES at generation 3: 107 of 432 cells wrong under the best decoding
+trihex         touch  B02/S1,10              [6, 12]        matches truth for 40 generations
+snubsq         touch  B03/S2,3,9             [9, 12]        DIVERGES at generation 3: 305 of 864 cells wrong under the best decoding
+rhombitrihex   touch  B03/S238               [6, 8, 12]     DIVERGES at generation 3: 340 of 864 cells wrong under the best decoding
+trunctrihex    edge   B0/S4V                 [4, 6, 12]     DIVERGES at generation 3: 252 of 864 cells wrong under the best decoding
+
+thread 'b0_emulation_on_uniform_and_mixed_degree_tori' (23296) panicked at tests/finding_171_b0_mixed_degree.rs:113:5:
+B0 emulation diverges from the true rule: [("oct", "touch", "B0/S8", 3), ("oct", "touch", "B0/S4", 3), ("oct", "touch", "B03/S238", 3), ("oct", "edge", "B0/S8V", 3), ("trihex", "edge", "B0/S6V", 3), ("snubsq", "touch", "B03/S2,3,9", 3), ("rhombitrihex", "touch", "B03/S238", 3), ("trunctrihex", "edge", "B0/S4V", 3)]
+FAILED
+
+failures:
+
+failures:
+    b0_emulation_matches_brute_force_on_4_8_8
+    b0_emulation_on_uniform_and_mixed_degree_tori
+
+test result: FAILED. 1 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+error: test failed, to rerun pass `--test finding_171_b0_mixed_degree`
+     Running tests/finding_172_ltl_counts.rs 
+
+running 1 test
+test larger_than_life_counts_above_the_square_grid_maximum ... parsed 'R1,C2,S2-3,B9-12' as 'R1,C2,S2-3,B'
+triangles, touch degree 12: dead cells with 9-12 live neighbours: 24; born under B9-12: 0
+
+thread 'larger_than_life_counts_above_the_square_grid_maximum' (23298) panicked at tests/finding_172_ltl_counts.rs:30:5:
+assertion `left == right` failed: B9-12 is silently dropped on a tiling whose cells have 12 neighbours
+  left: 0
+ right: 24
+FAILED
+
+failures:
+
+failures:
+    larger_than_life_counts_above_the_square_grid_maximum
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+error: test failed, to rerun pass `--test finding_172_ltl_counts`
+     Running tests/finding_173_state_hash.rs 
+
+running 1 test
+test state_hash_covers_turmite_internal_state ... Turmite 1R1,1R1/1N0,0N0: same hash straight after the change = true; worlds differ one generation later = true
+
+thread 'state_hash_covers_turmite_internal_state' (23304) panicked at tests/finding_173_state_hash.rs:26:9:
+Turmite 1R1,1R1/1N0,0N0: two worlds with different futures share a state hash
+FAILED
+
+failures:
+
+failures:
+    state_hash_covers_turmite_internal_state
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+error: test failed, to rerun pass `--test finding_173_state_hash`
+     Running tests/verified_aperiodic_patches.rs 
+
+running 1 test
+test aperiodic_patches ... penrose-kd     level 1:     10 tiles,     5 open, mirrored     0 (0.0000), interior degrees edge [] touch []; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+penrose-kd     level 2:     70 tiles,    25 open, mirrored     0 (0.0000), interior degrees edge [4] touch [8, 9, 10]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+penrose-kd     level 3:    500 tiles,    70 open, mirrored     0 (0.0000), interior degrees edge [4] touch [8, 9, 10]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+    complete vertex figures (corner angle / 36 deg, +100 for shape 1): {[2, 2, 2, 2, 2]: 31, [2, 2, 2, 2, 102]: 47, [2, 2, 101, 4, 101]: 65, [2, 2, 102, 102, 102]: 20, [2, 2, 106]: 180, [4, 4, 101, 101]: 100, [102, 102, 102, 102, 102]: 10}
+penrose-kd     level 4:   4000 tiles,   190 open, mirrored     0 (0.0000), interior degrees edge [4] touch [8, 9, 10]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+    complete vertex figures (corner angle / 36 deg, +100 for shape 1): {[2, 2, 2, 2, 2]: 241, [2, 2, 2, 2, 102]: 350, [2, 2, 101, 4, 101]: 570, [2, 2, 102, 102, 102]: 220, [2, 2, 106]: 1480, [4, 4, 101, 101]: 910, [102, 102, 102, 102, 102]: 90}
+penrose-kd     level 5:  35000 tiles,   570 open, mirrored     0 (0.0000), interior degrees edge [4] touch [8, 9, 10]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+    complete vertex figures (corner angle / 36 deg, +100 for shape 1): {[2, 2, 2, 2, 2]: 2236, [2, 2, 2, 2, 102]: 3120, [2, 2, 101, 4, 101]: 5055, [2, 2, 102, 102, 102]: 1930, [2, 2, 106]: 13270, [4, 4, 101, 101]: 8120, [102, 102, 102, 102, 102]: 850}
+penrose-rhomb  level 1:     10 tiles,     8 open, mirrored     0 (0.0000), interior degrees edge [] touch []; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+penrose-rhomb  level 2:     70 tiles,    30 open, mirrored     0 (0.0000), interior degrees edge [4] touch [7, 9, 10]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+penrose-rhomb  level 3:    500 tiles,    65 open, mirrored     0 (0.0000), interior degrees edge [4] touch [7, 8, 9, 10, 11]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+    complete vertex figures (corner angle / 36 deg, +100 for shape 1): {[2, 2, 2, 2, 2]: 16, [2, 2, 2, 2, 101, 101]: 20, [2, 2, 2, 104]: 40, [2, 2, 101, 101, 2, 101, 101]: 15, [2, 101, 3, 3, 101]: 105, [2, 104, 104]: 70, [3, 3, 104]: 170}
+penrose-rhomb  level 4:   4000 tiles,   160 open, mirrored     0 (0.0000), interior degrees edge [4] touch [7, 8, 9, 10, 11]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+    complete vertex figures (corner angle / 36 deg, +100 for shape 1): {[2, 2, 2, 2, 2]: 216, [2, 2, 2, 2, 101, 101]: 115, [2, 2, 2, 104]: 350, [2, 2, 101, 101, 2, 101, 101]: 220, [2, 101, 3, 3, 101]: 895, [2, 104, 104]: 565, [3, 3, 104]: 1500}
+penrose-rhomb  level 5:  35000 tiles,   564 open, mirrored     0 (0.0000), interior degrees edge [4] touch [7, 8, 9, 10, 11]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+    complete vertex figures (corner angle / 36 deg, +100 for shape 1): {[2, 2, 2, 2, 2]: 1936, [2, 2, 2, 2, 101, 101]: 1190, [2, 2, 2, 104]: 3090, [2, 2, 101, 101, 2, 101, 101]: 1915, [2, 101, 3, 3, 101]: 8130, [2, 104, 104]: 5082, [3, 3, 104]: 13246}
+hat            level 1:     10 tiles,     8 open, mirrored     1 (0.1000), interior degrees edge [] touch []; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+hat            level 2:     70 tiles,    26 open, mirrored     7 (0.1000), interior degrees edge [4, 5, 6] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+hat            level 3:    500 tiles,    75 open, mirrored    61 (0.1220), interior degrees edge [4, 5, 6] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+hat            level 4:   4000 tiles,   223 open, mirrored   508 (0.1270), interior degrees edge [4, 5, 6] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+hat            level 5:  35000 tiles,   669 open, mirrored  4460 (0.1274), interior degrees edge [4, 5, 6] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+spectre        level 1:      9 tiles,     8 open, mirrored     9 (1.0000), interior degrees edge [] touch []; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+spectre        level 2:     71 tiles,    42 open, mirrored     0 (0.0000), interior degrees edge [5, 6] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+spectre        level 3:    559 tiles,   186 open, mirrored   559 (1.0000), interior degrees edge [4, 5, 6, 7] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+spectre        level 4:   4401 tiles,   796 open, mirrored     0 (0.0000), interior degrees edge [4, 5, 6, 7] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+spectre        level 5:  34649 tiles,  3380 open, mirrored 34649 (1.0000), interior degrees edge [4, 5, 6, 7] touch [6, 7]; differ touch 0 edge 0, extra 0, asym 0, gaps 0, crossings 0
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.28s
+
+     Running tests/verified_hashlife_b0_uniform.rs 
+
+running 1 test
+test stepper_hashlife_and_truth_on_b0_rules ... tiling   rule                  gens  stepper==hashlife  stepper==truth  hashlife==truth (truth compared under the engine's own decoding for that generation)
+square   B0/S8                    2  true               true            true
+square   B0/S8                    4  true               true            true
+square   B0/S8                    6  true               true            true
+square   B0/S8                   16  true               true            true
+square   B0/S8                   64  true               true            true
+square   B03/S23                  2  true               true            true
+square   B03/S23                  4  true               true            true
+square   B03/S23                  6  true               true            true
+square   B03/S23                 16  true               true            true
+square   B03/S23                 64  true               true            true
+hex      B0/S6                    2  true               true            true
+hex      B0/S6                    4  true               true            true
+hex      B0/S6                    6  true               true            true
+hex      B0/S6                   16  true               true            true
+hex      B0/S6                   64  true               true            true
+oct      B03/S23              HashLife refuses: HashLife runs B0 Life-like rules only where every tile has the same number of neighbours (the stepper's alternating-background emulation assumes one degree)
+oct      B0123478/S01234678   HashLife refuses: HashLife runs B0 Life-like rules only where every tile has the same number of neighbours (the stepper's alternating-background emulation assumes one degree)
+oct      B0/S8                HashLife refuses: HashLife runs B0 Life-like rules only where every tile has the same number of neighbours (the stepper's alternating-background emulation assumes one degree)
+oct      B0/S4                HashLife refuses: HashLife runs B0 Life-like rules only where every tile has the same number of neighbours (the stepper's alternating-background emulation assumes one degree)
+trihex   B0/S6V               HashLife refuses: HashLife runs B0 Life-like rules only where every tile has the same number of neighbours (the stepper's alternating-background emulation assumes one degree)
+snubsq   B03/S2,3,9           HashLife refuses: HashLife runs B0 Life-like rules only where every tile has the same number of neighbours (the stepper's alternating-background emulation assumes one degree)
+stepper/HashLife disagreements: 0
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/verified_isohedral_graph_classes.rs 
+
+running 1 test
+test isohedral_types_fall_into_eleven_graphs ... isohedral types: 81; distinct graph classes: 11
+  30 types: same graph as ["square"]             edge degree 4 seq [4, 8, 12, 16]
+  19 types: same graph as ["hex", "brick"]       edge degree 6 seq [6, 12, 18, 24]
+   8 types: same graph as ["triangle"]           edge degree 3 seq [3, 6, 9, 12]
+   5 types: same graph as []                     edge degree 5 seq [5, 10, 15, 20]
+   4 types: same graph as []                     edge degree 3 seq [3, 5, 8, 11]
+   4 types: same graph as []                     edge degree 4 seq [4, 8, 14, 18]
+   3 types: same graph as []                     edge degree 3 seq [3, 4, 6, 8]
+   3 types: same graph as []                     edge degree 4 seq [4, 8, 12, 16]
+   3 types: same graph as ["cairo"]              edge degree 5 seq [5, 11, 16, 21]
+   1 types: same graph as []                     edge degree 3 seq [3, 5, 7, 9]
+   1 types: same graph as []                     edge degree 5 seq [5, 9, 15, 19]
+types whose tiles do not all have the same sequences (not tile-transitive as built): []
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/verified_jaca.rs 
+
+running 1 test
+test jaca_matches_the_books_definition ... square                             JACA B3/S23                        blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+square                             JACA +B3/S23 -B36/S23              blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+square                             JACA B2/S                          blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+square                             JACA B27/S013                      blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+square                             JACA B16/S1378 blast 1             blast 1: births suppressed in the blast zone matches = true; not suppressed matches = false
+square                             JACA B3/S23 blast 2                blast 2: births suppressed in the blast zone matches = true; not suppressed matches = false
+square                             JACA B13/S234V blast 3             blast 3: births suppressed in the blast zone matches = true; not suppressed matches = false
+hex                                JACA B3/S23                        blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hex                                JACA +B3/S23 -B36/S23              blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hex                                JACA B2/S                          blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hex                                JACA B27/S013                      blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hex                                JACA B16/S1378 blast 1             blast 1: births suppressed in the blast zone matches = true; not suppressed matches = false
+hex                                JACA B3/S23 blast 2                blast 2: births suppressed in the blast zone matches = true; not suppressed matches = false
+hex                                JACA B13/S234V blast 3             blast 3: births suppressed in the blast zone matches = true; not suppressed matches = false
+trihex                             JACA B3/S23                        blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+trihex                             JACA +B3/S23 -B36/S23              blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+trihex                             JACA B2/S                          blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+trihex                             JACA B27/S013                      blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+trihex                             JACA B16/S1378 blast 1             blast 1: births suppressed in the blast zone matches = true; not suppressed matches = false
+trihex                             JACA B3/S23 blast 2                blast 2: births suppressed in the blast zone matches = true; not suppressed matches = false
+trihex                             JACA B13/S234V blast 3             blast 3: births suppressed in the blast zone matches = true; not suppressed matches = false
+cairo                              JACA B3/S23                        blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+cairo                              JACA +B3/S23 -B36/S23              blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+cairo                              JACA B2/S                          blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+cairo                              JACA B27/S013                      blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+cairo                              JACA B16/S1378 blast 1             blast 1: births suppressed in the blast zone matches = true; not suppressed matches = false
+cairo                              JACA B3/S23 blast 2                blast 2: births suppressed in the blast zone matches = true; not suppressed matches = false
+cairo                              JACA B13/S234V blast 3             blast 3: births suppressed in the blast zone matches = true; not suppressed matches = false
+penrose-rhomb                      JACA B3/S23                        blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+penrose-rhomb                      JACA +B3/S23 -B36/S23              blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+penrose-rhomb                      JACA B2/S                          blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+penrose-rhomb                      JACA B27/S013                      blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+penrose-rhomb                      JACA B16/S1378 blast 1             blast 1: births suppressed in the blast zone matches = true; not suppressed matches = false
+penrose-rhomb                      JACA B3/S23 blast 2                blast 2: births suppressed in the blast zone matches = true; not suppressed matches = false
+penrose-rhomb                      JACA B13/S234V blast 3             blast 3: births suppressed in the blast zone matches = true; not suppressed matches = false
+hat                                JACA B3/S23                        blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hat                                JACA +B3/S23 -B36/S23              blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hat                                JACA B2/S                          blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hat                                JACA B27/S013                      blast 0: births suppressed in the blast zone matches = true; not suppressed matches = true
+hat                                JACA B16/S1378 blast 1             blast 1: births suppressed in the blast zone matches = true; not suppressed matches = false
+hat                                JACA B3/S23 blast 2                blast 2: births suppressed in the blast zone matches = true; not suppressed matches = false
+hat                                JACA B13/S234V blast 3             blast 3: births suppressed in the blast zone matches = true; not suppressed matches = false
+cases matching reading (a) births suppressed in the zone: 42; reading (b) not suppressed: 24
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
+     Running tests/verified_kuniform_catalogue.rs 
+
+running 1 test
+test kuniform_catalogue_is_self_consistent ... k-uniform entries checked: 1248
+vertex classes (radius 7) equal k in 1229, fewer than k in 19, more than k in the list below
+groups of entries with identical signatures: 12
+  same signature: ["k5-051", "k5-052"]
+  same signature: ["k5-096", "k5-097"]
+  same signature: ["k6-224", "k6-228"]
+  same signature: ["k6-123", "k6-127"]
+  same signature: ["k6-121", "k6-125"]
+  same signature: ["k6-222", "k6-226"]
+  same signature: ["k6-116", "k6-117"]
+  same signature: ["k6-217", "k6-218"]
+  same signature: ["k6-122", "k6-126"]
+  same signature: ["k6-223", "k6-227"]
+  same signature: ["k6-124", "k6-128"]
+  same signature: ["k6-225", "k6-229"]
+problems: 0
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 17.35s
+
+     Running tests/verified_lenia_orbium.rs 
+
+running 1 test
+test orbium_glides ... orbium mass every 50 generations: [76.9, 73.4, 73.5, 73.9, 73.8, 73.8, 73.9, 73.7, 73.8]
+speed (cells per generation) per 50-generation window: [0.631, 0.623, 0.622, 0.624, 0.624, 0.623, 0.624, 0.623]
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.86s
+
+     Running tests/verified_periodic_graphs.rs 
+
+running 3 tests
+test counts_of_tilings ... catalog entries: 1254 (k-uniform ids: 1248), isohedral types: 81, families: 25
+  k=1: 11
+  k=2: 20
+  k=3: 61
+  k=4: 151
+  k=5: 332
+  k=6: 673
+ok
+test neighbours_match_reference_geometry ... tilings checked: 1355; interior cells compared: 2472216; tilings with differences: 0
+edge-slot winding: +1 turn in 2472216 cells, -1 turn in 0 cells, other in 0 (first 20 shown)
+shortest shared boundary that counts as an edge: 0.493440 (ih27)
+ok
+test torus_graph_invariants ... tori checked: 2710; problems: 0
+ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 29.13s
+
+     Running tests/verified_published_spaceships.rs 
+
+running 1 test
+test published_spaceships_recur ... spaceship scenes: 104; verified independently: 104; generations stepped: 1647
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 13.07s
+
+     Running tests/verified_rules.rs 
+
+running 6 tests
+test elementary_rules_match_reference ... ok
+test langtons_ant_builds_its_highway ... ant start (200, 200); after 11000 steps at (166, 214) with 834 black cells; 104 steps later moved by (-2, 2)
+ok
+test larger_than_life_matches_reference_on_squares ... ok
+test life_like_and_generations_match_reference ... life-like/generations cases matching the reference for 60 generations: 99
+ok
+test results_do_not_depend_on_thread_count ... ok
+test sandpile_matches_reference_and_conserves_grains ... sandpile 1 grains: stable after 1 sweeps, 0 lost
+sandpile 4 grains: stable after 2 sweeps, 0 lost
+sandpile 5 grains: stable after 2 sweeps, 0 lost
+sandpile 64 grains: stable after 10 sweeps, 0 lost
+sandpile 1000 grains: stable after 162 sweeps, 0 lost
+sandpile 20000 grains: stable after 1382 sweeps, 16408 lost
+ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.95s
+
+     Running tests/verified_sandpile_graphs.rs 
+
+running 1 test
+test sandpiles_on_mixed_degree_tilings_and_patches ... trihex edge, dead: 1200 cells, 30000 grains, 1073 sweeps, lost engine 27517 reference 27517, cells differing 0
+4.8.8 edge, dead: 512 cells, 30000 grains, 455 sweeps, lost engine 28316 reference 28316, cells differing 0
+cairo touch, dead: 1024 cells, 40000 grains, 831 sweeps, lost engine 36062 reference 36062, cells differing 0
+snub square edge, dead: 1176 cells, 20000 grains, 1347 sweeps, lost engine 17999 reference 17999, cells differing 0
+penrose-rhomb level 3 edge: 500 cells, 20000 grains, 658 sweeps, lost engine 19096 reference 19096, cells differing 0
+penrose-rhomb level 4 touch: 4000 cells, 60000 grains, 1744 sweeps, lost engine 39842 reference 39842, cells differing 0
+penrose-kd level 3 edge: 500 cells, 20000 grains, 624 sweeps, lost engine 19101 reference 19101, cells differing 0
+penrose-kd level 4 touch: 4000 cells, 60000 grains, 2096 sweeps, lost engine 41644 reference 41644, cells differing 0
+hat level 3 edge: 500 cells, 20000 grains, 496 sweeps, lost engine 18772 reference 18772, cells differing 0
+hat level 4 touch: 4000 cells, 60000 grains, 2856 sweeps, lost engine 46498 reference 46498, cells differing 0
+spectre level 3 edge: 559 cells, 20000 grains, 217 sweeps, lost engine 18988 reference 18988, cells differing 0
+spectre level 4 touch: 4401 cells, 60000 grains, 1409 sweeps, lost engine 49738 reference 49738, cells differing 0
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.61s
+
+     Running tests/verified_sha256.rs 
+
+running 1 test
+test sha256_matches_rustcrypto ... sha256: 311 message lengths agree with RustCrypto sha2
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/verified_symmetries_are_automorphisms.rs 
+
+running 1 test
+test every_cell_map_is_a_graph_automorphism ... tilings: 1355; cell maps checked (both neighbourhoods): 16206; not automorphisms: 0
+symmetry counts (touch) for some tilings: {"brick": 12, "cairo": 4, "hex": 12, "oct": 8, "square": 8, "triangle": 12, "trihex": 12}
+number of tilings by symmetry count (touch): {2: 65, 3: 7, 4: 894, 6: 64, 8: 52, 12: 249, 16: 14, 32: 6, 36: 3, 64: 1}
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.73s
+
+   Doc-tests jetcarp_audit_harness
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: 3 targets failed:
+    `--test finding_171_b0_mixed_degree`
+    `--test finding_172_ltl_counts`
+    `--test finding_173_state_hash`

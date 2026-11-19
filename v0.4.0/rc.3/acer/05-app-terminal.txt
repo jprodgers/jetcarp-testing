@@ -1,0 +1,3 @@
+> jetcarp   (started 2026-11-13 01:04:48)
+pid 21712
+exited 2026-11-13 01:44:44, exit code 0 (0x00000000)

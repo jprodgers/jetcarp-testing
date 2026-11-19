@@ -1,0 +1,3 @@
+glider (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 9
+  soup 0 (rng state 10451216379200822465): 1 copy, 1 ship; settled at generation 562; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/5a080db3.json
+  note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 562, and land there

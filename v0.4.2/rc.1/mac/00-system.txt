@@ -1,0 +1,20 @@
+date: 2026-11-14 20:05 -0500
+os: macOS 27.2.1 (26B131), arm64
+cpu: Apple M2 Max, 8 performance + 4 efficiency cores
+ram: 64 GB
+  Apple M2 Max:
+  Chipset Model: Apple M2 Max
+  Total Number of Cores: 38
+  Metal Support: Metal 4
+  Displays:
+  Color LCD:
+  Resolution: 3456 x 2234 Retina
+  Main Display: Yes
+  Connection Type: Internal
+power: Now drawing from 'AC Power'  -InternalBattery-0 (id=36765795)	84%; AC attached; not charging present: true 
+everyday jetcarp: /opt/homebrew/bin/jetcarp -> jetcarp 0.4.1
+jetcarp processes: 0 (pgrep -x jetcarp: none)
+launch agents: none for JETCARP (launchctl list | grep -i jetcarp: none); no everyday host running
+everyday folders: ~/Library/Application Support/jetcarp (app.json, data, host-program, setup.json)
+cargo: cargo 1.99.1 (5f94df478 2026-08-27)
+python: Python 3.14.7

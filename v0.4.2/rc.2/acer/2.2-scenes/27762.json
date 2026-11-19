@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 27762: JACA B1/S123",
+  "tiling": {
+    "family": "penrose-rhomb",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 523131657125605,
+  "cas": [
+    {
+      "rule": "JACA B1/S123",
+      "neighborhood": "edge",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "all"
+          },
+          "fill": {
+            "density": 0.64,
+            "states": {
+              "signed": {
+                "negative": 0.51
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+﻿rescored 14672 runs of explore job 3 by the score model 'Jimmie Rodgers, jaca on explore job 3' (for jaca runs) (11597 scores changed); the archive now holds 2528 elites in 1321 niches (2.1 s)

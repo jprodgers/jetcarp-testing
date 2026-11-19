@@ -1,0 +1,18 @@
+#95 on rc.4, the end of the 1.5 soak: `pmset -g log`, 2026-11-17 13:50 to 14:02 EST (18:50 to 19:02 UTC),
+the display, loginwindow, wake and sleep lines, and the script's own caffeinate (pid 71925, -is for the soak; 94815, -u -t 2).
+Read at 14:02 EST, with the Mac still at the lock screen (CGSSessionScreenIsLocked true). The system itself never slept.
+
+2026-11-17 13:54:28 -0500 Notification	Display is turned off
+2026-11-17 13:54:28 -0500 Assertions	PID 71925(caffeinate) Summary PreventUserIdleSystemSleep "caffeinate command-line tool" 08:00:40  id:0x0x100008be5 [System: PrevIdle 
+2026-11-17 13:54:28 -0500 Assertions	PID 71925(caffeinate) Summary PreventSystemSleep "caffeinate command-line tool" 08:00:40  id:0x0x700008be6 [System: PrevIdle PrevSlee
+2026-11-17 13:57:59 -0500 Assertions	PID 94815(caffeinate) Created UserIsActive "caffeinate command-line tool" 00:00:00  id:0x0x900009025 [System: PrevIdle PrevSleep Decl
+2026-11-17 13:57:59 -0500 Notification	Display is turned on
+2026-11-17 13:58:01 -0500 Assertions	PID 94815(caffeinate) TimedOut UserIsActive "caffeinate command-line tool" 00:00:02  id:0x0x900009025 [System: PrevIdle PrevSleep Dec
+2026-11-17 13:58:29 -0500 Notification	Display is turned off
+2026-11-17 13:58:29 -0500 Assertions	PID 71925(caffeinate) Summary PreventUserIdleSystemSleep "caffeinate command-line tool" 08:04:41  id:0x0x100008be5 [System: PrevIdle 
+2026-11-17 13:58:29 -0500 Assertions	PID 71925(caffeinate) Summary PreventSystemSleep "caffeinate command-line tool" 08:04:41  id:0x0x700008be6 [System: PrevIdle PrevSlee
+2026-11-17 13:59:50 -0500 Assertions	PID 71925(caffeinate) ClientDied PreventUserIdleSystemSleep "caffeinate command-line tool" 08:06:01  id:0x0x100008be5 [System: PrevSl
+2026-11-17 13:59:50 -0500 Assertions	PID 71925(caffeinate) ClientDied PreventSystemSleep "caffeinate command-line tool" 08:06:01  id:0x0x700008be6 [System: DeclUser kDisp
+
+$ ioreg -n Root -d1 -a | plutil -extract IOConsoleUsers ...   [14:02 EST]
+CGSSessionScreenIsLocked: true

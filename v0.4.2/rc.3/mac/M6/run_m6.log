@@ -1,0 +1,30 @@
+07:44:56 t41_every_tool
+  exit 0
+07:46:07 t42_folders
+  exit 0
+07:46:10 t42b_symlink
+  exit 0
+07:46:11 t43_bad_input
+  exit 0
+07:46:14 t43b_followups
+  exit 0
+07:46:15 t44_long_job
+  exit 0
+07:46:49 t44b_in_server_job
+  exit 0
+07:47:05 t51_mcp_odd
+  exit 1
+07:47:05 t53_mcp_limits
+  exit 0
+07:47:06 t53b_mcp_over
+  exit 0
+07:47:06 t55_readonly
+  exit 0
+07:47:07 t5_cli
+  exit 0
+07:47:37 r_cli
+  exit 0
+07:48:51 r66
+  exit 0
+07:48:52 done
+07:49:15 t51_mcp_odd rerun after t5_cli: exit 0

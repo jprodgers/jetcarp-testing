@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA rainbow fronts (4.8.8)",
+  "description": "Rainbow fronts on the truncated square tiling. Found by a JACA rule search.",
+  "tiling": {
+    "family": "oct",
+    "size": {
+      "rect": {
+        "w": 134,
+        "h": 89
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 26,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B28/S13456",
+      "rule": "JACA B28/S13456",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Neon",
+      "seed": {
+        "signed": {
+          "density": 0.1,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Synthwave"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "4264aecbf9747d98",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

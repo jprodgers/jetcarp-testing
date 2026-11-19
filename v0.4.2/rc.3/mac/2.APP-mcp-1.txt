@@ -1,0 +1,8 @@
+03:25:07 start: server jetcarp 0.4.2-rc.3; every 5.0 s for 75.0 s
+03:25:59 gen 1000 rate -/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 295 MB
+03:26:00 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 295 MB
+03:26:11 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 296 MB
+03:26:11 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 296 MB
+03:26:16 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 254 MB
+03:26:21 gen 1000 rate 0.0/s cells 65536 playing False tiling square rules 'B3/S23' pop 2976 scene 'Empty world' sim '' rss 487 MB footprint 254 MB
+03:26:26 end; mcp exit 0; stderr: jetcarp mcp: connected to the JETCARP app on port 47811

@@ -1,0 +1,6 @@
+38-(gnome-shell:3158780): libmutter-CRITICAL **: 04:32:01.096: meta_workspace_get_work_area_for_monitor: assertion 'logical_monitor != NULL' failed
+39-
+40:(gnome-shell:3158780): Gjs-CRITICAL **: 04:32:01.096: JS ERROR: TypeError: can't access property "x", monitor is undefined
+41-_updateRoundedClipBounds@resource:///org/gnome/shell/ui/workspace.js:1015:44
+42-_init/<@resource:///org/gnome/shell/ui/workspace.js:992:18
+43-@resource:///org/gnome/shell/ui/init.js:20:20

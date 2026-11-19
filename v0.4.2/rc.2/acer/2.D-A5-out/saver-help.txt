@@ -1,0 +1,20 @@
+The screen saver (Windows and macOS)
+
+Usage: jetcarp.exe host saver [OPTIONS] <ACTION>
+
+Arguments:
+  <ACTION>
+          Possible values:
+          - install: Windows: copy JETCARP to a `.scr` file and open Screen Saver Settings with it selected. macOS: build `JETCARP.saver` with the rotation inside it and open System Settings
+          - remove:  Delete it (Windows: and stop Windows from running it; close Screen Saver Settings first)
+          - status:  Say whether it is installed (Windows: and selected)
+
+Options:
+      --rotation <ROTATION>
+          The rotation it runs (saved). Default: the first screen's
+
+      --json
+          Print the host's reply as JSON
+
+  -h, --help
+          Print help (see a summary with '-h')

@@ -1,0 +1,12 @@
+== 2.0 2026-11-16T06:17:46Z
+jetcarp-0.4.2-rc.3-aarch64-apple-darwin.tar.gz: OK
+fresh download identical to bin (70 files)
+-- version, paths, which
+jetcarp 0.4.2-rc.3
+settings: /Users/Jimmie/jetcarp-rc-042c/config
+data:     /Users/Jimmie/jetcarp-rc-042c/data
+output:   /Users/Jimmie/jetcarp-rc-042c/out
+bundled:  /Users/Jimmie/jetcarp-rc-042c/bin/packs
+which jetcarp: /opt/homebrew/bin/jetcarp (jetcarp 0.4.1)
+xattr: com.apple.provenance 
+-- config before: ls: /Users/Jimmie/jetcarp-rc-042c/config: No such file or directory

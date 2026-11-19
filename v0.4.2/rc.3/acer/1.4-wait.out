@@ -1,0 +1,3 @@
+explore search 2 is paused
+  explore 2: 564,350 runs (18/s), 40,020 elites in 18,608 niches (1,953 of them confirmed), 344 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

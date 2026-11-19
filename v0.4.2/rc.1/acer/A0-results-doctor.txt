@@ -1,0 +1,43 @@
+﻿JETCARP 0.4.2-rc.1 on windows x86_64 (12 threads)
+
+Folders
+  settings: C:\Users\jimmi\jetcarp-rc-042\config
+  data:     C:\Users\jimmi\jetcarp-rc-042\data
+  output:   C:\Users\jimmi\jetcarp-rc-042\out
+  bundled:  C:\Users\jimmi\jetcarp-rc-042\bin\packs (1.5 MB)
+  library:  C:\Users\jimmi\jetcarp-rc-042\data\library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: auto (automatic)
+  setting: C:\Users\jimmi\jetcarp-rc-042\config\gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: Intel(R) UHD Graphics (Intel Corporation), Vulkan (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 59 storage buffers per stage, 1023 MiB storage bindings, 4 GiB buffers
+      self-test: passed (1165 ms, kept from before): 53 world rules and 33 explore batches matched the CPU
+      the GPU simulation uses it
+  compute: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (discrete)
+      why: the fastest adapter (automatic)
+      limits: 524288 storage buffers per stage, 2 GiB storage bindings, 4 GiB buffers
+      self-test: passed (706 ms, kept from before): 53 world rules and 33 explore batches matched the CPU
+      the GPU simulation uses it
+
+Graphics adapters (* = used for computing)
+    Intel(R) UHD Graphics (Vulkan, IntegratedGpu, Intel Corporation Intel driver)
+  * NVIDIA GeForce RTX 3050 6GB Laptop GPU (Vulkan, DiscreteGpu, NVIDIA 546.18)
+    Intel(R) UHD Graphics (Dx12, IntegratedGpu, 31.0.101.4146)
+    NVIDIA GeForce RTX 3050 6GB Laptop GPU (Dx12, DiscreteGpu, 31.0.15.4618)
+    Microsoft Basic Render Driver (Dx12, Cpu, 10.0.26100.9818)
+      Windows' software renderer (WARP), which the GPU simulation never uses
+    Intel(R) UHD Graphics (Gl, IntegratedGpu, 4.6.0 - Build 31.0.101.4146)
+
+Desktop
+  background host: not running
+  starts at login: no
+  JETCARP's screen saver is not installed.
+
+Environment
+  JETCARP_CONFIG_DIR=C:\Users\jimmi\jetcarp-rc-042\config
+  JETCARP_DATA_DIR=C:\Users\jimmi\jetcarp-rc-042\data
+  JETCARP_OUT=C:\Users\jimmi\jetcarp-rc-042\out

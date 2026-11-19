@@ -1,0 +1,33 @@
+> jetcarp host status   (07:50:40)
+running, pid 24464, up 123.0s, 272 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 1147 · 409440 cells · wallpaper on every monitor
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)
+
+> jetcarp host wallpaper on --screen 0 --monitor 0
+running, pid 24464, up 123.0s, 272 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 1151 · 409440 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)
+
+> jetcarp host wallpaper on --screen 1 --monitor 1 --rotation "Classics, hourly"
+running, pid 24464, up 124.0s, 269 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 1156 · 409440 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · starting · wallpaper on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)
+
+> jetcarp host status   (07:50:45)
+running, pid 24464, up 128.0s, 288 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 112 · 230400 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · profile Hodgepodge (7 of 7) · generation 107 · 409440 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)

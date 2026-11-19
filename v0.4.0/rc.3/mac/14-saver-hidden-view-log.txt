@@ -1,0 +1,58 @@
+# The JETCARP saver's own lines in the system log (log show, process legacyScreenSaver), 00:09-00:12
+# Jimmie chose JETCARP at about 00:09:28 (System Settings reopened at 00:09:16) and quit System Settings at about 00:10:27.
+# 7798 = System Settings' preview; 7799 = the full-screen view macOS makes ahead of time
+2026-11-13 00:09:28.829 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-13 00:09:28.830 Df legacyScreenSaver[7798:7161e] (JETCARP) jetcarp-saver: view made, preview true
+2026-11-13 00:09:28.832 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: rotation "A classic a day", 7 items
+2026-11-13 00:09:28.832 Df legacyScreenSaver[7798:7161e] (JETCARP) jetcarp-saver: rotation "A classic a day", 7 items
+2026-11-13 00:09:28.833 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: in a window: true, 4112 x 2658, preview false
+2026-11-13 00:09:28.833 Df legacyScreenSaver[7798:7161e] (JETCARP) jetcarp-saver: in a window: true, 0 x 0, preview true
+2026-11-13 00:09:29.344 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: startAnimation 0.5 s after the view was made, preview false
+2026-11-13 00:09:29.357 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: GPU Apple M2 Max
+2026-11-13 00:09:29.367 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: surface made at 4112 x 2658 (preview false; window "NSKVONotifying_NSServiceViewControllerWindow", on screen as macOS sees it: false)
+2026-11-13 00:09:29.371 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: 1 frames shown (preview false)
+2026-11-13 00:09:29.380 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: no frame: no screen saver is running, so nothing shows this view (made ahead of time); waiting for one to start, after 1 shown (preview false; window "NSKVONotifying_NSServiceViewControllerWindow", on screen as macOS sees it: false)
+2026-11-13 00:10:27.110 Df legacyScreenSaver[7798:7161e] (JETCARP) jetcarp-saver: stopAnimation, preview true
+2026-11-13 00:10:27.111 Df legacyScreenSaver[7798:7161e] (JETCARP) jetcarp-saver: in a window: false, 0 x 0, preview true
+2026-11-13 00:10:27.142 Df legacyScreenSaver[7799:7162c] (JETCARP) jetcarp-saver: in a window: false, 4112 x 2658, preview false
+
+# CPU of legacyScreenSaver and System Settings every 10 s (ps: pid, %cpu, rss KB, cpu time)
+=== 00:10:05
+ 7784   0.0 120544   0:02.01 /System/Applications/System Settings.app/Contents/MacOS/System Settings
+ 7798   0.0  45568   0:00.09 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+ 7799   0.9  72016   0:00.42 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+=== 00:10:15
+ 7784   0.0 120544   0:02.01 /System/Applications/System Settings.app/Contents/MacOS/System Settings
+ 7798   0.0  45568   0:00.09 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+ 7799   0.7  72032   0:00.50 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+=== 00:10:25
+ 7784  13.7 110544   0:02.64 /System/Applications/System Settings.app/Contents/MacOS/System Settings
+ 7798   0.0  45600   0:00.09 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+ 7799   0.6  72080   0:00.59 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+=== 00:10:35
+ 7799   0.1  61456   0:00.62 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+=== 00:10:45
+ 7799   0.1  61408   0:00.64 /System/Library/Frameworks/ScreenSaver.framework/PlugIns/legacyScreenSaver.appex/Contents/M
+=== 00:10:55
+=== 00:11:05
+=== 00:11:15
+=== 00:11:25
+=== 00:11:35
+=== 00:11:45
+=== 00:11:55
+
+# The saver started on demand (open -a ScreenSaverEngine at 00:13:03) and was ended by Jimmie's mouse click
+2026-11-13 00:13:03.971 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-13 00:13:03.971 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: rotation "A classic a day", 7 items
+2026-11-13 00:13:03.971 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: in a window: true, 4112 x 2658, preview false
+2026-11-13 00:13:04.473 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: startAnimation 0.5 s after the view was made, preview false
+2026-11-13 00:13:04.482 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: GPU Apple M2 Max
+2026-11-13 00:13:04.490 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: surface made at 4112 x 2658 (preview false; window "NSKVONotifying_NSServiceViewControllerWindow", on screen as macOS sees it: false)
+2026-11-13 00:13:04.493 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: 1 frames shown (preview false)
+2026-11-13 00:13:04.509 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: macOS's screen saver app is running: a screen saver is showing
+2026-11-13 00:13:07.781 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: 100 frames shown (preview false)
+2026-11-13 00:13:20.773 Df legacyScreenSaver[7978:7244e] (JETCARP) jetcarp-saver: macOS says the screen saver is stopping; ending this process
+2026-11-13 00:13:21.109 Df legacyScreenSaver[8000:7269d] (JETCARP) jetcarp-saver: view made, preview false
+2026-11-13 00:13:21.109 Df legacyScreenSaver[8000:7269d] (JETCARP) jetcarp-saver: rotation "A classic a day", 7 items
+2026-11-13 00:13:21.109 Df legacyScreenSaver[8000:7269d] (JETCARP) jetcarp-saver: in a window: true, 4112 x 2658, preview false
+2026-11-13 00:13:26.328 Df legacyScreenSaver[8000:7269d] (JETCARP) jetcarp-saver: in a window: false, 4112 x 2658, preview false

@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Hex ternary 8229 (sum mod 3)",
+  "description": "Two parents, three states: Pascal's triangle mod 3.",
+  "tiling": {
+    "family": "hex",
+    "size": {
+      "rect": {
+        "w": 161,
+        "h": 81
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "14067843119238460459",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Hex ternary 8229 (sum mod 3)",
+      "rule": "HexW3 8229",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "top_center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "4502cd08a6e46399",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

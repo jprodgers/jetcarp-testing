@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA fat blobs (herringbone)",
+  "description": "A mixed soup on herringbone tiles grows into fat, smooth-edged territories. Found by a JACA rule search.",
+  "tiling": {
+    "family": "herring",
+    "size": {
+      "rect": {
+        "w": 188,
+        "h": 63
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 25,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B246/S1246",
+      "rule": "JACA B246/S1246",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Phosphor",
+      "seed": {
+        "signed": {
+          "density": 0.2,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "d3ddac3033c53c20",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

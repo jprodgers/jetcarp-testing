@@ -1,0 +1,45 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA striped trenches (edge, 2-uniform)",
+  "description": "Edge neighbours, blast 1, a different rule per sign: trenches through striped territories. Found by a JACA rule search.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k2-001"
+    },
+    "size": {
+      "rect": {
+        "w": 51,
+        "h": 39
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 25,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B12/S2,9,10V -B1,2,10/S2,11V blast 1",
+      "rule": "JACA +B12/S2,9,10 -B1,2,10/S2,11 blast 1",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Moss",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Autumn"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "654f83dac747b74a",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

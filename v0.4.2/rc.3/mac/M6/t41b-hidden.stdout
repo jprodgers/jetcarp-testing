@@ -1,0 +1,21 @@
+#### the app minimised by Jimmie before this ran  [08:18:15]
+== use_app {"attach": true}  ->  isError=None  (20.0 s)
+   <no answer>
+== world_status {}  ->  isError=None  (20.0 s)
+   <no answer>
+#### a standalone MCP server (its own world and jobs): a detached hunt, then the server closes
+== search_start {"hunt": {"rules": ["B3/S23"], "soups": 2000000}, "detach": true, "threads": 8, "label": "m6-hidden"}  ->  isError=False  (0.2 s)
+   {
+  "folder": null,
+  "job": 11,
+  "kind": "hunt",
+  "line": "hunt 11: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new",
+  "mode": "detached",
+  "note": "The job runs in a process of its own: job_status {\"job\": 11, \"wait_s\": 300} waits for it, job_stop {\"job\": 11} stops it, search_start {\"resume\": 11} carries it on.",
+  "started": true,
+  "status": "running"
+}
+no job id
+no job id
+no job id
+no job id

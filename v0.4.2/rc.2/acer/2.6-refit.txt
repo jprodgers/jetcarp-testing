@@ -1,0 +1,21 @@
+---- first try, after round 2.5 (exit 1)
+replaying on NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+Error: a fit needs at least 20 reviewed runs with 5 keeps and 5 drops; these have 48 runs, 2 keeps and 40 drops
+review more runs: jobs clips makes clips to rate, jobs review records the ratings
+
+---- after round 2.6 (exit 0)
+fitted to 96 review(s) of 96 run(s) of explore job(s) 3 by Jimmie Rodgers (13 keep, 20 maybe, 63 drop; jaca runs only)
+held-out AUC 0.850 (keep against drop; on the runs fitted 0.944; the built-in score 0.779)
+strongest terms (pull per standard deviation):
+  same_nb                  -0.372
+  jaca:sign_sorted         +0.339
+  travel                   +0.286
+  movers                   +0.234
+  growth                   +0.207
+  jaca:sign_lost_early     -0.200
+  jaca:sign_balance        -0.192
+  settle_frac              +0.169
+  jaca:sign_lost           +0.162
+  entropy                  +0.158
+model: C:\Users\jimmi\jetcarp-rc-042b\phase2\2.6-model.json
+replaying on NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan

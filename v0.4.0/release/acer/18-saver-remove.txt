@@ -1,0 +1,29 @@
+Recorded 2026-11-13 10:33:56 -05:00 after Jimmie cancelled Screen Saver Settings (run by Claude through the shim)
+
+Before remove: SCRNSAVE.EXE 'C:\Users\jimmi\AppData\Local\JETCARP\JETCARP.scr'; ScreenSaveActive 1; timeout 60
+processes from the .scr: 0
+
+> jetcarp host saver status
+JETCARP is the selected screen saver.
+(exit 0)
+
+> jetcarp host saver remove
+removed
+(exit 0)
+
+> jetcarp host saver status
+JETCARP's screen saver is not installed.
+(exit 0)
+
+After remove: SCRNSAVE.EXE '' (present: False); ScreenSaveActive 1; timeout 60
+(before the wave, 00-system.txt: none set; ScreenSaveActive 1; timeout 60)
+JETCARP.scr present: False
+
+%LOCALAPPDATA%\jetcarp now:
+  library.sqlite-jobs               1 10:02:52
+  searches                          1 01:06:56
+  host-endpoint.json               69 10:22:51
+  host.lock                         0 10:22:51
+  library.sqlite             12402688 10:14:16
+  library.sqlite-shm            32768 10:22:53
+  library.sqlite-wal                0 10:14:16

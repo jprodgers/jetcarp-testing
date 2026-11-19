@@ -1,0 +1,2 @@
+GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+hunt job 5 in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/library.sqlite

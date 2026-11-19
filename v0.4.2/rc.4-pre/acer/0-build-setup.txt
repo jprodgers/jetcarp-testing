@@ -1,0 +1,41 @@
+rc.4 pre-check on the Acer: build and set-up (2026-11-16, 12:40-12:49 EST)
+
+Source: ~/jetcarp-rc-042c/src (Phase 1's clone), fetched and checked out at origin/release-0.4.2:
+  af07766 host status gives the speed a screen reaches when it falls short of its scene's (#116)
+$ cargo build --release -p jetcarp
+  Finished `release` profile [optimized + debuginfo] target(s) in 3m 09s   (exit 0; logs/build.txt)
+$ target\release\jetcarp.exe --version
+  jetcarp 0.4.2-rc.3          (the branch still carries rc.3's version string until rc.4 is tagged)
+
+Folders: a scratch folder, ~/jetcarp-rc4pre (JETCARP_CONFIG_DIR, _DATA_DIR, _OUT, _RUNTIME_DIR), not the default
+folders the note allows: a branch build on the default folders would sync the everyday 0.4.1 library (the Mac's M-5
+finding), and A-7 tests the upgrade from 0.4.1 on this laptop.
+
+$ jetcarp host start            (a fresh settings folder, before the answer)
+Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+exit 1
+
+$ jetcarp setup --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+exit 0
+
+config\photosensitivity.json:
+{
+  "version": 1,
+  "answer": "no_disorder",
+  "date": "2026-11-16T17:48:49Z",
+  "jetcarp": "0.4.2-rc.3",
+  "via": "setup"
+}

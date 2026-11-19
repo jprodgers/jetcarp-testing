@@ -1,0 +1,9 @@
+running, pid 53616, up 903.0s, 468 MB, GPU Intel(R) UHD Graphics
+screen 0: My rotation · scene C:\Users\jimmi\OneDrive\Desktop\kaplan_sand.json (3 of 4) · generation 1018 · 129600 cells of 4 px · 30 fps, 30 generations a second · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+last tune: done
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (the setting in gpu.json)
+note: swept 1 scene(s); sizes saved

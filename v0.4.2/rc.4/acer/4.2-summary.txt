@@ -1,0 +1,52 @@
+rc.4 wave on the Acer, R4's (private) part 4.2 row: files JETCARP names itself inside a checked folder (d1f3478)
+2026-11-16, rc.4 from the release zip (jetcarp 0.4.2-rc.4). Script t42c_planted.py; outputs 4.2b-symlink*, 4.2c-planted*.
+Folder ~\jetcarp-rc4\p42: a copy of A-6's settings (the publisher key) and library. Symbolic links made with Developer
+Mode on (Jimmie turned it back on during the run; the first try found it off and made none).
+
+RESULT: pass (the row's cases, (a) and (b)); (c), the Mac's extra case, reproduces on Windows.
+
+(a) A-6's t42b_symlink.py (F9's script on Windows) again, with rc.4 (4.2b-symlink.txt):
+  - the file symbolic link out\innocent.json -> outside\victim.txt: files_list and world_status save_path through it
+    refused; victim.txt unchanged;
+  - the directory symbolic link out\link-sym -> outside: all 11 writing tools refused (world_new path, world_status,
+    world_render and its wallpaper, run_script x2, search_runs csv, media_render, pack export, search_start pile,
+    files_list); written outside through it: 0 (rc.3 A-6: 0);
+  - the hard link (information only, as on rc.3): world_status save_path wrote through it (a hard link is the file
+    itself; the rc.4 fix leaves hard links out).
+
+(b) New: a link planted at a name JETCARP chooses inside the folder it was given, leading outside (4.2c-planted.txt).
+  Each refused with "JETCARP may only write inside <folder> (got <folder>\<name>, where a symbolic link leads out of
+  it)": the planted file named, never where it leads.
+  MCP:
+  - media_render, a link at poster.png to a file not there:           refused
+  - media_render --force, a link at poster.png to an existing file:   refused; the file unchanged
+  - media_render frames, a directory link at frames:                  refused; the folder it leads to stays empty
+  - pack export (publish first), a link at pack.json:                 refused
+  - pack export, a directory link at index:                           refused (names index/<sha>.json)
+  Command line:
+  - media render --quickstart life --out ..., link at poster.png:     refused, exit 1
+  - media render ..., directory link at frames:                       refused, exit 1
+  - pack export --to ..., link at pack.json:                          refused, exit 1 (after publishing the library
+                                                                      into the hidden .<name>.store beside it)
+  - pack export --to ..., directory link at index:                    refused, exit 1
+  Where the links lead: 0 new entries, 0 changed; the existing target unchanged.
+  Controls:
+  - a frames link to another folder of the output folder (so out of the folder given): refused, as the rule says
+    (it checks the folder the tool was given, not the whole output folder);
+  - a frames link that stays inside the folder given: the render succeeded, but media render clears its frames
+    folder first, so it replaced the link with a real folder (201 frames in it, none where the link led). d1f3478
+    names pack export, pile steps, evolve and media.export as following inside links, not media render's frames;
+    information only.
+  The suite's own tests of these cases (jetcarp-mcp tests/folders.rs, jetcarp-pack tests/hostile.rs) are
+  #[cfg(unix)], so this is their only check on Windows.
+
+(c) The Mac's extra case (NOTES 2026-11-16 10:26 PM, beyond the row's three cases): a directory symbolic link planted
+  at the hidden store JETCARP keeps beside an export's folder (out\.<name>.store, a name it chooses), leading to an
+  existing empty folder outside:
+  - MCP pack export (publish first) to "lk-store": refused, "the MCP tools may only write inside $P\out or
+    $P\library (got $P\out\.lk-store.store)"; nothing written where it leads.
+  - CLI `jetcarp pack export --to $P\out\lk-store-cli --feed p42s-cli --no-media --no-searches`: exit 0, "publishing
+    feed p42s-cli (version 1) into $P\out\.lk-store-cli.store ... written": the link is followed, and a whole
+    signed store (23 files: jetcarp-store.json, keys, objects, refs, sigs) is written where it leads.
+  The same as the Mac: CLI only, with the user's own rights; MCP refuses. No existing file was overwritten (the
+  folder it led to was empty). For Jimmie's decision, with the Mac's.

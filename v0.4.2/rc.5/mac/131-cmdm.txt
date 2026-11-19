@@ -1,0 +1,170 @@
+R5 #131, the Mac, 2026-11-17 04:23:02 PM EST; $J = rc.5's release build (jetcarp 0.4.2-rc.5, c0db1ab); test folder $H = homes/app131
+app pid 2473, window frame [328, 130, 1400, 932, 1]
+world_new -> isError=False
+app_display playing speed 30 -> isError=False
+   t(s)  phase                      gen     gens/s  on  CPU%  capture
+    0.0  in view                         0       -  1     -  
+    2.0  in view                        60    30.0  1    35  
+    4.0  in view                       120    29.9  1    38  
+    6.0  in view                       180    30.0  1    41  
+    8.0  in view                       240    29.8  1    49  
+   10.0  in view                       300    30.0  1    53  
+   12.0  in view                       360    30.0  1    54  
+   14.0  in view                       420    29.9  1    52  
+   16.0  in view                       480    30.0  1    51  
+   18.0  in view                       540    30.0  1    51  
+   20.0  in view                       601    30.4  1    53  
+   22.0  in view                       661    30.0  1    52  
+   24.1  in view                       721    29.8  1    51  
+   26.1  in view                       781    30.0  1    53  
+   28.1  in view                       841    30.0  1    52  
+   30.1  in view                       901    29.9  1    53  
+   32.1  in view                       961    30.0  1    53  
+   34.1  in view                      1021    30.0  1    54  
+   36.1  in view                      1081    30.0  1    52  
+   38.1  in view                      1141    29.9  1    51  
+   40.1  in view                      1202    30.4  1    53  
+   42.1  in view                      1262    30.0  1    54  
+   44.1  in view                      1322    29.9  1    53  
+   46.1  in view                      1382    30.0  1    53  
+   48.1  in view                      1442    29.9  1    53  
+   50.1  in view                      1502    29.9  1    53  
+   52.1  in view                      1562    30.0  1    54  
+   54.1  in view                      1622    30.0  1    53  
+   56.1  in view                      1683    30.4  1    50  
+   58.1  in view                      1743    30.0  1    54  
+   60.1  in view                      1803    30.0  1    53  
+   62.1  in view                      1863    30.0  1    50  
+   64.1  in view                      1923    29.9  1    53  
+   66.1  in view                      1983    29.9  1    52  
+   68.1  in view                      2043    30.0  1    53  
+   70.1  in view                      2103    30.0  1    53  
+   72.1  in view                      2163    29.9  1    53  
+   74.1  in view                      2224    30.4  1    54  
+   76.2  in view                      2284    29.9  1    52  
+   78.1  in view                      2344    30.0  1    54  
+   80.1  in view                      2404    30.0  1    53  
+   82.1  in view                      2464    30.0  1    54  
+   84.1  in view                      2524    30.0  1    51  
+   86.2  in view                      2584    29.9  1    54  
+   88.2  in view                      2644    30.0  1    54  
+   90.2  in view                      2704    30.0  1    52  
+   92.2  in view                      2764    29.9  1    54  
+   94.2  in view                      2824    30.0  1    52  
+   96.2  in view                      2884    30.0  1    53  
+   98.2  in view                      2944    29.9  1    54  
+  100.2  in view                      3004    30.0  1    54  
+  102.2  in view                      3064    30.0  1    53  
+  104.2  in view                      3125    30.4  1    51  
+  106.2  in view                      3185    30.0  1    54  
+  108.2  in view                      3245    30.0  1    52  
+  110.2  in view                      3305    29.9  1    53  
+  112.2  in view                      3365    30.0  1    54  
+  114.2  in view                      3425    30.0  1    51  
+  116.2  in view                      3485    30.0  1    53  
+  118.2  in view                      3545    29.9  1    54  
+  120.2  in view                      3605    30.0  1    53  
+  122.2  in view                      3665    30.0  1    49  
+  124.2  in view                      3725    30.0  1    53  
+  126.2  in view                      3785    29.9  1    53  
+  128.2  in view                      3845    30.0  1    54  
+  130.2  in view                      3905    30.0  1    53  
+  132.2  in view                      3966    30.4  1    48  
+  134.2  in view                      4026    30.0  1    52  
+  136.2  in view                      4086    30.0  1    53  
+  138.2  in view                      4146    29.9  1    54  
+  140.2  in view                      4205    29.5  1    27  
+  142.2  in view                      4266    30.4  1     5  
+  144.2  in view                      4326    30.0  1     4  
+  146.2  in view                      4386    29.9  1     4  
+  148.2  in view                      4446    29.9  1     4  
+  150.2  in view                      4507    30.5  1    13  
+  -- minimised (1) by 152.3 s
+  152.3  minimised 1                  4563    27.7  0    24  
+  154.3  minimised 1                  4626    30.3  0     3  
+  156.3  minimised 1                  4685    30.0  0     3  
+  158.3  minimised 1                  4744    30.0  0     3  
+  160.4  minimised 1                  4806    29.8  0     2  
+  162.3  minimised 1                  4865    30.0  0     3  
+  164.3  minimised 1                  4924    30.0  0     3  
+  166.4  minimised 1                  4986    30.0  0     3  
+  168.3  minimised 1                  5045    30.1  0     5  
+  170.4  minimised 1                  5108    30.3  0     4  
+  172.4  minimised 1                  5166    29.6  0     6  
+  174.3  minimised 1                  5225    30.1  0     6  
+  176.4  minimised 1                  5288    30.3  0     2  
+  -- restored (1) by 178.3 s
+  178.3  after ⌘M 1                   5341    27.9  1    17  131-r1-000s.png 70eee81192371de5 first
+  180.3  after ⌘M 1                   5402    30.3  1    45  131-r1-002s.png fdb45d647d0aa80e CHANGED
+  182.3  after ⌘M 1                   5462    30.0  1    46  131-r1-004s.png 49ff09bbf32e089c CHANGED
+  -- minimised (2) by 184.3 s
+  184.3  minimised 2                  5518    27.8  0    10  
+  186.4  minimised 2                  5581    30.3  0     3  
+  188.4  minimised 2                  5640    30.0  0     3  
+  190.3  minimised 2                  5699    30.1  0     7  
+  192.4  minimised 2                  5761    29.8  0     5  
+  194.4  minimised 2                  5820    30.0  0     3  
+  196.3  minimised 2                  5879    30.1  0     3  
+  198.4  minimised 2                  5941    29.8  0     5  
+  200.4  minimised 2                  6000    30.0  0     4  
+  202.5  minimised 2                  6062    30.0  0     5  
+  -- restored (2) by 204.4 s
+  204.4  after the yellow button      6116    28.4  1    22  131-r2-000s.png 17c1aa074c332881 first
+  206.4  after the yellow button      6176    30.0  1    43  131-r2-002s.png 787770f1efd26710 CHANGED
+  208.4  after the yellow button      6236    29.9  1    48  131-r2-004s.png 4577c35fd2567172 CHANGED
+  210.4  after the yellow button      6296    30.0  1    46  131-r2-006s.png 8f19aa0b8cc394c9 CHANGED
+  212.4  after the yellow button      6356    29.9  1    50  131-r2-008s.png c76459584cac8c86 CHANGED
+  214.4  after the yellow button      6416    30.0  1    49  131-r2-010s.png 40c2599f655c0898 CHANGED
+  216.4  after the yellow button      6476    30.0  1    47  131-r2-012s.png 7f43054c03ab042b CHANGED
+  218.4  after the yellow button      6536    29.9  1    49  131-r2-014s.png f2a124cc9e8cad57 CHANGED
+  -- app_display playing false at 218.4 s -> isError=False
+  220.4  after the yellow button      6544     4.0  1     4  131-r2-016s.png 90d132a6df20b9b4 CHANGED
+  222.4  after the yellow button      6544     0.0  1     1  131-r2-018s.png badb26959ce819b1 CHANGED
+  -- minimised (3) by 224.5 s
+  224.5  minimised 3                  6544     0.0  0     3  
+  226.5  minimised 3                  6544     0.0  0     0  
+  228.5  minimised 3                  6544     0.0  0     0  
+  230.5  minimised 3                  6544     0.0  0     0  
+  232.5  minimised 3                  6544     0.0  0     0  
+  234.5  minimised 3                  6544     0.0  0     0  
+  236.5  minimised 3                  6544     0.0  0     0  
+  238.5  minimised 3                  6544     0.0  0     0  
+  240.5  minimised 3                  6544     0.0  0     0  
+  242.5  minimised 3                  6544     0.0  0     0  
+  244.5  minimised 3                  6544     0.0  0     0  
+  246.5  minimised 3                  6544     0.0  0     0  
+  248.5  minimised 3                  6544     0.0  0     0  
+  250.6  minimised 3                  6544     0.0  0     0  
+  252.6  minimised 3                  6544     0.0  0     0  
+  254.6  minimised 3                  6544     0.0  0     0  
+  256.6  minimised 3                  6544     0.0  0     0  
+  258.6  minimised 3                  6544     0.0  0     0  
+  260.6  minimised 3                  6544     0.0  0     0  
+  262.6  minimised 3                  6544     0.0  0     0  
+  264.6  minimised 3                  6544     0.0  0     6  
+  -- restored (3) by 266.5 s
+  266.5  after ⌘M 2 (paused)          6544     0.0  1     6  131-r3-000s.png 990be4ae7dab861b first
+  268.5  after ⌘M 2 (paused)          6544     0.0  1    26  131-r3-002s.png 2843071b48fb9998 CHANGED
+  270.5  after ⌘M 2 (paused)          6544     0.0  1    28  131-r3-004s.png 485ce55dd65fcb02 CHANGED
+  272.5  after ⌘M 2 (paused)          6544     0.0  1    40  131-r3-006s.png 30e31523780f8917 CHANGED
+  274.5  after ⌘M 2 (paused)          6544     0.0  1    33  131-r3-008s.png cf804e4641deef8c CHANGED
+  276.5  after ⌘M 2 (paused)          6544     0.0  1     9  131-r3-010s.png a428cf4398194500 CHANGED
+  278.5  after ⌘M 2 (paused)          6544     0.0  1     1  131-r3-012s.png 1859e26ffc559553 CHANGED
+  280.5  after ⌘M 2 (paused)          6544     0.0  1     1  131-r3-014s.png aaea5f704e2831fc CHANGED
+  282.5  after ⌘M 2 (paused)          6544     0.0  1     1  131-r3-016s.png bd68a9eb76d2fd21 CHANGED
+  284.5  after ⌘M 2 (paused)          6544     0.0  1     2  131-r3-018s.png 60241c8b12b57793 CHANGED
+  286.5  after ⌘M 2 (paused)          6544     0.0  1     0  131-r3-020s.png c615853b3a8a8121 CHANGED
+  288.5  after ⌘M 2 (paused)          6544     0.0  1     6  131-r3-022s.png e629f90f56fee23a CHANGED
+  290.5  after ⌘M 2 (paused)          6544     0.0  1    17  131-r3-024s.png ff88ea24a686318f CHANGED
+  292.5  after ⌘M 2 (paused)          6544     0.0  1    20  131-r3-026s.png 681d486dabefb732 CHANGED
+  294.5  after ⌘M 2 (paused)          6544     0.0  1     3  131-r3-028s.png bbb3bbd606926fc2 CHANGED
+  296.5  after ⌘M 2 (paused)          6544     0.0  1     1  131-r3-030s.png 820a797c3ab3cf57 CHANGED
+
+in view: 76 polls, 0 errors, 30.0 gens/s, CPU median 53% of a core; captures: 0, changed 0, same 0
+minimised 1: 13 polls, 0 errors, 30.1 gens/s, CPU median 3% of a core; captures: 0, changed 0, same 0
+minimised 2: 10 polls, 0 errors, 29.9 gens/s, CPU median 5% of a core; captures: 0, changed 0, same 0
+minimised 3: 21 polls, 0 errors, 0.0 gens/s, CPU median 0% of a core; captures: 0, changed 0, same 0
+after ⌘M 1: 3 polls, 0 errors, 30.2 gens/s, CPU median 45% of a core; captures: 3, changed 2, same 0
+after the yellow button: 10 polls, 0 errors, 23.8 gens/s, CPU median 47% of a core; captures: 10, changed 9, same 0
+after ⌘M 2 (paused): 16 polls, 0 errors, 0.0 gens/s, CPU median 6% of a core; captures: 16, changed 15, same 0
+the app closed (exit -15)

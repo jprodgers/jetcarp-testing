@@ -1,0 +1,1937 @@
+   Compiling jetcarp-core v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-core)
+   Compiling jetcarp-mcp v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-mcp)
+   Compiling jetcarp v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp)
+   Compiling jetcarp-store v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-store)
+   Compiling jetcarp-gpu v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-gpu)
+   Compiling jetcarp-search v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-search)
+   Compiling jetcarp-pack v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-pack)
+   Compiling jetcarp-api v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-api)
+   Compiling jetcarp-script v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-script)
+   Compiling jetcarp-display v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-display)
+   Compiling jetcarp-app v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-app)
+   Compiling jetcarp-host v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-host)
+   Compiling jetcarp-saver v0.4.2-rc.4 (~/jetcarp-rc-042c/src/crates/jetcarp-saver)
+    Finished `release` profile [optimized + debuginfo] target(s) in 2m 18s
+     Running unittests src/main.rs (target/release/deps/jetcarp-0ea146ba200516b2)
+
+running 14 tests
+test platform::tests::the_picture_comes_back_when_a_still_is_or_will_be_up ... ok
+test term::tests::a_line_that_fits_stays_whole ... ok
+test host_cmd::tests::a_screen_says_the_speed_it_reaches_when_it_falls_short ... ok
+test broken_pipe::tests::a_closed_pipe_is_told_from_other_failures ... ok
+test host_cmd::tests::status_says_what_each_screen_steps_on ... ok
+test host_cmd::tests::status_says_the_warning_holds_the_host ... ok
+test host_cmd::tests::status_tells_a_hold_from_a_pause ... ok
+test term::tests::columns_are_characters_not_bytes ... ok
+test app_cmd::tests::summary_reads_the_state ... ok
+test host_cmd::tests::status_says_where_each_screen_is_the_caption_and_why_it_is_paused ... ok
+test term::tests::the_newest_part_goes_first_then_the_rest_is_cut ... ok
+test app_cmd::tests::commands_make_app_display_calls ... ok
+test app_cmd::tests::round_trip_through_the_link ... ok
+test search_cmd::tests::the_tilings_help_gives_the_real_count ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.43s
+
+     Running tests/cli_json.rs (target/release/deps/cli_json-53b0fc0c0e9b3c1b)
+
+running 11 tests
+test doctor_with_the_gpu_off_runs_no_self_test ... ok
+test api_lists_describes_and_calls_operations ... ok
+test run_and_verify_as_json ... ok
+test json_before_or_after_the_subcommand ... ok
+test library_media_and_picture_commands_as_json ... ok
+test pack_commands_publish_check_and_import ... ok
+test run_gives_one_hash_on_the_cpu_and_by_default ... ok
+test search_and_jobs_commands_as_json ... ok
+test an_export_refuses_a_running_search_and_leaves_no_folder ... ok
+test explore_runs_with_measures_as_csv_and_json ... ok
+test a_pack_carries_the_runs_of_a_search_never_sealed ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.42s
+
+     Running tests/host.rs (target/release/deps/host-e6bdbff810265f20)
+
+running 19 tests
+test a_tuned_size_is_applied_and_recorded ... ignored, Fit to this computer is switched off in 0.4.2 (#112); back with Fit in 0.4.3 (#113)
+test host_tune_sweeps_off_screen_with_no_host ... ignored, Fit to this computer is switched off in 0.4.2 (#112); back with Fit in 0.4.3 (#113)
+test bad_settings_fall_back_and_say_so ... ok
+test a_host_started_at_login_leaves_window_screens_unseen ... ok
+test a_crash_does_not_lock_the_next_host_out ... ok
+test each_screen_runs_its_own_rotation_and_moves_alone ... ok
+test the_host_sweeps_its_own_screen_and_shows_the_recommended_size ... ignored, Fit to this computer is switched off in 0.4.2 (#112); back with Fit in 0.4.3 (#113)
+test the_login_entry_starts_the_host_for_the_desktop_and_comes_off ... ok
+test status_follows_the_gpu_setting ... ok
+test nothing_starts_on_screen_before_the_warning_is_accepted ... ok
+test fit_is_switched_off_and_a_saved_fit_is_kept_but_not_applied ... ok
+test host_stop_returns_once_the_host_has_gone ... ok
+test the_extension_can_hold_the_scene_and_a_wallpaper_is_remembered ... ok
+test runs_scenes_and_answers_its_link ... ok
+test only_one_host_runs ... ok
+test a_host_holds_its_screens_until_the_warning_is_accepted ... ok
+test a_screen_draws_every_generation_or_in_low_power_caps_the_speed ... ok
+test an_oversized_world_is_refused_and_the_rotation_moves_on ... ok
+test host_start_can_be_captured_and_returns ... ok
+
+test result: ok. 16 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 9.02s
+
+     Running tests/setup.rs (target/release/deps/setup-e34f5439efc181ae)
+
+running 2 tests
+test setup_with_the_at_risk_answer_goes_on_and_saves_it ... ok
+test setup_explorer_yes_end_to_end ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.21s
+
+     Running tests/version_res.rs (target/release/deps/version_res-bb73918e9015b3ac)
+
+running 1 test
+test the_resource_file_names_the_product_in_string_1 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_api-124e1468dbb2c0de)
+
+running 36 tests
+test args::rule::tests::neighbourhoods_by_every_name ... ok
+test args::json::tests::pairs_from_numbers_text_and_lists ... ok
+test args::json::tests::readers_take_numbers_as_text_and_skip_null ... ok
+test args::seed::tests::seed_shorthands ... ok
+test args::mcp::tests::seeds_as_the_tools_read_them ... ok
+test args::json::tests::unknown_keys_are_named ... ok
+test args::reseed::tests::modes_by_name_sign_map_and_json_text ... ok
+test args::seed::tests::forms_the_mcp_tools_also_read ... ok
+test args::size::tests::ranges ... ok
+test args::reseed::tests::one_policy_or_a_list ... ok
+test args::size::tests::screen_sizes ... ok
+test args::seed::tests::pattern_seeds ... ok
+test args::size::tests::size_pairs ... ok
+test args::size::tests::world_sizes_as_text ... ok
+test args::tiling::tests::boundaries_by_every_name ... ok
+test args::until::tests::triggers_and_limits ... ok
+test cells::tests::glider_in_both_formats ... ok
+test cells::tests::plaintext_states_and_errors ... ok
+test cells::tests::rle_multi_digit_runs ... ok
+test ops::pack::tests::a_signature_that_does_not_verify_is_not_called_missing ... ok
+test out::tests::csv_quoting ... ok
+test out::tests::indexed_png_round_trip ... ok
+test ctx::tests::a_command_s_request_wins_unless_the_variable_set_a_mode ... ok
+test out::tests::labels_and_guard ... ok
+test args::mcp::tests::ca_items ... ok
+test args::rule::tests::ca_options ... ok
+test args::rule::tests::rule_names_and_notation ... ok
+test args::mcp::tests::rule_nicknames_and_catalog_first ... ok
+test ops::search::tests::a_resume_keeps_what_is_left_of_the_budget_the_job_was_started_with ... ok
+test world::tests::session_replaces_and_names_its_world ... ok
+test args::tiling::tests::tiling_ids_any_case_and_lists ... ok
+test args::tiling::tests::tilings_and_sizes ... ok
+test out::tests::the_guard_follows_links_before_it_checks ... ok
+test ops::jobs::tests::a_running_job_nobody_holds_is_gone_once_its_heartbeat_is_late ... ok
+test ops::jobs::tests::a_status_wait_after_a_stop_gives_the_last_counters ... ok
+test ops::jobs::tests::wait_after_a_stop_waits_until_the_run_lets_go ... ok
+
+test result: ok. 36 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.17s
+
+     Running tests/explore.rs (target/release/deps/explore-7fd95cab7d1bceae)
+
+running 4 tests
+test a_clips_rating_page_saves_ratings_that_reviews_read_back ... ok
+test explore_searches_start_stop_and_continue_through_the_ops ... ok
+test an_explore_jobs_runs_are_listed_drawn_reviewed_clipped_and_published ... ok
+test measures_out_a_refit_and_its_score ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 41.20s
+
+     Running tests/installed_with.rs (target/release/deps/installed_with-4c01d3f004c6e7c1)
+
+running 4 tests
+test the_report_ends_with_the_command_that_applies ... ok
+test the_installer_by_its_marker ... ok
+test a_python_environment_and_a_cargo_root ... ok
+test package_managers_by_their_folders ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/jobs.rs (target/release/deps/jobs-4909c9ec11e6a397)
+
+running 11 tests
+test bad_rules_refuse_a_hunt_bounded_search_or_census_before_it_starts ... ok
+test hunts_and_bounded_searches_pause_past_their_memory_cap ... ok
+test bounded_searches_collisions_and_censuses_give_their_results_and_files ... ok
+test hunts_run_to_their_budget_resume_and_report ... ok
+test waits_end_with_how_the_job_ended ... ok
+test ants_piles_evolve_searches_and_movers_run_as_jobs ... ok
+test background_jobs_are_followed_stopped_and_waited_for ... ok
+test interactive_limits_bound_searches_and_collisions_run_in_the_call ... ok
+test a_killed_run_is_stale_at_once_and_a_detached_resume_is_waited_for ... ok
+test hunts_and_piles_fall_back_to_the_cpu_with_one_note ... ok
+test a_resume_runs_what_is_left_of_the_minutes_the_job_was_started_with ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.79s
+
+     Running tests/json.rs (target/release/deps/json-e8292b18ba3e5537)
+
+running 2 tests
+test json_of_paths_uninstall_and_calls_by_name ... ok
+test json_of_the_listing_commands ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/library.rs (target/release/deps/library-c7fc2d5b0ec7e8ec)
+
+running 9 tests
+test update_and_remove ... ok
+test get_a_pattern_or_an_ant ... ok
+test verify_and_prune ... ok
+test info_query_and_count ... ok
+test reverify_checks_flagged_or_all_records_as_a_job ... ok
+test render_export_import_and_paste ... ok
+test compounds_are_listed_then_split_into_their_parts ... ok
+test retracted_records_show_as_retracted ... ok
+test a_hunt_finds_soup_is_rebuilt_as_a_scene_that_replays_to_it ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running tests/media.rs (target/release/deps/media-8f6199cb74f8a903)
+
+running 5 tests
+test contact_sheets ... ok
+test wallpapers_of_the_world_or_a_scene ... ok
+test site_export_writes_once_and_keeps_its_page ... ok
+test media_for_patterns_scenes_and_what_is_missing ... ok
+test media_files_are_not_written_through_a_link_out_of_their_folder ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+     Running tests/quickstart.rs (target/release/deps/quickstart-1b8a623870347706)
+
+running 3 tests
+test the_built_in_examples ... ok
+test list_get_hide_and_remove ... ok
+test add_from_a_pattern_an_ant_and_a_sweep_run ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests/reference.rs (target/release/deps/reference-97a7340f382c0522)
+
+running 10 tests
+test the_doctor_says_which_adapter_each_purpose_uses_and_why ... ok
+test an_export_s_scratch_store_stays_inside_the_folder_rules ... ok
+test uninstall_lists_then_undoes ... ok
+test paths_and_doctor ... ok
+test palettes_and_seeds ... ok
+test rules_by_family ... ok
+test files_list_reads_inside_its_roots_only ... ok
+test deleting_the_settings_keeps_the_picture_the_desktop_shows ... ok
+test isohedral_types_keep_their_ids ... ok
+test tilings_families_and_search ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/registry.rs (target/release/deps/registry-9716a73a1688f9b4)
+
+running 4 tests
+test every_operation_is_named_once_and_found_by_name ... ok
+test calls_by_name_take_json_and_name_their_errors ... ok
+test world_operations_act_on_a_session_or_a_host ... ok
+test schemas_are_simple_enough_for_mcp_clients ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/scene.rs (target/release/deps/scene-b2e6b0cc21e34b78)
+
+running 4 tests
+test save_load_and_their_errors ... ok
+test a_malformed_rule_names_itself_its_ca_and_its_file ... ok
+test run_checks_expectations_reseeds_and_falls_back_to_the_cpu ... ok
+test run_saves_renders_and_verifies ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/setup.rs (target/release/deps/setup-ec5dd27705bb21e6)
+
+running 9 tests
+test a_data_folder_is_chosen_in_paths_json ... ok
+test the_doctor_notes_a_chosen_data_folder_that_is_gone ... ok
+test a_dry_run_says_what_it_would_do_and_does_nothing ... ok
+test status_before_setup ... ok
+test a_packs_job_says_it_came_with_the_pack ... ok
+test a_pack_import_job_reports_and_runs_again_harmlessly ... ok
+test a_quick_start_build_stops_and_carries_on_to_its_end ... ok
+test setup_jobs_run_in_the_background ... ok
+test every_profile_applies ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 38.73s
+
+     Running tests/uninstall_leftovers.rs (target/release/deps/uninstall_leftovers-0691115e0265f49b)
+
+running 1 test
+test the_host_lock_and_an_empty_jobs_folder_go_once_nothing_holds_them ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.17s
+
+     Running tests/uninstall_nested.rs (target/release/deps/uninstall_nested-297a25379f1998a4)
+
+running 1 test
+test a_data_folder_inside_the_settings_folder ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/world.rs (target/release/deps/world-b83187988281b9a4)
+
+running 11 tests
+test drawing_errors_name_their_kinds ... ok
+test seeds_from_commands_keep_the_ant_limit ... ok
+test status_inspect_and_apply ... ok
+test glider_draw_step_read ... ok
+test unknown_palettes_warn_in_scenes_and_are_refused_when_typed ... ok
+test step_settles_cancels_and_reports ... ok
+test status_names_ltl_neighbourhoods_and_hexagonal_rules ... ok
+test a_grid_s_cells_are_counted_against_the_limit ... ok
+test new_world_checks_tiling_size_and_cas ... ok
+test reseed_render_save_and_open ... ok
+test paste_from_the_catalog ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_app-4d96dde8e378080d)
+
+running 115 tests
+test app::palette_ui::tests::ink_contrasts_with_the_background ... ok
+test app::menu::tests::every_action_is_in_a_menu ... ok
+test app::menu::tests::former_buttons_are_reachable ... ok
+test app::host_ui::tests::the_cards_know_an_unmeasured_gpu_share ... ok
+test app::palette_ui::tests::builtins_include_light_ones ... ok
+test app::reseed_ui::tests::graph_scale_is_logarithmic_and_clamped ... ok
+test app::reseed_ui::tests::preset_survey ... ignored
+test app::menu::tests::shortcuts_are_unique_and_tool_keys_distinct ... ok
+test app::display_api::tests::windows_parse ... ok
+test app::panes::tests::default_layout_has_every_pane_and_the_grid ... ok
+test app::panes::tests::dock_float_pop_close_redocks ... ok
+test app::reseed_ui::tests::status_lines ... ok
+test app::panes::tests::docking_with_every_pane_gone_makes_a_column ... ok
+test app::host_ui::tests::the_summary_tells_a_hold_from_a_pause ... ok
+test app::reseed_ui::tests::switching_kinds_keeps_values_or_takes_defaults ... ok
+test app::display::tests::saver_settings_keep_the_chosen_rotation ... ok
+test app::reseed_ui::tests::the_auto_reseed_preset_is_named_in_its_combo ... ok
+test app::reseed_ui::tests::presets_are_valid_at_every_size ... ok
+test app::reseed_ui::tests::validation_names_the_policy ... ok
+test app::rotation_ui::tests::removing_a_screen_closes_its_editor_and_moves_later_ones_up ... ok
+test app::rotation_ui::tests::saving_chooses_the_rotation_for_where_it_was_edited_only ... ok
+test app::panes::tests::sanitize_drops_unknown_and_restores_the_grid ... ok
+test app::shell::tests::the_status_bar_says_paused_while_paused ... ok
+test app::panes::tests::layout_json_round_trip ... ok
+test app::reseed_ui::tests::settings_round_trip ... ok
+test app::shots::a_rule_being_typed_applies_before_save ... ignored
+test app::shots::ai_control_window_on_the_quick_start ... ignored
+test app::shots::jump_field_takes_typing ... ignored
+test app::shots::shots_ai_control ... ignored
+test app::shots::shots_desktop_pane_cards ... ignored
+test app::shots::shots_desktop_show_just_this_scene ... ignored
+test app::shots::shots_new_tiling ... ignored
+test app::shots::shots_photosensitivity_warning ... ignored
+test app::shots::shots_quick_start_atlas ... ignored
+test app::shots::shots_tour ... ignored
+test app::shots::shots_wallpaper ... ignored
+test app::settings::tests::the_app_s_own_gpu_choice_round_trips_and_defaults_to_following ... ok
+test app::wallpaper_ui::tests::current_view_maps_to_the_output ... ok
+test app::wallpaper_ui::tests::settings_round_trip_with_defaults ... ok
+test app::display::tests::fill_covers_the_canvas_at_one_pixel ... ok
+test app::wallpaper_ui::tests::overlapping_positions_are_laid_side_by_side ... ok
+test app::wallpaper_ui::tests::sizes_from_monitors_skip_duplicates ... ok
+test app::settings::tests::json_round_trip_with_the_tile_tree ... ok
+test app::settings::tests::the_window_place_round_trips_and_a_broken_one_is_dropped ... ok
+test app::settings::tests::garbage_unknown_or_old_files_give_defaults ... ok
+test app::settings::tests::store_writes_only_on_change ... ok
+test app::settings::tests::display_settings_round_trip ... ok
+test app::settings::tests::tool_palettes_round_trip ... ok
+test keepawake::tests::off_by_default ... ok
+test keepawake::tests::take_and_release ... ignored
+test gpu_info::tests::each_program_says_what_it_does_and_why ... ok
+test monitors::tests::duplicates_are_marked_in_order ... ok
+test offscreen::tests::offscreen_ants_stop_resume ... ignored
+test offscreen::tests::offscreen_ants_window ... ignored
+test offscreen::tests::offscreen_catalog_tools_window ... ignored
+test offscreen::tests::offscreen_dashboard_explore ... ignored
+test offscreen::tests::offscreen_dashboard_window ... ignored
+test offscreen::tests::offscreen_hashlife_window ... ignored
+test offscreen::tests::offscreen_sandpile_stop_resume ... ignored
+test offscreen::tests::offscreen_sandpile_window ... ignored
+test offscreen::tests::offscreen_start_screen ... ignored
+test offscreen::tests::offscreen_start_screen_starter_pack ... ignored
+test dash_ui::tests::heat_colours_and_image ... ok
+test palette_pick::tests::every_builtin_is_offered_once_and_extras_follow ... ok
+test cli::tests::flags_parse ... ok
+test previews::frame::tests::a_frame_has_a_margin_a_least_height_and_the_cards_shape ... ok
+test previews::frame::tests::copies_on_a_torus_are_taken_near_the_frame ... ok
+test previews::frame::tests::framing_needs_a_small_part_of_the_world_or_a_cut_off_pattern_and_holds_on ... ok
+test popout::tests::registry_round_trip_and_flags ... ok
+test previews::frame::tests::the_frame_follows_without_losing_or_jittering ... ok
+test previews::frame::tests::the_whole_world_is_cropped_to_the_card ... ok
+test previews::frame::tests::live_cells_are_measured_compactly_even_across_a_wrap_edge ... ok
+test previews::tests::a_card_paints_before_it_steps_and_shares_its_tiling ... ok
+test previews::tests::a_dead_card_rests_then_starts_over ... ok
+test popout::tests::a_popped_out_window_survives_a_second_pass ... ok
+test app::anim_export::tests::an_animation_has_every_frame_and_ends_where_stepping_does ... ok
+test previews::tests::cards_off_screen_are_forgotten_after_a_while ... ok
+test previews::tests::workers_visit_cards_in_turn ... ok
+test previews::tests::a_small_pattern_in_a_large_world_is_framed_and_a_soup_is_not ... ok
+test results::tests::favourites_round_trip ... ok
+test results::tests::filter_and_sort ... ok
+test dash_ui::tests::the_form_makes_a_checked_hunt ... ok
+test results::tests::search ... ok
+test rhai_edit::tests::error_line_is_marked ... ok
+test rhai_edit::tests::tokens_cover_the_source ... ok
+test rhai_edit::tests::unterminated_strings_run_to_the_end ... ok
+test app::wallpaper_ui::tests::span_cuts_line_up_with_split ... ok
+test scripts_ui::tests::table_rows_keep_closures ... ok
+test setup_ui::tests::offscreen_setup_wizard ... ignored
+test setup_ui::tests::offscreen_setup_wizard_running ... ignored
+test span::tests::duplicates_lay_out_as_one ... ok
+test span::tests::gaps_and_vertical_offsets_are_kept ... ok
+test span::tests::mirror_shows_the_camera_on_each ... ok
+test span::tests::mixed_scale_factors ... ok
+test span::tests::negative_positions_and_stacks ... ok
+test scripts_ui::tests::examples_pass_the_syntax_check ... ok
+test span::tests::side_by_side_arranges_in_order ... ok
+test span::tests::snapping_puts_cell_edges_on_pixels ... ok
+test span::tests::two_side_by_side_slices_abut ... ok
+test span::tests::zoom_about_keeps_the_point ... ok
+test sweep_form::tests::from_a_plain_world ... ok
+test cell_editor::tests::lattice_drag_snaps_to_edge_and_offsets_bricks ... ok
+test sweep_form::tests::options_reach_the_json ... ok
+test cell_editor::tests::draw_tile_insert_and_delete_corner ... ok
+test thumbs::tests::indexed_pngs_shrink ... ok
+test previews::tests::a_frame_across_a_wrap_edge_shows_no_seams ... ok
+test cell_editor::tests::stamp_square_then_triangles_to_build_elongated_triangular ... ok
+test sweep_form::tests::from_a_world_with_drawn_cells ... ok
+test sweep_form::tests::hexw3_atlas_from_the_form ... ok
+test cell_editor::tests::welded_and_free_corner_drags ... ok
+test app::wallpaper_ui::tests::exports_a_qhd_wallpaper ... ok
+test previews::tests::a_framed_card_follows_its_ship_across_a_wrap_edge ... ok
+test results::tests::loads_a_real_sweep_and_reopens_a_run ... ok
+test library_ui::tests::filter_sort_edit_promote ... ok
+test results::tests::favourites_go_to_the_library ... ok
+
+test result: ok. 90 passed; 0 failed; 25 ignored; 0 measured; 0 filtered out; finished in 0.18s
+
+     Running tests/setup_wizard.rs (target/release/deps/setup_wizard-635478c6a7e908c4)
+
+running 5 tests
+test forward_back_and_later ... ok
+test pages_follow_the_profile ... ok
+test desktop_offers_are_off_until_ticked_and_only_ticked_ones_run ... ok
+test the_choices_become_setup_apply_input ... ok
+test applying_blank_slate_records_it_and_shows_it_done ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_core-892ad3d9531f6ca0)
+
+running 63 tests
+test detmath::tests::dist_and_pow4 ... ok
+test detmath::tests::exp_bits_are_pinned ... ok
+test cellcheck::tests::catches_thin_gap_by_open_edges ... ok
+test cellcheck::tests::catches_overlap_inside_cell ... ok
+test cellcheck::tests::catches_gap_and_locates_it ... ok
+test cellcheck::tests::catches_overlap_with_translate ... ok
+test cellcheck::tests::catches_self_intersection_and_degenerate ... ok
+test detmath::tests::trig_bits_are_pinned ... ok
+test cellcheck::tests::unit_square_is_valid ... ok
+test cellcheck::tests::stamped_polygons_tile ... ok
+test cellcheck::tests::squares_of_two_sizes ... ok
+test evolve::priority::tests::simplify_keeps_behaviour ... ok
+test cellcheck::tests::bricks_offset_by_a_third ... ok
+test exact::tests::sign_of_surds ... ok
+test geom::tests::affine_roundtrip ... ok
+test exact::tests::rings_match_floats ... ok
+test evolve::priority::tests::notation_round_trip ... ok
+test geom::tests::triangulate_concave ... ok
+test families::tests::aliases ... ok
+test jcs::tests::numbers_match_rfc_8785_appendix_b ... ok
+test jcs::tests::integers_beyond_2_53_are_refused ... ok
+test hat::tests::hat_counts_grow ... ok
+test jcs::tests::members_sort_by_utf16_code_units ... ok
+test jcs::tests::rfc_8785_sample_and_its_bytes ... ok
+test jcs::tests::strings_escape_only_what_rfc_8785_escapes ... ok
+test json_int::tests::free_form_values ... ok
+test ltl::tests::notation_forms ... ok
+test json_int::tests::large_integers_are_strings_and_read_either_way ... ok
+test evolve::arena::tests::square_life_like_explosion_is_capped ... ok
+test media::encode::tests::shrink_averages ... ok
+test media::vp8l::tests::prefix_coding_matches_the_spec_decoder ... ok
+test patch::tests::unit_squares_with_t_junction ... ok
+test media::encode::tests::gif_and_webp_round_trip ... ok
+test penrose::tests::deflation_keeps_area ... ok
+test media::vp8l::tests::decodes_with_image_webp ... ok
+test photosensitivity::tests::at_risk_is_saved_and_accepted ... ok
+test evolve::tests::operators_respect_bounds ... ok
+test photosensitivity::tests::no_disorder_is_saved_and_accepted ... ok
+test photosensitivity::tests::the_text_has_every_paragraph ... ok
+test photosensitivity::tests::with_no_answer_it_is_not_accepted ... ok
+test pattern::collide::tests::thumbnails_are_cropped_to_the_patterns ... ok
+test detmath::tests::trig_matches_the_platform_to_a_few_ulps ... ok
+test reseed::tests::modes_round_trip ... ok
+test reseed::tests::outline_is_not_a_disc ... ok
+test detmath::tests::exp_matches_the_platform_to_a_few_ulps ... ok
+test rules::tests::roundtrip ... ok
+test semantics::tests::the_table_covers_every_family_once ... ok
+test sha256::tests::pieces_and_padding_edges ... ok
+test vonneumann::tests::encode_decode_and_tokens_roundtrip ... ok
+test wallpaper::tests::fresh_aperiodic_tilings_pick_a_level ... ok
+test wallpaper::tests::parses_sizes_and_monitors ... ok
+test zomega::tests::units_are_unit_and_twelve_cycle ... ok
+test penrose::tests::exact_matches_float ... ok
+test sha256::tests::standard_vectors ... ok
+test explore::space::tests::tiling_keys_take_bare_and_catalog_ids ... ok
+test pin::tests::periodic_pins_ignore_the_grid ... ok
+test paths::tests::a_name_inside_a_folder_stays_inside_it ... ok
+test evolve::arena::tests::spectre_arena_degrees_and_margin ... ok
+test evolve::arena::tests::spectre_glider_scores_full_distance ... ok
+test pin::tests::aperiodic_pins_ignore_the_level ... ok
+test pin::tests::reference_patches_hold_every_local_configuration ... ok
+test cellcheck::tests::every_lattice_family_converts_and_checks_clean ... ok
+test pattern::collide::tests::the_plane_gives_the_frames_outcomes ... ok
+
+test result: ok. 63 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.17s
+
+     Running tests/bundled_packs.rs (target/release/deps/bundled_packs-01bb188f4048adda)
+
+running 6 tests
+test verbatim_windows_paths_read_as_plain_ones ... ok
+test the_variable_wins_even_when_its_folder_is_missing ... ok
+test share_is_looked_at_only_beside_a_bin_folder ... ok
+test a_chosen_data_folder_is_honoured_and_the_variable_wins ... ok
+test share_beside_bin_comes_before_packs_beside_the_program ... ok
+test the_packs_are_named_through_the_links_that_survive_an_upgrade ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/census.rs (target/release/deps/census-2decb333e17b1df7)
+
+running 8 tests
+test rule_sets ... ok
+test bad_rules_are_reported_not_fatal ... ok
+test thumbnails_and_spectre ... ok
+test known_rules_classify_as_expected ... ok
+test census_is_identical_at_any_thread_count ... ok
+test the_bit_parallel_board_gives_the_worlds_census ... ok
+test settle_generation_is_exact ... ok
+test board_equals_the_world_on_every_family ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/compounds.rs (target/release/deps/compounds-74e0e02a5125272e)
+
+running 9 tests
+test two_oscillators_on_hexagons_come_apart ... ok
+test compound_records_split_into_part_records ... ok
+test a_pseudo_still_life_comes_apart ... ok
+test a_glider_pair_is_two_gliders ... ok
+test a_pulsar_is_one_object ... ok
+test a_pulsar_with_blinkers_is_five_objects ... ok
+test ships_with_sparks_stay_one_object ... ok
+test a_tag_along_stays_one_ship ... ok
+test a_bound_pair_stays_one_ship ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.11s
+
+     Running tests/computing.rs (target/release/deps/computing-3bde135b0b4d4c54)
+
+running 4 tests
+test computing_scenes_match_generators ... ok
+test life_gate_truth_tables ... ok
+test wireworld_adder_truth_table ... ok
+test life_truth_table_scenes ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.63s
+
+     Running tests/done.rs (target/release/deps/done-55ac8cc4fd6b992d)
+
+running 7 tests
+test fill_size_matches_the_screen ... ok
+test rule_zero_still_runs_to_the_bottom ... ok
+test done_is_not_part_of_the_hash ... ok
+test sandpiles_ants_and_layers ... ok
+test field_rules_done_when_empty_or_frozen ... ok
+test elementary_rules_stop_at_the_bottom_row ... ok
+test done_trigger_in_scripts ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.48s
+
+     Running tests/dynamics_pins.rs (target/release/deps/dynamics_pins-02e11440f116e4ae)
+
+running 1 test
+test quick_start_dynamics_are_pinned ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.01s
+
+     Running tests/evolve.rs (target/release/deps/evolve-e93245a167ceff18)
+
+running 5 tests
+test a_run_folder_link_that_leads_outside_is_refused ... ok
+test a_search_checkpointed_and_resumed_equals_one_run ... ok
+test anti_gaming_filters ... ok
+test spectre_glider_passes_cross_radius_check ... ok
+test search_is_identical_at_any_thread_count ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.60s
+
+     Running tests/exact_patches.rs (target/release/deps/exact_patches-3300986e19e1f0d8)
+
+running 9 tests
+test size_classes_exact_vs_float_level6 ... ignored, slow in debug builds; run with --release --ignored
+test spectre_exact_equals_float_level6 ... ignored, slow in debug builds; run with --release --ignored
+test spectre_angles_exact ... ok
+test spectre_counts_and_embeddings ... ok
+test spectre_patches_are_discs ... ok
+test spectre_topology_matches_float_build ... ok
+test spectre_exact_equals_float ... ok
+test size_classes_exact_vs_float ... ok
+test level_7_patches ... ok
+
+test result: ok. 7 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 11.56s
+
+     Running tests/explore.rs (target/release/deps/explore-853f813abb6502c6)
+
+running 13 tests
+test row_rules_stop_at_the_bottom_on_wrapped_grids ... ok
+test fates ... ok
+test glider_tracks_across_the_torus_seam ... ok
+test sign_measures_see_balance_territories_and_loss ... ok
+test trackers_see_gliders_not_oscillators ... ok
+test a_run_keeps_its_three_quarter_frame ... ok
+test a_run_cut_short_is_the_run_of_the_generations_it_reached ... ok
+test circuit_seeds_lay_thin_wires_with_signals_on_any_tiling ... ok
+test neighbour_lists_agree_with_the_topology ... ok
+test tilings_list_finds_twins ... ok
+test grid_specific_families_fit_their_native_tilings_at_search_size ... ok
+test a_saved_scene_replays_the_run_the_search_measured ... ok
+test every_family_samples_a_valid_rule_where_it_fits ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.95s
+
+     Running tests/geometry_pins.rs (target/release/deps/geometry_pins-932788d76511d324)
+
+running 2 tests
+test geometry_sources_use_detmath ... ok
+test topology_and_kernel_hashes_are_pinned ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+
+     Running tests/hashlife.rs (target/release/deps/hashlife-3f9e502e76ae752f)
+
+running 16 tests
+test parsing ... ok
+test hashlife_pictures_take_a_palette ... ok
+test b0_refusals_and_counters ... ok
+test jump_replays ... ok
+test jump_ages_restart_at_one ... ok
+test plane_long_jumps ... ok
+test torus_long_jumps ... ok
+test collection_keeps_results ... ok
+test torus_refusals ... ok
+test b0_plane_equals_the_stepper ... ok
+test torus_equals_stepper_square ... ok
+test torus_equals_stepper_lattices ... ok
+test b0_rules_equal_the_stepper ... ok
+test several_cas_per_world ... ok
+test bit_leaf_equals_the_recursion ... ok
+test plane_equals_stepper ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.96s
+
+     Running tests/hunt_bench.rs (target/release/deps/hunt_bench-4b6a3923bca70d63)
+
+running 3 tests
+test gun_hashes ... ignored
+test hunt_one_soup ... ignored
+test hunt_throughput ... ignored
+
+test result: ok. 0 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/identity.rs (target/release/deps/identity-a7a2a144df32d58c)
+
+running 8 tests
+test identity_text_and_ids_are_pinned ... ok
+test the_glider_has_one_id_in_every_phase_and_orientation ... ok
+test the_tiling_line_is_canonical_and_unchanged_on_default_shapes ... ok
+test the_object_finder_labels_objects_by_their_content_id ... ok
+test an_aperiodic_oscillator_has_one_id_at_every_start_and_site ... ok
+test the_hat_glider_has_one_id_at_every_site ... ok
+test k_uniform_census_ships_have_one_id_in_every_phase_and_orientation ... ok
+test aperiodic_records_have_one_id_on_every_level ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
+
+     Running tests/jaca.rs (target/release/deps/jaca-cc3644ed12d96928)
+
+running 18 tests
+test hex_palettes ... ok
+test notation_round_trips ... ok
+test rule_struct_helpers ... ok
+test different_rules_per_sign ... ok
+test edge_neighbourhood_notation_keeps_the_v ... ok
+test double_births_cancel ... ok
+test far_apart_signs_do_not_interact ... ok
+test touching_opposites_annihilate ... ok
+test signs_render_in_their_own_colours ... ok
+test jaca_palette_pairs_keep_the_signs_apart_as_cells_age ... ok
+test scenes_keep_the_negative_palette ... ok
+test seeds_and_defaults ... ok
+test blast_radius_grows_through_the_neighbourhood ... ok
+test reseed_signs_on_jaca ... ok
+test reseed_policies_alternate_on_jaca ... ok
+test reseed_sign_keeps_binary_worlds_unchanged ... ok
+test one_sign_runs_like_the_bs_rule ... ok
+test presets_load_and_start_with_both_signs ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.41s
+
+     Running tests/jcs_vectors.rs (target/release/deps/jcs_vectors-6be1b7b7ec40aef3)
+
+running 2 tests
+test the_documented_tiling_key_function_matches_every_vector ... ok
+test canonical_json_matches_the_rfc8785_package ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/large_integers.rs (target/release/deps/large_integers-d051179e5edf89c6)
+
+running 3 tests
+test canonical_json_refuses_a_large_integer_number ... ok
+test every_large_integer_in_a_scene_reads_back ... ok
+test a_scenes_random_state_is_a_string_beyond_2_53 ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/movers.rs (target/release/deps/movers-159aa12d60bf8f68)
+
+running 2 tests
+test tracker_reports_why_it_stopped ... ok
+test spectre_glider_verifies_on_level_7 ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.18s
+
+     Running tests/objects.rs (target/release/deps/objects-131d5cec58410d2f)
+
+running 9 tests
+test hex_symmetry_group_has_twelve_elements ... ok
+test blinker_next_to_block_is_separated ... ok
+test objects_after_some_generations_and_other_phases ... ok
+test known_life_objects ... ok
+test speed_directions_follow_the_lattice ... ok
+test highlife_replicator_is_other ... ok
+test every_phase_is_recognised ... ok
+test other_tilings_run_without_panics ... ok
+test life_soup_census_is_plausible ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.02s
+
+     Running tests/phase0.rs (target/release/deps/phase0-f2ebae7eb2ffd303)
+
+running 15 tests
+test fields_shared_and_private ... ok
+test blinker_period_two ... ok
+test prototype_tile_json_loads ... ok
+test life_glider_moves_diagonally ... ok
+test wolfram_rule30_and_110_rows ... ok
+test a_png_carries_its_scene ... ok
+test langtons_ant_highway ... ok
+test periodic_tiling_degrees ... ok
+test rule30_then_life_then_ants ... ok
+test spectre_patch_counts_and_degrees ... ok
+test sandpile_conserves_grains ... ok
+test spectre_glider_travels ... ok
+test sandpile_order_independent ... ok
+test same_hash_any_thread_count ... ok
+test bundled_scenes_run ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.63s
+
+     Running tests/phase1.rs (target/release/deps/phase1-b4aad5772cef7c1d)
+
+running 20 tests
+test editor_node_symmetry_and_handles ... ok
+test an_unknown_palette_is_refused ... ok
+test hex_wolfram_binary_is_pascal_mod_2 ... ok
+test hex_wolfram_ternary_is_pascal_mod_3 ... ok
+test hodgepodge_single_step ... ok
+test cyclic_and_gh_single_steps ... ok
+test square_edge_slots_are_n_e_s_w ... ok
+test live_edges_count_as_live ... ok
+test script_population_and_goto ... ok
+test a_scene_with_an_unknown_palette_loads_and_says_so ... ok
+test table_rotation_symmetry_parity ... ok
+test ants_bounce_or_fall_off ... ok
+test table_engine_matches_builtin_life ... ok
+test edited_tiles_still_interlock ... ok
+test one_palette_on_four_cas ... ok
+test new_rules_parse_and_run_everywhere ... ok
+test forest_fire_is_thread_independent ... ok
+test every_catalog_entry_runs_and_names_itself ... ok
+test sandpile_identity_is_idempotent ... ok
+test script_steps_fire_in_order_and_replay ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.10s
+
+     Running tests/phase2_aperiodic.rs (target/release/deps/phase2_aperiodic-d0c4b94c17d01b7e)
+
+running 11 tests
+test tiles_are_congruent ... ok
+test hat_reflection_ratio ... ok
+test neighbours_symmetric ... ok
+test levels_nest ... ok
+test open_tiles_only_on_rim ... ok
+test penrose_ratios_approach_phi ... ok
+test preview_and_scenes ... ok
+test penrose_vertex_stars ... ok
+test degree_sets ... ok
+test no_overlaps_or_holes ... ok
+test tile_counts ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.77s
+
+     Running tests/phase2_isohedral.rs (target/release/deps/phase2_isohedral-6941fd4a7c5d990a)
+
+running 9 tests
+test all_81_types_listed ... ok
+test editor_node_mapping_round_trips ... ok
+test ghosts_surround_the_prototile ... ok
+test cas_run_on_isohedral_tilings_with_every_edge_mode ... ok
+test every_type_builds_and_tiles_at_defaults ... ok
+test handles_move_corners_and_json_round_trips ... ok
+test each_class_reshaped_alone_still_interlocks ... ok
+test random_parameters_still_tile ... ok
+test reshaped_edges_still_interlock ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.41s
+
+     Running tests/phase2_kuniform.rs (target/release/deps/phase2_kuniform-b21da657683fde7d)
+
+running 6 tests
+test counts_per_k_and_ids ... ok
+test no_two_tilings_are_isometric ... ok
+test polygons_are_regular_fill_the_cell_and_meet_edge_to_edge ... ok
+test k_vertex_orbits_with_the_named_vertex_types ... ok
+test unit_cell_checker_accepts_every_tiling ... ok
+test every_tiling_builds_with_measured_neighbours ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.48s
+
+     Running tests/phase2_quickstart.rs (target/release/deps/phase2_quickstart-a0c32282d662944f)
+
+running 6 tests
+test ant_scenes_keep_their_size_in_previews ... ok
+test a_scene_that_adds_its_ca_with_a_command_has_a_main_rule ... ok
+test featured_entries_are_the_hand_made_scenes_and_the_list ... ok
+test every_named_rule_has_an_example ... ok
+test examples_are_reproducible ... ok
+test every_example_works ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.22s
+
+     Running tests/phase2_rules.rs (target/release/deps/phase2_rules-56c4a5f4877e91e3)
+
+running 8 tests
+test layered_reseed_restarts ... ok
+test b0_background_stays_dead ... ok
+test layered_parity_is_pascal_mod_2 ... ok
+test ltl_von_neumann_matches_v_rule ... ok
+test b0_emulation_antilife_is_inverted_life ... ok
+test b0_emulation_matches_brute_force ... ok
+test ltl_runs_on_other_tilings ... ok
+test ltl_range_one_is_life ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/phase2_scale.rs (target/release/deps/phase2_scale-6085d0fe79340a36)
+
+running 4 tests
+test set_tiling_built_equals_set_tiling ... ok
+test lattice_locate_matches_brute_force ... ok
+test large_grid_builds_and_steps ... ok
+test streaming_png_matches_render ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/phase2_vonneumann.rs (target/release/deps/phase2_vonneumann-e755a1ebdf8a08de)
+
+running 16 tests
+test directions_match_the_screen ... ok
+test book_trace_into_a_ground_cell ... ok
+test kill_dominates_reception_not_emission ... ok
+test quiescent_patterns_are_still ... ok
+test confluent_feeds_only_transmission_cells_not_facing_it ... ok
+test rule_parses_and_needs_the_square_grid ... ok
+test state_names_and_tokens ... ok
+test demo_construct_and_withdraw ... ok
+test confluent_and_two_tick_delay_and_fanout ... ok
+test storage_loop_grows_a_channel ... ok
+test same_hash_any_thread_count ... ok
+test construct_and_withdraw ... ok
+test transmission_lines_delay_one ... ok
+test sensitized_construction_all_nine_end_states ... ok
+test ordinary_kills_special_and_special_kills_ordinary ... ok
+test demo_growing_channels ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/phase3_rules.rs (target/release/deps/phase3_rules-90f68386336245dc)
+
+running 15 tests
+test notation_round_trips ... ok
+test lenia_notation_and_orbium_pattern ... ok
+test symmetric_numbering_ignores_left_and_right ... ok
+test margolus_phase_is_part_of_the_state ... ok
+test critters_runs_backwards ... ok
+test xor_rules_give_pascal_counts ... ok
+test done_at_the_bottom_layer ... ok
+test flat_hexagons_have_three_parents_above ... ok
+test rule_numbering_matches_a_reference ... ok
+test billiard_balls_are_conserved_and_fly_diagonally ... ok
+test lenia_kernels_sum_to_one ... ok
+test lenia_hashes_are_portable ... ok
+test lenia_is_deterministic_and_replays ... ok
+test orbium_glides_and_keeps_its_mass ... ok
+test new_quick_start_examples_behave ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.58s
+
+     Running tests/pile.rs (target/release/deps/pile-42db716860910d38)
+
+running 12 tests
+test grain_notation ... ok
+test sixty_four_bit_grain_counts ... ok
+test patch_edge_is_an_error ... ok
+test a_pile_folder_link_that_leads_outside_is_refused ... ok
+test pile_pictures_take_the_palette ... ok
+test run_to_dir_writes_everything ... ok
+test save_load_resume ... ok
+test vertex_and_edge_centres ... ok
+test patches_match_direct_stabilisation ... ok
+test doubling_matches_direct_stabilisation ... ok
+test same_result_on_any_thread_count ... ok
+test a_step_stopped_part_way_carries_on ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.85s
+
+     Running tests/puffer.rs (target/release/deps/puffer-fd6a22b62b1306f6)
+
+running 2 tests
+test spaceship_escaping_from_a_mess_is_not_a_puffer ... ok
+test block_laying_switch_engine_is_a_puffer ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
+     Running tests/reseed.rs (target/release/deps/reseed-0b29e5b69ee99f4c)
+
+running 10 tests
+test big_world_reseed_timing ... ignored
+test json_forms ... ok
+test random_flip_rate ... ok
+test every_and_cooldown_timing ... ok
+test blobs_wrap_across_edges ... ok
+test modes_on_square_hex_archimedean_and_aperiodic ... ok
+test generations_and_other_fields ... ok
+test same_hash_at_one_and_all_threads_and_after_reload ... ok
+test settled_policies_fire_by_latest_under_rain ... ok
+test settled_life_soup_keeps_running ... ok
+
+test result: ok. 9 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 3.36s
+
+     Running tests/seeding.rs (target/release/deps/seeding-4d681b6919d6226a)
+
+running 14 tests
+test json_round_trip_and_labels ... ok
+test blobs_stop_when_there_is_no_room ... ok
+test noise_regions_are_connected ... ok
+test scenes_and_validation ... ok
+test voronoi_regions ... ok
+test existing_scenes_still_load ... ok
+test field_kinds ... ok
+test deterministic_and_independent_of_threads ... ok
+test populations_match_density ... ok
+test blobs_keep_their_gap ... ok
+test every_shape_on_every_tiling ... ok
+test draws_a_fixed_number_of_rng_values ... ok
+test symmetric_finds_the_six_fold_centre_of_trihex ... ok
+test symmetric_is_exact_on_square_and_hex ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.89s
+
+     Running tests/semantics_pins.rs (target/release/deps/semantics_pins-70bcc7027c953807)
+
+running 1 test
+test every_rule_family_has_a_pinned_scene ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/symmetry.rs (target/release/deps/symmetry-19750c0e3de5d181)
+
+running 4 tests
+test the_glider_on_ih58_has_one_id_in_every_orientation_and_row ... ok
+test patterns_have_one_id_under_the_whole_group ... ok
+test the_whole_symmetry_group_is_found_on_every_tiling ... ok
+test every_tilings_cell_maps_form_a_group ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.81s
+
+     Running tests/wallpaper.rs (target/release/deps/wallpaper-fcc24e39cce532d1)
+
+running 4 tests
+test views_have_exact_sizes_and_repeat_seamlessly ... ok
+test a_wide_span_renders ... ok
+test wallpaper_fits_and_spans ... ok
+test every_palette_renders_with_its_background ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.71s
+
+     Running tests/window.rs (target/release/deps/window-9e6bda7f1a8bd98f)
+
+running 5 tests
+test spectre_window_equals_level_8_cell_for_cell ... ignored
+test spectre_glider_goes_past_level_8_on_a_window ... ok
+test spectre_window_equals_level_7_cell_for_cell ... ok
+test penrose_windows_equal_level_7_cell_for_cell ... ok
+test hat_window_equals_level_7_cell_for_cell ... ok
+
+test result: ok. 4 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 12.02s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_display-0217bc9c5b125429)
+
+running 82 tests
+test caption::tests::opacity_follows_the_settings ... ok
+test caption::tests::a_caption_keeps_clear_of_the_taskbar_and_the_menu_bar ... ok
+test caption::tests::numbers_are_grouped ... ok
+test autostart::tests::entries_quote_their_paths ... ok
+test autostart::tests::login_off_unloads_an_idle_job_only ... ok
+test autostart::tests::registering_boots_out_waits_and_bootstraps ... ok
+test autostart::tests::host_program_files_round_trip ... ok
+test autostart::tests::windows_command_lines_quote_what_needs_it ... ok
+test autostart::tests::launch_agents_record_their_version_and_read_back ... ok
+test desktop_picture::tests::each_monitor_gets_the_still_of_what_it_showed ... ok
+test gnome::tests::reads_gnome_replies ... ok
+test gnome::tests::reads_the_loaded_version ... ok
+test gnome::tests::extension_lists_survive_a_round_trip ... ok
+test desktop_picture::tests::the_files_each_system_shows_are_read_from_its_description ... ok
+test gnome::tests::the_state_after_a_refresh_says_to_log_in_again ... ok
+test gnome::tests::metadata_names_the_uuid_the_lock_screen_and_this_version ... ok
+test gpu::tests::slot_sets_track_what_is_current ... ok
+test host_settings::tests::a_tuned_size_applies_to_its_scene_and_keeps_the_cell_count_on_another_canvas ... ok
+test host_settings::tests::only_the_rotation_shown_has_rows_in_the_cards ... ok
+test host_settings::tests::partial_files_fill_in_and_bad_values_are_fixed ... ok
+test host_settings::tests::an_old_file_reads_untuned_and_a_tuned_one_round_trips ... ok
+test host_settings::tests::places_and_the_lock_screen_are_read_by_name ... ok
+test host_settings::tests::the_most_frames_a_second_default_to_60_and_null_means_the_refresh ... ok
+test desktop_picture::tests::a_picture_the_user_chose_since_is_left_alone ... ok
+test host_settings::tests::a_saved_fit_is_kept_but_not_applied_while_fit_is_switched_off ... ok
+test host_settings::tests::the_pacing_defaults_to_every_generation_and_is_read_by_name ... ok
+test autostart::tests::a_failed_registration_is_tried_again ... ok
+test autostart::tests::refresh_registers_an_item_from_another_version_once ... ok
+test desktop_picture::tests::several_stills_go_up_and_come_down_together ... ok
+test pace::tests::a_late_frame_never_skips_a_generation_that_is_drawn_one_a_frame ... ok
+test pace::tests::a_screen_draws_at_its_scene_s_speed_between_the_frame_rate_and_the_refresh ... ok
+test pace::tests::a_scene_drawn_at_its_own_speed_steps_one_generation_every_frame ... ok
+test pace::tests::several_screens_keep_their_own_rates_in_one_loop ... ok
+test pace::tests::the_frame_clock_keeps_to_its_rate_though_each_frame_comes_late ... ok
+test pace::tests::the_most_a_screen_draws_at_is_the_maximum_or_the_refresh ... ok
+test painter::tests::a_shared_world_fits_the_largest_monitor ... ok
+test profiles::tests::aperiodic_scenes_are_not_resized ... ok
+test profiles::tests::meter_scores_lively_runs_higher ... ok
+test profiles::tests::profile_survey ... ignored
+test profiles::tests::rain_scales_with_the_cell_count ... ok
+test gnome::tests::refresh_updates_only_an_installed_older_extension ... ok
+test profiles::tests::json_round_trip_and_defaults ... ok
+test profiles::tests::applying_sets_palette_policies_and_size ... ok
+test simgpu::tests::numbers_read_with_commas ... ok
+test simgpu::tests::without_a_device_everything_steps_on_the_cpu ... ok
+test profiles::tests::show_just_this_scene_reuses_its_own_profile_and_spares_built_ins ... ok
+test profiles::tests::store_saves_loads_renames_and_reverts ... ok
+test profiles::tests::capture_keeps_the_setup_not_the_history ... ok
+test stage::tests::a_cell_on_a_scaled_screen_is_whole_pixels ... ok
+test tuning::tests::a_choice_is_kept_while_it_fits_and_replaced_when_it_does_not ... ok
+test desktop_picture::tests::a_still_goes_up_and_the_users_picture_comes_back ... ok
+test tuning::tests::a_patch_s_ladder_is_its_levels ... ok
+test tuning::tests::a_pick_places_sizes_the_sweep_never_showed ... ok
+test tuning::tests::a_scene_at_its_own_size_reports_the_size_its_cells_show_at ... ok
+test tuning::tests::a_scene_is_judged_at_the_frame_rate_it_draws_at ... ok
+test tuning::tests::an_unmeasured_gpu_share_is_unknown_and_says_why ... ok
+test tuning::tests::cards_name_their_pictures_and_crops_keep_the_screen_s_pixels ... ok
+test tuning::tests::only_a_real_gpu_clock_judges_the_gpu_limit ... ok
+test tuning::tests::placed_patterns_are_told_from_soups ... ok
+test tuning::tests::the_ladder_is_in_physical_pixels_for_any_screen ... ok
+test tuning::tests::the_sweep_coarsens_where_there_is_not_and_stops_going_finer_when_far_over ... ok
+test tuning::tests::the_sweep_finds_finer_sizes_where_there_is_room ... ok
+test wallpaper_store::tests::a_space_made_after_installing_takes_the_store_wide_record ... ok
+test wallpaper_store::tests::a_store_reads_and_writes_back_unchanged ... ok
+test wallpaper_store::tests::another_saver_chosen_since_is_left_alone ... ok
+test wallpaper_store::tests::removing_puts_back_what_installing_recorded ... ok
+test wallpaper_store::tests::the_saver_is_found_in_a_choice_in_ascii_or_utf16 ... ok
+test wallpaper_store::tests::with_no_record_the_desktop_picture_becomes_the_screen_saver ... ok
+test winsaver::tests::a_scr_in_use_says_to_close_the_dialog ... ok
+test winsaver::tests::reads_the_registry_tools_output ... ok
+test winsaver::tests::the_status_says_what_is_selected ... ok
+test workarea::tests::a_window_larger_than_the_area_is_shrunk_and_placed_at_its_corner ... ok
+test workarea::tests::a_window_on_a_monitor_to_the_left_stays_there ... ok
+test workarea::tests::a_window_under_the_taskbar_is_moved_up ... ok
+test workarea::tests::insets_and_overlaps ... ok
+test caption::tests::says_what_is_running ... ok
+test profiles::tests::builtins_are_valid_and_build ... ok
+test macsaver::tests::a_baked_rotation_needs_no_lookup_and_survives_a_round_trip ... ok
+test gpu::tests::patch_views_pick_level_of_detail ... ok
+test gpu::tests::explicit_bins_cover_every_cell_once ... ok
+test profiles::tests::tuning_ranks_every_candidate_the_same_each_time ... ok
+test macsaver::tests::the_bundle_names_its_class_and_code ... ok
+
+test result: ok. 81 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.02s
+
+     Running tests/crop.rs (target/release/deps/crop-c6d27eb11673c991)
+
+running 1 test
+test a_card_s_picture_has_the_screen_s_pixels ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/offscreen.rs (target/release/deps/offscreen-4cc821d2a06272c2)
+
+running 5 tests
+test a_caption_draws_in_its_corner_and_nowhere_else ... ok
+test a_profile_draws_pixel_exact_without_a_window_toolkit ... ok
+test a_second_renderer_draws_the_same_aperiodic_patch ... ok
+test gpu_stepping_matches_the_cpu_without_a_window_toolkit ... ok
+test an_aperiodic_patch_draws_and_pans_without_a_window_toolkit ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.19s
+
+     Running tests/rotation.rs (target/release/deps/rotation-9aaa828f1353544d)
+
+running 19 tests
+test bad_rotations_are_refused ... ok
+test items_end_by_time_and_generations_counted_from_their_start ... ok
+test nothing_eligible_keeps_the_current_item_running ... ok
+test one_a_day_changes_at_midnight_and_restarts_within_the_day ... ok
+test finished_worlds_hold_their_last_frame_before_moving_on ... ok
+test schedules_choose_days_and_hours_and_end_items ... ok
+test one_a_day_starts_a_finished_item_again_instead_of_moving_on ... ok
+test a_clock_end_fires_as_the_time_passes ... ok
+test one_an_hour_follows_the_clock_and_starts_a_finished_item_again ... ok
+test settled_ends_an_item_and_a_single_item_starts_again ... ok
+test shuffle_visits_everything_then_reorders_without_repeating ... ok
+test series_expand_to_one_item_per_rule ... ok
+test the_store_saves_overrides_built_ins_and_follows_renamed_profiles ... ok
+test scripts_move_on_jump_reseed_and_remember ... ok
+test show_just_this_scene_makes_one_rotation_and_finds_it_again ... ok
+test script_problems_are_reported_and_cannot_hang ... ok
+test the_wolfram_series_draws_to_the_bottom_then_moves_to_the_next_rule ... ok
+test built_ins_are_valid_and_refer_to_things_that_exist ... ok
+test the_settle_watch_fires_without_touching_the_world ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/stage.rs (target/release/deps/stage-98c3ec9475de701b)
+
+running 6 tests
+test giving_up_pauses_and_resuming_tries_again ... ok
+test an_unknown_quick_start_entry_shows_life_and_says_so ... ok
+test a_pause_does_not_use_up_an_items_time ... ok
+test a_cell_is_a_point_so_a_2x_screen_builds_a_quarter_of_the_cells ... ok
+test a_new_canvas_rebuilds_the_world_once_the_size_holds ... ok
+test just_after_a_skip_the_status_is_the_new_items ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/uninstall.rs (target/release/deps/uninstall-fead739743af3d4a)
+
+running 2 tests
+test the_extensions_files_are_found_and_removed_without_gnome_shell ... ok
+test removing_takes_it_off_the_enabled_list_and_a_failed_write_does_not_keep_the_files ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_gpu-0a952d9bd9370774)
+
+running 10 tests
+test select::tests::a_request_wins_over_the_policy ... ok
+test select::tests::compute_prefers_discrete_and_display_integrated ... ok
+test select::tests::sizes_read_plainly ... ok
+test select::tests::the_variable_sets_mode_or_adapter ... ok
+test select::tests::decent_means_a_real_gpu_with_room ... ok
+test tests::forest_threshold_is_exact ... ok
+test select::tests::the_variable_then_the_command_then_the_own_choice_then_the_shared_setting ... ok
+test select::tests::the_setting_reads_and_writes ... ok
+test select::tests::every_family_the_gpu_runs_is_in_the_self_test ... ok
+test select::tests::adapter_names_list_each_adapter_once ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/batch.rs (target/release/deps/batch-1420a685b814e698)
+
+running 8 tests
+test world_larger_than_one_dispatch_dimension ... ignored, heavy: two worlds of 17 million cells
+test unsupported_rules_are_refused ... ok
+test a_batch_is_given_up_when_cut ... ok
+test padding_and_multi_type_worlds ... ok
+test larger_than_life_matches ... ok
+test many_worlds_reuse_and_frame_edge_cases ... ok
+test generations_split_over_submissions ... ok
+test every_rule_every_tiling_matches ... ok
+
+test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.24s
+
+     Running tests/equality.rs (target/release/deps/equality-e53a4de765db146f)
+
+running 11 tests
+test unsupported_rules_fall_back ... ok
+test several_cas_and_steps_per_generation ... ok
+test scripts_and_period_detection ... ok
+test reseed_policies_match_cpu ... ok
+test done_trigger ... ok
+test explicit_storage_spectre ... ok
+test priority_rules ... ok
+test ages_saturate_like_the_cpu ... ok
+test explicit_storage_spectre_level_7 ... ok
+test commands_between_gpu_runs ... ok
+test every_rule_tiling_and_boundary ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.59s
+
+     Running tests/families.rs (target/release/deps/families-a2c6b164305852f5)
+
+running 16 tests
+test b0_rules ... ok
+test jaca_scripts_reseeds_and_repeats ... ok
+test jaca_commands_between_runs ... ok
+test margolus_rules ... ok
+test ltl_on_patches ... ok
+test jaca_on_patches ... ok
+test forest_fire ... ok
+test b0_from_an_odd_tick ... ok
+test jaca_blast_radii ... ok
+test jaca_glow_and_counts ... ok
+test ltl_on_lattices ... ok
+test jaca_on_lattices ... ok
+test quick_start_entries ... ok
+test sandpile_edges_drops_and_patches ... ok
+test sandpile_repeats_and_scripts ... ok
+test sandpile_scenes ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 41.50s
+
+     Running tests/pile.rs (target/release/deps/pile-a72bcf341712c9d1)
+
+running 2 tests
+test a_gpu_step_stopped_part_way_carries_on ... ok
+test gpu_piles_equal_cpu_piles ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.10s
+
+     Running tests/recovery.rs (target/release/deps/recovery-ef20a599c3e29cc0)
+
+running 2 tests
+test gpu_and_cpu_generations_mix_around_a_failure ... ok
+test a_run_that_fails_part_way_leaves_the_world_as_it_was ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.19s
+
+     Running tests/select.rs (target/release/deps/select-166d88de9b1fb2fd)
+
+running 4 tests
+test a_display_always_gets_an_adapter_to_draw_with ... ok
+test software_adapters_need_asking_for ... ok
+test the_compute_choice_passes_the_self_test ... ok
+test a_missing_adapter_falls_back_with_a_note ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running tests/worth.rs (target/release/deps/worth-3cfee34a148259d4)
+
+running 4 tests
+test rules_the_gpu_cannot_run_never_go_there ... ok
+test runs_of_known_length_go_by_their_total_work ... ok
+test paced_displays_go_by_cells_and_runs_by_reads ... ok
+test reads_are_cells_times_neighbours_over_every_pass ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_host-f0a06bfd22b390f5)
+
+running 19 tests
+test gpu_engine::tests::instance_names_give_their_process_and_engine ... ok
+test gpu_engine::tests::a_process_s_share_is_the_sum_of_its_3d_engines ... ok
+test gpu_engine::tests::reading_the_counters_is_not_an_error ... ok
+test power::tests::busy_needs_a_run_over_the_limit_and_calm_a_run_well_under ... ok
+test gpu_engine::tests::the_counter_is_every_gpu_engine_s_utilization ... ok
+test power::tests::gpu_time_is_read_from_each_gpu_client_once ... ok
+test core::tests::status_says_why_it_is_paused_and_what_holds_it ... ok
+test saver_args::tests::every_form_windows_uses ... ok
+test targets::tests::a_claimed_monitor_is_left_to_its_screen ... ok
+test core::tests::a_tuned_desktop_screen_of_another_size_wants_tuning_again ... ok
+test targets::tests::a_missing_monitor_does_not_cover_a_screen_still_there ... ok
+test targets::tests::a_missing_monitor_falls_back_and_windows_stay_single ... ok
+test targets::tests::a_shared_wallpaper_fills_every_monitor_primary_first ... ok
+test targets::tests::one_each_keeps_the_order ... ok
+test tune::tests::the_95th_percentile_and_monitor_canvases ... ok
+test tune::tests::a_missing_quick_start_entry_is_named_in_the_plan ... ok
+test core::tests::a_rotation_or_profile_saved_since_is_built_again ... ok
+test power::tests::the_processor_load_reads_as_a_share ... ok
+test power::tests::this_process_s_processor_time_counts_every_thread ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_mcp-22b36478df980edb)
+
+running 7 tests
+test resources::tests::percent_decoding ... ok
+test schema::tests::without_drops_properties_and_their_requirement ... ok
+test util::tests::base64_matches_rfc4648 ... ok
+test schema::tests::a_pointer_gives_the_first_sentence_what_is_needed_and_the_resource ... ok
+test stdio::tests::host_calls_that_start_or_show_scenes_are_known ... ok
+test schema::tests::coerce_reads_the_forms_small_models_send ... ok
+test stdio::tests::fit_is_not_offered_or_done_while_switched_off ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/release/deps/jetcarp_mcp-c3b26f535359dd90)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/app_tools.rs (target/release/deps/app_tools-3fac91ebb86c1357)
+
+running 3 tests
+test headless_session_explains ... ok
+test calls_reach_the_host ... ok
+test listed_only_for_hosts_with_a_display ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/folders.rs (target/release/deps/folders-f7e5330d09b7074d)
+
+running 8 tests
+test dot_dot_after_a_link_is_worked_out_from_where_the_link_leads ... ok
+test a_linked_file_is_not_written_through ... ok
+test a_refusal_reads_the_same_whether_or_not_the_path_outside_exists ... ok
+test an_allowed_folder_is_written_read_and_listed ... ok
+test a_refusal_names_the_path_asked_for ... ok
+test a_folder_that_cannot_be_written_says_permission_denied ... ok
+test a_linked_folder_inside_the_output_folder_does_not_lead_outside ... ok
+test a_link_at_a_name_the_tools_choose_is_not_written_through ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.08s
+
+     Running tests/jobs.rs (target/release/deps/jobs-8ba1d26ffe6cfde7)
+
+running 3 tests
+test stop_resume_finds_report_and_cancelled_waits ... ok
+test the_library_is_read_and_curated ... ok
+test every_strategy_runs_in_the_background ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.27s
+
+     Running tests/link.rs (target/release/deps/link-d3b180735e8cc32b)
+
+running 5 tests
+test tokens_are_128_random_bits ... ok
+test the_listener_is_on_loopback_only ... ok
+test a_loose_folder_and_file_are_made_private ... ok
+test each_listener_makes_its_own_token_and_records_it_privately ... ok
+test a_wrong_token_is_refused_and_the_right_one_works ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.25s
+
+     Running tests/protocol.rs (target/release/deps/protocol-46e20564def01a86)
+
+running 15 tests
+test legacy_initialize_negotiates_version ... ok
+test modern_discover_and_version_errors ... ok
+test old_clients_get_titles_in_the_annotations ... ok
+test run_script_with_limits_and_progress ... ok
+test sandpile_settles_and_reports ... ok
+test glider_round_trip ... ok
+test files_stay_inside_the_folder_rules ... ok
+test errors_are_useful_not_fatal ... ok
+test a_grid_over_the_cell_limit_is_refused ... ok
+test tools_list_is_well_formed_and_from_the_operations ... ok
+test wrong_arguments_are_named_with_what_to_give ... ok
+test help_and_reference ... ok
+test summarised_settings_are_resources ... ok
+test resources_are_listed_and_read ... ok
+test edits_commands_reseed_and_paste ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/resources.rs (target/release/deps/resources-fb74f16d3946e947)
+
+running 6 tests
+test the_validator_itself ... ok
+test the_book_carries_the_photosensitive_seizure_warning ... ok
+test the_crate_packages_small ... ok
+test every_golden_manifest_fits_the_pack_schema ... ok
+test resources_match_the_book ... ok
+test every_shipped_scene_fits_the_scene_schema ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/search_runs.rs (target/release/deps/search_runs-b96ae44a95e052d1)
+
+running 1 test
+test an_explore_search_and_its_runs ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.20s
+
+     Running tests/stdio.rs (target/release/deps/stdio-ff1cc4183d9fe59c)
+
+running 2 tests
+test a_whole_session_over_stdio ... ok
+jetcarp mcp: the client has gone; stopping job 1 at its next checkpoint
+jetcarp mcp: job 1 is paused
+test the_server_stops_its_own_jobs_when_its_client_goes ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.49s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_pack-f01ff91b8cf01141)
+
+running 8 tests
+test docs::tests::times_are_utc_with_whole_seconds ... ok
+test hash::tests::hashes_are_prefixed_hex ... ok
+test thrift::tests::page_headers_and_depth ... ok
+test paths::tests::paths_become_names ... ok
+test json::tests::documents_are_canonical_and_bounded ... ok
+test columns::tests::rows_round_trip_through_arrow ... ok
+test sign::tests::signatures_verify_and_name_their_key ... ok
+test tables::tests::every_table_is_well_formed ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/golden.rs (target/release/deps/golden-30212e9d40c3e210)
+
+running 3 tests
+test write_golden_packs ... ignored
+test every_golden_pack_reads_and_checks ... ok
+test an_aperiodic_library_publishes_the_same_bytes_twice ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.45s
+
+     Running tests/hostile.rs (target/release/deps/hostile-64a68f89e9b03175)
+
+running 9 tests
+test unsigned_and_badly_signed_versions_are_refused ... ok
+test names_that_would_leave_the_store_are_refused ... ok
+test unknown_versions_features_and_altered_objects_are_refused ... ok
+test records_that_do_not_hash_to_their_ids_are_refused ... ok
+test oversized_and_deep_documents_are_refused ... ok
+test a_link_out_of_an_export_or_a_store_is_not_written_through ... ok
+test too_many_parts_and_deep_indexes_are_refused ... ok
+test an_ant_that_cannot_be_read_is_left_out_alone ... ok
+test decompression_and_decoding_bombs_are_refused ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.46s
+
+     Running tests/keys.rs (target/release/deps/keys-95eb8c4465337e20)
+
+running 2 tests
+test successions_revocations_and_machine_keys ... ok
+test a_revoked_publisher_key_signs_nothing_and_stays_revoked ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.29s
+
+     Running tests/pins.rs (target/release/deps/pins-d5f741b3192bbfea)
+
+running 1 test
+test pins_follow_from_the_tilings_columns ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/round_trip.rs (target/release/deps/round_trip-ee9db4ccc72ecb26)
+
+running 10 tests
+test consent_dates_are_times ... ok
+test no_local_paths_reach_a_store ... ok
+test an_export_copies_when_it_cannot_link ... ok
+test a_raters_latest_consent_stands ... ok
+test atlas_entries_travel_in_a_pack ... ok
+test large_random_states_travel_exactly ... ok
+test quick_start_entries_go_by_their_pack_ids ... ok
+test a_library_round_trips_through_a_pack ... ok
+test a_newer_version_of_a_pack_replaces_its_quick_start_entries ... ok
+test the_same_library_gives_the_same_store ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.39s
+
+     Running tests/searches.rs (target/release/deps/searches-56fabc9dbff28dcb)
+
+running 1 test
+test an_imported_search_is_a_stopped_search_that_resumes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.64s
+
+     Running tests/spec.rs (target/release/deps/spec-70e967e51033cb51)
+
+running 3 tests
+test the_palette_registry_is_every_built_in_palette ... ok
+test the_schema_ids_table_is_every_schema_id ... ok
+test every_column_is_on_the_page ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_saver-993f46e9e28fdecd)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_script-90519b81a04d6a6f)
+
+running 3 tests
+test tests::until_keys_are_quoted ... ok
+test series::tests::names_and_padding ... ok
+test results::tests::find_promote_favourite_and_sheet ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests/hashlife.rs (target/release/deps/hashlife-3c5855c168ee629f)
+
+running 1 test
+test hashlife_jump_and_plane ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/jobs.rs (target/release/deps/jobs-2b8069f14f77dc77)
+
+running 1 test
+test labelled_jobs_census_jobs_and_rule_neighbours ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+     Running tests/media.rs (target/release/deps/media-36293b2e700745f5)
+
+running 1 test
+test scripts_render_media_and_export_a_site ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running tests/pile.rs (target/release/deps/pile-8907077afbd6a77f)
+
+running 1 test
+test sandpile_pile_and_sheet ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/script.rs (target/release/deps/script-d209e8239e2a1e78)
+
+running 29 tests
+test missing_functions_get_a_rhai_hint ... ok
+test elementary_runs_stop_at_the_bottom ... ok
+test reseed_functions ... ok
+test params_logs_and_analysis ... ok
+test json_sweeps_become_scripts ... ok
+test errors_report_lines ... ok
+test one_argument_callbacks_and_lists ... ok
+test geometry_functions_give_neighbours_live_cells_and_tiles ... ok
+test scripts_read_sweep_manifests_back ... ok
+test scene_sweeps_vary_one_ca ... ok
+test run_world_and_estimate ... ok
+test show_needs_a_live_view ... ok
+test row_classes_see_shifts_and_nesting ... ok
+test small_sweep_writes_files ... ok
+test sweeps_say_why_each_run_stopped ... ok
+test sweeps_do_not_depend_on_thread_count ... ok
+test three_parent_hexagon_sweep ... ok
+test writes_stay_inside_the_output_root ... ok
+test skip_leaves_out_dull_results ... ok
+test scripts_call_any_operation_by_name ... ok
+test scripts_promote_sweep_runs ... ok
+test scripts_run_ant_searches ... ok
+test scripts_catalog_and_promote_library_patterns ... ok
+test scripts_run_soup_searches_into_the_library ... ok
+test scripts_run_resumable_hunts ... ok
+test evolve_and_track_mover_builtins ... ok
+test script_five_matches_the_json_scene ... ok
+test the_jaca_territories_example_sorts_the_signs ... ok
+test cancel_and_resume ... ok
+
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.18s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_search-0598498058d15acf)
+
+running 26 tests
+test explore::atlas::tests::seeding_shifts_the_atlas_score ... ok
+test explore::breed::tests::losing_sides_and_strong_parents ... ok
+test explore::job::tests::a_gpu_batch_is_sized_to_the_time_left ... ok
+test explore::atlas::tests::trimming_leaves_a_short_list_alone ... ok
+test explore::job::tests::cpu_cost_by_family ... ignored
+test explore::atlas::tests::the_rarely_kept_categories_are_real_ones ... ok
+test explore::breed::tests::counts_scale_with_the_degree ... ok
+test explore::atlas::tests::trimming_keeps_a_low_scoring_family ... ok
+test explore::breed::tests::balance_variants_help_the_weaker_sign ... ok
+test explore::job::tests::jaca_splits_its_effort ... ok
+test explore::model::tests::auc_counts_ties_half ... ok
+test explore::model::tests::builtin_score_and_bins_see_a_lost_sign ... ok
+test explore::model::tests::newton_finds_a_separating_direction ... ok
+test explore::archive::tests::the_order_runs_come_in_does_not_change_the_elites ... ok
+test hunt::progress_line_tests::the_progress_line_counts_soups_per_group ... ok
+test explore::job::tests::the_grid_cache_lets_the_least_recently_used_go ... ok
+test explore::archive::tests::parents_are_picked_by_quality_with_a_uniform_share ... ok
+test explore::model::tests::no_extrapolation_beyond_the_rated_runs ... ok
+test explore::model::tests::family_terms_and_jaca_terms_apart ... ok
+test explore::model::tests::a_fit_learns_a_taste_and_reads_back ... ok
+test explore::job::tests::runs_still_going_at_the_end_are_given_up ... ok
+test explore::job::tests::a_capped_run_is_kept_as_the_run_it_was ... ok
+test explore::job::tests::jaca_runs_have_sign_measures_and_replay_to_them ... ok
+test explore::remeasure::tests::older_runs_gain_their_sign_measures_once ... ok
+test explore::job::tests::parents_are_transplanted_and_tuned ... ok
+test explore::job::tests::a_cpu_search_confirms_its_elites_when_rounds_outlast_their_steps ... ok
+
+test result: ok. 25 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 9.71s
+
+     Running tests/ants.rs (target/release/deps/ants-3adbf837a6cf1290)
+
+running 11 tests
+test notation_and_reductions ... ok
+test periodic_orbits_and_soups ... ok
+test langtons_ant_highway_is_exact ... ok
+test hexagon_highway ... ok
+test symmetric_growth_is_classified ... ok
+test stored_rows_curate_and_keep_final_results ... ok
+test ant_scenes_and_media_take_a_palette ... ok
+test search_is_independent_of_threads_and_batches ... ok
+test engine_equals_world_on_every_family ... ok
+test search_resumed_equals_uninterrupted ... ok
+test ant_media_by_outcome ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.65s
+
+     Running tests/bounded.rs (target/release/deps/bounded-7c051dafebe1053a)
+
+running 1 test
+test aperiodic_dedup_gives_few_records_per_pattern ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.31s
+
+     Running tests/census.rs (target/release/deps/census-655f1bd7999a6544)
+
+running 1 test
+test census_jobs_resume_to_the_same_report ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests/dashboard.rs (target/release/deps/dashboard-6983a78af1362c13)
+
+running 5 tests
+test gray_order_puts_rule_neighbours_side_by_side ... ok
+test utc_round_trip_and_durations ... ok
+test heat_map_bins_sum_finds_and_fold_high_counts ... ok
+test ants_pile_mover_and_evolve_jobs_have_their_own_kinds ... ok
+test hunt_jobs_summarise_stop_resume_and_feed_the_heat_map ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s
+
+     Running tests/evolve.rs (target/release/deps/evolve-f1bfcc5028965cbb)
+
+running 3 tests
+test evolve_job_resumed_equals_uninterrupted ... ok
+test square_search_finds_an_exact_spaceship ... ok
+test hat_search_finds_a_mover ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 37.95s
+
+     Running tests/explore_deadline.rs (target/release/deps/explore_deadline-8a21a284ddbc8bf1)
+
+running 4 tests
+test an_explore_search_leaves_two_cores_free ... ok
+test a_long_step_writes_its_progress_and_sees_a_pause ... ok
+test a_build_ends_on_time_with_a_gpu_batch_under_way ... ok
+test a_build_ends_on_time_with_slow_runs_under_way ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.02s
+
+     Running tests/explore_job.rs (target/release/deps/explore_job-d4cc34e2b7a0bea9)
+
+running 4 tests
+test resume_reads_the_saved_state_not_every_run ... ok
+test rescoring_rebuilds_the_archive_and_reviews_are_kept ... ok
+test the_gpu_loop_runs_on_a_backend ... ok
+test explore_jobs_stop_and_continue_from_their_archive ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 48.99s
+
+     Running tests/explore_runs.rs (target/release/deps/explore_runs-d153840caf566c65)
+
+running 8 tests
+test the_remeasure_record_of_the_search_imported_from_cart_is_read_and_kept ... ok
+test a_search_seals_a_segment_per_seal_rows_and_none_on_stop ... ok
+test a_segment_file_the_manifest_lost_is_kept_when_its_runs_are_nowhere_else ... ok
+test a_database_from_before_segments_is_sealed_on_open ... ok
+test reviews_outlive_the_search_folder ... ok
+test rescoring_writes_sidecars_and_never_rewrites_a_segment ... ok
+test queries_over_segments_match_the_same_runs_unsealed ... ok
+test a_crash_at_any_step_of_a_seal_is_recovered_on_open ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.54s
+
+     Running tests/gpu_explore.rs (target/release/deps/gpu_explore-8f79e3dc29a19f5d)
+
+running 1 test
+test explore_runs_measured_on_the_gpu_match_the_cpu ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.41s
+
+     Running tests/gpu_hunt.rs (target/release/deps/gpu_hunt-bce154c9030530bd)
+
+running 3 tests
+test gpu_prefix_speed ... ignored
+test gpu_prefixes_equal_cpu ... ok
+test gpu_hunt_equals_cpu_hunt ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+     Running tests/hunt.rs (target/release/deps/hunt-4a13833ec6c964eb)
+
+running 7 tests
+test bit_engine_hash_ignores_the_universe_layout ... ok
+test gun_in_a_soup_run_is_found_and_its_stream_not_counted ... ok
+test gosper_gun_is_detected_verified_and_stored ... ok
+test hunt_resumed_equals_uninterrupted ... ok
+test bit_engine_matches_sparse_on_every_periodic_tiling ... ok
+test soup_prefix_then_cpu_equals_cpu ... ok
+test hunt_is_independent_of_threads_and_batches ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.34s
+
+     Running tests/hunt_bench.rs (target/release/deps/hunt_bench-8ee0fde79e881bb0)
+
+running 1 test
+test hunt_profile ... ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/jobs.rs (target/release/deps/jobs-a9183e947347fb54)
+
+running 11 tests
+test a_runner_that_lost_its_job_writes_nothing_more ... ok
+test job_specs_make_jobs_with_labels_and_budgets ... ok
+test ant_searches_resumed_on_the_runner_equal_uninterrupted ... ok
+test two_runners_never_own_one_job ... ok
+test bounded_searches_resumed_store_what_one_whole_search_stores ... ok
+test a_job_left_running_by_a_crash_is_stalled_and_resumable ... ok
+test budgets_stop_jobs_cleanly_and_runs_resume_from_there ... ok
+test hunt_stopped_and_resumed_on_the_runner_equals_uninterrupted ... ok
+test bounded_searches_and_collisions_store_what_their_calls_store ... ok
+test pile_jobs_stopped_part_way_and_resumed_equal_uninterrupted ... ok
+test collisions_resumed_equal_uninterrupted ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.46s
+
+     Running tests/pile.rs (target/release/deps/pile-0f1535ff56a46a1f)
+
+running 1 test
+test pile_export_and_jobs_keep_the_palette ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests/run_segments.rs (target/release/deps/run_segments-8d88631b2f3034e1)
+
+running 2 tests
+test a_schema_1_segment_reads_without_sign_measures ... ok
+test a_segment_reads_back_what_was_written ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.63s
+
+     Running tests/window.rs (target/release/deps/window-956ee8f5014133f9)
+
+running 1 test
+test window_runs_resume_exactly ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.61s
+
+     Running unittests src/lib.rs (target/release/deps/jetcarp_store-40a173ebd570ef6f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/catalog.rs (target/release/deps/catalog-0949d2e7f8e7c26d)
+
+running 6 tests
+test ranges_hold_on_an_aperiodic_patch ... ok
+test different_evolutions_get_different_ids ... ok
+test catalog_store_search_jobs_and_sightings ... ok
+test catalog_speed_100k_sightings ... ok
+test glider_has_one_id_across_rules_and_its_hand_derived_range ... ok
+test ranges_hold_on_other_tilings_and_generations ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.82s
+
+     Running tests/library.rs (target/release/deps/library-3badb32505e355e7)
+
+running 12 tests
+test verification_rejects_patterns_that_do_not_repeat ... ok
+test compound_objects_split_into_their_parts ... ok
+test paste_pattern_command_replays_and_refuses_bad_spots ... ok
+test paste_at_cell_uses_grid_columns_on_multi_type_tilings ... ok
+test tiling_symmetry_groups_used_for_canonical_forms ... ok
+test spaceships_and_oscillators_on_multi_type_tilings ... ok
+test life_objects_round_trip_with_dedup_across_orientations ... ok
+test promoted_patterns_appear_in_quick_start ... ok
+test aperiodic_patterns_paste_only_where_the_tiles_match ... ok
+test a_read_only_library_is_read_and_a_write_says_so ... ok
+test collisions_glider_into_block ... ok
+test search_is_identical_at_any_thread_count ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.85s
+
+     Running tests/library_v1.rs (target/release/deps/library_v1-69c5c46fe110fc93)
+
+running 15 tests
+test a_record_found_elsewhere_keeps_its_finder_and_find_date ... ok
+test aliases_resolve_ids_and_short_ids ... ok
+test ant_ids_are_content_ids_on_their_pin ... ok
+test a_record_stored_from_any_phase_is_one_pattern ... ok
+test a_record_on_a_tiling_the_engine_cannot_build_is_flagged ... ok
+test a_record_whose_rule_semantics_differ_is_flagged_on_opening_and_reverify_clears_it ... ok
+test a_record_whose_pin_differs_is_flagged_on_opening_and_reverify_clears_it ... ok
+test a_record_from_another_geometry_moves_to_its_new_id_with_an_alias ... ok
+test a_library_from_before_rule_semantics_gains_them_on_opening ... ok
+test opening_after_an_engine_change_builds_only_reference_patches ... ok
+test records_that_fail_stay_flagged_and_drop_deletes_them ... ok
+test the_schema_is_marked_and_other_files_are_refused ... ok
+test a_schema_1_library_is_brought_up_to_3_on_opening ... ok
+test provenance_row_0_is_written_once_and_never_rewritten ... ok
+test searches_on_two_aperiodic_levels_store_one_record ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.46s
+
+     Running tests/media.rs (target/release/deps/media-7a706771c440a0ab)
+
+running 8 tests
+test glider_gif_loops_seamlessly_in_a_moving_window ... ok
+test a_palette_override_recolours_and_marks_media_stale ... ok
+test oscillator_gif_has_period_frames ... ok
+test unchanged_inputs_skip_and_a_style_change_rerenders ... ok
+test identical_renders_share_files_and_gc_keeps_what_is_named ... ok
+test gun_gif_shows_its_stream_and_loops ... ok
+test batch_is_identical_at_any_thread_count ... ok
+test soup_webp_decodes_with_its_frame_count_and_size ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s
+
+     Running tests/movers.rs (target/release/deps/movers-3ed803ebc5cad8a5)
+
+running 1 test
+test spectre_glider_verifies_to_a_distance_across_levels ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+
+     Running tests/puffer.rs (target/release/deps/puffer-2441008127988328)
+
+running 1 test
+test detector_classifies_and_library_stores_a_puffer ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.99s
+
+     Running tests/quickstart.rs (target/release/deps/quickstart-7917a83c0f0c4cea)
+
+running 15 tests
+test atlas_titles_name_what_they_can ... ok
+test popular_recent_and_random_rows ... ok
+test seed_descriptions_read_well ... ok
+test hidden_entries_leave_the_menu_and_packs ... ok
+test menu_filters_and_counts_atlas_items ... ok
+test the_featured_order_survives_a_reload ... ok
+test a_checkpoint_folds_the_write_ahead_log_into_the_file ... ok
+test every_named_rule_is_reachable_with_and_without_the_atlas ... ok
+test featured_built_ins_shuffle_in_with_the_best ... ok
+test featured_shuffle_mixes_the_best_of_every_category ... ok
+test menu_has_every_source_categories_and_search ... ok
+test an_atlas_is_published_into_the_table ... ok
+test builtins_are_written_again_when_the_build_changes ... ok
+test a_schema_2_library_keeps_its_quick_start_entries ... ok
+test cards_and_scenes_are_read_by_handle ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/store_policy.rs (target/release/deps/store_policy-6222cd0f8fb749d5)
+
+running 3 tests
+test bodies_are_compressed_and_read_back ... ok
+test policy_hunt_resumed_equals_uninterrupted ... ok
+test policy_keeps_large_one_offs_unstored_independent_of_threads_and_batches ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.73s
+
+     Running tests/website.rs (target/release/deps/website-65b3a905b80edc00)
+
+running 3 tests
+test filters_and_frames ... ok
+test export_writes_public_items_then_only_changes ... ok
+test ants_are_exported_with_their_media ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
+   Doc-tests jetcarp_api
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_app
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_display
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_gpu
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_host
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_mcp
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_pack
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_script
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_search
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_store
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

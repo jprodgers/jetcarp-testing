@@ -1,0 +1,802 @@
+[
+{
+"t": 0.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 0,
+"gens_per_s": null,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": null,
+"error": false
+},
+{
+"t": 2.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 60,
+"gens_per_s": 29.94577095430293,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 47.41413734431298,
+"error": false
+},
+{
+"t": 4.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 120,
+"gens_per_s": 29.892639465116854,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 43.84253788217138,
+"error": false
+},
+{
+"t": 6.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 180,
+"gens_per_s": 29.885805876759555,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 46.82109587358994,
+"error": false
+},
+{
+"t": 8.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 240,
+"gens_per_s": 29.974836969144736,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 42.96393298910751,
+"error": false
+},
+{
+"t": 10.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 300,
+"gens_per_s": 30.00673564472425,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 49.01100155304954,
+"error": false
+},
+{
+"t": 12.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 360,
+"gens_per_s": 29.888365000225654,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 44.33440808366808,
+"error": false
+},
+{
+"t": 14.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 420,
+"gens_per_s": 29.990629501351947,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 46.485475727095505,
+"error": false
+},
+{
+"t": 16.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 481,
+"gens_per_s": 30.390611870905147,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 46.333227934330786,
+"error": false
+},
+{
+"t": 18.0,
+"phase": "in view",
+"answer_s": 0.01,
+"generation": 541,
+"gens_per_s": 29.993188735897316,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 41.99046423025624,
+"error": false
+},
+{
+"t": 20.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 608,
+"gens_per_s": 29.816234504529014,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 43.16678726775098,
+"error": false
+},
+{
+"t": 22.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 668,
+"gens_per_s": 29.903409150321828,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 5.482291677558973,
+"error": false
+},
+{
+"t": 24.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 728,
+"gens_per_s": 30.02692132893979,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 5.004486888156703,
+"error": false
+},
+{
+"t": 26.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 788,
+"gens_per_s": 29.926978897562584,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.48904683463438,
+"error": false
+},
+{
+"t": 28.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 848,
+"gens_per_s": 29.937292555868726,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.9916390074491668,
+"error": false
+},
+{
+"t": 30.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 908,
+"gens_per_s": 29.968611690722145,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.9958148920962895,
+"error": false
+},
+{
+"t": 32.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 969,
+"gens_per_s": 30.458545540043037,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.493883768203064,
+"error": false
+},
+{
+"t": 34.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1029,
+"gens_per_s": 29.92368016991195,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.98982402265493,
+"error": false
+},
+{
+"t": 36.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1089,
+"gens_per_s": 29.924961142821402,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.488744171423203,
+"error": false
+},
+{
+"t": 38.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1149,
+"gens_per_s": 29.930741117497476,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.9907654823329115,
+"error": false
+},
+{
+"t": 40.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1209,
+"gens_per_s": 29.9870022844903,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.9982669712654655,
+"error": false
+},
+{
+"t": 42.3,
+"phase": "covered",
+"answer_s": 0.0,
+"generation": 1269,
+"gens_per_s": 30.009630432739847,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.001284057698561,
+"error": false
+},
+{
+"t": 44.3,
+"phase": "covered",
+"answer_s": 0.0,
+"generation": 1329,
+"gens_per_s": 29.92832065935527,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.990442754580795,
+"error": false
+},
+{
+"t": 46.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1389,
+"gens_per_s": 29.976472247448303,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.496470837117238,
+"error": false
+},
+{
+"t": 48.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1449,
+"gens_per_s": 29.98476564035902,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.997968752047784,
+"error": false
+},
+{
+"t": 50.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1509,
+"gens_per_s": 29.928619635932908,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.48929294538993,
+"error": false
+},
+{
+"t": 52.3,
+"phase": "covered",
+"answer_s": 0.0,
+"generation": 1569,
+"gens_per_s": 30.006063017465426,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.000808402328816,
+"error": false
+},
+{
+"t": 54.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1629,
+"gens_per_s": 29.940865009846313,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.99211533464609,
+"error": false
+},
+{
+"t": 56.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1689,
+"gens_per_s": 29.95375144616,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.493062716923993,
+"error": false
+},
+{
+"t": 58.3,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1750,
+"gens_per_s": 30.44670398220126,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.9930103583215693,
+"error": false
+},
+{
+"t": 60.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1810,
+"gens_per_s": 29.90526052731117,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.485789079096668,
+"error": false
+},
+{
+"t": 62.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1870,
+"gens_per_s": 30.001380507096737,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.5001610591613,
+"error": false
+},
+{
+"t": 64.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1930,
+"gens_per_s": 29.938179356716034,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.9917572475620524,
+"error": false
+},
+{
+"t": 66.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 1990,
+"gens_per_s": 29.926153257794816,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.4889229886692155,
+"error": false
+},
+{
+"t": 68.4,
+"phase": "covered",
+"answer_s": 0.0,
+"generation": 2050,
+"gens_per_s": 29.94807306257544,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.993076408343484,
+"error": false
+},
+{
+"t": 70.4,
+"phase": "covered",
+"answer_s": 0.0,
+"generation": 2110,
+"gens_per_s": 29.9773506583604,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.496602598754053,
+"error": false
+},
+{
+"t": 72.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 2170,
+"gens_per_s": 29.921666417575317,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.48824996263629,
+"error": false
+},
+{
+"t": 74.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 2230,
+"gens_per_s": 29.916295365271772,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.988839382036151,
+"error": false
+},
+{
+"t": 76.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 2291,
+"gens_per_s": 30.38676064912649,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.483292554789147,
+"error": false
+},
+{
+"t": 78.4,
+"phase": "covered",
+"answer_s": 0.0,
+"generation": 2351,
+"gens_per_s": 29.995966500018593,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 3.4995294250021836,
+"error": false
+},
+{
+"t": 80.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 2411,
+"gens_per_s": 29.857089299019073,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.478563394852854,
+"error": false
+},
+{
+"t": 82.4,
+"phase": "covered",
+"answer_s": 0.01,
+"generation": 2471,
+"gens_per_s": 30.008342200996008,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 4.001112293466226,
+"error": false
+},
+{
+"t": 84.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2532,
+"gens_per_s": 30.305646791406005,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 24.840694091316397,
+"error": false
+},
+{
+"t": 86.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2592,
+"gens_per_s": 30.022518836083012,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 46.03452888199386,
+"error": false
+},
+{
+"t": 88.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2652,
+"gens_per_s": 29.97805770941546,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 42.96854938349564,
+"error": false
+},
+{
+"t": 90.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2712,
+"gens_per_s": 30.015081592668665,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 47.523879188392016,
+"error": false
+},
+{
+"t": 92.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2772,
+"gens_per_s": 30.001709558626295,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 41.50236488943296,
+"error": false
+},
+{
+"t": 94.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2832,
+"gens_per_s": 29.875658884212434,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 42.821777734037795,
+"error": false
+},
+{
+"t": 96.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2892,
+"gens_per_s": 29.98374747040892,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 49.47318332617482,
+"error": false
+},
+{
+"t": 98.4,
+"phase": "in view again",
+"answer_s": 0.01,
+"generation": 2952,
+"gens_per_s": 30.008313574880127,
+"frame": [
+328,
+130,
+1400,
+932,
+1
+],
+"cpu_pct_core": 46.01274748148277,
+"error": false
+}
+]

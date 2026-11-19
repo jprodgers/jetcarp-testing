@@ -1,0 +1,9 @@
+﻿explore 2: 825 runs (0/s), 268 elites in 152 niches, 8 confirmed, 11 of 1,359 tilings; cpu only
+  status paused, 8 min 56 s run over every session, 39 confirmation runs, 949 candidates tried, 0.06 GB of memory
+  threads: 10 for runs on the processor, of 12 cores (2 left free)
+  this session: 27 runs on the processor stopped at their time cap (kept with the generations they reached), 10 runs given up at a stop or the end (not kept)
+  loaded 170 elites, 590 identities, 98 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                        825   0.55   1.79     268
+  folder: C:\Users\jimmi\jetcarp-rc-042\data\searches\7b4ef016-7706-4090-b611-9a9e698f4931
+  `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

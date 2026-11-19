@@ -1,0 +1,39 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA one glowing front (Penrose rhombs, edge)",
+  "description": "Edge neighbours and blast 2: the territories straighten until one glowing front divides the patch, after about 8,000 generations. Found by a JACA rule search.",
+  "tiling": {
+    "family": "penrose-rhomb",
+    "size": {
+      "level": 5
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 31,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B1/S01234V blast 2",
+      "rule": "JACA B1/S01234 blast 2",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Moss",
+      "seed": {
+        "signed": {
+          "density": 0.45,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Autumn"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "c912c9a865672b66",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

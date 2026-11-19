@@ -1,0 +1,40 @@
+{
+  "activity": 0.0,
+  "category": "Frozen at once",
+  "density": 0.05681531876325607,
+  "entropy": 0.31467100977897644,
+  "family": "generations",
+  "fate": "froze",
+  "mover_speed": 0.0,
+  "movers": 0,
+  "period": 1,
+  "saved": null,
+  "scene": {
+    "cas": [
+      {
+        "enabled": true,
+        "neighborhood": "edge",
+        "rule": "B47/S13568/C4",
+        "seed": {
+          "random": {
+            "density": 0.3
+          }
+        },
+        "steps_per_gen": 1
+      }
+    ],
+    "format": 1,
+    "jetcarp_version": "0.4.2-rc.2",
+    "rng_state": 1,
+    "tiling": {
+      "boundary": "wrap",
+      "family": "square",
+      "size": {
+        "cells": 16000
+      }
+    }
+  },
+  "score": 0.323,
+  "settle": 6,
+  "smooth": 0.11313770711421967
+}

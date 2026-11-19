@@ -1,0 +1,6 @@
+run,family,gens,cells,cpu,gpu,default,same,gpu_backend,default_backend
+28765,jaca,1024,16000,d6844bf981476804,d6844bf981476804,d6844bf981476804,True,"gpu (Apple M2 Max, Metal)",cpu (12 threads)
+50916,jaca,1024,16000,bf138bcf9d684b7a,bf138bcf9d684b7a,bf138bcf9d684b7a,True,"gpu (Apple M2 Max, Metal)",cpu (12 threads)
+28947,jaca,1024,16000,50203b220b8c925a,50203b220b8c925a,50203b220b8c925a,True,"gpu (Apple M2 Max, Metal)",cpu (12 threads)
+12470,life_like,1024,16000,b0f52c8e767e90fc,b0f52c8e767e90fc,b0f52c8e767e90fc,True,"gpu (Apple M2 Max, Metal)","gpu (Apple M2 Max, Metal)"
+40758,life_like,1024,16000,3fc9326e1f2d330e,3fc9326e1f2d330e,3fc9326e1f2d330e,True,"gpu (Apple M2 Max, Metal)",cpu (12 threads)

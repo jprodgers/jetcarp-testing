@@ -1,0 +1,1 @@
+﻿search explore --families life_like --minutes 3 --detach --label running-export

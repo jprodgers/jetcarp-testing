@@ -1,0 +1,6 @@
+"run","family","gens","cells","cpu","gpu","default","same","gpu_backend","default_backend"
+"28757","jaca","1024","16000","d6844bf981476804","d6844bf981476804","d6844bf981476804","True","gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)","cpu (12 threads)"
+"29459","jaca","1024","16000","50203b220b8c925a","50203b220b8c925a","50203b220b8c925a","True","gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)","cpu (12 threads)"
+"2313","jaca","1024","16000","42896127555a1603","42896127555a1603","42896127555a1603","True","gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)","cpu (12 threads)"
+"12556","life_like","1024","16000","b0f52c8e767e90fc","b0f52c8e767e90fc","b0f52c8e767e90fc","True","gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)","gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)"
+"33531","life_like","1024","16000","bc6daad3401b6f86","bc6daad3401b6f86","bc6daad3401b6f86","True","gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)","gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)"

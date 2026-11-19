@@ -1,0 +1,1 @@
+pack import /Users/Jimmie/jetcarp-rc-042c/2.10/acer/A10-pack --library /Users/Jimmie/jetcarp-rc-042c/2.10/acer/library.sqlite 

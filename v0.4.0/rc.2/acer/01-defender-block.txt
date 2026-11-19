@@ -1,0 +1,94 @@
+﻿A1 step 2: the plan's install line, run by Jimmie in a new Windows PowerShell window (auto mode
+blocked the session from running it), about 06:51 on 2026-11-12:
+
+> powershell -ExecutionPolicy Bypass -c "irm https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.2/jetcarp-installer.ps1 | iex" 2>&1 | Tee-Object ...
+Captured output (01-install-raw.txt): nothing from the installer, then
+  (exit code , took 1s)
+Nothing was installed: no %LOCALAPPDATA%\Programs\jetcarp, no jetcarp-* temp folder, PATH unchanged (ExpandString, 18 entries).
+
+Microsoft Defender blocked the command line itself (Detection Type FastPath, cloud ML signatures):
+
+--- 2026-11-12 06:51:17 event 1116
+Microsoft Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+ 	Name: Trojan:Win32/Commando.B!ml
+ 	ID: 2147852719
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -c irm https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.2/jetcarp-installer.ps1 | ie
+ 	Detection Origin: Unknown
+ 	Detection Type: FastPath
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.463.261.0, AS: 1.463.261.0, NIS: 1.463.261.0
+ 	Engine Version: AM: 1.1.26100.4, NIS: 1.1.26100.4
+--- 2026-11-12 06:51:18 event 1116
+Microsoft Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+ 	Name: Trojan:Win32/Commando.C!ml
+ 	ID: 2147981340
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -c irm https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.2/jetcarp-installer.ps1 | ie
+ 	Detection Origin: Unknown
+ 	Detection Type: FastPath
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.463.261.0, AS: 1.463.261.0, NIS: 1.463.261.0
+ 	Engine Version: AM: 1.1.26100.4, NIS: 1.1.26100.4
+--- 2026-11-12 06:51:44 event 1117
+Microsoft Defender Antivirus has detected malware or potentially unwanted software using Defender security intelligence and applied the remediation action defined in the security settings.
+ For more information please see the following:
+ 	Name: Trojan:Win32/Commando.B!ml
+ 	ID: 2147852719
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -c irm https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.2/jetcarp-installer.ps1 | ie
+ 	Detection Origin: Unknown
+ 	Detection Type: FastPath
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.463.261.0, AS: 1.463.261.0, NIS: 1.463.261.0
+ 	Engine Version: AM: 1.1.26100.4, NIS: 1.1.26100.4
+--- 2026-11-12 06:52:06 event 5007
+Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.
+ 	Old value: 
+ 	New value: HKLM\SOFTWARE\Microsoft\Windows Defender\Threats\ThreatIDDefaultAction\2147981340 = 0x6
+--- 2026-11-12 06:52:09 event 1117
+Microsoft Defender Antivirus has detected malware or potentially unwanted software using Defender security intelligence and applied the remediation action defined in the security settings.
+ For more information please see the following:
+ 	Name: Trojan:Win32/Commando.C!ml
+ 	ID: 2147981340
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -c irm https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.2/jetcarp-installer.ps1 | ie
+ 	Detection Origin: Unknown
+ 	Detection Type: FastPath
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x80508023
+ 	Error description: The program could not find the malware and other potentially unwanted software on this device. 
+ 	Security intelligence Version: AV: 1.463.261.0, AS: 1.463.261.0, NIS: 1.463.261.0
+ 	Engine Version: AM: 1.1.26100.4, NIS: 1.1.26100.4
+
+Get-MpThreat:
+
+  ThreatID ThreatName                 SeverityID CategoryID IsActive DidThreatExecute
+  -------- ----------                 ---------- ---------- -------- ----------------
+2147852719 Trojan:Win32/Commando.B!ml          5          8    False            False
+2147981340 Trojan:Win32/Commando.C!ml          5          8    False            False
+
+Get-MpPreference afterwards: ThreatIDDefaultAction_Ids 2147981340, actions 6 (6 = Allow)
+Defender: platform 4.18.26100.4, engine 1.1.26100.4, security intelligence 1.463.261.0
+
+rc1 (2026-11-11 23:31) ran the same line with the v0.4.0-rc.1 URL, from this session's PowerShell, with no detection at all.

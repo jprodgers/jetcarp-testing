@@ -1,0 +1,140 @@
+12:27:34.1 === the ant's restarts: jetcarp 0.4.2-rc.4
+12:27:34.3 now: profile Cyclic spirals (4 of 7), generation 49625, pid 32428
+12:27:37.9 host next -> exit 0 [running, pid 32428, up 28977.0s, 233 MB, GPU Intel(R) UHD Graphics
+screen 0: Classics, hourly · Quick Start turmite-llrr (5 of 7) · starting · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)]; now Quick Start turmite-llrr, generation 819
+12:27:41.5 host next -> exit 0 [running, pid 32428, up 28980.0s, 235 MB, GPU Intel(R) UHD Graphics
+screen 0: Classics, hourly · profile Penrose waves (6 of 7) · starting · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)]; now profile Penrose waves, generation 82
+12:27:44.7 host next -> exit 0 [running, pid 32428, up 28984.0s, 266 MB, GPU Intel(R) UHD Graphics
+screen 0: Classics, hourly · profile Hodgepodge (7 of 7) · starting · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)]; now profile Hodgepodge, generation 92
+12:27:48.0 host next -> exit 0 [running, pid 32428, up 28987.0s, 237 MB, GPU Intel(R) UHD Graphics
+screen 0: Classics, hourly · profile Life (1 of 7) · starting · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)]; now profile Life, generation 93
+12:27:51.3 host next -> exit 0 [running, pid 32428, up 28990.0s, 235 MB, GPU Intel(R) UHD Graphics
+screen 0: Classics, hourly · Quick Start langtons-ant (2 of 7) · starting · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)]; now Quick Start langtons-ant, generation 748
+12:27:52.0 t+  0.2s gen     789 speed 239.92 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 789] | shot ant-000.jpg blue 0.819%
+12:27:53.7 t+  2.3s gen    1309 speed 239.87 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 1,309]
+12:27:55.3 t+  4.0s gen    1709 speed 239.89 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 1,709]
+12:27:57.0 t+  5.7s gen    2106 speed 240.03 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 2,106]
+12:27:58.6 t+  7.3s gen    2495 speed 240.16 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 2,495]
+12:28:00.7 t+  8.9s gen    2891 speed 239.68 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 2,891] | shot ant-009.jpg blue 0.606%
+12:28:02.4 t+ 11.1s gen    3404 speed 240.22 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 3,404]
+12:28:04.0 t+ 12.7s gen    3801 speed 240.22 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 3,801]
+12:28:05.7 t+ 14.4s gen    4198 speed 239.79 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 4,198]
+12:28:07.3 t+ 16.0s gen    4586 speed 240.38 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 4,586]
+12:28:09.5 t+ 17.7s gen    4986 speed 239.65 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 4,986] | shot ant-018.jpg blue 0.370%
+12:28:11.2 t+ 19.8s gen    5508 speed 240.08 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 5,508]
+12:28:13.1 t+ 21.8s gen    5905 speed 239.97 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 5,905]
+12:28:14.7 t+ 23.4s gen    6371 speed 240.24 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 6,371]
+12:28:16.4 t+ 25.0s gen    6759 speed 239.74 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 6,759]
+12:28:18.5 t+ 26.7s gen    7148 speed 239.74 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 7,148] | shot ant-027.jpg blue 0.060%
+12:28:20.1 t+ 28.8s gen    7661 speed 240.11 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 7,661]
+12:28:21.8 t+ 30.5s gen    8062 speed 240.05 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 8,062]
+12:28:23.5 t+ 32.1s gen    8458 speed 240.25 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 8,458]
+12:28:25.1 t+ 33.8s gen    8855 speed 239.81 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 8,855]
+12:28:27.3 t+ 35.4s gen    9256 speed 239.70 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 9,256] | shot ant-035.jpg blue 0.272%
+12:28:28.9 t+ 37.6s gen    9777 speed 240.15 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 9,777]
+12:28:30.6 t+ 39.3s gen   10174 speed 239.96 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 10,174]
+12:28:32.3 t+ 40.9s gen   10575 speed 239.96 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 10,575]
+12:28:33.9 t+ 42.6s gen   10973 speed 240.10 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 10,973]
+12:28:36.1 t+ 44.3s gen   11369 speed 240.16 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 11,369] | shot ant-044.jpg blue 0.529%
+12:28:37.8 t+ 46.4s gen   11894 speed 240.08 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 11,894]
+12:28:39.4 t+ 48.1s gen   12291 speed 239.62 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 12,291]
+12:28:41.1 t+ 49.8s gen   12689 speed 240.15 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 12,689]
+12:28:42.7 t+ 51.4s gen   13086 speed 240.01 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 13,086]
+12:28:44.9 t+ 53.1s gen   13483 speed 239.93 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 13,483] | shot ant-053.jpg blue 0.899%
+12:28:46.5 t+ 55.2s gen   13997 speed 239.88 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 13,997]
+12:28:48.2 t+ 56.8s gen   14386 speed 239.88 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 14,386]
+12:28:49.8 t+ 58.5s gen   14783 speed 240.44 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 14,783]
+12:28:51.5 t+ 60.1s gen   15182 speed 239.95 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 15,182]
+12:28:53.7 t+ 61.8s gen   15579 speed 239.81 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 15,579] | shot ant-062.jpg blue 1.060%
+12:28:55.3 t+ 64.0s gen   16103 speed 239.78 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 16,103]
+12:28:57.0 t+ 65.6s gen   16501 speed 240.10 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 16,501]
+12:28:58.6 t+ 67.3s gen   16896 speed 240.12 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 16,896]
+12:29:00.3 t+ 68.9s gen   17293 speed 240.12 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 17,293]
+12:29:02.5 t+ 70.6s gen   17694 speed 240.19 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 17,694] | shot ant-071.jpg blue 0.856%
+12:29:04.2 t+ 72.8s gen   18227 speed 239.95 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 18,227]
+12:29:05.8 t+ 74.5s gen   18624 speed 240.09 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 18,624]
+12:29:07.5 t+ 76.1s gen   19021 speed 239.69 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 19,021]
+12:29:09.1 t+ 77.8s gen   19418 speed 239.89 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 19,418]
+12:29:11.3 t+ 79.5s gen   19817 speed 240.40 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 19,817] | shot ant-079.jpg blue 0.606%
+12:29:13.0 t+ 81.6s gen   20339 speed 239.96 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 20,339]
+12:29:14.6 t+ 83.3s gen   20736 speed 239.68 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 20,736]
+12:29:16.3 t+ 84.9s gen   21134 speed 239.68 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 21,134]
+12:29:17.9 t+ 86.6s gen   21530 speed 239.96 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 21,530]
+12:29:20.2 t+ 88.2s gen   21929 speed 240.31 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 21,929] | shot ant-088.jpg blue 0.270%
+12:29:21.8 t+ 90.5s gen   22462 speed 240.00 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 22,462]
+12:29:23.7 t+ 92.4s gen   22923 speed 239.96 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 22,923]
+12:29:25.4 t+ 94.0s gen   23316 speed 240.18 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 23,316]
+12:29:27.0 t+ 95.7s gen   23713 speed 239.83 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 23,713]
+12:29:29.2 t+ 97.3s gen   24110 speed 240.03 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 24,110] | shot ant-097.jpg blue 0.320%
+12:29:30.9 t+ 99.5s gen   24636 speed 240.09 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 24,636]
+12:29:32.5 t+101.2s gen   25032 speed 239.64 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 25,032]
+12:29:34.2 t+102.8s gen   25429 speed 239.64 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 25,429]
+12:29:35.8 t+104.5s gen   25818 speed 240.26 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 25,818]
+12:29:37.9 t+106.1s gen   26215 speed 239.74 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 26,215] | shot ant-106.jpg blue 0.433%
+12:29:39.6 t+108.2s gen   26721 speed 240.39 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 26,721]
+12:29:41.2 t+109.9s gen   27118 speed 239.93 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 27,118]
+12:29:42.9 t+111.5s gen   27515 speed 239.77 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 27,515]
+12:29:44.5 t+113.2s gen   27913 speed 239.77 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 27,913]
+12:29:46.8 t+114.8s gen   28310 speed 240.26 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 28,310] | shot ant-115.jpg blue 0.652%
+12:29:48.4 t+117.1s gen   28855 speed 239.88 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 28,855]
+12:29:50.1 t+118.8s gen   29252 speed 239.91 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 29,252]
+12:29:51.8 t+120.4s gen   29650 speed 240.14 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 29,650]
+12:29:53.4 t+122.1s gen   30047 speed 239.63 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 30,047]
+12:29:55.6 t+123.7s gen   30444 speed 240.06 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 30,444] | shot ant-124.jpg blue 1.120%
+12:29:57.3 t+125.9s gen   30977 speed 239.99 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 30,977]
+12:29:58.9 t+127.6s gen   31374 speed 240.14 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 31,374]
+12:30:00.6 t+129.3s gen   31772 speed 240.12 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 31,772]
+12:30:02.2 t+130.9s gen   32160 speed 240.12 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 32,160]
+12:30:04.4 t+132.5s gen   32557 speed 240.00 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 32,557] | shot ant-133.jpg blue 0.824%
+12:30:06.0 t+134.7s gen   33070 speed 239.74 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 33,070]
+12:30:07.7 t+136.3s gen   33467 speed 240.06 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 33,467]
+12:30:09.3 t+138.0s gen   33864 speed 240.12 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 33,864]
+12:30:11.0 t+139.7s gen   34265 speed 239.90 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 34,265]
+12:30:13.1 t+141.3s gen   34659 speed 240.33 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 34,659] | shot ant-141.jpg blue 0.603%
+12:30:14.8 t+143.5s gen   35175 speed 239.59 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 35,175]
+12:30:16.4 t+145.1s gen   35569 speed 239.59 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 35,569]
+12:30:18.0 t+146.7s gen   35958 speed 240.30 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 35,958]
+12:30:19.7 t+148.4s gen   36355 speed 239.84 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 36,355]
+12:30:22.2 t+150.3s gen   36753 speed 240.24 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 36,753] | shot ant-150.jpg blue 0.092%
+12:30:23.8 t+152.5s gen   37346 speed 240.02 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 37,346]
+12:30:25.5 t+154.2s gen   37743 speed 239.81 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 37,743]
+12:30:27.1 t+155.8s gen   38141 speed 239.74 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 38,141]
+12:30:28.8 t+157.5s gen   38537 speed 240.03 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 38,537]
+12:30:30.9 t+159.1s gen   38935 speed 240.03 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 38,935] | shot ant-159.jpg blue 0.174%
+12:30:32.6 t+161.2s gen   39448 speed 240.44 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 39,448]
+12:30:34.2 t+162.9s gen   39845 speed 239.73 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 39,845]
+12:30:35.9 t+164.6s gen   40246 speed 240.07 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 40,246]
+12:30:37.5 t+166.2s gen   40640 speed 239.91 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 40,640]
+12:30:39.7 t+167.9s gen   41037 speed 239.82 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 41,037] | shot ant-168.jpg blue 0.351%
+12:30:41.4 t+170.0s gen   41555 speed 240.00 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 41,555]
+12:30:43.0 t+171.7s gen   41952 speed 240.08 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 41,952]
+12:30:44.7 t+173.3s gen   42350 speed 240.08 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 42,350]
+12:30:46.3 t+175.0s gen   42748 speed 240.32 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 42,748]
+12:30:48.5 t+176.7s gen   43145 speed 239.90 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 43,145] | shot ant-177.jpg blue 0.533%
+12:30:50.1 t+178.8s gen   43657 speed 239.68 label Quick Start langtons-ant building False caption [Langton's ant · Ant RL / Square grid · 480 × 270 · dead edges / Classics, hourly · 2 of 7 · generation 43,657]
+12:30:51.6 === done

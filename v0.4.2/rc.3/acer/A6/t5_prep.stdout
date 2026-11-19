@@ -1,0 +1,16 @@
+$ jetcarp run $W\odd\good.json --gens 100 --save $W\odd\good-saved.json
+scene:      $W\odd\good.json
+tiling:     Square (parallelogram) (square): 4096 cells, 64x64 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    cpu (12 threads)
+generation: 100
+hash:       9ac1641970c05012
+status:     Running
+done:       no
+field 0:    shared binary, 371 live: Life [B3/S23]
+saved:      $W\odd\good-saved.json
+time:       0.02s on 12 threads
+
+exit 0
+odd scenes: empty.json, future-format-huge.json, future-format.json, good-saved.json, good.json, truncated.json, unknown-rule-name.json, unknown-rule.json
+other-signer: sigs/ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig replaced by a signature of pack.json by another key (ssh-keygen exit 0)
+packs: good, onebyte, onebyte-part, other-signer, truncated, truncated-manifest, unsigned

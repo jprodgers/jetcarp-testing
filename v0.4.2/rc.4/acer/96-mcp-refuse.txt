@@ -1,0 +1,78 @@
+[refuse] folder ~\jetcarp-rc4\f96; server {'name': 'jetcarp', 'title': 'JETCARP cellular automata', 'version': '0.4.2-rc.4'}
+tools/list: 21 tools; host_control's properties: ['action', 'name', 'on', 'screen']
+host_control's action: {"description": "Default status. wallpaper: every screen on the desktop background (GNOME: with the extension) or in a window; login: start at login or not; open_app opens the app; reload rereads host.json; scene: a screen's scene.", "enum": ["status", "next", "previous", "pause", "resume", "rotation", "wallpaper", "login", "open_app", "reload", "scene", "quit"], "type": "string"}
+'tune' in host_control's schema: False; 'pick' or 'fps' properties: False, False
+'fit' or 'tune' in its description: False
+description: Controls the JETCARP background host, which runs live scenes as wallpapers or windows without the app. Returns its status (each screen's scene, cell size and caption, and recent problems). Fails if it is not running (`jetcarp host start` starts it). Refuses scenes until the user accepts the seizure warning.
+== host_control {"action": "status"} -> isError=True
+   the JETCARP background host is not running
+== host_control {"action": "resume"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing
+== host_control {"action": "next"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing
+== host_control {"action": "previous"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing
+== host_control {"action": "rotation", "name": "A classic a day"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing
+== host_control {"action": "wallpaper", "on": true} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing
+== host_control {"action": "login", "on": true} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing
+== host_control {"action": "pause"} -> isError=True
+   the JETCARP background host is not running
+== host_control {"action": "tune", "dry_run": true} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== host_control {"action": "tune_stop"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== host_control {"action": "tune_events"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+== host_control {"action": "tuning"} -> isError=True
+   Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.

@@ -1,0 +1,17 @@
+$ jetcarp host status   (00:03:49, AOC attached)
+running, pid 6128, up 2599.0s, 133 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 55025 · 170648 cells · wallpaper on every monitor
+monitors: 0: Built-in Retina Display, 1: Q3277
+wallpaper: showing
+caption: off
+
+$ system_profiler SPDisplaysDataType (names and sizes)
+        Color LCD:
+          Display Type: Built-in Liquid Retina XDR Display
+          Resolution: 3456 x 2234 Retina
+          Main Display: Yes
+          Connection Type: Internal
+        Q3277:
+          Resolution: 2560 x 1440 (QHD/WQHD - Wide Quad High Definition)
+          UI Looks like: 2560 x 1440 @ 60.00Hz
+          Rotation: Supported

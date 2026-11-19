@@ -1,0 +1,87 @@
+#124 addendum, 2026-11-17 03:03:38 PM EST: the GPU line of launchd's host once the default folders have the warning answered (Jimmie had signed in at 2:57 PM: the screen unlocked, the display on)
+
+$ dflt $J host login on
+"$J" host serve --login starts at login
+registered with launchd, which started the host (pid 96654)
+[exit 0, 0.21 s]
+
+$ dflt $J host status
+running, pid 96654, up 4.0s, 19 MB, GPU none
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window, not shown (started at login) · simulation: CPU: GPU simulation unavailable: no GPU
+monitors: 0: Built-in Retina Display
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+[exit 0, 0.12 s]
+
+$ dflt $J host status | head -3
+running, pid 96654, up 11.0s, 18 MB, GPU none
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window, not shown (started at login) · simulation: CPU: GPU simulation unavailable: no GPU
+monitors: 0: Built-in Retina Display
+[exit 0, 0.22 s]
+
+$ dflt $J host stop
+stopped
+[exit 0, 0.40 s]
+
+$ dflt $J host login off
+the host no longer starts at login
+[exit 0, 0.04 s]
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host >/dev/null 2>&1; echo launchctl print exit $?; hosts
+launchctl print exit 113
+no host process running
+[exit 0, 0.04 s]
+
+
+the same, with host start in a test folder ($H = homes/gpu, the warning answered), the screen unlocked, the display on: 2026-11-17 03:04:06 PM EST
+$ $J setup --seizure-warning no-disorder --profile blank-slate --quickstart-minutes 0 --quiet | head -1
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+
+setting up JETCARP as Blank slate:
+  1. record the profile Blank slate in $H/config/setup.json
+  2. nothing to import or build: the built-in examples are in the Quick Start already
+recorded Blank slate in $H/config/setup.json
+[exit 0, 0.23 s]
+
+(1) the wallpaper off (the default)
+$ $J host start | head -3
+running, pid 96791, up 0.0s, 25 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+caption: off
+[exit 0, 0.24 s]
+
+$ $J host status | head -3
+running, pid 96791, up 8.0s, 181 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 234 · 280000 cells of 5 px · 30 fps, 30 generations a second · window · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+[exit 0, 0.09 s]
+
+$ $J host stop
+stopped
+[exit 0, 0.17 s]
+
+(2) the wallpaper on
+$ $J host wallpaper on
+saved; the host is not running
+[exit 0, 0.03 s]
+
+$ $J host start | head -3
+running, pid 96848, up 0.0s, 19 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+wallpaper: showing
+[exit 0, 0.19 s]
+
+$ $J host status | head -3
+running, pid 96848, up 8.0s, 332 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 234 · 280000 cells of 5 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+[exit 0, 0.09 s]
+
+$ $J host stop
+stopped
+[exit 0, 0.18 s]
+
+$ hosts
+no host process running
+[exit 0, 0.04 s]
+

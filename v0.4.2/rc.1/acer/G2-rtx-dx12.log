@@ -1,0 +1,3 @@
+﻿rtx-dx12 start 2026-11-14T17:51:06 JETCARP_GPU=RTX WGPU_BACKEND=dx12
+364 scenes: CPU matches 364, GPU matches 364; all 300 generations on the GPU in 327
+rtx-dx12 end 2026-11-14T18:08:17, 17.2 min

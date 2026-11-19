@@ -1,0 +1,23 @@
+$ jetcarp host start   (01:18:39)
+running, pid 70227, up 0.0s, 98 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 0 · 0 cells
+exit 0 after 0 s
+
+$ jetcarp host status
+running, pid 70227, up 0.0s, 102 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 0 · 0 cells
+monitors: 0: Monitor #41041
+exit 0
+$ jetcarp host wallpaper on   (01:18:49)
+running, pid 70227, up 10.0s, 106 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 297 · 25560 cells
+monitors: 0: Monitor #41041
+wallpaper: showing
+exit 0
+
+$ jetcarp host status   (3 s later)
+running, pid 70227, up 13.0s, 121 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 73 · 303455 cells
+monitors: 0: Monitor #41041
+wallpaper: showing
+exit 0

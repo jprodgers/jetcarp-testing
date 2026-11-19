@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Brian's Brain on Penrose kites and darts (P2)",
+  "description": "Two tiles in the golden ratio. Five-fold centre; kites outnumber darts by φ to 1. The rule was picked by surveying candidates on this tiling for one that stays active.",
+  "tiling": {
+    "family": "penrose-kd",
+    "size": {
+      "level": 4
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 110,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Brian's Brain",
+      "rule": "B2/S/C3",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "9df23ec7a7913313",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

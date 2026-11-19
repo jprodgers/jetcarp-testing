@@ -1,0 +1,18 @@
+$ jetcarp host status   (01:20:45)
+running, pid 70227, up 126.0s, 131 MB, GPU Apple M2 Max
+screen 0: A classic a day · profile Life (1 of 7) · generation 3441 · 303455 cells
+monitors: 0: Monitor #41041
+wallpaper: showing
+
+$ jetcarp host next
+running, pid 70227, up 126.0s, 131 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 3442 · 303455 cells
+monitors: 0: Monitor #41041
+wallpaper: showing
+exit 0
+
+$ jetcarp host status   (2 s later)
+running, pid 70227, up 128.0s, 140 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 485 · 170648 cells
+monitors: 0: Monitor #41041
+wallpaper: showing

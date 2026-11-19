@@ -1,0 +1,1 @@
+pack check /Users/Jimmie/jetcarp-rc-042c/M10-pack 

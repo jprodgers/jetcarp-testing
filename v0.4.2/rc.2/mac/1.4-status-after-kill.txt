@@ -1,0 +1,28 @@
+explore 2: 272,936 runs (88/s), 27,735 elites in 13,251 niches (1,341 of them confirmed), 181 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 0 min run over every session, 7,092 confirmation runs, 281,099 candidates tried, 5.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 582 runs on the processor stopped at their time cap (kept with the generations they reached), 0 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  life_like                84,534   0.33   1.70   7,576
+  generations              66,178   0.66   2.11   5,262
+  jaca                     30,165   0.55   2.04   5,328
+  ltl                      25,209   0.38   2.34   1,646
+  priority                 19,687   0.42   2.12   2,494
+  greenberg_hastings        9,943   0.62   2.60     578
+  hodgepodge                9,917   1.11   2.43   1,099
+  rps                       9,917   0.55   2.44   1,149
+  cyclic                    9,723   0.51   2.26   1,182
+  wireworld                 1,870   0.47   1.35     253
+  spectre_glider            1,761   0.35   1.45      38
+  turmite                     960   0.85   1.96     326
+  layered                     761   0.61   1.91     211
+  forest_fire                 460   0.77   1.11     120
+  lenia                       452   0.98   2.35     142
+  sandpile                    386   0.65   2.13      65
+  wolfram                     240   0.70   1.74      41
+  hex_wolfram                 197   0.65   1.58      33
+  hex_tri                     192   0.64   1.55      45
+  margolus                    192   0.60   1.67     136
+  table                       192   0.28   0.49      11
+  folder: /Users/Jimmie/jetcarp-rc-042b/data/searches/c022e749-295d-4369-928b-6c0fa3c35579

@@ -1,0 +1,33 @@
+Recorded: 2026-11-13 01:00:22 -05:00
+Machine: Nitro ANV15-51
+OS: Microsoft Windows 11 Home, version 10.0.26300, build 26300.9974 (26H2)
+CPU: 13th Gen Intel(R) Core(TM) i5-13420H, 8 cores, 12 threads
+Memory: 15.7 GB
+Shell: Windows PowerShell 5.1.26100.9818; running as administrator: False
+
+Graphics adapters:
+  NVIDIA GeForce RTX 3050 6GB Laptop GPU, driver 31.0.15.4618, status OK
+  Intel(R) UHD Graphics, driver 31.0.101.4146, status OK
+
+Monitors attached:
+  \\.\DISPLAY1 primary=True 1920x1080 at (0,0), work area 1920x1032 (taskbar 48 px)
+  (internal panel only; the AOC Q3277 is attached for A3)
+Display scaling: AppliedDPI 96 (96 = 100%)
+
+Power: mains (BatteryStatus 2), battery 100%
+
+Before install:
+  jetcarp on PATH: no; %LOCALAPPDATA%\Programs\jetcarp: absent
+  User PATH: ExpandString, 18 entries, ends in ';': False (rc2's -Uninstall dropped the trailing ';')
+  Wallpaper value: C:\Users\jimmi\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper; style 10; TranscodedWallpaper sha256 85ff3bb2371a84655aedf69d9f7c11d697f23b21efc221f7f2443a62edb767ac
+  Screen saver (SCRNSAVE.EXE): none set; ScreenSaveActive 1; timeout 60
+  Run key JETCARP: absent; jetcarp processes: 0
+  Defender: allowed threat IDs: 0 (none; rc2's Allow for Commando.C!ml stays removed); detection history: rc2's two (2026-11-12 06:51); signatures 1.463.267.0
+  Claude Code: C:\Users\jimmi\.local\bin\claude.exe
+  Settings: rc2's %APPDATA%\jetcarp (app.json, host.json with both screens as wallpaper, setup.json,
+    empty desktop-pictures) -> moved aside to C:\Users\jimmi\AppData\Roaming\jetcarp-rc2-settings at
+    01:00, so the wizard sees a first run. rc1's are still in %APPDATA%\jetcarp-rc1-settings.
+  Library: %LOCALAPPDATA%\jetcarp kept (rc1 + rc2): library.sqlite 6,057,984 bytes (last written
+    2026-11-12 07:22), library.sqlite-wal 5,520,832 bytes and -shm left by rc2, rc1's stale 0-byte
+    host.lock, empty library.sqlite-jobs, one search folder.
+  Pictures: C:\Users\jimmi\OneDrive\Pictures\JETCARP\piles (five 1,000,000-grain piles) kept.

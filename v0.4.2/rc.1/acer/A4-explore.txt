@@ -1,0 +1,70 @@
+explore search job 3 in C:\Users\jimmi\jetcarp-rc-042\data\library.sqlite
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 0 runs (0/s), 0 elites in 0 niches, 0 confirmed, 0 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 0 runs (0/s), 0 elites in 0 niches, 0 confirmed, 0 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 0 runs (0/s), 0 elites in 0 niches, 0 confirmed, 0 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 1,024 runs (65/s), 215 elites in 121 niches, 0 confirmed, 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 1,024 runs (0/s), 215 elites in 121 niches, 0 confirmed, 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 1,024 runs (0/s), 215 elites in 121 niches, 0 confirmed, 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 1,024 runs (0/s), 215 elites in 121 niches, 0 confirmed, 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 1,024 runs (0/s), 215 elites in 121 niches, 0 confirmed, 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 1,024 runs (0/s), 215 elites in 121 niches, 0 confirmed, 1 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 2,048 runs (30/s), 436 elites in 243 niches, 0 confirmed, 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 2,048 runs (0/s), 436 elites in 243 niches, 0 confirmed, 2 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 3,072 runs (76/s), 711 elites in 391 niches, 0 confirmed, 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 3,072 runs (0/s), 711 elites in 391 niches, 0 confirmed, 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 3,072 runs (0/s), 711 elites in 391 niches, 0 confirmed, 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 3,072 runs (0/s), 711 elites in 391 niches, 0 confirmed, 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 3,072 runs (0/s), 711 elites in 391 niches, 0 confirmed, 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 3,072 runs (0/s), 711 elites in 391 niches, 0 confirmed, 3 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 4,096 runs (0/s), 880 elites in 479 niches, 0 confirmed, 4 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 4,096 runs (0/s), 880 elites in 479 niches, 0 confirmed, 4 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 5,100 runs (0/s), 1,199 elites in 626 niches, 0 confirmed, 5 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 6,124 runs (91/s), 1,406 elites in 735 niches, 0 confirmed, 6 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 6,124 runs (0/s), 1,406 elites in 735 niches, 0 confirmed, 6 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (86/s), 1,584 elites in 837 niches, 0 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 0 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 0 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 0 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 0 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 96 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 96 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 96 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 96 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 7,148 runs (0/s), 1,584 elites in 837 niches, 96 confirmed, 7 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 8,149 runs (0/s), 1,844 elites in 970 niches, 96 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 8,149 runs (0/s), 1,844 elites in 970 niches, 96 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 8,149 runs (0/s), 1,844 elites in 970 niches, 96 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 9,153 runs (47/s), 2,039 elites in 1,067 niches, 96 confirmed, 9 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 9,153 runs (0/s), 2,039 elites in 1,067 niches, 96 confirmed, 9 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 9,153 runs (0/s), 2,039 elites in 1,067 niches, 96 confirmed, 9 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 10,177 runs (46/s), 2,110 elites in 1,104 niches, 96 confirmed, 10 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 10,177 runs (0/s), 2,110 elites in 1,104 niches, 96 confirmed, 10 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 10,177 runs (0/s), 2,110 elites in 1,104 niches, 96 confirmed, 10 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 10,177 runs (0/s), 2,110 elites in 1,104 niches, 96 confirmed, 10 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 10,177 runs (0/s), 2,110 elites in 1,104 niches, 96 confirmed, 10 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 10,177 runs (0/s), 2,110 elites in 1,104 niches, 96 confirmed, 10 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 11,201 runs (32/s), 2,244 elites in 1,174 niches, 96 confirmed, 11 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 11,201 runs (0/s), 2,244 elites in 1,174 niches, 96 confirmed, 11 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 11,201 runs (0/s), 2,244 elites in 1,174 niches, 96 confirmed, 11 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 11,201 runs (0/s), 2,244 elites in 1,174 niches, 96 confirmed, 11 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 12,225 runs (42/s), 2,287 elites in 1,188 niches, 96 confirmed, 12 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 12,225 runs (0/s), 2,287 elites in 1,188 niches, 96 confirmed, 12 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 13,249 runs (74/s), 2,447 elites in 1,274 niches, 96 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 13,249 runs (0/s), 2,447 elites in 1,274 niches, 96 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (79/s), 2,528 elites in 1,321 niches, 96 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 96 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 96 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 133 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 133 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 133 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 133 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+explore 3: 14,273 runs (0/s), 2,528 elites in 1,321 niches, 133 confirmed, 13 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+  status paused, 5 min 58 s run over every session, 399 confirmation runs, 15,759 candidates tried, 0.55 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+  this session: 0 runs on the processor stopped at their time cap (kept with the generations they reached), 1,024 runs given up at a stop or the end (not kept)
+  loaded 0 elites, 0 identities, 0 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                     14,273   0.51   1.95   2,528
+  folder: C:\Users\jimmi\jetcarp-rc-042\data\searches\668eb340-e9e8-45b2-8eea-bcfe9df3be76
+explore search 3 paused (at its budget); `jetcarp jobs resume 3` continues it from its archive (not run for run: the search is not deterministic)

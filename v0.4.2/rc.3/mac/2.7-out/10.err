@@ -1,0 +1,13 @@
+GPU: Apple M2 Max, Metal
+hunt job 7 in /Users/Jimmie/jetcarp-rc-042c/data/library.sqlite
+hunt 7: 35,057/2,000,000 soups, 1568 soups/s, 753,225 objects (ships 66,612, osc 218,612, still 468,001), 60 distinct, 23 new | newest: still life 17c #ab0929 (B3/S23)
+hunt 7: 49,727/2,000,000 soups, 1965 soups/s, 1,069,245 objects (ships 94,624, osc 309,881, still 664,740), 67 distinct, 30 new | newest: still life 14c #bb0067 (B3/S23)
+hunt 7: 64,696/2,000,000 soups, 2141 soups/s, 1,393,415 objects (ships 123,272, osc 403,850, still 866,293), 68 distinct, 31 new | newest: still life 12c #931257 (B3/S23)
+hunt 7: 79,452/2,000,000 soups, 2202 soups/s, 1,711,587 objects (ships 151,470, osc 495,586, still 1,064,531), 72 distinct, 35 new | newest: still life 13c #60ea74 (B3/S23)
+hunt 7: 94,333/2,000,000 soups, 2267 soups/s, 2,031,119 objects (ships 179,915, osc 587,649, still 1,263,555), 77 distinct, 40 new | newest: still life 13c #523d19 (B3/S23)
+hunt 7: 109,588/2,000,000 soups, 2320 soups/s, 2,360,124 objects (ships 209,155, osc 682,768, still 1,468,201), 81 distinct, 44 new | newest: p2 oscillator 6c #6b54ca (B3/S23)
+hunt 7: 125,255/2,000,000 soups, 2348 soups/s, 2,695,836 objects (ships 238,641, osc 779,689, still 1,677,506), 83 distinct, 46 new | newest: still life 14c #cb6b4a (B3/S23)
+hunt 7: 140,515/2,000,000 soups, 2374 soups/s, 3,022,982 objects (ships 267,794, osc 874,627, still 1,880,561), 87 distinct, 50 new | newest: still life 13c #66e25d (B3/S23)
+hunt 7: 155,756/2,000,000 soups, 2397 soups/s, 3,348,957 objects (ships 296,642, osc 968,940, still 2,083,375), 90 distinct, 53 new | newest: still life 14c #78c65e (B3/S23)
+hunt 7: 171,450/2,000,000 soups, 2455 soups/s, 3,684,095 objects (ships 326,534, osc 1,065,949, still 2,291,612), 95 distinct, 58 new | newest: still life 14c #72adcc (B3/S23)
+hunt 7 paused (at its budget); `jetcarp jobs resume 7` resumes it exactly

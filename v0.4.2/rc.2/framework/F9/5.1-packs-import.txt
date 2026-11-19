@@ -1,0 +1,53 @@
+## imports into a scratch library (--library $W/import-lib/library.sqlite)
+$ jetcarp pack info other-signer   (the manifest signed only by the F9 test key, not by its publisher)
+export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+  rc.2 test, Framework
+  publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), not signed by its publisher
+exit 0
+$ jetcarp pack check other-signer
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (allow unsigned packs to import it anyway)
+exit 1
+$ jetcarp pack --library $IL import truncated
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack --library $IL import truncated-manifest
+Error: manifest: not JSON: EOF while parsing a string at line 1 column 300
+exit 1
+$ jetcarp pack --library $IL import onebyte
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+$ jetcarp pack --library $IL import onebyte-part
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: part sha256:d718f867e9850f271a627ab2a6ade0bf4e53687a3c3aa34e0212a3365fb51b8c (tables/rules/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp pack --library $IL import unsigned
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (allow unsigned packs to import it anyway)
+exit 1
+$ jetcarp pack --library $IL import other-signer
+Error: this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (allow unsigned packs to import it anyway)
+exit 1
+$ jetcarp pack --library $IL import unsigned --allow-unsigned
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: copying its segments and rebuilding its state
+merging sightings
+imported sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), not signed)
+  12 objects checked (7853786 bytes)
+  patterns: 341 added, 0 merged, 0 flagged needs_reverify
+  sightings 441, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+  verified again (sample): 341 of 341 passed, 0 skipped, 0 failed
+search 39fd769d-bfa3-492f-bcb3-1ffd617e203e: 99177 runs, 15668 elites in 7905 niches, rebuilt in 0.6 s
+exit 0
+$ jetcarp pack --library $IL import onebyte --allow-unsigned   (a signature that does not verify, even with --allow-unsigned)
+Error: a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+exit 1
+$ jetcarp pack --library $IL import truncated --allow-unsigned
+sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017: feed rc-framework, by SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), checking every object
+Error: search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+exit 1
+$ jetcarp jobs --library $IL list
+    2  hunt     done     2026-11-15T18:03:13Z  hunt 2: imported from pack rc.2 test, Framework (its finds came with the pack; nothing ran here)
+    1  explore  paused   2026-11-15T18:03:12Z  explore 1: 95,955 runs (0/s), 15,668 elites in 7,905 niches (816 of them confirmed), 66 of 1,359 tilings; not run here yet
+2 job(s); 0 running

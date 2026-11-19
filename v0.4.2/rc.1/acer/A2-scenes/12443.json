@@ -1,0 +1,34 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "explore 1 run 12443: B367/S125678",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "18121691493698182",
+  "cas": [
+    {
+      "rule": "B367/S125678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "symmetric",
+            "order": 8,
+            "mirror": true,
+            "radius": 0.11
+          },
+          "fill": {
+            "density": 0.56
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile on Cairo pentagons",
+  "description": "The same sandpile on pentagons with five edge neighbours each.",
+  "tiling": {
+    "family": "cairo",
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 20,
+      "palette": "Ember",
+      "seed": {
+        "pile": {
+          "grains": 40000
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e152299124da776d",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

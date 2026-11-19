@@ -1,0 +1,13 @@
+
+$ jetcarp host status   [02:09:03]
+running, pid 44732, up 29156.0s, 209 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 6974838 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+
+$ jetcarp host stop
+stopped
+exit 0

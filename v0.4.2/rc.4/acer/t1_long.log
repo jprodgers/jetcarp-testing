@@ -1,0 +1,40 @@
+2026-11-16 22:23:12 === rc.4 wave, long part, starts; build ~\jetcarp-rc-042c\bin\jetcarp.exe: jetcarp 0.4.2-rc.4
+2026-11-16 22:23:12 jetcarp processes at start: 
+2026-11-16 22:23:12 power: battery 100%, status 2 (2 = mains)
+2026-11-16 22:23:13 parity copied from the repository: 371 scenes, long 40 scenes
+2026-11-16 22:23:13 === 1.1-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 300 gens)
+2026-11-16 22:31:50 1.1-rtx-vulkan adapters used: 335x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-16 22:31:50 RESULT 1.1-rtx-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 8.6 min
+2026-11-16 22:31:50 === 1.1-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 300 gens)
+2026-11-16 22:49:42 1.1-rtx-dx12 adapters used: 334x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12), 1x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12
+2026-11-16 22:49:42 RESULT 1.1-rtx-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 17.9 min
+2026-11-16 22:49:42 === 1.1-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 300 gens)
+2026-11-16 22:56:24 1.1-uhd-vulkan adapters used: 335x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-16 22:56:24 RESULT 1.1-uhd-vulkan : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 6.7 min
+2026-11-16 22:56:24 === 1.1-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 300 gens)
+2026-11-16 23:15:14 1.1-uhd-dx12 adapters used: 335x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-16 23:15:14 RESULT 1.1-uhd-dx12 : pass: 371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334; all 300 generations on the GPU in 334; 0 MISMATCH lines; 18.8 min
+2026-11-16 23:15:14 === 1.2-rtx-vulkan (JETCARP_GPU=RTX WGPU_BACKEND=, 5000 gens)
+2026-11-16 23:17:27 1.2-rtx-vulkan adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+2026-11-16 23:17:27 RESULT 1.2-rtx-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.2 min
+2026-11-16 23:17:27 === 1.2-rtx-dx12 (JETCARP_GPU=RTX WGPU_BACKEND=dx12, 5000 gens)
+2026-11-16 23:20:45 1.2-rtx-dx12 adapters used: 40x gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (31.0.15.4618), Dx12)
+2026-11-16 23:20:45 RESULT 1.2-rtx-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.3 min
+2026-11-16 23:20:45 === 1.2-uhd-vulkan (JETCARP_GPU=UHD WGPU_BACKEND=, 5000 gens)
+2026-11-16 23:23:04 1.2-uhd-vulkan adapters used: 40x gpu (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+2026-11-16 23:23:04 RESULT 1.2-uhd-vulkan : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 2.3 min
+2026-11-16 23:23:04 === 1.2-uhd-dx12 (JETCARP_GPU=UHD WGPU_BACKEND=dx12, 5000 gens)
+2026-11-16 23:26:41 1.2-uhd-dx12 adapters used: 40x gpu (Intel(R) UHD Graphics (31.0.101.4146), Dx12)
+2026-11-16 23:26:41 RESULT 1.2-uhd-dx12 : pass: 40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40; all 5000 generations on the GPU in 40; 0 MISMATCH lines; 3.6 min
+2026-11-16 23:26:41 === 1.3: the source at the tag
+2026-11-16 23:26:41 before: 29fea860 host start straight after host stop: stop waits for the host's lock too, and a new host waits up to 2 s for it (#122) (HEAD)
+2026-11-16 23:26:42 git checkout --detach v0.4.2-rc.4: git.exe : Previous HEAD position was 29fea860 host start straight after host stop: stop waits for the host's lock too,  / and a new host waits up to 2 s for it (#122) / At ~\OneDrive\Documents\GitHub\jetcarp-rc\results\v0.4.2-rc4\acer\t1_long.ps1:60 char:7 / + $co = & git -C $SRC checkout --detach v0.4.2-rc.4 2>&1 | Out-String / +       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /     + CategoryInfo          : NotSpecified: (Previous HEAD p...s for it (#122):String) [], RemoteException /     + FullyQualifiedErrorId : NativeCommandError /   / HEAD is now at cf5cbdff Release 0.4.2-rc.4
+2026-11-16 23:26:42 now: cf5cbdff Release 0.4.2-rc.4; status: []
+2026-11-16 23:26:42 === 1.3 RTX
+2026-11-16 23:47:18 RTX: 2026-11-16 23:47:17 RESULT 1-rtx-tag : pass:1043 passed, 0 failed, 41 ignored in 137 test binaries; exit 0, 21 min; message boxes closed by the watcher: 0
+2026-11-16 23:47:18 === R4 #122: host.rs serial x10, straight after the RTX suite
+2026-11-16 23:54:27 host.rs x10: 2026-11-16 23:48:03 run 1: exit 0 in 45 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 44.34s 2026-11-16 23:48:45 run 2: exit 0 in 42 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 41.78s 2026-11-16 23:49:26 run 3: exit 0 in 41 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 40.83s 2026-11-16 23:50:09 run 4: exit 0 in 42 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 41.83s 2026-11-16 23:50:51 run 5: exit 0 in 43 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 42.08s 2026-11-16 23:51:33 run 6: exit 0 in 42 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 41.25s 2026-11-16 23:52:17 run 7: exit 0 in 44 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 43.35s 2026-11-16 23:52:58 run 8: exit 0 in 42 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 41.33s 2026-11-16 23:53:43 run 9: exit 0 in 45 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 44.13s 2026-11-16 23:54:27 run 10: exit 0 in 44 s: test result: ok. 15 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 43.70s 2026-11-16 23:54:27 RESULT host.rs serial x10 on tag : 10 of 10 passed
+2026-11-16 23:54:27 === 1.3 UHD
+2026-11-17 00:07:28 UHD: 2026-11-17 00:07:27 RESULT 1-uhd-tag : pass:1043 passed, 0 failed, 41 ignored in 137 test binaries; exit 0, 13 min; message boxes closed by the watcher: 0
+2026-11-17 00:07:28 jetcarp processes at the end: 
+2026-11-17 00:07:28 === long part ends

@@ -1,0 +1,36 @@
+# 2026-11-12 04:42, Acer, jetcarp c5a58fc (release, --features jetcarp/windows-launcher)
+# Folders: JETCARP_CONFIG_DIR/DATA_DIR/OUT/LIBRARY/RUNTIME_DIR under %TEMP%\jetcarp-debug-home
+# Not as administrator.
+
+> .\target\release\jetcarp.exe host start --headless
+  (run with Start-Process -NoNewWindow -RedirectStandardOutput/-RedirectStandardError to files.
+   Note: I also passed -Wait, and Windows PowerShell's Start-Process -Wait waits for the
+   process's descendants as well, so that PowerShell call waited on the host; not jetcarp's
+   fault. The host start process itself (pid 4148) had exited: jetcarpw.exe's parent pid
+   4148 no longer exists.)
+--- stdout
+running, pid 11420, up 2.0s, 329 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Life (1 of 7) · starting · window
+caption: off
+--- stderr
+
+(empty)
+
+> .\target\release\jetcarp.exe host status   (04:43:38, 80 s after the start)
+running, pid 11420, up 80.0s, 381 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Life (1 of 7) · generation 2341 · 102240 cells · window
+caption: off
+exit 0
+
+> Get-Process jetcarp*
+   Id ProcessName StartTime             WS MB
+   -- ----------- ---------             -----
+11420 jetcarp     11/12/2026 4:42:18 AM   381
+10120 jetcarpw    11/12/2026 4:42:18 AM     4
+
+> Win32_Process (pid, parent, command line)
+10120  4148 "...\target\release\jetcarpw.exe" host serve --headless
+11420 10120 "...\target\release\jetcarp.exe" host serve --headless
+
+Result: the host is still running. It also survived the PowerShell that started it being
+stopped (both processes still there afterwards, same pids).

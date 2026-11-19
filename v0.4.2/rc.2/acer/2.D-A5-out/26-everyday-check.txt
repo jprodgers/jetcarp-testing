@@ -1,0 +1,5 @@
+jetcarp 0.4.1
+catalog:        C:\Users\jimmi\AppData\Local\jetcarp\library.sqlite
+schema version: 3
+patterns 98, rules 24, pattern rules 99, sightings 141 (647339 copies), jobs 33, Quick Start 2619, ratings 1, media 0, ants 8
+exit 1

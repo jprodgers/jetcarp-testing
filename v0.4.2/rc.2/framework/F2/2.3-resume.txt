@@ -1,0 +1,50 @@
+explore search job 2 in /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/library.sqlite
+explore 2: 1,155 runs (0/s), 274 elites in 141 niches (41 of them confirmed), 5 of 1,359 tilings; cpu only
+explore 2: 1,155 runs (0/s), 274 elites in 141 niches (41 of them confirmed), 5 of 1,359 tilings; cpu only
+explore 2: 1,155 runs (0/s), 274 elites in 141 niches (41 of them confirmed), 5 of 1,359 tilings; cpu only
+explore 2: 1,395 runs (10/s), 307 elites in 158 niches (38 of them confirmed), 6 of 1,359 tilings; cpu only
+explore 2: 1,395 runs (8/s), 307 elites in 158 niches (38 of them confirmed), 6 of 1,359 tilings; cpu only
+explore 2: 1,395 runs (7/s), 307 elites in 158 niches (38 of them confirmed), 6 of 1,359 tilings; cpu only
+explore 2: 1,635 runs (11/s), 344 elites in 181 niches (37 of them confirmed), 7 of 1,359 tilings; cpu only
+explore 2: 1,635 runs (10/s), 344 elites in 181 niches (37 of them confirmed), 7 of 1,359 tilings; cpu only
+explore 2: 1,635 runs (9/s), 344 elites in 181 niches (37 of them confirmed), 7 of 1,359 tilings; cpu only
+explore 2: 1,875 runs (12/s), 368 elites in 198 niches (37 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 1,875 runs (11/s), 368 elites in 198 niches (37 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 1,875 runs (10/s), 368 elites in 198 niches (37 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (12/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (11/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (11/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (10/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (9/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (9/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (8/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (8/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (8/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (7/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (7/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (7/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (6/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (6/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (6/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (6/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (5/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (5/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (5/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (5/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (5/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (5/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (5/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (4/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (4/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (4/s), 423 elites in 229 niches (27 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,115 runs (1/s), 423 elites in 229 niches (61 of them confirmed), 8 of 1,359 tilings; cpu only
+explore 2: 2,341 runs (3/s), 544 elites in 292 niches (61 of them confirmed), 9 of 1,359 tilings; cpu only
+explore 2: 2,341 runs (3/s), 544 elites in 292 niches (61 of them confirmed), 9 of 1,359 tilings; cpu only
+  status paused, 9 min 0 s run over every session, 240 confirmation runs, 2,640 candidates tried, 0.23 GB of memory
+  threads: 30 for runs on the processor, of 32 cores (2 left free)
+  this session: 58 runs on the processor stopped at their time cap (kept with the generations they reached), 8 runs given up at a stop or the end (not kept)
+  loaded 274 elites, 1,338 identities, 84 coverage rows in 0.00 s (no other runs read)
+  family                     runs   mean   best  elites
+  jaca                      2,341   0.44   1.58     544
+  folder: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/f2/data/searches/bea7c49c-c553-49b4-b637-de9c0aa349a9
+explore search 2 paused (at its budget); `jetcarp jobs resume 2` continues it from its archive (not run for run: the search is not deterministic)

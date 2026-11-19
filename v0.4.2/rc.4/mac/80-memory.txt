@@ -1,0 +1,19 @@
+R4 #80 jobs status memory against footprint and RSS, the Mac, 2026-11-17 03:06:51 AM EST; test folder $H = homes/mem80
+time,job status (GB),job status line,footprint (MB),footprint phys_footprint (bytes),RSS (MB),process
+03:06:51,1.4497,1.45 GB of memory,1619 MB,,1682.3,36955
+03:07:06,1.4497,1.45 GB of memory,1753 MB,,1815.8,36955
+03:07:22,1.4777,1.48 GB of memory,1399 MB,,1595.5,36955
+03:07:37,1.4258,1.43 GB of memory,1249 MB,,1727.7,36955
+03:07:52,1.4258,1.43 GB of memory,820 MB,,1603.9,36955
+03:08:07,1.4258,1.43 GB of memory,934 MB,,1717.6,36955
+03:08:23,1.4258,1.43 GB of memory,830 MB,,1646.8,36955
+03:08:38,1.4258,1.43 GB of memory,896 MB,,1710.9,36955
+03:08:53,1.4258,1.43 GB of memory,811 MB,,1647.0,36955
+03:09:08,1.4258,1.43 GB of memory,875 MB,,1711.0,36955
+(the job's process has ended)
+$ $J jobs status 1 | head -3
+explore 1: 10,422 runs (37/s), 3,332 elites in 1,832 niches (82 of them confirmed), 15 of 1,359 tilings; Apple M2 Max, Metal
+  status paused, 2 min 59 s run over every session, 324 confirmation runs, 10,880 candidates tried, 0.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+[exit 0, 0.08 s]
+

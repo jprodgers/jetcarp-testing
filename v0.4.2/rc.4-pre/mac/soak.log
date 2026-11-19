@@ -1,0 +1,49 @@
+2026-11-16T18:03:02Z == soak start: 8 h, every 300 s; jetcarp 0.4.2-rc.3
+ sleep                0 (sleep prevented by powerd, caffeinate, caffeinate)
+ displaysleep         0
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=36765795)	80%; AC attached; not charging present: true
+2026-11-16T18:03:32Z RESULT 1.5 soak start: 18:03:32 UTC, 8 h, a sample every 5 min (96); host pid 44732
+2026-11-16T18:03:33Z shot 00h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: 74588ee
+  git: Applied autostash.
+2026-11-16T18:03:35Z pushed: Mac: rc.4 pre-check: the 8-hour soak started
+2026-11-16T19:03:35Z shot 01h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: bc8ed26
+  git: Applied autostash.
+2026-11-16T19:03:37Z pushed: Mac: rc.4 pre-check: the soak at 01h
+2026-11-16T20:03:35Z shot 02h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: 3981e90
+  git: Applied autostash.
+2026-11-16T20:03:37Z pushed: Mac: rc.4 pre-check: the soak at 02h
+2026-11-16T21:03:35Z shot 03h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: 01b3548
+  git: Applied autostash.
+2026-11-16T21:03:37Z pushed: Mac: rc.4 pre-check: the soak at 03h
+2026-11-16T22:03:35Z shot 04h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: 13e51a2
+  git: Applied autostash.
+2026-11-16T22:03:37Z pushed: Mac: rc.4 pre-check: the soak at 04h
+2026-11-16T23:03:35Z shot 05h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: 827127b
+  git: Applied autostash.
+2026-11-16T23:03:37Z pushed: Mac: rc.4 pre-check: the soak at 05h
+2026-11-17T00:03:35Z shot 06h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: cc58366
+  git: Applied autostash.
+2026-11-17T00:03:37Z pushed: Mac: rc.4 pre-check: the soak at 06h
+2026-11-17T01:03:36Z shot 07h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: a520bec
+  git: Applied autostash.
+2026-11-17T01:03:39Z pushed: Mac: rc.4 pre-check: the soak at 07h
+2026-11-17T02:03:37Z shot 08h: 1 window(s): 3612 -2147483623 2056x1329 1;3610 0 64x64 0;
+  git: Created autostash: 22115dd
+  git: Applied autostash.
+2026-11-17T02:03:40Z pushed: Mac: rc.4 pre-check: the soak at 08h
+2026-11-17T02:03:40Z == #95: pmset displaysleepnow
+2026-11-17T02:07:15Z == #95: caffeinate -u -t 2 (the display woken)
+2026-11-17T02:09:03Z RESULT 1.5 soak: pass (automatic): 97 samples over 8.0 h; alive 97/97, pid 44732; screen 0 moved in 96 of 96 intervals (1 items seen); footprint 211.0 MB (first hour) -> 211.0 MB (last hour), max 233.0, -0.06 MB/h; status memory 209 -> 210 MB (-0.11 MB/h); RSS 111-113 MB; CPU (top) median 64.5%; whole GPU median 13%; held in 0 samples
+  git: Created autostash: f6a01a3
+  git: Applied autostash.
+2026-11-17T02:09:05Z pushed: Mac: rc.4 pre-check: the 8-hour soak done
+2026-11-17T02:09:05Z == soak done

@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Wickstretcher And The Parasites",
+  "description": "Explosive and strobing. Wickstretchers of many speeds and sizes appear, most with parasites clinging on that resize their wicks.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "12428650732039390633",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Wickstretcher And The Parasites",
+      "rule": "B01356/S012345",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ink",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "f04bbec14e852172",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

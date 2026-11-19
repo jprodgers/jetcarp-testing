@@ -1,0 +1,81 @@
+== 12:13:36 (default folders, no JETCARP_*) host start; wallpaper on; rotation 'Classics, hourly'
+running, pid 14294, up 0.0s, 99 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 486 · 14400 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+wallpaper: showing
+screen 0: Classics, hourly · profile Hodgepodge (7 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+screen 0: Classics, hourly · profile Hodgepodge (7 of 7) · generation 175 · 303455 cells of 6 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 12:13:45 host stop
+stopped
+saved: [{'monitor': None, 'rotation': 'Classics, hourly', 'place': 'wallpaper'}] still False
+== 12:13:45 host login on
+"/Users/Jimmie/jetcarp-rc-042c/bin/jetcarp" host serve --login starts at login
+exit 0
+-rw-r--r--@  1 Jimmie  staff   577 Nov 16 07:13 com.jimmieprodgers.jetcarp.host.plist
+== /Users/Jimmie/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+{
+  "Label" => "com.jimmieprodgers.jetcarp.host"
+  "ProcessType" => "Interactive"
+  "ProgramArguments" => [
+    0 => "/Users/Jimmie/jetcarp-rc-042c/bin/jetcarp"
+    1 => "host"
+    2 => "serve"
+    3 => "--login"
+  ]
+  "RunAtLoad" => true
+}
+== 12:15:54 after the logout and login
+running, pid 15357, up 40.0s, 114 MB, GPU Apple M2 Max
+screen 0: Classics, hourly · profile Hodgepodge (7 of 7) · generation 1180 · 303455 cells of 6 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+15357 /Users/Jimmie/jetcarp-rc-042c/bin/jetcarp host serve --login
+pid 15357 started Mon Nov 16 07:15:14 2026     parent 1 (/sbin/launchd)
+last login:
+Jimmie     ttys000                         Mon Nov 16 07:15   still logged in
+Jimmie     console                         Mon Nov 16 07:15   still logged in
+Jimmie     ttys000                         Sat Nov 14 19:58 - 19:58  (00:00)
+Jimmie     console                         Sat Nov 14 19:58 - 07:14 (1+11:16)
+Jimmie     ttys002                         Fri Nov 13 18:37 - 18:37  (00:00)
+	state = running
+	program = /Users/Jimmie/jetcarp-rc-042c/bin/jetcarp
+	pid = 15357
+	last exit code = (never exited)
+	pid-local endpoints = {
+console owner changed (login) 07:15:15 local; the host started 07:15:14
+== 12:16:28 host login off
+the host no longer starts at login
+no JETCARP LaunchAgent
+gui/502/com.jimmieprodgers.jetcarp.host = {
+== host stop
+stopped
+no host process
+== the everyday settings folder before restoring:
+total 64
+drwxr-xr-x@  9 Jimmie  staff   288 Nov 16 07:13 .
+drwx------+ 47 Jimmie  staff  1504 Nov 13 09:23 ..
+-rw-r--r--   1 Jimmie  staff  4467 Nov 15 14:24 app.json
+drwxr-xr-x@  7 Jimmie  staff   224 Nov 13 18:34 data
+-rw-r--r--@  1 Jimmie  staff   191 Nov 16 07:13 gpu-checks.json
+-rw-r--r--@  1 Jimmie  staff    53 Nov 16 07:15 host-program
+-rw-r--r--@  1 Jimmie  staff   637 Nov 16 07:13 host.json
+-rw-r--r--@  1 Jimmie  staff   362 Nov 13 07:54 setup.json
+-rw-r--r--@  1 Jimmie  staff  5523 Nov 16 07:12 wallpaper-store-before-saver-remove.plist
+launchd after host login off: the job stayed loaded (state not running, last exit 0, its plist gone); unloaded with launchctl bootout
+Bad request.
+removed from the everyday folder: gpu-checks.json, host.json, wallpaper-store-before-saver-remove.plist; host-program restored from the backup
+== after restoring:
+total 32
+drwxr-xr-x@  6 Jimmie  staff   192 Nov 16 07:16 .
+drwx------+ 47 Jimmie  staff  1504 Nov 13 09:23 ..
+-rw-r--r--   1 Jimmie  staff  4467 Nov 15 14:24 app.json
+drwxr-xr-x@  7 Jimmie  staff   224 Nov 13 18:34 data
+-rw-r--r--@  1 Jimmie  staff    37 Nov 13 09:19 host-program
+-rw-r--r--@  1 Jimmie  staff   362 Nov 13 07:54 setup.json
+app.json matches the backup
+setup.json matches the backup
+host-program matches the backup
+data files newer than the backup: 5 (library.sqlite last modified Nov 15 19:09:08 2026)
+Homebrew's: jetcarp 0.4.1, host: Error: the JETCARP background host is not running
+wallpaper store: the same choices as before M-4
+screen savers installed: 0

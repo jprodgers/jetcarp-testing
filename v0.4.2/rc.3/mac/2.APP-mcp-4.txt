@@ -1,0 +1,27 @@
+03:36:40 start: server jetcarp 0.4.2-rc.3; every 5.0 s for 1500.0 s
+03:37:53 gen 0 rate -/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 185 MB footprint 122 MB
+03:37:53 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 172 MB footprint 119 MB
+03:37:58 gen 0 rate 0.0/s cells 9600 playing False tiling square rules '' pop 0 scene '' sim '' rss 172 MB footprint 111 MB
+03:38:04 gen 42 rate 8.4/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 12079 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 178 MB footprint 135 MB
+03:38:08 gen 99 rate 11.4/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 12559 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 135 MB
+03:38:13 gen 174 rate 15.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13296 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 178 MB footprint 135 MB
+03:38:36 gen 230 rate 11.2/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13415 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 178 MB footprint 135 MB
+03:38:36 gen 235 rate 0.3/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13534 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 135 MB
+03:39:34 gen 284 rate 9.8/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13470 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 178 MB footprint 135 MB
+03:39:35 gen 289 rate 0.1/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13640 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 136 MB
+03:39:40 gen 364 rate 15.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13726 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 136 MB
+03:39:45 gen 439 rate 15.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13848 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 136 MB
+03:44:50 parse error: KeyError('result'): {'error': {'code': -32603, 'message': 'the JETCARP app did not answer in time (is its window open and not minimised?)'}, 'id': 23, 'jsonrpc': '2.0'}
+03:49:50 parse error: KeyError('result'): {'error': {'code': -32603, 'message': 'the JETCARP app did not answer in time (is its window open and not minimised?)'}, 'id': 24, 'jsonrpc': '2.0'}
+03:54:50 parse error: KeyError('result'): {'error': {'code': -32603, 'message': 'the JETCARP app did not answer in time (is its window open and not minimised?)'}, 'id': 25, 'jsonrpc': '2.0'}
+03:59:50 parse error: KeyError('result'): {'error': {'code': -32603, 'message': 'the JETCARP app did not answer in time (is its window open and not minimised?)'}, 'id': 26, 'jsonrpc': '2.0'}
+04:00:45 gen 449 rate 0.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13809 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 178 MB footprint 137 MB
+04:00:45 gen 453 rate 0.1/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 14042 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 137 MB
+04:00:50 gen 529 rate 15.2/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 13907 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 135 MB
+04:00:55 gen 604 rate 15.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 14369 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 180 MB footprint 136 MB
+04:01:00 gen 679 rate 15.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 14309 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 179 MB footprint 136 MB
+04:01:27 gen 707 rate 5.6/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 14268 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 190 MB footprint 135 MB
+04:01:27 gen 711 rate 0.2/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 14487 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 191 MB footprint 136 MB
+04:01:32 gen 786 rate 15.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 14443 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 191 MB footprint 136 MB
+04:01:37 gen 861 rate 15.0/s cells 23868 playing True tiling periodic rules 'JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1' pop 14489 scene 'JACA thick glowing ropes (2-uniform)' sim '' rss 191 MB footprint 137 MB
+04:01:42 end; mcp exit 0; stderr: jetcarp mcp: connected to the JETCARP app on port 47811

@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Globe",
+  "description": "An expanding range-8 rule. (Mirek Wójtowicz)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 288,
+        "h": 192
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "2767370270529703455",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Globe",
+      "rule": "R8,C2,S163-223,B74-252",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "random": {
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "625af0382cca53d8",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

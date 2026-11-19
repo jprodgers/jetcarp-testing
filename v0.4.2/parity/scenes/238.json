@@ -1,0 +1,45 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA thick glowing ropes (2-uniform)",
+  "description": "B123 with blast 1: the fronts thicken into glowing ropes. Found by a JACA rule search.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k2-001"
+    },
+    "size": {
+      "rect": {
+        "w": 51,
+        "h": 39
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 29,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1",
+      "rule": "JACA +B123/S0,1,3,4,6,11 -B123/S01346 blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Phosphor",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "75696980e2b138c4",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

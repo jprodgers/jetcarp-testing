@@ -1,0 +1,36 @@
+﻿scene:      C:\Users\jimmi\jetcarp-rc-042b\phase2\2.9\soup-6dd55e69.json
+tiling:     Square (parallelogram) (square): 1048576 cells, 1024x1024 unit cells, 1 tile type(s), storage dense, edges dead
+generation: 400  hash cbefcb15878300dd
+rule:       B3/S23 (CA 1, field 0), 150 live cells
+objects:    19 (still lifes 11, oscillators 2, spaceships 2, other 4), 8 symmetries, periods up to 64
+census:     beehive x 5, block x 5, other (grows) x 3, blinker (p2) x 2, glider (c/4) x 2, loaf x 1, other (unsettled) x 1
+
+ count  class       period  cells  key       name
+     5  still life       1      6  8aee82b1  beehive
+     5  still life       1      4  a8307012  block
+     3  other            -     16            other (grows)
+     2  oscillator       2      3  9c85980f  blinker (p2)
+     2  spaceship        4      5  5a080db3  glider (c/4), c/4 diagonal
+     1  still life       1      7  0c224d06  loaf
+     1  other            -     35            other (unsettled)
+
+#0     glider                       cells    5  centroid (520.9, 466.3)  ooo/o/.o
+#1     other (grows)                cells   16  centroid (513.2, 485.5)  
+#2     loaf                         cells    7  centroid (496.2, 487.2)  .oo/o..o/o.o/.o
+#3     beehive                      cells    6  centroid (530.0, 489.5)  .oo/o..o/.oo
+#4     blinker                      cells    3  centroid (498.5, 493.5)  ooo
+#5     blinker                      cells    3  centroid (533.5, 495.5)  ooo
+#6     other (grows)                cells   16  centroid (494.9, 500.6)  
+#7     other (unsettled)            cells   35  centroid (511.6, 503.2)  
+#8     block                        cells    4  centroid (537.0, 499.0)  oo/oo
+#9     block                        cells    4  centroid (529.0, 500.0)  oo/oo
+#10    block                        cells    4  centroid (527.0, 507.0)  oo/oo
+#11    beehive                      cells    6  centroid (506.0, 511.5)  .oo/o..o/.oo
+#12    beehive                      cells    6  centroid (537.0, 511.5)  .oo/o..o/.oo
+#13    block                        cells    4  centroid (529.0, 512.0)  oo/oo
+#14    glider                       cells    5  centroid (486.1, 513.7)  ooo/o/.o
+#15    block                        cells    4  centroid (515.0, 513.0)  oo/oo
+#16    other (grows)                cells   10  centroid (508.9, 518.6)  
+#17    beehive                      cells    6  centroid (530.5, 526.0)  .oo/o..o/.oo
+#18    beehive                      cells    6  centroid (507.0, 527.5)  .oo/o..o/.oo
+time:       0.19s on 12 threads

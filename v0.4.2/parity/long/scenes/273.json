@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA striped stone eaten (3.6.3.6)",
+  "description": "Halves of two rules: the striped still side is eaten by the noise. Found by a JACA rule search.",
+  "tiling": {
+    "family": "trihex",
+    "size": {
+      "rect": {
+        "w": 102,
+        "h": 79
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 25,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B2,3,8,10/S01239 -B23/S47",
+      "rule": "JACA +B2,3,8,10/S01239 -B23/S47",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Aurora",
+      "seed": {
+        "halves": {
+          "density": 0.3
+        }
+      },
+      "palette_neg": "Lava"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "93d65880ca23ce68",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

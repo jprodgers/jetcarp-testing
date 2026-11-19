@@ -1,0 +1,10 @@
+Start the host at login, or stop doing that
+
+Usage: jetcarp.exe host login [OPTIONS] <STATE>
+
+Arguments:
+  <STATE>  [possible values: on, off]
+
+Options:
+      --json  Print the host's reply as JSON
+  -h, --help  Print help

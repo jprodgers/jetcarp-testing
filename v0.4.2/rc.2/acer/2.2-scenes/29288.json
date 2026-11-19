@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 29288: JACA B12/S1234 blast 3",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k5-271"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "50193699411542789",
+  "cas": [
+    {
+      "rule": "JACA B12/S1234 blast 3",
+      "neighborhood": "edge",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "voronoi",
+            "sites": 60,
+            "keep": 0.54
+          },
+          "fill": {
+            "density": 0.5,
+            "states": {
+              "signed": {
+                "negative": 0.5
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

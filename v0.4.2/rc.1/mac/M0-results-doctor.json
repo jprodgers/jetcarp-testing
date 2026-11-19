@@ -1,0 +1,103 @@
+{
+  "arch": "aarch64",
+  "desktop": {
+    "gnome_extension": null,
+    "host_running": false,
+    "screen_saver": "JETCARP's screen saver is not installed.",
+    "starts_at_login": false
+  },
+  "environment": [
+    [
+      "JETCARP_CONFIG_DIR",
+      "/Users/Jimmie/jetcarp-rc-042/config"
+    ],
+    [
+      "JETCARP_DATA_DIR",
+      "/Users/Jimmie/jetcarp-rc-042/data"
+    ],
+    [
+      "JETCARP_OUT",
+      "/Users/Jimmie/jetcarp-rc-042/out"
+    ]
+  ],
+  "folders": {
+    "bundled_packs": "/Users/Jimmie/jetcarp-rc-042/bin/packs",
+    "bundled_packs_bytes": 1530976,
+    "bundled_packs_searched": [
+      "/Users/Jimmie/jetcarp-rc-042/share/jetcarp/packs",
+      "/Users/Jimmie/jetcarp-rc-042/bin/packs"
+    ],
+    "data": "/Users/Jimmie/jetcarp-rc-042/data",
+    "data_chosen_missing": false,
+    "data_size_bytes": 0,
+    "library": "/Users/Jimmie/jetcarp-rc-042/data/library.sqlite",
+    "library_exists": false,
+    "output": "/Users/Jimmie/jetcarp-rc-042/out",
+    "settings": "/Users/Jimmie/jetcarp-rc-042/config"
+  },
+  "gpu": [
+    {
+      "backend": "Metal",
+      "chosen": true,
+      "driver": "",
+      "kind": "IntegratedGpu",
+      "name": "Apple M2 Max",
+      "problem": null
+    }
+  ],
+  "gpu_policy": {
+    "adapter": null,
+    "choices": [
+      {
+        "adapter": "Apple M2 Max, Metal",
+        "kind": "integrated",
+        "limits": "29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers",
+        "problem": null,
+        "purpose": "display",
+        "self_test": {
+          "cached": true,
+          "millis": 194,
+          "note": "53 world rules and 33 explore batches matched the CPU",
+          "passed": true
+        },
+        "why": "the adapter driving the screen (automatic)"
+      },
+      {
+        "adapter": "Apple M2 Max, Metal",
+        "kind": "integrated",
+        "limits": "29 storage buffers per stage, 4 GiB storage bindings, 4 GiB buffers",
+        "problem": null,
+        "purpose": "compute",
+        "self_test": {
+          "cached": true,
+          "millis": 194,
+          "note": "53 world rules and 33 explore batches matched the CPU",
+          "passed": true
+        },
+        "why": "the fastest adapter (automatic)"
+      }
+    ],
+    "mode": "auto",
+    "note": null,
+    "programs": [
+      {
+        "choice": "follow",
+        "from": "automatic",
+        "mode": "auto",
+        "name": "the app"
+      },
+      {
+        "choice": "follow",
+        "from": "automatic",
+        "mode": "auto",
+        "name": "the desktop background"
+      }
+    ],
+    "setting_file": "/Users/Jimmie/jetcarp-rc-042/config/gpu.json",
+    "source": "auto",
+    "summary": "auto (automatic)"
+  },
+  "os": "macos",
+  "threads": 12,
+  "version": "0.4.2-rc.1"
+}

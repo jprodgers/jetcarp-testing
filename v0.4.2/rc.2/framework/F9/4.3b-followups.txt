@@ -1,0 +1,85 @@
+== world_new {"tiling": "square", "width": "40", "height": "20", "boundary": "dead", "cas": [{"rule": "Life", "seed": "empty"}]} -> isError=False
+   New world created.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 800,
+     "cells_hash": "14d5bceae7b5b1a5",
+     "done": "empty",
+     "fields": [
+       {
+         "ca_ids": [
+           1
+         ],
+         "field": 0,
+         "kind": "binary",
+         "max_state": 1,
+         "population": 0,
+         "shared": true
+    
+== world_edit {"cells": {"cells": [[1000, 1000]]}} -> isError=True
+   cell (1000, 1000) is outside the grid (x 0..39, y 0..19)
+== world_edit {"cells": {"cells": [[-1, -1]]}} -> isError=True
+   cell (-1, -1) is outside the grid (x 0..39, y 0..19)
+== world_edit {"cells": {"pattern": "OOO", "x": 39, "y": 19}} -> isError=True
+   cell (40, 19) is outside the grid (x 0..39, y 0..19)
+== world_read {"format": "list"} -> isError=False
+   CA 'Life' (id 1, B3/S23), field 0, generation 0.
+   Grid 40 x 20. Non-empty cells in the whole field: 0.
+   The field is empty.
+   
+== world_read {"cell": {"x": 1000, "y": 1000}} -> isError=True
+   cell (1000, 1000) is outside the grid (x 0..39, y 0..19)
+== world_read {"cell": {"x": -5, "y": 3}} -> isError=True
+   cell (-5, 3) is outside the grid (x 0..39, y 0..19)
+== world_read {"cell": {"index": 99999}} -> isError=True
+   index must be 0 to 799
+== world_read {"x": 500, "y": 500, "width": 10, "height": 10} -> isError=True
+   x, y must be inside the grid (0..39, 0..19)
+== world_step {"generations": "5"} -> isError=False
+   Ran 5 generation(s) in 0.00s.
+   Generation 5. Status: Empty: every cell is dead (died out by generation 2). Hash 8347ea2bc35c6f45 (with generation and ages); cells hash 14d5bceae7b5b1a5 (cell states only: equal when the cells repeat).
+   field 0 [Life (id 1)]: 0 live
+   The world has died out: nothing will change from here. Some rules die out on some tilings from any random start (other seeds usually behave the same). If the task asked for this run, report that it died out; otherwise try another rule, t
+== world_status {"scene": "true"} -> isError=False
+   {
+     "jetcarp_version": "0.4.2-rc.2",
+     "format": 1,
+     "tiling": {
+       "family": "square",
+       "size": {
+         "rect": {
+           "w": 40,
+           "h": 20
+         }
+       },
+       "boundary": "dead"
+     },
+     "rng_state": 1,
+     "cas": [
+       {
+         "id": 1,
+         "name": "Life",
+         "rule": "B3/S23",
+         "neighborhood": "touch",
+         "enabled": true,
+         "affects_others": true,
+         "steps_per_gen": 1,
+         "palette": "Ember",
+         "seed": "empty"
+       }
+     ],
+     "commands": [
+       {
+         "op": "step

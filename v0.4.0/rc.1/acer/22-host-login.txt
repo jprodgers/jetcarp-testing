@@ -1,0 +1,48 @@
+Claude Code's auto mode refused to let the session run `jetcarp host login on` (it adds an autostart entry),
+so Jimmie ran it himself in a new PowerShell window:
+
+> jetcarp host login on
+"C:\Users\jimmi\AppData\Local\Programs\jetcarp\jetcarpw.exe" host serve starts at login
+
+What it created (checked afterwards):
+  HKCU\Software\Microsoft\Windows\CurrentVersion\Run: JETCARP = "C:\Users\jimmi\AppData\Local\Programs\jetcarp\jetcarpw.exe" host serve
+  (no StartupApproved entry, nothing in the Startup folder, no scheduled task)
+
+> jetcarp host status
+Error: the JETCARP background host is not running
+(exit 1)        <- login on doesn't start the host now; that's fine
+
+> jetcarp doctor   (Desktop section)
+  background host: not running
+  starts at login: yes
+  JETCARP's screen saver is not installed.
+
+The live wallpaper is off (A3 step 7), so after sign-in the host runs with no live picture.
+
+=== After the reboots (00:33)
+Jimmie rebooted instead of signing out (it was due anyway). He saw no JETCARP console window (a window that flashed was another program's).
+First boot: the host started, but its screens opened as ordinary windows, because `host wallpaper off` in A3 step 7 had saved
+"place" as a window for both screens; Jimmie switched them back to the desktop by hand. Second boot (00:27:53): the host
+started at 00:29:04 as wallpaper, as saved (host.json written 00:27:05: both screens "place": "wallpaper").
+
+Processes: jetcarpw.exe(17844) parent explorer.exe, cmdline "...\jetcarpw.exe" host serve -> jetcarp.exe(18784) host serve
+
+> jetcarp host status   (00:33:06)
+running, pid 18784, up 243.0s, 286 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 6659 · 230400 cells
+screen 1: Classics, hourly · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 6612 · 921600 cells
+monitors: 0: \.\DISPLAY1, 1: \.\DISPLAY5
+wallpaper: showing
+
+> jetcarp host login off
+the host no longer starts at login
+(exit 0)  Run\JETCARP gone; the other Run entries as before A3; doctor: starts at login: no; the host keeps running
+
+> jetcarp host stop   (00:33:57)
+stopped
+(exit 0)
+> jetcarp host status
+Error: the JETCARP background host is not running
+(exit 1)
+jetcarp processes: INFO: No tasks are running which match the specified criteria.
+wallpaper registry: c:\windows\web\wallpaper\themea\img20.jpg

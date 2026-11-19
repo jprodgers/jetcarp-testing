@@ -1,0 +1,19 @@
+﻿scene:      C:\Users\jimmi\jetcarp-rc-042b\phase2\2.9\soup-484e9fe1.json
+tiling:     Square (parallelogram) (square): 24336 cells, 156x156 unit cells, 1 tile type(s), storage dense, edges dead
+generation: 400  hash fc0bf5a233c83037
+rule:       B2/S34 (CA 1, field 0), 7945 live cells
+objects:    5 (still lifes 0, oscillators 1, spaceships 0, other 4), 8 symmetries, periods up to 64
+census:     other (dies) x 2, other (grows) x 1, other (unsettled) x 1, p2 oscillator 2c #2b5bc4 x 1
+
+ count  class       period  cells  key       name
+     2  other            -      1            other (dies)
+     1  other            -   7939            other (grows)
+     1  other            -      2            other (unsettled)
+     1  oscillator       2      2  2b5bc42b  p2 oscillator 2c #2b5bc4
+
+#0     other (grows)                cells 7939  centroid (77.7, 77.1)  
+#1     other (unsettled)            cells    2  centroid (1.0, 150.5)  
+#2     p2 oscillator 2c #2b5bc4     cells    2  centroid (4.0, 155.0)  o/.o
+#3     other (dies)                 cells    1  centroid (7.5, 154.5)  
+#4     other (dies)                 cells    1  centroid (126.5, 155.5)  
+time:       0.51s on 12 threads

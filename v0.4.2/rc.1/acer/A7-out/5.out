@@ -1,0 +1,4 @@
+hunt 6 is paused
+  hunt 6: 0/2,000,000 soups, 0 soups/s, 0 objects (), 0 distinct, 0 new
+  note: memory 0.2 GB is over the cap of 0.05 GB
+  `jetcarp jobs resume 6` resumes it exactly

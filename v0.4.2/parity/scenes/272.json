@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA noise eats the stone (IH41)",
+  "description": "Halves of two rules: a noisy side eats the still, glowing strip. Found by a JACA rule search.",
+  "tiling": {
+    "family": "ih41",
+    "size": {
+      "rect": {
+        "w": 190,
+        "h": 126
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 26,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B25/S14568 -B257/S245678",
+      "rule": "JACA +B25/S14568 -B257/S245678",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "halves": {
+          "density": 0.3
+        }
+      },
+      "palette_neg": "Koi"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "a686c35de38bbd97",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

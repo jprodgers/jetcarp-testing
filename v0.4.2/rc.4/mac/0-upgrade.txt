@@ -1,0 +1,302 @@
+# rc.3 back in place, the way a tester has it: its installer, the default folders, the desktop on, start at login on
+$ sh ./jetcarp-installer.sh   [21:59:26]
+jetcarp-installer: getting JETCARP 0.4.2-rc.3 for aarch64-apple-darwin from https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.3
+jetcarp-installer: checked jetcarp-0.4.2-rc.3-aarch64-apple-darwin.tar.gz against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.3 in ~/.local/lib/jetcarp
+jetcarp-installer: linked ~/.local/bin/jetcarp
+jetcarp-installer: the starter pack is in ~/.local/lib/jetcarp/packs
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine
+exit 0
+
+$ which jetcarp   [21:59:28]
+~/.local/bin/jetcarp
+exit 0
+
+$ jetcarp --version   [21:59:28]
+jetcarp 0.4.2-rc.3
+exit 0
+
+$ jetcarp host wallpaper on   [21:59:28]
+saved; the host is not running
+exit 0
+
+$ jetcarp host start   [21:59:28]
+running, pid 72762, up 0.0s, 92 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+
+$ jetcarp host login on   [21:59:36]
+"~/.local/bin/jetcarp" host serve --login starts at login
+exit 0
+
+$ jetcarp host status   [21:59:39]
+running, pid 72762, up 11.0s, 112 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 2655 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+
+$ launchctl print gui/502/com.jimmieprodgers.jetcarp.host   [21:59:39]
+Bad request.
+Could not find service "com.jimmieprodgers.jetcarp.host" in domain for user gui: 502
+exit 113
+
+# after logout 1 (Jimmie logged out and back in)
+$ sh -c last -3 Jimmie | head -3   [22:03:37]
+Jimmie     ttys002                         Mon Nov 16 22:01   still logged in
+Jimmie     ttys000                         Mon Nov 16 22:01   still logged in
+Jimmie     console                         Mon Nov 16 22:01   still logged in
+exit 0
+
+$ jetcarp host status   [22:03:37]
+running, pid 73665, up 111.0s, 111 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 26436 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+
+$ sh -c ps -axo pid,ppid,lstart,command | grep "[j]etcarp host serve"   [22:03:37]
+73665     1 Mon Nov 16 22:01:46 2026     ~/.local/bin/jetcarp host serve --login
+exit 0
+
+$ sh -c launchctl print gui/502/com.jimmieprodgers.jetcarp.host | grep -E 'state|pid|program|arguments|last exit|LWCR|runs'    [22:03:37]
+	state = running
+	program = ~/.local/bin/jetcarp
+	arguments = {
+	LWCR = {
+	runs = 1
+	pid = 73665
+	last exit code = (never exited)
+	pid-local endpoints = {
+		state = active
+		state = active
+	job state = running
+	properties = runatload | inferred program | managed LWCR | has LWCR
+exit 0
+
+$ sh -c ls -t ~/Library/Logs/DiagnosticReports/ | grep -i jetcarp | head -3   [22:03:37]
+jetcarp-2026-11-16-083330.ips
+exit 0
+
+# the upgrade: rc.4's installer over rc.3's
+$ sh ./jetcarp-installer.sh   [22:03:52]
+jetcarp-installer: getting JETCARP 0.4.2-rc.4 for aarch64-apple-darwin from https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.4
+jetcarp-installer: checked jetcarp-0.4.2-rc.4-aarch64-apple-darwin.tar.gz against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.2-rc.4 in ~/.local/lib/jetcarp
+jetcarp-installer: linked ~/.local/bin/jetcarp
+jetcarp-installer: the starter pack is in ~/.local/lib/jetcarp/packs
+jetcarp-installer: start JETCARP with `jetcarp`; `jetcarp doctor` shows what it sees on this machine
+exit 0
+
+$ jetcarp --version   [22:03:54]
+jetcarp 0.4.2-rc.4
+exit 0
+
+$ cat ~/.local/lib/jetcarp/.jetcarp-installer   [22:03:54]
+JETCARP 0.4.2-rc.4 aarch64-apple-darwin
+made ~/.local/lib
+exit 0
+
+$ jetcarp host status   [22:03:54]
+running, pid 73665, up 128.0s, 111 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 30532 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+
+$ sh -c ps -axo pid,ppid,lstart,command | grep "[j]etcarp host serve"   [22:03:54]
+73665     1 Mon Nov 16 22:01:46 2026     ~/.local/bin/jetcarp host serve --login
+73908 73377 Mon Nov 16 22:03:52 2026     /bin/zsh -c source ~/.claude/shell-snapshots/snapshot-zsh-1794884617124-4vrzyg.sh 2>/dev/null || true && \builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \builtin unalias -- 'which'; \builtin unset -f -- 'which'; } >/dev/null 2>&1 || true && { \builtin unalias -- 'unsetenv'; \builtin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && eval 'O=~/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc4/mac/0-upgrade.txt; run() { echo "\$ $*   [$(date +%T)]" >> $O; "$@" >> $O 2>&1; echo "exit $?" >> $O; echo >> $O; }; echo "# the upgrade: rc.4'"'"'s installer over rc.3'"'"'s" >> $O; cd ~/jetcarp-rc4/dl/rc4; run sh ./jetcarp-installer.sh; cd ~; hash -r; run jetcarp --version; run cat ~/.local/lib/jetcarp/.jetcarp-installer; run jetcarp host status; run sh -c '"'"'ps -axo pid,ppid,lstart,command | grep "[j]etcarp host serve"'"'"'; run sh -c '"'"'lsof -p $(pgrep -f "jetcarp host serve" | head -1) 2>/dev/null | awk "\$4==\"txt\"" | head -1'"'"'; run sh -c "launchctl print gui/$UID/com.jimmieprodgers.jetcarp.host | grep -E '"'"'job state|pid =|properties'"'"'"; run sh -c '"'"'ls ~/Library/Application\ Support/jetcarp/'"'"'; awk '"'"'/^# the upgrade/{p=1} p'"'"' $O | sed "s|$HOME|~|g" | grep -v '"'"'^\s*$'"'"' | cut -c1-220' < /dev/null && pwd -P >| /tmp/claude-67c7-cwd
+exit 0
+
+$ sh -c lsof -p $(pgrep -f "jetcarp host serve" | head -1) 2>/dev/null | awk "\$4==\"txt\"" | head -1   [22:03:54]
+jetcarp 73665 Jimmie  txt    REG               1,14  62344592             4477680 ~/.local/lib/jetcarp.old.73910/jetcarp
+exit 0
+
+$ sh -c launchctl print gui/502/com.jimmieprodgers.jetcarp.host | grep -E 'job state|pid =|properties'   [22:03:54]
+	pid = 73665
+	jetsamproperties category = daemon
+	job state = running
+	properties = runatload | inferred program | managed LWCR | has LWCR
+exit 0
+
+$ sh -c ls ~/Library/Application\ Support/jetcarp/   [22:03:54]
+host-program
+host.json
+exit 0
+
+# rc.3's login item before the app opens
+$ cat ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jimmieprodgers.jetcarp.host</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>~/.local/bin/jetcarp</string>
+        <string>host</string>
+        <string>serve</string>
+        <string>--login</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+</dict>
+</plist>
+
+# the app opened once (`jetcarp`, its stderr in 0-app-first.log), Jimmie at the window   [22:04:14]
+$ jetcarp host status   [22:04:24]
+running, pid 74008, up 10.0s, 149 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal · held
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+waiting: the photosensitive seizure warning has not been accepted (open the JETCARP app, or run `jetcarp setup`, to read and answer it); the scenes start once it has been
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+
+$ sh -c ps -axo pid,ppid,lstart,command | grep "[j]etcarp host serve"   [22:04:24]
+74008     1 Mon Nov 16 22:04:14 2026     ~/.local/bin/jetcarp host serve --login
+exit 0
+
+$ sh -c launchctl print gui/502/com.jimmieprodgers.jetcarp.host | grep -E 'job state|pid =|runs|last exit|properties'   [22:04:24]
+	runs = 1
+	pid = 74008
+	last exit code = (never exited)
+	jetsamproperties category = daemon
+	job state = running
+	properties = runatload | inferred program
+exit 0
+
+$ ls ~/Library/Application Support/jetcarp/   [22:04:24]
+host-program
+host.json
+exit 0
+
+# Jimmie answered the warning in the app (no disorder), went through setup, quit the app (Cmd-Q): "desktop is animating now"
+$ cat ~/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc4/mac/0-app-first.log   [22:08:17]
+JETCARP: registered the login item with launchd, for JETCARP 0.4.2-rc.4
+exit 0
+
+$ jetcarp host status   [22:08:17]
+running, pid 74008, up 243.0s, 210 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 37528 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+note: the photosensitive seizure warning has been accepted; the scenes run
+exit 0
+
+$ sh -c ps -axo pid,ppid,lstart,command | grep "[j]etcarp"   [22:08:17]
+74008     1 Mon Nov 16 22:04:14 2026     ~/.local/bin/jetcarp host serve --login
+74164 73377 Mon Nov 16 22:08:17 2026     /bin/zsh -c source ~/.claude/shell-snapshots/snapshot-zsh-1794884617124-4vrzyg.sh 2>/dev/null || true && \builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \builtin unalias -- 'which'; \builtin unset -f -- 'which'; } >/dev/null 2>&1 || true && { \builtin unalias -- 'unsetenv'; \builtin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && eval 'O=~/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc4/mac/0-upgrade.txt; run() { echo "\$ $*   [$(date +%T)]" >> $O; "$@" >> $O 2>&1; echo "exit $?" >> $O; echo >> $O; }; echo "# Jimmie answered the warning in the app (no disorder), went through setup, quit the app (Cmd-Q): \"desktop is animating now\"" >> $O; run cat ~/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc4/mac/0-app-first.log; run jetcarp host status; run sh -c '"'"'ps -axo pid,ppid,lstart,command | grep "[j]etcarp"'"'"'; run ls -la ~/Library/Application\ Support/jetcarp/; run cat ~/Library/Application\ Support/jetcarp/photosensitivity.json; run jetcarp setup --status; run sh -c '"'"'grep -n "Registered" ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist; plutil -lint ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist'"'"'; awk '"'"'/Jimmie answered the warning/{p=1} p'"'"' $O | sed "s|$HOME|~|g" | grep -v '"'"'^\s*$'"'"' | cut -c1-230' < /dev/null && pwd -P >| /tmp/claude-9370-cwd
+exit 0
+
+$ ls -la ~/Library/Application Support/jetcarp/   [22:08:17]
+total 56
+drwxr-xr-x@  8 Jimmie  staff   256 Nov 16 22:05 .
+drwx------+ 47 Jimmie  staff  1504 Nov 16 21:59 ..
+-rw-r--r--@  1 Jimmie  staff  4443 Nov 16 22:05 app.json
+-rw-r--r--@  1 Jimmie  staff   191 Nov 16 22:05 gpu-checks.json
+-rw-r--r--@  1 Jimmie  staff    44 Nov 16 22:04 host-program
+-rw-r--r--@  1 Jimmie  staff   624 Nov 16 21:59 host.json
+-rw-r--r--@  1 Jimmie  staff   123 Nov 16 22:05 photosensitivity.json
+-rw-r--r--@  1 Jimmie  staff   324 Nov 16 22:05 setup.json
+exit 0
+
+$ cat ~/Library/Application Support/jetcarp/photosensitivity.json   [22:08:17]
+{
+  "version": 1,
+  "answer": "no_disorder",
+  "date": "2026-11-17T03:05:39Z",
+  "jetcarp": "0.4.2-rc.4",
+  "via": "app"
+}
+exit 0
+
+$ jetcarp setup --status   [22:08:17]
+setup: Blank slate on 2026-11-17 03:05 UTC (JETCARP 0.4.2-rc.4)
+  settings: ~/Library/Application Support/jetcarp
+  data:     ~/Library/Application Support/jetcarp/data, 805.2 GB free
+  library:  ~/Library/Application Support/jetcarp/data/library.sqlite
+  output:   ~/Pictures/JETCARP
+  bundled:  ~/.local/lib/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+exit 0
+
+$ sh -c grep -n "Registered" ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist; plutil -lint ~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist   [22:08:17]
+5:    <!-- Registered with launchd by JETCARP 0.4.2-rc.4 -->
+~/Library/LaunchAgents/com.jimmieprodgers.jetcarp.host.plist: OK
+exit 0
+
+# after logout 2 (Jimmie logged out and back in; the app closed)
+$ sh -c last -2 Jimmie | head -2   [22:13:09]
+Jimmie     console                         Mon Nov 16 22:09   still logged in
+Jimmie     ttys002                         Mon Nov 16 22:01 - 22:01  (00:00)
+exit 0
+
+$ jetcarp host status   [22:13:09]
+running, pid 74565, up 213.0s, 210 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 50384 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (automatic)
+exit 0
+
+$ sh -c ps -axo pid,ppid,lstart,command | grep "[j]etcarp host serve"   [22:13:09]
+74565     1 Mon Nov 16 22:09:36 2026     ~/.local/bin/jetcarp host serve --login
+exit 0
+
+$ sh -c launchctl print gui/502/com.jimmieprodgers.jetcarp.host | grep -E 'job state|state =|pid =|runs|last exit|properties|reason'   [22:13:09]
+	state = running
+	runs = 1
+	pid = 74565
+	immediate reason = speculative
+	checked allocations reason = no host
+	last exit code = (never exited)
+		state = active
+		state = active
+	jetsamproperties category = daemon
+	job state = running
+	properties = runatload | inferred program | managed LWCR | has LWCR
+exit 0
+
+$ sh -c ls -t ~/Library/Logs/DiagnosticReports/ | grep -i jetcarp | head -3   [22:13:09]
+jetcarp-2026-11-16-083330.ips
+exit 0
+
+$ sh -c log show --last 10m --predicate "eventMessage CONTAINS \"jetcarp\" AND (eventMessage CONTAINS \"CODESIGN\" OR eventMessage CONTAINS \"Constraint\")" 2>/dev/null | tail -5   [22:13:09]
+Timestamp                       Thread     Type        Activity             PID    TTL  
+2026-11-16 22:13:09.815475-0500 0x2a2340   Default     0x0                  75085  0    log: [com.apple.log:] log run noninteractively, parent: 75084 (bash), args: 'log' 'show' '--last' '10m' '--predicate' 'eventMessage CONTAINS "jetcarp" AND (eventMessage CONTAINS "CODESIGN" OR eventMessage CONTAINS "Constraint")'
+exit 0
+

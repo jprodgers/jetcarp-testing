@@ -1,0 +1,37 @@
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/2.10/framework/library.sqlite",
+  "jobs": [
+    {
+      "created": "2026-11-16T07:21:58Z",
+      "done": 0,
+      "here": false,
+      "job": 2,
+      "kind": "hunt",
+      "kind_label": "Hunt",
+      "label": null,
+      "line": "hunt 2: imported from pack rc.2 test, Framework (its finds came with the pack; nothing ran here)",
+      "stale": false,
+      "status": "done",
+      "title": "",
+      "total": null,
+      "unit": "soups",
+      "updated": "2026-11-16T07:21:58Z"
+    },
+    {
+      "created": "2026-11-16T07:21:56Z",
+      "done": 95955,
+      "here": false,
+      "job": 1,
+      "kind": "explore",
+      "kind_label": "Explore",
+      "label": "f10",
+      "line": "explore 1: 95,955 runs (0/s), 15,668 elites in 7,905 niches (816 of them confirmed), 66 of 1,359 tilings; not run here yet",
+      "stale": false,
+      "status": "paused",
+      "title": "f10: every tiling, every family",
+      "total": null,
+      "unit": "runs",
+      "updated": "2026-11-16T07:21:58Z"
+    }
+  ]
+}

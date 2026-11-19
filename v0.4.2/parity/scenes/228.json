@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA lava worms (3.12.12)",
+  "description": "Blast 1 on the truncated hexagonal tiling: annihilations leave glowing worm trails everywhere. Found by a JACA rule search.",
+  "tiling": {
+    "family": "trunchex",
+    "size": {
+      "rect": {
+        "w": 102,
+        "h": 79
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 26,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B18/S0,3,7,11 blast 1",
+      "rule": "JACA B18/S0,3,7,11 blast 1",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Neon",
+      "seed": {
+        "signed": {
+          "density": 0.45,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Synthwave"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "3070b0b7b0bc0ee2",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

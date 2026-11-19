@@ -1,0 +1,334 @@
+PASS: in a fresh home, `host start --headless`, `host wallpaper on`, `host login on`, `host saver install` and `host serve --saver --seconds 1` are each refused, exit 1, each naming the photosensitive seizure warning with its full text; MCP host_control (wallpaper on, login on, resume, next, rotation) refused with the warning ("start" isn't an MCP action: "host not running"); nothing written by the refusals. `setup --yes --seizure-warning no-disorder` wrote photosensitivity.json (answer no_disorder, date 2026-11-17T03:06:15Z = 10:06 PM EST, jetcarp 0.4.2-rc.4, via setup); then `host start --headless` and `host stop` work.
+
+R4-1 #96 the photosensitive seizure warning, Framework, 2026-11-16 10:06:14 PM EST
+fresh home $H = homes/seizure
+
+#### Before the warning is answered
+$ ls -A $H/config; test -e $H/config/photosensitivity.json && echo present || echo 'no photosensitivity.json'
+no photosensitivity.json
+[exit 0, 0.00 s]
+
+$ $J setup --status
+setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+  settings: $H/config
+  data:     $H/data (from JETCARP_DATA_DIR), 7.0 TB free
+  library:  $H/library/library.sqlite
+  output:   $H/out
+  bundled:  $W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+[exit 0, 0.25 s]
+
+$ $J host start --headless
+Error: JETCARP won't start the background host until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.00 s]
+
+$ $J host wallpaper on
+Error: JETCARP won't show the desktop background until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.00 s]
+
+$ $J host login on
+Error: JETCARP won't start the background host at login until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.00 s]
+
+$ $J host saver install
+Error: JETCARP won't install the screen saver until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.00 s]
+
+(host serve --saver runs with DISPLAY and WAYLAND_DISPLAY unset, so that it couldn't open a full-screen window on the real desktop were it not refused; the refusal comes before any window in the code)
+$ nodisp $J host serve --saver --seconds 1
+jetcarp-host: JETCARP won't run the screen saver until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+[exit 1, 0.00 s]
+
+$ hosts
+no rc.4 host process running
+[exit 0, 0.00 s]
+
+#### Nothing was left by the refusals
+$ ls -A $H/config $H/xdg/config; ls -A $H/xdg/config/autostart 2>&1 | head -3
+$H/config:
+gpu-checks.json
+
+$H/xdg/config:
+ls: cannot access '$H/xdg/config/autostart': No such file or directory
+[exit 0, 0.00 s]
+
+#### MCP host_control (jetcarp mcp): tools/list, then the actions that start or show scenes
+(host_control has no 'start' action in its schema; it is called anyway. 'open_app' is not called: it opens the app)
+$ python3 $R/R4-scripts/mcall.py $R/R4-1-mcp.jsonl '[["host_control",{"action":"start"}],["host_control",{"action":"wallpaper","on":true}],["host_control",{"action":"login","on":true}],["host_control",{"action":"resume"}],["host_control",{"action":"next"}],["host_control",{"action":"rotation","name":"A classic a day"}],["host_control",{"action":"status"}]]' --tool-schema host_control
+initialize -> ok
+tools/list -> 21 tools: help, reference, world_new, world_status, world_read, world_edit, world_step, world_render, run_script, library_query, library_curate, search_start, job_status, job_stop, search_runs, media_render, pack, files_list, use_app, host_control, app_display
+== host_control in tools/list:
+{
+  "annotations": {
+    "destructiveHint": false,
+    "openWorldHint": false
+  },
+  "description": "Controls the JETCARP background host, which runs live scenes as wallpapers or windows without the app. Returns its status (each screen's scene, cell size and caption, and recent problems). Fails if it is not running (`jetcarp host start` starts it). Refuses scenes until the user accepts the seizure warning.",
+  "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+      "action": {
+        "description": "Default status. wallpaper: every screen on the desktop background (GNOME: with the extension) or in a window; login: start at login or not; open_app opens the app; reload rereads host.json; scene: a screen's scene.",
+        "enum": [
+          "status",
+          "next",
+          "previous",
+          "pause",
+          "resume",
+          "rotation",
+          "wallpaper",
+          "login",
+          "open_app",
+          "reload",
+          "scene",
+          "quit"
+        ],
+        "type": "string"
+      },
+      "name": {
+        "description": "With rotation: the one to run (saved).",
+        "type": "string"
+      },
+      "on": {
+        "description": "With wallpaper or login: on or off. Default on.",
+        "type": "boolean"
+      },
+      "screen": {
+        "description": "Counted from 0. Default: every screen for next and previous, else the first.",
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "type": "object"
+  },
+  "name": "host_control",
+  "title": "JETCARP background host"
+}
+== tools/call host_control {"action": "start"} -> isError=True
+   the JETCARP background host is not running
+== tools/call host_control {"action": "wallpaper", "on": true} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+   
+   PHOTOSENSITIVE SEIZURE WARNING
+   
+   JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+   
+   Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+   
+   Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+   
+   If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+   
+   To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+== tools/call host_control {"action": "login", "on": true} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+   
+   PHOTOSENSITIVE SEIZURE WARNING
+   
+   JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+   
+   Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+   
+   Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+   
+   If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+   
+   To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+== tools/call host_control {"action": "resume"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+   
+   PHOTOSENSITIVE SEIZURE WARNING
+   
+   JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+   
+   Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+   
+   Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+   
+   If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+   
+   To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+== tools/call host_control {"action": "next"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+   
+   PHOTOSENSITIVE SEIZURE WARNING
+   
+   JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+   
+   Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+   
+   Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+   
+   If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+   
+   To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+== tools/call host_control {"action": "rotation", "name": "A classic a day"} -> isError=True
+   JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.
+   
+   PHOTOSENSITIVE SEIZURE WARNING
+   
+   JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+   
+   Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+   
+   Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+   
+   If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+   
+   To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+== tools/call host_control {"action": "status"} -> isError=True
+   the JETCARP background host is not running
+server exit 0
+[exit 0, 0.24 s]
+
+#### Answer it: setup --yes --seizure-warning no-disorder (no profile: only the answer is saved)
+$ $J setup --yes --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+[exit 0, 0.01 s]
+
+$ ls -lA $H/config
+total 8
+-rw-r--r--. 1 jimmie jimmie 256 Nov 16 22:06 gpu-checks.json
+-rw-r--r--. 1 jimmie jimmie 125 Nov 16 22:06 photosensitivity.json
+[exit 0, 0.00 s]
+
+$ cat $H/config/photosensitivity.json
+{
+  "version": 1,
+  "answer": "no_disorder",
+  "date": "2026-11-17T03:06:15Z",
+  "jetcarp": "0.4.2-rc.4",
+  "via": "setup"
+}
+[exit 0, 0.00 s]
+
+$ $J setup --status | head -20
+setup: not run yet (`jetcarp setup`, or the app's setup window, runs it)
+  settings: $H/config
+  data:     $H/data (from JETCARP_DATA_DIR), 7.0 TB free
+  library:  $H/library/library.sqlite
+  output:   $H/out
+  bundled:  $W4/bin/jetcarp-0.4.2-rc.4-x86_64-unknown-linux-gnu/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+[exit 0, 0.05 s]
+
+#### Now the host starts
+$ $J host start --headless
+running, pid 2354236, up 0.0s, 93 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 28 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.22 s]
+
+$ $J host status
+running, pid 2354236, up 3.0s, 94 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 776 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: CPU: automatic, and the world is too small to be worth the GPU
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.11 s]
+
+$ hosts
+2354236 $J host serve --headless
+[exit 0, 0.01 s]
+
+$ $J host stop
+stopped
+[exit 0, 0.20 s]
+
+$ hosts
+no rc.4 host process running
+[exit 0, 0.01 s]
+
+$ $J host status
+Error: the JETCARP background host is not running
+[exit 1, 0.00 s]
+
+#### MCP host_control after the answer (no host running): the warning no longer refuses; the call reaches for the host
+$ python3 $R/R4-scripts/mcall.py $R/R4-1-mcp-after.jsonl '[["host_control",{"action":"next"}]]'
+initialize -> ok
+== tools/call host_control {"action": "next"} -> isError=True
+   the JETCARP background host is not running
+server exit 0
+[exit 0, 0.23 s]
+
+(wallpaper on, login on and saver install after the answer are not run here: the Framework's rules allow them only where a refusal is expected)

@@ -1,0 +1,61 @@
+{
+  "jetcarp_version": "0.4.2-rc.4",
+  "format": 1,
+  "name": "Life on the square grid",
+  "description": "Conway's Game of Life from a random start, on a wrapped (toroidal) grid. Colour shows how long each cell has been alive.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 256,
+        "h": 256
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "HighLife",
+      "rule": "B36/S23",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.35
+        }
+      }
+    }
+  ],
+  "commands": [
+    {
+      "op": "jump",
+      "gens": 4096
+    },
+    {
+      "op": "update_ca",
+      "id": 1,
+      "change": {
+        "rule": "B3678/S34678"
+      }
+    }
+  ],
+  "view": {
+    "center": [
+      128.0,
+      128.0
+    ],
+    "speed": 15.0,
+    "zoom": 3.25390625
+  },
+  "record": {
+    "generation": 4096,
+    "hash": "761440c0d30c5b50",
+    "jetcarp_version": "0.4.2-rc.4",
+    "dead_boundary": false
+  }
+}

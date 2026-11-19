@@ -1,0 +1,23 @@
+$ jetcarp host wallpaper off   (00:03:59)
+running, pid 6128, up 2610.0s, 133 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 57481 · 170648 cells · window
+monitors: 0: Built-in Retina Display, 1: Q3277
+caption: off
+exit 0
+
+$ jetcarp host status
+running, pid 6128, up 2613.0s, 140 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 599 · 14400 cells · window
+monitors: 0: Built-in Retina Display, 1: Q3277
+caption: off
+
+$ jetcarp host stop   (00:06:02)
+stopped
+exit 0
+
+$ jetcarp host status
+Error: the JETCARP background host is not running
+exit 1
+
+$ ps (jetcarp processes)
+ 6089  6084    48:23 jetcarp

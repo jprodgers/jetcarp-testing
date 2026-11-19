@@ -1,0 +1,31 @@
+rc.5 wave on the Mac, R5's (private) part 4.2 row: files JETCARP names itself inside a checked folder (c0db1ab)
+2026-11-17, 03:05 PM EST, the release archive's jetcarp 0.4.2-rc.5, test folder ~/jetcarp-rc5/homes/t42b, rc.3's
+publisher key copied in (it worked this time: config/pack holds publisher.json and the key pair). Scripts:
+R5-scripts/t42b_planted_rc5.sh and t42b_symlink_rc5.py (rc.4's, on rc.5). Output: 4.2-R5-planted.txt,
+4.2b-symlink-rc5.txt and the 4.2b-*.jsonl MCP logs.
+
+RESULT: pass. Every case refused, nothing written where a link leads, and (c3), rc.5's fix, now refused too.
+
+(a) rc.3's t42b_symlink.py on rc.5: world_new through $H/out/link-outside refused; files_list of innocent.json (a link
+    to $H/outside/victim.txt) refused; world_status save_path innocent.json refused; victim.txt unchanged.
+(b) a link planted at an animation's poster.png, leading outside:
+    - CLI media render --scene --out: refused, exit 1, "JETCARP may only write inside $H/out/anim-cli (got
+      $H/out/anim-cli/poster.png, where a symbolic link leads out of it)"; the outside file unchanged;
+    - MCP media_render, with and without poster: refused, the same sentence; unchanged;
+    - CLI, the frames folder planted: refused, the same sentence for frames; the folder it leads to stays empty;
+    - control, a poster.png link to a file inside the folder: the render works (exit 0); the link is replaced by the new
+      poster (1,617 bytes) and the file it pointed to is untouched ("old").
+(c) a link planted at a pack export's pack.json:
+    - CLI pack export --to: refused, exit 1, the same sentence for exp-cli/pack.json (after publishing version 1 into
+      the hidden store beside it, inside $H/out, as for any export); the outside file unchanged;
+    - MCP pack export: refused; unchanged.
+    (c3) CLI, the hidden store beside the export planted ($H/out/.exp-store.store -> $H/outside/store-dir): REFUSED
+    now, exit 1, before anything is published: "JETCARP may only write inside $H/out (got $H/out/.exp-store.store,
+    where a symbolic link leads out of it)". store-dir stays empty. (rc.4: followed, a whole signed store written
+    there.)
+    (c4) MCP, the hidden store beside the export planted: refused, now with the same sentence, naming the store
+    (rc.4: "the MCP tools may only write inside $H/out or $H/library"); store-dir-mcp stays empty.
+    (c5) MCP publish into a store folder that is such a link: refused, "the MCP tools may only write inside $H/out or
+    $H/library (got $H/out/pub-link)"; pub-dir stays empty.
+Afterwards: every outside file's sha256 OK. The "changed since" lines are the folders and victim.txt that (a), (c4)
+and (c5) made after the hashes were taken, all empty or unchanged (rc.4 had the same three, plus c3's store).

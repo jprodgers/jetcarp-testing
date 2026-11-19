@@ -1,0 +1,4 @@
+$ uv --version; pipx --version   (02:06:48)
+(eval):1: command not found: uv
+(eval):1: command not found: pipx
+# M4 skipped: neither is installed (the plan says not to install them without asking)

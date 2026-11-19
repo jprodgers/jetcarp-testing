@@ -1,0 +1,83 @@
+== world_new {"path": "$W/odd/truncated.json"} -> isError=True
+   scene JSON: EOF while parsing a value at line 23 column 27
+== world_new {"path": "$W/odd/unknown-rule.json"} -> isError=True
+   $W/odd/unknown-rule.json: CA 1 'Life': rule 'B3/S23/Q9 Frobnicate': Generations need a state count, like B2/S/C3
+== world_new {"path": "$W/odd/unknown-rule-name.json"} -> isError=True
+   $W/odd/unknown-rule-name.json: CA 1 'Life': 'Frobnicator' is not a rule. Try B3/S23, B2/S/C3, W30, Ant RL, WireWorld, or Sandpile.
+== world_new {"path": "$W/odd/future-format.json"} -> isError=True
+   $W/odd/future-format.json: scene format 2 is newer than this JETCARP supports (1)
+== world_new {"path": "$W/odd/future-format-huge.json"} -> isError=True
+   scene JSON: invalid value: integer `99999999999`, expected u32 at line 3 column 22
+== world_new {"path": "$W/odd/empty.json"} -> isError=True
+   scene JSON: EOF while parsing a value at line 1 column 0
+== world_new {"scene": "{\n  \"jetcarp_version\": \"0.4.2-rc.3\",\n  \"format\": 1,\n  \"name\": \"F9 good scene\",\n  \"tiling\": {\n    \"family\": \"square\",\n    \"size... -> isError=True
+   scene JSON: EOF while parsing a value at line 23 column 27
+== world_new {"scene": {"jetcarp_version": "9.0.0", "format": 2, "name": "F9 good scene", "tiling": {"family": "square", "size": {"rect": {"w": 64, "h": 64}}, "boundary": "w... -> isError=True
+   scene format 2 is newer than this JETCARP supports (1)
+== media_render {"scene": {"jetcarp_version": "0.4.2-rc.3", "format": 1, "name": "F9 good scene", "tiling": {"family": "square", "size": {"rect": {"w": 64, "h": 64}}, "boundary... -> isError=True
+   CA 1 'Life': 'Frobnicator' is not a rule. Try B3/S23, B2/S/C3, W30, Ant RL, WireWorld, or Sandpile.
+== pack {"info": {"path": "$W/packs/truncated"}} -> isError=False
+   export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+     rc.2 test, Framework
+     publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+     created 2026-11-15T16:31:46Z, licence CC0-1.0
+     annotations           20 rows in 1 part, 2544 bytes
+     patterns             341 rows in 5 parts, 84319 bytes
+     proven
+== pack {"check": {"path": "$W/packs/truncated"}} -> isError=True
+   search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+== pack {"import": {"path": "$W/packs/truncated", "sample": 20}} -> isError=True
+   search object sha256:a9d9e1b6a3186157d8fdc7fd6b9063cdddc3e141128e61342c768d6e94bb3b52 (searches/39fd769d-bfa3-492f-bcb3-1ffd617e203e/runs/part-000001.parquet) is altered or truncated
+== pack {"info": {"path": "$W/packs/truncated-manifest"}} -> isError=True
+   manifest: not JSON: EOF while parsing a string at line 1 column 300
+== pack {"check": {"path": "$W/packs/truncated-manifest"}} -> isError=True
+   manifest: not JSON: EOF while parsing a string at line 1 column 300
+== pack {"import": {"path": "$W/packs/truncated-manifest", "sample": 20}} -> isError=True
+   manifest: not JSON: EOF while parsing a string at line 1 column 300
+== pack {"info": {"path": "$W/packs/onebyte"}} -> isError=False
+   export sha256:e28b03a09a10f6d2706076f164a30c7c9fca79235b3d8fa79eb20bcf809c5c29 (feed rc-framework)
+     rc.3 test, Framework
+     publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed, but a signature does not verify: the version was changed after it was signed, or the signature is damaged (ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signa
+== pack {"check": {"path": "$W/packs/onebyte"}} -> isError=True
+   a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+== pack {"import": {"path": "$W/packs/onebyte", "sample": 20}} -> isError=True
+   a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+== pack {"info": {"path": "$W/packs/onebyte-part"}} -> isError=False
+   export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+     rc.2 test, Framework
+     publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), signed by its publisher
+     created 2026-11-15T16:31:46Z, licence CC0-1.0
+     annotations           20 rows in 1 part, 2544 bytes
+     patterns             341 rows in 5 parts, 84319 bytes
+     proven
+== pack {"check": {"path": "$W/packs/onebyte-part"}} -> isError=True
+   part sha256:d718f867e9850f271a627ab2a6ade0bf4e53687a3c3aa34e0212a3365fb51b8c (tables/rules/part-000001.parquet) is altered or truncated
+== pack {"import": {"path": "$W/packs/onebyte-part", "sample": 20}} -> isError=True
+   part sha256:d718f867e9850f271a627ab2a6ade0bf4e53687a3c3aa34e0212a3365fb51b8c (tables/rules/part-000001.parquet) is altered or truncated
+== pack {"info": {"path": "$W/packs/unsigned"}} -> isError=False
+   export sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework)
+     rc.2 test, Framework
+     publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE (RC tester (Framework)), not signed by its publisher
+     created 2026-11-15T16:31:46Z, licence CC0-1.0
+     annotations           20 rows in 1 part, 2544 bytes
+     patterns             341 rows in 5 parts, 84319 bytes
+     pr
+== pack {"check": {"path": "$W/packs/unsigned"}} -> isError=True
+   this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE; to check it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+== pack {"import": {"path": "$W/packs/unsigned", "sample": 20}} -> isError=True
+   this version is not signed by its publisher SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE; to import it anyway, allow unsigned packs (--allow-unsigned on the command line, allow_unsigned through MCP)
+== pack {"info": {"path": "$W/packs/other-signer"}} -> isError=True
+   $W/packs/other-signer does not exist
+== pack {"check": {"path": "$W/packs/other-signer"}} -> isError=True
+   $W/packs/other-signer does not exist
+== pack {"import": {"path": "$W/packs/other-signer", "sample": 20}} -> isError=True
+   $W/packs/other-signer does not exist
+== pack {"import": {"path": "$W/packs/unsigned", "allow_unsigned": true, "sample": 20}} -> isError=False
+   imported sha256:9c9c7b4875e2d546e218cfc9f3a4c4212e4d9002b57a03ed98f0ff0adc172017 (feed rc-framework, SHA256:zi5e+Z5B9laOKqkjWJry2p33M8K6Gf6Qz1Dz8QRutRE RC tester (Framework), not signed)
+     12 objects checked (7853786 bytes)
+     patterns: 341 added, 0 merged, 0 flagged needs_reverify
+     sightings 441, ratings 0, ants 0, Quick Start 0, media 0, searches 1, retracted 0
+     verified again (sample): 20 of 2
+== pack {"import": {"path": "$W/packs/onebyte", "allow_unsigned": true, "sample": 20}} -> isError=True
+   a signature on this version does not verify: ce2e5ef99e41f6568e2aa923589af2da9df733c2ba19fe90cf50f3f1046eb511.sig: signature does not verify (jetcarp-manifest): cryptographic error
+server exit 0

@@ -1,0 +1,29 @@
+$ date
+Tue Nov 17 07:50:54 PM EST 2026
+
+$ jetcarp --version
+jetcarp 0.4.2
+
+$ gnome-extensions info jetcarp@jimmieprodgers.com
+jetcarp@jimmieprodgers.com
+  Name: JETCARP live desktop
+  Description: Shows the JETCARP background host's live cellular automata as the desktop and lock-screen background, with a top-bar menu to control it.
+  Path: /home/jimmie/.local/share/gnome-shell/extensions/jetcarp@jimmieprodgers.com
+  Version: 0.4.2
+  Enabled: Yes
+  State: ACTIVE
+
+metadata.json version-name: "version-name": "0.4.2"
+
+$ jetcarp host gnome status
+The GNOME extension is running.
+
+$ jetcarp host status
+running, pid 3708873, up 340.0s, 95 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: My rotation · profile JACA halves melt into rainbow (4.6.12) (1 of 1) · generation 2507 · 56628 cells of 8 px · 30 fps, 15 generations a second · wallpaper · simulation: CPU: the scene keeps to the processor (its profile's GPU switch is off)
+monitors: 0: HDMI-1
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: the photosensitive seizure warning has been accepted; the scenes run
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)

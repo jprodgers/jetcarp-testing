@@ -1,0 +1,10 @@
+>> {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-06-18", "capabilities": {}, "clientInfo": {"name": "rc4-r4-test", "version": "1"}}}
+<< {"id":1,"jsonrpc":"2.0","result":{"capabilities":{"resources":{"listChanged":false,"subscribe":false},"tools":{"listChanged":false}},"instructions":"JETCARP runs cellular automata (the Game of Life and many other rules) on square, hexagon, triangle, Archimedean, k-uniform and aperiodic (Spectre, hat, Penrose) tilings, and keeps a library of the patterns its searches find. Typical flow: world_new ( ...[501 more chars cut in this log]
+>> {"jsonrpc": "2.0", "method": "notifications/initialized"}
+>> {"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "host_control", "arguments": {"action": "start"}}}
+<< {"id":2,"jsonrpc":"2.0","result":{"content":[{"text":"host_control: `action` must be one of status, next, previous, pause, resume, rotation, wallpaper, login, open_app, reload, scene, quit (got \"start\")","type":"text"}],"isError":true,"resultType":"complete"}}
+>> {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "host_control", "arguments": {"action": "wallpaper"}}}
+<< {"id":3,"jsonrpc":"2.0","result":{"content":[{"text":"JETCARP won't start or show scenes in the background host until its photosensitive seizure warning has been accepted.\n\nPHOTOSENSITIVE SEIZURE WARNING\n\nJETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.\n\nSome rules change most of the screen every generation. A rule with B0,  ...[706 more chars cut in this log]
+>> {"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "host_control", "arguments": {"action": "resume"}}}
+<< {"id":4,"jsonrpc":"2.0","result":{"content":[{"text":"the JETCARP background host is not running","type":"text"}],"isError":true,"resultType":"complete"}}
+## server exit 0; stderr: 

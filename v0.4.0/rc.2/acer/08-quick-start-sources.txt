@@ -1,0 +1,128 @@
+Quick Start rows in library.sqlite after Explorer setup (read-only query, 2026-11-12 ~07:35)
+
+rows by source (source, rows, hidden, featured):
+   ('atlas', 879, 0, 0)
+   ('builtin', 364, 1, 71)
+   ('pack', 79, 0, 0)
+
+The app shows 1264 entries: Packs 79, Atlas 879, Built-in 306 (08-quick-start-after-setup.png).
+
+Non-featured built-ins left out because an atlas entry has the same rule (menu.rs items_of): 57 of 292
+by category: {'Ants & turmites': 1, 'Classics': 16, 'Fractals & rows': 6, 'Sandpiles': 34}
+  Ants & turmites | Langton's ant | rule Ant RL | Square
+  Classics | Assimilation | rule B345/S4567 | Square
+  Classics | Burst II | rule B3468/S235678/C9 | Square
+  Classics | Diamoeba | rule B35678/S5678 | Square
+  Classics | Fireworks | rule B13/S2/C21 | Square
+  Classics | JACA Life, blast 2 | rule JACA B3/S23 blast 2 | Square
+  Classics | JACA colourful aging (edge, snub square) | rule JACA B1/S123 blast 1 | 3.3.4.3.4 snub square
+  Classics | Land Rush | rule B35/S234578 | Square
+  Classics | Neon Blobs | rule B08/S4 | Square
+  Classics | Oils | rule B014/S2 | Square
+  Classics | Rock-paper-scissors | rule RPS 3/3 | Square
+  Classics | Slow Blob | rule B367/S125678 | Square
+  Classics | Solid islands grow amongst static | rule B12678/S15678 | Square
+  Classics | Spectre glider (Edmond 2026) | rule SpectreGlider | Spectre
+  Classics | Spirals | rule B234/S2/C5 | Square
+  Classics | WireWorld | rule WireWorld | Square
+  Classics | Xtasy | rule B2356/S1456/C16 | Square
+  Fractals & rows | Layered parity | rule Layer 2/01 | Cairo pentagon
+  Fractals & rows | Rule 18 | rule W18 | Square
+  Fractals & rows | Rule 22 | rule W22 | Square
+  Fractals & rows | Rule 30 | rule W30 | Square
+  Fractals & rows | Rule 45 | rule W45 | Square
+  Fractals & rows | Rule 73 | rule W73 | Square
+  Sandpiles | Abelian sandpile | rule Sandpile | Square
+  Sandpiles | Sandpile on 3.12.12 truncated hexagonal | rule Sandpile | 3.12.12 truncated hexagonal
+  Sandpiles | Sandpile on 3.3.3.3.6 snub hexagonal | rule Sandpile | 3.3.3.3.6 snub hexagonal
+  Sandpiles | Sandpile on 3.3.3.4.4 elongated triangular | rule Sandpile | 3.3.3.4.4 elongated triangular
+  Sandpiles | Sandpile on 3.3.4.3.4 snub square | rule Sandpile | 3.3.4.3.4 snub square
+  Sandpiles | Sandpile on 3.4.6.4 rhombitrihexagonal | rule Sandpile | 3.4.6.4 rhombitrihexagonal
+  Sandpiles | Sandpile on 3.6.3.6 trihexagonal | rule Sandpile | 3.6.3.6 trihexagonal
+  Sandpiles | Sandpile on 4.6.12 truncated trihexagonal | rule Sandpile | 4.6.12 truncated trihexagonal
+  Sandpiles | Sandpile on 4.8.8 truncated square | rule Sandpile | 4.8.8 truncated square
+  Sandpiles | Sandpile on Any quadrilateral | rule Sandpile | Any quadrilateral
+  Sandpiles | Sandpile on Any triangle | rule Sandpile | Any triangle
+  Sandpiles | Sandpile on Brick | rule Sandpile | Brick
+  Sandpiles | Sandpile on Four-fold square | rule Sandpile | Four-fold square
+  Sandpiles | Sandpile on Glide rectangle | rule Sandpile | Glide rectangle
+  Sandpiles | Sandpile on Hat | rule Sandpile | Hat
+  Sandpiles | Sandpile on Herringbone | rule Sandpile | Herringbone
+  Sandpiles | Sandpile on Isohedral IH01 | rule Sandpile | Isohedral IH01
+  Sandpiles | Sandpile on Isohedral IH07 | rule Sandpile | Isohedral IH07
+  Sandpiles | Sandpile on Isohedral IH21 | rule Sandpile | Isohedral IH21
+  Sandpiles | Sandpile on Isohedral IH28 | rule Sandpile | Isohedral IH28
+  Sandpiles | Sandpile on Isohedral IH41 | rule Sandpile | Isohedral IH41
+  Sandpiles | Sandpile on Isohedral IH55 | rule Sandpile | Isohedral IH55
+  Sandpiles | Sandpile on Isohedral IH74 | rule Sandpile | Isohedral IH74
+  Sandpiles | Sandpile on Isohedral IH81 | rule Sandpile | Isohedral IH81
+  Sandpiles | Sandpile on Isohedral IH90 | rule Sandpile | Isohedral IH90
+  Sandpiles | Sandpile on Penrose rhombs (P3) | rule Sandpile | Penrose rhombs (P3)
+  Sandpiles | Sandpile on Pythagorean squares | rule Sandpile | Pythagorean squares
+  Sandpiles | Sandpile on Three-fold hexagon | rule Sandpile | Three-fold hexagon
+  Sandpiles | Sandpile on [3.4.3.12; 3.12^2] (k2-002) | rule Sandpile | [3.4.3.12; 3.12^2] (k2-002)
+  Sandpiles | Sandpile on [3.4.6.4; 4.6.12] (k2-001) | rule Sandpile | [3.4.6.4; 4.6.12] (k2-001)
+  Sandpiles | Sandpile on [3.4^2.6; 3.6.3.6; 4^4] #1 (k3-011) | rule Sandpile | [3.4^2.6; 3.6.3.6; 4^4] #1 (k3-011)
+  Sandpiles | Sandpile on [3^2.6^2; 3.4^2.6; 3.6.3.6; 4^4; 4^4] #1 (k5-058) | rule Sandpile | [3^2.6^2; 3.4^2.6; 3.6.3.6; 4^4; 4^4] #1 (k5-058)
+  Sandpiles | Sandpile on [3^6; 3^3.4^2; 3^3.4^2; 3.4.6.4] (k4-100) | rule Sandpile | [3^6; 3^3.4^2; 3^3.4^2; 3.4.6.4] (k4-100)
+  Sandpiles | Sandpile on [3^6; 3^6; 3^6; 3^4.6; 3^4.6; 3^4.6] #3 (k6-673) | rule Sandpile | [3^6; 3^6; 3^6; 3^4.6; 3^4.6; 3^4.6] #3 (k6-673)
+
+atlas entries whose rule hides them (rule: atlas tilings):
+  Ant RL: 2 atlas entries on ['Any triangle', 'k6-235']
+  B014/S2: 4 atlas entries on ['3.4.6.4 rhombitrihexagonal', 'Square', 'k5-271', 'k6-600']
+  B08/S4: 2 atlas entries on ['3.3.4.3.4 snub square', 'Square']
+  B12678/S15678: 1 atlas entries on ['Square']
+  B13/S2/C21: 1 atlas entries on ['k6-496']
+  B234/S2/C5: 1 atlas entries on ['Square']
+  B2356/S1456/C16: 1 atlas entries on ['Hexagon']
+  B345/S4567: 1 atlas entries on ['k6-137']
+  B3468/S235678/C9: 1 atlas entries on ['Square']
+  B35/S234578: 1 atlas entries on ['k6-418']
+  B35678/S5678: 1 atlas entries on ['k6-137']
+  B367/S125678: 2 atlas entries on ['Square', 'k5-096']
+  JACA B1/S123 blast 1: 1 atlas entries on ['k6-194']
+  JACA B3/S23 blast 2: 2 atlas entries on ['Any triangle', 'k6-409']
+  Layer 2/01: 1 atlas entries on ['Any triangle']
+  RPS 3/3: 3 atlas entries on ['3.3.3.4.4 elongated triangular', 'Hexagon', 'Isohedral IH77']
+  Sandpile: 3 atlas entries on ['Any triangle', 'k6-225', 'k6-235']
+  SpectreGlider: 36 atlas entries on ['3.3.3.3.6 snub hexagonal', '3.3.3.4.4 elongated triangular', '3.3.4.3.4 snub square', '3.4.6.4 rhombitrihexagonal', '3.6.3.6 trihexagonal', 'Any triangle']
+  W18: 1 atlas entries on ['Square']
+  W22: 1 atlas entries on ['Square']
+  W30: 1 atlas entries on ['Square']
+  W45: 1 atlas entries on ['Square']
+  W73: 1 atlas entries on ['Square']
+  WireWorld: 30 atlas entries on ['3.3.3.3.6 snub hexagonal', '3.3.3.4.4 elongated triangular', '3.3.4.3.4 snub square', '3.4.6.4 rhombitrihexagonal', '3.6.3.6 trihexagonal', 'Any triangle']
+
+atlas title repetition: [(879, 89)] (entries, distinct titles); 436 distinct (title, tiling)
+   ('Fractal Elementary', 'Square', 43)
+   ('Agents', 'Any triangle', 39)
+   ('Turbulent Larger than Life', '3.3.4.3.4 snub square', 20)
+   ('Fractal Layered', 'Any triangle', 17)
+   ('Quiet Elementary', 'Square', 12)
+   ('Oscillating Hodgepodge', '3.6.3.6 trihexagonal', 11)
+   ('Quiet Layered', 'Any triangle', 10)
+   ('Agents', 'k6-235', 8)
+   ('Battle JACA', 'Square', 8)
+   ('Battle JACA', 'k6-575', 8)
+
+pack entries by category:
+   ('Gliders & ships', 21)
+   ('Oscillators', 13)
+   ('Ants & turmites', 12)
+   ('Sandpiles', 8)
+   ('Fractals & rows', 5)
+   ('Waves & spirals', 4)
+   ('Growth', 4)
+   ('Turbulence', 3)
+   ('Labyrinths', 3)
+   ('Battles', 3)
+   ('Wildfire', 1)
+   ('Static', 1)
+   ('Quiet rows', 1)
+
+opened in A2 (quickstart_usage, UTC):
+   ('jaca:snubsq-starry', '2026-11-12T12:07:00Z', 'builtin', 'JACA starry rainbow (edge, snub square)')
+   ('jaca:oct-city', '2026-11-12T12:09:09Z', 'builtin', 'JACA blocky city (4.8.8)')
+   ('qs-a371629bc5bc8187305ba3d22a71ad79', '2026-11-12T12:27:39Z', 'pack', 'ULL2L2UL2 highway on Hexagon')
+   ('qs-98665961a830fea26ba66a164743f798', '2026-11-12T12:28:18Z', 'pack', 'Labyrinth Rock-paper-scissors')
+   ('qs-4689158687a58b9c27fa033f22d3ad38', '2026-11-12T12:28:58Z', 'pack', '4.8.8: c/2 orthogonal p24 ship (14-21 cells, B2/S3)')

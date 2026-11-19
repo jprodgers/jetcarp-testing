@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Sandpile on [3.4^2.6; 3.6.3.6; 4^4] #1 (k3-011)",
+  "description": "A 3-uniform tiling from Galebach's catalog (k3-011). Galebach 3-uniform #11 of 61. Symmetry cmm. 9 vertices per cell; 2 triangles, 6 squares, 1 hexagon. Grains dropped on the centre topple outward.",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k3-011"
+    },
+    "size": {
+      "cells": 3000
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Abelian sandpile",
+      "rule": "Sandpile",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 4,
+      "palette": "Ember",
+      "seed": {
+        "pile": {
+          "grains": 3000
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "e9f564beeba44f38",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

@@ -1,0 +1,42 @@
+rc.4 pre-check on the Acer: host_stop_returns_once_the_host_has_gone fails now and then on Windows (2026-11-16)
+
+Build: ~/jetcarp-rc-042c/src at 41f7f2f (#120), jetcarp 0.4.2-rc.3 (the branch's version string).
+Test: crates/jetcarp/tests/host.rs:422, host_stop_returns_once_the_host_has_gone. Two rounds of
+`host start --headless`, `host stop` (expects "stopped"), `host status` (expects "not running").
+
+The whole report, the same both times on 41f7f2f (the RTX suite, then host.rs alone on the UHD):
+
+  ---- host_stop_returns_once_the_host_has_gone stdout ----
+
+  thread 'host_stop_returns_once_the_host_has_gone' (24552) panicked at crates\jetcarp\tests\host.rs:443:9:
+  start, round 1: Error: the host did not start: the JETCARP background host is not running
+
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+(The UHD run's thread was 22264.) Round 0 passes: start, stop, then status says "not running". In round 1 the
+second `host start --headless` waits its full 10 s (host_cmd.rs:557-573: spawn_detached, then a status call every
+100 ms for 10 s) and no host answers. A failing host.rs run takes about 10 s longer (52 s against 39-43 s serially).
+
+How often (logs beside this file):
+  in the whole suite, af07766, RTX       FAILED   (the timed-out run, 1-tests-rtx-run1-timeout.txt; report lost)
+  in the whole suite, af07766, UHD       ok       (1-tests-uhd.txt; host.rs ran 96 min beside the saver's box)
+  in the whole suite, 41f7f2f, RTX       FAILED   (1-tests-rtx-41f7f2f.txt)
+  host.rs alone, 41f7f2f, UHD            FAILED   (1-tests-uhd-host-41f7f2f.txt, at once after the suite)
+  the test alone, 10 runs x 2 GPUs       20 of 20 ok      (1-host-stop-x10.txt)
+  host.rs whole, parallel, 5 x 2 GPUs    10 of 10 ok      (1-host-rs-x8.txt)
+  host.rs whole, --test-threads=1, 3 x 2 6 runs: 1 FAILED (RTX run 2), 5 ok   (1-host-rs-x8.txt)
+host.rs's with_env removes JETCARP_GPU, so the RTX/UHD label makes no difference to these tests.
+
+Outside the test: 20 rounds of start, `host status --json` (pid), stop, in a fresh scratch folder with the CLI:
+the old host's process was already gone when `host stop` returned every time; then 20 rounds of start, stop, start
+at once: the second start worked 20 of 20 (0.5-1.0 s). (1-host-stop-race.txt.) So the window this test hits is not
+the old process outliving `host stop`, at least not from a terminal.
+
+What the code says (read, not changed): `host stop` returns once the host's port has closed (gone_soon,
+host_cmd.rs:594-603); a new host takes the single-instance lock host.lock in its runtime folder and, if that is
+held, prints "jetcarp-host: the JETCARP background host is already running" and exits 3 (jetcarp-host lib.rs:72-90,
+191-197). A detached host's stderr goes nowhere, so a host that ended at once would look exactly like this. Each
+test has its own runtime folder (with_env sets JETCARP_RUNTIME_DIR), so the tests share no lock; on Windows they do
+share the data folder (HOME does not move AppData), which the host tests did not write to here.
+
+It passed on rc.3 on this laptop (both GPUs), on the Mac and on the Framework.

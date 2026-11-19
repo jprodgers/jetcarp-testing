@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Hex3 ternary sum 588 (sum mod 3)",
+  "description": "Three parents, three states: NW + N + NE mod 3. Nested diamonds.",
+  "tiling": {
+    "family": "hex_flat",
+    "size": {
+      "rect": {
+        "w": 80,
+        "h": 40
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "15186077321592560123",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Hex3 ternary sum 588 (sum mod 3)",
+      "rule": "HexT3 sum 588",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "top_center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "d6becfe823d7c851",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

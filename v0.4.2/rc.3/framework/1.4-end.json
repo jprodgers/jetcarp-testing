@@ -1,0 +1,251 @@
+{
+  "catalog": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/data/library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "66,570"
+    ],
+    [
+      "niches",
+      "29,146"
+    ],
+    [
+      "confirmed elites",
+      "4,943"
+    ],
+    [
+      "tilings tried",
+      "776 of 1,359"
+    ],
+    [
+      "backend",
+      "AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan"
+    ]
+  ],
+  "created": "2026-11-16T00:06:31Z",
+  "deterministic": false,
+  "done": 2111460,
+  "elapsed_s": 14395.496300712,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 2,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "long",
+  "line": "explore 2: 2,111,460 runs (178/s), 66,570 elites in 29,146 niches (4,943 of them confirmed), 776 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+  "per_s": 178.14336825053314,
+  "progress": {
+    "backend": "AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+    "build_minutes": null,
+    "capped": 6308,
+    "confirmed": 27408,
+    "confirmed_elites": 4943,
+    "cores": 32,
+    "elapsed_s": 14395.496300712,
+    "elites": 66570,
+    "error": null,
+    "families": [
+      {
+        "best": 1.7202922105789185,
+        "elites": 14315,
+        "family": "life_like",
+        "mean": 0.33402487211876514,
+        "runs": 623425
+      },
+      {
+        "best": 2.2003488540649414,
+        "elites": 10578,
+        "family": "generations",
+        "mean": 0.6408559228902992,
+        "runs": 491478
+      },
+      {
+        "best": 2.452162027359009,
+        "elites": 5761,
+        "family": "ltl",
+        "mean": 0.3898165466159117,
+        "runs": 255290
+      },
+      {
+        "best": 2.268552303314209,
+        "elites": 15213,
+        "family": "jaca",
+        "mean": 0.4924514087516204,
+        "runs": 225997
+      },
+      {
+        "best": 2.2681257724761963,
+        "elites": 7527,
+        "family": "priority",
+        "mean": 0.4064105889666374,
+        "runs": 146012
+      },
+      {
+        "best": 2.517860174179077,
+        "elites": 2709,
+        "family": "hodgepodge",
+        "mean": 1.1094062110640865,
+        "runs": 73758
+      },
+      {
+        "best": 2.473811149597168,
+        "elites": 2142,
+        "family": "rps",
+        "mean": 0.5759706242908834,
+        "runs": 73736
+      },
+      {
+        "best": 2.627131223678589,
+        "elites": 1151,
+        "family": "greenberg_hastings",
+        "mean": 0.5702508445859074,
+        "runs": 73460
+      },
+      {
+        "best": 2.351480484008789,
+        "elites": 2187,
+        "family": "cyclic",
+        "mean": 0.5318336315822928,
+        "runs": 73292
+      },
+      {
+        "best": 1.6193253993988037,
+        "elites": 595,
+        "family": "wireworld",
+        "mean": 0.46888728372909316,
+        "runs": 13888
+      },
+      {
+        "best": 1.575896978378296,
+        "elites": 53,
+        "family": "spectre_glider",
+        "mean": 0.3802001108652714,
+        "runs": 12324
+      },
+      {
+        "best": 2.1569626331329346,
+        "elites": 1395,
+        "family": "turmite",
+        "mean": 0.8270579116750689,
+        "runs": 10994
+      },
+      {
+        "best": 1.8875584602355957,
+        "elites": 635,
+        "family": "layered",
+        "mean": 0.6578099938987083,
+        "runs": 9710
+      },
+      {
+        "best": 2.4911234378814697,
+        "elites": 639,
+        "family": "lenia",
+        "mean": 1.0649472341109618,
+        "runs": 5781
+      },
+      {
+        "best": 1.1557962894439697,
+        "elites": 431,
+        "family": "forest_fire",
+        "mean": 0.7522034480016561,
+        "runs": 5514
+      },
+      {
+        "best": 2.2319729328155518,
+        "elites": 246,
+        "family": "sandpile",
+        "mean": 0.7003761291507303,
+        "runs": 4386
+      },
+      {
+        "best": 2.1854028701782227,
+        "elites": 60,
+        "family": "hex_tri",
+        "mean": 0.6289361862724036,
+        "runs": 2560
+      },
+      {
+        "best": 2.0018575191497803,
+        "elites": 813,
+        "family": "margolus",
+        "mean": 0.6912980638355656,
+        "runs": 2518
+      },
+      {
+        "best": 1.7715849876403809,
+        "elites": 54,
+        "family": "hex_wolfram",
+        "mean": 0.6412426594882467,
+        "runs": 2496
+      },
+      {
+        "best": 1.73795747756958,
+        "elites": 54,
+        "family": "wolfram",
+        "mean": 0.6946203673858907,
+        "runs": 2435
+      },
+      {
+        "best": 0.6657052040100098,
+        "elites": 12,
+        "family": "table",
+        "mean": 0.2935386306899642,
+        "runs": 2406
+      }
+    ],
+    "folder": "/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/data/searches/1360f637-bbf4-4110-be69-b01a55ab2fc8",
+    "given_up": 13,
+    "gpu_error": null,
+    "gpu_threads": 10,
+    "job": 2,
+    "line": "explore 2: 2,111,460 runs (178/s), 66,570 elites in 29,146 niches (4,943 of them confirmed), 776 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan",
+    "loaded": {
+      "confirmed": 3543,
+      "coverage_rows": 22503,
+      "elites": 36619,
+      "runs_read": 36619,
+      "seconds": 0.120754171,
+      "seen": 529009,
+      "seen_blobs": 73
+    },
+    "niches": 29146,
+    "note": null,
+    "panics": 0,
+    "per_s": 178.14336825053314,
+    "published": null,
+    "rss_gb": 3.4673728942871094,
+    "screened": 2111460,
+    "seen": 2138940,
+    "session_s": 10784.907140305,
+    "status": "paused",
+    "threads": 20,
+    "tilings": 1359,
+    "tilings_tried": 776
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "gpu": true,
+    "label": "long",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "started_with": {
+      "minutes": 240.0
+    },
+    "uuid": "1360f637-bbf4-4110-be69-b01a55ab2fc8"
+  },
+  "stale": false,
+  "status": "paused",
+  "title": "long: every tiling, every family",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T04:06:34Z",
+  "waited_s": null
+}

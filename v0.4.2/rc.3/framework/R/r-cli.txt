@@ -1,0 +1,77 @@
+
+#### #47 explore --limit help
+      --limit <LIMIT>                  Stop after this many units in this session (soups per rule and tiling, runs, rules, generations); the job stays resumable. An explore search checks it between steps, so it finishes the step it is in and may run past it
+      --threads <THREADS>              Worker threads (default: all cores; an explore search leaves two free). Results do not depend on this
+      --detach                         Run in a process of its own and return at once (`jetcarp jobs status JOB` follows it)
+
+#### #57 pack export refuses a running search; a refused export leaves no folder
+hunt exit 0
+explore 8: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+    8  explore  running  2026-11-16T06:03:45Z  explore 8: 0 runs (0/s), 0 elites in 0 niches (0 of them confirmed), 0 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+    7  hunt     done     2026-11-16T06:03:45Z  hunt 7: 300/300 soups, 2408 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 0 new | newest: still life 8c #fcc17e (B3/S23)
+    6  pile     done     2026-11-16T06:03:44Z  pile 6: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+    5  hunt     paused   2026-11-16T06:03:28Z  hunt 5: 9,971/50,000,000 soups, 1952 soups/s, 212,675 objects (ships 18,890, osc 61,736, still 132,049), 42 distinct, 5 new | newest: still life 13c #ec30ee (B3/S23)
+    4  pile     done     2026-11-16T06:03:24Z  pile 4: 1000 grains on square, step 10/10 (1000 grains), 1.193e4 topplings, 0.0 s
+made a publisher key, SHA256:fLF7NOBFrhy/WdEDWvvnUzAEo4OXO1n2dGtfC1bx9TY
+Error: explore job 8 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+export exit 1
+no p57 folder: ok
+.p57.store
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json,sys; d=json.load(sys.stdin); d=d if isinstance(d,list) else d.get("jobs",[]); print(d[0]["id"] if d else "")
+                                                                                                    ~~~~^^^^^^
+KeyError: 'id'
+stopping job 
+For more information, try '--help'.
+wait exit 2
+
+#### #57 b: a search paused, nothing stored yet (a fresh explore stopped at once)
+explore 9: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json,sys; d=json.load(sys.stdin); d=d if isinstance(d,list) else d.get("jobs",[]); print(d[0]["id"] if d else "")
+                                                                                                    ~~~~^^^^^^
+KeyError: 'id'
+Error: explore job 8 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish
+export while running exit 1
+no p57b folder: ok
+For more information, try '--help'.
+
+#### #66 a signed pack, then a tampered copy and an unsigned copy
+stop it first (jobs stop), then publish
+export exit 0
+cp: cannot stat '/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/good': No such file or directory
+cp: cannot stat '/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/good': No such file or directory
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/onebyte/pack.json'
+find: ‘/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/unsigned/sigs’: No such file or directory
+-- pack info good
+Error: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/good does not exist
+exit 0
+-- pack info onebyte
+Error: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/onebyte does not exist
+exit 0
+-- pack info unsigned
+Error: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/unsigned does not exist
+exit 0
+-- pack import onebyte
+Error: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/onebyte does not exist
+exit 0
+-- pack import unsigned
+Error: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/r/cli/unsigned does not exist
+exit 0
+
+#### #67 a malformed rule names its CA and file; a read-only library can be read
+Error: bad-rule.json: CA 1 'Lifeish': rule 'B3/S23/Q9 Frobnicate': Generations need a state count, like B2/S/C3
+exit 1
+Error: scene has no recorded hash
+exit 1
+catalog: ro.sqlite (109 shown of 109 matching)
+aab843d7ff96817d170d6725fb23e37c  c/6 diagonal spaceship 25c #aab843 B36/S23      Square                     p48    25c  seen 139   score  92.3  new  c/6 diagonal
+5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 459042 score  74.4  new  c/4 diagonal
+1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 37    score  72.0  new  c/2 orthogonal
+exit 0

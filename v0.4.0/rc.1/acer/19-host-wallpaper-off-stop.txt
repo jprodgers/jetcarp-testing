@@ -1,0 +1,39 @@
+(host restarted so that step 7 has a running host to stop)
+
+> jetcarp host start   (00:09:01.103)
+running, pid 13396, up 0.0s, 205 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 0 · 0 cells
+screen 1: Classics, hourly · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 0 · 0 cells
+wallpaper: showing
+(exit 0)
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg]
+
+> jetcarp host status   (00:09:05.346)
+running, pid 13396, up 4.0s, 290 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 111 · 230400 cells
+screen 1: Classics, hourly · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 111 · 921600 cells
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+(exit 0)
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg]
+
+> jetcarp host wallpaper off   (00:09:05.733)
+running, pid 13396, up 5.0s, 290 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 122 · 230400 cells
+screen 1: Classics, hourly · Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) · generation 122 · 921600 cells
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+(exit 0)
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg]
+
+> jetcarp host stop   (00:09:06.181)
+stopped
+(exit 0)
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg]
+
+> jetcarp host status   (00:09:08.651)
+Error: the JETCARP background host is not running
+(exit 1)
+  [registry WallPaper = c:\windows\web\wallpaper\themea\img20.jpg]
+
+> tasklist jetcarp*
+INFO: No tasks are running which match the specified criteria.

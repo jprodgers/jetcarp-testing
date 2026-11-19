@@ -1,0 +1,2 @@
+﻿c orthogonal spaceship 4c #484e9f (B2/S34 on Square): 16x16 rect soups at density 0.5, hunt job 9
+  soup 13 (rng state 15965508135439572103): 1 copy, 1 ship; exploded at generation 54; scene: C:\Users\jimmi\jetcarp-rc-042b\phase2\2.9\soup-484e9fe1.json

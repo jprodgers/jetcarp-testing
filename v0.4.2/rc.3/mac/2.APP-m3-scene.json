@@ -1,0 +1,56 @@
+{
+  "jetcarp_version": "0.4.2-rc.3",
+  "format": 1,
+  "name": "JACA rainbow fronts (triangles, edge)",
+  "description": "B1/S01 with edge neighbours and blast 1 on triangles: still territories with rainbow fronts. Found by a JACA rule search.",
+  "tiling": {
+    "family": "triangle",
+    "size": {
+      "rect": {
+        "w": 174,
+        "h": 161
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 27,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B1/S01V blast 1",
+      "rule": "JACA B1/S01 blast 1",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Deep Sea",
+      "seed": {
+        "signed": {
+          "density": 0.1,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Thermal"
+    }
+  ],
+  "commands": [
+    {
+      "op": "step",
+      "gens": 71
+    }
+  ],
+  "view": {
+    "center": [
+      87.47522409137942,
+      69.75192268648208
+    ],
+    "speed": 15.0,
+    "zoom": 6.078685485212742
+  },
+  "record": {
+    "generation": 71,
+    "hash": "ef5b2d26c27d8dee",
+    "jetcarp_version": "0.4.2-rc.3",
+    "dead_boundary": false
+  }
+}

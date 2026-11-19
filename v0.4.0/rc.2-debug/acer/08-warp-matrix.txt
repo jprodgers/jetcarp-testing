@@ -1,0 +1,38 @@
+﻿# Extra: the host on WARP, started different ways. 2026-11-12 04:49-04:53, Acer, jetcarp c5a58fc
+# plus the debug switch in 07-debug-switch.diff (JETCARP_DEBUG_FALLBACK=1 -> WARP, "Microsoft
+# Basic Render Driver"). Same folders as 02. Each host was asked host status about once a second
+# and a PowerShell handle on its process gave the exit code. Rotation: the default
+# ("A classic a day", profile Life) unless named.
+
+0. jetcarp host start --headless (stdout/stderr on pipes, as the test does)   04:49:29
+   host start: exited after 5060 ms, code 0, output ended with it:
+     running, pid 8792, up 3.0s, 115 MB, GPU Microsoft Basic Render Driver
+     screen 0: A classic a day · profile Life (1 of 7) · starting · window
+   13 s later: "the JETCARP background host is not running"; crash at 04:49:34 (03-crash.txt)
+
+A. jetcarp.exe host serve --headless                                  CRASH
+   2.0 s running, 5.0 s 10054 "connection forcibly closed"; exit 0xC0000005 by 5.0 s
+B. jetcarp.exe host serve --headless --canvas 160x120                 CRASH
+   4.4 s 10054; exit 0xC0000005 by 4.4 s
+C. jetcarpw.exe host serve --headless                                 CRASH
+   4.4 s 10054; host (child of jetcarpw) exit 0xC0000005 by 4.4 s
+D. jetcarpw.exe host serve --headless --canvas 160x120                CRASH
+   4.6 s 10054; host exit 0xC0000005 by 4.6 s
+E. jetcarp.exe host serve --headless --canvas 160x120 --rotation "Wolfram series"
+   running for 20 s; host stop -> exit 0                              LIVES
+   -- from here JETCARP_HOST_NO_PAUSE_RULES=1, as the tests set --
+F. jetcarp.exe host serve --headless --canvas 160x120                 CRASH
+   5.0 s 10054; exit 0xC0000005 by 5.0 s
+G. jetcarp.exe host serve --headless --canvas 160x120 --rotation "Wolfram series"
+   running for 20 s; host stop -> exit 0                              LIVES
+H. jetcarp.exe host serve --headless, host.json = {"gpu": false}      LIVES
+   running for 15 s; host stop -> exit 0. Again for 8 s:
+     running, pid 15820, up 8.0s, 115 MB, GPU Microsoft Basic Render Driver
+     screen 0: A classic a day · profile Life (1 of 7) · generation 230 · 102240 cells · window
+   (host.json removed afterwards)
+
+So on WARP, launching makes no difference, nor does the canvas or the pause rules. The default
+rotation's Life scene crashes d3d10warp.dll, by all signs in GPU stepping: with GPU stepping
+off it runs. The Wolfram series runs with GPU stepping on (whether its rules step on the GPU at
+all, I didn't check). CI's direct host tests all use the Wolfram
+series and its host start test the default rotation, which matches CI's failures.

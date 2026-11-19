@@ -1,0 +1,6 @@
+﻿running, pid 49412, up 4.0s, 516 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day Â· Quick Start rule:ForestFire 0.01/0.0001 (3 of 7) Â· generation 78 Â· 518400 cells of 2 px Â· wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)

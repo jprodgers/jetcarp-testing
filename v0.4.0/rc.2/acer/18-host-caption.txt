@@ -1,0 +1,30 @@
+> jetcarp host start   (07:48:37.141)
+running, pid 24464, up 3.0s, 197 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · starting · window
+caption: off
+/usr/bin/bash: line 7: bc: command not found
+(exit 0,  s)
+
+> jetcarp host wallpaper on
+running, pid 24464, up 3.0s, 232 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 4 · 102240 cells · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+(exit 0)
+
+> jetcarp host caption on
+running, pid 24464, up 3.0s, 244 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 17 · 102240 cells · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)
+
+> jetcarp host status   (07:48:43)
+running, pid 24464, up 6.0s, 248 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · profile Life (1 of 7) · generation 93 · 230400 cells · wallpaper
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: on, bottom left, 20 pt
+(exit 0)

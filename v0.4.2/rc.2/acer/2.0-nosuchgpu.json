@@ -1,0 +1,30 @@
+﻿{
+  "backend": "gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan; no nosuchgpu adapter was found, so the best one)",
+  "cells": 28000,
+  "dead_boundary": false,
+  "done": false,
+  "done_reason": null,
+  "fields": [
+    {
+      "cas": [
+        "Life"
+      ],
+      "field": 0,
+      "kind": "binary",
+      "lost": 0,
+      "population": 2016,
+      "shared": true
+    }
+  ],
+  "generation": 300,
+  "hash": "d9c87f6d4f91849f",
+  "jetcarp_version": "0.4.2-rc.2",
+  "png": null,
+  "png_size": null,
+  "reseed": [],
+  "scene": "C:\\Users\\jimmi\\jetcarp-rc-042b\\parity\\scenes\\0.json",
+  "seconds": 1.3937689,
+  "status": "Running",
+  "threads": 12,
+  "tiling": "Square (parallelogram) (square): 28000 cells, 200x140 unit cells, 1 tile type(s), storage dense, edges wrap"
+}

@@ -1,0 +1,5 @@
+   Compiling jetcarp-mcp v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-mcp)
+   Compiling jetcarp-app v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-app)
+   Compiling jetcarp-host v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp-host)
+   Compiling jetcarp v0.4.2-rc.3 (~\jetcarp-rc-042c\src\crates\jetcarp)
+    Finished `release` profile [optimized + debuginfo] target(s) in 56.89s

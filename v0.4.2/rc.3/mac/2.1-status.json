@@ -1,0 +1,138 @@
+{
+  "catalog": "/Users/Jimmie/jetcarp-rc-042c/data/library.sqlite",
+  "counters": [
+    [
+      "elites",
+      "9,989"
+    ],
+    [
+      "niches",
+      "4,996"
+    ],
+    [
+      "confirmed elites",
+      "419"
+    ],
+    [
+      "tilings tried",
+      "34 of 1,359"
+    ],
+    [
+      "backend",
+      "Apple M2 Max, Metal"
+    ]
+  ],
+  "created": "2026-11-16T06:19:10Z",
+  "deterministic": false,
+  "done": 57109,
+  "elapsed_s": 598.540131541,
+  "error": null,
+  "eta_s": null,
+  "finds": null,
+  "finished": null,
+  "here": false,
+  "job": 1,
+  "kind": "explore",
+  "kind_label": "Explore",
+  "label": "gpu-mix",
+  "line": "explore 1: 57,109 runs (103/s), 9,989 elites in 4,996 niches (419 of them confirmed), 34 of 1,359 tilings; Apple M2 Max, Metal",
+  "per_s": 103.06742048360482,
+  "progress": {
+    "backend": "Apple M2 Max, Metal",
+    "build_minutes": null,
+    "capped": 0,
+    "confirmed": 1860,
+    "confirmed_elites": 419,
+    "cores": 12,
+    "elapsed_s": 598.540131541,
+    "elites": 9989,
+    "error": null,
+    "families": [
+      {
+        "best": 1.4563511610031128,
+        "elites": 3962,
+        "family": "life_like",
+        "mean": 0.3205442314297755,
+        "runs": 24949
+      },
+      {
+        "best": 2.065509557723999,
+        "elites": 3013,
+        "family": "generations",
+        "mean": 0.670873228549715,
+        "runs": 19929
+      },
+      {
+        "best": 2.106397867202759,
+        "elites": 2258,
+        "family": "jaca",
+        "mean": 0.5577279619348738,
+        "runs": 9238
+      },
+      {
+        "best": 2.097578525543213,
+        "elites": 756,
+        "family": "cyclic",
+        "mean": 0.4752178204616465,
+        "runs": 2993
+      }
+    ],
+    "folder": "/Users/Jimmie/jetcarp-rc-042c/data/searches/0fb80670-f64c-4325-b526-369b1e5a09c3",
+    "given_up": 16,
+    "gpu_error": null,
+    "gpu_threads": 4,
+    "job": 1,
+    "line": "explore 1: 57,109 runs (103/s), 9,989 elites in 4,996 niches (419 of them confirmed), 34 of 1,359 tilings; Apple M2 Max, Metal",
+    "loaded": {
+      "confirmed": 0,
+      "coverage_rows": 0,
+      "elites": 0,
+      "runs_read": 0,
+      "seconds": 0.000061375,
+      "seen": 0,
+      "seen_blobs": 0
+    },
+    "niches": 4996,
+    "note": null,
+    "panics": 0,
+    "per_s": 103.06742048360482,
+    "published": null,
+    "rss_gb": 2.1902923583984375,
+    "screened": 57109,
+    "seen": 58993,
+    "session_s": 598.540131583,
+    "status": "paused",
+    "threads": 6,
+    "tilings": 1359,
+    "tilings_tried": 34
+  },
+  "resumable": true,
+  "spec": {
+    "batch": 1024,
+    "confirm_cells": 64000,
+    "confirm_gens": 4096,
+    "confirm_seeds": 3,
+    "families": [
+      "life_like",
+      "generations",
+      "jaca",
+      "cyclic"
+    ],
+    "gpu": false,
+    "label": "gpu-mix",
+    "screen_cells": 16000,
+    "screen_gens": 1024,
+    "seed": 0,
+    "started_with": {
+      "minutes": 10.0
+    },
+    "uuid": "0fb80670-f64c-4325-b526-369b1e5a09c3"
+  },
+  "stale": false,
+  "status": "paused",
+  "title": "gpu-mix: every tiling, life_like, generations, jaca (+1)",
+  "total": null,
+  "unit": "runs",
+  "updated": "2026-11-16T06:29:10Z",
+  "waited_s": null
+}

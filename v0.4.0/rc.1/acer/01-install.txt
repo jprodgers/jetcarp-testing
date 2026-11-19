@@ -1,0 +1,8 @@
+> powershell -ExecutionPolicy Bypass -c "irm https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.1/jetcarp-installer.ps1 | iex"
+(started 2026-11-11 23:31:00 -0500)
+jetcarp-installer: getting JETCARP 0.4.0-rc.1 for x86_64-pc-windows-msvc from https://github.com/jprodgers/jetcarp/releases/download/v0.4.0-rc.1
+jetcarp-installer: checked jetcarp-0.4.0-rc.1-x86_64-pc-windows-msvc.zip against SHA256SUMS
+jetcarp-installer: installed jetcarp 0.4.0-rc.1 in C:\Users\jimmi\AppData\Local\Programs\jetcarp
+jetcarp-installer: added C:\Users\jimmi\AppData\Local\Programs\jetcarp to your user PATH; open a new terminal to use `jetcarp`
+jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees
+(exit code 0, took 14s)

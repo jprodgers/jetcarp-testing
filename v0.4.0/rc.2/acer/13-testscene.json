@@ -1,0 +1,58 @@
+{
+  "jetcarp_version": "0.4.0-rc.2",
+  "format": 1,
+  "name": "GH 20/2 — trihex",
+  "tiling": {
+    "family": "trihex",
+    "size": {
+      "cells": 64000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "50200558558136249",
+  "cas": [
+    {
+      "id": 1,
+      "name": "GH 20/2",
+      "rule": "GH 20/2",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Thermal",
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "clusters",
+            "count": 77,
+            "radius_tiles": 2.195733974770537
+          },
+          "fill": {
+            "density": 0.89,
+            "states": "uniform"
+          }
+        }
+      }
+    }
+  ],
+  "commands": [
+    {
+      "op": "step",
+      "gens": 87
+    }
+  ],
+  "view": {
+    "center": [
+      137.25,
+      135.53297569226467
+    ],
+    "speed": 15.0,
+    "zoom": 3.4451132062844065
+  },
+  "record": {
+    "generation": 87,
+    "hash": "b3f463b50ce2245d",
+    "jetcarp_version": "0.4.0-rc.2",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,173 @@
+
+#### s2 refused, 2026-11-17 03:32:44, jetcarp 0.4.2-rc.4, the default folders (no JETCARP_* variables)
+desktop before: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\scoop\apps\jetcarp\current\jetcarpw.exe host serve]; photosensitivity.json [none]; jetcarp processes []
+$ jetcarp paths
+settings: ~\AppData\Roaming\jetcarp
+data:     ~\AppData\Local\jetcarp
+output:   ~\OneDrive\Pictures\JETCARP
+bundled:  ~\jetcarp-rc-042c\bin\packs
+runtime:  ~\AppData\Local\jetcarp
+(exit 0, 0.1 s)
+$ jetcarp host wallpaper on
+Error: JETCARP won't show the desktop background until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host login on
+Error: JETCARP won't start the background host at login until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+$ jetcarp host saver install
+Error: JETCARP won't install the screen saver until its photosensitive seizure warning has been accepted.
+
+PHOTOSENSITIVE SEIZURE WARNING
+
+JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy.
+
+Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second.
+
+Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures.
+
+If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor.
+
+To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+(exit 1, 0.1 s)
+desktop after: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\scoop\apps\jetcarp\current\jetcarpw.exe host serve]; photosensitivity.json [none]; jetcarp processes []
+
+#### s2 answer, 2026-11-17 03:32:45, jetcarp 0.4.2-rc.4, the default folders (no JETCARP_* variables)
+$ jetcarp setup --seizure-warning no-disorder
+saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+(exit 0, 0.1 s)
+$ jetcarp setup --status
+setup: Explorer on 2026-11-13 15:02 UTC (JETCARP 0.4.0)
+  settings: ~\AppData\Roaming\jetcarp
+  data:     ~\AppData\Local\jetcarp, 1.9 TB free
+  library:  ~\AppData\Local\jetcarp\library.sqlite
+  output:   ~\OneDrive\Pictures\JETCARP
+  bundled:  ~\jetcarp-rc-042c\bin\packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack, imported
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (a Quick Start build runs on it)
+library: 98 patterns, 8 ant runs, 33 jobs; Quick Start entries: 364 built in, 127 from packs, 2,128 from searches
+setup's jobs:
+  pack import 32: JETCARP starter pack imported: 0 patterns new, 26 merged, 48 Quick Start entries, 0 ant runs (done)
+  Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (done)
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 80 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+(exit 0, 9.8 s)
+desktop after: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\scoop\apps\jetcarp\current\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+
+#### s2 wallpaper, 2026-11-17 03:33:13, jetcarp 0.4.2-rc.4, the default folders (no JETCARP_* variables)
+desktop before: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\scoop\apps\jetcarp\current\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+$ jetcarp host start
+running, pid 34284, up 1.0s, 401 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · window · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.8 s)
+$ jetcarp host wallpaper on
+running, pid 34284, up 1.0s, 456 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Penrose waves (6 of 7) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Intel(R) UHD Graphics (Intel Corporation), Vulkan
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.5 s)
+$ jetcarp host status
+running, pid 34284, up 21.0s, 491 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 565 · 280000 cells of 2.4 px · 30 fps, 30 generations a second · wallpaper · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.2 s)
+desktop with the wallpaper on: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes [26356 jetcarpw.exe "~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve | 34284 jetcarp.exe "~\jetcarp-rc-042c\bin\jetcarp.exe" host serve]
+$ jetcarp host wallpaper off
+running, pid 34284, up 22.0s, 490 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Penrose waves (6 of 7) · generation 575 · 280000 cells of 2.4 px · 30 fps, 30 generations a second · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+(exit 0, 0.2 s)
+$ jetcarp host stop
+stopped
+(exit 0, 1.9 s)
+desktop after: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+
+#### s2 login, 2026-11-17 03:33:41, jetcarp 0.4.2-rc.4, the default folders (no JETCARP_* variables)
+desktop before: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+$ jetcarp host login on
+"~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve --login starts at login
+(exit 0, 0.1 s)
+desktop after login on: JETCARP Run values [JETCARP="~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve --login]; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+$ jetcarp host login off
+the host no longer starts at login
+(exit 0, 0.2 s)
+desktop after login off: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+
+#### s2 saver, 2026-11-17 03:33:52, jetcarp 0.4.2-rc.4, the default folders (no JETCARP_* variables)
+desktop before: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+$ jetcarp host saver install
+copied to ~\AppData\Local\JETCARP\JETCARP.scr; Screen Saver Settings is opening, with JETCARP chosen (Windows chooses it as the dialog opens, so Cancel keeps it; `jetcarp host saver remove` takes it out again)
+(exit 0, 0.1 s)
+$ jetcarp host saver status
+JETCARP is the selected screen saver.
+(exit 0, 0.1 s)
+desktop after saver install: JETCARP Run values []; SCRNSAVE.EXE [~\AppData\Local\JETCARP\JETCARP.scr], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr True; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []
+the answer set aside: photosensitivity.json renamed photosensitivity.json.aside
+desktop with the answer set aside: JETCARP Run values []; SCRNSAVE.EXE [~\AppData\Local\JETCARP\JETCARP.scr], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr True; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [none]; jetcarp processes []
+
+#### s2 watch, 2026-11-17 03:37:26, jetcarp 0.4.2-rc.4, the default folders (no JETCARP_* variables)
+watching for JETCARP message boxes for 240 s (left open for Jimmie)
+03:37:26 processes: 28884 JETCARP.scr ~\AppData\Local\JETCARP\JETCARP.scr /s | 23124 jetcarp.exe "~\jetcarp-rc-042c\bin\jetcarp.exe" host scr /s
+
+#### #120, 03:38:31: Windows started the screen saver itself at 03:34:54, 62 s after saver install (its 60 s idle timeout; nobody touching the laptop), with the answer set aside:
+processes: 28884 JETCARP.scr ~\AppData\Local\JETCARP\JETCARP.scr /s -> 23124 jetcarp.exe "~\jetcarp-rc-042c\bin\jetcarp.exe" host scr /s
+Windows runs a screen saver on its own desktop, Screen-saver, so the box isn't on Default (the watch above saw none). Its windows (OpenDesktop + EnumDesktopWindows):
+03:38:52 the screen saver Windows started at 03:34:54 (idle timeout), the answer set aside
+  jetcarp processes: [28884 JETCARP.scr ~\AppData\Local\JETCARP\JETCARP.scr /s | 23124 jetcarp.exe "~\jetcarp-rc-042c\bin\jetcarp.exe" host scr /s]
+  windows on the Screen-saver desktop: 3
+  23124 #32770 [JETCARP] visible=True :: Button:OK / Static:JETCARP won't run the screen saver until its photosensitive seizure warning has been accepted. / PHOTOSENSITIVE SEIZURE WARNING / JETCARP's animations can flash and flicker rapidly, and can trigger seizures in people with photosensitive epilepsy. / Some rules change most of the screen every generation. A rule with B0, for example, turns the whole field over at each step. Run fast, full screen or as the desktop background, such a rule can flicker many times a second. / Flashing like this can also trigger a seizure, occasionally, in someone with no history of seizures. / If you feel dizzy, or notice altered vision, eye or muscle twitching, disorientation or any involuntary movement, stop at once, look away from the screen, and see a doctor. / To read it and answer, open the JETCARP app, or run `jetcarp setup` in a terminal. Without a terminal, `jetcarp setup --yes --seizure-warning no-disorder` records that you don't have epilepsy or a seizure disorder.
+  23124 MSCTFIME UI [MSCTFIME UI] visible=False :: 
+  23124 IME [Default IME] visible=False :: 
+boxes seen: 0
+
+#### s2 remove, 2026-11-17 03:55:44, jetcarp 0.4.2-rc.4, the default folders (no JETCARP_* variables)
+desktop before: JETCARP Run values []; SCRNSAVE.EXE [~\AppData\Local\JETCARP\JETCARP.scr], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr True; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [none]; jetcarp processes []
+$ jetcarp host saver remove
+removed
+(exit 0, 0.1 s)
+$ jetcarp host saver status
+JETCARP's screen saver is not installed.
+(exit 0, 0.1 s)
+the answer put back
+desktop after: JETCARP Run values []; SCRNSAVE.EXE [], active 1, timeout 60 s; wallpaper picture 85FF3BB2371A 2026-11-15T15:57:24; JETCARP.scr False; host-program [~\jetcarp-rc-042c\bin\jetcarpw.exe host serve]; photosensitivity.json [{ "version": 1, "answer": "no_disorder", "date": "2026-11-17T08:32:46Z", "jetcarp": "0.4.2-rc.4", "via": "setup" } ]; jetcarp processes []

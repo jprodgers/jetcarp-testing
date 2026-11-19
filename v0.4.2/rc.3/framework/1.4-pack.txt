@@ -1,0 +1,15 @@
+made publisher key SHA256:cBV7+swIsZx5+xaenDSDuCmdozMJLVkF9xxXT9kWrfg
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHrgeGQ6fPDJbvcGqANmVB4nTl3uxokiG+ZG9F/urMXg jetcarp publisher
+  file /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/config/pack/publisher_ed25519
+  named rc.3 test publisher
+explore job 2 (search 1360f637-bbf4-4110-be69-b01a55ab2fc8): sealed its newest 138,868 runs first, so the pack carries every run
+publishing feed rc3-long (version 1) into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/.pack-long.store
+1454 patterns read, 1454 new rows
+search 1360f637-bbf4-4110-be69-b01a55ab2fc8: copying its segments
+version sha256:e51390406f3d0c546d11b8e02b8d19ba1e4cc2b9902050aa4f93c76aa069e2a0 written
+exported sha256:e51390406f3d0c546d11b8e02b8d19ba1e4cc2b9902050aa4f93c76aa069e2a0 into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/pack-long: 30 files, 166338648 bytes
+the version was published first into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/.pack-long.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/.pack-long.store` does (then `jetcarp pack export --from /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/.pack-long.store` lays it out)
+159M	/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc3/pack-long
+imported runs: 2111460
+explore 2: 2,111,460 runs (178/s), 66,570 elites in 29,146 niches (4,943 of them confirmed), 776 of 1,359 tilings; AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan
+explore 1: 2,111,460 runs (0/s), 66,570 elites in 29,146 niches (4,943 of them confirmed), 776 of 1,359 tilings; not run here yet

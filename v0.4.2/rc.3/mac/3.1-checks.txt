@@ -1,0 +1,51 @@
+== 13:58:49 after the setup window (Desktop art)
+jetcarp 0.4.2-rc.3
+-- jetcarp setup --status
+setup: Desktop art on 2026-11-16 13:57 UTC (JETCARP 0.4.2-rc.3)
+  settings: /Users/Jimmie/Library/Application Support/jetcarp
+  data:     /Users/Jimmie/Library/Application Support/jetcarp/data, 811.7 GB free
+  library:  /Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite
+  output:   /Users/Jimmie/Pictures/JETCARP
+  bundled:  /Users/Jimmie/.local/lib/jetcarp/packs
+packs that came with JETCARP:
+  JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack
+GPU: Apple M2 Max (a Quick Start build runs on it)
+library: 0 patterns, 0 ant runs, 0 jobs
+profiles:
+  desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+  explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 83 MB and 11 minutes)
+  researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+  everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+  blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+-- host status
+running, pid 24161, up 87.0s, 108 MB, GPU Apple M2 Max
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 20340 · 170648 cells of 8 px · 60 fps, 240 generations a second · wallpaper · simulation: CPU: automatic, and the world is too small to be worth the GPU
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+-- settings folder
+total 104
+drwxr-xr-x   8 Jimmie  staff    256 Nov 16 08:57 .
+drwx------+ 47 Jimmie  staff   1504 Nov 16 08:56 ..
+-rw-r--r--   1 Jimmie  staff   4443 Nov 16 08:56 app.json
+-rw-r--r--   1 Jimmie  staff    191 Nov 16 08:56 gpu-checks.json
+-rw-r--r--   1 Jimmie  staff     44 Nov 16 08:57 host-program
+-rw-r--r--   1 Jimmie  staff    624 Nov 16 08:57 host.json
+-rw-r--r--   1 Jimmie  staff  27605 Nov 16 08:57 screen-saver-before.plist
+-rw-r--r--   1 Jimmie  staff    324 Nov 16 08:57 setup.json
+{
+  "version": 1,
+  "profile": "desktop-art",
+  "date": "2026-11-16T13:57:22Z",
+  "jetcarp": "0.4.2-rc.3",
+  "data_dir": "/Users/Jimmie/Library/Application Support/jetcarp/data",
+  "library": "/Users/Jimmie/Library/Application Support/jetcarp/data/library.sqlite",
+  "quickstart_minutes": 0.0,
+  "packs": [],
+  "jobs": []
+}
+
+com.jimmieprodgers.jetcarp.host.plist
+JETCARP.saver
+24161 /Users/Jimmie/.local/bin/jetcarp host serve

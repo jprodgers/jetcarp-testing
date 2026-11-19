@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.2",
+  "format": 1,
+  "name": "explore 1 run 28757: JACA +B123/S0123 -B1234/S0123 blast 1",
+  "tiling": {
+    "family": "periodic",
+    "params": {
+      "catalog": "k5-271"
+    },
+    "size": {
+      "cells": 16000
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "68271429281349506",
+  "cas": [
+    {
+      "rule": "JACA +B123/S0123 -B1234/S0123 blast 1",
+      "neighborhood": "edge",
+      "enabled": true,
+      "steps_per_gen": 1,
+      "seed": {
+        "pattern": {
+          "shape": {
+            "kind": "clusters",
+            "count": 53,
+            "radius_tiles": 3.813070597419198
+          },
+          "fill": {
+            "density": 0.49,
+            "states": {
+              "signed": {
+                "negative": 0.5
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

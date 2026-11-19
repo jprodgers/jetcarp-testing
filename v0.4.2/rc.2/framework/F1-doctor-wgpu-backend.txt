@@ -1,0 +1,40 @@
+JETCARP 0.4.2-rc.2 on linux x86_64 (32 threads)
+
+Folders
+  settings: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/config
+  data:     /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data
+  output:   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/out
+  bundled:  /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/bin/jetcarp-0.4.2-rc.2-x86_64-unknown-linux-gnu/packs (1.5 MB)
+  library:  /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data/library.sqlite (not created yet)
+  data in use: 0 B
+
+GPU: auto (automatic)
+  setting: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/config/gpu.json (not saved)
+  the app: auto, from automatic (its own choice: follow)
+  the desktop background: auto, from automatic (its own choice: follow)
+  display: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the adapter driving the screen (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (123 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      the app and the desktop background simulate on it
+  compute: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan (integrated)
+      why: the fastest adapter (automatic)
+      limits: 1864135 storage buffers per stage, 2 GiB storage bindings, 2 GiB buffers
+      self-test: passed (123 ms, kept from before): 59 world rules and 33 explore batches matched the CPU
+      runs, searches and scripts simulate on it
+
+Graphics adapters (* = used for computing)
+  * AMD Radeon 8060S Graphics (RADV STRIX_HALO) (Vulkan, IntegratedGpu, radv Mesa 26.2.5 (git-ddaf85e353))
+    llvmpipe (LLVM 21.1.8, 256 bits) (Vulkan, Cpu, llvmpipe Mesa 26.2.5 (git-ddaf85e353) (LLVM 21.1.8))
+      software adapter: the GPU simulation uses it only with JETCARP_GPU=software
+
+Desktop
+  background host: not running
+  starts at login: no
+  GNOME Shell was not found in this session.
+
+Environment
+  JETCARP_CONFIG_DIR=/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/config
+  JETCARP_DATA_DIR=/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/data
+  JETCARP_OUT=/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/out
+  WGPU_BACKEND=vulkan

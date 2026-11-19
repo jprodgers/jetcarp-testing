@@ -1,0 +1,34 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Layered sum mod 3",
+  "description": "Three states; each cell is the sum of its parents mod 3: Pascal's triangle mod 3 on any tiling.",
+  "tiling": {
+    "family": "cairo",
+    "size": {
+      "cells": 12000
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "3272060872402308447",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Layered sum mod 3",
+      "rule": "Layer 3/012",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": "center",
+      "color_by": "state"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "415ad83dcfbeda31",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

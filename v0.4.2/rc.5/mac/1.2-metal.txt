@@ -1,0 +1,2 @@
+40 scenes: CPU matches 40, GPU matches 40; all 5000 generations on the GPU in 40
+adapter: gpu (Apple M2 Max, Metal)

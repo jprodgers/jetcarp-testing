@@ -1,0 +1,44 @@
+== 12:09:54 (default folders, no JETCARP_*) host saver status
+JETCARP's screen saver is not installed.
+== 12:09:54 host saver install --rotation 'Wolfram series'
+written to /Users/Jimmie/Library/Screen Savers/JETCARP.saver; choose JETCARP in System Settings, Wallpaper, Screen Saver… (opening; if it was open already, quit and reopen it to see JETCARP). Install again after changing its rotation
+exit 0
+total 0
+drwx------+  3 Jimmie  staff    96 Nov 16 07:09 .
+drwx------@ 86 Jimmie  staff  2752 Nov  2 10:01 ..
+drwxr-xr-x@  3 Jimmie  staff    96 Nov 16 07:09 JETCARP.saver
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/_CodeSignature
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/MacOS
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/Resources
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/Info.plist
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/_CodeSignature/CodeResources
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/MacOS/JETCARP
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/Resources/thumbnail@2x.png
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/Resources/jetcarp-saver.json
+/Users/Jimmie/Library/Screen Savers/JETCARP.saver/Contents/Resources/thumbnail.png
+total 96
+drwxr-xr-x@  8 Jimmie  staff    256 Nov 16 07:09 .
+drwx------+ 47 Jimmie  staff   1504 Nov 13 09:23 ..
+-rw-r--r--   1 Jimmie  staff   4467 Nov 15 14:24 app.json
+drwxr-xr-x@  7 Jimmie  staff    224 Nov 13 18:34 data
+-rw-r--r--@  1 Jimmie  staff     37 Nov 13 09:19 host-program
+-rw-r--r--@  1 Jimmie  staff    633 Nov 16 07:09 host.json
+-rw-r--r--@  1 Jimmie  staff  27605 Nov 16 07:09 screen-saver-before.plist
+-rw-r--r--@  1 Jimmie  staff    362 Nov 13 07:54 setup.json
+{"format":1,"rotation":{"name":"Wolfram series","description":"All 256 elementary rules, each drawn line by line to the bottom of the screen, then the next.","order":"in_order","items":[{"source":{"kind":"series","rules":"W","family":"square","boundary":"dead"},"end":[{"kind":"done"}],"hold_s":3.0}],"default_minutes":null,"look":{"cell_px":4.0,"speed":60.0,"refill":true,"palette":"Ink"}},"slots":[{"label":"W0","profile":{"name":"W0","show":{"kind":"scene","scene":{"jetcarp_version":"0.4.2-rc.3","format":1,"tiling":{"family":"square","size":{"rect":{"w":200,"h":140}},"boundary":"dead"},"rng_state":1,"cas":[{"rule":"W0","enabled":true,"steps_per_gen":1}]}},"palette":"Ink","cell_px":4.0,"refill
+Jimmie: 'It showed the Wolfram series' (System Settings still open)
+== 12:12:19 host saver status
+JETCARP's screen saver is at /Users/Jimmie/Library/Screen Savers/JETCARP.saver, showing "Wolfram series". Choose it in System Settings, Wallpaper, Screen Saver….
+== 12:12:19 host saver remove (System Settings open)
+removed
+put back the screen saver macOS had chosen before JETCARP was installed; System Settings, if it is open, may keep listing JETCARP until you quit and reopen it
+exit 0
+== status after
+JETCARP's screen saver is not installed.
+-rw-r--r--@  1 Jimmie  staff    37 Nov 13 09:19 host-program
+-rw-r--r--@  1 Jimmie  staff   633 Nov 16 07:09 host.json
+-rw-r--r--@  1 Jimmie  staff  5523 Nov 16 07:12 wallpaper-store-before-saver-remove.plist
+the same choices (screen saver included)
+Jimmie (after quitting and reopening System Settings): 'JETCARP is gone, my old screen saver is selected'

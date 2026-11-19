@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Langton's ant",
+  "description": "Turn right on a dead cell, left on a live one, flip it, step forward. After about 10,000 steps it builds a highway that repeats every 104 steps.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 140,
+        "h": 140
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": 1,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Langton's ant",
+      "rule": "Ant RL",
+      "neighborhood": "edge",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 100,
+      "palette": "Ink",
+      "seed": {
+        "ants": {
+          "count": 1
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "f5e0ff7989c207f0",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

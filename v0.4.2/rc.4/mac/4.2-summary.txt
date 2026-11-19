@@ -1,0 +1,29 @@
+rc.4 wave on the Mac, R4's (private) part 4.2 row: files JETCARP names itself inside a checked folder (d1f3478)
+2026-11-17, 03:16 AM EST, the release archive's jetcarp 0.4.2-rc.4, test folder ~/jetcarp-rc4/homes/t42b. (The script's
+copy of rc.3's publisher key failed, "cp: … config/pack: No such file or directory", since the test folder had no
+config folder yet; the first export made a key of its own there. Which key signs doesn't bear on the links.) Scripts: R4-scripts/t42b_planted_rc4.sh and
+t42b_symlink_rc4.py (the Framework's, for the Mac). Output: 4.2-R4-planted.txt, 4.2b-symlink-rc4.txt and the 4.2b-*.jsonl
+MCP logs.
+
+RESULT: pass for the row's cases, (a), (b) and (c); (c3), the Framework's extra case, reproduces on macOS.
+
+(a) rc.3's t42b_symlink.py on rc.4: world_new through $H/out/link-outside refused; files_list of innocent.json (a link
+    to $H/outside/victim.txt) refused; world_status save_path innocent.json refused; victim.txt unchanged.
+(b) a link planted at an animation's poster.png, leading outside:
+    - CLI media render --scene --out: refused, exit 1, "JETCARP may only write inside $H/out/anim-cli (got
+      $H/out/anim-cli/poster.png, where a symbolic link leads out of it)"; the outside file unchanged;
+    - MCP media_render, with and without poster: refused, the same sentence; unchanged;
+    - CLI, the frames folder planted: refused, the same sentence for frames; the folder it leads to stays empty;
+    - control, a poster.png link to a file inside the folder: the render works (exit 0); the link is replaced by the new
+      poster and the file it pointed to is untouched.
+(c) a link planted at a pack export's pack.json:
+    - CLI pack export --to: refused, exit 1, the same sentence for exp-cli/pack.json (after publishing version 1 into
+      the hidden store beside it, as for any export); the outside file unchanged;
+    - MCP pack export: refused; unchanged.
+    (c4) MCP, the hidden store beside the export planted: refused, "the MCP tools may only write inside $H/out or
+    $H/library"; nothing written where it leads. (c5) MCP publish into a store folder that is such a link: refused.
+(c3) CLI only, as on the Framework and the Acer: a link planted at the hidden store beside an export
+    ($H/out/.exp-store.store -> $H/outside/store-dir) is followed: `pack export --to $H/out/exp-store --feed t42b-store
+    --no-media` exits 0 and publishes a whole signed store where the link leads (jetcarp-store.json, keys, objects, refs and sigs).
+    No existing file was overwritten (every outside file's sha256 OK). For Jimmie and the main session, with the
+    Framework's report.

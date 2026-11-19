@@ -1,0 +1,9 @@
+Power and host status every 2 s during A3 check 5 (only the lines where the power or pause state changed, plus the last):
+
+00:06:05 power=Online batt=100% :: up 482.0s, 312 MB | screen 0: A classic a day · rule:ForestFire 0.01/0.0001 (3 of 7) · generation 1331 · 518400 cells | screen 1: Classics, hourly · langtons-ant (2 of 7) · generation 10600 · 230400 cells| wallpaper: showing
+00:06:25 power=Offline batt=96% :: up 503.0s, 311 MB | screen 0: A classic a day · rule:ForestFire 0.01/0.0001 (3 of 7) · generation 1910 · 518400 cells | screen 1: Classics, hourly · langtons-ant (2 of 7) · generation 15451 · 230400 cells| wallpaper: showing
+00:06:28 power=Offline batt=96% :: up 505.0s, 313 MB | screen 0: A classic a day · rule:ForestFire 0.01/0.0001 (3 of 7) · generation 1935 · 518400 cells · paused | screen 1: Classics, hourly · langtons-ant (2 of 7) · generation 15945 · 230400 cells · paused| wallpaper: showing
+00:07:07 power=Online batt=95% :: up 544.0s, 312 MB | screen 0: A classic a day · rule:ForestFire 0.01/0.0001 (3 of 7) · generation 1935 · 518400 cells · paused | screen 1: Classics, hourly · langtons-ant (2 of 7) · generation 15945 · 230400 cells · paused| wallpaper: showing
+00:07:09 power=Online batt=100% :: up 546.0s, 310 MB | screen 0: A classic a day · rule:ForestFire 0.01/0.0001 (3 of 7) · generation 1984 · 518400 cells | screen 1: Classics, hourly · langtons-ant (2 of 7) · generation 16320 · 230400 cells| wallpaper: showing
+... last:
+00:07:22 power=Online batt=100% :: up 560.0s, 312 MB | screen 0: A classic a day · rule:ForestFire 0.01/0.0001 (3 of 7) · generation 2380 · 518400 cells | screen 1: Classics, hourly · langtons-ant (2 of 7) · generation 19486 · 230400 cells| wallpaper: showing

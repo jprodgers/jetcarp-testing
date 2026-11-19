@@ -1,0 +1,1195 @@
+== 2026-11-15T09:15:37Z (+0 min)
+14087 486352 997.7
+explore 2: 1,024 runs (84/s), 403 elites in 245 niches (0 of them confirmed), 1 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 12 s run over every session, 0 confirmation runs, 2,096 candidates tried, 0.05 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:16:37Z (+1 min)
+14087 1107904   0.3
+explore 2: 7,307 runs (100/s), 2,372 elites in 1,346 niches (0 of them confirmed), 9 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 min 13 s run over every session, 0 confirmation runs, 7,600 candidates tried, 1.00 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:17:37Z (+2 min)
+14087 2252992 874.9
+explore 2: 12,471 runs (93/s), 4,238 elites in 2,380 niches (96 of them confirmed), 12 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 min 14 s run over every session, 288 confirmation runs, 13,819 candidates tried, 1.31 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:18:37Z (+3 min)
+14087 2200176 837.5
+explore 2: 15,543 runs (73/s), 4,719 elites in 2,612 niches (201 of them confirmed), 15 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 min 13 s run over every session, 603 confirmation runs, 17,227 candidates tried, 2.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:19:38Z (+4 min)
+14087 2210944 981.3
+explore 2: 21,879 runs (90/s), 6,214 elites in 3,391 niches (201 of them confirmed), 22 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 4 min 13 s run over every session, 603 confirmation runs, 22,809 candidates tried, 2.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:20:38Z (+5 min)
+14087 2284048 889.6
+explore 2: 24,951 runs (72/s), 6,780 elites in 3,678 niches (291 of them confirmed), 24 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 5 min 13 s run over every session, 891 confirmation runs, 26,905 candidates tried, 2.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:21:38Z (+6 min)
+14087 2631472 211.2
+explore 2: 29,047 runs (58/s), 7,210 elites in 3,883 niches (289 of them confirmed), 27 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 6 min 13 s run over every session, 921 confirmation runs, 30,313 candidates tried, 2.56 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:22:38Z (+7 min)
+14087 2633424 964.4
+explore 2: 33,335 runs (53/s), 7,706 elites in 4,128 niches (363 of them confirmed), 33 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 7 min 14 s run over every session, 1,209 confirmation runs, 35,604 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:23:38Z (+8 min)
+14087 2573488 854.4
+explore 2: 36,407 runs (52/s), 8,053 elites in 4,286 niches (450 of them confirmed), 36 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 8 min 14 s run over every session, 1,497 confirmation runs, 38,964 candidates tried, 2.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:24:38Z (+9 min)
+14087 2740464 543.0
+explore 2: 43,574 runs (85/s), 9,224 elites in 4,839 niches (446 of them confirmed), 39 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 9 min 13 s run over every session, 1,524 confirmation runs, 45,444 candidates tried, 2.48 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:25:38Z (+10 min)
+14087 2803600 579.8
+explore 2: 47,862 runs (73/s), 10,046 elites in 5,280 niches (521 of them confirmed), 45 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 10 min 13 s run over every session, 1,812 confirmation runs, 50,744 candidates tried, 2.48 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:26:38Z (+11 min)
+14087 2738608 878.7
+explore 2: 52,982 runs (78/s), 10,996 elites in 5,750 niches (592 of them confirmed), 48 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 11 min 15 s run over every session, 2,100 confirmation runs, 55,718 candidates tried, 2.48 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:27:38Z (+12 min)
+14087 2779712   0.9
+explore 2: 55,668 runs (61/s), 11,343 elites in 5,897 niches (595 of them confirmed), 51 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 12 min 15 s run over every session, 2,136 confirmation runs, 58,838 candidates tried, 2.60 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:28:39Z (+13 min)
+14087 2760304 108.3
+explore 2: 61,955 runs (84/s), 12,211 elites in 6,285 niches (613 of them confirmed), 55 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 13 min 14 s run over every session, 2,331 confirmation runs, 65,339 candidates tried, 2.57 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:29:39Z (+14 min)
+14087 2761552 814.6
+explore 2: 65,122 runs (58/s), 12,623 elites in 6,486 niches (611 of them confirmed), 58 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 14 min 15 s run over every session, 2,349 confirmation runs, 67,660 candidates tried, 2.63 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:30:39Z (+15 min)
+14087 2707184 882.6
+explore 2: 71,362 runs (70/s), 13,782 elites in 7,099 niches (629 of them confirmed), 61 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 15 min 16 s run over every session, 2,478 confirmation runs, 74,909 candidates tried, 2.56 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:31:39Z (+16 min)
+14087 2643424   0.5
+explore 2: 74,434 runs (64/s), 14,068 elites in 7,233 niches (732 of them confirmed), 62 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 16 min 15 s run over every session, 2,799 confirmation runs, 77,733 candidates tried, 2.56 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:32:39Z (+17 min)
+14087 2731728   0.7
+explore 2: 77,018 runs (70/s), 14,310 elites in 7,334 niches (723 of them confirmed), 64 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 17 min 16 s run over every session, 2,799 confirmation runs, 80,494 candidates tried, 2.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:33:39Z (+18 min)
+14087 2714800 634.4
+explore 2: 79,397 runs (40/s), 14,488 elites in 7,416 niches (807 of them confirmed), 67 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 18 min 16 s run over every session, 3,063 confirmation runs, 83,544 candidates tried, 2.59 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:34:39Z (+19 min)
+14087 2764208 405.4
+explore 2: 85,637 runs (63/s), 15,029 elites in 7,645 niches (778 of them confirmed), 71 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 19 min 14 s run over every session, 3,063 confirmation runs, 88,964 candidates tried, 2.59 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:35:39Z (+20 min)
+14087 2888160   0.6
+explore 2: 90,756 runs (68/s), 15,453 elites in 7,827 niches (851 of them confirmed), 73 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 20 min 16 s run over every session, 3,315 confirmation runs, 94,647 candidates tried, 2.59 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:36:40Z (+21 min)
+14087 2840864   0.3
+explore 2: 94,012 runs (79/s), 15,674 elites in 7,932 niches (881 of them confirmed), 77 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 21 min 15 s run over every session, 3,441 confirmation runs, 98,032 candidates tried, 2.62 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:37:40Z (+22 min)
+14087 2801568 932.6
+explore 2: 98,770 runs (80/s), 16,264 elites in 8,202 niches (866 of them confirmed), 82 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 22 min 14 s run over every session, 3,441 confirmation runs, 102,542 candidates tried, 2.60 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:38:40Z (+23 min)
+14087 2818992 848.0
+explore 2: 101,890 runs (64/s), 16,431 elites in 8,278 niches (968 of them confirmed), 85 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 23 min 16 s run over every session, 3,759 confirmation runs, 106,734 candidates tried, 2.69 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:39:40Z (+24 min)
+14087 2822624 560.3
+explore 2: 106,130 runs (72/s), 16,725 elites in 8,408 niches (1,040 of them confirmed), 89 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 24 min 15 s run over every session, 4,047 confirmation runs, 111,244 candidates tried, 2.69 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:40:40Z (+25 min)
+14087 2818496 734.7
+explore 2: 111,250 runs (76/s), 17,186 elites in 8,597 niches (1,013 of them confirmed), 91 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 25 min 17 s run over every session, 4,047 confirmation runs, 116,364 candidates tried, 2.69 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:41:40Z (+26 min)
+14087 4621408 599.4
+explore 2: 116,256 runs (73/s), 17,532 elites in 8,763 niches (1,033 of them confirmed), 94 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 26 min 16 s run over every session, 4,221 confirmation runs, 121,562 candidates tried, 2.76 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:42:40Z (+27 min)
+14087 5472016 988.4
+explore 2: 120,496 runs (73/s), 17,946 elites in 8,960 niches (1,090 of them confirmed), 95 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 27 min 16 s run over every session, 4,434 confirmation runs, 126,000 candidates tried, 5.16 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:43:40Z (+28 min)
+14087 5394000 399.9
+explore 2: 125,616 runs (79/s), 18,417 elites in 9,163 niches (1,088 of them confirmed), 97 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 28 min 16 s run over every session, 4,467 confirmation runs, 131,120 candidates tried, 5.16 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:44:41Z (+29 min)
+14087 5561040 560.5
+explore 2: 128,784 runs (67/s), 18,888 elites in 9,388 niches (1,086 of them confirmed), 101 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 29 min 17 s run over every session, 4,551 confirmation runs, 134,420 candidates tried, 5.09 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:45:41Z (+30 min)
+14087 5318416 462.9
+explore 2: 135,024 runs (74/s), 19,328 elites in 9,594 niches (1,092 of them confirmed), 104 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 30 min 17 s run over every session, 4,701 confirmation runs, 140,795 candidates tried, 5.16 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:46:41Z (+31 min)
+14087 5609776 331.6
+explore 2: 140,899 runs (95/s), 19,866 elites in 9,833 niches (1,066 of them confirmed), 109 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 31 min 18 s run over every session, 4,734 confirmation runs, 145,646 candidates tried, 5.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:47:41Z (+32 min)
+14087 5380512 911.7
+explore 2: 147,139 runs (99/s), 20,528 elites in 10,150 niches (1,123 of them confirmed), 110 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 32 min 16 s run over every session, 4,968 confirmation runs, 153,180 candidates tried, 5.19 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:48:41Z (+33 min)
+14087 5607152 629.6
+explore 2: 152,259 runs (98/s), 20,946 elites in 10,324 niches (1,154 of them confirmed), 111 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 33 min 16 s run over every session, 5,118 confirmation runs, 158,462 candidates tried, 5.41 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:49:41Z (+34 min)
+14087 5372640 997.2
+explore 2: 158,499 runs (100/s), 21,431 elites in 10,532 niches (1,129 of them confirmed), 115 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 34 min 17 s run over every session, 5,187 confirmation runs, 164,771 candidates tried, 5.12 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:50:41Z (+35 min)
+14087 5311488 503.0
+explore 2: 161,667 runs (76/s), 21,581 elites in 10,600 niches (1,105 of them confirmed), 117 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 35 min 17 s run over every session, 5,187 confirmation runs, 167,403 candidates tried, 5.12 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:51:41Z (+36 min)
+14087 5605984 992.7
+explore 2: 164,218 runs (43/s), 21,689 elites in 10,634 niches (1,131 of them confirmed), 118 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 36 min 18 s run over every session, 5,301 confirmation runs, 170,604 candidates tried, 5.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:52:42Z (+37 min)
+14087 5483584 404.8
+explore 2: 166,887 runs (43/s), 21,744 elites in 10,657 niches (1,124 of them confirmed), 122 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 37 min 18 s run over every session, 5,301 confirmation runs, 173,273 candidates tried, 5.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:53:42Z (+38 min)
+14087 5660208 408.4
+explore 2: 171,079 runs (56/s), 21,974 elites in 10,755 niches (1,130 of them confirmed), 124 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 38 min 16 s run over every session, 5,394 confirmation runs, 177,540 candidates tried, 5.44 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:54:42Z (+39 min)
+14087 5601760 397.6
+explore 2: 176,199 runs (65/s), 22,212 elites in 10,854 niches (1,125 of them confirmed), 125 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 39 min 18 s run over every session, 5,424 confirmation runs, 182,660 candidates tried, 5.44 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:55:42Z (+40 min)
+14087 5802192 801.5
+explore 2: 181,415 runs (78/s), 22,502 elites in 10,975 niches (1,177 of them confirmed), 129 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 40 min 17 s run over every session, 5,661 confirmation runs, 188,161 candidates tried, 5.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:56:42Z (+41 min)
+14087 5612032 877.8
+explore 2: 186,631 runs (81/s), 22,745 elites in 11,079 niches (1,190 of them confirmed), 132 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 41 min 17 s run over every session, 5,754 confirmation runs, 193,458 candidates tried, 5.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:57:42Z (+42 min)
+14087 5569552   0.7
+explore 2: 189,703 runs (74/s), 22,827 elites in 11,114 niches (1,190 of them confirmed), 134 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 42 min 18 s run over every session, 5,790 confirmation runs, 196,530 candidates tried, 5.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:58:42Z (+43 min)
+14087 5617424 985.7
+explore 2: 193,847 runs (65/s), 23,267 elites in 11,335 niches (1,188 of them confirmed), 137 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 43 min 18 s run over every session, 5,826 confirmation runs, 200,552 candidates tried, 5.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T09:59:42Z (+44 min)
+14087 5615856 978.2
+explore 2: 196,857 runs (63/s), 23,446 elites in 11,426 niches (1,186 of them confirmed), 140 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 44 min 18 s run over every session, 5,826 confirmation runs, 203,753 candidates tried, 5.36 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:00:43Z (+45 min)
+14087 5631664 873.7
+explore 2: 201,977 runs (72/s), 23,660 elites in 11,521 niches (1,174 of them confirmed), 143 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 45 min 18 s run over every session, 5,859 confirmation runs, 208,906 candidates tried, 5.36 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:01:43Z (+46 min)
+14087 5629920   0.3
+explore 2: 205,097 runs (62/s), 23,841 elites in 11,606 niches (1,163 of them confirmed), 145 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 46 min 18 s run over every session, 5,892 confirmation runs, 211,506 candidates tried, 5.43 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:02:43Z (+47 min)
+14087 5592176 511.8
+explore 2: 212,912 runs (88/s), 24,317 elites in 11,801 niches (1,176 of them confirmed), 149 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 47 min 19 s run over every session, 5,961 confirmation runs, 219,007 candidates tried, 5.38 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:03:43Z (+48 min)
+14087 5719360 430.4
+explore 2: 218,032 runs (87/s), 24,600 elites in 11,914 niches (1,167 of them confirmed), 150 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 48 min 19 s run over every session, 6,048 confirmation runs, 224,661 candidates tried, 5.38 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:04:43Z (+49 min)
+14087 5594224 973.7
+explore 2: 220,205 runs (68/s), 24,638 elites in 11,933 niches (1,199 of them confirmed), 153 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 49 min 19 s run over every session, 6,156 confirmation runs, 226,375 candidates tried, 5.32 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:05:43Z (+50 min)
+14087 5738544 585.6
+explore 2: 226,493 runs (77/s), 25,128 elites in 12,122 niches (1,153 of them confirmed), 154 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 50 min 18 s run over every session, 6,156 confirmation runs, 232,873 candidates tried, 5.49 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:06:43Z (+51 min)
+14087 5760208 430.0
+explore 2: 232,636 runs (86/s), 25,784 elites in 12,426 niches (1,199 of them confirmed), 156 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 51 min 20 s run over every session, 6,333 confirmation runs, 240,041 candidates tried, 5.49 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:07:43Z (+52 min)
+14087 5690080 958.6
+explore 2: 237,754 runs (93/s), 26,000 elites in 12,505 niches (1,230 of them confirmed), 159 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 52 min 20 s run over every session, 6,429 confirmation runs, 245,272 candidates tried, 5.49 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:08:43Z (+53 min)
+14087 5775312 995.7
+explore 2: 243,018 runs (94/s), 26,367 elites in 12,673 niches (1,287 of them confirmed), 164 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 53 min 19 s run over every session, 6,624 confirmation runs, 250,731 candidates tried, 5.70 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:09:44Z (+54 min)
+14087 5791584 390.4
+explore 2: 247,162 runs (83/s), 26,545 elites in 12,741 niches (1,289 of them confirmed), 166 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 54 min 19 s run over every session, 6,660 confirmation runs, 254,863 candidates tried, 5.70 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:10:44Z (+55 min)
+14087 5791776 994.2
+explore 2: 249,258 runs (51/s), 26,609 elites in 12,768 niches (1,381 of them confirmed), 169 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 55 min 19 s run over every session, 6,948 confirmation runs, 257,295 candidates tried, 5.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:11:44Z (+56 min)
+14087 6058528 585.9
+explore 2: 254,522 runs (65/s), 26,914 elites in 12,903 niches (1,360 of them confirmed), 174 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 56 min 19 s run over every session, 6,948 confirmation runs, 262,541 candidates tried, 5.58 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:12:44Z (+57 min)
+14087 5853376 397.5
+explore 2: 259,642 runs (72/s), 27,133 elites in 12,999 niches (1,355 of them confirmed), 174 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 57 min 20 s run over every session, 7,011 confirmation runs, 267,484 candidates tried, 5.58 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:13:44Z (+58 min)
+14087 6053728 987.4
+explore 2: 262,552 runs (69/s), 27,268 elites in 13,073 niches (1,340 of them confirmed), 175 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 58 min 20 s run over every session, 7,011 confirmation runs, 269,580 candidates tried, 5.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:14:44Z (+59 min)
+14087 5728704 588.8
+explore 2: 265,768 runs (65/s), 27,368 elites in 13,105 niches (1,343 of them confirmed), 178 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 59 min 20 s run over every session, 7,047 confirmation runs, 273,886 candidates tried, 5.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:17:44Z (+62 min)
+15428 647248 231.9
+explore 2: 269,575 runs (53/s), 27,526 elites in 13,179 niches (1,342 of them confirmed), 182 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 0 min run over every session, 7,047 confirmation runs, 277,663 candidates tried, 0.61 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:18:44Z (+63 min)
+15428 1872640 860.2
+explore 2: 275,767 runs (76/s), 27,797 elites in 13,278 niches (1,353 of them confirmed), 184 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 1 min run over every session, 7,107 confirmation runs, 283,945 candidates tried, 0.68 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:19:44Z (+64 min)
+15428 1816224 994.1
+explore 2: 280,887 runs (90/s), 27,998 elites in 13,354 niches (1,368 of them confirmed), 188 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 2 min run over every session, 7,173 confirmation runs, 289,149 candidates tried, 1.73 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:20:45Z (+65 min)
+15428 3987664 979.6
+explore 2: 287,127 runs (86/s), 28,247 elites in 13,448 niches (1,370 of them confirmed), 192 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 3 min run over every session, 7,212 confirmation runs, 295,428 candidates tried, 1.88 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:21:45Z (+66 min)
+15428 4125984 671.6
+explore 2: 292,391 runs (90/s), 28,474 elites in 13,551 niches (1,363 of them confirmed), 194 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 4 min run over every session, 7,242 confirmation runs, 300,484 candidates tried, 3.93 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:22:45Z (+67 min)
+15428 4309312 884.3
+explore 2: 296,393 runs (75/s), 28,647 elites in 13,630 niches (1,362 of them confirmed), 197 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 5 min run over every session, 7,266 confirmation runs, 304,724 candidates tried, 4.09 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:23:45Z (+68 min)
+15428 4675056 606.8
+explore 2: 302,585 runs (89/s), 28,891 elites in 13,731 niches (1,360 of them confirmed), 200 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 6 min run over every session, 7,317 confirmation runs, 310,991 candidates tried, 4.20 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:24:45Z (+69 min)
+15428 4587072 910.1
+explore 2: 308,873 runs (103/s), 29,347 elites in 13,935 niches (1,338 of them confirmed), 203 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 7 min run over every session, 7,344 confirmation runs, 317,285 candidates tried, 4.43 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:25:45Z (+70 min)
+15428 4641264 398.9
+explore 2: 311,993 runs (67/s), 29,434 elites in 13,962 niches (1,335 of them confirmed), 205 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 8 min run over every session, 7,371 confirmation runs, 320,405 candidates tried, 4.31 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:26:45Z (+71 min)
+15428 5032736 526.3
+explore 2: 318,281 runs (69/s), 29,705 elites in 14,067 niches (1,356 of them confirmed), 208 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 9 min run over every session, 7,476 confirmation runs, 326,822 candidates tried, 4.78 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:27:46Z (+72 min)
+15428 5035936   7.3
+explore 2: 323,401 runs (75/s), 29,955 elites in 14,172 niches (1,450 of them confirmed), 208 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 10 min run over every session, 7,788 confirmation runs, 332,230 candidates tried, 4.78 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:28:46Z (+73 min)
+15428 5116800 396.2
+explore 2: 328,617 runs (90/s), 30,267 elites in 14,313 niches (1,427 of them confirmed), 213 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 11 min run over every session, 7,788 confirmation runs, 337,446 candidates tried, 4.80 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:29:46Z (+74 min)
+15428 5108800 992.1
+explore 2: 330,761 runs (59/s), 30,399 elites in 14,365 niches (1,506 of them confirmed), 214 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 12 min run over every session, 8,028 confirmation runs, 339,866 candidates tried, 4.81 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:30:47Z (+75 min)
+15428 5157968   0.6
+explore 2: 334,857 runs (59/s), 30,509 elites in 14,402 niches (1,508 of them confirmed), 217 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 13 min run over every session, 8,064 confirmation runs, 343,722 candidates tried, 4.88 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:31:47Z (+76 min)
+15428 5150816 955.8
+explore 2: 337,339 runs (43/s), 30,559 elites in 14,420 niches (1,562 of them confirmed), 221 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 14 min run over every session, 8,232 confirmation runs, 345,588 candidates tried, 4.90 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:32:47Z (+77 min)
+15428 5406336 706.3
+explore 2: 343,531 runs (68/s), 30,771 elites in 14,509 niches (1,552 of them confirmed), 223 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 15 min run over every session, 8,232 confirmation runs, 352,825 candidates tried, 4.90 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:33:47Z (+78 min)
+15428 5160176 599.4
+explore 2: 345,584 runs (69/s), 30,843 elites in 14,544 niches (1,562 of them confirmed), 225 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 16 min run over every session, 8,277 confirmation runs, 354,950 candidates tried, 4.80 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:34:47Z (+79 min)
+15428 5060288 398.7
+explore 2: 351,872 runs (63/s), 31,368 elites in 14,786 niches (1,570 of them confirmed), 228 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 17 min run over every session, 8,403 confirmation runs, 361,316 candidates tried, 5.00 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:35:48Z (+80 min)
+15428 5238160 868.7
+explore 2: 357,040 runs (78/s), 31,625 elites in 14,889 niches (1,564 of them confirmed), 231 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 18 min run over every session, 8,403 confirmation runs, 366,532 candidates tried, 4.93 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:36:48Z (+81 min)
+15428 5112432 541.5
+explore 2: 359,232 runs (57/s), 31,725 elites in 14,942 niches (1,656 of them confirmed), 232 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 19 min run over every session, 8,691 confirmation runs, 368,771 candidates tried, 4.95 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:37:48Z (+82 min)
+15428 5387680   2.9
+explore 2: 365,153 runs (71/s), 31,907 elites in 15,022 niches (1,661 of them confirmed), 233 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 20 min run over every session, 8,721 confirmation runs, 374,915 candidates tried, 4.95 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:38:48Z (+83 min)
+15428 5413936 931.5
+explore 2: 369,297 runs (66/s), 32,092 elites in 15,099 niches (1,663 of them confirmed), 236 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 21 min run over every session, 8,733 confirmation runs, 379,119 candidates tried, 5.02 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:39:48Z (+84 min)
+15428 5567312 562.0
+explore 2: 373,277 runs (63/s), 32,282 elites in 15,182 niches (1,746 of them confirmed), 238 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 22 min run over every session, 9,021 confirmation runs, 383,363 candidates tried, 5.11 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:40:48Z (+85 min)
+15428 5444992 445.4
+explore 2: 376,349 runs (58/s), 32,420 elites in 15,251 niches (1,745 of them confirmed), 239 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 23 min run over every session, 9,021 confirmation runs, 386,435 candidates tried, 5.11 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:41:49Z (+86 min)
+15428 5426592 359.3
+explore 2: 382,589 runs (69/s), 32,738 elites in 15,378 niches (1,737 of them confirmed), 242 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 24 min run over every session, 9,063 confirmation runs, 392,741 candidates tried, 5.18 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:42:49Z (+87 min)
+15428 5499088 508.4
+explore 2: 388,447 runs (77/s), 32,938 elites in 15,465 niches (1,735 of them confirmed), 245 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 25 min run over every session, 9,093 confirmation runs, 398,614 candidates tried, 5.18 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:43:49Z (+88 min)
+15428 5622336 404.4
+explore 2: 394,589 runs (93/s), 33,257 elites in 15,612 niches (1,744 of them confirmed), 246 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 26 min run over every session, 9,144 confirmation runs, 404,822 candidates tried, 5.24 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:44:49Z (+89 min)
+15428 5736608 953.6
+explore 2: 397,585 runs (49/s), 33,391 elites in 15,666 niches (1,739 of them confirmed), 249 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 27 min run over every session, 9,144 confirmation runs, 407,806 candidates tried, 5.46 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:45:49Z (+90 min)
+15428 5591024 877.9
+explore 2: 402,705 runs (64/s), 33,599 elites in 15,745 niches (1,742 of them confirmed), 251 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 28 min run over every session, 9,201 confirmation runs, 412,983 candidates tried, 5.46 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:46:49Z (+91 min)
+15428 5661504 946.8
+explore 2: 408,897 runs (92/s), 33,874 elites in 15,853 niches (1,743 of them confirmed), 254 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 29 min run over every session, 9,237 confirmation runs, 418,151 candidates tried, 5.46 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:47:50Z (+92 min)
+15428 5590272 858.7
+explore 2: 415,185 runs (96/s), 34,126 elites in 15,959 niches (1,740 of them confirmed), 258 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 30 min run over every session, 9,276 confirmation runs, 425,538 candidates tried, 5.39 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:48:50Z (+93 min)
+15428 5595040 695.3
+explore 2: 419,281 runs (89/s), 34,231 elites in 16,002 niches (1,740 of them confirmed), 259 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 31 min run over every session, 9,300 confirmation runs, 429,658 candidates tried, 5.39 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:49:50Z (+94 min)
+15428 5613456  39.0
+explore 2: 425,095 runs (82/s), 34,468 elites in 16,092 niches (1,758 of them confirmed), 262 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 32 min run over every session, 9,381 confirmation runs, 435,517 candidates tried, 5.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:50:50Z (+95 min)
+15428 5610176 971.1
+explore 2: 430,359 runs (97/s), 34,588 elites in 16,132 niches (1,745 of them confirmed), 266 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 33 min run over every session, 9,381 confirmation runs, 440,048 candidates tried, 5.40 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:51:51Z (+96 min)
+15428 5516080 876.2
+explore 2: 435,005 runs (89/s), 34,897 elites in 16,264 niches (1,821 of them confirmed), 266 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 34 min run over every session, 9,636 confirmation runs, 445,718 candidates tried, 5.40 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:52:51Z (+97 min)
+15428 5623296 993.5
+explore 2: 439,149 runs (68/s), 35,023 elites in 16,313 niches (1,866 of them confirmed), 269 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 35 min run over every session, 9,786 confirmation runs, 448,952 candidates tried, 5.58 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:53:51Z (+98 min)
+15428 5671120 870.4
+explore 2: 444,413 runs (78/s), 35,154 elites in 16,372 niches (1,859 of them confirmed), 275 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 36 min run over every session, 9,786 confirmation runs, 454,447 candidates tried, 5.49 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:54:51Z (+99 min)
+15428 5822496 506.9
+explore 2: 447,485 runs (67/s), 35,253 elites in 16,416 niches (1,922 of them confirmed), 275 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 37 min run over every session, 9,984 confirmation runs, 458,543 candidates tried, 5.49 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:55:52Z (+100 min)
+15428 5570656 742.2
+explore 2: 451,581 runs (58/s), 35,338 elites in 16,456 niches (1,928 of them confirmed), 277 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 38 min run over every session, 10,017 confirmation runs, 461,693 candidates tried, 5.43 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:56:52Z (+101 min)
+15428 5638704 981.6
+explore 2: 455,869 runs (66/s), 35,484 elites in 16,525 niches (1,925 of them confirmed), 279 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 39 min run over every session, 10,047 confirmation runs, 466,993 candidates tried, 5.37 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:57:52Z (+102 min)
+15428 5772544 406.7
+explore 2: 460,989 runs (74/s), 35,767 elites in 16,645 niches (1,919 of them confirmed), 281 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 40 min run over every session, 10,074 confirmation runs, 472,140 candidates tried, 5.37 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:58:52Z (+103 min)
+15428 5606192 600.2
+explore 2: 466,157 runs (80/s), 35,928 elites in 16,713 niches (1,956 of them confirmed), 283 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 41 min run over every session, 10,230 confirmation runs, 477,220 candidates tried, 5.39 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T10:59:52Z (+104 min)
+15428 5802000 944.4
+explore 2: 470,141 runs (64/s), 36,035 elites in 16,761 niches (1,948 of them confirmed), 285 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 42 min run over every session, 10,230 confirmation runs, 481,439 candidates tried, 5.59 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:00:52Z (+105 min)
+15428 5866736 995.9
+explore 2: 474,237 runs (56/s), 36,203 elites in 16,828 niches (1,952 of them confirmed), 287 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 43 min run over every session, 10,281 confirmation runs, 485,607 candidates tried, 5.59 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:01:53Z (+106 min)
+15428 5744368 758.4
+explore 2: 478,477 runs (65/s), 36,305 elites in 16,872 niches (1,939 of them confirmed), 292 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 44 min run over every session, 10,281 confirmation runs, 488,775 candidates tried, 5.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:02:53Z (+107 min)
+15428 5896160 408.2
+explore 2: 483,444 runs (74/s), 36,467 elites in 16,953 niches (1,944 of them confirmed), 294 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 45 min run over every session, 10,320 confirmation runs, 494,360 candidates tried, 5.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:03:53Z (+108 min)
+15428 5748672 994.1
+explore 2: 489,161 runs (90/s), 36,706 elites in 17,056 niches (1,955 of them confirmed), 297 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 46 min run over every session, 10,362 confirmation runs, 500,612 candidates tried, 5.61 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:04:53Z (+109 min)
+15428 5944272 570.4
+explore 2: 493,116 runs (81/s), 36,796 elites in 17,096 niches (1,946 of them confirmed), 301 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 47 min run over every session, 10,362 confirmation runs, 504,117 candidates tried, 5.65 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:05:53Z (+110 min)
+15428 5997952 997.0
+explore 2: 499,846 runs (105/s), 37,081 elites in 17,205 niches (1,957 of them confirmed), 303 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 48 min run over every session, 10,422 confirmation runs, 510,285 candidates tried, 5.65 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:06:54Z (+111 min)
+15428 6230128 584.9
+explore 2: 505,062 runs (96/s), 37,234 elites in 17,264 niches (1,962 of them confirmed), 307 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 49 min run over every session, 10,467 confirmation runs, 516,618 candidates tried, 5.82 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:07:54Z (+112 min)
+15428 6072320 827.7
+explore 2: 508,848 runs (75/s), 37,350 elites in 17,324 niches (1,959 of them confirmed), 308 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 50 min run over every session, 10,488 confirmation runs, 520,410 candidates tried, 5.96 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:08:54Z (+113 min)
+15428 6245120 978.6
+explore 2: 516,016 runs (87/s), 37,632 elites in 17,444 niches (1,968 of them confirmed), 310 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 51 min run over every session, 10,542 confirmation runs, 527,647 candidates tried, 5.89 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:09:55Z (+114 min)
+15428 6109760 400.7
+explore 2: 522,185 runs (92/s), 37,831 elites in 17,531 niches (1,965 of them confirmed), 315 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 52 min run over every session, 10,572 confirmation runs, 533,535 candidates tried, 5.89 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:10:55Z (+115 min)
+15428 6217328 404.3
+explore 2: 526,066 runs (83/s), 37,966 elites in 17,591 niches (1,952 of them confirmed), 316 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 53 min run over every session, 10,572 confirmation runs, 537,715 candidates tried, 5.74 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:11:55Z (+116 min)
+15428 6230048 878.0
+explore 2: 528,114 runs (64/s), 38,015 elites in 17,605 niches (1,949 of them confirmed), 317 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 54 min run over every session, 10,572 confirmation runs, 539,763 candidates tried, 5.74 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:12:55Z (+117 min)
+15428 6153872 856.4
+explore 2: 535,474 runs (81/s), 38,312 elites in 17,740 niches (1,975 of them confirmed), 322 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 55 min run over every session, 10,674 confirmation runs, 547,213 candidates tried, 5.87 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:13:56Z (+118 min)
+15428 6155456 398.8
+explore 2: 539,618 runs (74/s), 38,379 elites in 17,769 niches (1,980 of them confirmed), 324 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 56 min run over every session, 10,722 confirmation runs, 551,381 candidates tried, 5.87 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:14:56Z (+119 min)
+15428 6192288 397.5
+explore 2: 541,762 runs (50/s), 38,431 elites in 17,796 niches (1,978 of them confirmed), 327 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 57 min run over every session, 10,722 confirmation runs, 553,525 candidates tried, 5.88 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:15:56Z (+120 min)
+15428 6259456 508.4
+explore 2: 544,882 runs (51/s), 38,466 elites in 17,809 niches (1,990 of them confirmed), 329 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 58 min run over every session, 10,764 confirmation runs, 556,720 candidates tried, 5.91 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:16:56Z (+121 min)
+15428 6198144 839.2
+explore 2: 547,954 runs (46/s), 38,543 elites in 17,838 niches (1,998 of them confirmed), 331 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 1 h 59 min run over every session, 10,797 confirmation runs, 559,840 candidates tried, 5.98 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:17:56Z (+122 min)
+15428 6229216 191.4
+explore 2: 550,098 runs (43/s), 38,578 elites in 17,852 niches (1,996 of them confirmed), 334 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 0 min run over every session, 10,797 confirmation runs, 561,936 candidates tried, 5.91 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:18:57Z (+123 min)
+15428 6225648 876.0
+explore 2: 555,956 runs (65/s), 38,775 elites in 17,929 niches (1,988 of them confirmed), 334 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 1 min run over every session, 10,815 confirmation runs, 567,848 candidates tried, 5.92 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:19:57Z (+124 min)
+15428 6148528 397.9
+explore 2: 561,076 runs (72/s), 38,894 elites in 17,976 niches (2,000 of them confirmed), 334 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 2 min run over every session, 10,881 confirmation runs, 572,998 candidates tried, 5.92 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:20:57Z (+125 min)
+15428 6215984 998.5
+explore 2: 564,196 runs (73/s), 38,973 elites in 18,012 niches (1,995 of them confirmed), 337 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 3 min run over every session, 10,881 confirmation runs, 576,166 candidates tried, 5.99 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:21:57Z (+126 min)
+15428 6432160 564.9
+explore 2: 568,148 runs (61/s), 39,101 elites in 18,063 niches (1,998 of them confirmed), 339 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 4 min run over every session, 10,899 confirmation runs, 580,109 candidates tried, 5.89 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:22:57Z (+127 min)
+15428 6300000 589.2
+explore 2: 572,244 runs (64/s), 39,208 elites in 18,105 niches (2,061 of them confirmed), 339 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 5 min run over every session, 11,106 confirmation runs, 584,412 candidates tried, 5.89 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:23:57Z (+128 min)
+15428 6393488 774.7
+explore 2: 579,073 runs (87/s), 39,395 elites in 18,190 niches (2,057 of them confirmed), 341 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 6 min run over every session, 11,127 confirmation runs, 590,307 candidates tried, 6.07 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:24:58Z (+129 min)
+15428 6304896 274.1
+explore 2: 583,313 runs (99/s), 39,577 elites in 18,277 niches (2,074 of them confirmed), 342 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 7 min run over every session, 11,196 confirmation runs, 595,550 candidates tried, 6.00 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:25:58Z (+130 min)
+15428 6311392 400.1
+explore 2: 589,601 runs (98/s), 39,841 elites in 18,386 niches (2,068 of them confirmed), 343 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 8 min run over every session, 11,211 confirmation runs, 601,853 candidates tried, 6.14 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:26:58Z (+131 min)
+15428 6393600 533.8
+explore 2: 596,817 runs (106/s), 40,108 elites in 18,498 niches (2,069 of them confirmed), 345 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 9 min run over every session, 11,250 confirmation runs, 609,144 candidates tried, 6.08 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:27:58Z (+132 min)
+15428 6266720 994.7
+explore 2: 600,913 runs (97/s), 40,187 elites in 18,529 niches (2,082 of them confirmed), 347 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 10 min run over every session, 11,310 confirmation runs, 613,312 candidates tried, 6.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:28:59Z (+133 min)
+15428 6575792 940.7
+explore 2: 606,225 runs (80/s), 40,301 elites in 18,583 niches (2,067 of them confirmed), 351 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 11 min run over every session, 11,310 confirmation runs, 618,597 candidates tried, 6.27 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:29:59Z (+134 min)
+15428 6379840 975.1
+explore 2: 610,369 runs (82/s), 40,426 elites in 18,635 niches (2,074 of them confirmed), 353 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 12 min run over every session, 11,352 confirmation runs, 622,810 candidates tried, 6.08 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:30:59Z (+135 min)
+15428 6390576 908.7
+explore 2: 615,572 runs (83/s), 40,589 elites in 18,698 niches (2,160 of them confirmed), 355 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 13 min run over every session, 11,640 confirmation runs, 628,289 candidates tried, 6.15 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:31:59Z (+136 min)
+15428 6400496   0.4
+explore 2: 618,644 runs (71/s), 40,661 elites in 18,726 niches (2,169 of them confirmed), 357 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 14 min run over every session, 11,676 confirmation runs, 630,895 candidates tried, 6.15 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:32:59Z (+137 min)
+15428 6318992 998.0
+explore 2: 624,418 runs (64/s), 40,950 elites in 18,835 niches (2,230 of them confirmed), 359 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 15 min run over every session, 11,904 confirmation runs, 637,411 candidates tried, 6.08 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:33:59Z (+138 min)
+15428 6433920 503.0
+explore 2: 627,586 runs (73/s), 41,035 elites in 18,863 niches (2,228 of them confirmed), 360 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 16 min run over every session, 11,904 confirmation runs, 640,080 candidates tried, 6.03 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:35:00Z (+139 min)
+15428 6293584 964.9
+explore 2: 628,782 runs (33/s), 41,038 elites in 18,864 niches (2,236 of them confirmed), 361 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 17 min run over every session, 11,928 confirmation runs, 640,799 candidates tried, 6.02 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:36:00Z (+140 min)
+15428 6328688 818.5
+explore 2: 633,914 runs (53/s), 41,158 elites in 18,918 niches (2,235 of them confirmed), 364 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 18 min run over every session, 11,952 confirmation runs, 646,955 candidates tried, 6.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:37:00Z (+141 min)
+15428 6398608 504.5
+explore 2: 637,001 runs (68/s), 41,197 elites in 18,927 niches (2,285 of them confirmed), 367 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 19 min run over every session, 12,111 confirmation runs, 650,183 candidates tried, 6.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:38:00Z (+142 min)
+15428 6448976 599.3
+explore 2: 643,145 runs (72/s), 41,351 elites in 19,000 niches (2,293 of them confirmed), 369 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 20 min run over every session, 12,153 confirmation runs, 656,253 candidates tried, 6.10 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:39:00Z (+143 min)
+15428 6627936  46.2
+explore 2: 645,107 runs (59/s), 41,369 elites in 19,008 niches (2,289 of them confirmed), 371 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 21 min run over every session, 12,153 confirmation runs, 658,349 candidates tried, 6.13 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:40:00Z (+144 min)
+15428 6396304 993.7
+explore 2: 650,371 runs (77/s), 41,515 elites in 19,081 niches (2,294 of them confirmed), 372 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 22 min run over every session, 12,195 confirmation runs, 663,655 candidates tried, 6.22 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:41:01Z (+145 min)
+15428 6531472 931.9
+explore 2: 656,659 runs (92/s), 41,713 elites in 19,157 niches (2,289 of them confirmed), 375 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 23 min run over every session, 12,195 confirmation runs, 668,871 candidates tried, 6.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:42:01Z (+146 min)
+15428 6606400 886.7
+explore 2: 659,779 runs (73/s), 41,760 elites in 19,178 niches (2,297 of them confirmed), 377 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 24 min run over every session, 12,231 confirmation runs, 672,773 candidates tried, 6.22 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:43:01Z (+147 min)
+15428 6530928 1000.2
+explore 2: 665,668 runs (74/s), 41,883 elites in 19,225 niches (2,296 of them confirmed), 379 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 25 min run over every session, 12,291 confirmation runs, 679,049 candidates tried, 6.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:44:02Z (+148 min)
+15428 6571888 558.0
+explore 2: 671,482 runs (112/s), 42,001 elites in 19,277 niches (2,284 of them confirmed), 383 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 26 min run over every session, 12,291 confirmation runs, 683,935 candidates tried, 6.16 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:45:02Z (+149 min)
+15428 6601264 223.0
+explore 2: 674,554 runs (89/s), 42,082 elites in 19,309 niches (2,327 of them confirmed), 384 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 27 min run over every session, 12,435 confirmation runs, 688,031 candidates tried, 6.16 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:46:02Z (+150 min)
+15428 6534848 693.9
+explore 2: 679,351 runs (67/s), 42,198 elites in 19,362 niches (2,348 of them confirmed), 387 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 28 min run over every session, 12,534 confirmation runs, 692,949 candidates tried, 6.17 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:47:02Z (+151 min)
+15428 6609024 505.9
+explore 2: 682,423 runs (62/s), 42,295 elites in 19,404 niches (2,343 of them confirmed), 388 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 29 min run over every session, 12,534 confirmation runs, 696,021 candidates tried, 6.17 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:48:02Z (+152 min)
+15428 6550016   1.2
+explore 2: 684,471 runs (56/s), 42,340 elites in 19,422 niches (2,350 of them confirmed), 388 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 30 min run over every session, 12,555 confirmation runs, 698,069 candidates tried, 6.17 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:49:03Z (+153 min)
+15428 6525488 994.4
+explore 2: 689,639 runs (57/s), 42,454 elites in 19,467 niches (2,353 of them confirmed), 390 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 31 min run over every session, 12,573 confirmation runs, 703,303 candidates tried, 6.22 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:50:03Z (+154 min)
+15428 6531312 874.7
+explore 2: 694,903 runs (90/s), 42,621 elites in 19,543 niches (2,377 of them confirmed), 390 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 32 min run over every session, 12,672 confirmation runs, 708,645 candidates tried, 6.42 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:51:03Z (+155 min)
+15428 6606240 318.0
+explore 2: 701,095 runs (84/s), 42,768 elites in 19,607 niches (2,470 of them confirmed), 393 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 33 min run over every session, 12,987 confirmation runs, 715,125 candidates tried, 6.37 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:52:03Z (+156 min)
+15428 6601024 968.2
+explore 2: 705,335 runs (62/s), 42,837 elites in 19,636 niches (2,458 of them confirmed), 394 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 34 min run over every session, 12,987 confirmation runs, 719,395 candidates tried, 6.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:53:04Z (+157 min)
+15428 6601904 914.6
+explore 2: 710,455 runs (71/s), 42,972 elites in 19,691 niches (2,458 of them confirmed), 395 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 35 min run over every session, 12,996 confirmation runs, 724,524 candidates tried, 6.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:54:04Z (+158 min)
+15428 6605696 998.8
+explore 2: 713,440 runs (59/s), 42,993 elites in 19,701 niches (2,466 of them confirmed), 398 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 36 min run over every session, 13,026 confirmation runs, 727,557 candidates tried, 6.30 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:55:04Z (+159 min)
+15428 6606896 856.7
+explore 2: 718,704 runs (69/s), 43,141 elites in 19,768 niches (2,460 of them confirmed), 401 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 37 min run over every session, 13,032 confirmation runs, 732,812 candidates tried, 6.30 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:56:04Z (+160 min)
+15428 6608032 881.0
+explore 2: 721,776 runs (62/s), 43,169 elites in 19,775 niches (2,458 of them confirmed), 403 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 38 min run over every session, 13,044 confirmation runs, 735,896 candidates tried, 6.30 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:57:04Z (+161 min)
+15428 6607504 994.7
+explore 2: 724,896 runs (47/s), 43,198 elites in 19,792 niches (2,467 of them confirmed), 407 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 39 min run over every session, 13,077 confirmation runs, 739,064 candidates tried, 6.30 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:58:04Z (+162 min)
+15428 6542656 887.4
+explore 2: 732,208 runs (103/s), 43,372 elites in 19,867 niches (2,465 of them confirmed), 408 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 40 min run over every session, 13,092 confirmation runs, 746,364 candidates tried, 6.30 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T11:59:05Z (+163 min)
+15428 6685200 889.0
+explore 2: 738,400 runs (107/s), 43,492 elites in 19,923 niches (2,467 of them confirmed), 410 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 41 min run over every session, 13,122 confirmation runs, 752,310 candidates tried, 6.30 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:00:05Z (+164 min)
+15428 6552512 941.8
+explore 2: 742,337 runs (80/s), 43,604 elites in 19,967 niches (2,455 of them confirmed), 413 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 42 min run over every session, 13,122 confirmation runs, 756,520 candidates tried, 6.32 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:01:05Z (+165 min)
+15428 6711248   0.9
+explore 2: 746,480 runs (71/s), 43,708 elites in 20,013 niches (2,551 of them confirmed), 416 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 43 min run over every session, 13,428 confirmation runs, 760,952 candidates tried, 6.32 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:02:05Z (+166 min)
+15428 6626608 427.4
+explore 2: 747,504 runs (26/s), 43,717 elites in 20,015 niches (2,551 of them confirmed), 416 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 44 min run over every session, 13,428 confirmation runs, 762,024 candidates tried, 6.32 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:03:05Z (+167 min)
+15428 6555872 1000.1
+explore 2: 752,768 runs (68/s), 43,817 elites in 20,057 niches (2,579 of them confirmed), 420 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 45 min run over every session, 13,533 confirmation runs, 767,393 candidates tried, 6.25 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:04:05Z (+168 min)
+15428 6624608  28.6
+explore 2: 755,984 runs (59/s), 43,862 elites in 20,078 niches (2,573 of them confirmed), 424 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 46 min run over every session, 13,533 confirmation runs, 770,561 candidates tried, 6.32 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:05:06Z (+169 min)
+15428 6636400 883.1
+explore 2: 762,176 runs (75/s), 44,059 elites in 20,163 niches (2,568 of them confirmed), 425 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 47 min run over every session, 13,551 confirmation runs, 776,792 candidates tried, 6.32 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:06:06Z (+170 min)
+15428 6649872 373.4
+explore 2: 766,368 runs (82/s), 44,154 elites in 20,195 niches (2,595 of them confirmed), 428 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 48 min run over every session, 13,644 confirmation runs, 781,056 candidates tried, 6.33 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:07:06Z (+171 min)
+15428 6580160 915.8
+explore 2: 772,608 runs (87/s), 44,290 elites in 20,245 niches (2,593 of them confirmed), 429 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 49 min run over every session, 13,656 confirmation runs, 787,338 candidates tried, 6.32 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:08:06Z (+172 min)
+15428 6668352 598.4
+explore 2: 778,751 runs (97/s), 44,448 elites in 20,305 niches (2,593 of them confirmed), 432 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 50 min run over every session, 13,686 confirmation runs, 793,108 candidates tried, 6.33 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:09:06Z (+173 min)
+15428 6779712 308.1
+explore 2: 783,545 runs (91/s), 44,570 elites in 20,361 niches (2,583 of them confirmed), 435 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 51 min run over every session, 13,698 confirmation runs, 798,288 candidates tried, 6.35 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:10:06Z (+174 min)
+15428 6672144   3.7
+explore 2: 787,383 runs (67/s), 44,647 elites in 20,390 niches (2,621 of them confirmed), 436 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 52 min run over every session, 13,851 confirmation runs, 802,279 candidates tried, 6.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:11:07Z (+175 min)
+15428 6655376 998.0
+explore 2: 793,623 runs (74/s), 44,778 elites in 20,435 niches (2,622 of them confirmed), 440 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 53 min run over every session, 13,869 confirmation runs, 808,585 candidates tried, 6.40 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:12:07Z (+176 min)
+15428 6663856 879.5
+explore 2: 798,839 runs (88/s), 44,875 elites in 20,478 niches (2,617 of them confirmed), 443 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 54 min run over every session, 13,869 confirmation runs, 813,777 candidates tried, 6.41 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:13:07Z (+177 min)
+15428 6691824 996.9
+explore 2: 806,517 runs (100/s), 45,113 elites in 20,591 niches (2,614 of them confirmed), 444 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 55 min run over every session, 13,902 confirmation runs, 821,311 candidates tried, 6.41 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:14:07Z (+178 min)
+15428 6689344 399.5
+explore 2: 810,508 runs (88/s), 45,190 elites in 20,617 niches (2,611 of them confirmed), 446 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 56 min run over every session, 13,923 confirmation runs, 825,476 candidates tried, 6.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:15:08Z (+179 min)
+15428 6831840 578.1
+explore 2: 814,700 runs (72/s), 45,296 elites in 20,662 niches (2,607 of them confirmed), 448 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 57 min run over every session, 13,923 confirmation runs, 828,968 candidates tried, 6.44 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:16:08Z (+180 min)
+15428 6703904 876.9
+explore 2: 818,796 runs (71/s), 45,505 elites in 20,763 niches (2,694 of them confirmed), 449 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 58 min run over every session, 14,211 confirmation runs, 834,088 candidates tried, 6.44 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:17:08Z (+181 min)
+15428 6697200 396.0
+explore 2: 825,035 runs (90/s), 45,632 elites in 20,811 niches (2,691 of them confirmed), 452 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 2 h 59 min run over every session, 14,256 confirmation runs, 840,337 candidates tried, 6.39 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:18:08Z (+182 min)
+15428 6709184 749.8
+explore 2: 830,251 runs (99/s), 45,799 elites in 20,883 niches (2,784 of them confirmed), 453 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 0 min run over every session, 14,544 confirmation runs, 845,871 candidates tried, 6.39 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:19:08Z (+183 min)
+15428 6841760 255.2
+explore 2: 837,418 runs (105/s), 45,979 elites in 20,957 niches (2,788 of them confirmed), 455 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 1 min run over every session, 14,610 confirmation runs, 853,075 candidates tried, 6.39 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:20:08Z (+184 min)
+15428 6830224 603.0
+explore 2: 841,562 runs (86/s), 46,018 elites in 20,965 niches (2,780 of them confirmed), 458 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 2 min run over every session, 14,610 confirmation runs, 857,267 candidates tried, 6.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:21:09Z (+185 min)
+15428 6814288 409.0
+explore 2: 844,520 runs (55/s), 46,088 elites in 20,991 niches (2,867 of them confirmed), 460 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 3 min run over every session, 14,898 confirmation runs, 860,002 candidates tried, 6.60 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:22:09Z (+186 min)
+15428 6755952 999.7
+explore 2: 848,123 runs (54/s), 46,133 elites in 21,004 niches (2,875 of them confirmed), 464 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 4 min run over every session, 14,928 confirmation runs, 864,015 candidates tried, 6.44 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:23:09Z (+187 min)
+15428 6792960 987.6
+explore 2: 852,280 runs (65/s), 46,232 elites in 21,041 niches (2,878 of them confirmed), 467 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 5 min run over every session, 14,952 confirmation runs, 868,297 candidates tried, 6.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:24:10Z (+188 min)
+15428 6796448 715.9
+explore 2: 857,400 runs (75/s), 46,350 elites in 21,078 niches (2,888 of them confirmed), 469 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 6 min run over every session, 15,003 confirmation runs, 873,480 candidates tried, 6.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:25:10Z (+189 min)
+15428 6782176  94.1
+explore 2: 862,616 runs (85/s), 46,472 elites in 21,131 niches (2,894 of them confirmed), 473 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 7 min run over every session, 15,033 confirmation runs, 878,696 candidates tried, 6.48 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:26:10Z (+190 min)
+15428 7074736 449.2
+explore 2: 868,856 runs (88/s), 46,575 elites in 21,176 niches (2,886 of them confirmed), 476 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 8 min run over every session, 15,048 confirmation runs, 884,972 candidates tried, 6.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:27:10Z (+191 min)
+15428 6953456   0.4
+explore 2: 873,000 runs (78/s), 46,674 elites in 21,215 niches (2,886 of them confirmed), 477 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 9 min run over every session, 15,078 confirmation runs, 889,125 candidates tried, 6.62 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:28:10Z (+192 min)
+15428 7198640 583.0
+explore 2: 879,192 runs (77/s), 46,857 elites in 21,276 niches (2,869 of them confirmed), 478 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 10 min run over every session, 15,093 confirmation runs, 895,380 candidates tried, 6.91 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:29:10Z (+193 min)
+15428 7326848   1.2
+explore 2: 885,432 runs (87/s), 47,038 elites in 21,337 niches (2,866 of them confirmed), 478 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 11 min run over every session, 15,117 confirmation runs, 901,596 candidates tried, 6.92 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:30:10Z (+194 min)
+15428 7149856 980.8
+explore 2: 888,552 runs (71/s), 47,077 elites in 21,351 niches (2,960 of them confirmed), 479 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 12 min run over every session, 15,405 confirmation runs, 904,545 candidates tried, 6.92 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:31:11Z (+195 min)
+15428 7453584 584.4
+explore 2: 892,285 runs (45/s), 47,139 elites in 21,371 niches (2,956 of them confirmed), 482 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 13 min run over every session, 15,405 confirmation runs, 908,767 candidates tried, 6.91 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:32:11Z (+196 min)
+15428 7325040 602.2
+explore 2: 897,405 runs (83/s), 47,191 elites in 21,394 niches (2,961 of them confirmed), 485 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 14 min run over every session, 15,444 confirmation runs, 913,534 candidates tried, 6.93 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:33:11Z (+197 min)
+15428 7270624 641.3
+explore 2: 900,163 runs (67/s), 47,218 elites in 21,403 niches (2,958 of them confirmed), 489 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 15 min run over every session, 15,462 confirmation runs, 916,720 candidates tried, 6.99 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:34:11Z (+198 min)
+15428 7213104 990.0
+explore 2: 907,475 runs (87/s), 47,348 elites in 21,451 niches (2,968 of them confirmed), 494 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 16 min run over every session, 15,510 confirmation runs, 924,080 candidates tried, 6.98 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:35:11Z (+199 min)
+15428 7270992 878.9
+explore 2: 911,715 runs (94/s), 47,434 elites in 21,489 niches (2,962 of them confirmed), 496 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 17 min run over every session, 15,510 confirmation runs, 928,296 candidates tried, 6.92 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:36:11Z (+200 min)
+15428 7262096 882.0
+explore 2: 916,835 runs (90/s), 47,491 elites in 21,516 niches (2,960 of them confirmed), 498 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 18 min run over every session, 15,516 confirmation runs, 933,422 candidates tried, 6.92 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:37:12Z (+201 min)
+15428 7201616   2.0
+explore 2: 922,051 runs (87/s), 47,553 elites in 21,540 niches (2,969 of them confirmed), 503 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 19 min run over every session, 15,552 confirmation runs, 938,650 candidates tried, 6.90 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:38:12Z (+202 min)
+15428 7337152 909.9
+explore 2: 929,315 runs (98/s), 47,718 elites in 21,610 niches (2,956 of them confirmed), 505 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 20 min run over every session, 15,552 confirmation runs, 945,118 candidates tried, 6.93 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:39:12Z (+203 min)
+15428 7277296 598.0
+explore 2: 934,435 runs (99/s), 47,813 elites in 21,648 niches (3,022 of them confirmed), 507 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 21 min run over every session, 15,780 confirmation runs, 951,054 candidates tried, 6.94 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:40:12Z (+204 min)
+15428 7411408 383.2
+explore 2: 941,443 runs (105/s), 47,965 elites in 21,706 niches (3,019 of them confirmed), 509 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 22 min run over every session, 15,798 confirmation runs, 958,336 candidates tried, 7.01 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:41:12Z (+205 min)
+15428 7343280 408.1
+explore 2: 947,683 runs (106/s), 48,221 elites in 21,801 niches (3,001 of them confirmed), 510 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 23 min run over every session, 15,810 confirmation runs, 964,576 candidates tried, 7.07 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:42:12Z (+206 min)
+15428 7521760 597.2
+explore 2: 949,713 runs (64/s), 48,259 elites in 21,819 niches (3,010 of them confirmed), 510 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 24 min run over every session, 15,846 confirmation runs, 966,654 candidates tried, 7.17 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:43:12Z (+207 min)
+15428 7452576   1.7
+explore 2: 953,953 runs (66/s), 48,344 elites in 21,850 niches (3,036 of them confirmed), 512 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 25 min run over every session, 15,957 confirmation runs, 970,957 candidates tried, 7.18 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:44:13Z (+208 min)
+15428 7404064 987.5
+explore 2: 961,169 runs (100/s), 48,658 elites in 21,995 niches (3,110 of them confirmed), 514 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 26 min run over every session, 16,212 confirmation runs, 977,984 candidates tried, 7.04 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:45:13Z (+209 min)
+15428 7317440 402.7
+explore 2: 962,821 runs (67/s), 48,684 elites in 22,003 niches (3,107 of them confirmed), 516 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 27 min run over every session, 16,212 confirmation runs, 980,080 candidates tried, 7.00 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:46:13Z (+210 min)
+15428 7512256 847.6
+explore 2: 966,857 runs (50/s), 48,721 elites in 22,014 niches (3,112 of them confirmed), 518 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 28 min run over every session, 16,260 confirmation runs, 984,197 candidates tried, 7.16 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:47:13Z (+211 min)
+15428 7588592 848.5
+explore 2: 971,976 runs (63/s), 48,904 elites in 22,098 niches (3,120 of them confirmed), 520 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 29 min run over every session, 16,320 confirmation runs, 989,377 candidates tried, 7.16 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:48:14Z (+212 min)
+15428 7644224 797.0
+explore 2: 978,168 runs (88/s), 48,978 elites in 22,125 niches (3,120 of them confirmed), 522 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 30 min run over every session, 16,353 confirmation runs, 995,617 candidates tried, 7.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:49:14Z (+213 min)
+15428 7578624 975.3
+explore 2: 984,456 runs (88/s), 49,105 elites in 22,177 niches (3,111 of them confirmed), 523 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 31 min run over every session, 16,362 confirmation runs, 1,001,899 candidates tried, 7.22 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:50:14Z (+214 min)
+15428 7742976 605.8
+explore 2: 989,576 runs (91/s), 49,254 elites in 22,231 niches (3,119 of them confirmed), 524 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 32 min run over every session, 16,401 confirmation runs, 1,007,073 candidates tried, 7.39 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:51:14Z (+215 min)
+15428 7635968 998.3
+explore 2: 995,912 runs (99/s), 49,394 elites in 22,275 niches (3,114 of them confirmed), 526 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 33 min run over every session, 16,449 confirmation runs, 1,013,433 candidates tried, 7.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:52:14Z (+216 min)
+15428 7640208 684.8
+explore 2: 998,984 runs (76/s), 49,447 elites in 22,299 niches (3,109 of them confirmed), 527 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 34 min run over every session, 16,449 confirmation runs, 1,016,514 candidates tried, 7.28 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:53:15Z (+217 min)
+15428 7642608 996.0
+explore 2: 1,005,128 runs (76/s), 49,550 elites in 22,338 niches (3,116 of them confirmed), 530 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 35 min run over every session, 16,497 confirmation runs, 1,022,721 candidates tried, 7.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:54:15Z (+218 min)
+15428 7652320 995.0
+explore 2: 1,009,416 runs (70/s), 49,616 elites in 22,365 niches (3,125 of them confirmed), 535 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 36 min run over every session, 16,551 confirmation runs, 1,027,039 candidates tried, 7.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:55:15Z (+219 min)
+15428 7667616 507.0
+explore 2: 1,012,222 runs (60/s), 49,648 elites in 22,372 niches (3,121 of them confirmed), 536 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 37 min run over every session, 16,551 confirmation runs, 1,029,854 candidates tried, 7.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:56:15Z (+220 min)
+15428 7653280 988.2
+explore 2: 1,016,318 runs (55/s), 49,837 elites in 22,445 niches (3,125 of them confirmed), 538 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 38 min run over every session, 16,596 confirmation runs, 1,034,010 candidates tried, 7.30 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:57:16Z (+221 min)
+15428 7713392 988.3
+explore 2: 1,019,582 runs (47/s), 49,880 elites in 22,459 niches (3,119 of them confirmed), 541 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 39 min run over every session, 16,596 confirmation runs, 1,037,256 candidates tried, 7.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:58:16Z (+222 min)
+15428 7739024 508.8
+explore 2: 1,026,750 runs (81/s), 50,084 elites in 22,551 niches (3,113 of them confirmed), 541 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 40 min run over every session, 16,644 confirmation runs, 1,044,261 candidates tried, 7.29 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T12:59:16Z (+223 min)
+15428 7695264 887.0
+explore 2: 1,029,194 runs (77/s), 50,104 elites in 22,559 niches (3,193 of them confirmed), 542 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 41 min run over every session, 16,890 confirmation runs, 1,047,180 candidates tried, 7.31 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:00:16Z (+224 min)
+15428 7682896 970.5
+explore 2: 1,033,386 runs (58/s), 50,154 elites in 22,577 niches (3,188 of them confirmed), 546 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 42 min run over every session, 16,890 confirmation runs, 1,050,300 candidates tried, 7.40 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:01:16Z (+225 min)
+15428 7813504 883.8
+explore 2: 1,038,602 runs (70/s), 50,270 elites in 22,614 niches (3,182 of them confirmed), 548 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 43 min run over every session, 16,896 confirmation runs, 1,056,576 candidates tried, 7.64 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:02:17Z (+226 min)
+15428 7876992 920.3
+explore 2: 1,043,601 runs (78/s), 50,338 elites in 22,639 niches (3,181 of them confirmed), 550 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 44 min run over every session, 16,926 confirmation runs, 1,060,623 candidates tried, 7.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:03:17Z (+227 min)
+15428 7812224 882.1
+explore 2: 1,048,817 runs (81/s), 50,523 elites in 22,716 niches (3,182 of them confirmed), 553 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 45 min run over every session, 16,950 confirmation runs, 1,066,863 candidates tried, 7.45 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:04:17Z (+228 min)
+15428 7830576 872.0
+explore 2: 1,055,057 runs (91/s), 50,673 elites in 22,781 niches (3,186 of them confirmed), 555 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 46 min run over every session, 17,004 confirmation runs, 1,073,139 candidates tried, 7.45 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:05:18Z (+229 min)
+15428 7827696 993.6
+explore 2: 1,062,273 runs (109/s), 50,833 elites in 22,851 niches (3,195 of them confirmed), 555 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 47 min run over every session, 17,067 confirmation runs, 1,080,436 candidates tried, 7.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:06:18Z (+230 min)
+15428 7765504 987.1
+explore 2: 1,066,513 runs (76/s), 50,950 elites in 22,894 niches (3,274 of them confirmed), 556 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 48 min run over every session, 17,346 confirmation runs, 1,084,911 candidates tried, 7.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:07:18Z (+231 min)
+15428 7892464   1.4
+explore 2: 1,070,634 runs (64/s), 51,012 elites in 22,919 niches (3,276 of them confirmed), 557 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 49 min run over every session, 17,373 confirmation runs, 1,089,055 candidates tried, 7.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:08:19Z (+232 min)
+15428 7827440 970.9
+explore 2: 1,076,679 runs (98/s), 51,177 elites in 22,986 niches (3,330 of them confirmed), 559 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 50 min run over every session, 17,571 confirmation runs, 1,095,316 candidates tried, 7.41 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:09:19Z (+233 min)
+15428 7907488 441.9
+explore 2: 1,083,847 runs (106/s), 51,302 elites in 23,042 niches (3,322 of them confirmed), 559 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 51 min run over every session, 17,577 confirmation runs, 1,102,260 candidates tried, 7.41 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:10:19Z (+234 min)
+15428 7842768 776.1
+explore 2: 1,089,808 runs (104/s), 51,403 elites in 23,082 niches (3,319 of them confirmed), 562 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 52 min run over every session, 17,610 confirmation runs, 1,108,515 candidates tried, 7.51 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:11:19Z (+235 min)
+15428 7846768 934.0
+explore 2: 1,095,072 runs (103/s), 51,522 elites in 23,129 niches (3,331 of them confirmed), 563 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 53 min run over every session, 17,664 confirmation runs, 1,113,806 candidates tried, 7.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:12:20Z (+236 min)
+15428 8004480 706.5
+explore 2: 1,099,168 runs (89/s), 51,588 elites in 23,151 niches (3,327 of them confirmed), 565 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 54 min run over every session, 17,664 confirmation runs, 1,117,902 candidates tried, 7.47 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:13:20Z (+237 min)
+15428 7881696 818.7
+explore 2: 1,105,360 runs (80/s), 51,678 elites in 23,188 niches (3,327 of them confirmed), 567 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 55 min run over every session, 17,697 confirmation runs, 1,124,154 candidates tried, 7.58 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:14:20Z (+238 min)
+15428 7899040 572.6
+explore 2: 1,109,600 runs (81/s), 51,723 elites in 23,201 niches (3,324 of them confirmed), 568 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 56 min run over every session, 17,706 confirmation runs, 1,128,104 candidates tried, 7.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:15:20Z (+239 min)
+15428 7825856 509.0
+explore 2: 1,115,472 runs (87/s), 51,834 elites in 23,246 niches (3,321 of them confirmed), 571 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 57 min run over every session, 17,712 confirmation runs, 1,134,254 candidates tried, 7.52 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)
+== 2026-11-15T13:16:21Z (+240 min)
+15428 7897360 989.8
+explore 2: 1,120,486 runs (79/s), 51,926 elites in 23,283 niches (3,321 of them confirmed), 573 of 1,359 tilings; Apple M2 Max, Metal
+  status running, 3 h 58 min run over every session, 17,733 confirmation runs, 1,139,316 candidates tried, 7.53 GB of memory
+  threads: 6 for runs on the processor and 4 for the GPU's batches, of 12 cores (2 left free)

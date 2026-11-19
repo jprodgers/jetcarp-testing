@@ -1,0 +1,8 @@
+﻿generation 0: +1 2761, -1 2719, balance 0.496, sorted 0.01, fronts 4508, traded -
+generation 64: +1 3061, -1 3420, balance 0.472, sorted 0.948, fronts 491, traded 0.467
+generation 256: +1 3181, -1 4069, balance 0.439, sorted 0.976, fronts 275, traded 0.15
+generation 1024: +1 3245, -1 4413, balance 0.424, sorted 0.99, fronts 130, traded 0.139
+generation 2048: +1 3109, -1 4677, balance 0.399, sorted 0.991, fronts 122, traded 0.072
+JACA B27/S03456 on cairo, 12288 cells: C:\Users\jimmi\jetcarp-rc-042\out\2026-11-14_19-29-38_jaca-territories
+output: C:\Users\jimmi\jetcarp-rc-042\out\2026-11-14_19-29-38_jaca-territories
+time:   1.79s

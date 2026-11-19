@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Brian's Brain",
+  "description": "Three states: firing, refractory, ready. Cells fire with exactly two firing neighbours. Gliders everywhere.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 200,
+        "h": 140
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 2,
+  "cas": [
+    {
+      "id": 1,
+      "name": "Brian's Brain",
+      "rule": "B2/S/C3",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.25
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "d25dc241855989a7",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

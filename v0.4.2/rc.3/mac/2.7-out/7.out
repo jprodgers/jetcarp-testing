@@ -1,0 +1,16 @@
+hunt 7: 24,067/2,000,000 soups, 2495 soups/s, 517,802 objects (ships 45,863, osc 150,181, still 321,758), 51 distinct, 14 new | newest: still life 14c #427971 (B3/S23)
+  status stale, 10 s run, 23936 settled, 65 died, 66 exploded, 0 unsettled, GPU Apple M2 Max, Metal
+  B3/S23 on Square: 24067 soups, 517802 objects (oscillator 150181, spaceship 45863, still life 321758), 51 distinct, 14 new
+  newest finds:
+    427971ca7cb3f235917c1c44c03c2b92  still life 14c #427971             B3/S23     Square soup 21229  (new to the catalog)
+    bf73c46c186561ca3b75a3884d0b5ab5  still life 12c #bf73c4             B3/S23     Square soup 17973  (new to the catalog)
+    9b8506f0c92bc91d9df0492db64b6124  still life 12c #9b8506             B3/S23     Square soup 16764  (new to the catalog)
+    917e6f33202346c9512b19aa8faa32b3  still life 10c #917e6f             B3/S23     Square soup 14630  (new to the catalog)
+    8df8d769457729de0b6d5ee6f12a08d5  still life 7c #8df8d7              B3/S23     Square soup 13732  (new to the catalog)
+    f241c8e566137cde275909e216cce670  still life 9c #f241c8              B3/S23     Square soup 12649  (new to the catalog)
+    48e6263a40eea259bcb22518b44d0c95  still life 8c #48e626              B3/S23     Square soup 12137  (new to the catalog)
+    fcd376611d86dc6548400951630b5532  still life 10c #fcd376             B3/S23     Square soup 10823  (new to the catalog)
+    5cd81b290a7ad4bd0d827385a78bcd1a  still life 14c #5cd81b             B3/S23     Square soup 10234  (new to the catalog)
+    ec30ee9c9d6bfb34da4f8db926a57ddb  still life 13c #ec30ee             B3/S23     Square soup 8533  (new to the catalog)
+  stale: marked running, but no process is running it (its process crashed, was killed, or stopped answering)
+  `jetcarp jobs resume 7` resumes it exactly

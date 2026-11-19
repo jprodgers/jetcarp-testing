@@ -1,0 +1,10 @@
+24366 runs by origin:
+  random               6911   28.4%
+  mutate               4348   17.8%
+  balance              3419   14.0%
+  transplant           2989   12.3%
+  cover                2330    9.6%
+  seed                 2186    9.0%
+  transplant-scaled    2183    9.0%
+sign_* columns with --measures all: ['sign_pos', 'sign_balance', 'sign_sorted', 'sign_trade', 'sign_lost']
+JACA runs: 24366; filled per column: {'sign_pos': 24366, 'sign_balance': 24366, 'sign_sorted': 24366, 'sign_trade': 24366, 'sign_lost': 24366}

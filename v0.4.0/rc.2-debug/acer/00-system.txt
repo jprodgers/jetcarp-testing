@@ -1,0 +1,12 @@
+﻿# Acer, 2026-11-12 04:40 (EST)
+Microsoft Windows 11 Home 10.0.26300 (build 26300), 64-bit
+CPU: 13th Gen Intel(R) Core(TM) i5-13420H (8 cores, 12 threads)
+RAM: 15.7 GB
+GPUs:
+  NVIDIA GeForce RTX 3050 6GB Laptop GPU, driver 31.0.15.4618
+  Intel(R) UHD Graphics, driver 31.0.101.4146
+WARP: C:\Windows\System32\d3d10warp.dll 10.0.26100.9818
+Rust: rustc 1.99.1 (58cf8f9c3 2026-10-13)
+jetcarp: https://github.com/jprodgers/jetcarp main at c5a58fc ("App and host: touch nothing on the GPU at exit ...")
+Built: cargo build --release --features jetcarp/windows-launcher (5 min 19 s)
+Display: laptop panel only (no AOC attached).

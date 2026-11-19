@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Forest fire",
+  "description": "Drossel-Schwabl: trees grow, lightning strikes, fire spreads (p/f = 100).",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 200,
+        "h": 140
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "16197834981556689955",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Forest fire",
+      "rule": "ForestFire 0.01/0.0001",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "random": {
+          "density": 0.5
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "ace20df215ee67ab",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,187 @@
+PASS: (a) a host held by the unanswered warning (`host serve --headless` in a fresh home): the screen line ends "· held", "held" appears once, and the reason is printed once ("waiting: the photosensitive seizure warning has not been accepted ..."); JSON held ["warning"] with one held_why; generation stays 0. Paused by hand as well, it says "· paused" and "paused: by hand"; resumed, back to "· held". (b) `jobs resume 1 --detach` of a stopped explore answered in 0.14 s, 0.14 s and 0.14 s (3 rounds); each time an immediate `jobs status` said running, not stale, with the new `jobs resume` process already there. SKIPPED: the Hunts window (app).
+Note: while held by the warning, CLI `host resume` is accepted (it lifts a hand pause; the screens stay held), whereas MCP host_control resume is refused with the warning text.
+
+R4-7 from rc.3's audit (bdc8730), Framework, 2026-11-16 10:18:06 PM EST
+
+#### (a) A host held by the unanswered seizure warning: fresh home $H = homes/held
+(host start is refused there, so the host runs as `host serve --headless` in the background, which holds every screen until the warning is answered)
+$ test -e $H/config/photosensitivity.json && echo answered || echo 'warning not answered'
+warning not answered
+[exit 0, 0.00 s]
+
+$ $J host status
+running, pid 2358812, up 4.0s, 99 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: not stepped yet (GPU simulation auto), on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan · held
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+waiting: the photosensitive seizure warning has not been accepted (open the JETCARP app, or run `jetcarp setup`, to read and answer it); the scenes start once it has been
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.12 s]
+
+$ $J host status --json | python3 -c 'import json,sys; d=json.load(sys.stdin); print("held:", d["held"], "| held_why:", d["held_why"], "| paused:", d["paused"], "| paused_why:", d["paused_why"]); s=d["screens"][0]["stage"]; print("screen 0 stage paused:", s["paused"], "generation:", s["generation"])'
+held: ['warning'] | held_why: ['the photosensitive seizure warning has not been accepted (open the JETCARP app, or run `jetcarp setup`, to read and answer it)'] | paused: False | paused_why: []
+screen 0 stage paused: True generation: 0
+[exit 0, 0.20 s]
+
+$ $J host status | sed -n 2p
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: not stepped yet (GPU simulation auto), on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan · held
+[exit 0, 0.19 s]
+
+(the generation stays put while held: compare the two screen lines)
+$ $J host status | grep -o -i 'held' | wc -l; $J host status | grep -i -E 'held|warning'
+1
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: not stepped yet (GPU simulation auto), on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan · held
+waiting: the photosensitive seizure warning has not been accepted (open the JETCARP app, or run `jetcarp setup`, to read and answer it); the scenes start once it has been
+[exit 0, 0.39 s]
+
+### Paused by hand as well, then the pause taken off
+$ $J host pause
+running, pid 2358812, up 8.0s, 99 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: not stepped yet (GPU simulation auto), on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan · paused
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+paused: by hand
+waiting: the photosensitive seizure warning has not been accepted (open the JETCARP app, or run `jetcarp setup`, to read and answer it); the scenes start once it has been
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.20 s]
+
+$ $J host status | head -4
+running, pid 2358812, up 8.0s, 99 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: not stepped yet (GPU simulation auto), on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan · paused
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+[exit 0, 0.20 s]
+
+$ $J host resume
+running, pid 2358812, up 8.0s, 99 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: not stepped yet (GPU simulation auto), on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan · held
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+waiting: the photosensitive seizure warning has not been accepted (open the JETCARP app, or run `jetcarp setup`, to read and answer it); the scenes start once it has been
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.19 s]
+
+$ $J host status | head -4
+running, pid 2358812, up 9.0s, 99 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · Quick Start turmite-llrr (5 of 7) · generation 0 · 57600 cells of 4 px · 60 fps, 240 generations a second · window · simulation: not stepped yet (GPU simulation auto), on AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan · held
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+[exit 0, 0.20 s]
+
+$ $J host stop
+stopped
+[exit 0, 0.40 s]
+
+$ hosts
+no rc.4 host process running
+[exit 0, 0.01 s]
+
+$ cat $H/serve.log
+jetcarp-host: nothing runs until the photosensitive seizure warning has been accepted: open the JETCARP app, or run `jetcarp setup`
+jetcarp-host: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+[exit 0, 0.00 s]
+
+#### (b) jobs resume --detach of a stopped job: fresh home $H = homes/resume
+$ $J search explore --families jaca --detach --minutes 10 --cpu --threads 4 --label r7b
+explore search job 1 started (detached) in $H/library/library.sqlite
+explore 1: 0 runs, paused, elites 0, niches 0, confirmed elites 0
+[exit 0, 0.51 s]
+
+### round 1
+$ $J jobs stop 1
+asked explore search 1 to stop at its next checkpoint
+[exit 0, 0.03 s]
+
+$ $J jobs wait 1 --timeout 120 | head -1
+explore search 1 is paused
+[exit 0, 0.54 s]
+
+$ $J jobs status 1 | head -2
+explore 1: 14 runs (3/s), 13 elites in 7 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+  status paused, 4 s run over every session, 0 confirmation runs, 32 candidates tried, 0.06 GB of memory
+[exit 0, 0.04 s]
+
+$ $J jobs resume 1 --detach
+explore search 1 keeps the budget it was started with: 9 min 56 s left of its 10 min 0 s of running (give this run a budget of its own to change that)
+explore search job 1 resumed (detached) in $H/library/library.sqlite
+explore 1: 14 runs (3/s), 13 elites in 7 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+[exit 0, 0.14 s]
+
+$ $J jobs status 1 | head -2; $J jobs status 1 --json | python3 -c 'import json,sys; d=json.load(sys.stdin); print("status:", d["status"], "| stale:", d["stale"], "| updated:", d["updated"])'; pgrep -a -f "$J (jobs|search)" | sub
+explore 1: 14 runs (3/s), 13 elites in 7 niches (0 of them confirmed), 1 of 1,359 tilings; cpu only
+  status running, 4 s run over every session, 0 confirmation runs, 32 candidates tried, 0.06 GB of memory
+status: running | stale: False | updated: 2026-11-17T03:18:22Z
+2359127 $J jobs resume 1 --library $H/library/library.sqlite --quiet --minutes 9.933236581066666
+[exit 0, 0.22 s]
+
+### round 2
+$ $J jobs stop 1
+asked explore search 1 to stop at its next checkpoint
+[exit 0, 0.05 s]
+
+$ $J jobs wait 1 --timeout 120 | head -1
+explore search 1 is paused
+[exit 0, 2.06 s]
+
+$ $J jobs status 1 | head -2
+explore 1: 118 runs (17/s), 42 elites in 23 niches (0 of them confirmed), 2 of 1,359 tilings; cpu only
+  status paused, 10 s run over every session, 0 confirmation runs, 272 candidates tried, 0.07 GB of memory
+[exit 0, 0.04 s]
+
+$ $J jobs resume 1 --detach
+explore search 1 keeps the budget it was started with: 9 min 50 s left of its 10 min 0 s of running (give this run a budget of its own to change that)
+explore search job 1 resumed (detached) in $H/library/library.sqlite
+explore 1: 118 runs (17/s), 42 elites in 23 niches (0 of them confirmed), 2 of 1,359 tilings; cpu only
+[exit 0, 0.14 s]
+
+$ $J jobs status 1 | head -2; $J jobs status 1 --json | python3 -c 'import json,sys; d=json.load(sys.stdin); print("status:", d["status"], "| stale:", d["stale"], "| updated:", d["updated"])'; pgrep -a -f "$J (jobs|search)" | sub
+explore 1: 118 runs (17/s), 42 elites in 23 niches (0 of them confirmed), 2 of 1,359 tilings; cpu only
+  status running, 10 s run over every session, 0 confirmation runs, 272 candidates tried, 0.07 GB of memory
+status: running | stale: False | updated: 2026-11-17T03:18:28Z
+2359265 $J jobs resume 1 --library $H/library/library.sqlite --quiet --minutes 9.833060870350002
+[exit 0, 0.19 s]
+
+### round 3
+$ $J jobs stop 1
+asked explore search 1 to stop at its next checkpoint
+[exit 0, 0.05 s]
+
+$ $J jobs wait 1 --timeout 120 | head -1
+explore search 1 is paused
+[exit 0, 2.06 s]
+
+$ $J jobs status 1 | head -2
+explore 1: 178 runs (10/s), 66 elites in 35 niches (0 of them confirmed), 3 of 1,359 tilings; cpu only
+  status paused, 16 s run over every session, 0 confirmation runs, 512 candidates tried, 0.06 GB of memory
+[exit 0, 0.03 s]
+
+$ $J jobs resume 1 --detach
+explore search 1 keeps the budget it was started with: 9 min 44 s left of its 10 min 0 s of running (give this run a budget of its own to change that)
+explore search job 1 resumed (detached) in $H/library/library.sqlite
+explore 1: 178 runs (10/s), 66 elites in 35 niches (0 of them confirmed), 3 of 1,359 tilings; cpu only
+[exit 0, 0.14 s]
+
+$ $J jobs status 1 | head -2; $J jobs status 1 --json | python3 -c 'import json,sys; d=json.load(sys.stdin); print("status:", d["status"], "| stale:", d["stale"], "| updated:", d["updated"])'; pgrep -a -f "$J (jobs|search)" | sub
+explore 1: 178 runs (10/s), 66 elites in 35 niches (0 of them confirmed), 3 of 1,359 tilings; cpu only
+  status running, 16 s run over every session, 0 confirmation runs, 512 candidates tried, 0.06 GB of memory
+status: running | stale: False | updated: 2026-11-17T03:18:35Z
+2359411 $J jobs resume 1 --library $H/library/library.sqlite --quiet --minutes 9.732328384999999
+[exit 0, 0.18 s]
+
+$ $J jobs stop 1
+asked explore search 1 to stop at its next checkpoint
+[exit 0, 0.05 s]
+
+$ $J jobs wait 1 --timeout 120 | head -1
+explore search 1 is paused
+[exit 0, 2.06 s]
+
+$ $J jobs list
+    1  explore  paused   2026-11-17T03:18:17Z  explore 1: 384 runs (34/s), 120 elites in 67 niches (0 of them confirmed), 4 of 1,359 tilings; cpu only
+1 job(s); 0 running
+[exit 0, 0.03 s]
+
+$ pgrep -a -f "jobs resume 1" || echo 'no resumed process left'
+no resumed process left
+[exit 0, 0.00 s]
+

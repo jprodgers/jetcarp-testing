@@ -1,0 +1,106 @@
+every JETCARP folder is under the test folder: ok
+13:31:19 settings land in the test's own dconf: ok (263 bytes)
+settings: /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/fd3/config/jetcarp
+data:     /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/fd3/data/jetcarp
+output:   /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/fd3/out
+bundled:  (no packs came with the program)
+13:31:19 == install the extension
+GNOME Shell was not found in this session.
+jetcarp@jimmieprodgers.com
+13:31:27 shell up; extension: 'version-name': <'0.4.2-rc.2'> 'state': <1.0> 
+13:31:35 == wallpaper on
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+running, pid 1671283, up 16.0s, 112 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 141 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+13:31:54 == #42 every generation
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+running, pid 1671283, up 33.0s, 112 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 464 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 615 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper
+pacing: every generation (at least 30 fps, up to the monitor's refresh rate)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 749 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper · paused
+pacing: low power, 30 fps (each scene at most 30 generations a second)
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+13:32:15 == #38 #43 #44 #45 tune
+13:32:39 tune exit 0
+19
+running, pid 1671283, up 72.0s, 129 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 0 · 32400 cells of 8 px (tuned) · 30 fps, 30 generations a second · wallpaper · paused
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+paused: the processor is busy
+last tune: done
+note: GPU: AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan; GPU simulation auto (automatic)
+note: swept 7 scene(s); sizes saved
+13:32:39 == #39 picks
+13:33:08 pick own exit 0
+running, pid 1671283, up 101.0s, 151 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 0 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper · paused
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+paused: the processor is busy
+last tune: done
+13:33:30 pick 3 exit 0
+running, pid 1671283, up 123.0s, 157 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 0 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper · paused
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+paused: the processor is busy
+last tune: done
+13:33:30 == busy pause
+note: swept 7 scene(s); sizes saved
+running, pid 1671283, up 163.0s, 157 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 0 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper · paused
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+running, pid 1671283, up 199.0s, 160 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 4 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+note: swept 7 scene(s); sizes saved
+13:34:46 == crash: kill -9 the host
+/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/fd3/inner.sh: line 52: 1671283 Killed                     $J host serve > $G/host.log 2>&1
+Error: the JETCARP background host is not running
+13:34:52 picture after the kill: 'file:///usr/share/backgrounds/f45/default/f45-01-day.jxl'
+13:34:52 extension after the kill: 'version-name': <'0.4.2-rc.2'> 'state': <1.0> 
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+running, pid 1679827, up 10.0s, 94 MB, GPU AMD Radeon 8060S Graphics (RADV STRIX_HALO)
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · generation 64 · 230400 cells of 3 px · 30 fps, 30 generations a second · wallpaper
+monitors: 0: Meta-0
+wallpaper: showing · lock screen: live
+13:35:02 == stop
+stopped
+13:35:05 picture after stop: 'file:///usr/share/backgrounds/f45/default/f45-01-day.jxl'
+Gdk-Message: 13:35:05.723: Lost connection to Wayland compositor.
+Gdk-Message: 13:35:05.723: Error reading events from display: Broken pipe
+shell log error lines: 2
+13:35:05 == done
+A connection to the bus can't be made
+(evolution-calendar-factory:1670079): libedbus-private-WARNING **: 13:35:05.827: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)
+(evolution-calendar-factory:1670079): libedbus-private-WARNING **: 13:35:05.827: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)
+(evolution-addressbook-factory:1670163): libedbus-private-WARNING **: 13:35:05.827: Error setting property 'ConnectionStatus' on interface org.gnome.evolution.dataserver.Source: The connection is closed (g-io-error-quark, 18)
+exit 0
+real keys unchanged

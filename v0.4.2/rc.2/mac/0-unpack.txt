@@ -1,0 +1,16 @@
+== 0. unpack 2026-11-15T08:59:18Z
+-rw-r--r--@ 1 Jimmie  staff  29423735 Nov 15 03:59 jetcarp-0.4.2-rc.2-aarch64-apple-darwin.tar.gz
+f318a493e2054bd6d353c2840228429ff043fa07cd772043630cb1735bcf93cd  jetcarp-0.4.2-rc.2-aarch64-apple-darwin.tar.gz
+f318a493e2054bd6d353c2840228429ff043fa07cd772043630cb1735bcf93cd  jetcarp-0.4.2-rc.2-aarch64-apple-darwin.tar.gz
+hash: matches SHA256SUMS
+COPYING
+LICENSE-MIT
+README.md
+THIRD_PARTY_LICENSES.html
+THIRD_PARTY_NOTICES.md
+UNLICENSE
+jetcarp
+libjetcarp_saver.dylib
+packs
+com.apple.provenance: 
+jetcarp 0.4.2-rc.2

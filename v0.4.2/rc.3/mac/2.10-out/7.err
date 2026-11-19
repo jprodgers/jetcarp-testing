@@ -1,0 +1,6 @@
+sha256:092bf24ebf79a4663ba905ccd04147f5ea9003df9bb70fdd44bf4fd77acf112d: feed rc-mac, by SHA256:h3TwxQOPru+J9oO61x3PHfwtdkXAjRd8//apVOc7jCY (RC tester (Mac)), checking every object
+reading verifications, sightings, provenance and annotations
+checking ids and storing patterns
+search 294b906e-1384-4a76-9ba5-b012745e1747: copying its segments and rebuilding its state
+merging sightings
+search 294b906e-1384-4a76-9ba5-b012745e1747: 25227 runs, 3901 elites in 1963 niches, rebuilt in 1.4 s

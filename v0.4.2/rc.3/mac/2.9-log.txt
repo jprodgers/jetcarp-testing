@@ -1,0 +1,74 @@
+07:19:01 jetcarp library list --class spaceship --limit 10 -> exit 0 in 0.1 s (1)
+    catalog: /Users/Jimmie/jetcarp-rc-042c/data/library.sqlite (6 shown of 6 matching)
+    12334684ad3495652c4d2c2786cf41e1  c orthogonal spaceship 4c #123346  B2/S34       Square                     p1      4c  seen 1     score  75.5  new  c orthogonal
+    5a080db389c0cab3caf884d2596a1e70  glider                             B3/S23       Square                     p4      5c  seen 333804 score  74.4  new  c/4 diagonal
+    1376072ec0c084fc67a9b92d361379f3  HWSS                               B3/S23       Square                     p4     13c  seen 26    score  72.3  new  c/2 orthogonal
+    77364004b6d2c23cba74126b8aeb6ca3  MWSS                               B3/S23       Square                     p4     11c  seen 145   score  71.2  new  c/2 orthogonal
+    6dd55e69689ba784aff448b7dbbc9328  LWSS                               B3/S23       Square                     p4      9c  seen 474   score  70.6  new  c/2 orthogonal
+    484e9fe106c96e1fef5e85032d347cfe  c orthogonal spaceship 4c #484e9f  B2/S34       Square                     p1      4c  seen 2     score  68.0  new  c orthogonal
+07:19:01 jetcarp library list --class spaceship --limit 10 --json -> exit 0 in 0.1 s (2)
+          "seed": 1,
+          "jetcarp_version": "0.4.2-rc.3",
+          "date": "2026-11-16T07:18:48Z"
+        },
+        "discovered_by": "search",
+        "score": 68.0,
+        "state": "new",
+        "created": "2026-11-16T07:18:48Z",
+        "updated": "2026-11-16T07:18:48Z",
+        "geometry_pin": "0145310ebd49abfe89eb01c42ecaf459",
+        "engine_version": "0.4.2-rc.3",
+        "semantics": "1"
+      }
+    ]
+07:19:01 spaceships: 12334684ad3495652c4d2c2786cf41e1 5a080db389c0cab3caf884d2596a1e70 1376072ec0c084fc67a9b92d361379f3 77364004b6d2c23cba74126b8aeb6ca3 6dd55e69689ba784aff448b7dbbc9328 484e9fe106c96e1fef5e85032d347cfe
+07:19:01 jetcarp library soup 12334684ad3495652c4d2c2786cf41e1 --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/12334684.json -> exit 0 in 0.1 s (3)
+    c orthogonal spaceship 4c #123346 (B2/S34 on Square): 16x16 rect soups at density 0.5, hunt job 9
+      soup 16 (rng state 11904322950028659571): 1 copy, 1 ship; exploded at generation 55; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/12334684.json
+07:19:02 jetcarp library soup 5a080db389c0cab3caf884d2596a1e70 --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/5a080db3.json -> exit 0 in 0.1 s (4)
+    glider (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 9
+      soup 0 (rng state 10451216379200822465): 1 copy, 1 ship; settled at generation 562; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/5a080db3.json
+      note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 562, and land there
+07:19:02 jetcarp library soup 1376072ec0c084fc67a9b92d361379f3 --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/1376072e.json -> exit 0 in 0.1 s (5)
+    HWSS (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 7
+      soup 1816 (rng state 10821182215654122305): 1 copy, 9 ships; settled at generation 2030; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/1376072e.json
+      note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 2030, and land there
+07:19:02 jetcarp library soup 77364004b6d2c23cba74126b8aeb6ca3 --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/77364004.json -> exit 0 in 0.3 s (6)
+    MWSS (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 7
+      soup 4526 (rng state 17520777392164346969): 1 copy, 38 ships; settled at generation 8551; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/77364004.json
+      note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 8551, and land there
+07:19:02 jetcarp library soup 6dd55e69689ba784aff448b7dbbc9328 --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/6dd55e69.json -> exit 0 in 0.1 s (7)
+    LWSS (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 8
+      soup 244 (rng state 7706952169838672439): 1 copy, 9 ships; settled at generation 2114; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/6dd55e69.json
+      note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 2114, and land there
+07:19:02 jetcarp library soup 484e9fe106c96e1fef5e85032d347cfe --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/484e9fe1.json -> exit 0 in 0.1 s (8)
+    c orthogonal spaceship 4c #484e9f (B2/S34 on Square): 16x16 rect soups at density 0.5, hunt job 9
+      soup 13 (rng state 15965508135439572103): 1 copy, 1 ship; exploded at generation 54; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-soups/484e9fe1.json
+12334684 50:yes 100:no 200:no 400:no 800:no 1200:no 1600:no 2000:no 2500:no
+5a080db3 50:no 100:no 200:no 400:yes 800:yes 1200:yes 1600:yes 2000:yes 2500:no
+1376072e 50:no 100:no 200:no 400:no 800:yes 1200:yes 1600:no 2000:no 2500:no
+77364004 50:no 100:no 200:no 400:no 800:no 1200:no 1600:no 2000:yes 2500:yes
+6dd55e69 50:no 100:no 200:no 400:no 800:no 1200:yes 1600:yes 2000:no 2500:no
+484e9fe1 50:yes 100:no 200:no 400:no 800:no 1200:no 1600:no 2000:no 2500:no
+07:20:44 --best 3 on 77364004b6d2c23cba74126b8aeb6ca3
+07:20:49 jetcarp library soup 77364004b6d2c23cba74126b8aeb6ca3 --best 3 --save /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best.json -> exit 0 in 5.0 s (9)
+    MWSS (B3/S23 on Square): 16x16 rect soups at density 0.5, hunt job 7
+      the best 3 of 10000 soups run again:
+      soup 4526 (rng state 17520777392164346969): 1 copy, 38 ships; settled at generation 8551; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best.json
+      soup 7794 (rng state 4855138336969939636): 1 copy, 7 ships; settled at generation 1096; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best-2.json
+      soup 9324 (rng state 13478847407322822410): 1 copy, 7 ships; settled at generation 1613; scene: /Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best-3.json
+      note: the grid is 1024 unit cells across: ships that fly off reach its dead edge before generation 8551, and land there
+    soup 10000 of 10000
+/Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best-2.json
+/Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best-3.json
+/Users/Jimmie/Documents/GitHub/jetcarp-rc/results/v0.4.2-rc.3/mac/2.9-best.json
+generation 0: +1 2761, -1 2719, balance 0.496, sorted 0.01, fronts 4508, traded -
+generation 64: +1 3061, -1 3420, balance 0.472, sorted 0.948, fronts 491, traded 0.467
+generation 256: +1 3181, -1 4069, balance 0.439, sorted 0.976, fronts 275, traded 0.15
+generation 1024: +1 3245, -1 4413, balance 0.424, sorted 0.99, fronts 130, traded 0.139
+generation 2048: +1 3109, -1 4677, balance 0.399, sorted 0.991, fronts 122, traded 0.072
+JACA B27/S03456 on cairo, 12288 cells: /Users/Jimmie/jetcarp-rc-042c/out/2026-11-16_02-20-50_jaca-territories
+output: /Users/Jimmie/jetcarp-rc-042c/out/2026-11-16_02-20-50_jaca-territories
+time:   1.65s
+script exit 0
+07:20:50 done

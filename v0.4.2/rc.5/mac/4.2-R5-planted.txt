@@ -1,0 +1,265 @@
+R5 (private) files JETCARP names itself inside a checked folder, the Mac, 2026-11-17 03:05:38 PM EST
+test folder $H = homes/t42b; $H/outside is outside the output folder ($H/out) and the library's ($H/library)
+
+$ cd $H/outside && find . -type f | sort | xargs shasum -a 256 | tee $H/outside-before.sha256; ls -la $H/outside
+2dd11b7141e65417f245c0c13351d74837d6fc5e39ff349178e7d2bcd7b35471  ./pack-victim-cli.json
+f294422a8d845cc1aa74340257519f52300adab665b5a2643adb4f40b293cc74  ./pack-victim-mcp.json
+dcbb587425c1c206ff908d4c75e5109f5701a348d30bfac15f07f3235859257e  ./poster-victim-cli.png
+c5dd6f66008cca53a3bcc1339bbaefb8dfd57cc0da44905db78254c675aaada3  ./poster-victim-mcp.png
+total 32
+drwxr-xr-x@ 8 Jimmie  staff  256 Nov 17 15:05 .
+drwxr-xr-x@ 5 Jimmie  staff  160 Nov 17 15:05 ..
+drwxr-xr-x@ 2 Jimmie  staff   64 Nov 17 15:05 frames-dir
+-rw-r--r--@ 1 Jimmie  staff   51 Nov 17 15:05 pack-victim-cli.json
+-rw-r--r--@ 1 Jimmie  staff   51 Nov 17 15:05 pack-victim-mcp.json
+-rw-r--r--@ 1 Jimmie  staff   48 Nov 17 15:05 poster-victim-cli.png
+-rw-r--r--@ 1 Jimmie  staff   48 Nov 17 15:05 poster-victim-mcp.png
+drwxr-xr-x@ 2 Jimmie  staff   64 Nov 17 15:05 store-dir
+[exit 0, 0.03 s]
+
+######## (a) rc.3's t42b_symlink.py, on rc.5
+$ python3 $R/R5-scripts/t42b_symlink_rc5.py
+R5 (a) rc.3's t42b_symlink.py again, on rc.5 (MCP log: 4.2b-symlink-rc5.jsonl)
+$ ln -s $H/outside/victim.txt $H/out/innocent.json; ln -s $H/outside $H/out/link-outside
+== world_new {"path": "link-outside/good.json"} -> isError=True
+   the MCP tools may only read inside $H/out or $H/library or ~/jetcarp-rc5/rel/jetcarp-0.4.2-rc.5-aarch64-apple-darwin/packs, not $H/out/link-outside/good.json
+== files_list {"file": "innocent.json"} -> isError=True
+   $H/out/innocent.json is outside JETCARP's output folder ($H/out) and the catalog's folder ($H/library); files_list only reads those
+== world_new {"tiling": "square", "width": 16, "height": 16, "cas": ["Life"]} -> isError=False
+   New world created.
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Life",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B3/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 256,
+  "cells_hash": "d29a
+== world_status {"save_path": "innocent.json"} -> isError=True
+   the MCP tools may only write inside $H/out or $H/library (got $H/out/innocent.json)
+$ readlink $H/out/innocent.json; cat $H/outside/victim.txt
+$H/outside/victim.txt
+precious text outside the output folder
+
+[exit 0, 0.28 s]
+
+######## (b) a link planted at an animation's poster.png
+### (b1) CLI: media render --scene --out, poster.png planted
+$ ls -la $H/out/anim-cli
+total 0
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 17 15:05 .
+drwxr-xr-x@ 6 Jimmie  staff  192 Nov 17 15:05 ..
+lrwxr-xr-x@ 1 Jimmie  staff   66 Nov 17 15:05 poster.png -> $H/outside/poster-victim-cli.png
+[exit 0, 0.02 s]
+
+$ $J media render --scene $H/out/life32.json --out $H/out/anim-cli --gens 20
+Error: JETCARP may only write inside $H/out/anim-cli (got $H/out/anim-cli/poster.png, where a symbolic link leads out of it)
+[exit 1, 0.06 s]
+
+$ ls -la $H/out/anim-cli; cat $H/outside/poster-victim-cli.png
+total 0
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 17 15:05 .
+drwxr-xr-x@ 6 Jimmie  staff  192 Nov 17 15:05 ..
+lrwxr-xr-x@ 1 Jimmie  staff   66 Nov 17 15:05 poster.png -> $H/outside/poster-victim-cli.png
+precious poster outside the output folder (CLI)
+[exit 0, 0.02 s]
+
+### (b2) MCP: media_render {scene, out}, poster.png planted
+$ python3 $R/R5-scripts/mcall.py $R/4.2b-poster-mcp.jsonl '[["media_render",{"scene":{"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]},"out":"anim-mcp","gens":20}],["media_render",{"scene":{"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]},"out":"anim-mcp","gens":20,"poster":true}]]'
+initialize -> ok
+== tools/call media_render {"scene": {"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "out": "anim-mcp", "gens": 20} -> isError=True
+   JETCARP may only write inside $H/out/anim-mcp (got $H/out/anim-mcp/poster.png, where a symbolic link leads out of it)
+== tools/call media_render {"scene": {"format": 1, "name": "life32", "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}, "boundary": "wrap"}, "rng_state": 3, "cas": [{"id": 1, "name": "Life", "rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "out": "anim-mcp", "gens": 20, "poster": true} -> isError=True
+   JETCARP may only write inside $H/out/anim-mcp (got $H/out/anim-mcp/poster.png, where a symbolic link leads out of it)
+server exit 0
+[exit 0, 0.35 s]
+
+$ ls -la $H/out/anim-mcp; cat $H/outside/poster-victim-mcp.png
+total 0
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 17 15:05 .
+drwxr-xr-x@ 7 Jimmie  staff  224 Nov 17 15:05 ..
+lrwxr-xr-x@ 1 Jimmie  staff   66 Nov 17 15:05 poster.png -> $H/outside/poster-victim-mcp.png
+precious poster outside the output folder (MCP)
+[exit 0, 0.02 s]
+
+### (b3) CLI: the frames folder planted (a folder on the way)
+$ $J media render --scene $H/out/life32.json --out $H/out/anim-frames --gens 20
+Error: JETCARP may only write inside $H/out/anim-frames (got $H/out/anim-frames/frames, where a symbolic link leads out of it)
+[exit 1, 0.06 s]
+
+$ ls -la $H/out/anim-frames; ls -A $H/outside/frames-dir | wc -l
+total 0
+drwxr-xr-x@ 3 Jimmie  staff   96 Nov 17 15:05 .
+drwxr-xr-x@ 8 Jimmie  staff  256 Nov 17 15:05 ..
+lrwxr-xr-x@ 1 Jimmie  staff   55 Nov 17 15:05 frames -> $H/outside/frames-dir
+       0
+[exit 0, 0.02 s]
+
+### (b4) control: a poster.png link that stays inside the folder is followed
+$ $J media render --scene $H/out/life32.json --out $H/out/anim-inside --gens 20 | tail -3
+webp   $H/out/anim-inside/anim.webp
+poster $H/out/anim-inside/poster.png
+thumb  $H/out/anim-inside/thumb.png
+[exit 0, 0.07 s]
+
+$ ls -la $H/out/anim-inside; file $H/out/anim-inside/real-poster.png
+total 72
+drwxr-xr-x@  7 Jimmie  staff    224 Nov 17 15:05 .
+drwxr-xr-x@  9 Jimmie  staff    288 Nov 17 15:05 ..
+-rw-r--r--@  1 Jimmie  staff  22144 Nov 17 15:05 anim.webp
+drwxr-xr-x@ 23 Jimmie  staff    736 Nov 17 15:05 frames
+-rw-r--r--@  1 Jimmie  staff   1617 Nov 17 15:05 poster.png
+-rw-r--r--@  1 Jimmie  staff      4 Nov 17 15:05 real-poster.png
+-rw-r--r--@  1 Jimmie  staff    659 Nov 17 15:05 thumb.png
+$H/out/anim-inside/real-poster.png: ASCII text
+[exit 0, 0.03 s]
+
+######## (c) a link planted at a pack export's pack.json
+$ $J search hunt --rules B3/S23 --tilings square --soups 300 --cpu --quiet | head -1
+hunt job 1 in $H/library/library.sqlite
+hunt 1: 300/300 soups, 1146 soups/s, 6,982 objects (ships 660, osc 2,088, still 4,234), 23 distinct, 23 new | newest: still life 8c #fcc17e (B3/S23)
+[exit 0, 0.40 s]
+
+### (c1) CLI: pack export --to $H/out/exp-cli, pack.json planted
+$ ls -la $H/out/exp-cli
+total 0
+drwxr-xr-x@  3 Jimmie  staff   96 Nov 17 15:05 .
+drwxr-xr-x@ 10 Jimmie  staff  320 Nov 17 15:05 ..
+lrwxr-xr-x@  1 Jimmie  staff   65 Nov 17 15:05 pack.json -> $H/outside/pack-victim-cli.json
+[exit 0, 0.02 s]
+
+$ $J pack export --to $H/out/exp-cli --feed t42b-cli --no-media
+publishing feed t42b-cli (version 1) into $H/out/.exp-cli.store
+23 patterns read, 23 new rows
+version sha256:40efaf0408c947cd2963e5f3c4c4658306f57fbc2d4640feaceec41da3594605 written
+Error: JETCARP may only write inside $H/out/exp-cli (got $H/out/exp-cli/pack.json, where a symbolic link leads out of it)
+[exit 1, 0.17 s]
+
+$ ls -la $H/out/exp-cli; ls -a $H/out; cat $H/outside/pack-victim-cli.json
+total 0
+drwxr-xr-x@  3 Jimmie  staff   96 Nov 17 15:05 .
+drwxr-xr-x@ 11 Jimmie  staff  352 Nov 17 15:05 ..
+lrwxr-xr-x@  1 Jimmie  staff   65 Nov 17 15:05 pack.json -> $H/outside/pack-victim-cli.json
+.
+..
+.exp-cli.store
+anim-cli
+anim-frames
+anim-inside
+anim-mcp
+exp-cli
+innocent.json
+life32.json
+link-outside
+{"precious": "pack.json outside the export (CLI)"}
+[exit 0, 0.02 s]
+
+### (c2) MCP: pack {export: {to: exp-mcp, publish: {...}}}, pack.json planted
+$ python3 $R/R5-scripts/mcall.py $R/4.2b-packjson-mcp.jsonl '[["pack",{"export":{"to":"exp-mcp","publish":{"feed":"t42b-mcp","no_media":true}}}]]'
+initialize -> ok
+== tools/call pack {"export": {"to": "exp-mcp", "publish": {"feed": "t42b-mcp", "no_media": true}}} -> isError=True
+   JETCARP may only write inside $H/out/exp-mcp (got $H/out/exp-mcp/pack.json, where a symbolic link leads out of it)
+server exit 0
+[exit 0, 0.42 s]
+
+$ ls -la $H/out/exp-mcp; cat $H/outside/pack-victim-mcp.json
+total 0
+drwxr-xr-x@  3 Jimmie  staff   96 Nov 17 15:05 .
+drwxr-xr-x@ 13 Jimmie  staff  416 Nov 17 15:05 ..
+lrwxr-xr-x@  1 Jimmie  staff   65 Nov 17 15:05 pack.json -> $H/outside/pack-victim-mcp.json
+{"precious": "pack.json outside the export (MCP)"}
+[exit 0, 0.02 s]
+
+### (c3) CLI: the hidden store beside the export planted ($H/out/.exp-store.store -> $H/outside/store-dir)
+$ $J pack export --to $H/out/exp-store --feed t42b-store --no-media
+Error: JETCARP may only write inside $H/out (got $H/out/.exp-store.store, where a symbolic link leads out of it)
+[exit 1, 0.02 s]
+
+$ ls -la $H/out | grep -E 'exp-store'; ls -A $H/outside/store-dir | wc -l
+lrwxr-xr-x@  1 Jimmie  staff   54 Nov 17 15:05 .exp-store.store -> $H/outside/store-dir
+       0
+[exit 0, 0.02 s]
+
+
+### (c4) MCP: the hidden store beside the export planted ($H/out/.exp-store-mcp.store -> $H/outside/store-dir-mcp)
+$ ls -la $H/out | grep exp-store-mcp; ls -A $H/outside/store-dir-mcp | wc -l
+lrwxr-xr-x@  1 Jimmie  staff   58 Nov 17 15:05 .exp-store-mcp.store -> $H/outside/store-dir-mcp
+       0
+[exit 0, 0.02 s]
+
+$ python3 $R/R5-scripts/mcall.py $R/4.2b-hiddenstore-mcp.jsonl '[["pack",{"export":{"to":"exp-store-mcp","publish":{"feed":"t42b-store-mcp","no_media":true}}}]]'
+initialize -> ok
+== tools/call pack {"export": {"to": "exp-store-mcp", "publish": {"feed": "t42b-store-mcp", "no_media": true}}} -> isError=True
+   JETCARP may only write inside $H/out (got $H/out/.exp-store-mcp.store, where a symbolic link leads out of it)
+server exit 0
+[exit 0, 0.28 s]
+
+$ ls -la $H/out | grep exp-store-mcp; ls -A $H/outside/store-dir-mcp | wc -l; ls -A $H/outside/store-dir-mcp
+lrwxr-xr-x@  1 Jimmie  staff   58 Nov 17 15:05 .exp-store-mcp.store -> $H/outside/store-dir-mcp
+       0
+[exit 0, 0.03 s]
+
+### (c5) MCP: pack publish into a store folder that is itself such a link ($H/out/pub-link -> $H/outside/pub-dir)
+$ python3 $R/R5-scripts/mcall.py $R/4.2b-publish-mcp.jsonl '[["pack",{"publish":{"feed":"t42b-pub","to":"pub-link","no_media":true}}]]'
+initialize -> ok
+== tools/call pack {"publish": {"feed": "t42b-pub", "to": "pub-link", "no_media": true}} -> isError=True
+   the MCP tools may only write inside $H/out or $H/library (got $H/out/pub-link)
+server exit 0
+[exit 0, 0.28 s]
+
+$ ls -A $H/outside/pub-dir | wc -l
+       0
+[exit 0, 0.02 s]
+
+######## Afterwards: every file outside, against its hash before
+$ cd $H/outside && shasum -a 256 -c $H/outside-before.sha256; find $H/outside -newer $H/outside-before.sha256 | sed 's#^#changed since: #'; ls -laR $H/outside
+./pack-victim-cli.json: OK
+./pack-victim-mcp.json: OK
+./poster-victim-cli.png: OK
+./poster-victim-mcp.png: OK
+changed since: $H/outside
+changed since: $H/outside/pub-dir
+changed since: $H/outside/victim.txt
+changed since: $H/outside/store-dir-mcp
+total 40
+drwxr-xr-x@ 11 Jimmie  staff  352 Nov 17 15:05 .
+drwxr-xr-x@  7 Jimmie  staff  224 Nov 17 15:05 ..
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 frames-dir
+-rw-r--r--@  1 Jimmie  staff   51 Nov 17 15:05 pack-victim-cli.json
+-rw-r--r--@  1 Jimmie  staff   51 Nov 17 15:05 pack-victim-mcp.json
+-rw-r--r--@  1 Jimmie  staff   48 Nov 17 15:05 poster-victim-cli.png
+-rw-r--r--@  1 Jimmie  staff   48 Nov 17 15:05 poster-victim-mcp.png
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 pub-dir
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 store-dir
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 store-dir-mcp
+-rw-r--r--@  1 Jimmie  staff   40 Nov 17 15:05 victim.txt
+
+$H/outside/frames-dir:
+total 0
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 .
+drwxr-xr-x@ 11 Jimmie  staff  352 Nov 17 15:05 ..
+
+$H/outside/pub-dir:
+total 0
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 .
+drwxr-xr-x@ 11 Jimmie  staff  352 Nov 17 15:05 ..
+
+$H/outside/store-dir:
+total 0
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 .
+drwxr-xr-x@ 11 Jimmie  staff  352 Nov 17 15:05 ..
+
+$H/outside/store-dir-mcp:
+total 0
+drwxr-xr-x@  2 Jimmie  staff   64 Nov 17 15:05 .
+drwxr-xr-x@ 11 Jimmie  staff  352 Nov 17 15:05 ..
+[exit 0, 0.03 s]
+

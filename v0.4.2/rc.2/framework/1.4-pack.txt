@@ -1,0 +1,13 @@
+made publisher key SHA256:mCxhc7nMNIQun2eeS2jgR/QgRBd9bLH7wZ924OsXGLc
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGQKMWvKETO5SAp+Zm4nW0jf0jcdDgudh/dPGcxbulfB jetcarp publisher
+  file /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/config/pack/publisher_ed25519
+  named rc.2 test publisher
+explore job 2 (search 7b460dca-febf-44c7-b350-f0e7a224c163): sealed its newest 260,977 runs first, so the pack carries every run
+publishing feed rc2-long (version 1) into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/.pack-long.store
+1454 patterns read, 1454 new rows
+search 7b460dca-febf-44c7-b350-f0e7a224c163: copying its segments
+version sha256:a5ec764981d067cd119d3d053c028177a797039e4870a72ab202d6814d0f0285 written
+exported sha256:a5ec764981d067cd119d3d053c028177a797039e4870a72ab202d6814d0f0285 into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/pack-long: 30 files, 176181407 bytes
+the version was published first into /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/.pack-long.store, a hidden store kept beside the export: the same export again publishes the feed's next version into it, as `jetcarp pack publish --to /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/.pack-long.store` does (then `jetcarp pack export --from /home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/.pack-long.store` lays it out)
+169M	/home/jimmie/Documents/jetcarp-dev/work/0.4.2-rc2/pack-long
+imported runs: 2231745

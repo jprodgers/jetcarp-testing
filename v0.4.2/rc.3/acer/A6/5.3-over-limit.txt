@@ -1,0 +1,17 @@
+$ JETCARP_GPU=RTX jetcarp run $W\limits\over-16001x16000.json --gens 1 --gpu
+Error: $W\limits\over-16001x16000.json: grid is larger than 256 million cells
+exit 1
+$ JETCARP_GPU=RTX jetcarp run $W\limits\over-37x6918919.json --gens 1 --gpu
+Error: $W\limits\over-37x6918919.json: grid is larger than 256 million cells
+exit 1
+$ JETCARP_GPU=RTX jetcarp run $W\limits\over-cells-256000001.json --gens 1 --gpu
+scene:      $W\limits\over-cells-256000001.json
+tiling:     Square (parallelogram) (square): 256000000 cells, 16000x16000 unit cells, 1 tile type(s), storage dense, edges wrap
+backend:    gpu (NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan)
+generation: 1
+hash:       cdc31664a185bca3
+status:     Running
+done:       no
+field 0:    shared binary, 87830165 live: Life [B3/S23]
+time:       4.82s on 12 threads
+exit 0

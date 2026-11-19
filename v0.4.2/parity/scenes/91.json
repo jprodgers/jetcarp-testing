@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Orbium (Lenia)",
+  "description": "Bert Chan's Lenia: the classic glider Orbium unicaudatus, a continuous creature.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 128,
+        "h": 96
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "3706312980743915183",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Orbium (Lenia)",
+      "rule": "Lenia R=13,T=10,b=1,m=0.15,s=0.015",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Ember",
+      "seed": {
+        "lenia": {
+          "name": "orbium"
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "71c89a21665f91bc",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

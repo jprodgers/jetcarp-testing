@@ -1,0 +1,40 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Burst",
+  "description": "Chaotic; kin to Nova and Prairie on fire. Big regions slowly fade or break into oscillators; named for a typical exploding oscillator. (Michael Sweney)",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 180,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "8851270818872860303",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Burst",
+      "rule": "B3468/S0235678/C9",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Prism",
+      "seed": {
+        "random": {
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "d69bf7d492bb8c35",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

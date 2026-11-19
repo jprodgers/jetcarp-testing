@@ -1,0 +1,16 @@
+﻿> & $J --version
+jetcarp 0.4.2-rc.1
+
+> & $J paths
+settings: C:\Users\jimmi\jetcarp-rc-042\config
+data:     C:\Users\jimmi\jetcarp-rc-042\data
+output:   C:\Users\jimmi\jetcarp-rc-042\out
+bundled:  C:\Users\jimmi\jetcarp-rc-042\bin\packs
+
+> where.exe jetcarp
+C:\Users\jimmi\scoop\shims\jetcarp.exe
+
+> zip sha256
+f2d13c6edc83d35ba1002b7d8ce25f2db4af910589bf4346668ad26794fe842f
+> SHA256SUMS line
+f2d13c6edc83d35ba1002b7d8ce25f2db4af910589bf4346668ad26794fe842f  jetcarp-0.4.2-rc.1-x86_64-pc-windows-msvc.zip

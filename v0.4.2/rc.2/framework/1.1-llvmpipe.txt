@@ -1,0 +1,2 @@
+371 scenes: CPU matches 371, GPU matches 371; all 300 generations on the GPU in 334
+adapter: gpu (llvmpipe (LLVM 21.1.8, 256 bits) (llvmpipe), Vulkan)

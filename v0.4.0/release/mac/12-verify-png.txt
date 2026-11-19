@@ -1,0 +1,22 @@
+# H3 step 5: jetcarp verify on the exported PNGs, 2026-11-13 09:16:32 EST
+(Jimmie exported both at 09:13 into this folder: jetcarp-view.png from File > Export the view as PNG..., and jetcarp.png)
+
+$ jetcarp verify jetcarp-view.png   (now 12-jetcarp-view.png)
+ok: generation 39 hash 3a01f78fa4521000
+(exit 0)
+
+$ jetcarp verify jetcarp.png   (now 12-jetcarp.png)
+ok: generation 39 hash 3a01f78fa4521000
+(exit 0)
+
+$ jetcarp verify --help | head -20
+Check that a saved scene still replays to its recorded hash (or a PNG JETCARP wrote, which carries its scene)
+
+Usage: jetcarp verify [OPTIONS] <SCENE>
+
+Arguments:
+  <SCENE>  
+
+Options:
+      --json  Print the result as JSON instead of text (commands that report a result)
+  -h, --help  Print help

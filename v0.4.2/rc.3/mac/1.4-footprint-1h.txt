@@ -1,0 +1,44 @@
+== 2026-11-16T01:40:55Z, +60 min wall, search elapsed 60.1 min, pid 27989
+======================================================================
+jetcarp [27989]: 64-bit    Footprint: 533 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+ 255 MB        0 B          0 B         75    Malloc Large
+ 141 MB        0 B          0 B         11    Owned physical footprint (unmapped) (graphics)
+  67 MB        0 B      5231 MB       1331    Malloc Small
+  41 MB        0 B      2176 KB         75    IOAccelerator (graphics)
+  21 MB        0 B      1312 KB         53    Malloc Metadata
+3461 KB        0 B          0 B          1    page table
+1856 KB        0 B          0 B         62    Stack
+1360 KB        0 B          0 B        408    __DATA_CONST
+1024 KB        0 B          0 B          1    Deferred Reclaim
+ 479 KB        0 B          0 B        406    __DATA_DIRTY
+ 240 KB        0 B          0 B          1    Malloc Tiny
+ 231 KB        0 B          0 B        380    __DATA
+ 144 KB        0 B          0 B         67    Untagged
+ 112 KB        0 B        16 KB          1    Dispatch Continuations
+  95 KB        0 B          0 B       1295    unused dyld shared cache area
+  64 KB        0 B          0 B          2    IOAccelerator
+  64 KB        0 B          0 B          4    IOKit
+  48 KB        0 B          0 B          4    __TPRO_CONST
+  36 KB        0 B          0 B          1    __OBJC_RW
+  32 KB        0 B          0 B          1    Activity Tracing
+  23 KB        0 B          0 B        181    __AUTH
+  16 KB        0 B          0 B          1    OS Alloc Once
+    0 B      17 MB          0 B        485    __TEXT
+    0 B     672 KB          0 B         10    mapped file
+    0 B      48 KB          0 B          2    __LINKEDIT
+    0 B        0 B          0 B          1    __CTF
+    0 B        0 B          0 B        411    __AUTH_CONST
+    0 B        0 B          0 B          1    __FONT_DATA
+    0 B        0 B          0 B          1    IOSurface
+    0 B        0 B          0 B          1    __OBJC_RO
+    ---        ---          ---        ---    ---
+ 533 MB      17 MB      5234 MB       5275    TOTAL
+
+Auxiliary data:
+    phys_footprint: 533 MB
+    phys_footprint_peak: 2134 MB
+

@@ -1,0 +1,15 @@
+﻿replaying on NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan
+fitted to 24 review(s) of 24 run(s) of explore job(s) 3 by Jimmie Rodgers (8 keep, 8 maybe, 8 drop; jaca runs only)
+held-out AUC 0.410 (keep against drop; on the runs fitted 0.672; the built-in score 0.422)
+strongest terms (pull per standard deviation):
+  size_entropy             +0.188
+  jaca:sign_trade          -0.152
+  jaca:sign_balance        -0.138
+  jaca:sign_lost_early     +0.116
+  jaca:sign_lost           -0.092
+  patchiness               -0.090
+  cycle                    +0.084
+  entropy                  -0.081
+  growth                   +0.070
+  travel                   -0.065
+model: C:\Users\jimmi\jetcarp-rc-042\A6-model.json

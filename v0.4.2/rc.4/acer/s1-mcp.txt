@@ -1,0 +1,147 @@
+== 03:21:00 the app's tools: tools {} -> isError=False (s1-mcp-1.jsonl)
+help, reference, world_new, world_status, world_read, world_edit, world_step, world_render, run_script, library_query, library_curate, search_start, job_status, job_stop, search_runs, media_render, pack, files_list, use_app, host_control, app_display
+== 03:21:05 what the app shows now: world_status {} -> isError=False (s1-mcp-2.jsonl)
+{
+  "cas": [],
+  "cells": 12500,
+  "cells_hash": "cbf29ce484222325",
+  "done": "no CA is running",
+  "fields": [],
+  "generation": 0,
+  "hash": "a8c7f832281a39c5",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "app",
+    "note": "this is the world shown in the JETCARP app window; the user can change it too",
+    "playing": false,
+    "playing_note": "paused",
+    "scene_name": "Empty world",
+    "screensaver": false
+  },
+  "script": null,
+  "status": "Empty: every cell is dead",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Square (parallelogram) (square): 12500 cells, 125x100 unit cells, 1 tile type(s), storage dense, edges wrap",
+    "grid": {
+      "coordinates": "x = column 0..width-1, y = row 0..height-1 from the top; index = y * width + x",
+      "height": 100,
+      "tile_types_per_unit_cell": 1,
+      "width": 125
+    },
+    "id": "square",
+    "name": "Square (parallelogram)"
+  }
+}
+== 03:25:51 after the paste and the first Jump (no reading before it): world_status {} -> isError=False (s1-mcp-3.jsonl)
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "HighLife",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B36/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 65536,
+  "cells_hash": "e47f923b3c487641",
+  "done": "no: something can still change",
+  "fields": [
+    {
+      "ca_ids": [
+        1
+      ],
+      "field": 0,
+      "kind": "binary",
+      "max_state": 1,
+      "population": 1454,
+      "shared": true
+    }
+  ],
+  "generation": 4096,
+  "hash": "761440c0d30c5b50",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "app",
+    "note": "this is the world shown in the JETCARP app window; the user can change it too",
+    "playing": false,
+    "playing_note": "paused",
+    "scene_name": "Life on the square grid",
+    "screensaver": false
+  },
+  "script": null,
+  "status": "Running",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Square (parallelogram) (square): 65536 cells, 256x256 unit cells, 1 tile type(s), storage dense, edges wrap",
+    "grid": {
+      "coordinates": "x = column 0..width-1, y = row 0..height-1 from the top; index = y * width + x",
+      "height": 256,
+      "tile_types_per_unit_cell": 1,
+      "width": 256
+    },
+    "id": "square",
+    "name": "Square (parallelogram)"
+  }
+}
+== 03:30:35 #90: after typing B368/S245 (no Enter) and switching to Notepad: world_status {} -> isError=False (s1-mcp-4.jsonl)
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "Morley",
+      "neighborhood": "touch",
+      "palette": "Ember",
+      "rule": "B368/S245",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 65536,
+  "cells_hash": "e47f923b3c487641",
+  "done": "no: something can still change",
+  "fields": [
+    {
+      "ca_ids": [
+        1
+      ],
+      "field": 0,
+      "kind": "binary",
+      "max_state": 1,
+      "population": 1454,
+      "shared": true
+    }
+  ],
+  "generation": 4096,
+  "hash": "761440c0d30c5b50",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "app",
+    "note": "this is the world shown in the JETCARP app window; the user can change it too",
+    "playing": false,
+    "playing_note": "paused",
+    "scene_name": "Life on the square grid",
+    "screensaver": false
+  },
+  "script": null,
+  "status": "Running",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Square (parallelogram) (square): 65536 cells, 256x256 unit cells, 1 tile type(s), storage dense, edges wrap",
+    "grid": {
+      "coordinates": "x = column 0..width-1, y = row 0..height-1 from the top; index = y * width + x",
+      "height": 256,
+      "tile_types_per_unit_cell": 1,
+      "width": 256
+    },
+    "id": "square",
+    "name": "Square (parallelogram)"
+  }
+}

@@ -1,0 +1,6 @@
+run,cpu_hash,gpu_hash,gpu_backend,match
+29201,d6844bf981476804,d6844bf981476804,gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan),same
+80618,92709a3c37d4acf7,92709a3c37d4acf7,gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan),same
+51129,bf138bcf9d684b7a,bf138bcf9d684b7a,gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan),same
+112533,ed26e9391d7feda9,ed26e9391d7feda9,gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan),same
+64416,cd75a7b82b89b91a,cd75a7b82b89b91a,gpu (AMD Radeon 8060S Graphics (RADV STRIX_HALO) (radv), Vulkan),same

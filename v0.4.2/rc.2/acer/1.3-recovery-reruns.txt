@@ -1,0 +1,28 @@
+# Reruns of target\release\deps\recovery-928cbd32b19c98cb.exe (the binary that crashed in the RTX run of 1.3),
+# in 1.3's scratch environment, from crates\jetcarp-gpu. Exit codes (from phase1b.log):
+2026-11-15 07:46:21 1.3-recovery-rtx-par-1 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:31 1.3-recovery-rtx-par-2 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:40 1.3-recovery-rtx-par-3 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:50 1.3-recovery-rtx-par-4 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:46:59 1.3-recovery-rtx-par-5 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:47:09 1.3-recovery-rtx-serial-1 exit 0x00000000; ok: a_run_that_fails_part_way_leaves_the_world_as_it_was,gpu_and_cpu_generations_mix_around_a_failure
+2026-11-15 07:47:21 1.3-recovery-rtx-serial-2 exit 0x00000000; ok: a_run_that_fails_part_way_leaves_the_world_as_it_was,gpu_and_cpu_generations_mix_around_a_failure
+2026-11-15 07:47:34 1.3-recovery-rtx-serial-3 exit 0x00000000; ok: a_run_that_fails_part_way_leaves_the_world_as_it_was,gpu_and_cpu_generations_mix_around_a_failure
+2026-11-15 07:57:34 1.3-recovery-uhd-par-1 exit TIMEOUT; ok: 
+2026-11-15 07:57:44 1.3-recovery-uhd-par-2 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+2026-11-15 07:57:53 1.3-recovery-uhd-par-3 exit 0x00000000; ok: gpu_and_cpu_generations_mix_around_a_failure,a_run_that_fails_part_way_leaves_the_world_as_it_was
+
+# Printed outputs (the rest were deleted with the logs):
+--- uhd-par-1 out
+
+running 2 tests
+--- err
+--- uhd-par-2 out
+
+running 2 tests
+test gpu_and_cpu_generations_mix_around_a_failure ... ok
+test a_run_that_fails_part_way_leaves_the_world_as_it_was ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.97s
+
+--- rtx-par-1 err

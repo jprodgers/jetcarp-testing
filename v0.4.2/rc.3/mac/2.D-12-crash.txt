@@ -1,0 +1,62 @@
+== 12:06:51 still: False; kill -9 host pid 10288
+10288 /Users/Jimmie/jetcarp-rc-042c/bin/jetcarp host serve
+after 3 s:
+no host process
+Error: the JETCARP background host is not running
+Jimmie: 'My own wallpaper is showing'
+== 12:07:15 host start
+running, pid 11812, up 0.0s, 89 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · starting · wallpaper · simulation: not stepped yet (GPU simulation auto), on Apple M2 Max, Metal
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+live after 1.2 s:
+running, pid 11812, up 1.0s, 116 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 62 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+wallpaper choices before (M-4's copy): [('com.apple.wallpaper.choice.image', '1a67e606bf7a'), ('com.apple.wallpaper.choice.image', '5785b17e9e29'), ('com.apple.wallpaper.choice.screen-saver', '9c927dd45699')]
+== 12:07:31 12b: host still on
+running, pid 11812, up 16.0s, 115 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 916 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+monitors: 0: Built-in Retina Display
+wallpaper: showing
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Apple M2 Max, Metal; GPU simulation auto (the setting in gpu.json)
+choices while running with still on: [('com.apple.wallpaper.choice.image', '1a67e606bf7a'), ('com.apple.wallpaper.choice.image', '5785b17e9e29'), ('com.apple.wallpaper.choice.screen-saver', '9c927dd45699')]
+== 12:07:35 kill -9 11812
+no host process
+choices after the crash: [('com.apple.wallpaper.choice.image', '1a67e606bf7a'), ('com.apple.wallpaper.choice.image', '5785b17e9e29'), ('com.apple.wallpaper.choice.screen-saver', '9c927dd45699')]
+Jimmie (12b): 'My own wallpaper is showing'
+== 12:08:01 12c: host start (still on)
+running, pid 12157, up 0.0s, 99 MB, GPU Apple M2 Max
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 350 · 303455 cells of 6 px · 60 fps, 60 generations a second · wallpaper · simulation: GPU (Apple M2 Max, Metal)
+== 12:08:09 host stop (clean)
+stopped
+no host process
+choices after the clean stop: [('com.apple.wallpaper.choice.image', '1a67e606bf7a'), ('com.apple.wallpaper.choice.image', '5785b17e9e29'), ('com.apple.wallpaper.choice.image', 'dbdda0730c1b'), ('com.apple.wallpaper.choice.screen-saver', '9c927dd45699')]
+/Users/Jimmie/jetcarp-rc-042c/config/desktop-pictures
+/Users/Jimmie/jetcarp-rc-042c/config/desktop-picture.json
+/Users/Jimmie/jetcarp-rc-042c/config/desktop-pictures/still-1794830889969-0.png
+total 152
+drwxr-xr-x@  3 Jimmie  staff     96 Nov 16 07:08 .
+drwxr-xr-x@ 14 Jimmie  staff    448 Nov 16 07:08 ..
+-rw-r--r--@  1 Jimmie  staff  73943 Nov 16 07:08 still-1794830889969-0.png
+Jimmie (12c): 'A still of Life is showing'
+{
+  "original": [
+    "<Jimmie's own picture, in ~/Pictures (name withheld)>"
+  ],
+  "after": [
+    "/Users/Jimmie/jetcarp-rc-042c/config/desktop-pictures/still-1794830889969-0.png"
+  ]
+}
+== 12:08:40 12d: host still off
+saved; the host is not running
+put the desktop's own picture back
+choices after still off: [('com.apple.wallpaper.choice.image', '1a67e606bf7a'), ('com.apple.wallpaper.choice.image', '5785b17e9e29'), ('com.apple.wallpaper.choice.screen-saver', '9c927dd45699')]
+M-4's copy:          [('com.apple.wallpaper.choice.image', '1a67e606bf7a'), ('com.apple.wallpaper.choice.image', '5785b17e9e29'), ('com.apple.wallpaper.choice.screen-saver', '9c927dd45699')]
+drwxr-xr-x@  2 Jimmie  staff    64 Nov 16 07:08 desktop-pictures
+Jimmie (12d): 'My own wallpaper is back'

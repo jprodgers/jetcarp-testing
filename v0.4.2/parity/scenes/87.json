@@ -1,0 +1,41 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Critters",
+  "description": "Toffoli & Margolus: reversible block rule full of gliders.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 160,
+        "h": 120
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": "17415052943333432747",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Critters",
+      "rule": "Margolus 15,14,13,3,11,5,6,1,7,9,10,2,12,4,8,0",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": {
+        "blob": {
+          "radius": 0.3,
+          "density": 0.3
+        }
+      }
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "d9ae9132238a604c",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA rainbow twins (3.12.12)",
+  "description": "Nearly the same rule on each side (the -1 side lacks S3), rainbow fronts. Found by a JACA rule search.",
+  "tiling": {
+    "family": "trunchex",
+    "size": {
+      "rect": {
+        "w": 102,
+        "h": 79
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 32,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA +B24/S123567 -B24/S1,2,5,6,7,10",
+      "rule": "JACA +B24/S123567 -B24/S1,2,5,6,7,10",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Neon",
+      "seed": {
+        "signed": {
+          "density": 0.45,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Synthwave"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "be53171acc82a20d",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

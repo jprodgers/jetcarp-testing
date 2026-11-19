@@ -1,0 +1,154 @@
+#### R5 rows on the Acer: #128, #124's note, #134; 2026-11-17 17:56:08
+rc.5: jetcarp 0.4.2-rc.5; the installer: 5572295e4d7caf1f... (matched SHA256SUMS at download)
+jetcarp processes: []; JETCARP Run value: []
+
+### R5 #128: host tune --help, host help tune
+$ jetcarp host tune --help
+  Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  (exit 0)
+$ jetcarp host help tune
+  Fit to this computer isn't in JETCARP 0.4.2: it returns, faster, in 0.4.3. Each scene shows at its own size.
+  (exit 0)
+
+### R5 #124: host login on with every JETCARP_* folder set (~\jetcarp-rc5\h124, the warning answered there)
+$ jetcarp setup --seizure-warning no-disorder
+  saved your answer to the photosensitive seizure warning: no epilepsy or seizure disorder
+  (exit 0)
+$ jetcarp host login on
+  "~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve --login starts at login
+  note: the login item starts the host with the default folders; JETCARP_CONFIG_DIR, JETCARP_DATA_DIR, JETCARP_RUNTIME_DIR, JETCARP_LIBRARY, JETCARP_OUT are not passed on to it
+  (exit 0)
+JETCARP Run value: [JETCARP="~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve --login]; jetcarp processes: []
+(the test folder's host, if login on started one:)
+$ jetcarp host status
+  Error: the JETCARP background host is not running
+  (exit 1)
+$ jetcarp host stop
+  Error: the JETCARP background host is not running
+  (exit 1)
+(the default folders' host, if login on started one:)
+$ jetcarp host status
+  Error: the JETCARP background host is not running
+  (exit 1)
+$ jetcarp host stop
+  Error: the JETCARP background host is not running
+  (exit 1)
+$ jetcarp host login off
+  the host no longer starts at login
+  (exit 0)
+after: JETCARP Run value: []; jetcarp processes: []
+
+### R5 #124, the control: no JETCARP_* folder set (the default folders; their answer from the rc.4 sitting)
+$ jetcarp setup --status
+  setup: Explorer on 2026-11-13 15:02 UTC (JETCARP 0.4.0)
+    settings: ~\AppData\Roaming\jetcarp
+    data:     ~\AppData\Local\jetcarp, 1.9 TB free
+    library:  ~\AppData\Local\jetcarp\library.sqlite
+    output:   ~\OneDrive\Pictures\JETCARP
+    bundled:  ~\jetcarp-rc-042c\bin\packs
+  packs that came with JETCARP:
+    JETCARP starter pack (jetcarp-starter/jetcarp-starter): 26 patterns, 79 Quick Start entries, 8 ant runs, 1.5 MB; the starter pack, imported
+  GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU (a Quick Start build runs on it)
+  library: 98 patterns, 8 ant runs, 33 jobs; Quick Start entries: 364 built in, 127 from packs, 2,128 from searches
+  setup's jobs:
+    pack import 32: JETCARP starter pack imported: 0 patterns new, 26 merged, 48 Quick Start entries, 0 ant runs (done)
+    Quick Start build (explore 33): 349 atlas entries published (349 new, 0 updated, 0 removed); 3,238 runs (3/s), 1,078 elites in 603 niches, 6 confirmed, 8 of 1,359 tilings; NVIDIA GeForce RTX 3050 6GB Laptop GPU (NVIDIA), Vulkan (done)
+  profiles:
+    desktop-art  Desktop art: Moving pictures for your desktop: the built-in examples, and an offer to show them as your wallpaper and screen saver. (no extra disk space or time)
+    explorer     Explorer: The built-in examples and the starter pack's patterns, and a ten-minute search that adds Quick Start entries of its own. (about 80 MB and 11 minutes)
+    researcher   Researcher: For hunting and studying patterns: the starter pack and large packs you choose, in a data folder you choose, and a half-hour search. (about 240 MB and 31 minutes, plus the packs you add)
+    everything   Everything: Every pack that came with JETCARP and any you add, a data folder you choose, an hour's search, and the desktop offers. (about 480 MB and 61 minutes, plus the packs you add)
+    blank-slate  Blank slate: Nothing added: the built-in examples stay in the Quick Start, and nothing is imported or built. (no extra disk space or time)
+  (exit 0)
+$ jetcarp host login on
+  "~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve --login starts at login
+  (exit 0)
+JETCARP Run value: [JETCARP="~\jetcarp-rc-042c\bin\jetcarpw.exe" host serve --login]; jetcarp processes: []
+$ jetcarp host stop
+  Error: the JETCARP background host is not running
+  (exit 1)
+$ jetcarp host login off
+  the host no longer starts at login
+  (exit 0)
+after: JETCARP Run value: []; jetcarp processes: []
+
+### R5 #128: rc.5's installer -NoModifyPath, then -Uninstall
+before: settings %APPDATA%\jetcarp: True; data %LOCALAPPDATA%\jetcarp: True; pictures: True; program folder %LOCALAPPDATA%\Programs\jetcarp: False; the program folder on the user PATH: False; PATH kind ExpandString
+$ jetcarp -NoProfile -ExecutionPolicy Bypass -File "~\jetcarp-rc-042c\rc5-dl\jetcarp-installer.ps1" -NoModifyPath
+  jetcarp-installer: getting JETCARP 0.4.2-rc.5 for x86_64-pc-windows-msvc from https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.5
+  jetcarp-installer: checked jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc.zip against SHA256SUMS
+  jetcarp-installer: installed jetcarp 0.4.2-rc.5 in ~\AppData\Local\Programs\jetcarp
+  jetcarp-installer: the starter pack is in ~\AppData\Local\Programs\jetcarp\packs
+  jetcarp-installer: left your PATH alone: run JETCARP as ~\AppData\Local\Programs\jetcarp\jetcarp.exe
+  jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees
+  (exit 0)
+after the install: the program folder on the user PATH: False; user PATH unchanged: True
+$ jetcarp --version
+  jetcarp 0.4.2-rc.5
+  (exit 0)
+$ jetcarp -NoProfile -ExecutionPolicy Bypass -File "~\jetcarp-rc-042c\rc5-dl\jetcarp-installer.ps1" -Uninstall
+  jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+  jetcarp-installer: removed ~\AppData\Local\Programs\jetcarp (it wasn't on your PATH)
+  jetcarp-installer: kept your settings, data and pictures in ~\AppData\Roaming\jetcarp, ~\AppData\Local\jetcarp, ~\OneDrive\Pictures\JETCARP; delete them by hand if you want them gone
+  (exit 0)
+after -Uninstall: settings %APPDATA%\jetcarp: True; data %LOCALAPPDATA%\jetcarp: True; pictures: True; program folder %LOCALAPPDATA%\Programs\jetcarp: False; user PATH unchanged: True
+
+### R5 #134 (and #128's other half): a normal install, jetcarp uninstall --yes --settings --data, then -Uninstall
+$ jetcarp -NoProfile -ExecutionPolicy Bypass -File "~\jetcarp-rc-042c\rc5-dl\jetcarp-installer.ps1"
+  jetcarp-installer: getting JETCARP 0.4.2-rc.5 for x86_64-pc-windows-msvc from https://github.com/jprodgers/jetcarp/releases/download/v0.4.2-rc.5
+  jetcarp-installer: checked jetcarp-0.4.2-rc.5-x86_64-pc-windows-msvc.zip against SHA256SUMS
+  jetcarp-installer: installed jetcarp 0.4.2-rc.5 in ~\AppData\Local\Programs\jetcarp
+  jetcarp-installer: the starter pack is in ~\AppData\Local\Programs\jetcarp\packs
+  jetcarp-installer: added ~\AppData\Local\Programs\jetcarp to your user PATH; open a new terminal to use `jetcarp`
+  jetcarp-installer: start JETCARP with `jetcarp` (or jetcarpw.exe for no console window); `jetcarp doctor` shows what it sees
+  (exit 0)
+after the install: the program folder on the user PATH: True; PATH kind ExpandString; settings %APPDATA%\jetcarp: True; data %LOCALAPPDATA%\jetcarp: True; pictures: True; program folder %LOCALAPPDATA%\Programs\jetcarp: True
+$ jetcarp --version
+  jetcarp 0.4.2-rc.5
+  (exit 0)
+$ jetcarp uninstall
+  This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+  
+  Would undo (run again with --yes):
+    remove the host's lock file ~\AppData\Local\jetcarp\host.lock
+    remove the empty folder of job locks ~\AppData\Local\jetcarp\library.sqlite-jobs
+    forget the recorded host command
+  
+  Kept the data folder ~\AppData\Local\jetcarp (42.5 MB); add --data to delete it.
+  Kept the settings folder ~\AppData\Roaming\jetcarp; add --settings to delete it.
+  Your pictures and exports in ~\OneDrive\Pictures\JETCARP are never deleted.
+  
+  Then, to remove the program itself (in ~\AppData\Local\Programs\jetcarp, installed with JETCARP's installer), run these in PowerShell:
+  
+      Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+      powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 -Uninstall
+  
+  If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+  (exit 0)
+$ jetcarp uninstall --yes --settings --data
+  This undoes what JETCARP set up outside its folders. It never removes the program itself, and deletes its settings and data only when asked (--settings, --data).
+  
+  Undoing:
+    done: remove the host's lock file ~\AppData\Local\jetcarp\host.lock
+    done: remove the empty folder of job locks ~\AppData\Local\jetcarp\library.sqlite-jobs
+    done: delete the settings folder ~\AppData\Roaming\jetcarp
+    done: delete the data folder ~\AppData\Local\jetcarp (42.5 MB)
+  
+  Your pictures and exports in ~\OneDrive\Pictures\JETCARP are never deleted.
+  
+  To remove the program itself (in ~\AppData\Local\Programs\jetcarp, installed with JETCARP's installer), run these in PowerShell:
+  
+      Invoke-WebRequest https://github.com/jprodgers/jetcarp/releases/latest/download/jetcarp-installer.ps1 -OutFile jetcarp-installer.ps1
+      powershell -ExecutionPolicy Bypass -File .\jetcarp-installer.ps1 -Uninstall
+  
+  If you connected JETCARP to an AI assistant, remove it there too: `claude mcp remove jetcarp` for Claude Code, or the "jetcarp" entry in Claude Desktop's claude_desktop_config.json.
+  (exit 0)
+after jetcarp uninstall: settings %APPDATA%\jetcarp: False; data %LOCALAPPDATA%\jetcarp: False; pictures: True; program folder %LOCALAPPDATA%\Programs\jetcarp: True
+$ jetcarp -NoProfile -ExecutionPolicy Bypass -File "~\jetcarp-rc-042c\rc5-dl\jetcarp-installer.ps1" -Uninstall
+  jetcarp-installer: removing the program; what JETCARP set up outside its folders (the host, starting at login, the screen saver) is undone by `jetcarp uninstall`, not by this: if that is still to do, install again and run it
+  jetcarp-installer: removed ~\AppData\Local\Programs\jetcarp and took it off your PATH
+  jetcarp-installer: kept your settings, data and pictures in ~\OneDrive\Pictures\JETCARP; delete them by hand if you want them gone
+  (exit 0)
+after -Uninstall: settings %APPDATA%\jetcarp: False; data %LOCALAPPDATA%\jetcarp: False; pictures: True; program folder %LOCALAPPDATA%\Programs\jetcarp: False; the program folder on the user PATH: False; user PATH back as before the install: True
+jetcarp processes: []; JETCARP Run value: []
+#### done 17:57:28

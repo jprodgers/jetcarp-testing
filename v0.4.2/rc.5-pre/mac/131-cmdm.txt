@@ -1,0 +1,121 @@
+rc.5 #131 check, the Mac, 2026-11-17 05:45:11 AM EST; $J = rc5-fixes' build (jetcarp 0.4.2-rc.4, c976627); test folder $H = homes/app131
+app pid 71274, window frame [328, 130, 1400, 932, 1]
+world_new -> isError=False
+app_display playing speed 30 -> isError=False
+   t(s)  phase                      gen     gens/s  on  CPU%  capture
+    0.0  in view                         0       -  1     -  
+    2.7  in view                        51    18.7  1    26  
+    4.0  in view                        95    34.2  1     4  
+    6.0  in view                       157    31.0  1     5  
+    8.0  in view                       217    29.9  1     4  
+   10.0  in view                       277    30.0  1     4  
+   12.0  in view                       337    29.9  1     4  
+   14.0  in view                       397    30.0  1     4  
+   16.1  in view                       457    29.9  1     4  
+   18.0  in view                       517    30.0  1     4  
+   20.1  in view                       577    29.9  1     5  
+   22.1  in view                       638    30.4  1     4  
+   24.1  in view                       697    29.4  1     4  
+   26.1  in view                       758    30.5  1     4  
+   28.1  in view                       818    29.9  1     4  
+   30.1  in view                       878    29.9  1     4  
+   32.1  in view                       938    29.9  1     4  
+   34.1  in view                       998    30.0  1     4  
+   36.1  in view                      1059    30.4  1     7  
+   38.1  in view                      1119    30.0  1    52  
+   40.1  in view                      1179    29.9  1    53  
+   42.1  in view                      1239    29.9  1    53  
+   44.1  in view                      1299    30.0  1    54  
+   46.1  in view                      1359    29.9  1    53  
+   48.1  in view                      1419    30.0  1    54  
+   50.1  in view                      1479    30.0  1    53  
+   52.1  in view                      1540    30.4  1    54  
+  -- minimised (1) by 54.2 s
+   54.2  minimised 1                  1597    27.9  0    37  
+   56.1  minimised 1                  1656    30.0  0     3  
+   58.2  minimised 1                  1718    29.8  0     3  
+   60.2  minimised 1                  1777    30.0  0     3  
+   62.1  minimised 1                  1836    30.0  0     3  
+   64.2  minimised 1                  1899    30.3  0     3  
+   66.2  minimised 1                  1958    30.0  0     3  
+   68.2  minimised 1                  2017    30.0  0     3  
+   70.2  minimised 1                  2079    29.8  0     2  
+   72.2  minimised 1                  2138    30.0  0     3  
+   74.2  minimised 1                  2197    30.0  0     3  
+   76.3  minimised 1                  2260    30.3  0     2  
+   78.2  minimised 1                  2319    30.0  0     3  
+   80.2  minimised 1                  2377    29.6  0     6  
+   82.3  minimised 1                  2440    30.3  0     4  
+   84.2  minimised 1                  2499    30.0  0     4  
+  -- restored (1) by 86.2 s
+   86.2  after ⌘M 1                   2555    28.6  1    26  131-r1-000s.png 7715e12690858f98 first
+   88.2  after ⌘M 1                   2615    30.0  1    46  131-r1-001s.png 301f7b07b4fd40ef CHANGED
+   90.2  after ⌘M 1                   2676    30.4  1    42  131-r1-004s.png dbc03bfadb7ddc64 CHANGED
+   92.2  after ⌘M 1                   2736    29.9  1    33  131-r1-006s.png 692e46862d90f66c CHANGED
+   94.2  after ⌘M 1                   2796    30.0  1    39  131-r1-008s.png 0bbe41d0665c6dfc CHANGED
+   96.2  after ⌘M 1                   2856    30.0  1    38  131-r1-010s.png 224c07e333947fbd CHANGED
+   98.2  after ⌘M 1                   2916    29.9  1    48  131-r1-012s.png 8cc736e5a4c2955e CHANGED
+  100.2  after ⌘M 1                   2976    29.9  1    49  131-r1-014s.png adcafb505db0c2cd CHANGED
+  102.2  after ⌘M 1                   3036    29.9  1    34  131-r1-016s.png 1c97330eea345e8c CHANGED
+  -- minimised (2) by 104.2 s
+  104.2  minimised 2                  3089    26.2  0    31  
+  106.3  minimised 2                  3155    31.7  0     6  
+  108.3  minimised 2                  3215    30.5  0     3  
+  110.3  minimised 2                  3273    29.5  0     3  
+  112.3  minimised 2                  3336    30.3  0     2  
+  114.3  minimised 2                  3395    30.0  0     3  
+  116.3  minimised 2                  3457    31.8  0     7  
+  118.3  minimised 2                  3517    30.0  0     6  
+  120.3  minimised 2                  3575    28.5  0     5  
+  122.3  minimised 2                  3634    29.9  0     3  
+  124.3  minimised 2                  3695    29.8  0     6  
+  126.3  minimised 2                  3756    29.9  0     4  
+  -- restored (2) by 128.3 s
+  128.3  after the yellow button      3811    28.7  1    32  131-r2-000s.png 18c1bbe03b164105 first
+  130.3  after the yellow button      3871    29.9  1    46  131-r2-002s.png 5e8e3b7ff2eaed8c CHANGED
+  132.3  after the yellow button      3931    29.9  1    47  131-r2-004s.png ff510c883773f41d CHANGED
+  134.3  after the yellow button      3991    30.0  1    49  131-r2-006s.png a4a115c8e461a638 CHANGED
+  136.3  after the yellow button      4051    30.0  1    50  131-r2-008s.png 9cf15ff2e402eee6 CHANGED
+  138.3  after the yellow button      4111    29.9  1    45  131-r2-010s.png 84b27d02f0a2ec78 CHANGED
+  140.3  after the yellow button      4171    30.0  1    44  131-r2-012s.png 9428dbf1090de58f CHANGED
+  -- minimised (3) by 142.6 s
+  142.6  minimised 3                  4231    26.6  0    42  
+  -- app_display playing false at 142.6 s -> isError=False
+  144.4  minimised 3                  4241     5.4  0     2  
+  146.4  minimised 3                  4241     0.0  0     1  
+  148.4  minimised 3                  4241     0.0  0     1  
+  150.4  minimised 3                  4241     0.0  0     0  
+  152.4  minimised 3                  4241     0.0  0     0  
+  154.4  minimised 3                  4241     0.0  0     0  
+  156.4  minimised 3                  4241     0.0  0     0  
+  158.4  minimised 3                  4241     0.0  0     0  
+  160.4  minimised 3                  4241     0.0  0     1  
+  162.4  minimised 3                  4241     0.0  0     3  
+  164.4  minimised 3                  4241     0.0  0     4  
+  166.4  minimised 3                  4241     0.0  0     3  
+  -- restored (3) by 168.3 s
+  168.3  after ⌘M 2 (paused)          4241     0.0  1     5  131-r3-000s.png 0939d3d249a76e8b first
+  170.3  after ⌘M 2 (paused)          4241     0.0  1     3  131-r3-002s.png d0ae8c2ced2c1d11 CHANGED
+  172.3  after ⌘M 2 (paused)          4241     0.0  1     8  131-r3-004s.png 9da46a599cc67491 CHANGED
+  174.4  after ⌘M 2 (paused)          4241     0.0  1     1  131-r3-006s.png 607cc5b3c5967773 CHANGED
+  176.4  after ⌘M 2 (paused)          4241     0.0  1    29  131-r3-008s.png 1660428533b26f65 CHANGED
+  178.4  after ⌘M 2 (paused)          4241     0.0  1     5  131-r3-010s.png 2499e6cddf6d5bfd CHANGED
+  180.4  after ⌘M 2 (paused)          4241     0.0  1    18  131-r3-012s.png 8792c8c3a140f733 CHANGED
+  182.4  after ⌘M 2 (paused)          4241     0.0  1    32  131-r3-014s.png e8a84e69596510fa CHANGED
+  184.4  after ⌘M 2 (paused)          4241     0.0  1    14  131-r3-016s.png b225b371ffa1dff1 CHANGED
+  186.4  after ⌘M 2 (paused)          4241     0.0  1    28  131-r3-018s.png e25b32b9893f1b13 CHANGED
+  188.4  after ⌘M 2 (paused)          4241     0.0  1    29  131-r3-020s.png 1fe101e126988f6d CHANGED
+  190.4  after ⌘M 2 (paused)          4241     0.0  1    22  131-r3-022s.png 8d39ac3ff446b91f CHANGED
+  192.4  after ⌘M 2 (paused)          4241     0.0  1    21  131-r3-024s.png b6f062be2ed51073 CHANGED
+  194.4  after ⌘M 2 (paused)          4241     0.0  1    10  131-r3-026s.png e925cffb45d300c8 CHANGED
+  196.4  after ⌘M 2 (paused)          4241     0.0  1     0  131-r3-028s.png 705470e243df57aa CHANGED
+  198.4  after ⌘M 2 (paused)          4241     0.0  1     1  131-r3-030s.png 817ea2b4d195a31e CHANGED
+
+in view: 27 polls, 0 errors, 29.6 gens/s, CPU median 4% of a core; captures: 0, changed 0, same 0
+minimised 1: 16 polls, 0 errors, 30.1 gens/s, CPU median 3% of a core; captures: 0, changed 0, same 0
+minimised 2: 12 polls, 0 errors, 30.2 gens/s, CPU median 5% of a core; captures: 0, changed 0, same 0
+minimised 3: 13 polls, 0 errors, 0.4 gens/s, CPU median 1% of a core; captures: 0, changed 0, same 0
+after ⌘M 1: 9 polls, 0 errors, 30.1 gens/s, CPU median 39% of a core; captures: 9, changed 8, same 0
+after the yellow button: 7 polls, 0 errors, 30.0 gens/s, CPU median 46% of a core; captures: 7, changed 6, same 0
+after ⌘M 2 (paused): 16 polls, 0 errors, 0.0 gens/s, CPU median 14% of a core; captures: 16, changed 15, same 0
+the app closed (exit -15)

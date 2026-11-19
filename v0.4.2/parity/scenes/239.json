@@ -1,0 +1,42 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "JACA explosive trenches (blast 2)",
+  "description": "Blast 2 on triangles: a lasting band war with thick trenches full of explosions. Found by a JACA rule search.",
+  "tiling": {
+    "family": "triangle",
+    "size": {
+      "rect": {
+        "w": 124,
+        "h": 97
+      }
+    },
+    "boundary": "wrap"
+  },
+  "rng_state": 27,
+  "cas": [
+    {
+      "id": 1,
+      "name": "JACA B2/S0139 blast 2",
+      "rule": "JACA B2/S0139 blast 2",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": false,
+      "steps_per_gen": 1,
+      "palette": "Deep Sea",
+      "seed": {
+        "signed": {
+          "density": 0.3,
+          "negative": 0.5
+        }
+      },
+      "palette_neg": "Thermal"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "0cc52a95e77f7370",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": false
+  }
+}

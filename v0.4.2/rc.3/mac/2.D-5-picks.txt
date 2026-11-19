@@ -1,0 +1,33 @@
+11:28:31 == host tune --pick 4
+exit 0 in 55 s; last lines:
+screen 0, scene 3 of 3: Quick Start rule:B368/S245 at 2 px (size 9 of up to 9)
+  2 px, 2,732,424 cells: processor 17%, GPU not measured, 60 fps, frames 8.9 ms, on the GPU — over: processor 17% (over 8.0%: the 10% limit, less 20%)
+screen 0: Quick Start rule:B368/S245: 9 sizes; recommended 6 px; shows at 4 px (chosen), 682,592 cells
+swept 3 scene(s); GPU share not measured on this adapter (it has no GPU timestamps): the GPU limit isn't applied; saved to /Users/Jimmie/jetcarp-rc-042c/config/host.json
+  File "<string>", line 1
+    import json,sys; d=json.load(sys.stdin); s=d["screens"][0]["stage"]; print(f"  status: {s[\"label\"]} {s[\"cells\"]} cells @ {s[\"cell_px\"]} px tuned {s[\"tuned\"]}; memory {d[\"memory_mb\"]} MB")
+                                                                                               ^
+SyntaxError: unexpected character after line continuation character
+  host.json tuning: {"scenes": [{"scene": "Quick Start rule:B3/S23", "tiling": "square", "design_px": 6.0, "cell_px": 4.0, "chosen": true, "recommended": {"px": 6.0}, "placed": false, "rungs": [{"size": {"px": 2.0}, "cells": 2732424, "cpu_percent": 18.101973, "gpu_unmeasured": true, "p95_ms": 8.998958, "fps": 59.997017, "on_gpu": true, "fits": false, "over": "processor 18% (over 8.0%: the 10% limit, less 20%)", "crop
+11:29:29 == host tune --pick 3
+exit 0 in 56 s; last lines:
+screen 0, scene 3 of 3: Quick Start rule:B368/S245 at 2 px (size 9 of up to 9)
+  2 px, 2,732,424 cells: processor 18%, GPU not measured, 60 fps, frames 17.1 ms, on the GPU — over: processor 18% (over 8.0%: the 10% limit, less 20%), frames 17.1 ms (at 60 fps, 16.7 ms)
+screen 0: Quick Start rule:B368/S245: 9 sizes; recommended 6 px; shows at 3 px (chosen), 1,213,820 cells
+swept 3 scene(s); GPU share not measured on this adapter (it has no GPU timestamps): the GPU limit isn't applied; saved to /Users/Jimmie/jetcarp-rc-042c/config/host.json
+  File "<string>", line 1
+    import json,sys; d=json.load(sys.stdin); s=d["screens"][0]["stage"]; print(f"  status: {s[\"label\"]} {s[\"cells\"]} cells @ {s[\"cell_px\"]} px tuned {s[\"tuned\"]}; memory {d[\"memory_mb\"]} MB")
+                                                                                               ^
+SyntaxError: unexpected character after line continuation character
+  host.json tuning: {"scenes": [{"scene": "Quick Start rule:B3/S23", "tiling": "square", "design_px": 6.0, "cell_px": 3.0, "chosen": true, "recommended": {"px": 4.0}, "placed": false, "rungs": [{"size": {"px": 2.0}, "cells": 2732424, "cpu_percent": 17.439423, "gpu_unmeasured": true, "p95_ms": 8.71875, "fps": 59.995804, "on_gpu": true, "fits": false, "over": "processor 17% (over 8.0%: the 10% limit, less 20%)", "crop"
+11:30:28 == host tune --pick own
+exit 0 in 56 s; last lines:
+screen 0, scene 3 of 3: Quick Start rule:B368/S245 at 2 px (size 9 of up to 9)
+  2 px, 2,732,424 cells: processor 17%, GPU not measured, 60 fps, frames 8.7 ms, on the GPU — over: processor 17% (over 8.0%: the 10% limit, less 20%)
+screen 0: Quick Start rule:B368/S245: 9 sizes; recommended 4 px; shows at 6 px (chosen), 303,455 cells
+swept 3 scene(s); GPU share not measured on this adapter (it has no GPU timestamps): the GPU limit isn't applied; saved to /Users/Jimmie/jetcarp-rc-042c/config/host.json
+  File "<string>", line 1
+    import json,sys; d=json.load(sys.stdin); s=d["screens"][0]["stage"]; print(f"  status: {s[\"label\"]} {s[\"cells\"]} cells @ {s[\"cell_px\"]} px tuned {s[\"tuned\"]}; memory {d[\"memory_mb\"]} MB")
+                                                                                               ^
+SyntaxError: unexpected character after line continuation character
+  host.json tuning: {"scenes": [{"scene": "Quick Start rule:B3/S23", "tiling": "square", "design_px": 6.0, "cell_px": 6.0, "chosen": true, "recommended": {"px": 6.0}, "placed": false, "rungs": [{"size": {"px": 2.0}, "cells": 2732424, "cpu_percent": 17.487442, "gpu_unmeasured": true, "p95_ms": 11.151916, "fps": 59.998604, "on_gpu": true, "fits": false, "over": "processor 17% (over 8.0%: the 10% limit, less 20%)", "cro

@@ -1,0 +1,238 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded ryu-js v1.0.3
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling bitflags v2.13.2
+   Compiling cfg_aliases v0.2.2
+   Compiling cfg-if v1.0.5
+   Compiling objc2 v0.6.5
+   Compiling objc2-encode v4.1.0
+   Compiling libc v0.2.191
+   Compiling thiserror v2.0.21
+   Compiling foldhash v0.2.0
+   Compiling autocfg v1.5.1
+   Compiling libm v0.2.16
+   Compiling equivalent v1.0.3
+   Compiling zerocopy v0.8.63
+   Compiling rustc-hash v1.1.0
+   Compiling hashbrown v0.17.1
+   Compiling naga v30.0.1
+   Compiling num-traits v0.2.19
+   Compiling crossbeam-utils v0.8.23
+   Compiling unicode-width v0.2.3
+   Compiling parking_lot_core v0.9.12
+   Compiling bit-vec v0.9.1
+   Compiling indexmap v2.14.2
+   Compiling log v0.4.35
+   Compiling bit-set v0.10.0
+   Compiling codespan-reporting v0.13.1
+   Compiling raw-window-handle v0.6.2
+   Compiling smallvec v1.16.4
+   Compiling simd-adler32 v0.3.10
+   Compiling crossbeam-epoch v0.9.21
+   Compiling static_assertions v1.1.0
+   Compiling scopeguard v1.2.0
+   Compiling once_cell v1.21.4
+   Compiling arrayvec v0.7.8
+   Compiling lock_api v0.4.14
+   Compiling wgpu-hal v30.0.1
+   Compiling serde_core v1.0.229
+   Compiling crossbeam-deque v0.8.8
+   Compiling crc32fast v1.5.4
+   Compiling adler2 v2.0.1
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling libloading v0.8.9
+   Compiling objc2-core-foundation v0.3.2
+   Compiling block2 v0.6.2
+   Compiling parking_lot v0.12.5
+   Compiling zmij v1.0.23
+   Compiling rayon-core v1.13.0
+   Compiling profiling v1.0.18
+   Compiling miniz_oxide v0.9.1
+   Compiling wgpu-core v30.0.1
+   Compiling option-ext v0.2.0
+   Compiling serde_json v1.0.154
+   Compiling serde v1.0.229
+   Compiling litrs v1.0.1
+   Compiling dirs-sys v0.5.0
+   Compiling objc2-foundation v0.3.2
+   Compiling objc2-core-graphics v0.3.2
+   Compiling flate2 v1.1.10
+   Compiling document-features v0.2.12
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling wgpu v30.0.1
+   Compiling itoa v1.0.18
+   Compiling either v1.19.0
+   Compiling quick-error v2.0.1
+   Compiling memchr v2.8.3
+   Compiling byteorder-lite v0.1.0
+   Compiling weezl v0.1.12
+   Compiling rayon v1.12.0
+   Compiling thiserror-impl v2.0.21
+   Compiling bytemuck_derive v1.12.1
+   Compiling serde_derive v1.0.229
+   Compiling gif v0.14.2
+   Compiling image-webp v0.2.4
+   Compiling bytemuck v1.25.2
+   Compiling png v0.18.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling dirs v7.0.0
+   Compiling ryu-js v1.0.3
+   Compiling pollster v0.4.0
+   Compiling objc2-metal v0.3.2
+   Compiling naga-types v30.0.1
+   Compiling wgpu-types v30.0.1
+   Compiling jetcarp-core v0.4.2-rc.1 (/Users/Jimmie/jetcarp-rc-042/src/crates/jetcarp-core)
+   Compiling objc2-quartz-core v0.3.2
+   Compiling raw-window-metal v1.1.0
+   Compiling half v2.7.1
+   Compiling wgpu-naga-bridge v30.0.1
+   Compiling wgpu-core-deps-apple v30.0.1
+   Compiling jetcarp-gpu v0.4.2-rc.1 (/Users/Jimmie/jetcarp-rc-042/src/crates/jetcarp-gpu)
+    Finished `release` profile [optimized + debuginfo] target(s) in 34.09s
+     Running unittests src/lib.rs (target/release/deps/jetcarp_gpu-3f6ad97feab6ee1c)
+
+running 9 tests
+test select::tests::a_request_wins_over_the_policy ... ok
+test select::tests::sizes_read_plainly ... ok
+test select::tests::decent_means_a_real_gpu_with_room ... ok
+test select::tests::compute_prefers_discrete_and_display_integrated ... ok
+test select::tests::the_variable_sets_mode_or_adapter ... ok
+test select::tests::the_variable_then_the_command_then_the_own_choice_then_the_shared_setting ... ok
+test select::tests::the_setting_reads_and_writes ... ok
+test tests::forest_threshold_is_exact ... ok
+test select::tests::every_family_the_gpu_runs_is_in_the_self_test ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/batch.rs (target/release/deps/batch-b70d37bb163ba348)
+
+running 8 tests
+test world_larger_than_one_dispatch_dimension ... ignored, heavy: two worlds of 17 million cells
+test unsupported_rules_are_refused ... ok
+GPU batch tests on Apple M2 Max, Metal
+test a_batch_is_given_up_when_cut ... ok
+test padding_and_multi_type_worlds ... ok
+test many_worlds_reuse_and_frame_edge_cases ... ok
+test larger_than_life_matches ... ok
+test generations_split_over_submissions ... ok
+square wrap: 1073 cells
+square dead: 1073 cells
+square live: 399 cells
+hex wrap: 1023 cells
+hex dead: 1023 cells
+hex live: 391 cells
+trihex wrap: 429 cells
+trihex dead: 429 cells
+rhombitrihex wrap: 384 cells
+rhombitrihex dead: 384 cells
+spectre level 2: 71 cells
+spectre level 3: 559 cells
+hat level 2: 70 cells
+hat level 3: 500 cells
+test every_rule_every_tiling_matches ... ok
+
+test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.48s
+
+     Running tests/equality.rs (target/release/deps/equality-c378347a94d98ad8)
+
+running 11 tests
+GPU tests on Apple M2 Max, Metal
+test unsupported_rules_fall_back ... ok
+test several_cas_and_steps_per_generation ... ok
+script-five.json: 661 generations on the GPU, 149 on the CPU
+test scripts_and_period_detection ... ok
+test reseed_policies_match_cpu ... ok
+test priority_rules ... ok
+test explicit_storage_spectre_level_7 ... ok
+test explicit_storage_spectre ... ok
+test ages_saturate_like_the_cpu ... ok
+test commands_between_gpu_runs ... ok
+test done_trigger ... ok
+480 rule x tiling x boundary runs matched
+test every_rule_tiling_and_boundary ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.47s
+
+     Running tests/families.rs (target/release/deps/families-2400f1002a95db7b)
+
+running 16 tests
+GPU tests on Apple M2 Max, Metal
+test jaca_glow_and_counts ... ok
+test b0_rules ... ok
+test ltl_on_patches ... ok
+test forest_fire ... ok
+test margolus_rules ... ok
+test ltl_on_lattices ... ok
+test b0_from_an_odd_tick ... ok
+test jaca_on_patches ... ok
+test jaca_commands_between_runs ... ok
+210 JACA runs matched
+test jaca_on_lattices ... ok
+test jaca_scripts_reseeds_and_repeats ... ok
+test jaca_blast_radii ... ok
+Quick Start JACA: 76 entries matched, 0 on the CPU
+Quick Start Larger than Life: 8 entries matched, 0 on the CPU
+Quick Start Life-like (B0): 6 entries matched, 0 on the CPU
+Quick Start Margolus block: 5 entries matched, 0 on the CPU
+Quick Start Multi-state: 1 entries matched, 0 on the CPU
+Quick Start Sandpile: 6 entries matched, 0 on the CPU
+Quick Start Tiling showcase: 33 entries matched, 0 on the CPU
+test quick_start_entries ... ok
+test sandpile_edges_drops_and_patches ... ok
+test sandpile_repeats_and_scripts ... ok
+test sandpile_scenes ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 40.92s
+
+     Running tests/pile.rs (target/release/deps/pile-5aa2dc8ad6fc386a)
+
+running 2 tests
+GPU pile test on gpu (Apple M2 Max, Metal)
+test a_gpu_step_stopped_part_way_carries_on ... ok
+test gpu_piles_equal_cpu_piles ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.13s
+
+     Running tests/recovery.rs (target/release/deps/recovery-64b1b148987ab75b)
+
+running 2 tests
+test gpu_and_cpu_generations_mix_around_a_failure ... ok
+test a_run_that_fails_part_way_leaves_the_world_as_it_was ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.09s
+
+     Running tests/select.rs (target/release/deps/select-92434d149d170202)
+
+running 4 tests
+note: no software adapter here
+display: test software_adapters_need_asking_for ... ok
+Apple M2 Max, Metal (the adapter driving the screen (automatic))
+test a_display_always_gets_an_adapter_to_draw_with ... ok
+Apple M2 Max, Metal (the fastest adapter (automatic)): 59 world rules and 33 explore batches matched the CPU in 227 ms
+test a_missing_adapter_falls_back_with_a_note ... ok
+test the_compute_choice_passes_the_self_test ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s
+
+     Running tests/worth.rs (target/release/deps/worth-b3793bc73a8c2011)
+
+running 4 tests
+test rules_the_gpu_cannot_run_never_go_there ... ok
+test runs_of_known_length_go_by_their_total_work ... ok
+test paced_displays_go_by_cells_and_runs_by_reads ... ok
+test reads_are_cells_times_neighbours_over_every_pass ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests jetcarp_gpu
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+cargo test --release -p jetcarp-gpu --no-fail-fast -- --nocapture  399.28s user 46.63s system 459% cpu 1:37.07 total

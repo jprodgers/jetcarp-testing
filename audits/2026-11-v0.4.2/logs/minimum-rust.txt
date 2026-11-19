@@ -1,0 +1,35 @@
+# cargo metadata --locked --no-deps at a3e829a, by toolchain
+== cargo 1.95.0: fails
+Caused by:
+  failed to load manifest for dependency `jetcarp-script`
+Caused by:
+  failed to parse manifest at `…/jetcarp/crates/jetcarp-script/Cargo.toml`
+Caused by:
+  error inheriting `jetcarp-api` from workspace root manifest's `workspace.dependencies.jetcarp-api`
+Caused by:
+  `default-features = false` cannot override workspace's `default-features`
+== cargo 1.97.0: fails
+Caused by:
+  failed to load manifest for dependency `jetcarp-script`
+Caused by:
+  failed to parse manifest at `…/jetcarp/crates/jetcarp-script/Cargo.toml`
+Caused by:
+  error inheriting `jetcarp-api` from workspace root manifest's `workspace.dependencies.jetcarp-api`
+Caused by:
+  `default-features = false` cannot override workspace's `default-features`
+== cargo 1.98.0: fails
+Caused by:
+  failed to load manifest for dependency `jetcarp-script`
+Caused by:
+  failed to parse manifest at `…/jetcarp/crates/jetcarp-script/Cargo.toml`
+Caused by:
+  error inheriting `jetcarp-api` from workspace root manifest's `workspace.dependencies.jetcarp-api`
+Caused by:
+  `default-features = false` cannot override workspace's `default-features`
+== cargo 1.99.0: loads
+== cargo stable: loads
+
+# with the manifest-only change described in jprodgers/jetcarp#175, in a scratch copy:
+cargo +1.95.0 check --workspace --locked
+    Finished `dev` profile [optimized + debuginfo] target(s) in 8m 39s
+MSRV_CHECK_EXIT=0

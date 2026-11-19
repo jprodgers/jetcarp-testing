@@ -1,0 +1,80 @@
+> jetcarp host start   (01:35:45)
+running, pid 17620, up 1.0s, 223 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · starting · window
+caption: off
+(exit 0)
+
+> jetcarp host status   (01:35:49)
+running, pid 17620, up 4.0s, 257 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 811 · 57600 cells · window
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+caption: off
+(exit 0)
+
+== host.json: not written yet (the host runs on its defaults until a setting changes)
+> jetcarp host wallpaper on --screen 0 --monitor 0   (01:36:10)
+running, pid 17620, up 25.0s, 259 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 5811 · 57600 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: off
+(exit 0, 0.2 s)
+
+> jetcarp host wallpaper on --screen 1 --monitor 1 --rotation Classics, hourly   (01:36:10)
+running, pid 17620, up 25.0s, 270 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 5937 · 57600 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · Quick Start turmite-llrr (5 of 7) · starting · wallpaper on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: off
+(exit 0, 0.2 s)
+
+> jetcarp host status   (01:36:15)
+running, pid 17620, up 30.0s, 294 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 1048 · 129600 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · Quick Start turmite-llrr (5 of 7) · generation 922 · 230400 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: off
+(exit 0, 0.2 s)
+
+== host.json
+{
+  "screens": [
+    {
+      "monitor": 0,
+      "rotation": "A classic a day",
+      "place": "wallpaper"
+    },
+    {
+      "monitor": 1,
+      "rotation": "Classics, hourly",
+      "place": "wallpaper"
+    }
+  ],
+  "fps": 30.0,
+  "gpu": true,
+  "caption": {
+
+> jetcarp host stop   (01:36:21)
+stopped
+(exit 0, 0.3 s)
+
+--- check 1: the restart's reply ---
+> jetcarp host start   (01:36:23)
+running, pid 15768, up 1.0s, 221 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · starting · wallpaper on monitor 0
+screen 1: Classics, hourly · Quick Start turmite-llrr (5 of 7) · starting · wallpaper on monitor 1
+wallpaper: showing
+caption: off
+(exit 0, 0.8 s)
+
+> jetcarp host status   (01:36:34)
+running, pid 15768, up 11.0s, 291 MB, GPU NVIDIA GeForce RTX 3050 6GB Laptop GPU
+screen 0: A classic a day · Quick Start langtons-ant (2 of 7) · generation 2493 · 129600 cells · wallpaper on monitor 0 (\\.\DISPLAY1)
+screen 1: Classics, hourly · Quick Start turmite-llrr (5 of 7) · generation 2493 · 230400 cells · wallpaper on monitor 1 (\\.\DISPLAY5)
+monitors: 0: \\.\DISPLAY1, 1: \\.\DISPLAY5
+wallpaper: showing
+caption: off
+(exit 0, 0.2 s)
+

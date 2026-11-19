@@ -1,0 +1,23 @@
+[package]
+name = "jetcarp-audit-harness"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+# The independent harness of JETCARP's November 2026 audit (v0.4.2, commit a3e829a).
+# It is not part of JETCARP and never modifies it. It expects a clone of jprodgers/jetcarp
+# beside the clone of jprodgers/jetcarp-testing:
+#
+#   somewhere/jetcarp            (checked out at the commit under audit)
+#   somewhere/jetcarp-testing    (this repository)
+#
+# Run:  cd audits/2026-11-v0.4.2/harness && cargo test --release --no-fail-fast -- --nocapture
+# (Rust 1.99 or newer, as the workspace needs at this commit.)
+[dependencies]
+jetcarp-core = { path = "../../../../jetcarp/crates/jetcarp-core" }
+serde_json = "1"
+rayon = "1"
+sha2 = "0.10"
+
+[profile.release]
+debug = 0

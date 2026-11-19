@@ -1,0 +1,5 @@
+explore job 2 (search db00e0e0-6959-4398-b766-bc9a0703d55e): sealed its newest 574,607 runs first, so the pack carries every run
+publishing feed rc3-long (version 1) into C:\Users\jimmi\jetcarp-rc-042c\.P14-pack.store
+1454 patterns read, 1454 new rows
+search db00e0e0-6959-4398-b766-bc9a0703d55e: copying its segments
+version sha256:d8bc9bed5e582726922ae3eabb1e6cf001340f9a54b6633f3d84a136b1a07db0 written

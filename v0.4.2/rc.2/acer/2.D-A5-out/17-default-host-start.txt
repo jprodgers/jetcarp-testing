@@ -1,0 +1,5 @@
+running, pid 64168, up 1.0s, 416 MB, GPU Intel(R) UHD Graphics
+screen 0: A classic a day · profile Cyclic spirals (4 of 7) · starting · window
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)

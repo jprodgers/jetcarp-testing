@@ -1,0 +1,2 @@
+Error: explore job 10 is running, and the pack would leave out every run it stores from now on
+stop it first (jobs stop), then publish

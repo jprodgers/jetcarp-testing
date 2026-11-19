@@ -1,0 +1,36 @@
+{
+  "jetcarp_version": "0.4.2-rc.1",
+  "format": 1,
+  "name": "Rule 18",
+  "description": "Class 3: Sierpinski-like triangles from one cell, chaotic from random rows.",
+  "tiling": {
+    "family": "square",
+    "size": {
+      "rect": {
+        "w": 241,
+        "h": 160
+      }
+    },
+    "boundary": "dead"
+  },
+  "rng_state": "8333716608112330503",
+  "cas": [
+    {
+      "id": 1,
+      "name": "Rule 18",
+      "rule": "W18",
+      "neighborhood": "touch",
+      "enabled": true,
+      "affects_others": true,
+      "steps_per_gen": 1,
+      "palette": "Tide",
+      "seed": "top_center"
+    }
+  ],
+  "record": {
+    "generation": 0,
+    "hash": "7193f0c1d4933c1c",
+    "jetcarp_version": "0.4.2-rc.1",
+    "dead_boundary": true
+  }
+}

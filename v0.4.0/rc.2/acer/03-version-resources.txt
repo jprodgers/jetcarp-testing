@@ -1,0 +1,22 @@
+﻿== jetcarp.exe (78994944 bytes)
+  ProductName:      JETCARP
+  ProductVersion:   0.4.0-rc.2
+  FileVersion:      0.4.0-rc.2  (raw 0.4.0.0)
+  FileDescription:  JETCARP: cellular automata on tilings of the plane
+  CompanyName:      Jimmie Rodgers
+  LegalCopyright:   Jimmie Rodgers. Free to use under the Unlicense or the MIT licence
+  OriginalFilename: jetcarp.exe
+  InternalName:     jetcarp
+  Authenticode:     NotSigned
+  Zone.Identifier:  none
+== jetcarpw.exe (241664 bytes)
+  ProductName:      JETCARP
+  ProductVersion:   0.4.0-rc.2
+  FileVersion:      0.4.0-rc.2  (raw 0.4.0.0)
+  FileDescription:  JETCARP, started without a console window
+  CompanyName:      Jimmie Rodgers
+  LegalCopyright:   Jimmie Rodgers. Free to use under the Unlicense or the MIT licence
+  OriginalFilename: jetcarpw.exe
+  InternalName:     jetcarpw
+  Authenticode:     NotSigned
+  Zone.Identifier:  none

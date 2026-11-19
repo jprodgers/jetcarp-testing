@@ -1,0 +1,138 @@
+04:25:33 start: server jetcarp 0.4.2-rc.3; every 5.0 s for 3000.0 s
+04:26:30 gen 0 rate -/s cells 83460 playing False tiling square rules 'B36/S23' pop 25115 scene 'Empty world' sim '' rss 492 MB footprint 199 MB
+04:26:30 gen 0 rate 0.0/s cells 83460 playing False tiling square rules 'B36/S23' pop 25115 scene 'Empty world' sim '' rss 479 MB footprint 192 MB
+04:26:35 gen 0 rate 0.0/s cells 83460 playing False tiling square rules 'B36/S23' pop 25115 scene 'Empty world' sim '' rss 479 MB footprint 190 MB
+04:26:40 gen 0 rate 0.0/s cells 83460 playing False tiling square rules 'B36/S23' pop 25115 scene 'Empty world' sim '' rss 478 MB footprint 192 MB
+04:26:45 gen 73 rate 14.6/s cells 23940 playing True tiling square rules 'JACA B16/S1378 blast 1' pop 6566 scene 'JACA bead borders (square, blast 1)' sim '' rss 478 MB footprint 193 MB
+04:26:50 gen 148 rate 15.0/s cells 23940 playing True tiling square rules 'JACA B16/S1378 blast 1' pop 6627 scene 'JACA bead borders (square, blast 1)' sim '' rss 478 MB footprint 194 MB
+04:26:55 gen 191 rate 8.6/s cells 23940 playing False tiling square rules 'JACA B16/S1378 blast 1' pop 6497 scene 'JACA bead borders (square, blast 1)' sim '' rss 478 MB footprint 171 MB
+04:27:00 gen 191 rate 0.0/s cells 23940 playing False tiling square rules 'JACA B16/S1378 blast 1' pop 6497 scene 'JACA bead borders (square, blast 1)' sim '' rss 482 MB footprint 191 MB
+04:27:05 gen 191 rate 0.0/s cells 23940 playing False tiling square rules 'JACA B16/S1378 blast 1' pop 6497 scene 'JACA bead borders (square, blast 1)' sim '' rss 479 MB footprint 178 MB
+04:27:10 gen 72 rate -/s cells 35000 playing True tiling hat rules 'JACA B27/S013' pop 12668 scene 'JACA war on the hat tiling' sim '' rss 492 MB footprint 221 MB
+04:27:19 gen 134 rate 12.4/s cells 35000 playing True tiling hat rules 'JACA B27/S013' pop 12609 scene 'JACA war on the hat tiling' sim '' rss 491 MB footprint 221 MB
+04:27:20 gen 163 rate 5.8/s cells 35000 playing True tiling hat rules 'JACA B27/S013' pop 12778 scene 'JACA war on the hat tiling' sim '' rss 492 MB footprint 222 MB
+04:27:25 gen 188 rate 5.0/s cells 35000 playing False tiling hat rules 'JACA B27/S013' pop 12809 scene 'JACA war on the hat tiling' sim '' rss 502 MB footprint 241 MB
+04:27:30 gen 188 rate 0.0/s cells 35000 playing False tiling hat rules 'JACA B27/S013' pop 12809 scene 'JACA war on the hat tiling' sim '' rss 495 MB footprint 250 MB
+04:27:35 gen 188 rate 0.0/s cells 35000 playing False tiling hat rules 'JACA B27/S013' pop 12809 scene 'JACA war on the hat tiling' sim '' rss 492 MB footprint 228 MB
+04:27:40 gen 188 rate 0.0/s cells 35000 playing False tiling hat rules 'JACA B27/S013' pop 12809 scene 'JACA war on the hat tiling' sim '' rss 493 MB footprint 227 MB
+04:27:45 gen 188 rate 0.0/s cells 35000 playing False tiling hat rules 'JACA B27/S013' pop 12809 scene 'JACA war on the hat tiling' sim '' rss 503 MB footprint 229 MB
+04:27:50 gen 188 rate 0.0/s cells 35000 playing False tiling hat rules 'JACA B27/S013' pop 12809 scene 'JACA war on the hat tiling' sim '' rss 492 MB footprint 227 MB
+04:27:55 gen 61 rate -/s cells 23940 playing True tiling cairo rules 'JACA B27/S03456' pop 12537 scene 'JACA rainbow fronts (Cairo)' sim '' rss 492 MB footprint 217 MB
+04:28:00 gen 136 rate 15.0/s cells 23940 playing True tiling cairo rules 'JACA B27/S03456' pop 13522 scene 'JACA rainbow fronts (Cairo)' sim '' rss 492 MB footprint 217 MB
+04:28:05 gen 169 rate 6.6/s cells 23940 playing True tiling cairo rules 'JACA B27/S03456' pop 13811 scene 'JACA rainbow fronts (Cairo)' sim '' rss 492 MB footprint 217 MB
+04:28:10 gen 209 rate 8.0/s cells 23940 playing False tiling cairo rules 'JACA B27/S03456' pop 13951 scene 'JACA rainbow fronts (Cairo)' sim '' rss 508 MB footprint 237 MB
+04:28:15 gen 209 rate 0.0/s cells 23940 playing False tiling cairo rules 'JACA B27/S03456' pop 13951 scene 'JACA rainbow fronts (Cairo)' sim '' rss 492 MB footprint 245 MB
+04:28:20 gen 73 rate -/s cells 21600 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 1472 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 236 MB
+04:28:25 gen 148 rate 15.0/s cells 21600 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 1507 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 236 MB
+04:28:30 gen 223 rate 15.0/s cells 21600 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 1305 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 236 MB
+04:28:35 gen 298 rate 15.0/s cells 21600 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 1133 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 235 MB
+04:29:01 gen 341 rate 8.6/s cells 21600 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 1064 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 187 MB
+04:29:01 gen 345 rate 0.2/s cells 21600 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 1015 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 188 MB
+04:29:06 gen 421 rate 15.2/s cells 21600 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 861 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 188 MB
+04:29:11 gen 13 rate -/s cells 2400 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 157 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 189 MB
+04:29:19 gen 38 rate 5.0/s cells 2400 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 248 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 188 MB
+04:29:21 gen 70 rate 6.4/s cells 2400 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 192 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 188 MB
+04:29:26 gen 31 rate -/s cells 40960 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 3356 scene 'JACA Life vs HighLife' sim '' rss 492 MB footprint 200 MB
+04:29:31 gen 9 rate -/s cells 4194304 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 348848 scene 'JACA Life vs HighLife' sim '' rss 558 MB footprint 482 MB
+04:29:42 gen 60 rate 10.2/s cells 4194304 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 309589 scene 'JACA Life vs HighLife' sim '' rss 547 MB footprint 289 MB
+04:29:42 gen 64 rate 0.6/s cells 4194304 playing True tiling square rules 'JACA +B3/S23 -B36/S23' pop 306332 scene 'JACA Life vs HighLife' sim '' rss 551 MB footprint 493 MB
+04:29:47 gen 0 rate -/s cells 83460 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 508 MB footprint 437 MB
+04:29:52 gen 0 rate 0.0/s cells 83460 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 508 MB footprint 436 MB
+04:29:57 gen 0 rate 0.0/s cells 417792 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 509 MB footprint 436 MB
+04:30:02 gen 0 rate 0.0/s cells 4194304 playing False tiling square rules '' pop 0 scene 'Empty world' sim '' rss 542 MB footprint 452 MB
+04:30:14 gen 0 rate 0.0/s cells 4194304 playing False tiling square rules 'B3/S23' pop 1257887 scene 'Empty world' sim '' rss 559 MB footprint 481 MB
+04:30:14 gen 0 rate 0.0/s cells 4194304 playing False tiling square rules 'B3/S23' pop 1257887 scene 'Empty world' sim '' rss 556 MB footprint 481 MB
+04:30:19 gen 0 rate 0.0/s cells 4194304 playing False tiling square rules 'B3/S23' pop 1257887 scene 'Empty world' sim '' rss 553 MB footprint 464 MB
+04:30:24 gen 575 rate 114.9/s cells 4194304 playing True tiling square rules 'B3/S23' pop 217013 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:30:29 gen 2226 rate 329.9/s cells 4194304 playing True tiling square rules 'B3/S23' pop 145544 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:30:34 gen 3887 rate 331.9/s cells 4194304 playing True tiling square rules 'B3/S23' pop 128094 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:30:39 gen 5550 rate 332.3/s cells 4194304 playing True tiling square rules 'B3/S23' pop 123455 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:30:44 gen 7210 rate 331.7/s cells 4194304 playing True tiling square rules 'B3/S23' pop 121186 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:30:50 gen 8859 rate 329.5/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120918 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:30:55 gen 10353 rate 298.5/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120798 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:31:00 gen 11942 rate 317.4/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120598 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:31:05 gen 13501 rate 311.5/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:31:10 gen 15098 rate 319.1/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 543 MB footprint 489 MB
+04:31:19 gen 16027 rate 185.7/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 543 MB footprint 445 MB
+04:31:20 gen 16085 rate 11.6/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 543 MB footprint 491 MB
+04:31:25 gen 17777 rate 338.1/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 543 MB footprint 490 MB
+04:31:30 gen 18163 rate 77.1/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 575 MB footprint 520 MB
+04:31:35 gen 18430 rate 53.3/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 567 MB footprint 500 MB
+04:31:40 gen 18695 rate 52.9/s cells 4194304 playing True tiling square rules 'B3/S23' pop 120569 scene 'Empty world' sim '' rss 567 MB footprint 501 MB
+04:31:45 gen 18894 rate 39.8/s cells 4194304 playing True tiling square rules 'B3/S23' pop 531377 scene 'Empty world' sim '' rss 572 MB footprint 501 MB
+04:31:50 gen 19092 rate 39.6/s cells 4194304 playing True tiling square rules 'B3/S23' pop 291437 scene 'Empty world' sim '' rss 571 MB footprint 501 MB
+04:31:55 gen 19288 rate 39.2/s cells 4194304 playing True tiling square rules 'B3/S23' pop 237021 scene 'Empty world' sim '' rss 571 MB footprint 504 MB
+04:32:00 gen 19487 rate 39.8/s cells 4194304 playing True tiling square rules 'B3/S23' pop 209609 scene 'Empty world' sim '' rss 574 MB footprint 504 MB
+04:32:05 gen 19687 rate 39.9/s cells 4194304 playing True tiling square rules 'B3/S23' pop 189427 scene 'Empty world' sim '' rss 573 MB footprint 504 MB
+04:32:10 gen 19886 rate 39.8/s cells 4194304 playing True tiling square rules 'B3/S23' pop 178179 scene 'Empty world' sim '' rss 575 MB footprint 504 MB
+04:32:28 gen 19958 rate 14.4/s cells 4194304 playing True tiling square rules 'B3/S23' pop 175060 scene 'Empty world' sim '' rss 570 MB footprint 517 MB
+04:32:28 gen 19961 rate 0.2/s cells 4194304 playing True tiling square rules 'B3/S23' pop 174919 scene 'Empty world' sim '' rss 574 MB footprint 505 MB
+04:33:48 gen 20036 rate 15.0/s cells 4194304 playing False tiling square rules 'B3/S23' pop 172672 scene 'Empty world' sim '' rss 573 MB footprint 520 MB
+04:33:48 gen 20036 rate 0.0/s cells 4194304 playing False tiling square rules 'B3/S23' pop 172672 scene 'Empty world' sim '' rss 574 MB footprint 477 MB
+04:33:53 gen 20036 rate 0.0/s cells 4194304 playing False tiling square rules 'B3/S23' pop 172672 scene 'Empty world' sim '' rss 552 MB footprint 478 MB
+04:33:58 gen 20036 rate 0.0/s cells 4194304 playing False tiling square rules 'B3/S23' pop 172672 scene 'Empty world' sim '' rss 552 MB footprint 478 MB
+04:34:03 gen 5017 rate -/s cells 23940 playing True tiling cairo rules 'JACA B27/S03456' pop 15491 scene 'JACA rainbow fronts (Cairo)' sim '' rss 508 MB footprint 413 MB
+04:34:08 gen 72 rate -/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2166253 scene 'JACA rainbow fronts (Cairo)' sim '' rss 576 MB footprint 539 MB
+04:34:13 gen 156 rate 16.8/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2301572 scene 'JACA rainbow fronts (Cairo)' sim '' rss 576 MB footprint 539 MB
+04:34:24 gen 196 rate 8.0/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2333800 scene 'JACA rainbow fronts (Cairo)' sim '' rss 576 MB footprint 539 MB
+04:34:24 gen 198 rate 0.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2335741 scene 'JACA rainbow fronts (Cairo)' sim '' rss 576 MB footprint 543 MB
+04:34:29 gen 281 rate 16.6/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2380809 scene 'JACA rainbow fronts (Cairo)' sim '' rss 576 MB footprint 542 MB
+04:34:34 gen 365 rate 16.8/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2412224 scene 'JACA rainbow fronts (Cairo)' sim '' rss 572 MB footprint 537 MB
+04:34:41 gen 427 rate 12.4/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2427597 scene 'JACA rainbow fronts (Cairo)' sim '' rss 573 MB footprint 539 MB
+04:34:45 gen 485 rate 11.6/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2442036 scene 'JACA rainbow fronts (Cairo)' sim '' rss 573 MB footprint 539 MB
+04:34:50 gen 569 rate 16.8/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2457964 scene 'JACA rainbow fronts (Cairo)' sim '' rss 568 MB footprint 540 MB
+04:34:55 gen 654 rate 17.0/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2470879 scene 'JACA rainbow fronts (Cairo)' sim '' rss 568 MB footprint 540 MB
+04:35:00 gen 738 rate 16.8/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2481638 scene 'JACA rainbow fronts (Cairo)' sim '' rss 568 MB footprint 540 MB
+04:35:05 gen 824 rate 17.2/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2490878 scene 'JACA rainbow fronts (Cairo)' sim '' rss 572 MB footprint 566 MB
+04:35:10 gen 908 rate 16.8/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2498570 scene 'JACA rainbow fronts (Cairo)' sim '' rss 569 MB footprint 540 MB
+04:35:14 gen 1532 rate 124.6/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2536813 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 550 MB
+04:35:19 gen 2212 rate 135.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2559164 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 521 MB
+04:35:25 gen 2878 rate 133.1/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2571256 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 539 MB
+04:35:30 gen 3541 rate 132.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2582320 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 527 MB
+04:35:34 gen 4207 rate 133.1/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2590928 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 539 MB
+04:35:40 gen 4846 rate 127.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2596715 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 535 MB
+04:35:45 gen 5510 rate 132.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2600862 scene 'JACA rainbow fronts (Cairo)' sim '' rss 560 MB footprint 534 MB
+04:35:50 gen 6164 rate 130.6/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2605097 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 523 MB
+04:35:55 gen 6817 rate 130.6/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2608649 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 549 MB
+04:36:00 gen 7399 rate 116.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2611153 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 539 MB
+04:36:05 gen 8052 rate 130.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2613269 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 545 MB
+04:36:10 gen 8694 rate 128.2/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2615926 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 550 MB
+04:36:15 gen 9342 rate 129.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2617549 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 534 MB
+04:36:20 gen 9991 rate 129.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2620123 scene 'JACA rainbow fronts (Cairo)' sim '' rss 560 MB footprint 522 MB
+04:36:25 gen 10633 rate 128.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2622140 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 521 MB
+04:36:30 gen 11231 rate 119.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2623482 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 551 MB
+04:36:35 gen 11890 rate 131.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2625402 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 523 MB
+04:36:40 gen 12528 rate 127.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2627219 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 548 MB
+04:36:45 gen 13173 rate 128.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2628571 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 540 MB
+04:36:50 gen 13828 rate 130.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2629832 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 548 MB
+04:37:05 gen 14383 rate 110.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2630321 scene 'JACA rainbow fronts (Cairo)' sim '' rss 557 MB footprint 290 MB
+04:37:05 gen 14388 rate 0.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2630306 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 546 MB
+04:37:23 gen 14672 rate 56.8/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2631518 scene 'JACA rainbow fronts (Cairo)' sim '' rss 557 MB footprint 289 MB
+04:37:24 gen 14678 rate 0.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2631693 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 520 MB
+04:37:29 gen 15371 rate 138.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2631938 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 540 MB
+04:37:34 gen 16057 rate 137.1/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2633399 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 540 MB
+04:37:39 gen 16737 rate 135.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2634122 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 541 MB
+04:37:44 gen 17382 rate 128.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2636138 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 528 MB
+04:37:49 gen 18004 rate 124.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2636805 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 554 MB
+04:37:54 gen 18562 rate 111.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2637526 scene 'JACA rainbow fronts (Cairo)' sim '' rss 560 MB footprint 551 MB
+04:37:59 gen 19139 rate 115.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2637424 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 543 MB
+04:38:04 gen 19767 rate 125.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2639084 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 554 MB
+04:38:09 gen 20379 rate 122.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2639496 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 556 MB
+04:38:14 gen 21018 rate 127.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2640485 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 545 MB
+04:38:19 gen 21648 rate 125.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2640761 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 554 MB
+04:38:24 gen 22277 rate 125.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2641890 scene 'JACA rainbow fronts (Cairo)' sim '' rss 572 MB footprint 536 MB
+04:38:29 gen 22845 rate 113.5/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2642200 scene 'JACA rainbow fronts (Cairo)' sim '' rss 557 MB footprint 526 MB
+04:38:34 gen 23484 rate 127.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2642557 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 556 MB
+04:38:39 gen 24100 rate 123.1/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2643232 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 556 MB
+04:38:44 gen 24731 rate 126.1/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2643479 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 543 MB
+04:38:49 gen 25358 rate 125.2/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2644042 scene 'JACA rainbow fronts (Cairo)' sim '' rss 560 MB footprint 544 MB
+04:38:54 gen 25975 rate 123.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2644416 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 526 MB
+04:38:59 gen 26550 rate 114.9/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2645433 scene 'JACA rainbow fronts (Cairo)' sim '' rss 558 MB footprint 543 MB
+04:39:04 gen 27177 rate 125.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2645975 scene 'JACA rainbow fronts (Cairo)' sim '' rss 560 MB footprint 545 MB
+04:39:09 gen 27791 rate 122.6/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2645756 scene 'JACA rainbow fronts (Cairo)' sim '' rss 557 MB footprint 560 MB
+04:39:14 gen 28415 rate 124.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2646611 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 545 MB
+04:39:19 gen 28969 rate 110.7/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2647267 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 539 MB
+04:39:24 gen 29552 rate 116.6/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2647194 scene 'JACA rainbow fronts (Cairo)' sim '' rss 561 MB footprint 542 MB
+04:39:29 gen 30139 rate 117.3/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2648060 scene 'JACA rainbow fronts (Cairo)' sim '' rss 572 MB footprint 552 MB
+04:39:34 gen 30750 rate 122.1/s cells 4000000 playing True tiling cairo rules 'JACA B27/S03456' pop 2648049 scene 'JACA rainbow fronts (Cairo)' sim '' rss 558 MB footprint 552 MB
+04:39:39 end; mcp exit 0; stderr: jetcarp mcp: connected to the JETCARP app on port 47811

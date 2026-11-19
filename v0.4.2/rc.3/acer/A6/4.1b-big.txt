@@ -1,0 +1,53 @@
+rotation file $W\config\rotations\big-64m.json -> scene $W\big\life-64m.json (8000 x 8000 = 64,000,000 cells, refill off)
+host processes: [(23232, 'jetcarpw.exe'), (24824, 'jetcarp.exe')]
+$ jetcarp host status   [11:32:09]
+running, pid 24824, up 119.0s, 454 MB, GPU Intel(R) UHD Graphics
+screen 0: Until it settles · Quick Start rule:B3/S23 (1 of 3) · generation 5229 · 102240 cells of 3 px · 60 fps, 60 generations a second · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+
+exit 0
+before: host working set 4 MB, private 1 MB, CPU 0.0 s
+== host_control {"action": "rotation", "name": "Big 64M"}  ->  isError=False  (0.1 s)  [11:32:10]
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":451,"monitor_hz":[144.0],"monitors":["\\\\.\\DISPLAY1"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":24824,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles","Big 64M"],"run_at_login":false,"running":true,"screens":[{"frames":0,"hidden":false,"monitor":null,"place":"window","simulation":{"adapter":"Intel(R) UHD Graphics (Intel Corporation), Vulkan","on":"waiting","why":"not stepped yet (GPU simulation auto)"},"stage":{"building":true,"canvas":[1280.0,720.0],"caption":[],"cell_px":0.0,"cells":0,"count":1,"frame_rate":30.0,"generation":0,"label":"scene $W\\big\\life-64m.json","number":1,"paused":false,"rotation":"Big 64M","scale":1.0,"seconds_left":null,"speed":0.0,"tuned":false}}],"tune":{"auto":true,"cpu_percent":10.0,"gpu_percent":25.0},"tuning":{"auto":false,"here":false,"running":false},"uptime_s":120.0,"wallpaper":false}
++   5 s: generation ['29'], cells ['64000000'], status memory ['1697']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  10 s: generation ['47'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  16 s: generation ['69'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  21 s: generation ['92'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  26 s: generation ['122'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  31 s: generation ['137'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  37 s: generation ['164'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  42 s: generation ['183'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  48 s: generation ['200'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  53 s: generation ['221'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  58 s: generation ['238'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  63 s: generation ['253'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  69 s: generation ['268'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  74 s: generation ['296'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  79 s: generation ['315'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  85 s: generation ['332'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  90 s: generation ['348'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
++  95 s: generation ['376'], cells ['64000000'], status memory ['1453']; host working set 4 MB, private 1 MB, CPU 0% of the machine
+$ jetcarp host status   [11:33:45]
+running, pid 24824, up 215.0s, 1453 MB, GPU Intel(R) UHD Graphics
+screen 0: Big 64M · scene $W\big\life-64m.json (1 of 1) · generation 377 · 64000000 cells of 4 px · 30 fps, 30 generations a second · window · simulation: GPU (Intel(R) UHD Graphics (Intel Corporation), Vulkan)
+monitors: 0: \\.\DISPLAY1
+caption: off
+pacing: every generation (at least 30 fps, up to 60 fps, or the monitor's refresh rate if lower)
+note: GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)
+
+exit 0
+$ jetcarp host status --json   [11:33:45]
+{"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lo
+
+exit 0
+== host_control {"action": "scene"}  ->  isError=False  (0.5 s)  [11:33:46]
+   {"cell_px":4.0,"grid":[8000,8000],"label":"scene $W\\big\\life-64m.json","scene":{"cas":[{"affects_others":true,"enabled":true,"id":1,"name":"Life","neighborhood":"touch","palette":"Ember","rule":"B3/S23","seed":{"random":{"density":0.3}},"steps_per_gen":1}],"commands":[{"gens":379,"op":"step"}],"format":1,"jetcarp_version":"0.4.2-rc.3","record":{"dead_boundary":false,"generation":379,"hash":"856fab4dddf9fe95","jetcarp_version":"0.4.2-rc.3"},"rng_state":11,"tiling":{"boundary":"wrap","family":"square","size":{"rect":{"h":8000,"w":8000}}}},"screen":0,"tuned":f
+== host_control {"action": "rotation", "name": "A classic a day"}  ->  isError=False  (0.4 s)  [11:33:46]
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":709,"monitor_hz":[144.0],"monitors":["\\\\.\\DISPLAY1"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":24824,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles","Big 64M"],"run_at_login":false,"running":true,"screens":[{"frames":0,"hidden":false,"monitor":null,"place":"window","simulation":
+5 s after switching back: host working set 4 MB, private 1 MB
+== host_control {"action": "quit"}  ->  isError=False  (0.1 s)  [11:33:51]
+   {"caption":{"corner":"BottomLeft","generation":false,"seconds":0.0,"show":false,"size":20.0},"desktop_layout":null,"extension":true,"fps":30.0,"gpu":"Intel(R) UHD Graphics","held":[],"held_why":[],"lock_screen":"live","log":["GPU: Intel(R) UHD Graphics (Intel Corporation), Vulkan; GPU simulation auto (automatic)"],"login":false,"max_fps":60.0,"memory_mb":709,"monitor_hz":[144.0],"monitors":["\\\\.\\DISPLAY1"],"pacing":"every_generation","paused":false,"paused_why":[],"pid":24824,"rotations":["Wolfram series","A classic a day","Classics, hourly","Until it settles","Big 64M"],"run_at_login":false,"running":true,"screens":[{"frames":301,"hidden":false,"monitor":null,"place":"window","simulation
+host processes after quit: []

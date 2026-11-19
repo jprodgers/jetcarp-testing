@@ -1,0 +1,8 @@
+# the clipboard, every second; started 04:57:09 (what was on it then isn't recorded)
+05:01:48 7 bytes: 0000000 B 3 6 / S 2 3  0000007 
+    as text: [B36/S23]
+05:07:20 17 bytes: 0000000 j e t c a r p m c p - - a p 0000020 p  0000021 
+    as text: [jetcarp mcp --app]
+05:13:29 7 bytes: 0000000 B 3 6 / S 2 3  0000007 
+    as text: [B36/S23]
+# ended 05:19:54

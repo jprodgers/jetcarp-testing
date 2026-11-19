@@ -1,0 +1,54 @@
+(icacls /deny write on $W\ro-out: exit 0)
+(a write by this script is refused: PermissionError: Permission denied)
+#### MCP with JETCARP_OUT=$W\ro-out (write denied)
+== world_new {"tiling": "square", "width": 32, "height": 32, "cas": ["Life"]} -> isError=False
+   New world created.
+   {
+     "cas": [
+       {
+         "affects_others": true,
+         "enabled": true,
+         "field": 0,
+         "id": 1,
+         "name": "Life",
+         "neighborhood": "touch",
+         "palette": "Ember",
+         "rule": "B3/S23",
+         "steps_per_gen": 1
+       }
+     ],
+     "cells": 1024,
+     "cells_hash": "ccf
+== world_status {"save_path": "a.json"} -> isError=True
+   could not write $W\ro-out\a.json: Access is denied. (os error 5)
+== world_render {"max_side": 64, "save_path": "a.png"} -> isError=True
+   $W\ro-out\a.png: Access is denied. (os error 5)
+== world_render {"wallpaper": {"size": "320x200"}} -> isError=True
+   could not create folder $W\ro-out\wallpapers: Access is denied. (os error 5)
+== run_script {"script": "let w = world(#{ tiling: \"square\", size: [32, 32] }); w.add_ca(\"Life\", #{ seed: \"random:0.3\" }); w.save_png(\"x.png\", #{ size: [64, 64] });"} -> isError=True
+   error at line 1, column 100: $W\ro-out\x.png: Access is denied. (os error 5)
+   log:
+   error: line 1, column 100: $W\ro-out\x.png: Access is denied. (os error 5)
+   
+== run_script {"script": "out_dir(\"ro\"); print(\"made\");"} -> isError=True
+   error at line 1, column 1: cannot create $W\ro-out\2026-11-16_11-24-44_ro: Access is denied. (os error 5)
+   log:
+   error: line 1, column 1: cannot create $W\ro-out\2026-11-16_11-24-44_ro: Access is denied. (os error 5)
+   
+== search_start {"pile": {"grains": 1000}, "wait_s": 30} -> isError=True
+   $W\ro-out\piles: Access is denied. (os error 5)
+== media_render {"scene": {"format": 1, "tiling": {"family": "square", "size": {"rect": {"w": 32, "h": 32}}}, "cas": [{"rule": "B3/S23", "seed": {"random": {"density": 0.3}}}]}, "gens": 5} -> isError=True
+   could not create folder $W\ro-out\media\scene: Access is denied. (os error 5)
+== search_runs {"job": 3, "csv": "runs.csv", "limit": 3} -> isError=True
+   $W\ro-out\runs.csv: Access is denied. (os error 5)
+== pack {"publish": {"feed": "f9-ro", "to": "ro-store", "no_media": true, "no_searches": true}} -> isError=True
+   could not create folder $W\ro-out\ro-store: Access is denied. (os error 5)
+== pack {"site": {"to": "ro-site", "render": false}} -> isError=True
+   could not create folder $W\ro-out\ro-site: Access is denied. (os error 5)
+== files_list {} -> isError=True
+   $W\ro-out: Access is denied. (os error 5)
+Traceback (most recent call last):
+  File "C:\Users\jimmi\OneDrive\Documents\GitHub\jetcarp-rc\results\v0.4.2-rc.3\acer\A6\t55_readonly.py", line 67, in <module>
+    say(f"(left in the read-only folder: {os.listdir(RO)})")
+                                          ~~~~~~~~~~^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\jimmi\\jetcarp-rc-042c\\a6\\ro-out'

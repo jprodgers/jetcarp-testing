@@ -1,0 +1,55 @@
+{
+  "cas": [
+    {
+      "affects_others": true,
+      "enabled": true,
+      "field": 0,
+      "id": 1,
+      "name": "HighLife",
+      "neighborhood": "touch",
+      "palette": "Lava",
+      "rule": "B36/S23",
+      "steps_per_gen": 1
+    }
+  ],
+  "cells": 83460,
+  "cells_hash": "94a71f3ebf05bba8",
+  "done": "no: something can still change",
+  "fields": [
+    {
+      "ca_ids": [
+        1
+      ],
+      "field": 0,
+      "kind": "binary",
+      "max_state": 1,
+      "population": 25115,
+      "shared": true
+    }
+  ],
+  "generation": 0,
+  "hash": "9c017365ae650188",
+  "hash_note": "`hash` covers the generation number and cell ages too, so it never repeats; `cells_hash` covers only the cell states: equal cells_hash = same picture. For periods, trust `status` (an exact check).",
+  "host": {
+    "kind": "app",
+    "note": "this is the world shown in the JETCARP app window; the user can change it too",
+    "playing": false,
+    "playing_note": "paused",
+    "scene_name": "Empty world",
+    "screensaver": false
+  },
+  "script": null,
+  "status": "Running",
+  "tiling": {
+    "boundary": "wrap",
+    "description": "Square (parallelogram) (square): 83460 cells, 321x260 unit cells, 1 tile type(s), storage dense, edges wrap",
+    "grid": {
+      "coordinates": "x = column 0..width-1, y = row 0..height-1 from the top; index = y * width + x",
+      "height": 260,
+      "tile_types_per_unit_cell": 1,
+      "width": 321
+    },
+    "id": "square",
+    "name": "Square (parallelogram)"
+  }
+}

@@ -1,0 +1,33 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20261113095510
+Username: ACER\jimmi
+RunAs User: ACER\jimmi
+Configuration Name: 
+Machine: ACER (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 33644
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\jimmi\OneDrive\Documents\GitHub\jetcarp-rc\results\v0.4.0\acer\02-scoop-install.txt
+PS C:\WINDOWS\system32> irm get.scoop.sh | iex
+Initializing...
+Downloading...
+
+
+Creating shim...
+Adding ~\scoop\shims to your path.
+Scoop was installed successfully!
+Type 'scoop help' for instructions.
+PS C:\WINDOWS\system32> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261113095519
+**********************

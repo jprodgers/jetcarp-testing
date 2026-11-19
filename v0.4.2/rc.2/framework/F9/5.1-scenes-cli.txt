@@ -1,0 +1,36 @@
+$ jetcarp run truncated.json --gens 10
+Error: scene JSON: EOF while parsing a value at line 23 column 27
+exit 1
+$ jetcarp verify truncated.json
+Error: scene JSON: EOF while parsing a value at line 23 column 27
+exit 1
+$ jetcarp run unknown-rule.json --gens 10
+Error: Generations need a state count, like B2/S/C3
+exit 1
+$ jetcarp verify unknown-rule.json
+Error: scene has no recorded hash
+exit 1
+$ jetcarp run unknown-rule-name.json --gens 10
+Error: 'Frobnicator' is not a rule. Try B3/S23, B2/S/C3, W30, Ant RL, WireWorld, or Sandpile.
+exit 1
+$ jetcarp verify unknown-rule-name.json
+Error: scene has no recorded hash
+exit 1
+$ jetcarp run future-format.json --gens 10
+Error: scene format 2 is newer than this JETCARP supports (1)
+exit 1
+$ jetcarp verify future-format.json
+Error: scene format 2 is newer than this JETCARP supports (1)
+exit 1
+$ jetcarp run future-format-huge.json --gens 10
+Error: scene JSON: invalid value: integer `99999999999`, expected u32 at line 3 column 22
+exit 1
+$ jetcarp verify future-format-huge.json
+Error: scene JSON: invalid value: integer `99999999999`, expected u32 at line 3 column 22
+exit 1
+$ jetcarp run empty.json --gens 10
+Error: scene JSON: EOF while parsing a value at line 1 column 0
+exit 1
+$ jetcarp verify empty.json
+Error: scene JSON: EOF while parsing a value at line 1 column 0
+exit 1
