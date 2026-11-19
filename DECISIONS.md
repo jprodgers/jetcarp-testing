@@ -118,6 +118,30 @@ source named are from that interview or from his request for the audit.
   results, `MOVED.md`, and leaving the paths inside the records as written). Jimmie approved it.
 - **Stands.** `MOVED.md` lists where everything was before.
 
+### T-12. The public copy's history starts afresh
+
+- **Decided:** Jimmie Rodgers, 18 November 2026, after the audit's privacy pass.
+- **The decision:** the repository that held the first public history (16 November 2026 to
+  `7fbd762`, and the audit's pull request) was renamed and made private, and is kept by the
+  maintainer. A new `jprodgers/jetcarp-testing` was started on 18 November 2026 with one commit:
+  the masked copy, arranged by cycle (T-10), with the audits. Each publish since adds to that
+  history, and stops if anything is left to mask or a new identifier turns up (`WITHHELD.md` lists
+  each kind of mask). The program's repository keeps its history: the one detail there concerned
+  another person, who was asked and answered that no change was needed (the audit's report,
+  *Privacy*).
+- **Why:** the masks of T-07 only protect a repository whose history never held what they mask,
+  and the first one's did. It was kept rather than deleted: "A restructuring needed to occur for
+  future development, and I wanted a snapshot of it before we changed anything. I can always share
+  the private repository with human auditors later if they request it." (Jimmie, to the main
+  session, 18 November 2026.)
+- **Claude's part:** the auditor (Claude, in Claude Code) found the details, wrote the masks, and
+  suggested starting the public history afresh, which Jimmie agreed to; it set out the steps, and
+  the main session (Claude, in Claude Code) carried them out and made the masks' check a gate on
+  every publish.
+- **In the record:** `audits/README.md`; the November 2026 report's *Privacy* section;
+  `WITHHELD.md`.
+- **Stands.**
+
 ## Audits
 
 ### T-11. An independent audit every three to six months, published here in full
